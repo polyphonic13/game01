@@ -14,7 +14,8 @@ public class DoorAnimation : MonoBehaviour {
 	
 	void OnMouseDown() {
 		Debug.Log ( "Mouse down on " + this.name );
-		gameObject.animation.Play( "door_open" );	
+		//gameObject.animation.Play( "door_open" );	
+		transform.parent.gameObject.animation.Play( "door_open" );
 	}
 	
 	void OnTriggerEnter(Collider collider) {
