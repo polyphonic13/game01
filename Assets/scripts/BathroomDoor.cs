@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BathroomDoor : MonoBehaviour {
 	
-	public Bathroom bathroom;
+	private Bathroom bathroom;
 	bool isDoorOpen = false;
 
 	public void Awake() {
@@ -18,18 +18,9 @@ public class BathroomDoor : MonoBehaviour {
             bathroom = nextTransform.GetComponent<Bathroom>();
             nextTransform = this.transform.parent;
         }
+		//Debug.Log("Bathroom/getBathroom, bathrrom = " + bathroom);
 	} 
 	
-	public void Interact() {
-		if( isDoorOpen ) {
-            bathroom.transform.animation.Play("close_door");
-			isDoorOpen = false;			
-		} else {
-            bathroom.transform.animation.Play("open_door");
-			isDoorOpen = true;
-		}
-	}
-
 	public void OnMouseDown() {
 		//Debug.Log ( "Mouse down on " + this.name );
 		//gameObject.animation.Play( "door_open" );	

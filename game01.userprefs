@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../demos/interactive_demo/Assets/Scripts/Interactive/Fridge/Fridge.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../demos/interactive_demo/Assets/Scripts/Interactive/Microwave.cs">
     <Files>
       <File FileName="../demos/interactive_demo/Assets/Scripts/Interactive/Fridge/Fridge.cs" Line="1" Column="1" />
-      <File FileName="../demos/interactive_demo/Assets/Scripts/Interactive/Fridge/FridgeFreezerDoor.cs" Line="1" Column="1" />
       <File FileName="../demos/interactive_demo/Assets/Scripts/Interactive/Fridge/FridgeMainDoor.cs" Line="1" Column="1" />
+      <File FileName="../demos/interactive_demo/Assets/Scripts/Interactive/Interactive.cs" Line="1" Column="1" />
+      <File FileName="../demos/interactive_demo/Assets/Scripts/Interactive/Microwave.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

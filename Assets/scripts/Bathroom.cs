@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Bathroom : MonoBehaviour {
 	
-	public BathroomDoor door;
+	private BathroomDoor door;
 	// Use this for initialization
 	void Start () {
 	
