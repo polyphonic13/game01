@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Dresser : AnimationParent {
 	
-	int openDrawer = -1;
+	//int openChildIdx = -1;
 	string[] drawerOpenClips = {
 		"top_left_drawer_open",
 		"top_center_drawer_open",
@@ -21,18 +21,18 @@ public class Dresser : AnimationParent {
 	};
 	
 	public override void ChildOpen(int clipIdx) {
-		//Debug.Log("OpenDrawer, idx = " + clipIdx + ", openDrawer = " + openDrawer);
-		if(openDrawer > -1) {
-			ChildClose(openDrawer);
+		//Debug.Log("OpenDrawer, idx = " + clipIdx + ", openChildIdx = " + openChildIdx);
+		if(openChildIdx > -1) {
+			ChildClose(openChildIdx);
 		}
 		PlayDrawerAnimation(drawerOpenClips[clipIdx]);		
-		openDrawer = clipIdx;
+		openChildIdx = clipIdx;
 	}
 	
 	public override void ChildClose(int clipIdx) {
 		//Debug.Log("CloseDrawer, idx = " + clipIdx);
 		PlayDrawerAnimation(drawerCloseClips[clipIdx]);
-		openDrawer = -1;
+		openChildIdx = -1;
 	}
 	
 	private void PlayDrawerAnimation(string clipName) {
