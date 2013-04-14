@@ -33,7 +33,7 @@ public class DresserDrawer : MonoBehaviour {
 	}
 	
 	void OnMouseDown() {
-		Debug.Log ("OnMouseDown, idx = " + drawerIdx + ", isOpen = " + isOpen);
+		//Debug.Log ("OnMouseDown, idx = " + drawerIdx + ", isOpen = " + isOpen);
 		if(isOpen) {
 			//dresser.transform.animation.Play(open_clip);
 			dresser.CloseDrawer(drawerIdx);

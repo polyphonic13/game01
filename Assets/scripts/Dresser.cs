@@ -31,18 +31,18 @@ public class Dresser : MonoBehaviour {
 	}
 
 	public void OpenDrawer(int clipIdx) {
+		Debug.Log("OpenDrawer, idx = " + clipIdx + ", openDrawer = " + openDrawer);
 		if(openDrawer > -1) {
-			PlayDrawerAnimation(drawerCloseClips[openDrawer]);
+			CloseDrawer(openDrawer);
 		}
 		PlayDrawerAnimation(drawerOpenClips[clipIdx]);		
 		openDrawer = clipIdx;
 	}
 	
 	public void CloseDrawer(int clipIdx) {
+		Debug.Log("CloseDrawer, idx = " + clipIdx);
 		PlayDrawerAnimation(drawerCloseClips[clipIdx]);
-		if(openDrawer > -1) {
-			openDrawer = -1;
-		}
+		openDrawer = -1;
 	}
 	
 	void PlayDrawerAnimation(string clipName) {
