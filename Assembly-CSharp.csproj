@@ -46,8 +46,8 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\Bathroom.cs" />
      <Compile Include="Assets\scripts\BathroomDoor.cs" />
-     <Compile Include="Assets\scripts\Drawer.cs" />
      <Compile Include="Assets\scripts\Dresser.cs" />
+     <Compile Include="Assets\scripts\DresserDrawer.cs" />
      <Compile Include="Assets\scripts\GrabCS.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />

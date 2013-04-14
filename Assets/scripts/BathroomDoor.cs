@@ -25,7 +25,7 @@ public class BathroomDoor : MonoBehaviour {
 		//Debug.Log ( "Mouse down on " + this.name );
 		//gameObject.animation.Play( "door_open" );	
 		Debug.Log( "bathroom = " + bathroom.transform.animation.GetClipCount() + ", name = " + bathroom.transform.animation.name );
-		string names = GetAnimationNames (bathroom.transform.animation);
+		//string names = GetAnimationNames (bathroom.transform.animation);
 		//Debug.Log("animations = " + names );
 
 		if( isDoorOpen ) {
