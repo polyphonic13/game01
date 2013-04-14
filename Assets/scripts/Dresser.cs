@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Dresser : MonoBehaviour {
+public class Dresser : AnimationParent {
 	
 	int openDrawer = -1;
 	string[] drawerOpenClips = {
@@ -20,32 +20,22 @@ public class Dresser : MonoBehaviour {
 		"bottom_drawer_close"
 	};
 	
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	public void OpenDrawer(int clipIdx) {
-		Debug.Log("OpenDrawer, idx = " + clipIdx + ", openDrawer = " + openDrawer);
+	public override void ChildOpen(int clipIdx) {
+		//Debug.Log("OpenDrawer, idx = " + clipIdx + ", openDrawer = " + openDrawer);
 		if(openDrawer > -1) {
-			CloseDrawer(openDrawer);
+			ChildClose(openDrawer);
 		}
 		PlayDrawerAnimation(drawerOpenClips[clipIdx]);		
 		openDrawer = clipIdx;
 	}
 	
-	public void CloseDrawer(int clipIdx) {
-		Debug.Log("CloseDrawer, idx = " + clipIdx);
+	public override void ChildClose(int clipIdx) {
+		//Debug.Log("CloseDrawer, idx = " + clipIdx);
 		PlayDrawerAnimation(drawerCloseClips[clipIdx]);
 		openDrawer = -1;
 	}
 	
-	void PlayDrawerAnimation(string clipName) {
+	private void PlayDrawerAnimation(string clipName) {
 		this.transform.animation.Play(clipName);	
 	}
 }

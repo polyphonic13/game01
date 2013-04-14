@@ -5,42 +5,28 @@ public class DresserDrawer : MonoBehaviour {
 	
 	public int drawerIdx;
 	bool isOpen = false;
-	Dresser dresser;
+	Dresser parent;
 	
 	public void Awake() {
-		getDresser();
+		setParent();
 	}
 	
-	private void getDresser() {
+	private void setParent() {
         Transform nextTransform = this.transform.parent;
 
-        while (dresser == null && nextTransform != null)
+        while (parent == null && nextTransform != null)
         {
-            dresser = nextTransform.GetComponent<Dresser>();
+            parent = nextTransform.GetComponent<Dresser>();
             nextTransform = this.transform.parent;
         }
-		//Debug.Log("Bathroom/getBathroom, bathrrom = " + bathroom);
 	} 
 	
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	
-	void OnMouseDown() {
-		//Debug.Log ("OnMouseDown, idx = " + drawerIdx + ", isOpen = " + isOpen);
+	private void OnMouseDown() {
 		if(isOpen) {
-			//dresser.transform.animation.Play(open_clip);
-			dresser.CloseDrawer(drawerIdx);
+			parent.ChildClose(drawerIdx);
 			isOpen = false;
 		} else {
-			//dresser.transform.animation.Play(close_clip);
-			dresser.OpenDrawer(drawerIdx);
+			parent.ChildOpen(drawerIdx);
 			isOpen = true;
 		}
 	}
