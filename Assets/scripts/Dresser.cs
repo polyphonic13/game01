@@ -12,17 +12,17 @@ public class Dresser : OpenCloseParent {
 		if(currentOpen != null && currentOpen != child) {
 			CloseChild(currentOpen);
 		}
-		PlayDrawerAnimation(child.openClipName);		
+		PlayAnimation(child.openClipName);		
 		currentOpen = child;
 	}
 	
 	public override void CloseChild(OpenCloseChild child) {
-		PlayDrawerAnimation(child.closeClipName);
+		PlayAnimation(child.closeClipName);
 		child.isOpen = false;
 		currentOpen = null;
 	}
 	
-	private void PlayDrawerAnimation(string clip) {
+	private void PlayAnimation(string clip) {
 		this.transform.animation.Play(clip);	
 	}
 }

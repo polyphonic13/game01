@@ -11,8 +11,7 @@ public class DresserDrawer : OpenCloseChild {
 	private void setParent() {
         Transform nextTransform = this.transform.parent;
 
-        while (parent == null && nextTransform != null)
-        {
+        while (parent == null && nextTransform != null) {
             parent = nextTransform.GetComponent<Dresser>();
             nextTransform = this.transform.parent;
         }
