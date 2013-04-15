@@ -11,7 +11,6 @@ public class Dresser : OpenCloseParent {
 		Debug.Log("OpenDrawer, currentOpen = " + currentOpen + ", child = " + child.name);
 		if(currentOpen != null && currentOpen != child) {
 			CloseChild(currentOpen);
-			//yield return new WaitForSeconds(this.animation[currentOpen.closeClipName].length);
 		}
 		PlayDrawerAnimation(child.openClipName);		
 		currentOpen = child;
