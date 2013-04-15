@@ -1,13 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class DresserDrawer : MonoBehaviour {
-	
-	public int drawerIdx;
-	bool isOpen = false;
-	Dresser parent;
+public class DresserDrawer : OpenCloseChild {
 	
 	public void Awake() {
+		isOpen = false;
 		setParent();
 	}
 	
@@ -22,11 +19,12 @@ public class DresserDrawer : MonoBehaviour {
 	} 
 	
 	private void OnMouseDown() {
+		//Debug.Log("DresserDrawer/OnMouseDown, name = " + this.name);
 		if(isOpen) {
-			parent.ChildClose(drawerIdx);
+			parent.ChildClose(this);
 			isOpen = false;
 		} else {
-			parent.ChildOpen(drawerIdx);
+			parent.ChildOpen(this);
 			isOpen = true;
 		}
 	}

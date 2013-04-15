@@ -1,41 +1,28 @@
 using UnityEngine;
 using System.Collections;
 
-public class Dresser : AnimationParent {
+public class Dresser : OpenCloseParent {
 	
-	//int openChildIdx = -1;
-	string[] drawerOpenClips = {
-		"top_left_drawer_open",
-		"top_center_drawer_open",
-		"top_right_drawer_open",
-		"middle_drawer_open",
-		"bottom_drawer_open"
-	};
+	void Awake() {
+		openChild = null;
+	}
 	
-	string[] drawerCloseClips = {
-		"top_left_drawer_close",
-		"top_center_drawer_close",
-		"top_right_drawer_close",
-		"middle_drawer_close",
-		"bottom_drawer_close"
-	};
-	
-	public override void ChildOpen(int clipIdx) {
-		//Debug.Log("OpenDrawer, idx = " + clipIdx + ", openChildIdx = " + openChildIdx);
-		if(openChildIdx > -1) {
-			ChildClose(openChildIdx);
+	public override void ChildOpen(OpenCloseChild child) {
+		Debug.Log("OpenDrawer, openChild = " + openChild + ", child = " + child.name);
+		if(openChild != null && openChild != child) {
+			ChildClose(openChild);
 		}
-		PlayDrawerAnimation(drawerOpenClips[clipIdx]);		
-		openChildIdx = clipIdx;
+		PlayDrawerAnimation(child.openClipName);		
+		openChild = child;
 	}
 	
-	public override void ChildClose(int clipIdx) {
-		//Debug.Log("CloseDrawer, idx = " + clipIdx);
-		PlayDrawerAnimation(drawerCloseClips[clipIdx]);
-		openChildIdx = -1;
+	public override void ChildClose(OpenCloseChild child) {
+		PlayDrawerAnimation(child.closeClipName);
+		child.isOpen = false;
+		openChild = null;
 	}
 	
-	private void PlayDrawerAnimation(string clipName) {
-		this.transform.animation.Play(clipName);	
+	private void PlayDrawerAnimation(string clip) {
+		this.transform.animation.Play(clip);	
 	}
 }
