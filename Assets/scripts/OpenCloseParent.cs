@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public abstract class OpenCloseParent : MonoBehaviour {
-	public OpenCloseChild openChild;
-	public abstract void ChildOpen(OpenCloseChild child);
-	public abstract void ChildClose(OpenCloseChild child);
+	public OpenCloseChild currentOpen;
+	public abstract void OpenChild(OpenCloseChild child);
+	public abstract void CloseChild(OpenCloseChild child);
 }

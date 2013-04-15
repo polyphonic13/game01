@@ -21,10 +21,10 @@ public class DresserDrawer : OpenCloseChild {
 	private void OnMouseDown() {
 		//Debug.Log("DresserDrawer/OnMouseDown, name = " + this.name);
 		if(isOpen) {
-			parent.ChildClose(this);
+			parent.CloseChild(this);
 			isOpen = false;
 		} else {
-			parent.ChildOpen(this);
+			parent.OpenChild(this);
 			isOpen = true;
 		}
 	}

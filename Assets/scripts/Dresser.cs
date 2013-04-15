@@ -4,22 +4,22 @@ using System.Collections;
 public class Dresser : OpenCloseParent {
 	
 	void Awake() {
-		openChild = null;
+		currentOpen = null;
 	}
 	
-	public override void ChildOpen(OpenCloseChild child) {
-		Debug.Log("OpenDrawer, openChild = " + openChild + ", child = " + child.name);
-		if(openChild != null && openChild != child) {
-			ChildClose(openChild);
+	public override void OpenChild(OpenCloseChild child) {
+		Debug.Log("OpenDrawer, currentOpen = " + currentOpen + ", child = " + child.name);
+		if(currentOpen != null && currentOpen != child) {
+			CloseChild(currentOpen);
 		}
 		PlayDrawerAnimation(child.openClipName);		
-		openChild = child;
+		currentOpen = child;
 	}
 	
-	public override void ChildClose(OpenCloseChild child) {
+	public override void CloseChild(OpenCloseChild child) {
 		PlayDrawerAnimation(child.closeClipName);
 		child.isOpen = false;
-		openChild = null;
+		currentOpen = null;
 	}
 	
 	private void PlayDrawerAnimation(string clip) {
