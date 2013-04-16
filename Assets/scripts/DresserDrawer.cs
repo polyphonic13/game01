@@ -5,7 +5,9 @@ public class DresserDrawer : OpenCloseChild {
 	
 	public void Awake() {
 		isOpen = false;
-		setParent();
+		if(parent == null) {
+			setParent();
+		}
 	}
 	
 	private void setParent() {
