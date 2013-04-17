@@ -11,9 +11,9 @@ FBXHeaderExtension:  {
 		Year: 2013
 		Month: 04
 		Day: 16
-		Hour: 13
-		Minute: 12
-		Second: 10
+		Hour: 20
+		Minute: 20
+		Second: 48
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins build 20070228"
@@ -21,7 +21,7 @@ FBXHeaderExtension:  {
 		FlagPLE: 0
 	}
 }
-CreationTime: "2013-04-16 13:12:10:000"
+CreationTime: "2013-04-16 20:20:48:000"
 Creator: "Blender version 2.66 (sub 0)"
 
 ; Object definitions
@@ -30272,7 +30272,7 @@ Objects:  {
 		}
 		UseMipMap: 0
 		Filename: "BronzeCopper0032_S.jpg"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/images/metal/copper/BronzeCopper0032_S.jpg"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/images/metal/copper/BronzeCopper0032_S.jpg"
 	}
 	Video: "Video::WoodFine0029_darkened_png", "Clip" {
 		Type: "Clip"
@@ -30293,7 +30293,7 @@ Objects:  {
 		}
 		UseMipMap: 0
 		Filename: "WoodFine0029_darkened.png"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/images/wood/fine/fine29/WoodFine0029_darkened.png"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/images/wood/fine/fine29/WoodFine0029_darkened.png"
 	}
 	Video: "Video::dirty_sink01_jpg", "Clip" {
 		Type: "Clip"
@@ -30314,7 +30314,7 @@ Objects:  {
 		}
 		UseMipMap: 0
 		Filename: "dirty_sink01.jpg"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/bathroom01/bathtub/sink/dirty_sink01.jpg"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/bathroom01/bathtub/sink/dirty_sink01.jpg"
 	}
 	Video: "Video::sink_basin_uv01_bunk_png", "Clip" {
 		Type: "Clip"
@@ -30335,7 +30335,7 @@ Objects:  {
 		}
 		UseMipMap: 0
 		Filename: "sink_basin_uv01_bunk.png"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/bathroom02/sink_basin_uv01_bunk.png"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/bathroom02/sink_basin_uv01_bunk.png"
 	}
 	Video: "Video::sink_basin_uv01_rust_png", "Clip" {
 		Type: "Clip"
@@ -30356,7 +30356,7 @@ Objects:  {
 		}
 		UseMipMap: 0
 		Filename: "sink_basin_uv01_rust.png"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/bathroom02/textures/sink_basin_uv01_rust.png"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/bathroom02/textures/sink_basin_uv01_rust.png"
 	}
 	Texture: "Texture::BronzeCopper0032_S_jpg", "TextureVideoClip" {
 		Type: "TextureVideoClip"
@@ -30381,7 +30381,7 @@ Objects:  {
 		}
 		Media: "Video::BronzeCopper0032_S_jpg"
 		FileName: "BronzeCopper0032_S.jpg"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/images/metal/copper/BronzeCopper0032_S.jpg"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/images/metal/copper/BronzeCopper0032_S.jpg"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
@@ -30410,7 +30410,7 @@ Objects:  {
 		}
 		Media: "Video::WoodFine0029_darkened_png"
 		FileName: "WoodFine0029_darkened.png"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/images/wood/fine/fine29/WoodFine0029_darkened.png"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/images/wood/fine/fine29/WoodFine0029_darkened.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
@@ -30439,7 +30439,7 @@ Objects:  {
 		}
 		Media: "Video::dirty_sink01_jpg"
 		FileName: "dirty_sink01.jpg"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/bathroom01/bathtub/sink/dirty_sink01.jpg"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/bathroom01/bathtub/sink/dirty_sink01.jpg"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
@@ -30468,7 +30468,7 @@ Objects:  {
 		}
 		Media: "Video::sink_basin_uv01_bunk_png"
 		FileName: "sink_basin_uv01_bunk.png"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/bathroom02/sink_basin_uv01_bunk.png"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/bathroom02/sink_basin_uv01_bunk.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
@@ -30497,7 +30497,7 @@ Objects:  {
 		}
 		Media: "Video::sink_basin_uv01_rust_png"
 		FileName: "sink_basin_uv01_rust.png"
-		RelativeFilename: "/Users/paulhoover/Documents/code/personal/unity/blender/bathroom02/textures/sink_basin_uv01_rust.png"
+		RelativeFilename: "/Users/paulhoover/Documents/unity/blender/bathroom02/textures/sink_basin_uv01_rust.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
