@@ -77,6 +77,10 @@ ModelImporter:
     100142: water_pipe_cold
     100144: water_pipe_hot
     100146: wall_s_001
+    100148: bottom_trim_e
+    100150: bottom_trim_n
+    100152: bottom_trim_s
+    100154: bottom_trim_w
     400000: base
     400002: base_bottom_trim
     400004: basin_trim_bottom
@@ -151,6 +155,10 @@ ModelImporter:
     400142: water_pipe_cold
     400144: water_pipe_hot
     400146: wall_s_001
+    400148: bottom_trim_e
+    400150: bottom_trim_n
+    400152: bottom_trim_s
+    400154: bottom_trim_w
     2300000: base
     2300002: base_bottom_trim
     2300004: basin_trim_bottom
@@ -221,6 +229,10 @@ ModelImporter:
     2300134: water_pipe_cold
     2300136: water_pipe_hot
     2300138: wall_s_001
+    2300140: bottom_trim_e
+    2300142: bottom_trim_n
+    2300144: bottom_trim_s
+    2300146: bottom_trim_w
     3300000: base
     3300002: base_bottom_trim
     3300004: basin_trim_bottom
@@ -291,6 +303,10 @@ ModelImporter:
     3300134: water_pipe_cold
     3300136: water_pipe_hot
     3300138: wall_s_001
+    3300140: bottom_trim_e
+    3300142: bottom_trim_n
+    3300144: bottom_trim_s
+    3300146: bottom_trim_w
     4300000: Circle_001
     4300002: Circle
     4300004: pipe_cap_cold_004
@@ -361,6 +377,10 @@ ModelImporter:
     4300134: shower_stall
     4300136: tube_base
     4300138: wall_s_001
+    4300140: bottom_trim_w
+    4300142: bottom_trim_e
+    4300144: bottom_trim_s
+    4300146: bottom_trim_n
     6400000: base
     6400002: base_bottom_trim
     6400004: basin_trim_bottom
@@ -431,6 +451,10 @@ ModelImporter:
     6400134: wall_w
     6400136: water_pipe_cold
     6400138: water_pipe_hot
+    6400140: bottom_trim_e
+    6400142: bottom_trim_n
+    6400144: bottom_trim_s
+    6400146: bottom_trim_w
     7400000: open_door
     7400002: close_door
     9500000: //RootNode
