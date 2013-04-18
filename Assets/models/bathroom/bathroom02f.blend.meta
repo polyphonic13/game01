@@ -81,6 +81,9 @@ ModelImporter:
     100150: bottom_trim_n
     100152: bottom_trim_s
     100154: bottom_trim_w
+    100156: bottom_trim_n_001
+    100158: bottom_trim_n_002
+    100160: bottom_trim_n_003
     400000: base
     400002: base_bottom_trim
     400004: basin_trim_bottom
@@ -159,6 +162,9 @@ ModelImporter:
     400150: bottom_trim_n
     400152: bottom_trim_s
     400154: bottom_trim_w
+    400156: bottom_trim_n_001
+    400158: bottom_trim_n_002
+    400160: bottom_trim_n_003
     2300000: base
     2300002: base_bottom_trim
     2300004: basin_trim_bottom
@@ -233,6 +239,9 @@ ModelImporter:
     2300142: bottom_trim_n
     2300144: bottom_trim_s
     2300146: bottom_trim_w
+    2300148: bottom_trim_n_001
+    2300150: bottom_trim_n_002
+    2300152: bottom_trim_n_003
     3300000: base
     3300002: base_bottom_trim
     3300004: basin_trim_bottom
@@ -307,6 +316,9 @@ ModelImporter:
     3300142: bottom_trim_n
     3300144: bottom_trim_s
     3300146: bottom_trim_w
+    3300148: bottom_trim_n_001
+    3300150: bottom_trim_n_002
+    3300152: bottom_trim_n_003
     4300000: Circle_001
     4300002: Circle
     4300004: pipe_cap_cold_004
@@ -381,6 +393,9 @@ ModelImporter:
     4300142: bottom_trim_e
     4300144: bottom_trim_s
     4300146: bottom_trim_n
+    4300148: bottom_trim_n_002
+    4300150: bottom_trim_n_003
+    4300152: bottom_trim_n_001
     6400000: base
     6400002: base_bottom_trim
     6400004: basin_trim_bottom
@@ -455,6 +470,9 @@ ModelImporter:
     6400142: bottom_trim_n
     6400144: bottom_trim_s
     6400146: bottom_trim_w
+    6400148: bottom_trim_n_001
+    6400150: bottom_trim_n_002
+    6400152: bottom_trim_n_003
     7400000: open_door
     7400002: close_door
     9500000: //RootNode
