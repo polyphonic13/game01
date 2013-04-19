@@ -5,4 +5,8 @@ public abstract class OpenCloseParent : MonoBehaviour {
 	public OpenCloseChild currentOpen;
 	public abstract void OpenChild(OpenCloseChild child);
 	public abstract void CloseChild(OpenCloseChild child);
+
+	public void PlayAnimation(string clip) {
+		this.transform.animation.Play(clip);	
+	}
 }

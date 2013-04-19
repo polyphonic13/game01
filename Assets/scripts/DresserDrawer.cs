@@ -5,28 +5,18 @@ public class DresserDrawer : OpenCloseChild {
 	
 	public void Awake() {
 		isOpen = false;
-		if(parent == null) {
-			setParent();
+		if(pops == null) {
+			SetParent();
 		}
 	}
 	
-	private void setParent() {
+	public override void SetParent() {
         Transform nextTransform = this.transform.parent;
 
-        while (parent == null && nextTransform != null) {
-            parent = nextTransform.GetComponent<Dresser>();
+        while (pops == null && nextTransform != null) {
+            pops = nextTransform.GetComponent<Dresser>();
             nextTransform = this.transform.parent;
         }
 	} 
 	
-	private void OnMouseDown() {
-		//Debug.Log("DresserDrawer/OnMouseDown, name = " + this.name);
-		if(isOpen) {
-			parent.CloseChild(this);
-			isOpen = false;
-		} else {
-			parent.OpenChild(this);
-			isOpen = true;
-		}
-	}
 }

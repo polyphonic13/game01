@@ -1,37 +1,22 @@
 using UnityEngine;
 using System.Collections;
 
-public class Door : MonoBehaviour {
+public class Door : OpenCloseChild {
 	
-	public AnimationParent pops;
-	public string openClip;
-	public string closeClip;
-	bool isDoorOpen = false;
-
 	public void Awake() {
-		getparent();
+		isOpen = false;
+		if(pops == null) {
+			SetParent();
+		}
 	}
 	
-	private void getparent() {
+	public override void SetParent() {
         Transform nextTransform = this.transform.parent;
 
-        while (pops == null && nextTransform != null)
-        {
-            pops = nextTransform.GetComponent<AnimationParent>();
+        while (pops == null && nextTransform != null) {
+            pops = nextTransform.GetComponent<Hall>();
             nextTransform = this.transform.parent;
         }
 	} 
-	
-	public void OnMouseDown() {
-		Debug.Log( "pops = " + pops.transform.animation.GetClipCount() + ", name = " + pops.transform.animation.name );
-		if( isDoorOpen ) {
-            pops.transform.animation.Play(closeClip);
-			isDoorOpen = false;			
-		} else {
-          pops.transform.animation.Play(openClip);
-			isDoorOpen = true;
-		}
-
-	}
 	
 }
