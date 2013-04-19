@@ -29,6 +29,9 @@ ModelImporter:
     100046: wall_n
     100048: wall_s
     100050: wall_w
+    100052: door02
+    100054: doorknob01_001
+    100056: doorway02
     400000: ceiling
     400002: door01
     400004: doorknob01
@@ -55,6 +58,9 @@ ModelImporter:
     400046: wall_n
     400048: wall_s
     400050: wall_w
+    400052: door02
+    400054: doorknob01_001
+    400056: doorway02
     2300000: ceiling
     2300002: door01
     2300004: doorknob01
@@ -80,6 +86,9 @@ ModelImporter:
     2300044: wall_n
     2300046: wall_s
     2300048: wall_w
+    2300050: door02
+    2300052: doorknob01_001
+    2300054: doorway02
     3300000: ceiling
     3300002: door01
     3300004: doorknob01
@@ -105,6 +114,9 @@ ModelImporter:
     3300044: wall_n
     3300046: wall_s
     3300048: wall_w
+    3300050: door02
+    3300052: doorknob01_001
+    3300054: doorway02
     4300000: doorway01
     4300002: door01
     4300004: doorknob01
@@ -130,6 +142,9 @@ ModelImporter:
     4300044: wall_e
     4300046: wall_s
     4300048: wall_n
+    4300050: doorway02
+    4300052: door02
+    4300054: doorknob01_001
     6400000: ceiling
     6400002: door01
     6400004: doorknob01
@@ -154,6 +169,9 @@ ModelImporter:
     6400042: wall_n
     6400044: wall_s
     6400046: wall_w
+    6400048: door02
+    6400050: doorknob01_001
+    6400052: doorway02
     7400000: door01_open
     7400002: door01_close
     9500000: //RootNode
