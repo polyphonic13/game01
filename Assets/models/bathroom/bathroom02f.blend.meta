@@ -93,6 +93,7 @@ ModelImporter:
     100174: pipe_verticle
     100176: pipe_verticle_cap
     100178: pipe_verticle_001
+    100180: Plane
     400000: base
     400002: base_bottom_trim
     400004: basin_trim_bottom
@@ -183,6 +184,7 @@ ModelImporter:
     400174: pipe_verticle
     400176: pipe_verticle_cap
     400178: pipe_verticle_001
+    400180: Plane
     2300000: base
     2300002: base_bottom_trim
     2300004: basin_trim_bottom
@@ -268,6 +270,7 @@ ModelImporter:
     2300164: pipe_verticle
     2300166: pipe_verticle_cap
     2300168: pipe_verticle_001
+    2300170: Plane
     3300000: base
     3300002: base_bottom_trim
     3300004: basin_trim_bottom
@@ -353,6 +356,7 @@ ModelImporter:
     3300164: pipe_verticle
     3300166: pipe_verticle_cap
     3300168: pipe_verticle_001
+    3300170: Plane
     4300000: Circle_001
     4300002: Circle
     4300004: pipe_cap_cold_004
@@ -438,6 +442,7 @@ ModelImporter:
     4300164: pipe_verticle
     4300166: hot_cap
     4300168: pipe_verticle_001
+    4300170: Plane
     6400000: base
     6400002: base_bottom_trim
     6400004: basin_trim_bottom
@@ -523,6 +528,7 @@ ModelImporter:
     6400164: pipe_verticle
     6400166: pipe_verticle_cap
     6400168: pipe_verticle_001
+    6400170: Plane
     7400000: open_door
     7400002: close_door
     9500000: //RootNode
