@@ -174,6 +174,8 @@ ModelImporter:
     6400052: doorway02
     7400000: door01_open
     7400002: door01_close
+    7400004: door02_open
+    7400006: door02_close
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -213,7 +215,49 @@ ModelImporter:
     - name: door01_close
       takeName: Default Take
       firstFrame: 10
-      lastFrame: 19
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: door02_open
+      takeName: Default Take
+      firstFrame: 20
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: door02_close
+      takeName: Default Take
+      firstFrame: 30
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
