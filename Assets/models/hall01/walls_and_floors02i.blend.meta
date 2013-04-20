@@ -32,6 +32,10 @@ ModelImporter:
     100052: door02
     100054: doorknob01_001
     100056: doorway02
+    100058: wall_bottom_trim_004
+    100060: wall_bottom_trim_005
+    100062: floor_door_trim01
+    100064: floor_door_trim02
     400000: ceiling
     400002: door01
     400004: doorknob01
@@ -61,6 +65,10 @@ ModelImporter:
     400052: door02
     400054: doorknob01_001
     400056: doorway02
+    400058: wall_bottom_trim_004
+    400060: wall_bottom_trim_005
+    400062: floor_door_trim01
+    400064: floor_door_trim02
     2300000: ceiling
     2300002: door01
     2300004: doorknob01
@@ -89,6 +97,10 @@ ModelImporter:
     2300050: door02
     2300052: doorknob01_001
     2300054: doorway02
+    2300056: wall_bottom_trim_004
+    2300058: wall_bottom_trim_005
+    2300060: floor_door_trim01
+    2300062: floor_door_trim02
     3300000: ceiling
     3300002: door01
     3300004: doorknob01
@@ -117,6 +129,10 @@ ModelImporter:
     3300050: door02
     3300052: doorknob01_001
     3300054: doorway02
+    3300056: wall_bottom_trim_004
+    3300058: wall_bottom_trim_005
+    3300060: floor_door_trim01
+    3300062: floor_door_trim02
     4300000: doorway01
     4300002: door01
     4300004: doorknob01
@@ -145,6 +161,10 @@ ModelImporter:
     4300050: doorway02
     4300052: door02
     4300054: doorknob01_001
+    4300056: wall_bottom_trim_005
+    4300058: wall_bottom_trim_004
+    4300060: floor_door_trim02
+    4300062: floor_door_trim01
     6400000: ceiling
     6400002: door01
     6400004: doorknob01
@@ -172,6 +192,10 @@ ModelImporter:
     6400048: door02
     6400050: doorknob01_001
     6400052: doorway02
+    6400054: wall_bottom_trim_004
+    6400056: wall_bottom_trim_005
+    6400058: floor_door_trim01
+    6400060: floor_door_trim02
     7400000: door01_open
     7400002: door01_close
     7400004: door02_open

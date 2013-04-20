@@ -54,6 +54,7 @@
      <Compile Include="Assets\scripts\Hall.cs" />
      <Compile Include="Assets\scripts\OpenCloseChild.cs" />
      <Compile Include="Assets\scripts\OpenCloseParent.cs" />
+     <Compile Include="Assets\scripts\Wardrobe.cs" />
      <Compile Include="Assets\scripts\exclusive_animation\ExclusiveAnimation.cs" />
      <Compile Include="Assets\scripts\exclusive_animation\ExclusiveAnimationChild.cs" />
      <Compile Include="Assets\scripts\exclusive_animation\ExclusiveAnimationGroup.cs" />
