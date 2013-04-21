@@ -27,6 +27,17 @@ ModelImporter:
     100042: top_trim_000
     100044: top_trim_004
     100046: top_trim_005
+    100048: base
+    100050: bed
+    100052: Cube_001
+    100054: Cube_002
+    100056: Cube_003
+    100058: Cube_004
+    100060: Cube_005
+    100062: Cylinder
+    100064: Cylinder_001
+    100066: Cylinder_002
+    100068: Cylinder_003
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -51,6 +62,17 @@ ModelImporter:
     400042: top_trim_000
     400044: top_trim_004
     400046: top_trim_005
+    400048: base
+    400050: bed
+    400052: Cube_001
+    400054: Cube_002
+    400056: Cube_003
+    400058: Cube_004
+    400060: Cube_005
+    400062: Cylinder
+    400064: Cylinder_001
+    400066: Cylinder_002
+    400068: Cylinder_003
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -74,6 +96,16 @@ ModelImporter:
     2300040: top_trim_000
     2300042: top_trim_004
     2300044: top_trim_005
+    2300046: base
+    2300048: Cube_001
+    2300050: Cube_002
+    2300052: Cube_003
+    2300054: Cube_004
+    2300056: Cube_005
+    2300058: Cylinder
+    2300060: Cylinder_001
+    2300062: Cylinder_002
+    2300064: Cylinder_003
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -97,6 +129,16 @@ ModelImporter:
     3300040: top_trim_000
     3300042: top_trim_004
     3300044: top_trim_005
+    3300046: base
+    3300048: Cube_001
+    3300050: Cube_002
+    3300052: Cube_003
+    3300054: Cube_004
+    3300056: Cube_005
+    3300058: Cylinder
+    3300060: Cylinder_001
+    3300062: Cylinder_002
+    3300064: Cylinder_003
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -120,6 +162,16 @@ ModelImporter:
     4300040: top_trim_000
     4300042: floor_board_004
     4300044: top_trim_004
+    4300046: Cube_003
+    4300048: Cube_002
+    4300050: Cube_001
+    4300052: base
+    4300054: Cylinder_003
+    4300056: Cylinder_002
+    4300058: Cylinder_001
+    4300060: Cylinder
+    4300062: Cube_005
+    4300064: Cube_004
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -143,6 +195,16 @@ ModelImporter:
     6400040: top_trim_000
     6400042: top_trim_004
     6400044: top_trim_005
+    6400046: base
+    6400048: Cube_001
+    6400050: Cube_002
+    6400052: Cube_003
+    6400054: Cube_004
+    6400056: Cube_005
+    6400058: Cylinder
+    6400060: Cylinder_001
+    6400062: Cylinder_002
+    6400064: Cylinder_003
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
