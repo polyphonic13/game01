@@ -38,6 +38,22 @@ ModelImporter:
     100064: Cylinder_001
     100066: Cylinder_002
     100068: Cylinder_003
+    100070: BezierCircle_002
+    100072: BezierCurve
+    100074: BezierCurve_001
+    100076: BezierCurve_002
+    100078: BezierCurve_003
+    100080: Cube_006
+    100082: Cube_007
+    100084: Icosphere
+    100086: Icosphere_001
+    100088: Icosphere_002
+    100090: Icosphere_003
+    100092: Icosphere_004
+    100094: Icosphere_005
+    100096: Icosphere_006
+    100098: mattress
+    100100: mattress_001
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -73,6 +89,22 @@ ModelImporter:
     400064: Cylinder_001
     400066: Cylinder_002
     400068: Cylinder_003
+    400070: BezierCircle_002
+    400072: BezierCurve
+    400074: BezierCurve_001
+    400076: BezierCurve_002
+    400078: BezierCurve_003
+    400080: Cube_006
+    400082: Cube_007
+    400084: Icosphere
+    400086: Icosphere_001
+    400088: Icosphere_002
+    400090: Icosphere_003
+    400092: Icosphere_004
+    400094: Icosphere_005
+    400096: Icosphere_006
+    400098: mattress
+    400100: mattress_001
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -106,6 +138,22 @@ ModelImporter:
     2300060: Cylinder_001
     2300062: Cylinder_002
     2300064: Cylinder_003
+    2300066: BezierCircle_002
+    2300068: BezierCurve
+    2300070: BezierCurve_001
+    2300072: BezierCurve_002
+    2300074: BezierCurve_003
+    2300076: Cube_006
+    2300078: Cube_007
+    2300080: Icosphere
+    2300082: Icosphere_001
+    2300084: Icosphere_002
+    2300086: Icosphere_003
+    2300088: Icosphere_004
+    2300090: Icosphere_005
+    2300092: Icosphere_006
+    2300094: mattress
+    2300096: mattress_001
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -139,6 +187,22 @@ ModelImporter:
     3300060: Cylinder_001
     3300062: Cylinder_002
     3300064: Cylinder_003
+    3300066: BezierCircle_002
+    3300068: BezierCurve
+    3300070: BezierCurve_001
+    3300072: BezierCurve_002
+    3300074: BezierCurve_003
+    3300076: Cube_006
+    3300078: Cube_007
+    3300080: Icosphere
+    3300082: Icosphere_001
+    3300084: Icosphere_002
+    3300086: Icosphere_003
+    3300088: Icosphere_004
+    3300090: Icosphere_005
+    3300092: Icosphere_006
+    3300094: mattress
+    3300096: mattress_001
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -172,6 +236,22 @@ ModelImporter:
     4300060: Cylinder
     4300062: Cube_005
     4300064: Cube_004
+    4300066: Icosphere_006
+    4300068: Icosphere_005
+    4300070: Icosphere_004
+    4300072: mattress_001
+    4300074: Icosphere_003
+    4300076: Icosphere_002
+    4300078: Icosphere_001
+    4300080: BezierCircle_002
+    4300082: BezierCurve_003
+    4300084: BezierCurve_002
+    4300086: BezierCurve_001
+    4300088: BezierCurve
+    4300090: mattress
+    4300092: Cube_007
+    4300094: Cube_006
+    4300096: Icosphere
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -205,6 +285,22 @@ ModelImporter:
     6400060: Cylinder_001
     6400062: Cylinder_002
     6400064: Cylinder_003
+    6400066: BezierCircle_002
+    6400068: BezierCurve
+    6400070: BezierCurve_001
+    6400072: BezierCurve_002
+    6400074: BezierCurve_003
+    6400076: Cube_006
+    6400078: Cube_007
+    6400080: Icosphere
+    6400082: Icosphere_001
+    6400084: Icosphere_002
+    6400086: Icosphere_003
+    6400088: Icosphere_004
+    6400090: Icosphere_005
+    6400092: Icosphere_006
+    6400094: mattress
+    6400096: mattress_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
