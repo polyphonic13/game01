@@ -38,6 +38,25 @@ ModelImporter:
     100064: Cylinder_001
     100066: Cylinder_002
     100068: Cylinder_003
+    100070: base_001
+    100072: BezierCircle
+    100074: BezierCircle_001
+    100076: BezierCircle_002
+    100078: BezierCircle_003
+    100080: BezierCircle_004
+    100082: BezierCircle_005
+    100084: BezierCircle_006
+    100086: BezierCircle_007
+    100088: BezierCurve
+    100090: BezierCurve_001
+    100092: BezierCurve_002
+    100094: BezierCurve_003
+    100096: Cube_006
+    100098: Cube_007
+    100100: Icosphere
+    100102: Icosphere_001
+    100104: Icosphere_002
+    100106: Icosphere_003
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -73,6 +92,25 @@ ModelImporter:
     400064: Cylinder_001
     400066: Cylinder_002
     400068: Cylinder_003
+    400070: base_001
+    400072: BezierCircle
+    400074: BezierCircle_001
+    400076: BezierCircle_002
+    400078: BezierCircle_003
+    400080: BezierCircle_004
+    400082: BezierCircle_005
+    400084: BezierCircle_006
+    400086: BezierCircle_007
+    400088: BezierCurve
+    400090: BezierCurve_001
+    400092: BezierCurve_002
+    400094: BezierCurve_003
+    400096: Cube_006
+    400098: Cube_007
+    400100: Icosphere
+    400102: Icosphere_001
+    400104: Icosphere_002
+    400106: Icosphere_003
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -106,6 +144,25 @@ ModelImporter:
     2300060: Cylinder_001
     2300062: Cylinder_002
     2300064: Cylinder_003
+    2300066: base_001
+    2300068: BezierCircle
+    2300070: BezierCircle_001
+    2300072: BezierCircle_002
+    2300074: BezierCircle_003
+    2300076: BezierCircle_004
+    2300078: BezierCircle_005
+    2300080: BezierCircle_006
+    2300082: BezierCircle_007
+    2300084: BezierCurve
+    2300086: BezierCurve_001
+    2300088: BezierCurve_002
+    2300090: BezierCurve_003
+    2300092: Cube_006
+    2300094: Cube_007
+    2300096: Icosphere
+    2300098: Icosphere_001
+    2300100: Icosphere_002
+    2300102: Icosphere_003
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -139,6 +196,25 @@ ModelImporter:
     3300060: Cylinder_001
     3300062: Cylinder_002
     3300064: Cylinder_003
+    3300066: base_001
+    3300068: BezierCircle
+    3300070: BezierCircle_001
+    3300072: BezierCircle_002
+    3300074: BezierCircle_003
+    3300076: BezierCircle_004
+    3300078: BezierCircle_005
+    3300080: BezierCircle_006
+    3300082: BezierCircle_007
+    3300084: BezierCurve
+    3300086: BezierCurve_001
+    3300088: BezierCurve_002
+    3300090: BezierCurve_003
+    3300092: Cube_006
+    3300094: Cube_007
+    3300096: Icosphere
+    3300098: Icosphere_001
+    3300100: Icosphere_002
+    3300102: Icosphere_003
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -172,6 +248,25 @@ ModelImporter:
     4300060: Cylinder
     4300062: Cube_005
     4300064: Cube_004
+    4300066: BezierCircle_007
+    4300068: Icosphere_003
+    4300070: BezierCircle_002
+    4300072: BezierCircle_006
+    4300074: Icosphere_002
+    4300076: BezierCircle_003
+    4300078: BezierCircle_005
+    4300080: Icosphere_001
+    4300082: BezierCircle_001
+    4300084: BezierCircle_004
+    4300086: Icosphere
+    4300088: BezierCurve_003
+    4300090: BezierCurve_002
+    4300092: BezierCurve_001
+    4300094: BezierCurve
+    4300096: BezierCircle
+    4300098: base_001
+    4300100: Cube_007
+    4300102: Cube_006
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -205,6 +300,25 @@ ModelImporter:
     6400060: Cylinder_001
     6400062: Cylinder_002
     6400064: Cylinder_003
+    6400066: base_001
+    6400068: BezierCircle
+    6400070: BezierCircle_001
+    6400072: BezierCircle_002
+    6400074: BezierCircle_003
+    6400076: BezierCircle_004
+    6400078: BezierCircle_005
+    6400080: BezierCircle_006
+    6400082: BezierCircle_007
+    6400084: BezierCurve
+    6400086: BezierCurve_001
+    6400088: BezierCurve_002
+    6400090: BezierCurve_003
+    6400092: Cube_006
+    6400094: Cube_007
+    6400096: Icosphere
+    6400098: Icosphere_001
+    6400100: Icosphere_002
+    6400102: Icosphere_003
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
