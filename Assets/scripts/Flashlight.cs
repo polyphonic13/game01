@@ -9,6 +9,17 @@ public class Flashlight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(collected) {
+			if(Input.GetKeyDown("f")) {
+				if(isOn) {
+					// turn off
+					Debug.Log("turning flashlight off");					
+				} else {
+					// turn on
+					Debug.Log("turning flashlight on");
+				}
+				isOn = !isOn;
+			}
+		}
 	}
 }
