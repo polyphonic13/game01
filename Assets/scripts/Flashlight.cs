@@ -6,6 +6,12 @@ public class Flashlight : MonoBehaviour {
 	public bool collected = true;
 
 	bool isOn = false;
+	Light bulb;
+	
+	void Awake() {
+		bulb = this.transform.GetComponentInChildren("flashlight_bulb");
+		Debug.Log("bulb = " + bulb);
+	}
 	
 	// Update is called once per frame
 	void Update () {
