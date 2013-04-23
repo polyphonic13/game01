@@ -9,7 +9,7 @@ public class Flashlight : MonoBehaviour {
 	Light bulb;
 	
 	void Awake() {
-		bulb = this.transform.GetComponentInChildren("flashlight_bulb");
+		//bulb = this.transform.GetComp("flashlight_bulb");
 		Debug.Log("bulb = " + bulb);
 	}
 	
