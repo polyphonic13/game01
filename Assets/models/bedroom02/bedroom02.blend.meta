@@ -54,6 +54,7 @@ ModelImporter:
     100096: Icosphere_006
     100098: mattress
     100100: mattress_001
+    100102: BezierCurve_004
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -105,6 +106,7 @@ ModelImporter:
     400096: Icosphere_006
     400098: mattress
     400100: mattress_001
+    400102: BezierCurve_004
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -154,6 +156,7 @@ ModelImporter:
     2300092: Icosphere_006
     2300094: mattress
     2300096: mattress_001
+    2300098: BezierCurve_004
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -203,6 +206,7 @@ ModelImporter:
     3300092: Icosphere_006
     3300094: mattress
     3300096: mattress_001
+    3300098: BezierCurve_004
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -252,6 +256,7 @@ ModelImporter:
     4300092: Cube_007
     4300094: Cube_006
     4300096: Icosphere
+    4300098: BezierCurve_004
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -301,6 +306,7 @@ ModelImporter:
     6400092: Icosphere_006
     6400094: mattress
     6400096: mattress_001
+    6400098: BezierCurve_004
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
