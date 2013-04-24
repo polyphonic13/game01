@@ -58,6 +58,11 @@ ModelImporter:
     100104: body
     100106: end_table
     100108: top
+    100110: Cube_008
+    100112: drawer_bottom
+    100114: drawer_top
+    100116: Cube_009
+    100118: drawer_top_001
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -113,6 +118,11 @@ ModelImporter:
     400104: body
     400106: end_table
     400108: top
+    400110: Cube_008
+    400112: drawer_bottom
+    400114: drawer_top
+    400116: Cube_009
+    400118: drawer_top_001
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -165,6 +175,11 @@ ModelImporter:
     2300098: BezierCurve_004
     2300100: body
     2300102: top
+    2300104: Cube_008
+    2300106: drawer_bottom
+    2300108: drawer_top
+    2300110: Cube_009
+    2300112: drawer_top_001
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -217,6 +232,11 @@ ModelImporter:
     3300098: BezierCurve_004
     3300100: body
     3300102: top
+    3300104: Cube_008
+    3300106: drawer_bottom
+    3300108: drawer_top
+    3300110: Cube_009
+    3300112: drawer_top_001
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -269,6 +289,11 @@ ModelImporter:
     4300098: BezierCurve_004
     4300100: top
     4300102: body
+    4300104: Cube_008
+    4300106: drawer_bottom
+    4300108: drawer_top
+    4300110: Cube_009
+    4300112: drawer_top_001
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -321,6 +346,11 @@ ModelImporter:
     6400098: BezierCurve_004
     6400100: body
     6400102: top
+    6400104: Cube_008
+    6400106: drawer_bottom
+    6400108: drawer_top
+    6400110: Cube_009
+    6400112: drawer_top_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
