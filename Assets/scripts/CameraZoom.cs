@@ -8,7 +8,11 @@ public class CameraZoom : MonoBehaviour {
 	int normal = 60;
 	float smooth = 5;
 	bool isZoomed = false;
-	
+
+	void Start() {
+//		Debug.Log( "CameraZoom, this = " + this + ", gameobject = " + this.gameObject );
+		camera = Camera.main;
+	}
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown("z")) {
