@@ -63,6 +63,13 @@ ModelImporter:
     100114: drawer_top
     100116: Cube_009
     100118: drawer_top_001
+    100120: boxspring
+    100122: footboard
+    100124: headboard
+    100126: leg_back_left
+    100128: leg_back_right
+    100130: leg_front_left
+    100132: leg_front_right
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -123,6 +130,13 @@ ModelImporter:
     400114: drawer_top
     400116: Cube_009
     400118: drawer_top_001
+    400120: boxspring
+    400122: footboard
+    400124: headboard
+    400126: leg_back_left
+    400128: leg_back_right
+    400130: leg_front_left
+    400132: leg_front_right
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -180,6 +194,13 @@ ModelImporter:
     2300108: drawer_top
     2300110: Cube_009
     2300112: drawer_top_001
+    2300114: boxspring
+    2300116: footboard
+    2300118: headboard
+    2300120: leg_back_left
+    2300122: leg_back_right
+    2300124: leg_front_left
+    2300126: leg_front_right
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -237,6 +258,13 @@ ModelImporter:
     3300108: drawer_top
     3300110: Cube_009
     3300112: drawer_top_001
+    3300114: boxspring
+    3300116: footboard
+    3300118: headboard
+    3300120: leg_back_left
+    3300122: leg_back_right
+    3300124: leg_front_left
+    3300126: leg_front_right
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -294,6 +322,13 @@ ModelImporter:
     4300108: drawer_top
     4300110: Cube_009
     4300112: drawer_top_001
+    4300114: boxspring
+    4300116: headboard
+    4300118: leg_front_left
+    4300120: leg_back_left
+    4300122: leg_back_right
+    4300124: footboard
+    4300126: leg_front_right
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -351,6 +386,13 @@ ModelImporter:
     6400108: drawer_top
     6400110: Cube_009
     6400112: drawer_top_001
+    6400114: boxspring
+    6400116: footboard
+    6400118: headboard
+    6400120: leg_back_left
+    6400122: leg_back_right
+    6400124: leg_front_left
+    6400126: leg_front_right
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
