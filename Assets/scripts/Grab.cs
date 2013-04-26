@@ -19,15 +19,17 @@ public class GrabCS : MonoBehaviour {
 			Debug.Log("mouse btn clicked, pickObj = " + pickObj);
 	        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 	        if (!pickObj){ // if nothing picked yet...
+				Debug.Log("nothing picked yet");
 	            if (Physics.Raycast(ray, out hit, 1)) {
 					Debug.Log("hit something: " + hit.transform.name);
 					if(hit.transform.tag == "collectable"){
-					Debug.Log("hit transform parent name = " + hit.transform.parent.name);
-	                // if it's a rigidbody, zero its physics velocity
+						var obj = hit.transform.gameObject;
+						obj.collected = true;
+					// if it's a rigidbody, zero its physics velocity
 	                if (hit.rigidbody) hit.rigidbody.velocity = Vector3.zero;
-					if(hit.transform.parent.tag == "collectable") {
-						pickParentObj = hit.transform.parent.transform;
-					}
+//					if(hit.transform.parent.tag == "collectable") {
+//						pickParentObj = hit.transform.parent.transform;
+//					}
 	                pickObj = hit.transform; // now there's an object picked
 	                // remember its distance from the camera
 	                dist = Vector3.Distance(pickObj.position, Camera.main.transform.position);

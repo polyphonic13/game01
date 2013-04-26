@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class Flashlight : MonoBehaviour {
+public class Flashlight : CollectableItem {
 
-	public bool collected = false;
 	Light bulb; 
 	
 	void Awake() {
