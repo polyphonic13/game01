@@ -36,9 +36,12 @@ public class Flashlight : CollectableItem {
 	}
 	
 	public void OnMouseDown() {
+		Debug.Log("Flashlight/OnMouseDown");
 		if(!collected) {
 			collected = true;
-			
+			//this.transform.position = Camera.main.transform.position;
+			this.transform.parent = Camera.main.transform;
 		}
 	}
 }
+	

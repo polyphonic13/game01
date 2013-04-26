@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Grab.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Flashlight.cs">
     <Files>
-      <File FileName="Assets/scripts/Flashlight.cs" Line="6" Column="1" />
+      <File FileName="Assets/scripts/Flashlight.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Grab.cs" Line="27" Column="28" />
       <File FileName="Assets/scripts/DresserDrawer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/CollectableItem.cs" Line="8" Column="1" />
+      <File FileName="Assets/scripts/CollectableItem.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
