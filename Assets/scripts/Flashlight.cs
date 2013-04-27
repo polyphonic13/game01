@@ -6,8 +6,6 @@ public class Flashlight : CollectableItem {
 	Light bulb; 
 	
 	void Awake() {
-		//bulb = this.transform.GetComp("flashlight_bulb");
-		// this.light.enabled = false;
 		bulb = this.transform.Search("flashlight_bulb").light;
 		bulb.enabled = false;
 	}
@@ -16,21 +14,7 @@ public class Flashlight : CollectableItem {
 	void Update () {
 		if(collected) {
 			if(Input.GetKeyDown("f")) {
-				//this.light.enabled = !this.light.enabled;
 				bulb.enabled = !bulb.enabled;
-				/*
-				if(isOn) {
-					// turn off
-					Debug.Log("turning flashlight off");					
-					this.enabled = false;
-					isOn = false;
-				} else {
-					// turn on
-					Debug.Log("turning flashlight on");
-					this.enabled = true;
-					isOn = true;
-				}
-				*/
 			}
 		}
 	}
@@ -39,8 +23,13 @@ public class Flashlight : CollectableItem {
 		Debug.Log("Flashlight/OnMouseDown");
 		if(!collected) {
 			collected = true;
-			//this.transform.position = Camera.main.transform.position;
-			this.transform.parent = Camera.main.transform;
+			var hand = Camera.main.transform.Search("right_hand");
+			Debug.Log("hand = " + hand + ", transform = " + hand.transform + ", position = " + hand.transform.position);
+			if(hand) {
+				this.transform.position = hand.transform.position;
+				this.transform.rotation = hand.transform.rotation;
+				this.transform.parent = hand.transform;
+			}
 		}
 	}
 }
