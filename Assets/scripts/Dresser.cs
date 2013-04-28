@@ -8,7 +8,7 @@ public class Dresser : OpenCloseParent {
 	}
 	
 	public override void OpenChild(OpenCloseChild child) {
-//		Debug.Log("OpenDrawer, currentOpen = " + currentOpen + ", child = " + child.name);
+		Debug.Log("OpenDrawer, currentOpen = " + currentOpen + ", child = " + child.name);
 		if(currentOpen != null && currentOpen != child) {
 			CloseChild(currentOpen);
 		}

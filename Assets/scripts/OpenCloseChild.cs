@@ -10,7 +10,7 @@ public abstract class OpenCloseChild : MonoBehaviour {
 	
 	public abstract void SetParent();
 	public void OnMouseDown() {
-		//Debug.Log("DresserDrawer/OnMouseDown, name = " + this.name);
+		Debug.Log("DresserDrawer/OnMouseDown, name = " + this.name);
 		if(isOpen) {
 			pops.CloseChild(this);
 			isOpen = false;
