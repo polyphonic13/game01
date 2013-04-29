@@ -71,6 +71,12 @@ ModelImporter:
     100130: leg_front_left
     100132: leg_front_right
     100134: doorway_001
+    100136: doorway_002
+    100138: closet_ceiling
+    100140: closet_foor
+    100142: closet_shelf_e
+    100144: closet_shelf_s
+    100146: closet_walls
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -139,6 +145,12 @@ ModelImporter:
     400130: leg_front_left
     400132: leg_front_right
     400134: doorway_001
+    400136: doorway_002
+    400138: closet_ceiling
+    400140: closet_foor
+    400142: closet_shelf_e
+    400144: closet_shelf_s
+    400146: closet_walls
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -204,6 +216,12 @@ ModelImporter:
     2300124: leg_front_left
     2300126: leg_front_right
     2300128: doorway_001
+    2300130: doorway_002
+    2300132: closet_ceiling
+    2300134: closet_foor
+    2300136: closet_shelf_e
+    2300138: closet_shelf_s
+    2300140: closet_walls
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -269,6 +287,12 @@ ModelImporter:
     3300124: leg_front_left
     3300126: leg_front_right
     3300128: doorway_001
+    3300130: doorway_002
+    3300132: closet_ceiling
+    3300134: closet_foor
+    3300136: closet_shelf_e
+    3300138: closet_shelf_s
+    3300140: closet_walls
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -334,6 +358,12 @@ ModelImporter:
     4300124: footboard
     4300126: leg_front_right
     4300128: doorway_001
+    4300130: doorway_002
+    4300132: closet_shelf_s
+    4300134: closet_shelf_e
+    4300136: closet_ceiling
+    4300138: closet_foor
+    4300140: closet_walls
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -399,6 +429,12 @@ ModelImporter:
     6400124: leg_front_left
     6400126: leg_front_right
     6400128: doorway_001
+    6400130: doorway_002
+    6400132: closet_ceiling
+    6400134: closet_foor
+    6400136: closet_shelf_e
+    6400138: closet_shelf_s
+    6400140: closet_walls
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode

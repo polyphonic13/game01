@@ -24,7 +24,7 @@ public class Flashlight : CollectableItem {
 	
 	public void OnMouseDown() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if(difference < ineractDistance) {
+		if(difference < interactDistance) {
 			if(!collected) {
 				collected = true;
 				var hand = Camera.main.transform.Search("right_hand");
