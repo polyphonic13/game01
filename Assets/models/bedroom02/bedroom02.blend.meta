@@ -77,6 +77,9 @@ ModelImporter:
     100142: closet_shelf_e
     100144: closet_shelf_s
     100146: closet_walls
+    100148: closet_dowel_e
+    100150: closet_dowel_s
+    100152: closet
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -151,6 +154,9 @@ ModelImporter:
     400142: closet_shelf_e
     400144: closet_shelf_s
     400146: closet_walls
+    400148: closet_dowel_e
+    400150: closet_dowel_s
+    400152: closet
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -222,6 +228,8 @@ ModelImporter:
     2300136: closet_shelf_e
     2300138: closet_shelf_s
     2300140: closet_walls
+    2300142: closet_dowel_e
+    2300144: closet_dowel_s
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -293,6 +301,8 @@ ModelImporter:
     3300136: closet_shelf_e
     3300138: closet_shelf_s
     3300140: closet_walls
+    3300142: closet_dowel_e
+    3300144: closet_dowel_s
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -364,6 +374,8 @@ ModelImporter:
     4300136: closet_ceiling
     4300138: closet_foor
     4300140: closet_walls
+    4300142: closet_dowel_s
+    4300144: closet_dowel_e
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -435,6 +447,8 @@ ModelImporter:
     6400136: closet_shelf_e
     6400138: closet_shelf_s
     6400140: closet_walls
+    6400142: closet_dowel_e
+    6400144: closet_dowel_s
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
