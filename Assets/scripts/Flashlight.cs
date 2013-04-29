@@ -23,14 +23,16 @@ public class Flashlight : CollectableItem {
 	}
 	
 	public void OnMouseDown() {
-		Debug.Log("Flashlight/OnMouseDown");
-		if(!collected) {
-			collected = true;
-			var hand = Camera.main.transform.Search("right_hand");
-			this.transform.position = hand.transform.position;
-			this.transform.rotation = hand.transform.rotation;
-			this.transform.parent = hand.transform;
-			flashlight_base.renderer.enabled = false;
+		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if(difference < ineractDistance) {
+			if(!collected) {
+				collected = true;
+				var hand = Camera.main.transform.Search("right_hand");
+				this.transform.position = hand.transform.position;
+				this.transform.rotation = hand.transform.rotation;
+				this.transform.parent = hand.transform;	
+				flashlight_base.renderer.enabled = false;
+			}
 		}
 	}
 }

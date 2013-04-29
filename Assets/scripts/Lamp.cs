@@ -11,7 +11,11 @@ public class Lamp : MonoBehaviour {
 	}
 
 	public void OnMouseDown() {
-		Debug.Log("Lamp/on mouse down");
-		bulb.enabled = !bulb.enabled;	
+		// Debug.Log("Lamp/on mouse down");
+		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if(difference < 2) {
+			Debug.Log("Flashlight/OnMouseDown, difference = " + difference);
+			bulb.enabled = !bulb.enabled;	
+		}
 	}
 }
