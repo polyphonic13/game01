@@ -4,7 +4,9 @@ using System.Collections;
 public class CameraZoom : MonoBehaviour {
 	
 	Camera camera;
-	float initialHeight;
+	Transform fpc;
+	CharacterController controller;
+	float altHeightChange = 3.0f;
 	int zoom = 20;
 	int normal = 60;
 	float smooth = 5;
@@ -14,6 +16,12 @@ public class CameraZoom : MonoBehaviour {
 	void Start() {
 //		Debug.Log( "CameraZoom, this = " + this + ", gameobject = " + this.gameObject );
 		camera = Camera.main;
+	    //controller = GetComponent<CharacterController>();
+		//controller = (CharacterController)GetComponent(typeof(CharacterController));
+		fpc = GameObject.Find("player").transform;
+		Debug.Log("fpc = " + fpc);
+//		controller = fpc.GetComponent<CharacterController>();
+//		Debug.Log("controller = " + controller);
 	}
 	// Update is called once per frame
 	void Update () {
@@ -28,10 +36,16 @@ public class CameraZoom : MonoBehaviour {
 		if(Input.GetKeyDown("c")) {
 			isCrouched = !isCrouched;
 		}
-//		if(isCrouched) {
-//			camera.transform.position = 
-//		} else {
-			
-//		}
+		if(isCrouched) {
+			Vector3 tempCenter = controller.center;
+			tempCenter.y -= altHeightChange * 0.5f;
+            controller.center = tempCenter;
+            controller.height -= altHeightChange;
+		} else {
+			Vector3 tempCenter = controller.center;
+			tempCenter.y += altHeightChange * 0.5f;
+            controller.center = tempCenter;
+            controller.height += altHeightChange;
+		}
 	}
 }
