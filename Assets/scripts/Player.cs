@@ -12,16 +12,24 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown("q")) {
-			Debug.Log("Player/Update, q pressed");
 			inventoryOpen = !inventoryOpen;
 		}
 	}
 	
-	void OnGui() {
-		Debug.Log("Player/OnGui, inventoryOpen = " + inventoryOpen);
+	void OnGUI() {
 		if(inventoryOpen) {
 			GUI.Box(new Rect(0, 0, Screen.width/2, Screen.height/2), "HELLO INVENTORY!");
+			disablePlayer(true);
+		} else {
+			var mouseLook = GetComponent<MouseLook>();
+			disablePlayer(false);
 		}
 	}
 	
+	void disablePlayer(bool disabled) {
+		var mouseLook = GetHashCode<MouseLook>();
+		mouseLook.isEnabled = disabled;
+		//var character = GetComponent<CharacterMotor>();
+		//character.SetControllable(!disabled);
+	}
 }
