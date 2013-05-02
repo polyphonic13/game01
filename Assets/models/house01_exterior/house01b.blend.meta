@@ -67,6 +67,10 @@ ModelImporter:
     100122: window_roof_w_b
     100124: window_roof_w_t
     100126: window_roof_w_t_001
+    100128: tower_ceiling
+    100130: tower_floor
+    100132: tower_floor_001
+    100134: tower_floor_002
     400000: center_hall
     400002: center_hall_002
     400004: center_hall_floor_3
@@ -131,6 +135,10 @@ ModelImporter:
     400122: window_roof_w_b
     400124: window_roof_w_t
     400126: window_roof_w_t_001
+    400128: tower_ceiling
+    400130: tower_floor
+    400132: tower_floor_001
+    400134: tower_floor_002
     2300000: center_hall
     2300002: center_hall_002
     2300004: center_hall_floor_3
@@ -189,6 +197,10 @@ ModelImporter:
     2300110: window_roof_w_b
     2300112: window_roof_w_t
     2300114: window_roof_w_t_001
+    2300116: tower_ceiling
+    2300118: tower_floor
+    2300120: tower_floor_001
+    2300122: tower_floor_002
     3300000: center_hall
     3300002: center_hall_002
     3300004: center_hall_floor_3
@@ -247,6 +259,10 @@ ModelImporter:
     3300110: window_roof_w_b
     3300112: window_roof_w_t
     3300114: window_roof_w_t_001
+    3300116: tower_ceiling
+    3300118: tower_floor
+    3300120: tower_floor_001
+    3300122: tower_floor_002
     4300000: window_roof_e_t_003
     4300002: window_roof_e_t_002
     4300004: top_forward_roof
@@ -305,6 +321,10 @@ ModelImporter:
     4300110: center_hall
     4300112: turret_est
     4300114: east_wing
+    4300116: tower_ceiling
+    4300118: tower_floor
+    4300120: tower_floor_002
+    4300122: tower_floor_001
     6400000: center_hall
     6400002: center_hall_002
     6400004: center_hall_floor_3
@@ -363,6 +383,10 @@ ModelImporter:
     6400110: window_roof_w_b
     6400112: window_roof_w_t
     6400114: window_roof_w_t_001
+    6400116: tower_ceiling
+    6400118: tower_floor
+    6400120: tower_floor_001
+    6400122: tower_floor_002
     7400000: Default Take
     9500000: //RootNode
   materials:
