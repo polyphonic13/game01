@@ -4,33 +4,24 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	
 	bool inventoryOpen = false;
-	InventoryManager inventory;
+	//InventoryManager inventory;
 	
 	// Use this for initialization
-	void Start () {
-		inventory = new InventoryManager();
-	}
+	void Start () {}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown("q")) {
-			if(inventoryOpen) {
-				Debug.Log("close inventory");
-				this.OpenInventory();
-			} else {
-				Debug.Log("open inventory");
-				this.CloseInventory();
-			}
+			Debug.Log("Player/Update, q pressed");
 			inventoryOpen = !inventoryOpen;
 		}
 	}
 	
-	void OpenInventory() {
-		inventory.ShowItems();
+	void OnGui() {
+		Debug.Log("Player/OnGui, inventoryOpen = " + inventoryOpen);
+		if(inventoryOpen) {
+			GUI.Box(new Rect(0, 0, Screen.width/2, Screen.height/2), "HELLO INVENTORY!");
+		}
 	}
 	
-	void CloseInventory() {
-		inventory.HideItems();
-	}
-
 }
