@@ -45,18 +45,23 @@ public class CollectableItem : MonoBehaviour {
 		if(this.renderer) {
 			this.renderer.enabled = enable;
 		}
+/*		
 		Renderer[] cr = GetComponentInChildren<Renderer>();
 		foreach(Renderer r in cr) {
 			r.enabled = enable;
 		}
+*/		
 	}		
 	
 	public void AttachTransforms() {
 		AttachToHands(this.transform);
+
+/*
 		Transform[] ct = GetComponentInChildren<Transform>();
 		foreach(Transform t in ct) {
 			AttachToHands(t.transform);
 		}
+*/		
 	}
 	
 	void AttachToHands(Transform transform) {
@@ -68,35 +73,21 @@ public class CollectableItem : MonoBehaviour {
 }
 
 /*
- * recursive disabling
-Stack<Transform> children = new Stack<Transform>();
+  recursive disabling
+		Stack<Transform> children = new Stack<Transform>();
+		children.Push(this.transform);
+		
+		while(children.Count > 0) {
+		    Transform current = children.Pop();
+		    Renderer renderer = current.GetComponent<Renderer>();
+		
+		    if (renderer != null) {
+		        renderer.enabled = false;
+		    }
+		
+		    foreach(Transform child in current.transform) {
+		        children.Push(child);
+		    }
+		}
 
-children.Push(this.transform);
-
-while(children.Count > 0)
-
-{
-
-    Transform current = children.Pop();
-
-    Renderer renderer = current.GetComponent<Renderer>();
-
-    if (renderer != null)
-
-    {
-
-        renderer.enabled = false;
-
-    }
-
-    foreach(Transform child in current.transform)
-
-    {
-
-        children.Push(child);
-
-    }
-
-}
-
- * /
+*/

@@ -28,7 +28,7 @@ public class InventoryManager {
 	}
 
 	public void DrawInventory() {
-		GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
+//		GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 		Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
@@ -45,7 +45,8 @@ public class InventoryManager {
 			if (currentInventoryItem == null) {          
 				GUI.DrawTexture (currentRect, emptySlot);
 			} else {
-				Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect + ", " + currentRect.width + ", " + currentRect.height + ", " + currentRect.x + ", " + currentRect.y);
+				Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
+				GUI.Box(new Rect(100, 100, 200, 200), currentInventoryItem.name);
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
 				GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
 			}
