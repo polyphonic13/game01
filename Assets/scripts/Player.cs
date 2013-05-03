@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		Debug.Log("PLAYER START!");
 		camera = Camera.main;
 		inventory = new InventoryManager();
 		inventory.init();
@@ -28,8 +29,9 @@ public class Player : MonoBehaviour {
 	void OnGUI() {
 		if(inventoryOpen) {
 			GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
-			ArrayList items = inventory.GetItems();
-			Debug.Log("items = " + items.Count);
+			//ArrayList items = inventory.GetItems();
+			//Debug.Log("items = " + items.Count);
+			inventory.DrawInventory();
 		}
 	}
 	
