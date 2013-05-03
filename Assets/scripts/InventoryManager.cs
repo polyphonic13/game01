@@ -7,7 +7,7 @@ public class InventoryManager {
 	
 	public void init() {
 		inventoryArray = new ArrayList();	
-		Debug.Log("inventory/start, inventoryArray = " + inventoryArray);
+		//Debug.Log("inventory/start, inventoryArray = " + inventoryArray);
 	}
 	
 	public void AddItem(CollectableItem item) {

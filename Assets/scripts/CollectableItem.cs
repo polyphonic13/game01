@@ -12,6 +12,7 @@ public class CollectableItem : MonoBehaviour {
 	
 	void Awake() {
 		player = GetComponent<Player>();
+		Debug.Log("player = " + player);
 	}
 	
 	public void addToInventory() {
