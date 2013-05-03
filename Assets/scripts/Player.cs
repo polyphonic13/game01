@@ -28,6 +28,8 @@ public class Player : MonoBehaviour {
 	void OnGUI() {
 		if(inventoryOpen) {
 			GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
+			ArrayList items = inventory.GetItems();
+			Debug.Log("items = " + items.Count);
 		}
 	}
 	
