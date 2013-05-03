@@ -14,6 +14,7 @@ public class InventoryManager {
 	
 	public void init() {
 		inventory = new ArrayList();	
+		offset = new Vector2(10, 10);
 		//Debug.Log("inventory/start, inventory = " + inventory);
 	}
 	
@@ -27,6 +28,7 @@ public class InventoryManager {
 	}
 
 	public void DrawInventory() {
+		GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 		Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
@@ -37,15 +39,16 @@ public class InventoryManager {
 	       j = i / inventoryWidth;                              //   ... divide by array by width to get rows...
 	       k = i % inventoryWidth;                              //   ... find the remainder by width to get columns...
 	       currentInventoryItem = inventory[i] as CollectableItem;                    //   ... set this point in the matrix as our current point ...
+			Debug.Log("i = " + i + ", j = " + j + ", k = " + k + ", currentInventoryItem = " + currentInventoryItem.name);
 	       currentRect = (new Rect (offset.x + k * (iconWidthHeight + spacing), offset.y + j * (iconWidthHeight + spacing), iconWidthHeight, iconWidthHeight));
-	       if (currentInventoryItem == null)           //   ... if there is no item in the j-th row and the k-th column, draw a blank texture
-	       {                     
-	         GUI.DrawTexture (currentRect, emptySlot);
-	       } 
-	       else 
-	       {
-	         GUI.DrawTexture (currentRect, currentInventoryItem.icon);
-	       }
+	       //   ... if there is no item in the j-th row and the k-th column, draw a blank texture
+			if (currentInventoryItem == null) {          
+				GUI.DrawTexture (currentRect, emptySlot);
+			} else {
+				Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect + ", " + currentRect.width + ", " + currentRect.height + ", " + currentRect.x + ", " + currentRect.y);
+				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
+				GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
+			}
 	 
 	       //   If there is an item at this location and there is a button click...
 //	       if (currentInventoryItem != null) 

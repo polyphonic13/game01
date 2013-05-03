@@ -27,10 +27,7 @@ public class Flashlight : CollectableItem {
 		if(difference < interactDistance) {
 			if(!collected) {
 				collected = true;
-				var hand = Camera.main.transform.Search("right_hand");
-				this.transform.position = hand.transform.position;
-				this.transform.rotation = hand.transform.rotation;
-				this.transform.parent = hand.transform;	
+				AttachTransforms();				
 				//flashlight_base.renderer.enabled = bulb.enabled = true;
 				AddToInventory();
 			}
