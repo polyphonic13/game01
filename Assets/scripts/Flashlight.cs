@@ -22,7 +22,7 @@ public class Flashlight : CollectableItem {
 		}
 	}
 	
-	public void OnMouseDown() {
+	public override void OnMouseDown() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
 			if(!collected) {
@@ -31,8 +31,8 @@ public class Flashlight : CollectableItem {
 				this.transform.position = hand.transform.position;
 				this.transform.rotation = hand.transform.rotation;
 				this.transform.parent = hand.transform;	
-				flashlight_base.renderer.enabled = bulb.enabled = true;
-				addToInventory();
+				//flashlight_base.renderer.enabled = bulb.enabled = true;
+				AddToInventory();
 			}
 		}
 	}

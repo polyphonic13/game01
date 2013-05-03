@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown("q")) {
 			inventoryOpen = !inventoryOpen;
-			disablePlayer(!inventoryOpen);
+			DisablePlayer(!inventoryOpen);
 		}
 	}
 	
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour {
 		}
 	}
 	
-	void disablePlayer(bool disable) {
+	void DisablePlayer(bool disable) {
 		var mouseLook = GetComponent<MouseLook>();
 		mouseLook.isEnabled = disable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();

@@ -8,15 +8,15 @@ public class CollectableItem : MonoBehaviour {
 	public Texture icon;
 	public string description;
 	
-	Player player;
+	void Awake() {}
 	
-	void Awake() {
-		player = GetComponent<Player>();
-		Debug.Log("player = " + player);
+	public virtual void OnMouseDown() {
+		AddToInventory();
 	}
 	
-	public void addToInventory() {
-		Debug.Log("collectable item/add to inventory, this = " + this + ", inventory = " + player.inventory);
-		//player.inventory.AddItem(this);	
+	public void AddToInventory() {
+		var player = GameObject.Find("player").GetComponent<Player>();
+		player.inventory.AddItem(this);	
+		Destroy(this.gameObject);
 	}
 }

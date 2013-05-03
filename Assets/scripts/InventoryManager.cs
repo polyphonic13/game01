@@ -11,7 +11,7 @@ public class InventoryManager {
 	}
 	
 	public void AddItem(CollectableItem item) {
-		Debug.Log("inventory manager/AddItem, item = " + item);
+		Debug.Log("inventory manager/AddItem, item = " + item + ", description = " + item.description);
 		inventoryArray.Add (item);	
 	}
 }
