@@ -23,7 +23,7 @@ public class Player : MonoBehaviour {
 	
 	void OnGUI() {
 		if(inventoryOpen) {
-			GUI.Box(new Rect(0, 0, Screen.width/2, Screen.height/2), "HELLO INVENTORY!");
+			GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 		}
 	}
 	
