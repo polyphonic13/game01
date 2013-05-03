@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 	public InventoryManager inventory;
 	
 	bool inventoryOpen = false;
+	bool inventoryDrawn = false;
 	Camera camera;
 	
 	// Use this for initialization
@@ -23,6 +24,9 @@ public class Player : MonoBehaviour {
 		if(Input.GetKeyDown("q")) {
 			inventoryOpen = !inventoryOpen;
 			DisablePlayer(!inventoryOpen);
+			if(!inventoryOpen) { 
+				inventoryDrawn = false;
+			}
 		}
 	}
 	
@@ -31,7 +35,10 @@ public class Player : MonoBehaviour {
 			GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 			//ArrayList items = inventory.GetItems();
 			//Debug.Log("items = " + items.Count);
-			inventory.DrawInventory();
+			if(!inventoryDrawn) {
+				inventory.DrawInventory();
+				inventoryDrawn = true;
+			}
 		}
 	}
 	

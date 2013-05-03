@@ -6,7 +6,7 @@ public class InventoryManager {
 	ArrayList inventory;
 	
 	int inventoryLength;
-	int inventoryWidth;
+	int inventoryWidth = 10;
 	float iconWidthHeight = 100;
 	int spacing = 10;
 	Vector2 offset; 
