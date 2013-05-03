@@ -3,14 +3,18 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	
+	public InventoryManager inventory;
+	
 	bool inventoryOpen = false;
 	Camera camera;
-	//InventoryManager inventory;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		camera = Camera.main;
+		inventory = new InventoryManager();
+		inventory.init();
+		//Debug.Log("inventory = " + inventory);
 	}
 	
 	// Update is called once per frame

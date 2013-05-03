@@ -32,6 +32,7 @@ public class Flashlight : CollectableItem {
 				this.transform.rotation = hand.transform.rotation;
 				this.transform.parent = hand.transform;	
 				flashlight_base.renderer.enabled = bulb.enabled = true;
+				addToInventory();
 			}
 		}
 	}
