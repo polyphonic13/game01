@@ -1,14 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
-public class InventoryManager : MonoBehaviour {
+public class InventoryManager {
 	
 	ArrayList inventory;
 	
 	int inventoryLength;
-	int inventoryWidth = 10;
+	int inventoryWidth = 5;
 	float iconWidthHeight = 100;
-	int spacing = 10;
+	int spacing = 20;
 	Vector2 offset; 
 	Texture emptySlot; 
 	
@@ -28,13 +28,13 @@ public class InventoryManager : MonoBehaviour {
 	}
 
 	public void DrawInventory() {
-		GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
+		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), "INVENTORY");
 		Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
 	    CollectableItem currentInventoryItem;                    //   Establish a variable to hold our data
 	    Rect currentRect;
-/*	    
+
 		for (int i = 0; i < inventory.Count; i ++) {                 //   Go through each row ...
 	       j = i / inventoryWidth;                              //   ... divide by array by width to get rows...
 	       k = i % inventoryWidth;                              //   ... find the remainder by width to get columns...
@@ -46,9 +46,9 @@ public class InventoryManager : MonoBehaviour {
 				GUI.DrawTexture (currentRect, emptySlot);
 			} else {
 				Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
-				GUI.Box(new Rect(100, 100, 200, 200), currentInventoryItem.name);
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
-				GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
+				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
+				//GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
 			}
 	 
 	       //   If there is an item at this location and there is a button click...
@@ -60,7 +60,7 @@ public class InventoryManager : MonoBehaviour {
 //	         } 
 //	       }
 	    }		
-*/
+
 	}
 	
 	public void CloseInventoryWindow () {

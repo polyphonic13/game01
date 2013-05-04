@@ -34,12 +34,12 @@ public class Player : MonoBehaviour {
 		if(inventoryOpen) {
 			//ArrayList items = inventory.GetItems();
 			//Debug.Log("items = " + items.Count);
-			if(!inventoryDrawn) {
+			//if(!inventoryDrawn) {
 				Debug.Log("about to draw gui box");
-				GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
-				//inventory.DrawInventory();
+//				GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
+				inventory.DrawInventory();
 				inventoryDrawn = true;
-			}
+			//}
 		}
 	}
 	
