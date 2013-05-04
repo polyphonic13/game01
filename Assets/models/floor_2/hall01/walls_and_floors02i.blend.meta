@@ -36,6 +36,9 @@ ModelImporter:
     100060: wall_bottom_trim_005
     100062: floor_door_trim01
     100064: floor_door_trim02
+    100066: Cube
+    100068: Cube_001
+    100070: Cube_002
     400000: ceiling
     400002: door01
     400004: doorknob01
@@ -69,6 +72,9 @@ ModelImporter:
     400060: wall_bottom_trim_005
     400062: floor_door_trim01
     400064: floor_door_trim02
+    400066: Cube
+    400068: Cube_001
+    400070: Cube_002
     2300000: ceiling
     2300002: door01
     2300004: doorknob01
@@ -101,6 +107,9 @@ ModelImporter:
     2300058: wall_bottom_trim_005
     2300060: floor_door_trim01
     2300062: floor_door_trim02
+    2300064: Cube
+    2300066: Cube_001
+    2300068: Cube_002
     3300000: ceiling
     3300002: door01
     3300004: doorknob01
@@ -133,6 +142,9 @@ ModelImporter:
     3300058: wall_bottom_trim_005
     3300060: floor_door_trim01
     3300062: floor_door_trim02
+    3300064: Cube
+    3300066: Cube_001
+    3300068: Cube_002
     4300000: doorway01
     4300002: door01
     4300004: doorknob01
@@ -165,6 +177,9 @@ ModelImporter:
     4300058: wall_bottom_trim_004
     4300060: floor_door_trim02
     4300062: floor_door_trim01
+    4300064: Cube_002
+    4300066: Cube_001
+    4300068: Cube
     6400000: ceiling
     6400002: door01
     6400004: doorknob01
@@ -196,6 +211,9 @@ ModelImporter:
     6400056: wall_bottom_trim_005
     6400058: floor_door_trim01
     6400060: floor_door_trim02
+    6400062: Cube
+    6400064: Cube_001
+    6400066: Cube_002
     7400000: door01_open
     7400002: door01_close
     7400004: door02_open

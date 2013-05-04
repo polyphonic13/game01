@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class InventoryManager {
+public class InventoryManager : MonoBehaviour {
 	
 	ArrayList inventory;
 	
@@ -28,13 +28,13 @@ public class InventoryManager {
 	}
 
 	public void DrawInventory() {
-//		GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
+		GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 		Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
 	    CollectableItem currentInventoryItem;                    //   Establish a variable to hold our data
 	    Rect currentRect;
-	    
+/*	    
 		for (int i = 0; i < inventory.Count; i ++) {                 //   Go through each row ...
 	       j = i / inventoryWidth;                              //   ... divide by array by width to get rows...
 	       k = i % inventoryWidth;                              //   ... find the remainder by width to get columns...
@@ -60,6 +60,7 @@ public class InventoryManager {
 //	         } 
 //	       }
 	    }		
+*/
 	}
 	
 	public void CloseInventoryWindow () {

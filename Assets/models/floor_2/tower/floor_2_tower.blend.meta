@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 82172eaa1f6fa4b929d507bc38f2b128
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: main_tower
+    100004: tower_ceiling
+    100006: tower_floor
+    100008: tower_room
+    100010: ceiling_main
+    100012: ceiling_tower
+    100014: floor_main
+    100016: floor_tower
+    100018: wall_e
+    100020: wall_n
+    100022: wall_s
+    100024: wall_tower
+    400000: //RootNode
+    400002: main_tower
+    400004: tower_ceiling
+    400006: tower_floor
+    400008: tower_room
+    400010: ceiling_main
+    400012: ceiling_tower
+    400014: floor_main
+    400016: floor_tower
+    400018: wall_e
+    400020: wall_n
+    400022: wall_s
+    400024: wall_tower
+    2300000: main_tower
+    2300002: tower_ceiling
+    2300004: tower_floor
+    2300006: tower_room
+    2300008: ceiling_main
+    2300010: ceiling_tower
+    2300012: floor_main
+    2300014: floor_tower
+    2300016: wall_e
+    2300018: wall_n
+    2300020: wall_s
+    2300022: wall_tower
+    3300000: main_tower
+    3300002: tower_ceiling
+    3300004: tower_floor
+    3300006: tower_room
+    3300008: ceiling_main
+    3300010: ceiling_tower
+    3300012: floor_main
+    3300014: floor_tower
+    3300016: wall_e
+    3300018: wall_n
+    3300020: wall_s
+    3300022: wall_tower
+    4300000: tower_ceiling
+    4300002: tower_floor
+    4300004: main_tower
+    4300006: tower_room
+    4300008: wall_n
+    4300010: ceiling_main
+    4300012: wall_e
+    4300014: wall_s
+    4300016: ceiling_tower
+    4300018: floor_tower
+    4300020: wall_tower
+    4300022: floor_main
+    6400000: main_tower
+    6400002: tower_ceiling
+    6400004: tower_floor
+    6400006: tower_room
+    6400008: ceiling_main
+    6400010: ceiling_tower
+    6400012: floor_main
+    6400014: floor_tower
+    6400016: wall_e
+    6400018: wall_n
+    6400020: wall_s
+    6400022: wall_tower
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
