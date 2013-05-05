@@ -39,6 +39,14 @@ ModelImporter:
     100066: Cube
     100068: Cube_001
     100070: Cube_002
+    100072: Cube_003
+    100074: Cube_004
+    100076: door01_001
+    100078: doorway01_001
+    100080: doorway03
+    100082: door03
+    100084: doorknob01_002
+    100086: floor_door_trim01_001
     400000: ceiling
     400002: door01
     400004: doorknob01
@@ -75,6 +83,14 @@ ModelImporter:
     400066: Cube
     400068: Cube_001
     400070: Cube_002
+    400072: Cube_003
+    400074: Cube_004
+    400076: door01_001
+    400078: doorway01_001
+    400080: doorway03
+    400082: door03
+    400084: doorknob01_002
+    400086: floor_door_trim01_001
     2300000: ceiling
     2300002: door01
     2300004: doorknob01
@@ -110,6 +126,14 @@ ModelImporter:
     2300064: Cube
     2300066: Cube_001
     2300068: Cube_002
+    2300070: Cube_003
+    2300072: Cube_004
+    2300074: door01_001
+    2300076: doorway01_001
+    2300078: doorway03
+    2300080: door03
+    2300082: doorknob01_002
+    2300084: floor_door_trim01_001
     3300000: ceiling
     3300002: door01
     3300004: doorknob01
@@ -145,6 +169,14 @@ ModelImporter:
     3300064: Cube
     3300066: Cube_001
     3300068: Cube_002
+    3300070: Cube_003
+    3300072: Cube_004
+    3300074: door01_001
+    3300076: doorway01_001
+    3300078: doorway03
+    3300080: door03
+    3300082: doorknob01_002
+    3300084: floor_door_trim01_001
     4300000: doorway01
     4300002: door01
     4300004: doorknob01
@@ -180,6 +212,14 @@ ModelImporter:
     4300064: Cube_002
     4300066: Cube_001
     4300068: Cube
+    4300070: Cube_004
+    4300072: Cube_003
+    4300074: doorway01_001
+    4300076: door01_001
+    4300078: doorway03
+    4300080: door03
+    4300082: floor_door_trim01_001
+    4300084: doorknob01_002
     6400000: ceiling
     6400002: door01
     6400004: doorknob01
@@ -214,10 +254,20 @@ ModelImporter:
     6400062: Cube
     6400064: Cube_001
     6400066: Cube_002
+    6400068: Cube_003
+    6400070: Cube_004
+    6400072: door01_001
+    6400074: doorway01_001
+    6400076: doorway03
+    6400078: door03
+    6400080: doorknob01_002
+    6400082: floor_door_trim01_001
     7400000: door01_open
     7400002: door01_close
     7400004: door02_open
     7400006: door02_close
+    7400008: door03_open
+    7400010: door03_close
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -299,7 +349,49 @@ ModelImporter:
     - name: door02_close
       takeName: Default Take
       firstFrame: 30
-      lastFrame: 39
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: door03_open
+      takeName: Default Take
+      firstFrame: 40
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: door03_close
+      takeName: Default Take
+      firstFrame: 50
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
