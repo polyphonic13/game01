@@ -17,6 +17,9 @@ ModelImporter:
     100022: turret_est_001
     100024: Cube_001
     100026: Cube_000
+    100028: east_wing_000
+    100030: turret_east_000
+    100032: turret_est_002
     400000: bedroom_s_e
     400002: //RootNode
     400004: bedroom_s_e_001
@@ -31,6 +34,9 @@ ModelImporter:
     400022: turret_est_001
     400024: Cube_001
     400026: Cube_000
+    400028: east_wing_000
+    400030: turret_east_000
+    400032: turret_est_002
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: ceiling
@@ -44,6 +50,9 @@ ModelImporter:
     2300020: turret_est_001
     2300022: Cube_001
     2300024: Cube_000
+    2300026: east_wing_000
+    2300028: turret_east_000
+    2300030: turret_est_002
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: ceiling
@@ -57,6 +66,9 @@ ModelImporter:
     3300020: turret_est_001
     3300022: Cube_001
     3300024: Cube_000
+    3300026: east_wing_000
+    3300028: turret_east_000
+    3300030: turret_est_002
     4300000: bedroom_s_e_001
     4300002: turret_est_001
     4300004: floor
@@ -70,6 +82,9 @@ ModelImporter:
     4300020: turret_est
     4300022: Cube_001
     4300024: Cube_000
+    4300026: turret_est_002
+    4300028: turret_east_000
+    4300030: east_wing_000
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: ceiling
@@ -83,6 +98,9 @@ ModelImporter:
     6400020: turret_est_001
     6400022: Cube_001
     6400024: Cube_000
+    6400026: east_wing_000
+    6400028: turret_east_000
+    6400030: turret_est_002
     7400000: Default Take
     9500000: //RootNode
   materials:

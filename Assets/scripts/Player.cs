@@ -12,7 +12,6 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		Debug.Log("PLAYER START!");
 		camera = Camera.main;
 		inventory = new InventoryManager();
 		inventory.init();
