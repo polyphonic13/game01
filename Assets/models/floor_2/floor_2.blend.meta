@@ -98,6 +98,20 @@ ModelImporter:
     100184: main_hall_wall_e
     100186: main_hall_wall_s
     100188: main_hall_wall_w
+    100190: north_west_wing_000
+    100192: north_west_wing_008
+    100194: north_west_wing_009
+    100196: north_west_wing_010
+    100198: tower_room_000
+    100200: center_hall_003
+    100202: center_hall_004
+    100204: center_hall_005
+    100206: center_hall_006
+    100208: north_west_wing_011
+    100210: north_west_wing_012
+    100212: north_west_wing_013
+    100214: north_west_wing_014
+    100216: north_west_wing_015
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -193,6 +207,20 @@ ModelImporter:
     400184: main_hall_wall_e
     400186: main_hall_wall_s
     400188: main_hall_wall_w
+    400190: north_west_wing_000
+    400192: north_west_wing_008
+    400194: north_west_wing_009
+    400196: north_west_wing_010
+    400198: tower_room_000
+    400200: center_hall_003
+    400202: center_hall_004
+    400204: center_hall_005
+    400206: center_hall_006
+    400208: north_west_wing_011
+    400210: north_west_wing_012
+    400212: north_west_wing_013
+    400214: north_west_wing_014
+    400216: north_west_wing_015
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -281,6 +309,20 @@ ModelImporter:
     2300170: main_hall_wall_e
     2300172: main_hall_wall_s
     2300174: main_hall_wall_w
+    2300176: north_west_wing_000
+    2300178: north_west_wing_008
+    2300180: north_west_wing_009
+    2300182: north_west_wing_010
+    2300184: tower_room_000
+    2300186: center_hall_003
+    2300188: center_hall_004
+    2300190: center_hall_005
+    2300192: center_hall_006
+    2300194: north_west_wing_011
+    2300196: north_west_wing_012
+    2300198: north_west_wing_013
+    2300200: north_west_wing_014
+    2300202: north_west_wing_015
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -369,6 +411,20 @@ ModelImporter:
     3300170: main_hall_wall_e
     3300172: main_hall_wall_s
     3300174: main_hall_wall_w
+    3300176: north_west_wing_000
+    3300178: north_west_wing_008
+    3300180: north_west_wing_009
+    3300182: north_west_wing_010
+    3300184: tower_room_000
+    3300186: center_hall_003
+    3300188: center_hall_004
+    3300190: center_hall_005
+    3300192: center_hall_006
+    3300194: north_west_wing_011
+    3300196: north_west_wing_012
+    3300198: north_west_wing_013
+    3300200: north_west_wing_014
+    3300202: north_west_wing_015
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -457,6 +513,20 @@ ModelImporter:
     4300170: main_hall_wall_w
     4300172: main_hall_wall_s
     4300174: center_hall
+    4300176: north_west_wing_010
+    4300178: north_west_wing_009
+    4300180: north_west_wing_008
+    4300182: north_west_wing_000
+    4300184: tower_room_000
+    4300186: center_hall_003
+    4300188: north_west_wing_012
+    4300190: north_west_wing_011
+    4300192: center_hall_006
+    4300194: center_hall_005
+    4300196: center_hall_004
+    4300198: north_west_wing_014
+    4300200: north_west_wing_013
+    4300202: north_west_wing_015
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -501,6 +571,22 @@ ModelImporter:
     6400082: main_hall_wall_s
     6400084: main_hall_wall_w
     6400086: center_hall_002
+    6400088: north_west_wing_000
+    6400090: north_west_wing_001
+    6400092: north_west_wing_008
+    6400094: north_west_wing_009
+    6400096: north_west_wing_010
+    6400098: tower_room_000
+    6400100: tower_room_001
+    6400102: center_hall_003
+    6400104: center_hall_004
+    6400106: center_hall_005
+    6400108: center_hall_006
+    6400110: north_west_wing_011
+    6400112: north_west_wing_012
+    6400114: north_west_wing_013
+    6400116: north_west_wing_014
+    6400118: north_west_wing_015
     7400000: Default Take
     9500000: //RootNode
   materials:
