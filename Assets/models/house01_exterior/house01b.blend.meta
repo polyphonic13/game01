@@ -87,6 +87,13 @@ ModelImporter:
     100162: south_west_wing_001
     100164: south_west_wing_002
     100166: tower_room_005
+    100168: Cube_015
+    100170: hall_001
+    100172: hall_002
+    100174: north_west_wing_005
+    100176: north_west_wing_006
+    100178: tower_room_006
+    100180: tower_room_007
     400000: center_hall
     400002: center_hall_002
     400004: center_hall_floor_3
@@ -171,6 +178,13 @@ ModelImporter:
     400162: south_west_wing_001
     400164: south_west_wing_002
     400166: tower_room_005
+    400168: Cube_015
+    400170: hall_001
+    400172: hall_002
+    400174: north_west_wing_005
+    400176: north_west_wing_006
+    400178: tower_room_006
+    400180: tower_room_007
     2300000: center_hall
     2300002: center_hall_002
     2300004: center_hall_floor_3
@@ -248,6 +262,13 @@ ModelImporter:
     2300148: south_west_wing_001
     2300150: south_west_wing_002
     2300152: tower_room_005
+    2300154: Cube_015
+    2300156: hall_001
+    2300158: hall_002
+    2300160: north_west_wing_005
+    2300162: north_west_wing_006
+    2300164: tower_room_006
+    2300166: tower_room_007
     3300000: center_hall
     3300002: center_hall_002
     3300004: center_hall_floor_3
@@ -325,6 +346,13 @@ ModelImporter:
     3300148: south_west_wing_001
     3300150: south_west_wing_002
     3300152: tower_room_005
+    3300154: Cube_015
+    3300156: hall_001
+    3300158: hall_002
+    3300160: north_west_wing_005
+    3300162: north_west_wing_006
+    3300164: tower_room_006
+    3300166: tower_room_007
     4300000: window_roof_e_t_003
     4300002: window_roof_e_t_002
     4300004: top_forward_roof
@@ -402,6 +430,13 @@ ModelImporter:
     4300148: hall
     4300150: floor
     4300152: center_hall_001
+    4300154: Cube_015
+    4300156: north_west_wing_006
+    4300158: north_west_wing_005
+    4300160: hall_002
+    4300162: tower_room_007
+    4300164: tower_room_006
+    4300166: hall_001
     6400000: center_hall
     6400002: center_hall_002
     6400004: center_hall_floor_3
@@ -479,6 +514,13 @@ ModelImporter:
     6400148: south_west_wing_001
     6400150: south_west_wing_002
     6400152: tower_room_005
+    6400154: Cube_015
+    6400156: hall_001
+    6400158: hall_002
+    6400160: north_west_wing_005
+    6400162: north_west_wing_006
+    6400164: tower_room_006
+    6400166: tower_room_007
     7400000: Default Take
     9500000: //RootNode
   materials:

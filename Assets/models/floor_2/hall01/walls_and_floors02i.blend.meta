@@ -55,6 +55,23 @@ ModelImporter:
     100098: Cube_009
     100100: Cube_010
     100102: floor_1_stairs
+    100104: ceiling_001
+    100106: center_hall_east
+    100108: center_hall_w
+    100110: center_hall_w_001
+    100112: floor_001
+    100114: floor_002
+    100116: wall_bottom_trim_006
+    100118: wall_s_001
+    100120: wall_s_002
+    100122: wall_top_trim_004
+    100124: wall_top_trim_005
+    100126: wall_top_trim_006
+    100128: wall_top_trim_007
+    100130: wall_top_trim_008
+    100132: wall_top_trim_009
+    100134: wall_bottom_trim_007
+    100136: wall_s_003
     400000: ceiling
     400002: door01
     400004: doorknob01
@@ -107,6 +124,23 @@ ModelImporter:
     400098: Cube_009
     400100: Cube_010
     400102: floor_1_stairs
+    400104: ceiling_001
+    400106: center_hall_east
+    400108: center_hall_w
+    400110: center_hall_w_001
+    400112: floor_001
+    400114: floor_002
+    400116: wall_bottom_trim_006
+    400118: wall_s_001
+    400120: wall_s_002
+    400122: wall_top_trim_004
+    400124: wall_top_trim_005
+    400126: wall_top_trim_006
+    400128: wall_top_trim_007
+    400130: wall_top_trim_008
+    400132: wall_top_trim_009
+    400134: wall_bottom_trim_007
+    400136: wall_s_003
     2300000: ceiling
     2300002: door01
     2300004: doorknob01
@@ -158,6 +192,23 @@ ModelImporter:
     2300096: Cube_009
     2300098: Cube_010
     2300100: floor_1_stairs
+    2300102: ceiling_001
+    2300104: center_hall_east
+    2300106: center_hall_w
+    2300108: center_hall_w_001
+    2300110: floor_001
+    2300112: floor_002
+    2300114: wall_bottom_trim_006
+    2300116: wall_s_001
+    2300118: wall_s_002
+    2300120: wall_top_trim_004
+    2300122: wall_top_trim_005
+    2300124: wall_top_trim_006
+    2300126: wall_top_trim_007
+    2300128: wall_top_trim_008
+    2300130: wall_top_trim_009
+    2300132: wall_bottom_trim_007
+    2300134: wall_s_003
     3300000: ceiling
     3300002: door01
     3300004: doorknob01
@@ -209,6 +260,23 @@ ModelImporter:
     3300096: Cube_009
     3300098: Cube_010
     3300100: floor_1_stairs
+    3300102: ceiling_001
+    3300104: center_hall_east
+    3300106: center_hall_w
+    3300108: center_hall_w_001
+    3300110: floor_001
+    3300112: floor_002
+    3300114: wall_bottom_trim_006
+    3300116: wall_s_001
+    3300118: wall_s_002
+    3300120: wall_top_trim_004
+    3300122: wall_top_trim_005
+    3300124: wall_top_trim_006
+    3300126: wall_top_trim_007
+    3300128: wall_top_trim_008
+    3300130: wall_top_trim_009
+    3300132: wall_bottom_trim_007
+    3300134: wall_s_003
     4300000: doorway01
     4300002: door01
     4300004: doorknob01
@@ -260,6 +328,23 @@ ModelImporter:
     4300096: Cube_010
     4300098: Cube_009
     4300100: floor_1_stairs
+    4300102: ceiling_001
+    4300104: center_hall_w_001
+    4300106: wall_bottom_trim_006
+    4300108: wall_top_trim_009
+    4300110: wall_s_002
+    4300112: wall_s_001
+    4300114: center_hall_w
+    4300116: wall_top_trim_005
+    4300118: center_hall_east
+    4300120: wall_top_trim_004
+    4300122: floor_002
+    4300124: floor_001
+    4300126: wall_top_trim_008
+    4300128: wall_top_trim_007
+    4300130: wall_top_trim_006
+    4300132: wall_s_003
+    4300134: wall_bottom_trim_007
     6400000: ceiling
     6400002: door01
     6400004: doorknob01
@@ -310,6 +395,23 @@ ModelImporter:
     6400094: Cube_009
     6400096: Cube_010
     6400098: floor_1_stairs
+    6400100: ceiling_001
+    6400102: center_hall_east
+    6400104: center_hall_w
+    6400106: center_hall_w_001
+    6400108: floor_001
+    6400110: floor_002
+    6400112: wall_bottom_trim_006
+    6400114: wall_s_001
+    6400116: wall_s_002
+    6400118: wall_top_trim_004
+    6400120: wall_top_trim_005
+    6400122: wall_top_trim_006
+    6400124: wall_top_trim_007
+    6400126: wall_top_trim_008
+    6400128: wall_top_trim_009
+    6400130: wall_bottom_trim_007
+    6400132: wall_s_003
     7400000: door01_open
     7400002: door01_close
     7400004: door02_open
