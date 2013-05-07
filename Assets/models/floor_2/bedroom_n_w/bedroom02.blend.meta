@@ -80,6 +80,12 @@ ModelImporter:
     100148: closet_dowel_e
     100150: closet_dowel_s
     100152: closet
+    100154: wall_w_001
+    100156: window_frame_002
+    100158: window_frame_003
+    100160: doorway_003
+    100162: wall_e_001
+    100164: floor_001
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -157,6 +163,12 @@ ModelImporter:
     400148: closet_dowel_e
     400150: closet_dowel_s
     400152: closet
+    400154: wall_w_001
+    400156: window_frame_002
+    400158: window_frame_003
+    400160: doorway_003
+    400162: wall_e_001
+    400164: floor_001
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -230,6 +242,12 @@ ModelImporter:
     2300140: closet_walls
     2300142: closet_dowel_e
     2300144: closet_dowel_s
+    2300146: wall_w_001
+    2300148: window_frame_002
+    2300150: window_frame_003
+    2300152: doorway_003
+    2300154: wall_e_001
+    2300156: floor_001
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -303,6 +321,12 @@ ModelImporter:
     3300140: closet_walls
     3300142: closet_dowel_e
     3300144: closet_dowel_s
+    3300146: wall_w_001
+    3300148: window_frame_002
+    3300150: window_frame_003
+    3300152: doorway_003
+    3300154: wall_e_001
+    3300156: floor_001
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -376,6 +400,12 @@ ModelImporter:
     4300140: closet_walls
     4300142: closet_dowel_s
     4300144: closet_dowel_e
+    4300146: wall_w_001
+    4300148: window_frame_003
+    4300150: window_frame_002
+    4300152: wall_e_001
+    4300154: doorway_003
+    4300156: floor_001
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -449,6 +479,12 @@ ModelImporter:
     6400140: closet_walls
     6400142: closet_dowel_e
     6400144: closet_dowel_s
+    6400146: wall_w_001
+    6400148: window_frame_002
+    6400150: window_frame_003
+    6400152: doorway_003
+    6400154: wall_e_001
+    6400156: floor_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
