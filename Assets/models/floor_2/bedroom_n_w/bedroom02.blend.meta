@@ -86,6 +86,11 @@ ModelImporter:
     100160: doorway_003
     100162: wall_e_001
     100164: floor_001
+    100166: Cube_000
+    100168: Cube_010
+    100170: Cube_011
+    100172: Cube_012
+    100174: Cube_013
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -169,6 +174,11 @@ ModelImporter:
     400160: doorway_003
     400162: wall_e_001
     400164: floor_001
+    400166: Cube_000
+    400168: Cube_010
+    400170: Cube_011
+    400172: Cube_012
+    400174: Cube_013
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -248,6 +258,11 @@ ModelImporter:
     2300152: doorway_003
     2300154: wall_e_001
     2300156: floor_001
+    2300158: Cube_000
+    2300160: Cube_010
+    2300162: Cube_011
+    2300164: Cube_012
+    2300166: Cube_013
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -327,6 +342,11 @@ ModelImporter:
     3300152: doorway_003
     3300154: wall_e_001
     3300156: floor_001
+    3300158: Cube_000
+    3300160: Cube_010
+    3300162: Cube_011
+    3300164: Cube_012
+    3300166: Cube_013
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -406,6 +426,11 @@ ModelImporter:
     4300152: wall_e_001
     4300154: doorway_003
     4300156: floor_001
+    4300158: Cube_013
+    4300160: Cube_012
+    4300162: Cube_011
+    4300164: Cube_010
+    4300166: Cube_000
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -485,6 +510,11 @@ ModelImporter:
     6400152: doorway_003
     6400154: wall_e_001
     6400156: floor_001
+    6400158: Cube_000
+    6400160: Cube_010
+    6400162: Cube_011
+    6400164: Cube_012
+    6400166: Cube_013
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
