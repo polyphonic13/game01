@@ -112,6 +112,7 @@ ModelImporter:
     100212: north_west_wing_013
     100214: north_west_wing_014
     100216: north_west_wing_015
+    100218: north_west_wing_016
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -221,6 +222,7 @@ ModelImporter:
     400212: north_west_wing_013
     400214: north_west_wing_014
     400216: north_west_wing_015
+    400218: north_west_wing_016
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -323,6 +325,7 @@ ModelImporter:
     2300198: north_west_wing_013
     2300200: north_west_wing_014
     2300202: north_west_wing_015
+    2300204: north_west_wing_016
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -425,6 +428,7 @@ ModelImporter:
     3300198: north_west_wing_013
     3300200: north_west_wing_014
     3300202: north_west_wing_015
+    3300204: north_west_wing_016
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -527,6 +531,7 @@ ModelImporter:
     4300198: north_west_wing_014
     4300200: north_west_wing_013
     4300202: north_west_wing_015
+    4300204: north_west_wing_016
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -587,6 +592,7 @@ ModelImporter:
     6400114: north_west_wing_013
     6400116: north_west_wing_014
     6400118: north_west_wing_015
+    6400120: north_west_wing_016
     7400000: Default Take
     9500000: //RootNode
   materials:
