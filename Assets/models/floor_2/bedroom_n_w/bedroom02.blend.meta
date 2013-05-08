@@ -91,6 +91,9 @@ ModelImporter:
     100170: Cube_011
     100172: Cube_012
     100174: Cube_013
+    100176: Cube_014
+    100178: balcony_rail_top
+    100180: balcony_rail_top_2
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -179,6 +182,9 @@ ModelImporter:
     400170: Cube_011
     400172: Cube_012
     400174: Cube_013
+    400176: Cube_014
+    400178: balcony_rail_top
+    400180: balcony_rail_top_2
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -263,6 +269,9 @@ ModelImporter:
     2300162: Cube_011
     2300164: Cube_012
     2300166: Cube_013
+    2300168: Cube_014
+    2300170: balcony_rail_top
+    2300172: balcony_rail_top_2
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -347,6 +356,9 @@ ModelImporter:
     3300162: Cube_011
     3300164: Cube_012
     3300166: Cube_013
+    3300168: Cube_014
+    3300170: balcony_rail_top
+    3300172: balcony_rail_top_2
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -431,6 +443,9 @@ ModelImporter:
     4300162: Cube_011
     4300164: Cube_010
     4300166: Cube_000
+    4300168: Cube_014
+    4300170: balcony_rail_top_2
+    4300172: balcony_rail_top
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -515,6 +530,9 @@ ModelImporter:
     6400162: Cube_011
     6400164: Cube_012
     6400166: Cube_013
+    6400168: Cube_014
+    6400170: balcony_rail_top
+    6400172: balcony_rail_top_2
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
