@@ -11,6 +11,7 @@ ModelImporter:
     100010: wall_s
     100012: wall_w
     100014: Cube
+    100016: window_frame
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -19,6 +20,7 @@ ModelImporter:
     400010: wall_s
     400012: wall_w
     400014: Cube
+    400016: window_frame
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -27,6 +29,7 @@ ModelImporter:
     2300010: wall_s
     2300012: wall_w
     2300014: Cube
+    2300016: window_frame
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -35,6 +38,7 @@ ModelImporter:
     3300010: wall_s
     3300012: wall_w
     3300014: Cube
+    3300016: window_frame
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -42,6 +46,7 @@ ModelImporter:
     4300008: wall_w
     4300010: wall_s
     4300012: floor
+    4300014: window_frame
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -50,6 +55,7 @@ ModelImporter:
     6400010: wall_s
     6400012: wall_w
     6400014: Cube
+    6400016: window_frame
     7400000: Default Take
     9500000: //RootNode
   materials:
