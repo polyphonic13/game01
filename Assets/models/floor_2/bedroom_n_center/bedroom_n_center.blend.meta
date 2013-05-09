@@ -12,6 +12,14 @@ ModelImporter:
     100012: wall_w
     100014: Cube
     100016: window_frame
+    100018: door_south
+    100020: door_south_001
+    100022: wall_w_001
+    100024: door_west
+    100026: floor_trim
+    100028: floor_trim_001
+    100030: floor_trim_002
+    100032: floor_trim_003
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -21,6 +29,14 @@ ModelImporter:
     400012: wall_w
     400014: Cube
     400016: window_frame
+    400018: door_south
+    400020: door_south_001
+    400022: wall_w_001
+    400024: door_west
+    400026: floor_trim
+    400028: floor_trim_001
+    400030: floor_trim_002
+    400032: floor_trim_003
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -30,6 +46,14 @@ ModelImporter:
     2300012: wall_w
     2300014: Cube
     2300016: window_frame
+    2300018: door_south
+    2300020: door_south_001
+    2300022: wall_w_001
+    2300024: door_west
+    2300026: floor_trim
+    2300028: floor_trim_001
+    2300030: floor_trim_002
+    2300032: floor_trim_003
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -39,6 +63,14 @@ ModelImporter:
     3300012: wall_w
     3300014: Cube
     3300016: window_frame
+    3300018: door_south
+    3300020: door_south_001
+    3300022: wall_w_001
+    3300024: door_west
+    3300026: floor_trim
+    3300028: floor_trim_001
+    3300030: floor_trim_002
+    3300032: floor_trim_003
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -47,6 +79,14 @@ ModelImporter:
     4300010: wall_s
     4300012: floor
     4300014: window_frame
+    4300016: door_south_001
+    4300018: door_south
+    4300020: wall_w_001
+    4300022: floor_trim_003
+    4300024: floor_trim_002
+    4300026: floor_trim_001
+    4300028: floor_trim
+    4300030: door_west
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -56,6 +96,14 @@ ModelImporter:
     6400012: wall_w
     6400014: Cube
     6400016: window_frame
+    6400018: door_south
+    6400020: door_south_001
+    6400022: wall_w_001
+    6400024: door_west
+    6400026: floor_trim
+    6400028: floor_trim_001
+    6400030: floor_trim_002
+    6400032: floor_trim_003
     7400000: Default Take
     9500000: //RootNode
   materials:
