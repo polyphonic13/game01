@@ -113,6 +113,41 @@ ModelImporter:
     100214: north_west_wing_014
     100216: north_west_wing_015
     100218: north_west_wing_016
+    100220: main_floor
+    100222: main_floor_001
+    100224: main_stairs_floor_1
+    100226: main_stairs_floor_2
+    100228: servant_stairs_floor_1
+    100230: servant_stairs_floor_2
+    100232: center_hall_ceiling
+    100234: center_hall_e_wall
+    100236: center_hall_floor
+    100238: center_hall_s_e_wall
+    100240: center_hall_s_w_wall
+    100242: center_hall_w_wall
+    100244: north_center_room
+    100246: north_center_room_ceiling
+    100248: north_center_room_floor
+    100250: north_center_room_w_wall
+    100252: servant_stairway
+    100254: servant_stairway_ceiling
+    100256: servant_stairway_floor
+    100258: servants_quaerters_floor
+    100260: servants_quarters
+    100262: servants_quarters_ceiling
+    100264: servants_quarters_s_wall
+    100266: bathroom_e_ceiling
+    100268: bathroom_e_e_wall
+    100270: bathroom_e_floor
+    100272: bathroom_e_n_wall
+    100274: bathroom_e_s_wall
+    100276: servant_stairway_s_wall
+    100278: servants_hall_ceiling
+    100280: servants_hall_floor
+    100282: servants_hall_n_wall
+    100284: servants_hall_s_wall
+    100286: servants_hall_w_wall
+    100288: servant_stairway_001
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -223,6 +258,41 @@ ModelImporter:
     400214: north_west_wing_014
     400216: north_west_wing_015
     400218: north_west_wing_016
+    400220: main_floor
+    400222: main_floor_001
+    400224: main_stairs_floor_1
+    400226: main_stairs_floor_2
+    400228: servant_stairs_floor_1
+    400230: servant_stairs_floor_2
+    400232: center_hall_ceiling
+    400234: center_hall_e_wall
+    400236: center_hall_floor
+    400238: center_hall_s_e_wall
+    400240: center_hall_s_w_wall
+    400242: center_hall_w_wall
+    400244: north_center_room
+    400246: north_center_room_ceiling
+    400248: north_center_room_floor
+    400250: north_center_room_w_wall
+    400252: servant_stairway
+    400254: servant_stairway_ceiling
+    400256: servant_stairway_floor
+    400258: servants_quaerters_floor
+    400260: servants_quarters
+    400262: servants_quarters_ceiling
+    400264: servants_quarters_s_wall
+    400266: bathroom_e_ceiling
+    400268: bathroom_e_e_wall
+    400270: bathroom_e_floor
+    400272: bathroom_e_n_wall
+    400274: bathroom_e_s_wall
+    400276: servant_stairway_s_wall
+    400278: servants_hall_ceiling
+    400280: servants_hall_floor
+    400282: servants_hall_n_wall
+    400284: servants_hall_s_wall
+    400286: servants_hall_w_wall
+    400288: servant_stairway_001
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -326,6 +396,41 @@ ModelImporter:
     2300200: north_west_wing_014
     2300202: north_west_wing_015
     2300204: north_west_wing_016
+    2300206: main_floor
+    2300208: main_floor_001
+    2300210: main_stairs_floor_1
+    2300212: main_stairs_floor_2
+    2300214: servant_stairs_floor_1
+    2300216: servant_stairs_floor_2
+    2300218: center_hall_ceiling
+    2300220: center_hall_e_wall
+    2300222: center_hall_floor
+    2300224: center_hall_s_e_wall
+    2300226: center_hall_s_w_wall
+    2300228: center_hall_w_wall
+    2300230: north_center_room
+    2300232: north_center_room_ceiling
+    2300234: north_center_room_floor
+    2300236: north_center_room_w_wall
+    2300238: servant_stairway
+    2300240: servant_stairway_ceiling
+    2300242: servant_stairway_floor
+    2300244: servants_quaerters_floor
+    2300246: servants_quarters
+    2300248: servants_quarters_ceiling
+    2300250: servants_quarters_s_wall
+    2300252: bathroom_e_ceiling
+    2300254: bathroom_e_e_wall
+    2300256: bathroom_e_floor
+    2300258: bathroom_e_n_wall
+    2300260: bathroom_e_s_wall
+    2300262: servant_stairway_s_wall
+    2300264: servants_hall_ceiling
+    2300266: servants_hall_floor
+    2300268: servants_hall_n_wall
+    2300270: servants_hall_s_wall
+    2300272: servants_hall_w_wall
+    2300274: servant_stairway_001
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -429,6 +534,41 @@ ModelImporter:
     3300200: north_west_wing_014
     3300202: north_west_wing_015
     3300204: north_west_wing_016
+    3300206: main_floor
+    3300208: main_floor_001
+    3300210: main_stairs_floor_1
+    3300212: main_stairs_floor_2
+    3300214: servant_stairs_floor_1
+    3300216: servant_stairs_floor_2
+    3300218: center_hall_ceiling
+    3300220: center_hall_e_wall
+    3300222: center_hall_floor
+    3300224: center_hall_s_e_wall
+    3300226: center_hall_s_w_wall
+    3300228: center_hall_w_wall
+    3300230: north_center_room
+    3300232: north_center_room_ceiling
+    3300234: north_center_room_floor
+    3300236: north_center_room_w_wall
+    3300238: servant_stairway
+    3300240: servant_stairway_ceiling
+    3300242: servant_stairway_floor
+    3300244: servants_quaerters_floor
+    3300246: servants_quarters
+    3300248: servants_quarters_ceiling
+    3300250: servants_quarters_s_wall
+    3300252: bathroom_e_ceiling
+    3300254: bathroom_e_e_wall
+    3300256: bathroom_e_floor
+    3300258: bathroom_e_n_wall
+    3300260: bathroom_e_s_wall
+    3300262: servant_stairway_s_wall
+    3300264: servants_hall_ceiling
+    3300266: servants_hall_floor
+    3300268: servants_hall_n_wall
+    3300270: servants_hall_s_wall
+    3300272: servants_hall_w_wall
+    3300274: servant_stairway_001
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -532,6 +672,41 @@ ModelImporter:
     4300200: north_west_wing_013
     4300202: north_west_wing_015
     4300204: north_west_wing_016
+    4300206: servant_stairs_floor_2
+    4300208: main_stairs_floor_2
+    4300210: servant_stairs_floor_1
+    4300212: main_stairs_floor_1
+    4300214: main_floor_001
+    4300216: main_floor
+    4300218: center_hall_ceiling
+    4300220: center_hall_e_wall
+    4300222: center_hall_w_wall
+    4300224: center_hall_s_w_wall
+    4300226: center_hall_s_e_wall
+    4300228: center_hall_floor
+    4300230: north_center_room
+    4300232: north_center_room_w_wall
+    4300234: north_center_room_ceiling
+    4300236: north_center_room_floor
+    4300238: servant_stairway
+    4300240: servant_stairway_floor
+    4300242: servant_stairway_ceiling
+    4300244: servants_quarters
+    4300246: servants_quarters_s_wall
+    4300248: servants_quarters_ceiling
+    4300250: servants_quaerters_floor
+    4300252: servants_hall_w_wall
+    4300254: servants_hall_n_wall
+    4300256: servants_hall_s_wall
+    4300258: servants_hall_ceiling
+    4300260: servants_hall_floor
+    4300262: servant_stairway_s_wall
+    4300264: bathroom_e_s_wall
+    4300266: bathroom_e_e_wall
+    4300268: bathroom_e_n_wall
+    4300270: bathroom_e_ceiling
+    4300272: bathroom_e_floor
+    4300274: servant_stairway_001
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -593,6 +768,41 @@ ModelImporter:
     6400116: north_west_wing_014
     6400118: north_west_wing_015
     6400120: north_west_wing_016
+    6400122: main_floor
+    6400124: main_floor_001
+    6400126: main_stairs_floor_1
+    6400128: main_stairs_floor_2
+    6400130: servant_stairs_floor_1
+    6400132: servant_stairs_floor_2
+    6400134: center_hall_ceiling
+    6400136: center_hall_e_wall
+    6400138: center_hall_floor
+    6400140: center_hall_s_e_wall
+    6400142: center_hall_s_w_wall
+    6400144: center_hall_w_wall
+    6400146: north_center_room
+    6400148: north_center_room_ceiling
+    6400150: north_center_room_floor
+    6400152: north_center_room_w_wall
+    6400154: servant_stairway
+    6400156: servant_stairway_ceiling
+    6400158: servant_stairway_floor
+    6400160: servants_quaerters_floor
+    6400162: servants_quarters
+    6400164: servants_quarters_ceiling
+    6400166: servants_quarters_s_wall
+    6400168: bathroom_e_ceiling
+    6400170: bathroom_e_e_wall
+    6400172: bathroom_e_floor
+    6400174: bathroom_e_n_wall
+    6400176: bathroom_e_s_wall
+    6400178: servant_stairway_s_wall
+    6400180: servants_hall_ceiling
+    6400182: servants_hall_floor
+    6400184: servants_hall_n_wall
+    6400186: servants_hall_s_wall
+    6400188: servants_hall_w_wall
+    6400190: servant_stairway_001
     7400000: Default Take
     9500000: //RootNode
   materials:
