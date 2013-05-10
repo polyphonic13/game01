@@ -26,6 +26,15 @@ ModelImporter:
     100040: floorboard_w
     100042: floortrim
     100044: floortrim_001
+    100046: floorboard_e_001
+    100048: floorboard_e_002
+    100050: floorboard_e_003
+    100052: door
+    100054: doorway_south
+    100056: door_001
+    100058: doorway_west
+    100060: balcony_door
+    100062: main_door
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -49,6 +58,15 @@ ModelImporter:
     400040: floorboard_w
     400042: floortrim
     400044: floortrim_001
+    400046: floorboard_e_001
+    400048: floorboard_e_002
+    400050: floorboard_e_003
+    400052: door
+    400054: doorway_south
+    400056: door_001
+    400058: doorway_west
+    400060: balcony_door
+    400062: main_door
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -72,6 +90,15 @@ ModelImporter:
     2300040: floorboard_w
     2300042: floortrim
     2300044: floortrim_001
+    2300046: floorboard_e_001
+    2300048: floorboard_e_002
+    2300050: floorboard_e_003
+    2300052: door
+    2300054: doorway_south
+    2300056: door_001
+    2300058: doorway_west
+    2300060: balcony_door
+    2300062: main_door
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -95,6 +122,15 @@ ModelImporter:
     3300040: floorboard_w
     3300042: floortrim
     3300044: floortrim_001
+    3300046: floorboard_e_001
+    3300048: floorboard_e_002
+    3300050: floorboard_e_003
+    3300052: door
+    3300054: doorway_south
+    3300056: door_001
+    3300058: doorway_west
+    3300060: balcony_door
+    3300062: main_door
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -117,6 +153,15 @@ ModelImporter:
     4300038: floorboard_n
     4300040: floortrim_001
     4300042: floortrim
+    4300044: floorboard_e_003
+    4300046: floorboard_e_002
+    4300048: floorboard_e_001
+    4300050: doorway_south
+    4300052: door
+    4300054: doorway_west
+    4300056: door_001
+    4300058: balcony_door
+    4300060: main_door
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -140,8 +185,21 @@ ModelImporter:
     6400040: floorboard_w
     6400042: floortrim
     6400044: floortrim_001
-    7400000: Default Take
+    6400046: floorboard_e_001
+    6400048: floorboard_e_002
+    6400050: floorboard_e_003
+    6400052: door
+    6400054: doorway_south
+    6400056: door_001
+    6400058: doorway_west
+    6400060: balcony_door
+    6400062: main_door
+    7400000: main_door_open
+    7400002: main_door_close
+    7400004: balcony_door_open
+    7400006: balcony_door_close
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -154,7 +212,91 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations: []
+    clipAnimations:
+    - name: main_door_open
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: main_door_close
+      takeName: Default Take
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: balcony_door_open
+      takeName: Default Take
+      firstFrame: 20
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: balcony_door_close
+      takeName: Default Take
+      firstFrame: 20
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -192,5 +334,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 
