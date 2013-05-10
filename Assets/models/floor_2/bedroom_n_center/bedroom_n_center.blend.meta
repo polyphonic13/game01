@@ -40,6 +40,8 @@ ModelImporter:
     100068: door_balcony
     100070: door_main
     100072: Cube_002
+    100074: Cube_003
+    100076: Cube_004
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -77,6 +79,8 @@ ModelImporter:
     400068: door_balcony
     400070: door_main
     400072: Cube_002
+    400074: Cube_003
+    400076: Cube_004
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -114,6 +118,8 @@ ModelImporter:
     2300068: door_balcony
     2300070: door_main
     2300072: Cube_002
+    2300074: Cube_003
+    2300076: Cube_004
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -151,6 +157,8 @@ ModelImporter:
     3300068: door_balcony
     3300070: door_main
     3300072: Cube_002
+    3300074: Cube_003
+    3300076: Cube_004
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -187,6 +195,8 @@ ModelImporter:
     4300066: door_balcony
     4300068: door_main
     4300070: Cube_002
+    4300072: Cube_004
+    4300074: Cube_003
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -224,6 +234,8 @@ ModelImporter:
     6400068: door_balcony
     6400070: door_main
     6400072: Cube_002
+    6400074: Cube_003
+    6400076: Cube_004
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
