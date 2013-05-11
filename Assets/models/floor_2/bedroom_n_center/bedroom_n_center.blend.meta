@@ -42,6 +42,15 @@ ModelImporter:
     100072: Cube_002
     100074: Cube_003
     100076: Cube_004
+    100078: balcony_door_jam_n
+    100080: balcony_door_jam_s
+    100082: base
+    100084: bed
+    100086: legs
+    100088: main_door_jam_e
+    100090: main_door_jam_w
+    100092: canopy
+    100094: Cylinder
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -81,6 +90,15 @@ ModelImporter:
     400072: Cube_002
     400074: Cube_003
     400076: Cube_004
+    400078: balcony_door_jam_n
+    400080: balcony_door_jam_s
+    400082: base
+    400084: bed
+    400086: legs
+    400088: main_door_jam_e
+    400090: main_door_jam_w
+    400092: canopy
+    400094: Cylinder
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -120,6 +138,14 @@ ModelImporter:
     2300072: Cube_002
     2300074: Cube_003
     2300076: Cube_004
+    2300078: balcony_door_jam_n
+    2300080: balcony_door_jam_s
+    2300082: base
+    2300084: legs
+    2300086: main_door_jam_e
+    2300088: main_door_jam_w
+    2300090: canopy
+    2300092: Cylinder
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -159,6 +185,14 @@ ModelImporter:
     3300072: Cube_002
     3300074: Cube_003
     3300076: Cube_004
+    3300078: balcony_door_jam_n
+    3300080: balcony_door_jam_s
+    3300082: base
+    3300084: legs
+    3300086: main_door_jam_e
+    3300088: main_door_jam_w
+    3300090: canopy
+    3300092: Cylinder
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -197,6 +231,14 @@ ModelImporter:
     4300070: Cube_002
     4300072: Cube_004
     4300074: Cube_003
+    4300076: balcony_door_jam_n
+    4300078: main_door_jam_w
+    4300080: balcony_door_jam_s
+    4300082: main_door_jam_e
+    4300084: legs
+    4300086: base
+    4300088: canopy
+    4300090: Cylinder
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -236,6 +278,14 @@ ModelImporter:
     6400072: Cube_002
     6400074: Cube_003
     6400076: Cube_004
+    6400078: balcony_door_jam_n
+    6400080: balcony_door_jam_s
+    6400082: base
+    6400084: legs
+    6400086: main_door_jam_e
+    6400088: main_door_jam_w
+    6400090: canopy
+    6400092: Cylinder
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
