@@ -57,6 +57,9 @@ ModelImporter:
     100102: headboard_curve
     100104: bedposts
     100106: headboadr_poles
+    100108: headboard_base
+    100110: headboard_roof
+    100112: pollow
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -111,6 +114,9 @@ ModelImporter:
     400102: headboard_curve
     400104: bedposts
     400106: headboadr_poles
+    400108: headboard_base
+    400110: headboard_roof
+    400112: pollow
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -164,6 +170,9 @@ ModelImporter:
     2300100: headboard_curve
     2300102: bedposts
     2300104: headboadr_poles
+    2300106: headboard_base
+    2300108: headboard_roof
+    2300110: pollow
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -217,6 +226,9 @@ ModelImporter:
     3300100: headboard_curve
     3300102: bedposts
     3300104: headboadr_poles
+    3300106: headboard_base
+    3300108: headboard_roof
+    3300110: pollow
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -269,6 +281,9 @@ ModelImporter:
     4300098: headboard_curve
     4300100: bedposts
     4300102: headboadr_poles
+    4300104: pollow
+    4300106: headboard_roof
+    4300108: headboard_base
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -322,6 +337,9 @@ ModelImporter:
     6400100: headboard_curve
     6400102: bedposts
     6400104: headboadr_poles
+    6400106: headboard_base
+    6400108: headboard_roof
+    6400110: pollow
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
