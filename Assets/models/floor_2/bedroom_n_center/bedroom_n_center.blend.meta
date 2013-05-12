@@ -53,6 +53,8 @@ ModelImporter:
     100094: Cylinder
     100096: BezierCurve
     100098: canopy_fabric
+    100100: footboard_curve
+    100102: headboard_curve
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -103,6 +105,8 @@ ModelImporter:
     400094: Cylinder
     400096: BezierCurve
     400098: canopy_fabric
+    400100: footboard_curve
+    400102: headboard_curve
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -152,6 +156,8 @@ ModelImporter:
     2300092: Cylinder
     2300094: BezierCurve
     2300096: canopy_fabric
+    2300098: footboard_curve
+    2300100: headboard_curve
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -201,6 +207,8 @@ ModelImporter:
     3300092: Cylinder
     3300094: BezierCurve
     3300096: canopy_fabric
+    3300098: footboard_curve
+    3300100: headboard_curve
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -249,6 +257,8 @@ ModelImporter:
     4300090: Cylinder
     4300092: BezierCurve
     4300094: canopy_fabric
+    4300096: footboard_curve
+    4300098: headboard_curve
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -298,6 +308,8 @@ ModelImporter:
     6400092: Cylinder
     6400094: BezierCurve
     6400096: canopy_fabric
+    6400098: footboard_curve
+    6400100: headboard_curve
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
