@@ -60,6 +60,8 @@ ModelImporter:
     100108: headboard_base
     100110: headboard_roof
     100112: pollow
+    100114: blanket
+    100116: mattress
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -117,6 +119,8 @@ ModelImporter:
     400108: headboard_base
     400110: headboard_roof
     400112: pollow
+    400114: blanket
+    400116: mattress
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -173,6 +177,8 @@ ModelImporter:
     2300106: headboard_base
     2300108: headboard_roof
     2300110: pollow
+    2300112: blanket
+    2300114: mattress
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -229,6 +235,8 @@ ModelImporter:
     3300106: headboard_base
     3300108: headboard_roof
     3300110: pollow
+    3300112: blanket
+    3300114: mattress
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -284,6 +292,8 @@ ModelImporter:
     4300104: pollow
     4300106: headboard_roof
     4300108: headboard_base
+    4300110: mattress
+    4300112: blanket
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -340,6 +350,8 @@ ModelImporter:
     6400106: headboard_base
     6400108: headboard_roof
     6400110: pollow
+    6400112: blanket
+    6400114: mattress
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
