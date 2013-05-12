@@ -51,6 +51,8 @@ ModelImporter:
     100090: main_door_jam_w
     100092: canopy
     100094: Cylinder
+    100096: BezierCurve
+    100098: canopy_fabric
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -99,6 +101,8 @@ ModelImporter:
     400090: main_door_jam_w
     400092: canopy
     400094: Cylinder
+    400096: BezierCurve
+    400098: canopy_fabric
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -146,6 +150,8 @@ ModelImporter:
     2300088: main_door_jam_w
     2300090: canopy
     2300092: Cylinder
+    2300094: BezierCurve
+    2300096: canopy_fabric
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -193,6 +199,8 @@ ModelImporter:
     3300088: main_door_jam_w
     3300090: canopy
     3300092: Cylinder
+    3300094: BezierCurve
+    3300096: canopy_fabric
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -239,6 +247,8 @@ ModelImporter:
     4300086: base
     4300088: canopy
     4300090: Cylinder
+    4300092: BezierCurve
+    4300094: canopy_fabric
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -286,6 +296,8 @@ ModelImporter:
     6400088: main_door_jam_w
     6400090: canopy
     6400092: Cylinder
+    6400094: BezierCurve
+    6400096: canopy_fabric
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
