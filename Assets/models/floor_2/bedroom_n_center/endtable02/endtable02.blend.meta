@@ -17,6 +17,7 @@ ModelImporter:
     100022: legs_top
     100024: top
     100026: Cone
+    100028: pull
     400000: Cube
     400002: Cube_002
     400004: Cube_003
@@ -31,6 +32,7 @@ ModelImporter:
     400022: legs_top
     400024: top
     400026: Cone
+    400028: pull
     2300000: Cube
     2300002: Cube_002
     2300004: Cube_003
@@ -44,6 +46,7 @@ ModelImporter:
     2300020: legs_top
     2300022: top
     2300024: Cone
+    2300026: pull
     3300000: Cube
     3300002: Cube_002
     3300004: Cube_003
@@ -57,6 +60,7 @@ ModelImporter:
     3300020: legs_top
     3300022: top
     3300024: Cone
+    3300026: pull
     4300000: Cube_005
     4300002: Cylinder
     4300004: Cube_004
@@ -70,6 +74,7 @@ ModelImporter:
     4300020: legs_top
     4300022: base
     4300024: Cone
+    4300026: pull
     6400000: Cube
     6400002: Cube_002
     6400004: Cube_003
@@ -83,6 +88,7 @@ ModelImporter:
     6400020: legs_top
     6400022: top
     6400024: Cone
+    6400026: pull
     7400000: drawer_open
     7400002: drawer_close
     9500000: //RootNode
