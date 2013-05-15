@@ -49,6 +49,7 @@ ModelImporter:
     100086: leg_top_front_right
     100088: leg_tpp_back_right
     100090: table
+    100092: mirror_back
     400000: base
     400002: BezierCurve
     400004: drawer
@@ -95,6 +96,7 @@ ModelImporter:
     400086: leg_top_front_right
     400088: leg_tpp_back_right
     400090: table
+    400092: mirror_back
     2300000: base
     2300002: BezierCurve
     2300004: drawer
@@ -138,6 +140,7 @@ ModelImporter:
     2300080: leg_top_front_left
     2300082: leg_top_front_right
     2300084: leg_tpp_back_right
+    2300086: mirror_back
     3300000: base
     3300002: BezierCurve
     3300004: drawer
@@ -181,6 +184,7 @@ ModelImporter:
     3300080: leg_top_front_left
     3300082: leg_top_front_right
     3300084: leg_tpp_back_right
+    3300086: mirror_back
     4300000: BezierCurve
     4300002: drawer
     4300004: base
@@ -224,6 +228,7 @@ ModelImporter:
     4300080: leg_back_left
     4300082: leg_front_left
     4300084: leg_front_right
+    4300086: mirror_back
     6400000: base
     6400002: BezierCurve
     6400004: BezierCurve_001
@@ -267,8 +272,11 @@ ModelImporter:
     6400080: leg_top_front_left
     6400082: leg_top_front_right
     6400084: leg_tpp_back_right
-    7400000: Default Take
+    6400086: mirror_back
+    7400000: drawer_open
+    7400002: drawer_close
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -281,7 +289,49 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations: []
+    clipAnimations:
+    - name: drawer_open
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: drawer_close
+      takeName: Default Take
+      firstFrame: 10
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -319,5 +369,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 
