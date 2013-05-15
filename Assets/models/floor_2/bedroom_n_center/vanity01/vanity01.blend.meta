@@ -224,6 +224,49 @@ ModelImporter:
     4300080: leg_back_left
     4300082: leg_front_left
     4300084: leg_front_right
+    6400000: base
+    6400002: BezierCurve
+    6400004: BezierCurve_001
+    6400006: BezierCurve_002
+    6400008: BezierCurve_003
+    6400010: BezierCurve_004
+    6400012: BezierCurve_005
+    6400014: BezierCurve_006
+    6400016: BezierCurve_007
+    6400018: BezierCurve_008
+    6400020: BezierCurve_009
+    6400022: BezierCurve_010
+    6400024: BezierCurve_011
+    6400026: BezierCurve_012
+    6400028: BezierCurve_013
+    6400030: BezierCurve_014
+    6400032: BezierCurve_015
+    6400034: Cube
+    6400036: Cube_001
+    6400038: Cube_002
+    6400040: Cube_003
+    6400042: Cube_004
+    6400044: Cube_005
+    6400046: Cube_006
+    6400048: Cube_007
+    6400050: Cube_008
+    6400052: Cube_009
+    6400054: Cube_010
+    6400056: Cube_011
+    6400058: cushion
+    6400060: drawer
+    6400062: leg_back_left
+    6400064: leg_back_left_001
+    6400066: leg_back_right
+    6400068: leg_back_right_001
+    6400070: leg_front_left
+    6400072: leg_front_left_001
+    6400074: leg_front_right
+    6400076: leg_front_right_001
+    6400078: leg_top_back_left
+    6400080: leg_top_front_left
+    6400082: leg_top_front_right
+    6400084: leg_tpp_back_right
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -244,10 +287,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
