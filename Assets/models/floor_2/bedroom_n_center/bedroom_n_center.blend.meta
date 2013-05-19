@@ -64,6 +64,8 @@ ModelImporter:
     100116: mattress
     100118: Plane
     100120: mattress_001
+    100122: door_glass
+    100124: window_glass
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -125,6 +127,8 @@ ModelImporter:
     400116: mattress
     400118: Plane
     400120: mattress_001
+    400122: door_glass
+    400124: window_glass
     2300000: //RootNode
     2300002: ceiling
     2300004: floor
@@ -185,6 +189,8 @@ ModelImporter:
     2300114: mattress
     2300116: Plane
     2300118: mattress_001
+    2300120: door_glass
+    2300122: window_glass
     3300000: //RootNode
     3300002: ceiling
     3300004: floor
@@ -245,6 +251,8 @@ ModelImporter:
     3300114: mattress
     3300116: Plane
     3300118: mattress_001
+    3300120: door_glass
+    3300122: window_glass
     4300000: Cube
     4300002: ceiling
     4300004: wall_n
@@ -304,6 +312,8 @@ ModelImporter:
     4300112: blanket
     4300114: Plane
     4300116: mattress_001
+    4300118: door_glass
+    4300120: window_glass
     6400000: //RootNode
     6400002: ceiling
     6400004: floor
@@ -364,6 +374,8 @@ ModelImporter:
     6400114: mattress
     6400116: Plane
     6400118: mattress_001
+    6400120: door_glass
+    6400122: window_glass
     7400000: main_door_open
     7400002: main_door_close
     7400004: balcony_door_open
