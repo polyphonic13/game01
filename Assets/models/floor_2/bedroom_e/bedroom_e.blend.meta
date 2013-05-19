@@ -14,6 +14,10 @@ ModelImporter:
     100016: floor_board_001
     100018: floor_board_002
     100020: floor_board_003
+    100022: floor_board_e
+    100024: floor_board_n
+    100026: floor_board_s
+    100028: floor_board_w
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -25,6 +29,10 @@ ModelImporter:
     400016: floor_board_001
     400018: floor_board_002
     400020: floor_board_003
+    400022: floor_board_e
+    400024: floor_board_n
+    400026: floor_board_s
+    400028: floor_board_w
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -35,6 +43,10 @@ ModelImporter:
     2300014: floor_board_001
     2300016: floor_board_002
     2300018: floor_board_003
+    2300020: floor_board_e
+    2300022: floor_board_n
+    2300024: floor_board_s
+    2300026: floor_board_w
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -45,6 +57,10 @@ ModelImporter:
     3300014: floor_board_001
     3300016: floor_board_002
     3300018: floor_board_003
+    3300020: floor_board_e
+    3300022: floor_board_n
+    3300024: floor_board_s
+    3300026: floor_board_w
     4300000: wall_n
     4300002: wall_w
     4300004: wall_e
@@ -55,6 +71,10 @@ ModelImporter:
     4300014: floor_board_002
     4300016: floor_board_001
     4300018: floor_board
+    4300020: floor_board_n
+    4300022: floor_board_s
+    4300024: floor_board_w
+    4300026: floor_board_e
     6400000: ceiling
     6400002: floor
     6400004: wall_e
@@ -65,6 +85,10 @@ ModelImporter:
     6400014: floor_board_001
     6400016: floor_board_002
     6400018: floor_board_003
+    6400020: floor_board_e
+    6400022: floor_board_n
+    6400024: floor_board_s
+    6400026: floor_board_w
     7400000: Default Take
     9500000: //RootNode
   materials:
