@@ -18,6 +18,8 @@ ModelImporter:
     100024: floor_board_n
     100026: floor_board_s
     100028: floor_board_w
+    100030: Cube
+    100032: Cube_001
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -33,6 +35,8 @@ ModelImporter:
     400024: floor_board_n
     400026: floor_board_s
     400028: floor_board_w
+    400030: Cube
+    400032: Cube_001
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -47,6 +51,8 @@ ModelImporter:
     2300022: floor_board_n
     2300024: floor_board_s
     2300026: floor_board_w
+    2300028: Cube
+    2300030: Cube_001
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -61,6 +67,8 @@ ModelImporter:
     3300022: floor_board_n
     3300024: floor_board_s
     3300026: floor_board_w
+    3300028: Cube
+    3300030: Cube_001
     4300000: wall_n
     4300002: wall_w
     4300004: wall_e
@@ -75,6 +83,8 @@ ModelImporter:
     4300022: floor_board_s
     4300024: floor_board_w
     4300026: floor_board_e
+    4300028: Cube_001
+    4300030: Cube
     6400000: ceiling
     6400002: floor
     6400004: wall_e
@@ -89,6 +99,8 @@ ModelImporter:
     6400022: floor_board_n
     6400024: floor_board_s
     6400026: floor_board_w
+    6400028: Cube
+    6400030: Cube_001
     7400000: Default Take
     9500000: //RootNode
   materials:
