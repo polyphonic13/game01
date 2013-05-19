@@ -94,6 +94,13 @@ ModelImporter:
     100176: Cube_014
     100178: balcony_rail_top
     100180: balcony_rail_top_2
+    100182: window_frame_n
+    100184: window_frame_s
+    100186: window_glass
+    100188: window_glass_001
+    100190: balcony_door
+    100192: balcony_door_glass
+    100194: pillow
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -185,6 +192,13 @@ ModelImporter:
     400176: Cube_014
     400178: balcony_rail_top
     400180: balcony_rail_top_2
+    400182: window_frame_n
+    400184: window_frame_s
+    400186: window_glass
+    400188: window_glass_001
+    400190: balcony_door
+    400192: balcony_door_glass
+    400194: pillow
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -272,6 +286,13 @@ ModelImporter:
     2300168: Cube_014
     2300170: balcony_rail_top
     2300172: balcony_rail_top_2
+    2300174: window_frame_n
+    2300176: window_frame_s
+    2300178: window_glass
+    2300180: window_glass_001
+    2300182: balcony_door
+    2300184: balcony_door_glass
+    2300186: pillow
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -359,6 +380,13 @@ ModelImporter:
     3300168: Cube_014
     3300170: balcony_rail_top
     3300172: balcony_rail_top_2
+    3300174: window_frame_n
+    3300176: window_frame_s
+    3300178: window_glass
+    3300180: window_glass_001
+    3300182: balcony_door
+    3300184: balcony_door_glass
+    3300186: pillow
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -446,6 +474,13 @@ ModelImporter:
     4300168: Cube_014
     4300170: balcony_rail_top_2
     4300172: balcony_rail_top
+    4300174: window_frame_n
+    4300176: window_glass_001
+    4300178: window_frame_s
+    4300180: window_glass
+    4300182: balcony_door
+    4300184: balcony_door_glass
+    4300186: pillow
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -533,7 +568,15 @@ ModelImporter:
     6400168: Cube_014
     6400170: balcony_rail_top
     6400172: balcony_rail_top_2
-    7400000: Default Take
+    6400174: window_frame_n
+    6400176: window_frame_s
+    6400178: window_glass
+    6400180: window_glass_001
+    6400182: balcony_door
+    6400184: balcony_door_glass
+    6400186: pillow
+    7400000: balcony_door_open
+    7400002: balcony_door_close
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -548,7 +591,49 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations: []
+    clipAnimations:
+    - name: balcony_door_open
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: balcony_door_close
+      takeName: Default Take
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
