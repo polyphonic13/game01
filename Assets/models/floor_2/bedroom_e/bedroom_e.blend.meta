@@ -24,6 +24,10 @@ ModelImporter:
     100036: door_frame
     100038: window_n
     100040: window_s
+    100042: glass
+    100044: glass_001
+    100046: window_frame_n
+    100048: window_frame_s
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -45,6 +49,10 @@ ModelImporter:
     400036: door_frame
     400038: window_n
     400040: window_s
+    400042: glass
+    400044: glass_001
+    400046: window_frame_n
+    400048: window_frame_s
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -65,6 +73,10 @@ ModelImporter:
     2300034: door_frame
     2300036: window_n
     2300038: window_s
+    2300040: glass
+    2300042: glass_001
+    2300044: window_frame_n
+    2300046: window_frame_s
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -85,6 +97,10 @@ ModelImporter:
     3300034: door_frame
     3300036: window_n
     3300038: window_s
+    3300040: glass
+    3300042: glass_001
+    3300044: window_frame_n
+    3300046: window_frame_s
     4300000: wall_n
     4300002: wall_w
     4300004: wall_e
@@ -105,6 +121,10 @@ ModelImporter:
     4300034: window_n
     4300036: door
     4300038: door_frame
+    4300040: window_frame_s
+    4300042: glass_001
+    4300044: window_frame_n
+    4300046: glass
     6400000: ceiling
     6400002: floor
     6400004: wall_e
@@ -125,6 +145,10 @@ ModelImporter:
     6400034: door_frame
     6400036: window_n
     6400038: window_s
+    6400040: glass
+    6400042: glass_001
+    6400044: window_frame_n
+    6400046: window_frame_s
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
