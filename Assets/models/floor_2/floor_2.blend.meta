@@ -148,6 +148,8 @@ ModelImporter:
     100284: servants_hall_s_wall
     100286: servants_hall_w_wall
     100288: servant_stairway_001
+    100290: bathroom_e_e_wall_001
+    100292: bathroom_e_n_wall_001
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -293,6 +295,8 @@ ModelImporter:
     400284: servants_hall_s_wall
     400286: servants_hall_w_wall
     400288: servant_stairway_001
+    400290: bathroom_e_e_wall_001
+    400292: bathroom_e_n_wall_001
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -431,6 +435,8 @@ ModelImporter:
     2300270: servants_hall_s_wall
     2300272: servants_hall_w_wall
     2300274: servant_stairway_001
+    2300276: bathroom_e_e_wall_001
+    2300278: bathroom_e_n_wall_001
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -569,6 +575,8 @@ ModelImporter:
     3300270: servants_hall_s_wall
     3300272: servants_hall_w_wall
     3300274: servant_stairway_001
+    3300276: bathroom_e_e_wall_001
+    3300278: bathroom_e_n_wall_001
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -707,6 +715,8 @@ ModelImporter:
     4300270: bathroom_e_ceiling
     4300272: bathroom_e_floor
     4300274: servant_stairway_001
+    4300276: bathroom_e_e_wall_001
+    4300278: bathroom_e_n_wall_001
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -803,6 +813,8 @@ ModelImporter:
     6400186: servants_hall_s_wall
     6400188: servants_hall_w_wall
     6400190: servant_stairway_001
+    6400192: bathroom_e_e_wall_001
+    6400194: bathroom_e_n_wall_001
     7400000: Default Take
     9500000: //RootNode
   materials:
