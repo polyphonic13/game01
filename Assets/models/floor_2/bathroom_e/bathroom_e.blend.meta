@@ -10,6 +10,8 @@ ModelImporter:
     100008: wall_n
     100010: wall_s
     100012: wall_w
+    100014: Cube_001
+    100016: floor
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -17,30 +19,40 @@ ModelImporter:
     400008: wall_n
     400010: wall_s
     400012: wall_w
+    400014: Cube_001
+    400016: floor
     2300000: ceiling
     2300002: Cube
     2300004: wall_e
     2300006: wall_n
     2300008: wall_s
     2300010: wall_w
+    2300012: Cube_001
+    2300014: floor
     3300000: ceiling
     3300002: Cube
     3300004: wall_e
     3300006: wall_n
     3300008: wall_s
     3300010: wall_w
+    3300012: Cube_001
+    3300014: floor
     4300000: wall_e
     4300002: wall_n
     4300004: wall_w
     4300006: wall_s
     4300008: ceiling
     4300010: Cube
+    4300012: Cube_001
+    4300014: floor
     6400000: ceiling
     6400002: Cube
     6400004: wall_e
     6400006: wall_n
     6400008: wall_s
     6400010: wall_w
+    6400012: Cube_001
+    6400014: floor
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
