@@ -18,6 +18,10 @@ ModelImporter:
     100024: wood_wall_003
     100026: door_frame
     100028: door
+    100030: Cylinder
+    100032: bathtub
+    100034: Circle
+    100036: upper_lip
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -33,6 +37,10 @@ ModelImporter:
     400024: wood_wall_003
     400026: door_frame
     400028: door
+    400030: Cylinder
+    400032: bathtub
+    400034: Circle
+    400036: upper_lip
     2300000: ceiling
     2300002: Cube
     2300004: wall_e
@@ -47,6 +55,10 @@ ModelImporter:
     2300022: wood_wall_003
     2300024: door_frame
     2300026: door
+    2300028: Cylinder
+    2300030: bathtub
+    2300032: Circle
+    2300034: upper_lip
     3300000: ceiling
     3300002: Cube
     3300004: wall_e
@@ -61,6 +73,10 @@ ModelImporter:
     3300022: wood_wall_003
     3300024: door_frame
     3300026: door
+    3300028: Cylinder
+    3300030: bathtub
+    3300032: Circle
+    3300034: upper_lip
     4300000: wall_e
     4300002: wall_n
     4300004: wall_w
@@ -75,6 +91,10 @@ ModelImporter:
     4300022: wood_wall_001
     4300024: door_frame
     4300026: door
+    4300028: Cylinder
+    4300030: bathtub
+    4300032: Circle
+    4300034: upper_lip
     6400000: ceiling
     6400002: Cube
     6400004: wall_e
@@ -89,6 +109,10 @@ ModelImporter:
     6400022: wood_wall_003
     6400024: door_frame
     6400026: door
+    6400028: Cylinder
+    6400030: bathtub
+    6400032: Circle
+    6400034: upper_lip
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
