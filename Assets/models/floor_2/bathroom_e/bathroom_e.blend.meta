@@ -47,6 +47,10 @@ ModelImporter:
     100082: basin
     100084: sink
     100086: top
+    100088: base_001
+    100090: bowl
+    100092: seat
+    100094: toilet
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -91,6 +95,10 @@ ModelImporter:
     400082: basin
     400084: sink
     400086: top
+    400088: base_001
+    400090: bowl
+    400092: seat
+    400094: toilet
     2300000: ceiling
     2300002: Cube
     2300004: wall_e
@@ -132,6 +140,9 @@ ModelImporter:
     2300076: base
     2300078: basin
     2300080: top
+    2300082: base_001
+    2300084: bowl
+    2300086: seat
     3300000: ceiling
     3300002: Cube
     3300004: wall_e
@@ -173,6 +184,9 @@ ModelImporter:
     3300076: base
     3300078: basin
     3300080: top
+    3300082: base_001
+    3300084: bowl
+    3300086: seat
     4300000: wall_e
     4300002: wall_n
     4300004: wall_w
@@ -214,6 +228,9 @@ ModelImporter:
     4300076: top
     4300078: basin
     4300080: base
+    4300082: bowl
+    4300084: seat
+    4300086: base_001
     6400000: ceiling
     6400002: Cube
     6400004: wall_e
@@ -255,6 +272,9 @@ ModelImporter:
     6400076: base
     6400078: basin
     6400080: top
+    6400082: base_001
+    6400084: bowl
+    6400086: seat
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
