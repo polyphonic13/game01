@@ -1,0 +1,1 @@
+Assets/models/floor_2/bathroom_e/bathroom_e.blend
