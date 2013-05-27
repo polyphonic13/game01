@@ -41,6 +41,12 @@ ModelImporter:
     100070: tub_base
     100072: pipe_010
     100074: pipe_011
+    100076: BezierCircle
+    100078: Icosphere_002
+    100080: base
+    100082: basin
+    100084: sink
+    100086: top
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -79,6 +85,12 @@ ModelImporter:
     400070: tub_base
     400072: pipe_010
     400074: pipe_011
+    400076: BezierCircle
+    400078: Icosphere_002
+    400080: base
+    400082: basin
+    400084: sink
+    400086: top
     2300000: ceiling
     2300002: Cube
     2300004: wall_e
@@ -115,6 +127,11 @@ ModelImporter:
     2300066: tub_base
     2300068: pipe_010
     2300070: pipe_011
+    2300072: BezierCircle
+    2300074: Icosphere_002
+    2300076: base
+    2300078: basin
+    2300080: top
     3300000: ceiling
     3300002: Cube
     3300004: wall_e
@@ -151,6 +168,11 @@ ModelImporter:
     3300066: tub_base
     3300068: pipe_010
     3300070: pipe_011
+    3300072: BezierCircle
+    3300074: Icosphere_002
+    3300076: base
+    3300078: basin
+    3300080: top
     4300000: wall_e
     4300002: wall_n
     4300004: wall_w
@@ -187,6 +209,11 @@ ModelImporter:
     4300066: tub_base
     4300068: pipe_011
     4300070: pipe_010
+    4300072: BezierCircle
+    4300074: Icosphere_002
+    4300076: top
+    4300078: basin
+    4300080: base
     6400000: ceiling
     6400002: Cube
     6400004: wall_e
@@ -223,6 +250,11 @@ ModelImporter:
     6400066: tub_base
     6400068: pipe_010
     6400070: pipe_011
+    6400072: BezierCircle
+    6400074: Icosphere_002
+    6400076: base
+    6400078: basin
+    6400080: top
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
