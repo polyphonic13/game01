@@ -87,6 +87,12 @@ ModelImporter:
     100162: floor_004
     100164: pipe_n_002
     100166: pipe_s_002
+    100168: tiled_wall_e
+    100170: tiled_wall_n
+    100172: tiled_wall_s
+    100174: tiled_wall_w
+    100176: washer_n_002
+    100178: washer_n_003
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -171,6 +177,12 @@ ModelImporter:
     400162: floor_004
     400164: pipe_n_002
     400166: pipe_s_002
+    400168: tiled_wall_e
+    400170: tiled_wall_n
+    400172: tiled_wall_s
+    400174: tiled_wall_w
+    400176: washer_n_002
+    400178: washer_n_003
     2300000: ceiling
     2300002: Cube
     2300004: wall_e
@@ -249,6 +261,12 @@ ModelImporter:
     2300150: floor_004
     2300152: pipe_n_002
     2300154: pipe_s_002
+    2300156: tiled_wall_e
+    2300158: tiled_wall_n
+    2300160: tiled_wall_s
+    2300162: tiled_wall_w
+    2300164: washer_n_002
+    2300166: washer_n_003
     3300000: ceiling
     3300002: Cube
     3300004: wall_e
@@ -327,6 +345,12 @@ ModelImporter:
     3300150: floor_004
     3300152: pipe_n_002
     3300154: pipe_s_002
+    3300156: tiled_wall_e
+    3300158: tiled_wall_n
+    3300160: tiled_wall_s
+    3300162: tiled_wall_w
+    3300164: washer_n_002
+    3300166: washer_n_003
     4300000: wall_e
     4300002: wall_n
     4300004: wall_w
@@ -405,6 +429,12 @@ ModelImporter:
     4300150: floor_001
     4300152: pipe_s_002
     4300154: pipe_n_002
+    4300156: tiled_wall_e
+    4300158: tiled_wall_s
+    4300160: tiled_wall_n
+    4300162: tiled_wall_w
+    4300164: washer_n_003
+    4300166: washer_n_002
     6400000: ceiling
     6400002: Cube
     6400004: wall_e
@@ -483,6 +513,12 @@ ModelImporter:
     6400150: floor_004
     6400152: pipe_n_002
     6400154: pipe_s_002
+    6400156: tiled_wall_e
+    6400158: tiled_wall_n
+    6400160: tiled_wall_s
+    6400162: tiled_wall_w
+    6400164: washer_n_002
+    6400166: washer_n_003
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
