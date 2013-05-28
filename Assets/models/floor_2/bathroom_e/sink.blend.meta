@@ -22,6 +22,11 @@ ModelImporter:
     100032: top
     100034: washer_n_001
     100036: washer_s_001
+    100038: BezierCurve
+    100040: BezierCurve_001
+    100042: Cube
+    100044: sink
+    100046: BezierCurve_002
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -41,6 +46,11 @@ ModelImporter:
     400032: top
     400034: washer_n_001
     400036: washer_s_001
+    400038: BezierCurve
+    400040: BezierCurve_001
+    400042: Cube
+    400044: sink
+    400046: BezierCurve_002
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -58,6 +68,10 @@ ModelImporter:
     2300028: top
     2300030: washer_n_001
     2300032: washer_s_001
+    2300034: BezierCurve
+    2300036: BezierCurve_001
+    2300038: Cube
+    2300040: BezierCurve_002
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -75,6 +89,10 @@ ModelImporter:
     3300028: top
     3300030: washer_n_001
     3300032: washer_s_001
+    3300034: BezierCurve
+    3300036: BezierCurve_001
+    3300038: Cube
+    3300040: BezierCurve_002
     4300000: top
     4300002: basin
     4300004: base_001
@@ -92,6 +110,31 @@ ModelImporter:
     4300028: handle_ball_s_001
     4300030: handle_s_001
     4300032: pipe_s_001
+    4300034: BezierCurve_001
+    4300036: BezierCurve
+    4300038: Cube
+    4300040: BezierCurve_002
+    6400000: base_001
+    6400002: basin
+    6400004: BezierCurve
+    6400006: BezierCurve_001
+    6400008: connecting_pipe_001
+    6400010: Cube
+    6400012: handle_ball_n_001
+    6400014: handle_ball_s_001
+    6400016: handle_n_001
+    6400018: handle_pipe_n_001
+    6400020: handle_pipe_s_001
+    6400022: handle_s_001
+    6400024: pipe_connector_n_001
+    6400026: pipe_connector_s_001
+    6400028: pipe_n_001
+    6400030: pipe_s_001
+    6400032: spout_001
+    6400034: top
+    6400036: washer_n_001
+    6400038: washer_s_001
+    6400040: BezierCurve_002
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -110,12 +153,12 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .5
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
