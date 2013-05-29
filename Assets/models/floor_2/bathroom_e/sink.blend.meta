@@ -31,6 +31,11 @@ ModelImporter:
     100050: Cube_002
     100052: Cube_003
     100054: washer_n_000
+    100056: base
+    100058: trim_bottom
+    100060: trim_front_legs
+    100062: trim_middle
+    100064: trim_top
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -59,6 +64,11 @@ ModelImporter:
     400050: Cube_002
     400052: Cube_003
     400054: washer_n_000
+    400056: base
+    400058: trim_bottom
+    400060: trim_front_legs
+    400062: trim_middle
+    400064: trim_top
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -84,6 +94,11 @@ ModelImporter:
     2300044: Cube_002
     2300046: Cube_003
     2300048: washer_n_000
+    2300050: base
+    2300052: trim_bottom
+    2300054: trim_front_legs
+    2300056: trim_middle
+    2300058: trim_top
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -109,6 +124,11 @@ ModelImporter:
     3300044: Cube_002
     3300046: Cube_003
     3300048: washer_n_000
+    3300050: base
+    3300052: trim_bottom
+    3300054: trim_front_legs
+    3300056: trim_middle
+    3300058: trim_top
     4300000: top
     4300002: basin
     4300004: base_001
@@ -134,6 +154,11 @@ ModelImporter:
     4300044: Cube_002
     4300046: Cube_001
     4300048: washer_n_000
+    4300050: trim_top
+    4300052: trim_middle
+    4300054: trim_bottom
+    4300056: trim_front_legs
+    4300058: base
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -159,6 +184,11 @@ ModelImporter:
     6400044: Cube_002
     6400046: Cube_003
     6400048: washer_n_000
+    6400050: base
+    6400052: trim_bottom
+    6400054: trim_front_legs
+    6400056: trim_middle
+    6400058: trim_top
     7400000: Default Take
     9500000: //RootNode
   materials:
