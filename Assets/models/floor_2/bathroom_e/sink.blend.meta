@@ -36,6 +36,13 @@ ModelImporter:
     100060: trim_front_legs
     100062: trim_middle
     100064: trim_top
+    100066: handle_ball_n_000
+    100068: handle_n_000
+    100070: handle_pipe_s_000
+    100072: pipe_connector_n_000
+    100074: pipe_n_000
+    100076: trim_top_001
+    100078: washer_n_002
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -69,6 +76,13 @@ ModelImporter:
     400060: trim_front_legs
     400062: trim_middle
     400064: trim_top
+    400066: handle_ball_n_000
+    400068: handle_n_000
+    400070: handle_pipe_s_000
+    400072: pipe_connector_n_000
+    400074: pipe_n_000
+    400076: trim_top_001
+    400078: washer_n_002
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -99,6 +113,13 @@ ModelImporter:
     2300054: trim_front_legs
     2300056: trim_middle
     2300058: trim_top
+    2300060: handle_ball_n_000
+    2300062: handle_n_000
+    2300064: handle_pipe_s_000
+    2300066: pipe_connector_n_000
+    2300068: pipe_n_000
+    2300070: trim_top_001
+    2300072: washer_n_002
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -129,6 +150,13 @@ ModelImporter:
     3300054: trim_front_legs
     3300056: trim_middle
     3300058: trim_top
+    3300060: handle_ball_n_000
+    3300062: handle_n_000
+    3300064: handle_pipe_s_000
+    3300066: pipe_connector_n_000
+    3300068: pipe_n_000
+    3300070: trim_top_001
+    3300072: washer_n_002
     4300000: top
     4300002: basin
     4300004: base_001
@@ -159,6 +187,13 @@ ModelImporter:
     4300054: trim_bottom
     4300056: trim_front_legs
     4300058: base
+    4300060: handle_n_000
+    4300062: handle_pipe_s_000
+    4300064: pipe_n_000
+    4300066: handle_ball_n_000
+    4300068: pipe_connector_n_000
+    4300070: washer_n_002
+    4300072: trim_top_001
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -189,6 +224,13 @@ ModelImporter:
     6400054: trim_front_legs
     6400056: trim_middle
     6400058: trim_top
+    6400060: handle_ball_n_000
+    6400062: handle_n_000
+    6400064: handle_pipe_s_000
+    6400066: pipe_connector_n_000
+    6400068: pipe_n_000
+    6400070: trim_top_001
+    6400072: washer_n_002
     7400000: Default Take
     9500000: //RootNode
   materials:
