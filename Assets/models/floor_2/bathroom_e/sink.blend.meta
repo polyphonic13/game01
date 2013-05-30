@@ -48,6 +48,10 @@ ModelImporter:
     100084: leg_front_right
     100086: leg_rear_left
     100088: leg_rear_right
+    100090: toilet
+    100092: trim_bottom_001
+    100094: trim_front_legs_001
+    100096: trim_top_003
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -93,6 +97,10 @@ ModelImporter:
     400084: leg_front_right
     400086: leg_rear_left
     400088: leg_rear_right
+    400090: toilet
+    400092: trim_bottom_001
+    400094: trim_front_legs_001
+    400096: trim_top_003
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -135,6 +143,9 @@ ModelImporter:
     2300078: leg_front_right
     2300080: leg_rear_left
     2300082: leg_rear_right
+    2300084: trim_bottom_001
+    2300086: trim_front_legs_001
+    2300088: trim_top_003
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -177,6 +188,9 @@ ModelImporter:
     3300078: leg_front_right
     3300080: leg_rear_left
     3300082: leg_rear_right
+    3300084: trim_bottom_001
+    3300086: trim_front_legs_001
+    3300088: trim_top_003
     4300000: top
     4300002: basin
     4300004: base_001
@@ -219,6 +233,9 @@ ModelImporter:
     4300078: leg_front_left
     4300080: leg_front_right
     4300082: leg_rear_right
+    4300084: trim_front_legs_001
+    4300086: trim_bottom_001
+    4300088: trim_top_003
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -261,6 +278,9 @@ ModelImporter:
     6400078: leg_front_right
     6400080: leg_rear_left
     6400082: leg_rear_right
+    6400084: trim_bottom_001
+    6400086: trim_front_legs_001
+    6400088: trim_top_003
     7400000: Default Take
     9500000: //RootNode
   materials:
