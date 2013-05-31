@@ -61,6 +61,10 @@ ModelImporter:
     100110: tank_support_r
     100112: toilet_seat
     100114: tank_support_r_001
+    100116: washer_n_003
+    100118: washer_n_004
+    100120: washer_n_005
+    100122: washer_n_006
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -119,6 +123,10 @@ ModelImporter:
     400110: tank_support_r
     400112: toilet_seat
     400114: tank_support_r_001
+    400116: washer_n_003
+    400118: washer_n_004
+    400120: washer_n_005
+    400122: washer_n_006
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -173,6 +181,10 @@ ModelImporter:
     2300102: tank_support_r
     2300104: toilet_seat
     2300106: tank_support_r_001
+    2300108: washer_n_003
+    2300110: washer_n_004
+    2300112: washer_n_005
+    2300114: washer_n_006
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -227,6 +239,10 @@ ModelImporter:
     3300102: tank_support_r
     3300104: toilet_seat
     3300106: tank_support_r_001
+    3300108: washer_n_003
+    3300110: washer_n_004
+    3300112: washer_n_005
+    3300114: washer_n_006
     4300000: top
     4300002: basin
     4300004: base_001
@@ -281,6 +297,10 @@ ModelImporter:
     4300102: bowl
     4300104: base_top
     4300106: tank_support_r_001
+    4300108: washer_n_006
+    4300110: washer_n_005
+    4300112: washer_n_004
+    4300114: washer_n_003
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -335,6 +355,10 @@ ModelImporter:
     6400102: tank_support_r
     6400104: toilet_seat
     6400106: tank_support_r_001
+    6400108: washer_n_003
+    6400110: washer_n_004
+    6400112: washer_n_005
+    6400114: washer_n_006
     7400000: Default Take
     9500000: //RootNode
   materials:
