@@ -52,6 +52,15 @@ ModelImporter:
     100092: trim_bottom_001
     100094: trim_front_legs_001
     100096: trim_top_003
+    100098: base_top
+    100100: bowl
+    100102: pipe_n_002
+    100104: pipe_n_003
+    100106: tank
+    100108: tank_support_l
+    100110: tank_support_r
+    100112: toilet_seat
+    100114: tank_support_r_001
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -101,6 +110,15 @@ ModelImporter:
     400092: trim_bottom_001
     400094: trim_front_legs_001
     400096: trim_top_003
+    400098: base_top
+    400100: bowl
+    400102: pipe_n_002
+    400104: pipe_n_003
+    400106: tank
+    400108: tank_support_l
+    400110: tank_support_r
+    400112: toilet_seat
+    400114: tank_support_r_001
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -146,6 +164,15 @@ ModelImporter:
     2300084: trim_bottom_001
     2300086: trim_front_legs_001
     2300088: trim_top_003
+    2300090: base_top
+    2300092: bowl
+    2300094: pipe_n_002
+    2300096: pipe_n_003
+    2300098: tank
+    2300100: tank_support_l
+    2300102: tank_support_r
+    2300104: toilet_seat
+    2300106: tank_support_r_001
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -191,6 +218,15 @@ ModelImporter:
     3300084: trim_bottom_001
     3300086: trim_front_legs_001
     3300088: trim_top_003
+    3300090: base_top
+    3300092: bowl
+    3300094: pipe_n_002
+    3300096: pipe_n_003
+    3300098: tank
+    3300100: tank_support_l
+    3300102: tank_support_r
+    3300104: toilet_seat
+    3300106: tank_support_r_001
     4300000: top
     4300002: basin
     4300004: base_001
@@ -236,6 +272,15 @@ ModelImporter:
     4300084: trim_front_legs_001
     4300086: trim_bottom_001
     4300088: trim_top_003
+    4300090: pipe_n_003
+    4300092: pipe_n_002
+    4300094: tank_support_l
+    4300096: tank_support_r
+    4300098: tank
+    4300100: toilet_seat
+    4300102: bowl
+    4300104: base_top
+    4300106: tank_support_r_001
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -281,6 +326,15 @@ ModelImporter:
     6400084: trim_bottom_001
     6400086: trim_front_legs_001
     6400088: trim_top_003
+    6400090: base_top
+    6400092: bowl
+    6400094: pipe_n_002
+    6400096: pipe_n_003
+    6400098: tank
+    6400100: tank_support_l
+    6400102: tank_support_r
+    6400104: toilet_seat
+    6400106: tank_support_r_001
     7400000: Default Take
     9500000: //RootNode
   materials:
