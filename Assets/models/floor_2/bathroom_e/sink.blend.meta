@@ -65,6 +65,12 @@ ModelImporter:
     100118: washer_n_004
     100120: washer_n_005
     100122: washer_n_006
+    100124: bottom_trim_center
+    100126: bottom_trim_left
+    100128: bottom_trim_right
+    100130: seat_hinge_left
+    100132: seat_hinge_right
+    100134: Plane
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -127,6 +133,12 @@ ModelImporter:
     400118: washer_n_004
     400120: washer_n_005
     400122: washer_n_006
+    400124: bottom_trim_center
+    400126: bottom_trim_left
+    400128: bottom_trim_right
+    400130: seat_hinge_left
+    400132: seat_hinge_right
+    400134: Plane
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -185,6 +197,12 @@ ModelImporter:
     2300110: washer_n_004
     2300112: washer_n_005
     2300114: washer_n_006
+    2300116: bottom_trim_center
+    2300118: bottom_trim_left
+    2300120: bottom_trim_right
+    2300122: seat_hinge_left
+    2300124: seat_hinge_right
+    2300126: Plane
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -243,6 +261,12 @@ ModelImporter:
     3300110: washer_n_004
     3300112: washer_n_005
     3300114: washer_n_006
+    3300116: bottom_trim_center
+    3300118: bottom_trim_left
+    3300120: bottom_trim_right
+    3300122: seat_hinge_left
+    3300124: seat_hinge_right
+    3300126: Plane
     4300000: top
     4300002: basin
     4300004: base_001
@@ -301,6 +325,12 @@ ModelImporter:
     4300110: washer_n_005
     4300112: washer_n_004
     4300114: washer_n_003
+    4300116: seat_hinge_left
+    4300118: seat_hinge_right
+    4300120: bottom_trim_left
+    4300122: bottom_trim_right
+    4300124: bottom_trim_center
+    4300126: Plane
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -359,6 +389,12 @@ ModelImporter:
     6400110: washer_n_004
     6400112: washer_n_005
     6400114: washer_n_006
+    6400116: bottom_trim_center
+    6400118: bottom_trim_left
+    6400120: bottom_trim_right
+    6400122: seat_hinge_left
+    6400124: seat_hinge_right
+    6400126: Plane
     7400000: Default Take
     9500000: //RootNode
   materials:
