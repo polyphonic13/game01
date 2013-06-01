@@ -75,6 +75,10 @@ ModelImporter:
     100138: wall_mount
     100140: wall_mount_001
     100142: new_toilet_seat
+    100144: base_002
+    100146: Plane_001
+    100148: Plane_002
+    100150: Plane_003
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -147,6 +151,10 @@ ModelImporter:
     400138: wall_mount
     400140: wall_mount_001
     400142: new_toilet_seat
+    400144: base_002
+    400146: Plane_001
+    400148: Plane_002
+    400150: Plane_003
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -215,6 +223,10 @@ ModelImporter:
     2300130: wall_mount
     2300132: wall_mount_001
     2300134: new_toilet_seat
+    2300136: base_002
+    2300138: Plane_001
+    2300140: Plane_002
+    2300142: Plane_003
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -283,6 +295,10 @@ ModelImporter:
     3300130: wall_mount
     3300132: wall_mount_001
     3300134: new_toilet_seat
+    3300136: base_002
+    3300138: Plane_001
+    3300140: Plane_002
+    3300142: Plane_003
     4300000: top
     4300002: basin
     4300004: base_001
@@ -351,6 +367,10 @@ ModelImporter:
     4300130: wall_mount
     4300132: wall_mount_001
     4300134: new_toilet_seat
+    4300136: base_002
+    4300138: Plane_003
+    4300140: Plane_002
+    4300142: Plane_001
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -419,8 +439,14 @@ ModelImporter:
     6400130: wall_mount
     6400132: wall_mount_001
     6400134: new_toilet_seat
-    7400000: Default Take
+    6400136: base_002
+    6400138: Plane_001
+    6400140: Plane_002
+    6400142: Plane_003
+    7400000: door_open
+    7400002: door_close
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -433,7 +459,49 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations: []
+    clipAnimations:
+    - name: door_open
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: door_close
+      takeName: Default Take
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -471,5 +539,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 
