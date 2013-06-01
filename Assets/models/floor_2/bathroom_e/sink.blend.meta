@@ -71,6 +71,7 @@ ModelImporter:
     100130: seat_hinge_left
     100132: seat_hinge_right
     100134: Plane
+    100136: tank_support_r_000
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -139,6 +140,7 @@ ModelImporter:
     400130: seat_hinge_left
     400132: seat_hinge_right
     400134: Plane
+    400136: tank_support_r_000
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -203,6 +205,7 @@ ModelImporter:
     2300122: seat_hinge_left
     2300124: seat_hinge_right
     2300126: Plane
+    2300128: tank_support_r_000
     3300000: base_001
     3300002: basin
     3300004: connecting_pipe_001
@@ -267,6 +270,7 @@ ModelImporter:
     3300122: seat_hinge_left
     3300124: seat_hinge_right
     3300126: Plane
+    3300128: tank_support_r_000
     4300000: top
     4300002: basin
     4300004: base_001
@@ -331,6 +335,7 @@ ModelImporter:
     4300122: bottom_trim_right
     4300124: bottom_trim_center
     4300126: Plane
+    4300128: tank_support_r_000
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -395,6 +400,7 @@ ModelImporter:
     6400122: seat_hinge_left
     6400124: seat_hinge_right
     6400126: Plane
+    6400128: tank_support_r_000
     7400000: Default Take
     9500000: //RootNode
   materials:
