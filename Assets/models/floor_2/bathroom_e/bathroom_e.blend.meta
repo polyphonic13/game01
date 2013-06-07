@@ -98,6 +98,8 @@ ModelImporter:
     100184: wood_wall_s
     100186: wood_wall_w
     100188: wood_wall_w_001
+    100190: glass
+    100192: window_frame
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -193,6 +195,8 @@ ModelImporter:
     400184: wood_wall_s
     400186: wood_wall_w
     400188: wood_wall_w_001
+    400190: glass
+    400192: window_frame
     2300000: ceiling
     2300002: Cube
     2300004: wall_e
@@ -282,6 +286,8 @@ ModelImporter:
     2300172: wood_wall_s
     2300174: wood_wall_w
     2300176: wood_wall_w_001
+    2300178: glass
+    2300180: window_frame
     3300000: ceiling
     3300002: Cube
     3300004: wall_e
@@ -371,6 +377,8 @@ ModelImporter:
     3300172: wood_wall_s
     3300174: wood_wall_w
     3300176: wood_wall_w_001
+    3300178: glass
+    3300180: window_frame
     4300000: wall_e
     4300002: wall_n
     4300004: wall_w
@@ -460,6 +468,8 @@ ModelImporter:
     4300172: wood_wall_s
     4300174: wood_wall_e
     4300176: wood_wall_w_001
+    4300178: window_frame
+    4300180: glass
     6400000: ceiling
     6400002: Cube
     6400004: wall_e
@@ -549,6 +559,8 @@ ModelImporter:
     6400172: wood_wall_s
     6400174: wood_wall_w
     6400176: wood_wall_w_001
+    6400178: glass
+    6400180: window_frame
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
