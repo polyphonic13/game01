@@ -19,6 +19,7 @@ ModelImporter:
     100026: floor_001
     100028: windows
     100030: Sphere_001
+    100032: Sphere_000
     400000: ceiling
     400002: floor
     400004: //RootNode
@@ -35,6 +36,7 @@ ModelImporter:
     400026: floor_001
     400028: windows
     400030: Sphere_001
+    400032: Sphere_000
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -48,6 +50,7 @@ ModelImporter:
     2300020: floor_001
     2300022: windows
     2300024: Sphere_001
+    2300026: Sphere_000
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -61,6 +64,7 @@ ModelImporter:
     3300020: floor_001
     3300022: windows
     3300024: Sphere_001
+    3300026: Sphere_000
     4300000: wall_e
     4300002: wall_w
     4300004: wall_s
@@ -74,6 +78,7 @@ ModelImporter:
     4300020: door_n
     4300022: floor_001
     4300024: Sphere_001
+    4300026: Sphere_000
     6400000: ceiling
     6400002: door_n
     6400004: door_s
@@ -86,8 +91,11 @@ ModelImporter:
     6400018: wall_w
     6400020: windows
     6400022: Sphere_001
+    6400024: Sphere_000
     7400000: main_door_open
     7400002: main_door_close
+    7400004: Default Take
+    7400006: Default Take0
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -128,6 +136,48 @@ ModelImporter:
       takeName: Default Take
       firstFrame: 10
       lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: Default Take0
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 49
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
