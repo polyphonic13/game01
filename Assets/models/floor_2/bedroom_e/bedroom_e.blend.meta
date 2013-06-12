@@ -29,6 +29,10 @@ ModelImporter:
     100046: window_frame_n
     100048: window_frame_s
     100050: main_door
+    100052: base
+    100054: base_bottom_trim
+    100056: bed
+    100058: BezierCurve_001
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -55,6 +59,10 @@ ModelImporter:
     400046: window_frame_n
     400048: window_frame_s
     400050: main_door
+    400052: base
+    400054: base_bottom_trim
+    400056: bed
+    400058: BezierCurve_001
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -80,6 +88,9 @@ ModelImporter:
     2300044: window_frame_n
     2300046: window_frame_s
     2300048: main_door
+    2300050: base
+    2300052: base_bottom_trim
+    2300054: BezierCurve_001
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -105,6 +116,9 @@ ModelImporter:
     3300044: window_frame_n
     3300046: window_frame_s
     3300048: main_door
+    3300050: base
+    3300052: base_bottom_trim
+    3300054: BezierCurve_001
     4300000: wall_n
     4300002: wall_w
     4300004: wall_e
@@ -130,6 +144,9 @@ ModelImporter:
     4300044: window_frame_n
     4300046: glass
     4300048: main_door
+    4300050: BezierCurve_001
+    4300052: base_bottom_trim
+    4300054: base
     6400000: ceiling
     6400002: floor
     6400004: wall_e
@@ -155,6 +172,9 @@ ModelImporter:
     6400044: window_frame_n
     6400046: window_frame_s
     6400048: main_door
+    6400050: base
+    6400052: base_bottom_trim
+    6400054: BezierCurve_001
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
