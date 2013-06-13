@@ -33,6 +33,14 @@ ModelImporter:
     100054: base_bottom_trim
     100056: bed
     100058: BezierCurve_001
+    100060: base_bottom_trim_001
+    100062: base_bottom_trim_002
+    100064: Cylinder
+    100066: headboard
+    100068: headboard_001
+    100070: thin_trim_bottom
+    100072: thin_trim_top
+    100074: thin_trim_top_001
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -63,6 +71,14 @@ ModelImporter:
     400054: base_bottom_trim
     400056: bed
     400058: BezierCurve_001
+    400060: base_bottom_trim_001
+    400062: base_bottom_trim_002
+    400064: Cylinder
+    400066: headboard
+    400068: headboard_001
+    400070: thin_trim_bottom
+    400072: thin_trim_top
+    400074: thin_trim_top_001
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -91,6 +107,14 @@ ModelImporter:
     2300050: base
     2300052: base_bottom_trim
     2300054: BezierCurve_001
+    2300056: base_bottom_trim_001
+    2300058: base_bottom_trim_002
+    2300060: Cylinder
+    2300062: headboard
+    2300064: headboard_001
+    2300066: thin_trim_bottom
+    2300068: thin_trim_top
+    2300070: thin_trim_top_001
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -119,6 +143,14 @@ ModelImporter:
     3300050: base
     3300052: base_bottom_trim
     3300054: BezierCurve_001
+    3300056: base_bottom_trim_001
+    3300058: base_bottom_trim_002
+    3300060: Cylinder
+    3300062: headboard
+    3300064: headboard_001
+    3300066: thin_trim_bottom
+    3300068: thin_trim_top
+    3300070: thin_trim_top_001
     4300000: wall_n
     4300002: wall_w
     4300004: wall_e
@@ -147,6 +179,14 @@ ModelImporter:
     4300050: BezierCurve_001
     4300052: base_bottom_trim
     4300054: base
+    4300056: base_bottom_trim_002
+    4300058: base_bottom_trim_001
+    4300060: Cylinder
+    4300062: thin_trim_top_001
+    4300064: headboard_001
+    4300066: headboard
+    4300068: thin_trim_top
+    4300070: thin_trim_bottom
     6400000: ceiling
     6400002: floor
     6400004: wall_e
@@ -175,6 +215,14 @@ ModelImporter:
     6400050: base
     6400052: base_bottom_trim
     6400054: BezierCurve_001
+    6400056: base_bottom_trim_001
+    6400058: base_bottom_trim_002
+    6400060: Cylinder
+    6400062: headboard
+    6400064: headboard_001
+    6400066: thin_trim_bottom
+    6400068: thin_trim_top
+    6400070: thin_trim_top_001
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
