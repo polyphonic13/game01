@@ -20,6 +20,8 @@ ModelImporter:
     100028: windows
     100030: Sphere_001
     100032: Sphere_000
+    100034: Cylinder
+    100036: Sphere_002
     400000: ceiling
     400002: floor
     400004: //RootNode
@@ -37,6 +39,8 @@ ModelImporter:
     400028: windows
     400030: Sphere_001
     400032: Sphere_000
+    400034: Cylinder
+    400036: Sphere_002
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -51,6 +55,8 @@ ModelImporter:
     2300022: windows
     2300024: Sphere_001
     2300026: Sphere_000
+    2300028: Cylinder
+    2300030: Sphere_002
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -65,6 +71,8 @@ ModelImporter:
     3300022: windows
     3300024: Sphere_001
     3300026: Sphere_000
+    3300028: Cylinder
+    3300030: Sphere_002
     4300000: wall_e
     4300002: wall_w
     4300004: wall_s
@@ -79,6 +87,8 @@ ModelImporter:
     4300022: floor_001
     4300024: Sphere_001
     4300026: Sphere_000
+    4300028: Cylinder
+    4300030: Sphere_002
     6400000: ceiling
     6400002: door_n
     6400004: door_s
@@ -92,10 +102,12 @@ ModelImporter:
     6400020: windows
     6400022: Sphere_001
     6400024: Sphere_000
+    6400026: Cylinder
+    6400028: Sphere_002
     7400000: main_door_open
     7400002: main_door_close
-    7400004: Default Take
-    7400006: Default Take0
+    7400004: window_open
+    7400006: window_close
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -153,10 +165,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       transformMask: []
-    - name: Default Take
+    - name: window_open
       takeName: Default Take
-      firstFrame: 0
-      lastFrame: 49
+      firstFrame: 20
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -174,10 +186,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       transformMask: []
-    - name: Default Take0
+    - name: window_close
       takeName: Default Take
-      firstFrame: 0
-      lastFrame: 49
+      firstFrame: 30
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
