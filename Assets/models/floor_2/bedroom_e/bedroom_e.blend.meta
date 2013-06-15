@@ -44,6 +44,8 @@ ModelImporter:
     100076: mattress
     100078: posts
     100080: thin_trim_bottom_001
+    100082: legs
+    100084: mattress_001
     400000: //RootNode
     400002: ceiling
     400004: floor
@@ -85,6 +87,8 @@ ModelImporter:
     400076: mattress
     400078: posts
     400080: thin_trim_bottom_001
+    400082: legs
+    400084: mattress_001
     2300000: ceiling
     2300002: floor
     2300004: wall_e
@@ -124,6 +128,8 @@ ModelImporter:
     2300072: mattress
     2300074: posts
     2300076: thin_trim_bottom_001
+    2300078: legs
+    2300080: mattress_001
     3300000: ceiling
     3300002: floor
     3300004: wall_e
@@ -163,6 +169,8 @@ ModelImporter:
     3300072: mattress
     3300074: posts
     3300076: thin_trim_bottom_001
+    3300078: legs
+    3300080: mattress_001
     4300000: wall_n
     4300002: wall_w
     4300004: wall_e
@@ -202,6 +210,8 @@ ModelImporter:
     4300072: thin_trim_bottom_001
     4300074: mattress
     4300076: posts
+    4300078: legs
+    4300080: mattress_001
     6400000: ceiling
     6400002: floor
     6400004: wall_e
@@ -241,6 +251,8 @@ ModelImporter:
     6400072: mattress
     6400074: posts
     6400076: thin_trim_bottom_001
+    6400078: legs
+    6400080: mattress_001
     7400000: door_open
     7400002: door_close
     9500000: //RootNode
