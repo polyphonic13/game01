@@ -150,6 +150,17 @@ ModelImporter:
     100288: servant_stairway_001
     100290: bathroom_e_e_wall_001
     100292: bathroom_e_n_wall_001
+    100294: servants_hall_w_wall_001
+    100296: blackness
+    100298: blackness_001
+    100300: blackness_002
+    100302: blackness_003
+    100304: blackness_004
+    100306: blackness_005
+    100308: blackness_006
+    100310: blackness_007
+    100312: blackness_008
+    100314: blackness_009
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -297,6 +308,17 @@ ModelImporter:
     400288: servant_stairway_001
     400290: bathroom_e_e_wall_001
     400292: bathroom_e_n_wall_001
+    400294: servants_hall_w_wall_001
+    400296: blackness
+    400298: blackness_001
+    400300: blackness_002
+    400302: blackness_003
+    400304: blackness_004
+    400306: blackness_005
+    400308: blackness_006
+    400310: blackness_007
+    400312: blackness_008
+    400314: blackness_009
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -437,6 +459,17 @@ ModelImporter:
     2300274: servant_stairway_001
     2300276: bathroom_e_e_wall_001
     2300278: bathroom_e_n_wall_001
+    2300280: servants_hall_w_wall_001
+    2300282: blackness
+    2300284: blackness_001
+    2300286: blackness_002
+    2300288: blackness_003
+    2300290: blackness_004
+    2300292: blackness_005
+    2300294: blackness_006
+    2300296: blackness_007
+    2300298: blackness_008
+    2300300: blackness_009
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -577,6 +610,17 @@ ModelImporter:
     3300274: servant_stairway_001
     3300276: bathroom_e_e_wall_001
     3300278: bathroom_e_n_wall_001
+    3300280: servants_hall_w_wall_001
+    3300282: blackness
+    3300284: blackness_001
+    3300286: blackness_002
+    3300288: blackness_003
+    3300290: blackness_004
+    3300292: blackness_005
+    3300294: blackness_006
+    3300296: blackness_007
+    3300298: blackness_008
+    3300300: blackness_009
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -717,6 +761,17 @@ ModelImporter:
     4300274: servant_stairway_001
     4300276: bathroom_e_e_wall_001
     4300278: bathroom_e_n_wall_001
+    4300280: servants_hall_w_wall_001
+    4300282: blackness_005
+    4300284: blackness_004
+    4300286: blackness_003
+    4300288: blackness_002
+    4300290: blackness_001
+    4300292: blackness
+    4300294: blackness_009
+    4300296: blackness_008
+    4300298: blackness_007
+    4300300: blackness_006
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -815,6 +870,17 @@ ModelImporter:
     6400190: servant_stairway_001
     6400192: bathroom_e_e_wall_001
     6400194: bathroom_e_n_wall_001
+    6400196: servants_hall_w_wall_001
+    6400198: blackness
+    6400200: blackness_001
+    6400202: blackness_002
+    6400204: blackness_003
+    6400206: blackness_004
+    6400208: blackness_005
+    6400210: blackness_006
+    6400212: blackness_007
+    6400214: blackness_008
+    6400216: blackness_009
     7400000: Default Take
     9500000: //RootNode
   materials:
