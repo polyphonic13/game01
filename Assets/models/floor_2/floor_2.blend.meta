@@ -161,6 +161,8 @@ ModelImporter:
     100310: blackness_007
     100312: blackness_008
     100314: blackness_009
+    100316: dooe_sw
+    100318: door_frame_sw
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -319,6 +321,8 @@ ModelImporter:
     400310: blackness_007
     400312: blackness_008
     400314: blackness_009
+    400316: dooe_sw
+    400318: door_frame_sw
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -470,6 +474,8 @@ ModelImporter:
     2300296: blackness_007
     2300298: blackness_008
     2300300: blackness_009
+    2300302: dooe_sw
+    2300304: door_frame_sw
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -621,6 +627,8 @@ ModelImporter:
     3300296: blackness_007
     3300298: blackness_008
     3300300: blackness_009
+    3300302: dooe_sw
+    3300304: door_frame_sw
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -772,6 +780,8 @@ ModelImporter:
     4300296: blackness_008
     4300298: blackness_007
     4300300: blackness_006
+    4300302: door_frame_sw
+    4300304: dooe_sw
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -881,8 +891,13 @@ ModelImporter:
     6400212: blackness_007
     6400214: blackness_008
     6400216: blackness_009
-    7400000: Default Take
+    6400218: Cube
+    6400220: dooe_sw
+    6400222: door_frame_sw
+    7400000: door_sw_open
+    7400002: door_sw_close
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -895,7 +910,49 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations: []
+    clipAnimations:
+    - name: door_sw_open
+      takeName: Default Take
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: door_sw_close
+      takeName: Default Take
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -933,5 +990,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 
