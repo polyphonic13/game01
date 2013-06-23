@@ -168,6 +168,13 @@ ModelImporter:
     100324: door_sw_001
     100326: door_frame_se
     100328: door_se
+    100330: Icosphere
+    100332: door_knob
+    100334: door_plate
+    100336: door_knob_cynlinder
+    100338: door_knob_001
+    100340: door_knob_cynlinder_001
+    100342: door_plate_001
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -333,6 +340,13 @@ ModelImporter:
     400324: door_sw_001
     400326: door_frame_se
     400328: door_se
+    400330: Icosphere
+    400332: door_knob
+    400334: door_plate
+    400336: door_knob_cynlinder
+    400338: door_knob_001
+    400340: door_knob_cynlinder_001
+    400342: door_plate_001
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -491,6 +505,13 @@ ModelImporter:
     2300310: door_sw_001
     2300312: door_frame_se
     2300314: door_se
+    2300316: Icosphere
+    2300318: door_knob
+    2300320: door_plate
+    2300322: door_knob_cynlinder
+    2300324: door_knob_001
+    2300326: door_knob_cynlinder_001
+    2300328: door_plate_001
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -649,6 +670,13 @@ ModelImporter:
     3300310: door_sw_001
     3300312: door_frame_se
     3300314: door_se
+    3300316: Icosphere
+    3300318: door_knob
+    3300320: door_plate
+    3300322: door_knob_cynlinder
+    3300324: door_knob_001
+    3300326: door_knob_cynlinder_001
+    3300328: door_plate_001
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -807,6 +835,13 @@ ModelImporter:
     4300310: door_sw_001
     4300312: door_frame_se
     4300314: door_se
+    4300316: Icosphere
+    4300318: door_knob
+    4300320: door_plate
+    4300322: door_knob_cynlinder
+    4300324: door_knob_001
+    4300326: door_knob_cynlinder_001
+    4300328: door_plate_001
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -924,6 +959,13 @@ ModelImporter:
     6400228: door_sw_001
     6400230: door_frame_se
     6400232: door_se
+    6400234: Icosphere
+    6400236: door_knob
+    6400238: door_plate
+    6400240: door_knob_cynlinder
+    6400242: door_knob_001
+    6400244: door_knob_cynlinder_001
+    6400246: door_plate_001
     7400000: door_sw_open
     7400002: door_sw_close
     7400004: door_se_open

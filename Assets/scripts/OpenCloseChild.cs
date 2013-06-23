@@ -14,7 +14,8 @@ public abstract class OpenCloseChild : MonoBehaviour {
 		Debug.Log("OpenCloseChild/OnMouseDown, name = " + this.name);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference <= interactDistance) {
-			if(isOpen) {
+			//if(isOpen) {
+			if(pops.currentOpen == this) {
 				pops.CloseChild(this);
 				isOpen = false;
 			} else {
