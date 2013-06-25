@@ -3,12 +3,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Door.cs">
     <Files>
       <File FileName="Assets/scripts/CollectableItem.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Flashlight.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/InventoryManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Lamp.cs" Line="1" Column="1" />
-      <File FileName="Assets/glass.shader" Line="1" Column="16" />
-      <File FileName="Assets/scripts/Door.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Door.cs" Line="29" Column="1" />
+      <File FileName="Assets/scripts/OpenCloseChild.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/DoorParent.cs" Line="4" Column="24" />
+      <File FileName="Assets/scripts/OnOffLight.cs" Line="4" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

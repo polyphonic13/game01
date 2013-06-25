@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Lamp : MonoBehaviour {
+public class OnOffLight : MonoBehaviour {
 	public int interactDistance = 3;
 
 	Light bulb; 

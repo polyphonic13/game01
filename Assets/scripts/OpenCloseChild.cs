@@ -11,6 +11,10 @@ public abstract class OpenCloseChild : MonoBehaviour {
 	
 	public abstract void SetParent();
 	public void OnMouseDown() {
+		handleAnimation();
+	}
+	
+	public void handleAnimation() {
 		Debug.Log("OpenCloseChild/OnMouseDown, name = " + this.name);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference <= interactDistance) {
