@@ -8,7 +8,7 @@ public class OnOffLight : MonoBehaviour {
 	
 	void Awake() {
 		bulb = this.transform.Search("light_bulb").light;
-		Debug.Log("bulb = " + bulb);
+		// Debug.Log("bulb = " + bulb);
 		bulb.enabled = false;
 	}
 

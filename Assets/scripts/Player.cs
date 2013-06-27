@@ -6,6 +6,8 @@ public class Player : MonoBehaviour {
 	public InventoryManager inventory;
 	public Notification notification;
 	
+	public GUIStyle basicStyle;
+	
 	bool inventoryOpen = false;
 	bool inventoryDrawn = false;
 	Camera camera;
@@ -13,11 +15,12 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		Debug.Log("Player/start, basicStyle = " + basicStyle);
 		camera = Camera.main;
 		inventory = new InventoryManager();
-		inventory.init();
+		inventory.init(basicStyle);
 		notification = new Notification();
-		inventory.init();
+		notification.init(basicStyle);
 		//Debug.Log("inventory = " + inventory);
 	}
 	

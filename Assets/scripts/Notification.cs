@@ -5,9 +5,11 @@ public class Notification {
 	public bool hasNote;
 	public string content;
 
-	private GUI gb;
+	GUIStyle _style;
 	
-	public void init() {
+	public void init(GUIStyle style) {
+		_style = style;
+		Debug.Log ("Notification/init, _style = " + _style);
 		hasNote = false;
 	}
 	
@@ -25,8 +27,8 @@ public class Notification {
 
 	public void DrawNote() {
 		if(hasNote) {
-			GUI.Box(new Rect(100, 100, 500, 100), content);
-			if(GUILayout.Button("Close")) {
+			GUI.Box(new Rect((Screen.width/2 - 250), (Screen.height/2 - 50), 500, 100), content /*, _style */);
+			if(GUI.Button(new Rect((Screen.width/2 - 250), (Screen.height/2 - 100), 500, 50), "Close" /*, _style */)) {
                 this.Destroy();
             }
 

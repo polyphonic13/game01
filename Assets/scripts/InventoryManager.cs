@@ -11,8 +11,10 @@ public class InventoryManager {
 	int spacing = 20;
 	Vector2 offset; 
 	Texture emptySlot; 
+	GUIStyle _style; 
 	
-	public void init() {
+	public void init(GUIStyle style) {
+		_style = style;
 		inventory = new ArrayList();	
 		offset = new Vector2(10, 10);
 		//Debug.Log("inventory/start, inventory = " + inventory);
@@ -20,7 +22,23 @@ public class InventoryManager {
 	
 	public void AddItem(CollectableItem item) {
 		Debug.Log("inventory manager/AddItem, item = " + item + ", description = " + item.description);
+		var player = GameObject.Find("player").GetComponent<Player>();
+		player.notification.AddNote(item.description + " added to inventory");
 		inventory.Add (item);	
+	}
+	
+	public bool HasItem(string name) {
+		bool found = false;
+		CollectableItem currentItem;
+		for(int i = 0; i < inventory.Count; i++) {
+			currentItem = inventory[i] as CollectableItem;
+			Debug.Log("currentItem.description = " + currentItem.description);
+			if(currentItem.description == name) {
+				found = true;
+				break;
+			}
+		}
+		return found;
 	}
 	
 	public ArrayList GetItems() {
@@ -28,7 +46,7 @@ public class InventoryManager {
 	}
 
 	public void DrawInventory() {
-		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), "INVENTORY");
+		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), "INVENTORY" /*, _style */);
 		Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
@@ -47,7 +65,7 @@ public class InventoryManager {
 			} else {
 				Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
-				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
+				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description /*, _style */);
 				//GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
 			}
 	 
