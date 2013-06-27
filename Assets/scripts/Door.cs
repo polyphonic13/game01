@@ -25,7 +25,9 @@ public class Door : OpenCloseChild {
 		if(!isLocked) {
 			handleAnimation();
 		} else {
-			Debug.Log("can not open, it is locked");
+			//Debug.Log("can not open, it is locked");
+			var player = GameObject.Find("player").GetComponent<Player>();
+			player.notification.AddNote("this door is looked");
 		}
 	}
 }

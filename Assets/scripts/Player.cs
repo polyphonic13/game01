@@ -4,6 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	
 	public InventoryManager inventory;
+	public Notification notification;
 	
 	bool inventoryOpen = false;
 	bool inventoryDrawn = false;
@@ -14,6 +15,8 @@ public class Player : MonoBehaviour {
 	{
 		camera = Camera.main;
 		inventory = new InventoryManager();
+		inventory.init();
+		notification = new Notification();
 		inventory.init();
 		//Debug.Log("inventory = " + inventory);
 	}
@@ -39,6 +42,8 @@ public class Player : MonoBehaviour {
 				inventory.DrawInventory();
 				inventoryDrawn = true;
 			//}
+		} else if(notification.hasNote) {
+			notification.DrawNote();
 		}
 	}
 	
