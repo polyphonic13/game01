@@ -47,25 +47,29 @@ public class InventoryManager {
 
 	public void DrawInventory() {
 		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), "INVENTORY" /*, _style */);
-		Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
+		// Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
 	    CollectableItem currentInventoryItem;                    //   Establish a variable to hold our data
-	    Rect currentRect;
+	    string itemName;
+		Rect currentRect;
 
 		for (int i = 0; i < inventory.Count; i ++) {                 //   Go through each row ...
 	       j = i / inventoryWidth;                              //   ... divide by array by width to get rows...
 	       k = i % inventoryWidth;                              //   ... find the remainder by width to get columns...
 	       currentInventoryItem = inventory[i] as CollectableItem;                    //   ... set this point in the matrix as our current point ...
-			Debug.Log("i = " + i + ", j = " + j + ", k = " + k + ", currentInventoryItem = " + currentInventoryItem.name);
+			// Debug.Log("i = " + i + ", j = " + j + ", k = " + k + ", currentInventoryItem = " + currentInventoryItem.name);
 	       currentRect = (new Rect (offset.x + k * (iconWidthHeight + spacing), offset.y + j * (iconWidthHeight + spacing), iconWidthHeight, iconWidthHeight));
 	       //   ... if there is no item in the j-th row and the k-th column, draw a blank texture
 			if (currentInventoryItem == null) {          
 				GUI.DrawTexture (currentRect, emptySlot);
 			} else {
-				Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
+				// Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
 				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description /*, _style */);
+				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight), iconWidthHeight, 20), "inspect")) {
+					Debug.Log("going to inspect: " + currentInventoryItem.name);
+				}
 				//GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
 			}
 	 

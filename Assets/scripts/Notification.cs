@@ -28,14 +28,11 @@ public class Notification {
 	}
 
 	public void DrawNote() {
-		if(hasNote) {
-			GUI.Box(new Rect((Screen.width/2 - 250), (Screen.height/2 - 50), 500, 100), content /*, _style */);
-			if(GUI.Button(new Rect((Screen.width/2 - 250), (Screen.height/2 - 100), 500, 50), "Close" /*, _style */)) {
-                this.Destroy();
-				var player = GameObject.Find("player").GetComponent<Player>();
-				player.EnablePlayer(true);
-            }
-
+		GUI.Box(new Rect((Screen.width/2 - 250), (Screen.height/2 - 50), 500, 100), content /*, _style */);
+		if(GUI.Button(new Rect((Screen.width/2 - 250), (Screen.height/2 - 100), 500, 50), "Close" /*, _style */)) {
+			this.Destroy();
+			var player = GameObject.Find("player").GetComponent<Player>();
+			player.EnablePlayer(true);
 		}
 	}
 

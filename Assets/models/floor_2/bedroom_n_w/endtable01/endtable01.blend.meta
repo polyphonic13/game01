@@ -13,6 +13,7 @@ ModelImporter:
     100014: rear_legs
     100016: top
     100018: note
+    100020: key
     400000: body
     400002: drawer_bottom
     400004: drawer_top
@@ -23,6 +24,7 @@ ModelImporter:
     400014: rear_legs
     400016: top
     400018: note
+    400020: key
     2300000: body
     2300002: drawer_bottom
     2300004: drawer_top
@@ -31,6 +33,7 @@ ModelImporter:
     2300010: rear_legs
     2300012: top
     2300014: note
+    2300016: key
     3300000: body
     3300002: drawer_bottom
     3300004: drawer_top
@@ -39,6 +42,7 @@ ModelImporter:
     3300010: rear_legs
     3300012: top
     3300014: note
+    3300016: key
     4300000: floor
     4300002: drawer_bottom
     4300004: drawer_top
@@ -47,6 +51,7 @@ ModelImporter:
     4300010: rear_legs
     4300012: front_legs
     4300014: note
+    4300016: key
     6400000: body
     6400002: drawer_bottom
     6400004: drawer_top
@@ -55,6 +60,7 @@ ModelImporter:
     6400010: rear_legs
     6400012: top
     6400014: note
+    6400016: key
     7400000: top_drawer_open
     7400002: top_drawer_close
     7400004: bottom_drawer_open
