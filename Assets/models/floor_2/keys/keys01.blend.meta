@@ -7,18 +7,22 @@ ModelImporter:
     100002: Circle
     100004: Cylinder
     100006: //RootNode
+    100008: key_parent
     400000: BezierCurve
     400002: Circle
     400004: Cylinder
     400006: //RootNode
+    400008: key_parent
     2300000: BezierCurve
     2300002: Circle
     2300004: Cylinder
     2300006: //RootNode
+    2300008: key_parent
     3300000: BezierCurve
     3300002: Circle
     3300004: Cylinder
     3300006: //RootNode
+    3300008: key_parent
     4300000: Circle
     4300002: BezierCurve
     4300004: Cylinder
@@ -27,6 +31,7 @@ ModelImporter:
     6400002: Circle
     6400004: Cylinder
     6400006: //RootNode
+    6400008: key_parent
     7400000: Default Take
     9500000: //RootNode
   materials:

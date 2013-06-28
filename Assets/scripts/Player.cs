@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		Debug.Log("Player/start, basicStyle = " + basicStyle);
+		// Debug.Log("Player/start, basicStyle = " + basicStyle);
 		camera = Camera.main;
 		inventory = new InventoryManager();
 		inventory.init(basicStyle);
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown("q")) {
 			inventoryOpen = !inventoryOpen;
-			DisablePlayer(!inventoryOpen);
+			this.EnablePlayer(!inventoryOpen);
 			if(!inventoryOpen) { 
 				inventoryDrawn = false;
 			}
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour {
 			//ArrayList items = inventory.GetItems();
 			//Debug.Log("items = " + items.Count);
 			//if(!inventoryDrawn) {
-				Debug.Log("about to draw gui box");
+				// Debug.Log("about to draw gui box");
 //				GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 				inventory.DrawInventory();
 				inventoryDrawn = true;
@@ -50,7 +50,8 @@ public class Player : MonoBehaviour {
 		}
 	}
 	
-	void DisablePlayer(bool disable) {
+	public void EnablePlayer(bool disable) {
+		Debug.Log ("Player/DisablePlayer, disable = " + disable);
 		var mouseLook = GetComponent<MouseLook>();
 		mouseLook.isEnabled = disable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();
