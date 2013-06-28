@@ -51,8 +51,8 @@ public class InventoryManager {
 		// Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
-	    CollectableItem currentInventoryItem;
-		CollectableItem detailInventoryItem;
+	    CollectableItem currentInventoryItem = null;
+		CollectableItem detailInventoryItem = null;
 	    string itemName;
 		Rect currentRect;
 
@@ -70,14 +70,14 @@ public class InventoryManager {
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
 				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight), iconWidthHeight, 20), "examine")) {
-					Debug.Log("going to inspect: " + currentInventoryItem.name);
 					detailInventoryItem = currentInventoryItem;
 					showDetail = true;
 				}
 			}
 		}
-		
-		if(showDetail) {
+		Debug.Log("showDetail = " + showDetail + ", detailInventoryItem = " + detailInventoryItem);
+		if(showDetail && detailInventoryItem != null) {
+			Debug.Log("going to inspect: " + detailInventoryItem.name);
 			GUI.Box(new Rect(100, 100, Screen.width - 100, Screen.height - 100), detailInventoryItem.description);
 			if(GUI.Button(new Rect(Screen.width - 200, 100, 100, 50), "close")) {
 				detailInventoryItem = null;
