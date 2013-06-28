@@ -5,6 +5,7 @@ public class InventoryManager {
 	
 	ArrayList inventory;
 	
+	bool showDetail = false;
 	int inventoryLength;
 	int inventoryWidth = 5;
 	float iconWidthHeight = 100;
@@ -21,9 +22,9 @@ public class InventoryManager {
 	}
 	
 	public void AddItem(CollectableItem item) {
-		Debug.Log("inventory manager/AddItem, item = " + item + ", description = " + item.description);
+		// Debug.Log("inventory manager/AddItem, item = " + item + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.AddNote(item.description + " added to inventory");
+		player.notification.AddNote(item.name + " added to inventory");
 		inventory.Add (item);	
 	}
 	
@@ -32,7 +33,7 @@ public class InventoryManager {
 		CollectableItem currentItem;
 		for(int i = 0; i < inventory.Count; i++) {
 			currentItem = inventory[i] as CollectableItem;
-			Debug.Log("currentItem.description = " + currentItem.description);
+			// Debug.Log("currentItem.description = " + currentItem.description);
 			if(currentItem.description == name) {
 				found = true;
 				break;
@@ -50,14 +51,15 @@ public class InventoryManager {
 		// Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
-	    CollectableItem currentInventoryItem;                    //   Establish a variable to hold our data
+	    CollectableItem currentInventoryItem;
+		CollectableItem detailInventoryItem;
 	    string itemName;
 		Rect currentRect;
 
-		for (int i = 0; i < inventory.Count; i ++) {                 //   Go through each row ...
-	       j = i / inventoryWidth;                              //   ... divide by array by width to get rows...
-	       k = i % inventoryWidth;                              //   ... find the remainder by width to get columns...
-	       currentInventoryItem = inventory[i] as CollectableItem;                    //   ... set this point in the matrix as our current point ...
+		for (int i = 0; i < inventory.Count; i ++) {
+	       j = i / inventoryWidth;
+	       k = i % inventoryWidth;
+	       currentInventoryItem = inventory[i] as CollectableItem;
 			// Debug.Log("i = " + i + ", j = " + j + ", k = " + k + ", currentInventoryItem = " + currentInventoryItem.name);
 	       currentRect = (new Rect (offset.x + k * (iconWidthHeight + spacing), offset.y + j * (iconWidthHeight + spacing), iconWidthHeight, iconWidthHeight));
 	       //   ... if there is no item in the j-th row and the k-th column, draw a blank texture
@@ -66,22 +68,22 @@ public class InventoryManager {
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
-				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description /*, _style */);
-				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight), iconWidthHeight, 20), "inspect")) {
+				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
+				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight), iconWidthHeight, 20), "examine")) {
 					Debug.Log("going to inspect: " + currentInventoryItem.name);
+					detailInventoryItem = currentInventoryItem;
+					showDetail = true;
 				}
-				//GUI.Button(new Rect(offset.x + iconWidthHeight, offset.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.description);
 			}
-	 
-	       //   If there is an item at this location and there is a button click...
-//	       if (currentInventoryItem != null) 
-//	       {
-//	         if (Input.GetMouseButtonUp (0))                     //   ... if that click is mouse button 0: see the description
-//	         {                                        
-//	          GUIContent ("     " + currentInventoryItem.description);            // Get the description out
-//	         } 
-//	       }
-	    }		
+		}
+		
+		if(showDetail) {
+			GUI.Box(new Rect(100, 100, Screen.width - 100, Screen.height - 100), detailInventoryItem.description);
+			if(GUI.Button(new Rect(Screen.width - 200, 100, 100, 50), "close")) {
+				detailInventoryItem = null;
+				showDetail = false;
+			}
+		}
 
 	}
 	

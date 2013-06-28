@@ -29,7 +29,7 @@ public class Door : OpenCloseChild {
 			//Debug.Log("can not open, it is locked");
 			var player = GameObject.Find("player").GetComponent<Player>();
 			if(player.inventory.HasItem(keyName)) {
-				player.notification.AddNote("you unlocked this door");
+				player.notification.AddNote("you unlocked this door with " + this.keyName);
 				isLocked = false;
 				handleAnimation();
 			} else {
