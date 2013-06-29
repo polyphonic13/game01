@@ -9,7 +9,6 @@ public abstract class OpenCloseChild : MonoBehaviour {
 	public string closeClipName;
 	public bool isOpen;
 	
-	public abstract void SetParent();
 	public void OnMouseDown() {
 		handleAnimation();
 	}

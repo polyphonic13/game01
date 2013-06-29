@@ -8,7 +8,6 @@ public class Player : MonoBehaviour {
 	
 	public GUIStyle basicStyle;
 	
-	bool inventoryOpen = false;
 	bool inventoryDrawn = false;
 	Camera camera;
 	
@@ -27,24 +26,27 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown("q")) {
-			inventoryOpen = !inventoryOpen;
-			this.EnablePlayer(!inventoryOpen);
-			if(!inventoryOpen) { 
-				inventoryDrawn = false;
-			}
+			inventory.showInventory = !inventory.showInventory;
+			this.EnablePlayer(!inventory.showInventory);
+			//if(!inventory.showInventory) { 
+			//	inventoryDrawn = false;
+			//}
 		}
 	}
 	
 	void OnGUI() {
-		if(inventoryOpen) {
+		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
+		if(inventory.showInventory) {
 			//ArrayList items = inventory.GetItems();
 			//Debug.Log("items = " + items.Count);
 			//if(!inventoryDrawn) {
 				// Debug.Log("about to draw gui box");
 //				GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
 				inventory.DrawInventory();
-				inventoryDrawn = true;
+				// inventoryDrawn = true;
 			//}
+		} else if(inventory.showDetail) {
+			inventory.DrawDetail();
 		} else if(notification.hasNote) {
 			notification.DrawNote();
 		}

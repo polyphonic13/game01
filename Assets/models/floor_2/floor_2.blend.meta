@@ -175,6 +175,7 @@ ModelImporter:
     100338: door_knob_001
     100340: door_knob_cynlinder_001
     100342: door_plate_001
+    100344: Plane
     400000: bedroom_s_e
     400002: bedroom_s_w
     400004: bedroom_s_w_001
@@ -347,6 +348,7 @@ ModelImporter:
     400338: door_knob_001
     400340: door_knob_cynlinder_001
     400342: door_plate_001
+    400344: Plane
     2300000: bedroom_s_e
     2300002: bedroom_s_w
     2300004: bedroom_s_w_001
@@ -512,6 +514,7 @@ ModelImporter:
     2300324: door_knob_001
     2300326: door_knob_cynlinder_001
     2300328: door_plate_001
+    2300330: Plane
     3300000: bedroom_s_e
     3300002: bedroom_s_w
     3300004: bedroom_s_w_001
@@ -677,6 +680,7 @@ ModelImporter:
     3300324: door_knob_001
     3300326: door_knob_cynlinder_001
     3300328: door_plate_001
+    3300330: Plane
     4300000: Cube_017
     4300002: Cube_016
     4300004: Cube_015
@@ -842,6 +846,7 @@ ModelImporter:
     4300324: door_knob_001
     4300326: door_knob_cynlinder_001
     4300328: door_plate_001
+    4300330: Plane
     6400000: bedroom_s_e
     6400002: bedroom_s_w
     6400004: bedroom_s_w_001
@@ -966,6 +971,7 @@ ModelImporter:
     6400242: door_knob_001
     6400244: door_knob_cynlinder_001
     6400246: door_plate_001
+    6400248: Plane
     7400000: door_sw_open
     7400002: door_sw_close
     7400004: door_se_open

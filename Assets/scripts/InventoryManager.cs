@@ -5,7 +5,9 @@ public class InventoryManager {
 	
 	ArrayList inventory;
 	
-	bool showDetail = false;
+	public bool showInventory = false;
+	public bool showDetail = false;
+	
 	int inventoryLength;
 	int inventoryWidth = 5;
 	float iconWidthHeight = 100;
@@ -13,6 +15,7 @@ public class InventoryManager {
 	Vector2 offset; 
 	Texture emptySlot; 
 	GUIStyle _style; 
+	CollectableItem detailInventoryItem = null;
 	
 	public void init(GUIStyle style) {
 		_style = style;
@@ -47,12 +50,11 @@ public class InventoryManager {
 	}
 
 	public void DrawInventory() {
-		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), "INVENTORY" /*, _style */);
+		this.DrawBackground("INVENTORY");
 		// Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
 	    CollectableItem currentInventoryItem = null;
-		CollectableItem detailInventoryItem = null;
 	    string itemName;
 		Rect currentRect;
 
@@ -72,20 +74,33 @@ public class InventoryManager {
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight), iconWidthHeight, 20), "examine")) {
 					Debug.Log("going to inspect item: " + i);
 					detailInventoryItem = inventory[i] as CollectableItem;
-					showDetail = true;
+					this.showInventory = false;
+					this.showDetail = true;
 				}
 			}
 		}
-		// Debug.Log("showDetail = " + showDetail + ", detailInventoryItem = " + detailInventoryItem);
-		if(showDetail && detailInventoryItem != null) {
+	}
+	
+	public void DrawDetail() {
+		// Debug.Log("DrawDetail = " + this.showDetail + ", detailInventoryItem = " + detailInventoryItem);
+		if(detailInventoryItem != null) {
+			this.DrawBackground(detailInventoryItem.name + " DETAIL");
 			Debug.Log("building detail of: " + detailInventoryItem.name);
-			GUI.Box(new Rect(100, 100, Screen.width - 100, Screen.height - 100), detailInventoryItem.description);
+			GUI.Box(new Rect(200, 200, Screen.width - 400, Screen.height - 400), detailInventoryItem.description);
 			if(GUI.Button(new Rect(Screen.width - 200, 100, 100, 50), "close")) {
 				detailInventoryItem = null;
-				showDetail = false;
+				this.showDetail = false;
+				this.showInventory = true;
 			}
+		} else {
+			Debug.Log("ERROR: detailInventoryItem is null");
+			this.showDetail = false;
+			this.showInventory = false;
 		}
-
+	}
+	
+	public void DrawBackground(string title) {
+		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), title /*, _style */);
 	}
 	
 	public void CloseInventoryWindow () {
