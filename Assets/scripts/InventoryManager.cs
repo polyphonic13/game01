@@ -88,7 +88,7 @@ public class InventoryManager {
 	public void DrawDetail() {
 		// Debug.Log("DrawDetail = " + this.showDetail + ", detailInventoryItem = " + detailInventoryItem);
 		if(detailInventoryItem != null) {
-			this.DrawBackground("examie: " + detailInventoryItem.name);
+			this.DrawBackground("examine: " + detailInventoryItem.name);
 			// Debug.Log("building detail of: " + detailInventoryItem.name);
 			GUI.Box(this.detailRect, detailInventoryItem.description);
 			var detailImgLeft = Screen.width/2 - detailImgWidthHeight/2;
