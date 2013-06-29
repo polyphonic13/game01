@@ -27,6 +27,7 @@ public class Player : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown("q")) {
 			inventory.showInventory = !inventory.showInventory;
+			inventory.showDetail = false;
 			this.EnablePlayer(!inventory.showInventory);
 			//if(!inventory.showInventory) { 
 			//	inventoryDrawn = false;
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
+		// Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if(inventory.showInventory) {
 			//ArrayList items = inventory.GetItems();
 			//Debug.Log("items = " + items.Count);

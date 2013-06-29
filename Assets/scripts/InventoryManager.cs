@@ -11,6 +11,10 @@ public class InventoryManager {
 	int inventoryLength;
 	int inventoryWidth = 5;
 	float iconWidthHeight = 100;
+	
+	float detailImgWidthHeight = 500;
+	Rect detailRect = new Rect(500, 100, Screen.width - 1000, Screen.height - 200);
+	
 	int spacing = 20;
 	Vector2 offset; 
 	Texture emptySlot; 
@@ -50,7 +54,7 @@ public class InventoryManager {
 	}
 
 	public void DrawInventory() {
-		this.DrawBackground("INVENTORY");
+		this.DrawBackground("inventory");
 		// Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
@@ -70,7 +74,7 @@ public class InventoryManager {
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
-				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
+				// GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight), iconWidthHeight, 20), "examine")) {
 					Debug.Log("going to inspect item: " + i);
 					detailInventoryItem = inventory[i] as CollectableItem;
@@ -84,10 +88,13 @@ public class InventoryManager {
 	public void DrawDetail() {
 		// Debug.Log("DrawDetail = " + this.showDetail + ", detailInventoryItem = " + detailInventoryItem);
 		if(detailInventoryItem != null) {
-			this.DrawBackground(detailInventoryItem.name + " DETAIL");
-			Debug.Log("building detail of: " + detailInventoryItem.name);
-			GUI.Box(new Rect(200, 200, Screen.width - 400, Screen.height - 400), detailInventoryItem.description);
-			if(GUI.Button(new Rect(Screen.width - 200, 100, 100, 50), "close")) {
+			this.DrawBackground("examie: " + detailInventoryItem.name);
+			// Debug.Log("building detail of: " + detailInventoryItem.name);
+			GUI.Box(this.detailRect, detailInventoryItem.description);
+			var detailImgLeft = Screen.width/2 - detailImgWidthHeight/2;
+			var detailImgTop = Screen.height/2 - detailImgWidthHeight/2;
+			GUI.DrawTexture(new Rect(detailImgLeft, detailImgTop, detailImgWidthHeight, detailImgWidthHeight), detailInventoryItem.icon);
+			if(GUI.Button(new Rect(Screen.width - 600, 75, 100, 20), "back")) {
 				detailInventoryItem = null;
 				this.showDetail = false;
 				this.showInventory = true;
