@@ -75,6 +75,7 @@
      <Compile Include="Assets\scripts\CameraZoom.cs" />
      <Compile Include="Assets\scripts\CollectableItem.cs" />
      <Compile Include="Assets\scripts\Door.cs" />
+     <Compile Include="Assets\scripts\DoorHardware.cs" />
      <Compile Include="Assets\scripts\DoorParent.cs" />
      <Compile Include="Assets\scripts\Dresser.cs" />
      <Compile Include="Assets\scripts\DresserDrawer.cs" />

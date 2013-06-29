@@ -5,6 +5,7 @@ public class CollectableItem : MonoBehaviour {
 	
 	public int interactDistance = 3;
 	public bool collected = false;
+	public string itemName = "";
 	public string description = "";
 	public Texture icon;
 	

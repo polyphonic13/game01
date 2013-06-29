@@ -37,7 +37,7 @@ public class InventoryManager {
 		for(int i = 0; i < inventory.Count; i++) {
 			currentItem = inventory[i] as CollectableItem;
 			// Debug.Log("currentItem.description = " + currentItem.description);
-			if(currentItem.description == name) {
+			if(currentItem.itemName == name) {
 				found = true;
 				break;
 			}
