@@ -29,7 +29,7 @@ public class Notification {
 
 	public void DrawNote() {
 		GUI.Box(new Rect((Screen.width/2 - 250), (Screen.height/2 - 50), 500, 100), content /*, _style */);
-		if(GUI.Button(new Rect((Screen.width/2 - 250), (Screen.height/2 - 70), 500, 20), "Close" /*, _style */)) {
+		if(GUI.Button(new Rect((Screen.width/2 + 150), (Screen.height/2 - 70), 100, 20), "Close" /*, _style */)) {
 			this.Destroy();
 			var player = GameObject.Find("player").GetComponent<Player>();
 			player.EnablePlayer(true);
