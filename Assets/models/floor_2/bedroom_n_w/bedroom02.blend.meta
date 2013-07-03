@@ -102,6 +102,7 @@ ModelImporter:
     100192: balcony_door_glass
     100194: pillow
     100196: main_door
+    100198: closet_door
     400000: //RootNode
     400002: ceiling
     400004: Cube
@@ -201,6 +202,7 @@ ModelImporter:
     400192: balcony_door_glass
     400194: pillow
     400196: main_door
+    400198: closet_door
     2300000: ceiling
     2300002: Cube
     2300004: floor
@@ -296,6 +298,7 @@ ModelImporter:
     2300184: balcony_door_glass
     2300186: pillow
     2300188: main_door
+    2300190: closet_door
     3300000: ceiling
     3300002: Cube
     3300004: floor
@@ -391,6 +394,7 @@ ModelImporter:
     3300184: balcony_door_glass
     3300186: pillow
     3300188: main_door
+    3300190: closet_door
     4300000: Cube
     4300002: window_frame_001
     4300004: window_frame
@@ -486,6 +490,7 @@ ModelImporter:
     4300184: balcony_door_glass
     4300186: pillow
     4300188: main_door
+    4300190: closet_door
     6400000: ceiling
     6400002: Cube
     6400004: floor
@@ -581,10 +586,13 @@ ModelImporter:
     6400184: balcony_door_glass
     6400186: pillow
     6400188: main_door
+    6400190: closet_door
     7400000: balcony_door_open
     7400002: balcony_door_close
     7400004: main_door_open
     7400006: main_door_close
+    7400008: closet_door_open
+    7400010: closet_door_close
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -667,6 +675,48 @@ ModelImporter:
       takeName: Default Take
       firstFrame: 30
       lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: closet_door_open
+      takeName: Default Take
+      firstFrame: 40
+      lastFrame: 50.0999985
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: closet_door_close
+      takeName: Default Take
+      firstFrame: 50
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
