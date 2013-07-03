@@ -70,8 +70,8 @@ public class InventoryManager {
 			if (currentInventoryItem == null) {          
 				GUI.DrawTexture (currentRect, emptySlot);
 			} else {
-				// Debug.Log("about to draw texture for " + currentInventoryItem.icon + ", currentRect = " + currentRect);
-				GUI.DrawTexture(currentRect, currentInventoryItem.icon);
+				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
+				GUI.DrawTexture(currentRect, currentInventoryItem.iconTexture);
 				// GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight + 5), iconWidthHeight, 20), "examine")) {
 					Debug.Log("going to inspect item: " + i);
@@ -92,7 +92,7 @@ public class InventoryManager {
 			this.DrawBackground("examine: " + detailInventoryItem.name);
 			// Debug.Log("building detail of: " + detailInventoryItem.name);
 			GUI.Box(detailRect, detailInventoryItem.description);
-			GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, detailImgWidthHeight, detailImgWidthHeight), detailInventoryItem.icon);
+			GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, detailImgWidthHeight, detailImgWidthHeight), detailInventoryItem.iconTexture);
 			if(GUI.Button(new Rect(detailImgLeft - 100, 75, 100, 20), "back")) {
 				detailInventoryItem = null;
 				this.showDetail = false;

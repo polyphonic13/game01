@@ -7,7 +7,8 @@ public class CollectableItem : MonoBehaviour {
 	public bool collected = false;
 	public string itemName = "";
 	public string description = "";
-	public Texture icon;
+	public Texture iconTexture;
+	public Texture detailTexture;
 	
 	void Awake() {}
 	
