@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	
+	public delegate void onEnterRoom(string room);
+	public event onEnterRoom roomEntered;
+
 	public InventoryManager inventory;
 	public Notification notification;
 	
@@ -61,5 +64,13 @@ public class Player : MonoBehaviour {
 		cameraMouseLook.isEnabled = disable;
 		var character = GetComponent<CharacterMotor>();
 		character.SetControllable(disable);
+	}
+
+	void OnTriggerEnter(Collider tgt) {
+		Debug.Log("Player/OnTriggerEnter, tgt = " + tgt);
+		var room = tgt.GetComponent<Room>();
+		if(room != null) {
+			this.roomEntered(room.roomName);
+		}
 	}
 }
