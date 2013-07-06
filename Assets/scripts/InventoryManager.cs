@@ -5,6 +5,9 @@ public class InventoryManager {
 	
 	ArrayList inventory;
 	
+//	public delegate void onItemCollected(string item);
+//	public event onItemCollected itemCollected;
+	
 	public bool showInventory = false;
 	public bool showDetail = false;
 	
@@ -30,7 +33,9 @@ public class InventoryManager {
 		// Debug.Log("inventory manager/AddItem, item = " + item + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
 		player.notification.AddNote(item.name + " added to inventory");
-		inventory.Add (item);	
+		inventory.Add (item);
+		//this.itemCollected(item.name);
+//		itemCollected("temp");
 	}
 	
 	public bool HasItem(string name) {
@@ -72,7 +77,7 @@ public class InventoryManager {
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.iconTexture);
-				// GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
+				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight + 5), iconWidthHeight, 20), "examine")) {
 					Debug.Log("going to inspect item: " + i);
 					detailInventoryItem = inventory[i] as CollectableItem;

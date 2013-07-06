@@ -16,9 +16,9 @@ public class CollectableItem : MonoBehaviour {
 		Debug.Log("CollectableItem/OnMouseDown, description = " + this.description);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
-			if(!collected) {
+			if(!this.collected) {
 				AddToInventory();
-				collected = true;
+				this.collected = true;
 			}
 		}
 	}
@@ -31,7 +31,7 @@ public class CollectableItem : MonoBehaviour {
 	}
 	
 	public void RemoveFromInventory() {
-		collected = false;
+		this.collected = false;
 		EnableAll();
 	}
 	

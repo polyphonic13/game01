@@ -5,7 +5,8 @@ public class Player : MonoBehaviour {
 	
 	public delegate void onEnterRoom(string room);
 	public event onEnterRoom roomEntered;
-
+	public string startingRoom = "";
+	
 	public InventoryManager inventory;
 	public Notification notification;
 	
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour {
 		inventory.init(basicStyle);
 		notification = new Notification();
 		notification.init(basicStyle);
+		this.roomEntered(this.startingRoom);
 		//Debug.Log("inventory = " + inventory);
 	}
 	
@@ -51,7 +53,7 @@ public class Player : MonoBehaviour {
 			//}
 		} else if(inventory.showDetail) {
 			inventory.DrawDetail();
-		} else if(notification.hasNote) {
+		} else if(notification.showNote) {
 			notification.DrawNote();
 		}
 	}
@@ -69,7 +71,7 @@ public class Player : MonoBehaviour {
 	void OnTriggerEnter(Collider tgt) {
 		Debug.Log("Player/OnTriggerEnter, tgt = " + tgt);
 		var room = tgt.GetComponent<Room>();
-		if(room != null) {
+		if(room != null && this.roomEntered != null) {
 			this.roomEntered(room.roomName);
 		}
 	}

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class Notification {
-	public bool hasNote;
+	public bool showNote;
 	public string content;
 
 	GUIStyle _style;
@@ -10,7 +10,7 @@ public class Notification {
 	public void init(GUIStyle style) {
 		_style = style;
 		// Debug.Log ("Notification/init, _style = " + _style);
-		hasNote = false;
+		showNote = false;
 	}
 	
 	public void AddNote(string msg) {
@@ -18,12 +18,12 @@ public class Notification {
 		var player = GameObject.Find("player").GetComponent<Player>();
 		player.EnablePlayer(false);
 		content = msg;
-		hasNote = true;
+		showNote = true;
 	}
 	
 	public void Destroy() {
 		// Debug.Log("Notification/destroy");	
-		hasNote = false;
+		showNote = false;
 		content = "";
 	}
 
