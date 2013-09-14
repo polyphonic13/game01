@@ -12,4 +12,5 @@ public class LockableParent : OpenCloseParent {
 		PlayAnimation(child.closeClipName);
 		currentOpen = null;
 	}
+	
 }

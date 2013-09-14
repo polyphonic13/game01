@@ -16,7 +16,7 @@ public class OnOffLight : MonoBehaviour {
 		// Debug.Log("Lamp/on mouse down");
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
-			Debug.Log("Lamp/OnMouseDown, difference = " + difference);
+			Debug.Log("Lamp/OnMouseDown, difference = " + difference + ", bulb.enabled = " + bulb.enabled);
 			bulb.enabled = !bulb.enabled;	
 		}
 	}

@@ -97,6 +97,7 @@ ModelImporter:
     100182: north_west_wing_007
     100184: Cube_016
     100186: Cube_017
+    100188: main_002
     400000: center_hall
     400002: center_hall_002
     400004: center_hall_floor_3
@@ -191,6 +192,7 @@ ModelImporter:
     400182: north_west_wing_007
     400184: Cube_016
     400186: Cube_017
+    400188: main_002
     2300000: center_hall
     2300002: center_hall_002
     2300004: center_hall_floor_3
@@ -278,6 +280,7 @@ ModelImporter:
     2300168: north_west_wing_007
     2300170: Cube_016
     2300172: Cube_017
+    2300174: main_002
     3300000: center_hall
     3300002: center_hall_002
     3300004: center_hall_floor_3
@@ -365,6 +368,7 @@ ModelImporter:
     3300168: north_west_wing_007
     3300170: Cube_016
     3300172: Cube_017
+    3300174: main_002
     4300000: window_roof_e_t_003
     4300002: window_roof_e_t_002
     4300004: top_forward_roof
@@ -452,6 +456,7 @@ ModelImporter:
     4300168: north_west_wing_007
     4300170: Cube_017
     4300172: Cube_016
+    4300174: main_002
     6400000: center_hall
     6400002: center_hall_002
     6400004: center_hall_floor_3
@@ -539,6 +544,7 @@ ModelImporter:
     6400168: north_west_wing_007
     6400170: Cube_016
     6400172: Cube_017
+    6400174: main_002
     7400000: Default Take
     9500000: //RootNode
   materials:
