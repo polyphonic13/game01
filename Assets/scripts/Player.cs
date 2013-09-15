@@ -24,7 +24,7 @@ public class Player : MonoBehaviour {
 		inventory.init(basicStyle);
 		notification = new Notification();
 		notification.init(basicStyle);
-		this.roomEntered(this.startingRoom);
+		//this.roomEntered(this.startingRoom);
 		//Debug.Log("inventory = " + inventory);
 	}
 	
