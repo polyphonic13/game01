@@ -8,16 +8,34 @@ ModelImporter:
     100004: door
     100006: //RootNode
     100008: frame
+    100010: door_frame_se
+    100012: door_se
+    100014: door_knob
+    100016: door_knob_cynlinder
+    100018: door_plate
     400000: Armature
     400002: Bone
     400004: door
     400006: //RootNode
     400008: frame
+    400010: door_frame_se
+    400012: door_se
+    400014: door_knob
+    400016: door_knob_cynlinder
+    400018: door_plate
     2300000: frame
+    2300002: door_frame_se
     3300000: frame
+    3300002: door_frame_se
     4300000: frame
     4300002: door
+    4300004: door_se
+    4300006: door_frame_se
+    4300008: door_knob
+    4300010: door_plate
+    4300012: door_knob_cynlinder
     6400000: frame
+    6400002: door_frame_se
     7400000: Default Take
     7400002: door_close
     7400004: door_default
@@ -25,6 +43,10 @@ ModelImporter:
     9500000: //RootNode
     11100000: //RootNode
     13700000: door
+    13700002: door_se
+    13700004: door_knob
+    13700006: door_knob_cynlinder
+    13700008: door_plate
   materials:
     importMaterials: 1
     materialName: 0
