@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class ArmatureTrigger : MonoBehaviour {
 	public int interactDistance = 3;
 	public ArmatureParent pops;
-	public string mainClipName;
+	public AnimationClip mainClip;
 	
 	public void OnMouseDown() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
@@ -16,7 +16,7 @@ public class ArmatureTrigger : MonoBehaviour {
 	
 	public virtual void handleAnimation() {
 		Debug.Log("ArmatureTrigger[ " + this.name + " ]/handleAnimation");
-		sendAnimationToPops(mainClipName);
+		sendAnimationToPops(mainClip.name);
 	}
 	
 	public void sendAnimationToPops(string clipName) {

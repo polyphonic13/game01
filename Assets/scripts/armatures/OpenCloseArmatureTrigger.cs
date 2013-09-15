@@ -3,7 +3,7 @@ using System.Collections;
 
 public class OpenCloseArmatureTrigger : ArmatureTrigger {
 
-	public string closeClipName;
+	public AnimationClip closeClip;
 	public bool isOpen = false;
 
 	public override void handleAnimation() {
@@ -13,9 +13,9 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 	public void handleOpenClose() {
 		Debug.Log("OpenCloseArmatureChild[ " + this.name + " ]/handleOpenClose, isOpen = " + isOpen);
 		if(isOpen) {
-			sendAnimationToPops(closeClipName);
+			sendAnimationToPops(closeClip.name);
 		} else {
-			sendAnimationToPops(mainClipName);
+			sendAnimationToPops(mainClip.name);
 		}
 		isOpen = !isOpen;
 	}
