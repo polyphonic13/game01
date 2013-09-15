@@ -40,6 +40,10 @@ ModelImporter:
     7400002: door_close
     7400004: door_default
     7400006: door_open
+    7400008: door_inwards_close
+    7400010: door_inwards_open
+    7400012: door_outwards_close
+    7400014: door_outwards_open
     9500000: //RootNode
     11100000: //RootNode
     13700000: door
