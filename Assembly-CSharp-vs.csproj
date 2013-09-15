@@ -70,6 +70,8 @@
      <Compile Include="Assets\UnitySerializer\Scripts\TestSerialization.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\VariablesToSave.cs" />
      <Compile Include="Assets\scripts\ArmatureAnimator.cs" />
+     <Compile Include="Assets\scripts\ArmatureParent.cs" />
+     <Compile Include="Assets\scripts\ArmatureTrigger.cs" />
      <Compile Include="Assets\scripts\CameraZoom.cs" />
      <Compile Include="Assets\scripts\CollectableItem.cs" />
      <Compile Include="Assets\scripts\EventCenter.cs" />
