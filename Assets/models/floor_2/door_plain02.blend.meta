@@ -25,8 +25,10 @@ ModelImporter:
     400018: door_plate
     2300000: frame
     2300002: door_frame_se
+    2300004: door
     3300000: frame
     3300002: door_frame_se
+    3300004: door
     4300000: frame
     4300002: door
     4300004: door_se
@@ -36,6 +38,7 @@ ModelImporter:
     4300012: door_knob_cynlinder
     6400000: frame
     6400002: door_frame_se
+    6400004: door
     7400000: Default Take
     7400002: door_close
     7400004: door_default

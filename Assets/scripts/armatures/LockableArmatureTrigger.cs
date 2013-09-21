@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LockableArmatureTrigger : OpenCloseArmatureTrigger {
-	
+
 	public bool isLocked = false;
 	public string lockedItemName = ""; 
 	public string keyName = "";
