@@ -12,8 +12,22 @@ public class LockableChild : OpenCloseChild {
 		//Debug.Log("LockableChild/Awake, this.name = " + this.gameObject.name);
 		isOpen = false;
 		_player = GameObject.Find("player").GetComponent<Player>();
+		mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
 	}
 	
+	public void OnMouseOver() {
+		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if (difference < interactDistance) {
+			Debug.Log ("LockableChild/OnMouseOver");
+			mouseManager.setCursorType (1);
+		}
+	}
+
+	public void OnMouseExit() {
+		Debug.Log ("LockableChild/OnMouseOut");
+		mouseManager.setCursorType (0);
+	}
+
 	public void OnMouseDown() {
 		//Debug.Log("LockableChild/OnMouseDown, pops = " + pops + ", isLocked = " + isLocked);
 		if(pops != null) {

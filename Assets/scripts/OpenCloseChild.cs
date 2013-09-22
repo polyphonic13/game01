@@ -2,13 +2,17 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public abstract class OpenCloseChild : MonoBehaviour {
-	public int interactDistance = 3;
+public abstract class OpenCloseChild : InteractiveElement {
 	public OpenCloseParent pops;
 	public string openClipName;
 	public string closeClipName;
 	public bool isOpen;
-	
+
+	void Awake() {
+		mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
+
+	}
+
 	public void OnMouseDown() {
 		handleAnimation();
 	}

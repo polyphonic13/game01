@@ -1,15 +1,19 @@
 using UnityEngine;
 using System.Collections;
 
-public class OnOffLight : MonoBehaviour {
-	public int interactDistance = 3;
+public class OnOffLight : InteractiveElement {
 
 	Light bulb; 
-	
+
+	bool isOver = false;
+
 	void Awake() {
+				init (2);
 		bulb = this.transform.Search("light_bulb").light;
 		// Debug.Log("bulb = " + bulb);
 		bulb.enabled = false;
+
+
 	}
 
 	public void OnMouseDown() {

@@ -9,6 +9,7 @@ public class MovableChild : CollectableItem {
 	
 	// Use this for initialization
 	void Awake () {
+				init (2);
 		this.enabled = false;
 		popsPosition = pops.transform.position;
 //		EventCenter.Instance.roomEntered += roomEntered;

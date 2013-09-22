@@ -2,14 +2,15 @@ using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour {
-	
+
 	public delegate void onEnterRoom(string room);
 	public event onEnterRoom roomEntered;
 	public string startingRoom = "";
 	
 	public InventoryManager inventory;
 	public Notification notification;
-	
+	public MouseManager mouseManager;
+
 	public GUIStyle basicStyle;
 	
 	bool inventoryDrawn = false;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour {
 		inventory.init(basicStyle);
 		notification = new Notification();
 		notification.init(basicStyle);
+				mouseManager = GetComponent<MouseManager> ();
 		//this.roomEntered(this.startingRoom);
 		//Debug.Log("inventory = " + inventory);
 	}
@@ -41,7 +43,8 @@ public class Player : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		// Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
+				mouseManager.drawCursor ();
+//		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if(inventory.showInventory) {
 			//ArrayList items = inventory.GetItems();
 			//Debug.Log("items = " + items.Count);

@@ -1,17 +1,18 @@
 using UnityEngine;
 using System.Collections;
 
-public class CollectableItem : MonoBehaviour {
+public class CollectableItem : InteractiveElement {
 	
-	public int interactDistance = 3;
 	public bool collected = false;
 	public string itemName = "";
 	public string description = "";
 	public Texture iconTexture;
 	public Texture detailTexture;
-	
-	void Awake() {}
-	
+
+	void Awake() {
+		init (2	);
+	}
+
 	public virtual void OnMouseDown() {
 		Debug.Log("CollectableItem/OnMouseDown, description = " + this.description);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);

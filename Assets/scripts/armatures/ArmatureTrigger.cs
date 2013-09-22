@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class ArmatureTrigger : MonoBehaviour {
-	public int interactDistance = 3;
+public class ArmatureTrigger : InteractiveElement {
 	public ArmatureParent pops;
 	public AnimationClip mainClip;
-	
+
+	void Awake() {
+		init ();
+	}
+
 	public void OnMouseDown() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference <= interactDistance) {

@@ -9,7 +9,8 @@ public class LockableArmatureTrigger : OpenCloseArmatureTrigger {
 	
 	private Player _player;
 
-		public void Awake() {
+	public void Awake() {
+		init ();
 		Debug.Log("LockableArmatureTrigger/awake, name = " + pops.transform.parent.name);
 		_player = GameObject.Find("player").GetComponent<Player>();
 	}

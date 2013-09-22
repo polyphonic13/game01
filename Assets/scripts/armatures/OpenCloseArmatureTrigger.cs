@@ -6,6 +6,10 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 	public AnimationClip closeClip;
 	public bool isOpen = false;
 
+	void Awake() {
+		init ();
+	}
+
 	public override void handleAnimation() {
 		handleOpenClose();
 	}
