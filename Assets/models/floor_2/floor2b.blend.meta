@@ -67,6 +67,7 @@ ModelImporter:
     100122: Plane_002
     100124: Plane_004
     100126: Plane_005
+    100128: back_hall_rug
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -131,6 +132,7 @@ ModelImporter:
     400122: Plane_002
     400124: Plane_004
     400126: Plane_005
+    400128: back_hall_rug
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -193,6 +195,7 @@ ModelImporter:
     2300118: Plane_002
     2300120: Plane_004
     2300122: Plane_005
+    2300124: back_hall_rug
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -255,6 +258,7 @@ ModelImporter:
     3300118: Plane_002
     3300120: Plane_004
     3300122: Plane_005
+    3300124: back_hall_rug
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -315,6 +319,7 @@ ModelImporter:
     4300114: back_hall_floor
     4300116: Plane_002
     4300118: Plane_001
+    4300120: back_hall_rug
     4300122: main_hall_floor
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
@@ -378,6 +383,7 @@ ModelImporter:
     6400118: Plane_002
     6400120: Plane_004
     6400122: Plane_005
+    6400124: back_hall_rug
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
