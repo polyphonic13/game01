@@ -118,6 +118,26 @@ ModelImporter:
     100224: bathroom_e_wall_n
     100226: bathroom_e_wall_s
     100228: bathroom_e_wall_w
+    100230: balcony_door
+    100232: balcony_door_glass
+    100234: balcony_rail_top
+    100236: balcony_rail_top_2
+    100238: bedroom_nw_floor
+    100240: bedroom_nw_floor_001
+    100242: bedroom_nw_wall_e
+    100244: bedroom_nw_wall_n
+    100246: bedroom_nw_wall_s
+    100248: bedroom_nw_wall_w
+    100250: doorway_003
+    100252: floor_002
+    100254: floor_board_000
+    100256: floor_board_002
+    100258: floor_board_003
+    100260: floor_board_004
+    100262: window_frame_n_001
+    100264: window_frame_s_001
+    100266: window_glass_001
+    100268: window_glass_002
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -233,6 +253,26 @@ ModelImporter:
     400224: bathroom_e_wall_n
     400226: bathroom_e_wall_s
     400228: bathroom_e_wall_w
+    400230: balcony_door
+    400232: balcony_door_glass
+    400234: balcony_rail_top
+    400236: balcony_rail_top_2
+    400238: bedroom_nw_floor
+    400240: bedroom_nw_floor_001
+    400242: bedroom_nw_wall_e
+    400244: bedroom_nw_wall_n
+    400246: bedroom_nw_wall_s
+    400248: bedroom_nw_wall_w
+    400250: doorway_003
+    400252: floor_002
+    400254: floor_board_000
+    400256: floor_board_002
+    400258: floor_board_003
+    400260: floor_board_004
+    400262: window_frame_n_001
+    400264: window_frame_s_001
+    400266: window_glass_001
+    400268: window_glass_002
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -346,6 +386,26 @@ ModelImporter:
     2300220: bathroom_e_wall_n
     2300222: bathroom_e_wall_s
     2300224: bathroom_e_wall_w
+    2300226: balcony_door
+    2300228: balcony_door_glass
+    2300230: balcony_rail_top
+    2300232: balcony_rail_top_2
+    2300234: bedroom_nw_floor
+    2300236: bedroom_nw_floor_001
+    2300238: bedroom_nw_wall_e
+    2300240: bedroom_nw_wall_n
+    2300242: bedroom_nw_wall_s
+    2300244: bedroom_nw_wall_w
+    2300246: doorway_003
+    2300248: floor_002
+    2300250: floor_board_000
+    2300252: floor_board_002
+    2300254: floor_board_003
+    2300256: floor_board_004
+    2300258: window_frame_n_001
+    2300260: window_frame_s_001
+    2300262: window_glass_001
+    2300264: window_glass_002
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -459,6 +519,26 @@ ModelImporter:
     3300220: bathroom_e_wall_n
     3300222: bathroom_e_wall_s
     3300224: bathroom_e_wall_w
+    3300226: balcony_door
+    3300228: balcony_door_glass
+    3300230: balcony_rail_top
+    3300232: balcony_rail_top_2
+    3300234: bedroom_nw_floor
+    3300236: bedroom_nw_floor_001
+    3300238: bedroom_nw_wall_e
+    3300240: bedroom_nw_wall_n
+    3300242: bedroom_nw_wall_s
+    3300244: bedroom_nw_wall_w
+    3300246: doorway_003
+    3300248: floor_002
+    3300250: floor_board_000
+    3300252: floor_board_002
+    3300254: floor_board_003
+    3300256: floor_board_004
+    3300258: window_frame_n_001
+    3300260: window_frame_s_001
+    3300262: window_glass_001
+    3300264: window_glass_002
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -571,6 +651,26 @@ ModelImporter:
     4300218: bedroom_e_wall_e
     4300220: bathroom_e_wall_s
     4300222: bathroom_e_wall_w
+    4300224: bedroom_nw_floor_001
+    4300226: bedroom_nw_wall_w
+    4300228: bedroom_nw_wall_n
+    4300230: bedroom_nw_wall_e
+    4300232: bedroom_nw_wall_s
+    4300234: bedroom_nw_floor
+    4300236: balcony_door
+    4300238: balcony_door_glass
+    4300240: balcony_rail_top
+    4300242: balcony_rail_top_2
+    4300244: floor_002
+    4300246: floor_board_004
+    4300248: floor_board_002
+    4300250: doorway_003
+    4300252: floor_board_003
+    4300254: floor_board_000
+    4300256: window_frame_n_001
+    4300258: window_glass_002
+    4300260: window_frame_s_001
+    4300262: window_glass_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -684,6 +784,26 @@ ModelImporter:
     6400220: bathroom_e_wall_n
     6400222: bathroom_e_wall_s
     6400224: bathroom_e_wall_w
+    6400226: balcony_door
+    6400228: balcony_door_glass
+    6400230: balcony_rail_top
+    6400232: balcony_rail_top_2
+    6400234: bedroom_nw_floor
+    6400236: bedroom_nw_floor_001
+    6400238: bedroom_nw_wall_e
+    6400240: bedroom_nw_wall_n
+    6400242: bedroom_nw_wall_s
+    6400244: bedroom_nw_wall_w
+    6400246: doorway_003
+    6400248: floor_002
+    6400250: floor_board_000
+    6400252: floor_board_002
+    6400254: floor_board_003
+    6400256: floor_board_004
+    6400258: window_frame_n_001
+    6400260: window_frame_s_001
+    6400262: window_glass_001
+    6400264: window_glass_002
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
