@@ -100,6 +100,24 @@ ModelImporter:
     100188: wood_wall_001
     100190: wood_wall_002
     100192: wood_wall_003
+    100194: bathroom_e_floor
+    100196: bedroom_e_floor
+    100198: bedroom_e_wall_e
+    100200: bedroom_e_wall_n
+    100202: bedroom_e_wall_s
+    100204: bedroom_e_wall_w
+    100206: floor_board_e
+    100208: floor_board_n
+    100210: floor_board_s
+    100212: floor_board_w
+    100214: glass
+    100216: glass_001
+    100218: window_frame_n
+    100220: window_frame_s
+    100222: bathroom_e_wall_e
+    100224: bathroom_e_wall_n
+    100226: bathroom_e_wall_s
+    100228: bathroom_e_wall_w
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -197,6 +215,24 @@ ModelImporter:
     400188: wood_wall_001
     400190: wood_wall_002
     400192: wood_wall_003
+    400194: bathroom_e_floor
+    400196: bedroom_e_floor
+    400198: bedroom_e_wall_e
+    400200: bedroom_e_wall_n
+    400202: bedroom_e_wall_s
+    400204: bedroom_e_wall_w
+    400206: floor_board_e
+    400208: floor_board_n
+    400210: floor_board_s
+    400212: floor_board_w
+    400214: glass
+    400216: glass_001
+    400218: window_frame_n
+    400220: window_frame_s
+    400222: bathroom_e_wall_e
+    400224: bathroom_e_wall_n
+    400226: bathroom_e_wall_s
+    400228: bathroom_e_wall_w
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -292,6 +328,24 @@ ModelImporter:
     2300184: wood_wall_001
     2300186: wood_wall_002
     2300188: wood_wall_003
+    2300190: bathroom_e_floor
+    2300192: bedroom_e_floor
+    2300194: bedroom_e_wall_e
+    2300196: bedroom_e_wall_n
+    2300198: bedroom_e_wall_s
+    2300200: bedroom_e_wall_w
+    2300202: floor_board_e
+    2300204: floor_board_n
+    2300206: floor_board_s
+    2300208: floor_board_w
+    2300210: glass
+    2300212: glass_001
+    2300214: window_frame_n
+    2300216: window_frame_s
+    2300218: bathroom_e_wall_e
+    2300220: bathroom_e_wall_n
+    2300222: bathroom_e_wall_s
+    2300224: bathroom_e_wall_w
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -387,6 +441,24 @@ ModelImporter:
     3300184: wood_wall_001
     3300186: wood_wall_002
     3300188: wood_wall_003
+    3300190: bathroom_e_floor
+    3300192: bedroom_e_floor
+    3300194: bedroom_e_wall_e
+    3300196: bedroom_e_wall_n
+    3300198: bedroom_e_wall_s
+    3300200: bedroom_e_wall_w
+    3300202: floor_board_e
+    3300204: floor_board_n
+    3300206: floor_board_s
+    3300208: floor_board_w
+    3300210: glass
+    3300212: glass_001
+    3300214: window_frame_n
+    3300216: window_frame_s
+    3300218: bathroom_e_wall_e
+    3300220: bathroom_e_wall_n
+    3300222: bathroom_e_wall_s
+    3300224: bathroom_e_wall_w
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -481,6 +553,24 @@ ModelImporter:
     4300182: wood_wall_002
     4300184: wood_wall_003
     4300186: wood_wall
+    4300188: bathroom_e_floor
+    4300190: bedroom_e_floor
+    4300192: floor_board_e
+    4300194: floor_board_n
+    4300196: floor_board_s
+    4300198: floor_board_w
+    4300200: window_frame_n
+    4300202: glass
+    4300204: window_frame_s
+    4300206: glass_001
+    4300208: bedroom_e_wall_s
+    4300210: bedroom_e_wall_w
+    4300212: bedroom_e_wall_n
+    4300214: bathroom_e_wall_n
+    4300216: bathroom_e_wall_e
+    4300218: bedroom_e_wall_e
+    4300220: bathroom_e_wall_s
+    4300222: bathroom_e_wall_w
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -576,6 +666,24 @@ ModelImporter:
     6400184: wood_wall_001
     6400186: wood_wall_002
     6400188: wood_wall_003
+    6400190: bathroom_e_floor
+    6400192: bedroom_e_floor
+    6400194: bedroom_e_wall_e
+    6400196: bedroom_e_wall_n
+    6400198: bedroom_e_wall_s
+    6400200: bedroom_e_wall_w
+    6400202: floor_board_e
+    6400204: floor_board_n
+    6400206: floor_board_s
+    6400208: floor_board_w
+    6400210: glass
+    6400212: glass_001
+    6400214: window_frame_n
+    6400216: window_frame_s
+    6400218: bathroom_e_wall_e
+    6400220: bathroom_e_wall_n
+    6400222: bathroom_e_wall_s
+    6400224: bathroom_e_wall_w
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
