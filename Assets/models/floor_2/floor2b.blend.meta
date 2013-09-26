@@ -94,6 +94,12 @@ ModelImporter:
     100176: Cube
     100178: Cube_001
     100180: Cube_002
+    100182: ceiling_001
+    100184: door_frame
+    100186: wood_wall
+    100188: wood_wall_001
+    100190: wood_wall_002
+    100192: wood_wall_003
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -185,6 +191,12 @@ ModelImporter:
     400176: Cube
     400178: Cube_001
     400180: Cube_002
+    400182: ceiling_001
+    400184: door_frame
+    400186: wood_wall
+    400188: wood_wall_001
+    400190: wood_wall_002
+    400192: wood_wall_003
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -274,6 +286,12 @@ ModelImporter:
     2300172: Cube
     2300174: Cube_001
     2300176: Cube_002
+    2300178: ceiling_001
+    2300180: door_frame
+    2300182: wood_wall
+    2300184: wood_wall_001
+    2300186: wood_wall_002
+    2300188: wood_wall_003
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -363,6 +381,12 @@ ModelImporter:
     3300172: Cube
     3300174: Cube_001
     3300176: Cube_002
+    3300178: ceiling_001
+    3300180: door_frame
+    3300182: wood_wall
+    3300184: wood_wall_001
+    3300186: wood_wall_002
+    3300188: wood_wall_003
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -451,6 +475,12 @@ ModelImporter:
     4300170: bedroom_n_wall_s
     4300172: Cube
     4300174: bedroom_n_floor
+    4300176: ceiling_001
+    4300178: door_frame
+    4300180: wood_wall_001
+    4300182: wood_wall_002
+    4300184: wood_wall_003
+    4300186: wood_wall
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -540,6 +570,12 @@ ModelImporter:
     6400172: Cube
     6400174: Cube_001
     6400176: Cube_002
+    6400178: ceiling_001
+    6400180: door_frame
+    6400182: wood_wall
+    6400184: wood_wall_001
+    6400186: wood_wall_002
+    6400188: wood_wall_003
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
