@@ -138,6 +138,16 @@ ModelImporter:
     100264: window_frame_s_001
     100266: window_glass_001
     100268: window_glass_002
+    100270: servants_stair_floor
+    100272: servants_stairs_wall_e
+    100274: servants_stairs_wall_n
+    100276: servants_stairs_wall_s
+    100278: servants_stairs_wall_w
+    100280: sevants_hall_wall_e
+    100282: sevants_hall_wall_n
+    100284: sevants_hall_wall_s
+    100286: sevants_hall_wall_w
+    100288: servants_stairs_wall_s_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -273,6 +283,16 @@ ModelImporter:
     400264: window_frame_s_001
     400266: window_glass_001
     400268: window_glass_002
+    400270: servants_stair_floor
+    400272: servants_stairs_wall_e
+    400274: servants_stairs_wall_n
+    400276: servants_stairs_wall_s
+    400278: servants_stairs_wall_w
+    400280: sevants_hall_wall_e
+    400282: sevants_hall_wall_n
+    400284: sevants_hall_wall_s
+    400286: sevants_hall_wall_w
+    400288: servants_stairs_wall_s_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -406,6 +426,16 @@ ModelImporter:
     2300260: window_frame_s_001
     2300262: window_glass_001
     2300264: window_glass_002
+    2300266: servants_stair_floor
+    2300268: servants_stairs_wall_e
+    2300270: servants_stairs_wall_n
+    2300272: servants_stairs_wall_s
+    2300274: servants_stairs_wall_w
+    2300276: sevants_hall_wall_e
+    2300278: sevants_hall_wall_n
+    2300280: sevants_hall_wall_s
+    2300282: sevants_hall_wall_w
+    2300284: servants_stairs_wall_s_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -539,6 +569,16 @@ ModelImporter:
     3300260: window_frame_s_001
     3300262: window_glass_001
     3300264: window_glass_002
+    3300266: servants_stair_floor
+    3300268: servants_stairs_wall_e
+    3300270: servants_stairs_wall_n
+    3300272: servants_stairs_wall_s
+    3300274: servants_stairs_wall_w
+    3300276: sevants_hall_wall_e
+    3300278: sevants_hall_wall_n
+    3300280: sevants_hall_wall_s
+    3300282: sevants_hall_wall_w
+    3300284: servants_stairs_wall_s_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -671,6 +711,16 @@ ModelImporter:
     4300258: window_glass_002
     4300260: window_frame_s_001
     4300262: window_glass_001
+    4300264: sevants_hall_wall_e
+    4300266: sevants_hall_wall_s
+    4300268: sevants_hall_wall_w
+    4300270: sevants_hall_wall_n
+    4300272: servants_stairs_wall_w
+    4300274: servants_stairs_wall_e
+    4300276: servants_stairs_wall_s
+    4300278: servants_stairs_wall_n
+    4300280: servants_stair_floor
+    4300282: servants_stairs_wall_s_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -804,6 +854,16 @@ ModelImporter:
     6400260: window_frame_s_001
     6400262: window_glass_001
     6400264: window_glass_002
+    6400266: servants_stair_floor
+    6400268: servants_stairs_wall_e
+    6400270: servants_stairs_wall_n
+    6400272: servants_stairs_wall_s
+    6400274: servants_stairs_wall_w
+    6400276: sevants_hall_wall_e
+    6400278: sevants_hall_wall_n
+    6400280: sevants_hall_wall_s
+    6400282: sevants_hall_wall_w
+    6400284: servants_stairs_wall_s_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
