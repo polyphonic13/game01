@@ -148,6 +148,13 @@ ModelImporter:
     100284: sevants_hall_wall_s
     100286: sevants_hall_wall_w
     100288: servants_stairs_wall_s_001
+    100290: floors
+    100292: floors_001
+    100294: floors_002
+    100296: floors_003
+    100298: floors_004
+    100300: floors_005
+    100302: floors_006
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -293,6 +300,13 @@ ModelImporter:
     400284: sevants_hall_wall_s
     400286: sevants_hall_wall_w
     400288: servants_stairs_wall_s_001
+    400290: floors
+    400292: floors_001
+    400294: floors_002
+    400296: floors_003
+    400298: floors_004
+    400300: floors_005
+    400302: floors_006
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -436,6 +450,13 @@ ModelImporter:
     2300280: sevants_hall_wall_s
     2300282: sevants_hall_wall_w
     2300284: servants_stairs_wall_s_001
+    2300286: floors
+    2300288: floors_001
+    2300290: floors_002
+    2300292: floors_003
+    2300294: floors_004
+    2300296: floors_005
+    2300298: floors_006
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -579,6 +600,13 @@ ModelImporter:
     3300280: sevants_hall_wall_s
     3300282: sevants_hall_wall_w
     3300284: servants_stairs_wall_s_001
+    3300286: floors
+    3300288: floors_001
+    3300290: floors_002
+    3300292: floors_003
+    3300294: floors_004
+    3300296: floors_005
+    3300298: floors_006
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -721,6 +749,13 @@ ModelImporter:
     4300278: servants_stairs_wall_n
     4300280: servants_stair_floor
     4300282: servants_stairs_wall_s_001
+    4300284: floors_006
+    4300286: floors_005
+    4300288: floors_004
+    4300290: floors_003
+    4300292: floors_002
+    4300294: floors_001
+    4300296: floors
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -864,6 +899,13 @@ ModelImporter:
     6400280: sevants_hall_wall_s
     6400282: sevants_hall_wall_w
     6400284: servants_stairs_wall_s_001
+    6400286: floors
+    6400288: floors_001
+    6400290: floors_002
+    6400292: floors_003
+    6400294: floors_004
+    6400296: floors_005
+    6400298: floors_006
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
