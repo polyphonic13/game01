@@ -7,7 +7,7 @@ public class ArmatureParent : MonoBehaviour {
 	
 	private Animation _animation;
 	
-	public void PlayAnimation(string clip) {
+	public void playAnimation(string clip) {
 		_animation[clip].wrapMode = WrapMode.Once;
 		_animation.Play(clip);
 	}

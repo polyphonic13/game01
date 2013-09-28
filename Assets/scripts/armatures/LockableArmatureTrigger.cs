@@ -24,12 +24,12 @@ public class LockableArmatureTrigger : OpenCloseArmatureTrigger {
 		if(!isLocked) {
 			handleOpenClose();
 		} else {
-			if(_player.inventory.HasItem(keyName)) {
-				_player.notification.AddNote("Unlocked " + lockedItemName + " with " + keyName);
+			if(_player.inventory.hasItem(keyName)) {
+				_player.notification.addNote("Unlocked " + lockedItemName + " with " + keyName);
 				isLocked = false;
 				handleOpenClose();
 			} else {
-				_player.notification.AddNote("The " + lockedItemName + " is locked");
+				_player.notification.addNote("The " + lockedItemName + " is locked");
 			}
 		}
 	}

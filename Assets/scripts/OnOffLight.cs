@@ -8,7 +8,7 @@ public class OnOffLight : InteractiveElement {
 	bool isOver = false;
 
 	void Awake() {
-				init (2);
+		init (2);
 		bulb = this.transform.Search("light_bulb").light;
 		// Debug.Log("bulb = " + bulb);
 		bulb.enabled = false;

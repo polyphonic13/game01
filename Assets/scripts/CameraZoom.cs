@@ -14,7 +14,7 @@ public class CameraZoom : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("z")) {
+		if(Input.GetKeyDown(KeyCode.Z)) {
 			isZoomed = !isZoomed;
 		}
 		if(isZoomed) {

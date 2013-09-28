@@ -32,13 +32,17 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("q")) {
+		if(Input.GetKeyDown(KeyCode.Q)) {
 			inventory.showInventory = !inventory.showInventory;
 			inventory.showDetail = false;
-			this.EnablePlayer(!inventory.showInventory);
+			this.enablePlayer(!inventory.showInventory);
 			//if(!inventory.showInventory) { 
 			//	inventoryDrawn = false;
 			//}
+		} else if(Input.GetKeyDown(KeyCode.Return)) {
+			if(notification.showNote) {
+				notification.destroy();
+			}
 		}
 	}
 	
@@ -46,22 +50,22 @@ public class Player : MonoBehaviour {
 				mouseManager.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if(inventory.showInventory) {
-			//ArrayList items = inventory.GetItems();
+			//ArrayList items = inventory.getItems();
 			//Debug.Log("items = " + items.Count);
 			//if(!inventoryDrawn) {
 				// Debug.Log("about to draw gui box");
 //				GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
-				inventory.DrawInventory();
+				inventory.drawInventory();
 				// inventoryDrawn = true;
 			//}
 		} else if(inventory.showDetail) {
-			inventory.DrawDetail();
+			inventory.drawDetail();
 		} else if(notification.showNote) {
-			notification.DrawNote();
+			notification.drawNote();
 		}
 	}
 	
-	public void EnablePlayer(bool disable) {
+	public void enablePlayer(bool disable) {
 		Debug.Log ("Player/DisablePlayer, disable = " + disable);
 		var mouseLook = GetComponent<MouseLook>();
 		mouseLook.isEnabled = disable;

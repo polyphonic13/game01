@@ -18,34 +18,34 @@ public class CollectableItem : InteractiveElement {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
 			if(!this.collected) {
-				AddToInventory();
+				addToInventory();
 				this.collected = true;
 			}
 		}
 	}
 	
-	public void AddToInventory() {
+	public void addToInventory() {
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.inventory.AddItem(this);	
+		player.inventory.addItem(this);	
 		//Destroy(this.gameObject);
-		DisableAll();
+		disableAll();
 	}
 	
-	public void RemoveFromInventory() {
+	public void removeFromInventory() {
 		this.collected = false;
-		EnableAll();
+		enableAll();
 	}
 	
-	public void DisableAll() {
-		EnableUtil(false);
+	public void disableAll() {
+		enableUtil(false);
 	}
 	
-	public void EnableAll() {
-		EnableUtil(true);
+	public void enableAll() {
+		enableUtil(true);
 	}
 	
 	// loop through renderers in children and enable/disable
-	void EnableUtil(bool enable) {
+	void enableUtil(bool enable) {
 		if(this.renderer) {
 			this.renderer.enabled = enable;
 		}
@@ -57,18 +57,18 @@ public class CollectableItem : InteractiveElement {
 */		
 	}		
 	
-	public void AttachTransforms() {
-		AttachToHands(this.transform);
+	public void attachTransforms() {
+		attachToHands(this.transform);
 
 /*
 		Transform[] ct = GetComponentInChildren<Transform>();
 		foreach(Transform t in ct) {
-			AttachToHands(t.transform);
+			attachToHands(t.transform);
 		}
 */		
 	}
 	
-	void AttachToHands(Transform transform) {
+	void attachToHands(Transform transform) {
 		var hand = Camera.main.transform.Search("right_hand");
 		transform.position = hand.transform.position;
 		transform.rotation = hand.transform.rotation;

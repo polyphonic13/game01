@@ -35,12 +35,12 @@ public class LockableChild : OpenCloseChild {
 				handleAnimation();
 			} else {
 				Debug.Log("can not open, it is locked");
-				if(_player.inventory.HasItem(keyName)) {
-					_player.notification.AddNote("unlocked with " + this.keyName);
+				if(_player.inventory.hasItem(keyName)) {
+					_player.notification.addNote("unlocked with " + this.keyName);
 					isLocked = false;
 					handleAnimation();
 				} else {
-					_player.notification.AddNote("locked");
+					_player.notification.addNote("locked");
 				}
 			}
 		}

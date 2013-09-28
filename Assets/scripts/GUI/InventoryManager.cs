@@ -29,16 +29,16 @@ public class InventoryManager {
 		//Debug.Log("inventory/start, inventory = " + inventory);
 	}
 	
-	public void AddItem(CollectableItem item) {
-		// Debug.Log("inventory manager/AddItem, item = " + item + ", description = " + item.description);
+	public void addItem(CollectableItem item) {
+		// Debug.Log("inventory manager/addItem, item = " + item + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.AddNote(item.name + " added to inventory");
+		player.notification.addNote(item.name + " added to inventory");
 		inventory.Add (item);
 		//this.itemCollected(item.name);
 //		itemCollected("temp");
 	}
 	
-	public bool HasItem(string name) {
+	public bool hasItem(string name) {
 		bool found = false;
 		CollectableItem currentItem;
 		for(int i = 0; i < inventory.Count; i++) {
@@ -52,13 +52,13 @@ public class InventoryManager {
 		return found;
 	}
 	
-	public ArrayList GetItems() {
+	public ArrayList getItems() {
 		return inventory;	
 	}
 
-	public void DrawInventory() {
-		this.DrawBackground("inventory");
-		// Debug.Log("InventoryManager/DrawInventory, inventory.Count = " + inventory.Count);
+	public void drawInventory() {
+		this.drawBackground("inventory");
+		// Debug.Log("InventoryManager/drawInventory, inventory.Count = " + inventory.Count);
 	   	int j;
 	    int k;
 	    CollectableItem currentInventoryItem = null;
@@ -88,13 +88,13 @@ public class InventoryManager {
 		}
 	}
 	
-	public void DrawDetail() {
-		// Debug.Log("DrawDetail = " + this.showDetail + ", detailInventoryItem = " + detailInventoryItem);
+	public void drawDetail() {
+		// Debug.Log("drawDetail = " + this.showDetail + ", detailInventoryItem = " + detailInventoryItem);
 		if(detailInventoryItem != null) {
 			var detailImgLeft = Screen.width/2 - detailImgWidthHeight/2;
 			var detailImgTop = Screen.height/2 - detailImgWidthHeight/2;
 			Rect detailRect = new Rect(detailImgLeft, detailImgTop, detailImgWidthHeight + 10, detailImgWidthHeight + 50);
-			this.DrawBackground("examine: " + detailInventoryItem.name);
+			this.drawBackground("examine: " + detailInventoryItem.name);
 			// Debug.Log("building detail of: " + detailInventoryItem.name);
 			GUI.Box(detailRect, detailInventoryItem.description);
 			GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, detailImgWidthHeight, detailImgWidthHeight), detailInventoryItem.iconTexture);
@@ -110,11 +110,11 @@ public class InventoryManager {
 		}
 	}
 	
-	public void DrawBackground(string title) {
+	public void drawBackground(string title) {
 		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), title /*, _style */);
 	}
 	
-	public void CloseInventoryWindow () {
+	public void closeInventoryWindow () {
     	//openInventoryWindow = false;
 	}
  

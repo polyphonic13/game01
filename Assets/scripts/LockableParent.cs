@@ -4,12 +4,12 @@ using System.Collections;
 public class LockableParent : OpenCloseParent {
 
 	public override void OpenChild(OpenCloseChild child) {
-		PlayAnimation(child.openClipName);		
+		playAnimation(child.openClipName);		
 		currentOpen = child;
 	}
 	
 	public override void CloseChild(OpenCloseChild child) {
-		PlayAnimation(child.closeClipName);
+		playAnimation(child.closeClipName);
 		currentOpen = null;
 	}
 	

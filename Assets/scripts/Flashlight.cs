@@ -16,7 +16,7 @@ public class Flashlight : CollectableItem {
 	// Update is called once per frame
 	void Update () {
 		if(collected) {
-			if(Input.GetKeyDown("f")) {
+			if(Input.GetKeyDown(KeyCode.F)) {
 				bulb.enabled = !bulb.enabled;
 				flashlight_base.renderer.enabled = bulb.enabled;
 			}
@@ -28,9 +28,9 @@ public class Flashlight : CollectableItem {
 		if(difference < interactDistance) {
 			if(!collected) {
 				collected = true;
-				AttachTransforms();				
+				attachTransforms();				
 				//flashlight_base.renderer.enabled = bulb.enabled = true;
-				AddToInventory();
+				addToInventory();
 			}
 		}
 	}
