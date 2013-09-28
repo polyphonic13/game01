@@ -188,6 +188,16 @@ ModelImporter:
     100364: bathroom_w_wall_n
     100366: bathroom_w_wall_s
     100368: bathroom_w_wall_w
+    100370: back_hall_half_wall_s
+    100372: back_hall_half_wall_w
+    100374: back_hall_hall_wall_n
+    100376: bathroom_w_half_wall_n
+    100378: bathroom_w_half_wall_s
+    100380: main_hall_half_wall_e
+    100382: main_hall_half_wall_w
+    100384: servants_hall_half_wall_e
+    100386: turret_east
+    100388: servants_hall_half_wall_e_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -373,6 +383,16 @@ ModelImporter:
     400364: bathroom_w_wall_n
     400366: bathroom_w_wall_s
     400368: bathroom_w_wall_w
+    400370: back_hall_half_wall_s
+    400372: back_hall_half_wall_w
+    400374: back_hall_hall_wall_n
+    400376: bathroom_w_half_wall_n
+    400378: bathroom_w_half_wall_s
+    400380: main_hall_half_wall_e
+    400382: main_hall_half_wall_w
+    400384: servants_hall_half_wall_e
+    400386: turret_east
+    400388: servants_hall_half_wall_e_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -556,6 +576,16 @@ ModelImporter:
     2300360: bathroom_w_wall_n
     2300362: bathroom_w_wall_s
     2300364: bathroom_w_wall_w
+    2300366: back_hall_half_wall_s
+    2300368: back_hall_half_wall_w
+    2300370: back_hall_hall_wall_n
+    2300372: bathroom_w_half_wall_n
+    2300374: bathroom_w_half_wall_s
+    2300376: main_hall_half_wall_e
+    2300378: main_hall_half_wall_w
+    2300380: servants_hall_half_wall_e
+    2300382: turret_east
+    2300384: servants_hall_half_wall_e_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -739,6 +769,16 @@ ModelImporter:
     3300360: bathroom_w_wall_n
     3300362: bathroom_w_wall_s
     3300364: bathroom_w_wall_w
+    3300366: back_hall_half_wall_s
+    3300368: back_hall_half_wall_w
+    3300370: back_hall_hall_wall_n
+    3300372: bathroom_w_half_wall_n
+    3300374: bathroom_w_half_wall_s
+    3300376: main_hall_half_wall_e
+    3300378: main_hall_half_wall_w
+    3300380: servants_hall_half_wall_e
+    3300382: turret_east
+    3300384: servants_hall_half_wall_e_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -921,6 +961,16 @@ ModelImporter:
     4300358: bathroom_w_wall_n
     4300360: bathroom_w_wall_e
     4300362: bathroom_w_wall_s
+    4300364: main_hall_half_wall_e
+    4300366: main_hall_half_wall_w
+    4300368: back_hall_half_wall_w
+    4300370: servants_hall_half_wall_e
+    4300372: back_hall_half_wall_s
+    4300374: back_hall_hall_wall_n
+    4300376: bathroom_w_half_wall_s
+    4300378: bathroom_w_half_wall_n
+    4300380: servants_hall_half_wall_e_001
+    4300384: turret_east
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1104,6 +1154,16 @@ ModelImporter:
     6400360: bathroom_w_wall_n
     6400362: bathroom_w_wall_s
     6400364: bathroom_w_wall_w
+    6400366: back_hall_half_wall_s
+    6400368: back_hall_half_wall_w
+    6400370: back_hall_hall_wall_n
+    6400372: bathroom_w_half_wall_n
+    6400374: bathroom_w_half_wall_s
+    6400376: main_hall_half_wall_e
+    6400378: main_hall_half_wall_w
+    6400380: servants_hall_half_wall_e
+    6400382: turret_east
+    6400384: servants_hall_half_wall_e_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
