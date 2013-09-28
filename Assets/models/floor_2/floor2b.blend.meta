@@ -171,6 +171,23 @@ ModelImporter:
     100330: stair_main_upper
     100332: stair_rear_lower
     100334: stair_rear_upper
+    100336: floor_001
+    100338: mirror_frame
+    100340: mirror_glass
+    100342: paneled_wall_right
+    100344: paneled_wall_right_001
+    100346: paneled_wall_top
+    100348: paneled_wall_top_001
+    100350: wall_bottom
+    100352: wall_left
+    100354: wall_top
+    100356: bathroom_w_half_wall_e
+    100358: bathroom_w_half_wall_e_001
+    100360: bathroom_w_half_wall_e_002
+    100362: bathroom_w_wall_e
+    100364: bathroom_w_wall_n
+    100366: bathroom_w_wall_s
+    100368: bathroom_w_wall_w
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -339,6 +356,23 @@ ModelImporter:
     400330: stair_main_upper
     400332: stair_rear_lower
     400334: stair_rear_upper
+    400336: floor_001
+    400338: mirror_frame
+    400340: mirror_glass
+    400342: paneled_wall_right
+    400344: paneled_wall_right_001
+    400346: paneled_wall_top
+    400348: paneled_wall_top_001
+    400350: wall_bottom
+    400352: wall_left
+    400354: wall_top
+    400356: bathroom_w_half_wall_e
+    400358: bathroom_w_half_wall_e_001
+    400360: bathroom_w_half_wall_e_002
+    400362: bathroom_w_wall_e
+    400364: bathroom_w_wall_n
+    400366: bathroom_w_wall_s
+    400368: bathroom_w_wall_w
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -505,6 +539,23 @@ ModelImporter:
     2300326: stair_main_upper
     2300328: stair_rear_lower
     2300330: stair_rear_upper
+    2300332: floor_001
+    2300334: mirror_frame
+    2300336: mirror_glass
+    2300338: paneled_wall_right
+    2300340: paneled_wall_right_001
+    2300342: paneled_wall_top
+    2300344: paneled_wall_top_001
+    2300346: wall_bottom
+    2300348: wall_left
+    2300350: wall_top
+    2300352: bathroom_w_half_wall_e
+    2300354: bathroom_w_half_wall_e_001
+    2300356: bathroom_w_half_wall_e_002
+    2300358: bathroom_w_wall_e
+    2300360: bathroom_w_wall_n
+    2300362: bathroom_w_wall_s
+    2300364: bathroom_w_wall_w
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -671,6 +722,23 @@ ModelImporter:
     3300326: stair_main_upper
     3300328: stair_rear_lower
     3300330: stair_rear_upper
+    3300332: floor_001
+    3300334: mirror_frame
+    3300336: mirror_glass
+    3300338: paneled_wall_right
+    3300340: paneled_wall_right_001
+    3300342: paneled_wall_top
+    3300344: paneled_wall_top_001
+    3300346: wall_bottom
+    3300348: wall_left
+    3300350: wall_top
+    3300352: bathroom_w_half_wall_e
+    3300354: bathroom_w_half_wall_e_001
+    3300356: bathroom_w_half_wall_e_002
+    3300358: bathroom_w_wall_e
+    3300360: bathroom_w_wall_n
+    3300362: bathroom_w_wall_s
+    3300364: bathroom_w_wall_w
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -836,6 +904,23 @@ ModelImporter:
     4300324: stair_main_upper
     4300326: stair_rear_lower
     4300328: stair_main_lower
+    4300330: floor_001
+    4300332: mirror_frame
+    4300334: mirror_glass
+    4300336: paneled_wall_right
+    4300338: wall_bottom
+    4300340: paneled_wall_top_001
+    4300342: wall_left
+    4300344: paneled_wall_right_001
+    4300346: wall_top
+    4300348: paneled_wall_top
+    4300350: bathroom_w_half_wall_e_002
+    4300352: bathroom_w_half_wall_e_001
+    4300354: bathroom_w_half_wall_e
+    4300356: bathroom_w_wall_w
+    4300358: bathroom_w_wall_n
+    4300360: bathroom_w_wall_e
+    4300362: bathroom_w_wall_s
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1002,6 +1087,23 @@ ModelImporter:
     6400326: stair_main_upper
     6400328: stair_rear_lower
     6400330: stair_rear_upper
+    6400332: floor_001
+    6400334: mirror_frame
+    6400336: mirror_glass
+    6400338: paneled_wall_right
+    6400340: paneled_wall_right_001
+    6400342: paneled_wall_top
+    6400344: paneled_wall_top_001
+    6400346: wall_bottom
+    6400348: wall_left
+    6400350: wall_top
+    6400352: bathroom_w_half_wall_e
+    6400354: bathroom_w_half_wall_e_001
+    6400356: bathroom_w_half_wall_e_002
+    6400358: bathroom_w_wall_e
+    6400360: bathroom_w_wall_n
+    6400362: bathroom_w_wall_s
+    6400364: bathroom_w_wall_w
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
