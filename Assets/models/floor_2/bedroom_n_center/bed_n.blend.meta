@@ -75,6 +75,20 @@ ModelImporter:
     4300022: bedposts
     4300024: base
     4300026: legs
+    6400000: base
+    6400002: bedposts
+    6400004: canopy
+    6400006: canopy_fabric
+    6400008: footboard_curve
+    6400010: headboadr_poles
+    6400012: headboard_base
+    6400014: headboard_curve
+    6400016: headboard_roof
+    6400018: legs
+    6400020: mattress
+    6400022: mattress_001
+    6400024: Plane
+    6400026: pollow
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -95,10 +109,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1

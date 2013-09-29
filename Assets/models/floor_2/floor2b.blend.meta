@@ -225,6 +225,12 @@ ModelImporter:
     100438: back_hall_half_wall_w_025
     100440: sunroom_w_floor
     100442: bathroom_w_wall_w_001
+    100444: bathroom_n_wall_e
+    100446: bathroom_n_wall_n
+    100448: bathroom_n_wall_s
+    100450: bathroom_n_wall_w
+    100452: bedroom_e_wall_s_001
+    100454: bedroom_e_wall_w_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -447,6 +453,12 @@ ModelImporter:
     400438: back_hall_half_wall_w_025
     400440: sunroom_w_floor
     400442: bathroom_w_wall_w_001
+    400444: bathroom_n_wall_e
+    400446: bathroom_n_wall_n
+    400448: bathroom_n_wall_s
+    400450: bathroom_n_wall_w
+    400452: bedroom_e_wall_s_001
+    400454: bedroom_e_wall_w_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -667,6 +679,12 @@ ModelImporter:
     2300434: back_hall_half_wall_w_025
     2300436: sunroom_w_floor
     2300438: bathroom_w_wall_w_001
+    2300440: bathroom_n_wall_e
+    2300442: bathroom_n_wall_n
+    2300444: bathroom_n_wall_s
+    2300446: bathroom_n_wall_w
+    2300448: bedroom_e_wall_s_001
+    2300450: bedroom_e_wall_w_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -887,6 +905,12 @@ ModelImporter:
     3300434: back_hall_half_wall_w_025
     3300436: sunroom_w_floor
     3300438: bathroom_w_wall_w_001
+    3300440: bathroom_n_wall_e
+    3300442: bathroom_n_wall_n
+    3300444: bathroom_n_wall_s
+    3300446: bathroom_n_wall_w
+    3300448: bedroom_e_wall_s_001
+    3300450: bedroom_e_wall_w_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1106,6 +1130,12 @@ ModelImporter:
     4300432: back_hall_half_wall_w_006
     4300434: sunroom_w_floor
     4300436: bathroom_w_wall_w_001
+    4300438: bathroom_n_wall_n
+    4300440: bathroom_n_wall_e
+    4300442: bathroom_n_wall_s
+    4300444: bathroom_n_wall_w
+    4300446: bedroom_e_wall_s_001
+    4300448: bedroom_e_wall_w_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1326,6 +1356,12 @@ ModelImporter:
     6400434: back_hall_half_wall_w_025
     6400436: sunroom_w_floor
     6400438: bathroom_w_wall_w_001
+    6400440: bathroom_n_wall_e
+    6400442: bathroom_n_wall_n
+    6400444: bathroom_n_wall_s
+    6400446: bathroom_n_wall_w
+    6400448: bedroom_e_wall_s_001
+    6400450: bedroom_e_wall_w_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
