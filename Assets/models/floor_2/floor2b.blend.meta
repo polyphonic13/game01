@@ -243,6 +243,11 @@ ModelImporter:
     100474: bedroom_se_wall_n
     100476: bedroom_se_wall_s
     100478: bedroom_se_wall_w
+    100480: bedroom_e_ceiling
+    100482: bedroom_sw_wall_n
+    100484: sun_room_ceiling
+    100486: sun_room_wall_n
+    100488: tower_wall
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -483,6 +488,11 @@ ModelImporter:
     400474: bedroom_se_wall_n
     400476: bedroom_se_wall_s
     400478: bedroom_se_wall_w
+    400480: bedroom_e_ceiling
+    400482: bedroom_sw_wall_n
+    400484: sun_room_ceiling
+    400486: sun_room_wall_n
+    400488: tower_wall
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -721,6 +731,11 @@ ModelImporter:
     2300470: bedroom_se_wall_n
     2300472: bedroom_se_wall_s
     2300474: bedroom_se_wall_w
+    2300476: bedroom_e_ceiling
+    2300478: bedroom_sw_wall_n
+    2300480: sun_room_ceiling
+    2300482: sun_room_wall_n
+    2300484: tower_wall
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -959,6 +974,11 @@ ModelImporter:
     3300470: bedroom_se_wall_n
     3300472: bedroom_se_wall_s
     3300474: bedroom_se_wall_w
+    3300476: bedroom_e_ceiling
+    3300478: bedroom_sw_wall_n
+    3300480: sun_room_ceiling
+    3300482: sun_room_wall_n
+    3300484: tower_wall
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1193,9 +1213,14 @@ ModelImporter:
     4300462: back_hall_wall_se
     4300464: back_hall_wall_sw
     4300466: bedroom_se_wall_n
+    4300468: sun_room_wall_n
     4300470: bedroom_se_wall_w
     4300472: bedroom_se_wall_e
     4300474: bedroom_se_wall_s
+    4300476: sun_room_ceiling
+    4300478: bedroom_e_ceiling
+    4300482: bedroom_sw_wall_n
+    4300484: tower_wall
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1434,6 +1459,11 @@ ModelImporter:
     6400470: bedroom_se_wall_n
     6400472: bedroom_se_wall_s
     6400474: bedroom_se_wall_w
+    6400476: bedroom_e_ceiling
+    6400478: bedroom_sw_wall_n
+    6400480: sun_room_ceiling
+    6400482: sun_room_wall_n
+    6400484: tower_wall
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
