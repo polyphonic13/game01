@@ -253,6 +253,25 @@ ModelImporter:
     100494: turret_w_ceiling
     100496: bedroom_se_turret
     100498: bedroom_sw_turret
+    100500: bedroom_sw_wall_n1
+    100502: Cube_003
+    100504: Cube_004
+    100506: Cube_005
+    100508: bedroom_sw_floorboards
+    100510: back_hall_half_wall_w_028
+    100512: back_hall_half_wall_w_029
+    100514: back_hall_half_wall_w_030
+    100516: back_hall_half_wall_w_031
+    100518: back_hall_half_wall_w_032
+    100520: back_hall_half_wall_w_033
+    100522: back_hall_half_wall_w_034
+    100524: back_hall_half_wall_w_035
+    100526: back_hall_half_wall_w_036
+    100528: back_hall_half_wall_w_037
+    100530: back_hall_half_wall_w_038
+    100532: back_hall_half_wall_w_039
+    100534: back_hall_half_wall_w_040
+    100536: BezierCircle
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -503,6 +522,25 @@ ModelImporter:
     400494: turret_w_ceiling
     400496: bedroom_se_turret
     400498: bedroom_sw_turret
+    400500: bedroom_sw_wall_n1
+    400502: Cube_003
+    400504: Cube_004
+    400506: Cube_005
+    400508: bedroom_sw_floorboards
+    400510: back_hall_half_wall_w_028
+    400512: back_hall_half_wall_w_029
+    400514: back_hall_half_wall_w_030
+    400516: back_hall_half_wall_w_031
+    400518: back_hall_half_wall_w_032
+    400520: back_hall_half_wall_w_033
+    400522: back_hall_half_wall_w_034
+    400524: back_hall_half_wall_w_035
+    400526: back_hall_half_wall_w_036
+    400528: back_hall_half_wall_w_037
+    400530: back_hall_half_wall_w_038
+    400532: back_hall_half_wall_w_039
+    400534: back_hall_half_wall_w_040
+    400536: BezierCircle
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -751,6 +789,24 @@ ModelImporter:
     2300490: turret_w_ceiling
     2300492: bedroom_se_turret
     2300494: bedroom_sw_turret
+    2300496: bedroom_sw_wall_n1
+    2300498: Cube_003
+    2300500: Cube_004
+    2300502: Cube_005
+    2300504: back_hall_half_wall_w_028
+    2300506: back_hall_half_wall_w_029
+    2300508: back_hall_half_wall_w_030
+    2300510: back_hall_half_wall_w_031
+    2300512: back_hall_half_wall_w_032
+    2300514: back_hall_half_wall_w_033
+    2300516: back_hall_half_wall_w_034
+    2300518: back_hall_half_wall_w_035
+    2300520: back_hall_half_wall_w_036
+    2300522: back_hall_half_wall_w_037
+    2300524: back_hall_half_wall_w_038
+    2300526: back_hall_half_wall_w_039
+    2300528: back_hall_half_wall_w_040
+    2300530: BezierCircle
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -999,6 +1055,24 @@ ModelImporter:
     3300490: turret_w_ceiling
     3300492: bedroom_se_turret
     3300494: bedroom_sw_turret
+    3300496: bedroom_sw_wall_n1
+    3300498: Cube_003
+    3300500: Cube_004
+    3300502: Cube_005
+    3300504: back_hall_half_wall_w_028
+    3300506: back_hall_half_wall_w_029
+    3300508: back_hall_half_wall_w_030
+    3300510: back_hall_half_wall_w_031
+    3300512: back_hall_half_wall_w_032
+    3300514: back_hall_half_wall_w_033
+    3300516: back_hall_half_wall_w_034
+    3300518: back_hall_half_wall_w_035
+    3300520: back_hall_half_wall_w_036
+    3300522: back_hall_half_wall_w_037
+    3300524: back_hall_half_wall_w_038
+    3300526: back_hall_half_wall_w_039
+    3300528: back_hall_half_wall_w_040
+    3300530: BezierCircle
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1246,6 +1320,24 @@ ModelImporter:
     4300488: turret_w_ceiling
     4300490: bedroom_se_turret
     4300492: bedroom_sw_turret
+    4300494: bedroom_sw_wall_n1
+    4300496: Cube_005
+    4300498: Cube_004
+    4300500: Cube_003
+    4300502: back_hall_half_wall_w_039
+    4300504: back_hall_half_wall_w_038
+    4300506: back_hall_half_wall_w_037
+    4300508: back_hall_half_wall_w_036
+    4300510: back_hall_half_wall_w_035
+    4300512: back_hall_half_wall_w_034
+    4300514: back_hall_half_wall_w_033
+    4300516: back_hall_half_wall_w_032
+    4300518: back_hall_half_wall_w_031
+    4300520: back_hall_half_wall_w_030
+    4300522: back_hall_half_wall_w_029
+    4300524: back_hall_half_wall_w_028
+    4300526: BezierCircle
+    4300528: back_hall_half_wall_w_040
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1494,6 +1586,24 @@ ModelImporter:
     6400490: turret_w_ceiling
     6400492: bedroom_se_turret
     6400494: bedroom_sw_turret
+    6400496: bedroom_sw_wall_n1
+    6400498: Cube_003
+    6400500: Cube_004
+    6400502: Cube_005
+    6400504: back_hall_half_wall_w_028
+    6400506: back_hall_half_wall_w_029
+    6400508: back_hall_half_wall_w_030
+    6400510: back_hall_half_wall_w_031
+    6400512: back_hall_half_wall_w_032
+    6400514: back_hall_half_wall_w_033
+    6400516: back_hall_half_wall_w_034
+    6400518: back_hall_half_wall_w_035
+    6400520: back_hall_half_wall_w_036
+    6400522: back_hall_half_wall_w_037
+    6400524: back_hall_half_wall_w_038
+    6400526: back_hall_half_wall_w_039
+    6400528: back_hall_half_wall_w_040
+    6400530: BezierCircle
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
