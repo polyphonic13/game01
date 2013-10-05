@@ -285,6 +285,21 @@ ModelImporter:
     100558: tower_wall_003
     100560: tower_wall_004
     100562: tower_wall_005
+    100564: Cube_010
+    100566: bedroom_se_window_e1
+    100568: bedroom_se_window_e2
+    100570: bedroom_se_window_s
+    100572: bedroom_sw_window_e1
+    100574: bedroom_sw_window_e2
+    100576: bedroom_sw_window_s
+    100578: main_hall_window_s
+    100580: main_hall_window_se
+    100582: main_hall_window_sw
+    100584: turret_e_floor
+    100586: turret_w_floor
+    100588: turret_w_window
+    100590: turret_w_window_001
+    100592: turret_e_window
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -567,6 +582,21 @@ ModelImporter:
     400558: tower_wall_003
     400560: tower_wall_004
     400562: tower_wall_005
+    400564: Cube_010
+    400566: bedroom_se_window_e1
+    400568: bedroom_se_window_e2
+    400570: bedroom_se_window_s
+    400572: bedroom_sw_window_e1
+    400574: bedroom_sw_window_e2
+    400576: bedroom_sw_window_s
+    400578: main_hall_window_s
+    400580: main_hall_window_se
+    400582: main_hall_window_sw
+    400584: turret_e_floor
+    400586: turret_w_floor
+    400588: turret_w_window
+    400590: turret_w_window_001
+    400592: turret_e_window
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -846,6 +876,21 @@ ModelImporter:
     2300552: tower_wall_003
     2300554: tower_wall_004
     2300556: tower_wall_005
+    2300558: Cube_010
+    2300560: bedroom_se_window_e1
+    2300562: bedroom_se_window_e2
+    2300564: bedroom_se_window_s
+    2300566: bedroom_sw_window_e1
+    2300568: bedroom_sw_window_e2
+    2300570: bedroom_sw_window_s
+    2300572: main_hall_window_s
+    2300574: main_hall_window_se
+    2300576: main_hall_window_sw
+    2300578: turret_e_floor
+    2300580: turret_w_floor
+    2300582: turret_w_window
+    2300584: turret_w_window_001
+    2300586: turret_e_window
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1125,6 +1170,21 @@ ModelImporter:
     3300552: tower_wall_003
     3300554: tower_wall_004
     3300556: tower_wall_005
+    3300558: Cube_010
+    3300560: bedroom_se_window_e1
+    3300562: bedroom_se_window_e2
+    3300564: bedroom_se_window_s
+    3300566: bedroom_sw_window_e1
+    3300568: bedroom_sw_window_e2
+    3300570: bedroom_sw_window_s
+    3300572: main_hall_window_s
+    3300574: main_hall_window_se
+    3300576: main_hall_window_sw
+    3300578: turret_e_floor
+    3300580: turret_w_floor
+    3300582: turret_w_window
+    3300584: turret_w_window_001
+    3300586: turret_e_window
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1403,6 +1463,21 @@ ModelImporter:
     4300550: tower_wall_003
     4300552: tower_wall_002
     4300554: tower_wall_001
+    4300556: Cube_010
+    4300558: main_hall_window_se
+    4300560: main_hall_window_sw
+    4300562: main_hall_window_s
+    4300564: bedroom_se_window_s
+    4300566: bedroom_se_window_e2
+    4300568: bedroom_se_window_e1
+    4300570: bedroom_sw_window_e1
+    4300572: bedroom_sw_window_e2
+    4300574: bedroom_sw_window_s
+    4300576: turret_w_window_001
+    4300578: turret_w_window
+    4300580: turret_w_floor
+    4300582: turret_e_floor
+    4300584: turret_e_window
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1682,6 +1757,21 @@ ModelImporter:
     6400552: tower_wall_003
     6400554: tower_wall_004
     6400556: tower_wall_005
+    6400558: Cube_010
+    6400560: bedroom_se_window_e1
+    6400562: bedroom_se_window_e2
+    6400564: bedroom_se_window_s
+    6400566: bedroom_sw_window_e1
+    6400568: bedroom_sw_window_e2
+    6400570: bedroom_sw_window_s
+    6400572: main_hall_window_s
+    6400574: main_hall_window_se
+    6400576: main_hall_window_sw
+    6400578: turret_e_floor
+    6400580: turret_w_floor
+    6400582: turret_w_window
+    6400584: turret_w_window_001
+    6400586: turret_e_window
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
