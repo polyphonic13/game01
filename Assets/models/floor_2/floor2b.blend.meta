@@ -276,6 +276,10 @@ ModelImporter:
     100540: back_hall_half_wall_w_042
     100542: tower_curve
     100544: bedroom_sw_turret_001
+    100546: Cube_006
+    100548: Cube_007
+    100550: Cube_008
+    100552: bedroom_sw_turret_002
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -549,6 +553,10 @@ ModelImporter:
     400540: back_hall_half_wall_w_042
     400542: tower_curve
     400544: bedroom_sw_turret_001
+    400546: Cube_006
+    400548: Cube_007
+    400550: Cube_008
+    400552: bedroom_sw_turret_002
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -819,6 +827,10 @@ ModelImporter:
     2300534: back_hall_half_wall_w_042
     2300536: tower_curve
     2300538: bedroom_sw_turret_001
+    2300540: Cube_006
+    2300542: Cube_007
+    2300544: Cube_008
+    2300546: bedroom_sw_turret_002
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1089,6 +1101,10 @@ ModelImporter:
     3300534: back_hall_half_wall_w_042
     3300536: tower_curve
     3300538: bedroom_sw_turret_001
+    3300540: Cube_006
+    3300542: Cube_007
+    3300544: Cube_008
+    3300546: bedroom_sw_turret_002
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1358,6 +1374,10 @@ ModelImporter:
     4300532: back_hall_half_wall_w_041
     4300534: tower_curve
     4300536: bedroom_sw_turret_001
+    4300538: Cube_007
+    4300540: Cube_006
+    4300542: bedroom_sw_turret_002
+    4300544: Cube_008
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1628,6 +1648,10 @@ ModelImporter:
     6400534: back_hall_half_wall_w_042
     6400536: tower_curve
     6400538: bedroom_sw_turret_001
+    6400540: Cube_006
+    6400542: Cube_007
+    6400544: Cube_008
+    6400546: bedroom_sw_turret_002
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
