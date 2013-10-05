@@ -272,6 +272,10 @@ ModelImporter:
     100532: back_hall_half_wall_w_039
     100534: back_hall_half_wall_w_040
     100536: BezierCircle
+    100538: back_hall_half_wall_w_041
+    100540: back_hall_half_wall_w_042
+    100542: tower_curve
+    100544: bedroom_sw_turret_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -541,6 +545,10 @@ ModelImporter:
     400532: back_hall_half_wall_w_039
     400534: back_hall_half_wall_w_040
     400536: BezierCircle
+    400538: back_hall_half_wall_w_041
+    400540: back_hall_half_wall_w_042
+    400542: tower_curve
+    400544: bedroom_sw_turret_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -807,6 +815,10 @@ ModelImporter:
     2300526: back_hall_half_wall_w_039
     2300528: back_hall_half_wall_w_040
     2300530: BezierCircle
+    2300532: back_hall_half_wall_w_041
+    2300534: back_hall_half_wall_w_042
+    2300536: tower_curve
+    2300538: bedroom_sw_turret_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1073,6 +1085,10 @@ ModelImporter:
     3300526: back_hall_half_wall_w_039
     3300528: back_hall_half_wall_w_040
     3300530: BezierCircle
+    3300532: back_hall_half_wall_w_041
+    3300534: back_hall_half_wall_w_042
+    3300536: tower_curve
+    3300538: bedroom_sw_turret_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1338,6 +1354,10 @@ ModelImporter:
     4300524: back_hall_half_wall_w_028
     4300526: BezierCircle
     4300528: back_hall_half_wall_w_040
+    4300530: back_hall_half_wall_w_042
+    4300532: back_hall_half_wall_w_041
+    4300534: tower_curve
+    4300536: bedroom_sw_turret_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1604,6 +1624,10 @@ ModelImporter:
     6400526: back_hall_half_wall_w_039
     6400528: back_hall_half_wall_w_040
     6400530: BezierCircle
+    6400532: back_hall_half_wall_w_041
+    6400534: back_hall_half_wall_w_042
+    6400536: tower_curve
+    6400538: bedroom_sw_turret_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
