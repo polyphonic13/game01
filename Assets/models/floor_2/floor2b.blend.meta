@@ -280,6 +280,11 @@ ModelImporter:
     100548: Cube_007
     100550: Cube_008
     100552: bedroom_sw_turret_002
+    100554: tower_wall_001
+    100556: tower_wall_002
+    100558: tower_wall_003
+    100560: tower_wall_004
+    100562: tower_wall_005
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -557,6 +562,11 @@ ModelImporter:
     400548: Cube_007
     400550: Cube_008
     400552: bedroom_sw_turret_002
+    400554: tower_wall_001
+    400556: tower_wall_002
+    400558: tower_wall_003
+    400560: tower_wall_004
+    400562: tower_wall_005
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -831,6 +841,11 @@ ModelImporter:
     2300542: Cube_007
     2300544: Cube_008
     2300546: bedroom_sw_turret_002
+    2300548: tower_wall_001
+    2300550: tower_wall_002
+    2300552: tower_wall_003
+    2300554: tower_wall_004
+    2300556: tower_wall_005
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1105,6 +1120,11 @@ ModelImporter:
     3300542: Cube_007
     3300544: Cube_008
     3300546: bedroom_sw_turret_002
+    3300548: tower_wall_001
+    3300550: tower_wall_002
+    3300552: tower_wall_003
+    3300554: tower_wall_004
+    3300556: tower_wall_005
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1378,6 +1398,11 @@ ModelImporter:
     4300540: Cube_006
     4300542: bedroom_sw_turret_002
     4300544: Cube_008
+    4300546: tower_wall_005
+    4300548: tower_wall_004
+    4300550: tower_wall_003
+    4300552: tower_wall_002
+    4300554: tower_wall_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1652,6 +1677,11 @@ ModelImporter:
     6400542: Cube_007
     6400544: Cube_008
     6400546: bedroom_sw_turret_002
+    6400548: tower_wall_001
+    6400550: tower_wall_002
+    6400552: tower_wall_003
+    6400554: tower_wall_004
+    6400556: tower_wall_005
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
