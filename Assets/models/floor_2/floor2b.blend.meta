@@ -300,6 +300,25 @@ ModelImporter:
     100588: turret_w_window
     100590: turret_w_window_001
     100592: turret_e_window
+    100594: bedroom_e_window_frame_e1
+    100596: bedroom_e_window_frame_e2
+    100598: bedroom_nw_window_frame_w1
+    100600: bedroom_nw_window_frame_w2
+    100602: bedroom_nw_window_w1
+    100604: bedroom_nw_window_w2
+    100606: bedroom_se_window_e1_001
+    100608: bedroom_se_window_e1_002
+    100610: bedroom_se_window_e1_003
+    100612: bedroom_se_window_e1_004
+    100614: bedroom_se_window_frame_e1
+    100616: bedroom_se_window_frame_e1_001
+    100618: bedroom_se_window_frame_e1_002
+    100620: bedroom_se_window_frame_e2
+    100622: bedroom_se_window_frame_e2_001
+    100624: Cube_012
+    100626: main_hall_window_s_001
+    100628: secret_room_nw_001
+    100630: bedroom_n_wall_w_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -597,6 +616,25 @@ ModelImporter:
     400588: turret_w_window
     400590: turret_w_window_001
     400592: turret_e_window
+    400594: bedroom_e_window_frame_e1
+    400596: bedroom_e_window_frame_e2
+    400598: bedroom_nw_window_frame_w1
+    400600: bedroom_nw_window_frame_w2
+    400602: bedroom_nw_window_w1
+    400604: bedroom_nw_window_w2
+    400606: bedroom_se_window_e1_001
+    400608: bedroom_se_window_e1_002
+    400610: bedroom_se_window_e1_003
+    400612: bedroom_se_window_e1_004
+    400614: bedroom_se_window_frame_e1
+    400616: bedroom_se_window_frame_e1_001
+    400618: bedroom_se_window_frame_e1_002
+    400620: bedroom_se_window_frame_e2
+    400622: bedroom_se_window_frame_e2_001
+    400624: Cube_012
+    400626: main_hall_window_s_001
+    400628: secret_room_nw_001
+    400630: bedroom_n_wall_w_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -891,6 +929,25 @@ ModelImporter:
     2300582: turret_w_window
     2300584: turret_w_window_001
     2300586: turret_e_window
+    2300588: bedroom_e_window_frame_e1
+    2300590: bedroom_e_window_frame_e2
+    2300592: bedroom_nw_window_frame_w1
+    2300594: bedroom_nw_window_frame_w2
+    2300596: bedroom_nw_window_w1
+    2300598: bedroom_nw_window_w2
+    2300600: bedroom_se_window_e1_001
+    2300602: bedroom_se_window_e1_002
+    2300604: bedroom_se_window_e1_003
+    2300606: bedroom_se_window_e1_004
+    2300608: bedroom_se_window_frame_e1
+    2300610: bedroom_se_window_frame_e1_001
+    2300612: bedroom_se_window_frame_e1_002
+    2300614: bedroom_se_window_frame_e2
+    2300616: bedroom_se_window_frame_e2_001
+    2300618: Cube_012
+    2300620: main_hall_window_s_001
+    2300622: secret_room_nw_001
+    2300624: bedroom_n_wall_w_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1185,6 +1242,25 @@ ModelImporter:
     3300582: turret_w_window
     3300584: turret_w_window_001
     3300586: turret_e_window
+    3300588: bedroom_e_window_frame_e1
+    3300590: bedroom_e_window_frame_e2
+    3300592: bedroom_nw_window_frame_w1
+    3300594: bedroom_nw_window_frame_w2
+    3300596: bedroom_nw_window_w1
+    3300598: bedroom_nw_window_w2
+    3300600: bedroom_se_window_e1_001
+    3300602: bedroom_se_window_e1_002
+    3300604: bedroom_se_window_e1_003
+    3300606: bedroom_se_window_e1_004
+    3300608: bedroom_se_window_frame_e1
+    3300610: bedroom_se_window_frame_e1_001
+    3300612: bedroom_se_window_frame_e1_002
+    3300614: bedroom_se_window_frame_e2
+    3300616: bedroom_se_window_frame_e2_001
+    3300618: Cube_012
+    3300620: main_hall_window_s_001
+    3300622: secret_room_nw_001
+    3300624: bedroom_n_wall_w_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1478,6 +1554,25 @@ ModelImporter:
     4300580: turret_w_floor
     4300582: turret_e_floor
     4300584: turret_e_window
+    4300586: bedroom_se_window_e1_004
+    4300588: bedroom_se_window_frame_e1_002
+    4300590: bedroom_se_window_frame_e1_001
+    4300592: bedroom_se_window_e1_003
+    4300594: main_hall_window_s_001
+    4300596: bedroom_nw_window_frame_w1
+    4300598: bedroom_nw_window_w1
+    4300600: bedroom_nw_window_w2
+    4300602: bedroom_se_window_e1_002
+    4300604: bedroom_se_window_e1_001
+    4300606: bedroom_e_window_frame_e1
+    4300608: bedroom_e_window_frame_e2
+    4300610: bedroom_se_window_frame_e1
+    4300612: bedroom_se_window_frame_e2_001
+    4300614: bedroom_nw_window_frame_w2
+    4300616: bedroom_se_window_frame_e2
+    4300618: secret_room_nw_001
+    4300620: Cube_012
+    4300622: bedroom_n_wall_w_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1772,6 +1867,25 @@ ModelImporter:
     6400582: turret_w_window
     6400584: turret_w_window_001
     6400586: turret_e_window
+    6400588: bedroom_e_window_frame_e1
+    6400590: bedroom_e_window_frame_e2
+    6400592: bedroom_nw_window_frame_w1
+    6400594: bedroom_nw_window_frame_w2
+    6400596: bedroom_nw_window_w1
+    6400598: bedroom_nw_window_w2
+    6400600: bedroom_se_window_e1_001
+    6400602: bedroom_se_window_e1_002
+    6400604: bedroom_se_window_e1_003
+    6400606: bedroom_se_window_e1_004
+    6400608: bedroom_se_window_frame_e1
+    6400610: bedroom_se_window_frame_e1_001
+    6400612: bedroom_se_window_frame_e1_002
+    6400614: bedroom_se_window_frame_e2
+    6400616: bedroom_se_window_frame_e2_001
+    6400618: Cube_012
+    6400620: main_hall_window_s_001
+    6400622: secret_room_nw_001
+    6400624: bedroom_n_wall_w_001
     7400000: Default Take
     9500000: //RootNode
     11100000: //RootNode
