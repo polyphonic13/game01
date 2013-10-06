@@ -63,6 +63,11 @@ ModelImporter:
     7400006: drawer_top_close
     7400008: drawer_top_open
     7400010: default
+    7400012: endtable01_default
+    7400014: endtable01_drawer_bottom_close
+    7400016: endtable01_drawer_bottom_open
+    7400018: endtable01_drawer_top_close
+    7400020: endtable01_drawer_top_open
     9500000: //RootNode
     11100000: //RootNode
     13700000: drawer_bottom

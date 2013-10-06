@@ -14,24 +14,26 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void init(int activeCursor = 1) {
 		mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
-				_activeCursor = activeCursor;
+		_activeCursor = activeCursor;
 	}
 
 	public void OnMouseOver() {
+		mouseOver ();
+	}
+
+	public void mouseOver() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if (difference < interactDistance) {
-//			Debug.Log ("InteractiveElement/OnMouseOver");
+			Debug.Log ("InteractiveElement[ " + this.name + " ]/OnMouseOver");
 			mouseManager.setCursorType(_activeCursor);
 		}
 	}
 
 	public void OnMouseExit() {
-		//		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		//		if (difference < interactDistance) {
-//		Debug.Log ("InteractiveElement/OnMouseExit");
-		mouseManager.setCursorType (0);
-		//		}
+		mouseExit ();
 	}
 
-
+	public void mouseExit() {
+		mouseManager.setCursorType (0);
+	}
 }

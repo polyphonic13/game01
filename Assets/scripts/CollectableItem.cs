@@ -9,6 +9,8 @@ public class CollectableItem : InteractiveElement {
 	public Texture iconTexture;
 	public Texture detailTexture;
 
+	private Renderer[] _renderers;
+
 	void Awake() {
 		init (2	);
 	}
@@ -27,8 +29,9 @@ public class CollectableItem : InteractiveElement {
 	public void addToInventory() {
 		var player = GameObject.Find("player").GetComponent<Player>();
 		player.inventory.addItem(this);	
-		//Destroy(this.gameObject);
+		// Destroy(this.gameObject);
 		disableAll();
+		mouseExit ();
 	}
 	
 	public void removeFromInventory() {
@@ -49,12 +52,13 @@ public class CollectableItem : InteractiveElement {
 		if(this.renderer) {
 			this.renderer.enabled = enable;
 		}
-/*		
-		Renderer[] cr = GetComponentInChildren<Renderer>();
-		foreach(Renderer r in cr) {
+
+//		Renderer[] cr = GetComponentInChildren<Renderer>();
+		_renderers = gameObject.GetComponentsInChildren<Renderer>();
+		foreach(Renderer r in _renderers) {
 			r.enabled = enable;
 		}
-*/		
+
 	}		
 	
 	public void attachTransforms() {
