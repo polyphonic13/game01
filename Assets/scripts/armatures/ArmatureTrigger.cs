@@ -18,12 +18,12 @@ public class ArmatureTrigger : InteractiveElement {
 	}
 	
 	public virtual void handleAnimation() {
-		Debug.Log("ArmatureTrigger[ " + this.name + " ]/handleAnimation");
+//		Debug.Log("ArmatureTrigger[ " + this.name + " ]/handleAnimation");
 		sendAnimationToPops(mainClip.name);
 	}
 	
 	public void sendAnimationToPops(string clipName) {
-		Debug.Log("ArmatureTrigger[ " + this.name + " ]/sendAnimationToPops, clipName = " + clipName);
+//		Debug.Log("ArmatureTrigger[ " + this.name + " ]/sendAnimationToPops, clipName = " + clipName);
 		pops.playAnimation(clipName);
 	}
 }

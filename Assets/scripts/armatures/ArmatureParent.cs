@@ -8,10 +8,11 @@ public class ArmatureParent : MonoBehaviour {
 	private Animation _animation;
 	
 	public void playAnimation(string clip) {
-		_animation [clip].layer = 10;
-		_animation [clip].blendMode = AnimationBlendMode.Blend;
+				Debug.Log ("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip);
+		_animation[clip].layer = 10;
+		_animation[clip].blendMode = AnimationBlendMode.Blend;
 		_animation[clip].wrapMode = WrapMode.Once;
-		_animation.Play(clip);
+		_animation.CrossFade(clip);
 	}
 	
 	void Start() {

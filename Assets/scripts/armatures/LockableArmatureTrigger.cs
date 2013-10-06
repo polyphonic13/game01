@@ -20,7 +20,7 @@ public class LockableArmatureTrigger : OpenCloseArmatureTrigger {
 	}
 	
 	public void handleLockCheck() {
-		Debug.Log("LockableArmatureTrigger[ " + this.name + " ]/handleLockCheck, isLocked = " + isLocked);
+//		Debug.Log("LockableArmatureTrigger[ " + this.name + " ]/handleLockCheck, isLocked = " + isLocked);
 		if(!isLocked) {
 			handleOpenClose();
 		} else {

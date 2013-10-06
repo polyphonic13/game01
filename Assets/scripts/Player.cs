@@ -66,7 +66,7 @@ public class Player : MonoBehaviour {
 	}
 	
 	public void enablePlayer(bool disable) {
-		Debug.Log ("Player/DisablePlayer, disable = " + disable);
+		// Debug.Log ("Player/enablePlayer, disable = " + disable);
 		var mouseLook = GetComponent<MouseLook>();
 		mouseLook.isEnabled = disable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();
