@@ -18,6 +18,8 @@ ModelImporter:
     100024: top
     100026: Cone
     100028: pull
+    100030: endtable02_armature
+    100032: endtable02_drawer_bone
     400000: Cube
     400002: Cube_002
     400004: Cube_003
@@ -33,6 +35,8 @@ ModelImporter:
     400024: top
     400026: Cone
     400028: pull
+    400030: endtable02_armature
+    400032: endtable02_drawer_bone
     2300000: Cube
     2300002: Cube_002
     2300004: Cube_003
@@ -93,6 +97,8 @@ ModelImporter:
     7400002: drawer_close
     9500000: //RootNode
     11100000: //RootNode
+    13700000: drawer
+    13700002: pull
   materials:
     importMaterials: 1
     materialName: 0
