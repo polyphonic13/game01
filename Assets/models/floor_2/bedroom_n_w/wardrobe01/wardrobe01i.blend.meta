@@ -30,6 +30,9 @@ ModelImporter:
     100048: door_right
     100050: base_001
     100052: Cube
+    100054: Armature
+    100056: door_L
+    100058: door_R
     400000: back__left_leg
     400002: back_right_leg
     400004: back_right_leg_001
@@ -57,6 +60,9 @@ ModelImporter:
     400048: door_right
     400050: base_001
     400052: Cube
+    400054: Armature
+    400056: door_L
+    400058: door_R
     2300000: back__left_leg
     2300002: back_right_leg
     2300004: back_right_leg_001
@@ -160,8 +166,16 @@ ModelImporter:
     7400002: door_right_close
     7400004: door_left_open
     7400006: door_left_close
+    7400008: Default Take
+    7400010: wardrobe_door_close_L
+    7400012: wardrobe_door_close_R
+    7400014: wardrobe_door_open_L
+    7400016: wardrobe_door_open_R
+    7400018: wardrobe_doors_default
     9500000: //RootNode
     11100000: //RootNode
+    13700000: door_left
+    13700002: door_right
   materials:
     importMaterials: 1
     materialName: 0
@@ -174,91 +188,7 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations:
-    - name: door_right_open
-      takeName: Default Take
-      firstFrame: 0
-      lastFrame: 10
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
-    - name: door_right_close
-      takeName: Default Take
-      firstFrame: 10
-      lastFrame: 20
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
-    - name: door_left_open
-      takeName: Default Take
-      firstFrame: 20
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
-    - name: door_left_close
-      takeName: Default Take
-      firstFrame: 30
-      lastFrame: 39
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
