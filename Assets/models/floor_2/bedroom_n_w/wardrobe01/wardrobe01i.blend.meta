@@ -33,6 +33,9 @@ ModelImporter:
     100054: Armature
     100056: door_L
     100058: door_R
+    100060: armature_L
+    100062: armature_R
+    100064: door_R_0
     400000: back__left_leg
     400002: back_right_leg
     400004: back_right_leg_001
@@ -63,6 +66,9 @@ ModelImporter:
     400054: Armature
     400056: door_L
     400058: door_R
+    400060: armature_L
+    400062: armature_R
+    400064: door_R_0
     2300000: back__left_leg
     2300002: back_right_leg
     2300004: back_right_leg_001
@@ -172,6 +178,10 @@ ModelImporter:
     7400014: wardrobe_door_open_L
     7400016: wardrobe_door_open_R
     7400018: wardrobe_doors_default
+    7400020: wardrobe_arm_L_close
+    7400022: wardrobe_arm_L_open
+    7400024: wardrobe_arm_R_close
+    7400026: wardrobe_arm_R_open
     9500000: //RootNode
     11100000: //RootNode
     13700000: door_left
