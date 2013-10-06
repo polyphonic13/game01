@@ -6,6 +6,8 @@ public class ArmatureTrigger : InteractiveElement {
 	public ArmatureParent pops;
 	public AnimationClip mainClip;
 
+	public Transform parentBone;
+
 	void Awake() {
 		init ();
 	}
@@ -19,11 +21,11 @@ public class ArmatureTrigger : InteractiveElement {
 	
 	public virtual void handleAnimation() {
 //		Debug.Log("ArmatureTrigger[ " + this.name + " ]/handleAnimation");
-		sendAnimationToPops(mainClip.name);
+		sendAnimationToPops(mainClip.name, parentBone);
 	}
 	
-	public void sendAnimationToPops(string clipName) {
+	public void sendAnimationToPops(string clipName, Transform bone) {
 //		Debug.Log("ArmatureTrigger[ " + this.name + " ]/sendAnimationToPops, clipName = " + clipName);
-		pops.playAnimation(clipName);
+		pops.playAnimation(clipName, bone);
 	}
 }
