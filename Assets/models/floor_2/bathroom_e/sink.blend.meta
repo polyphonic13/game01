@@ -82,6 +82,9 @@ ModelImporter:
     100152: Plane_004
     100154: mirror
     100156: mirro_glass
+    100158: Armature
+    100160: Bone
+    100162: sink_door
     400000: base_001
     400002: basin
     400004: connecting_pipe_001
@@ -161,6 +164,9 @@ ModelImporter:
     400152: Plane_004
     400154: mirror
     400156: mirro_glass
+    400158: Armature
+    400160: Bone
+    400162: sink_door
     2300000: base_001
     2300002: basin
     2300004: connecting_pipe_001
@@ -386,6 +392,7 @@ ModelImporter:
     4300144: Plane_004
     4300146: mirror
     4300148: mirro_glass
+    4300150: sink_door
     6400000: base_001
     6400002: basin
     6400004: BezierCurve
@@ -465,6 +472,7 @@ ModelImporter:
     7400002: door_close
     9500000: //RootNode
     11100000: //RootNode
+    13700000: sink_door
   materials:
     importMaterials: 1
     materialName: 0

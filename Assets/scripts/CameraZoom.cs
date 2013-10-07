@@ -8,7 +8,7 @@ public class CameraZoom : MonoBehaviour {
 	int normal = 60;
 	float smooth = 5;
 	bool isZoomed = false;
-	
+
 	void Start() {
 		camera = Camera.main;
 	}
