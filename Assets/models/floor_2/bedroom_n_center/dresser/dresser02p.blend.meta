@@ -29,6 +29,14 @@ ModelImporter:
     100046: top_right_drawer
     100048: top_pull_left_000
     100050: top_center_drawer
+    100052: Armature
+    100054: bottom_drawer_bone
+    100056: dresser
+    100058: master
+    100060: middle_drawer_bone
+    100062: top_center_drawer_bone
+    100064: top_left_drawer_bone
+    100066: top_right_drawer_bone
     400000: bottom_drawer
     400002: bottom_trim
     400004: Circle
@@ -55,6 +63,14 @@ ModelImporter:
     400046: top_right_drawer
     400048: top_pull_left_000
     400050: top_center_drawer
+    400052: Armature
+    400054: bottom_drawer_bone
+    400056: dresser
+    400058: master
+    400060: middle_drawer_bone
+    400062: top_center_drawer_bone
+    400064: top_left_drawer_bone
+    400066: top_right_drawer_bone
     2300000: bottom_drawer
     2300002: bottom_trim
     2300004: Circle
@@ -81,6 +97,7 @@ ModelImporter:
     2300046: top_right_drawer
     2300048: top_pull_left_000
     2300050: top_center_drawer
+    2300052: dresser
     3300000: bottom_drawer
     3300002: bottom_trim
     3300004: Circle
@@ -107,6 +124,7 @@ ModelImporter:
     3300046: top_right_drawer
     3300048: top_pull_left_000
     3300050: top_center_drawer
+    3300052: dresser
     4300000: dresser
     4300002: top_left_drawer
     4300004: top_pull_left_001
@@ -159,6 +177,7 @@ ModelImporter:
     6400046: top_right_drawer
     6400048: top_pull_left_000
     6400050: top_center_drawer
+    6400052: dresser
     7400000: bottom_drawer_open
     7400002: bottom_drawer_close
     7400004: middle_drawer_open
@@ -171,6 +190,19 @@ ModelImporter:
     7400018: top_left_drawer_open
     9500000: //RootNode
     11100000: //RootNode
+    13700000: bottom_drawer
+    13700002: middle_drawer
+    13700004: top_center_drawer
+    13700006: top_left_drawer
+    13700008: top_right_drawer
+    13700010: top_pull_left_000
+    13700012: top_pull_left_001
+    13700014: top_pull_left_002
+    13700016: top_pull_left_003
+    13700018: top_pull_left_004
+    13700020: top_pull_left_005
+    13700022: top_pull_left_006
+    13700024: top_pull_left_007
   materials:
     importMaterials: 1
     materialName: 0

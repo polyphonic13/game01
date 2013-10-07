@@ -50,6 +50,9 @@ ModelImporter:
     100088: leg_tpp_back_right
     100090: table
     100092: mirror_back
+    100094: Armature
+    100096: drawer_bone
+    100098: pull
     400000: base
     400002: BezierCurve
     400004: drawer
@@ -97,6 +100,9 @@ ModelImporter:
     400088: leg_tpp_back_right
     400090: table
     400092: mirror_back
+    400094: Armature
+    400096: drawer_bone
+    400098: pull
     2300000: base
     2300002: BezierCurve
     2300004: drawer
@@ -229,6 +235,7 @@ ModelImporter:
     4300082: leg_front_left
     4300084: leg_front_right
     4300086: mirror_back
+    4300088: pull
     6400000: base
     6400002: BezierCurve
     6400004: BezierCurve_001
@@ -277,6 +284,8 @@ ModelImporter:
     7400002: drawer_close
     9500000: //RootNode
     11100000: //RootNode
+    13700000: drawer
+    13700002: pull
   materials:
     importMaterials: 1
     materialName: 0
