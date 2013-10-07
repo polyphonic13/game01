@@ -233,6 +233,17 @@ ModelImporter:
     7400018: bathroom01_sink_default
     7400020: bathroom01_sink_doors_close
     7400022: bathroom01_sink_doors_open
+    7400024: bathroom01_sink_doors_close_L
+    7400026: bathroom01_sink_doors_close_R
+    7400028: bathroom01_sink_doors_open_L
+    7400030: bathroom01_sink_doors_open_R
+    7400032: bathroom01_sink_drawer_1_close
+    7400034: bathroom01_sink_drawer_2_close
+    7400036: bathroom01_sink_drawer_2_open
+    7400038: bathroom01_sink_drawer_3_close
+    7400040: bathroom01_sink_drawer_3_open
+    7400042: bathroom01_sink_drawer_4_close
+    7400044: bathroom01_sink_drawer_4_open
     9500000: //RootNode
     11100000: //RootNode
     13700000: door_left
