@@ -293,11 +293,67 @@ ModelImporter:
     4300106: spout_001
     4300108: connecting_pipe_001
     4300110: washer_n_000
+    6400000: base
+    6400002: base_001
+    6400004: base_top
+    6400006: basin
+    6400008: bottom_trim_center
+    6400010: bottom_trim_left
+    6400012: bottom_trim_right
+    6400014: bowl
+    6400016: connecting_pipe_001
+    6400018: handle_ball_n_000
+    6400020: handle_ball_n_001
+    6400022: handle_n_000
+    6400024: handle_n_001
+    6400026: handle_pipe_s_000
+    6400028: handle_pipe_s_001
+    6400030: leg_front_left
+    6400032: leg_front_right
+    6400034: leg_rear_left
+    6400036: leg_rear_right
+    6400038: mirro_glass
+    6400040: mirror
+    6400042: new_toilet_seat
+    6400044: pipe_connector_n_000
+    6400046: pipe_connector_n_001
+    6400048: pipe_n_000
+    6400050: pipe_n_001
+    6400052: pipe_n_002
+    6400054: pipe_n_003
+    6400056: Plane
+    6400058: Plane_001
+    6400060: Plane_002
+    6400062: Plane_003
+    6400064: seat_hinge_left
+    6400066: seat_hinge_right
+    6400068: spout_001
+    6400070: tank
+    6400072: tank_support_r_000
+    6400074: tank_support_r_001
+    6400076: top
+    6400078: trim_bottom
+    6400080: trim_bottom_001
+    6400082: trim_front_legs
+    6400084: trim_front_legs_001
+    6400086: trim_top
+    6400088: trim_top_001
+    6400090: trim_top_003
+    6400092: wall_mount
+    6400094: wall_mount_001
+    6400096: washer_n_000
+    6400098: washer_n_001
+    6400100: washer_n_002
+    6400102: washer_n_003
+    6400104: washer_n_004
+    6400106: washer_n_005
+    6400108: washer_n_006
     7400000: Default Take
     7400002: bathroom03_default
     7400004: bathroom03_sink_door_close
     7400006: bathroom03_sink_door_open
     9500000: //RootNode
+    11100000: //RootNode
     13700000: sink_door
   materials:
     importMaterials: 1
@@ -317,10 +373,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
@@ -349,5 +405,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 
