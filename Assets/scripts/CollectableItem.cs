@@ -16,14 +16,20 @@ public class CollectableItem : InteractiveElement {
 	}
 
 	public virtual void OnMouseDown() {
-		Debug.Log("CollectableItem/OnMouseDown, description = " + this.description);
-		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if(difference < interactDistance) {
-			if(!this.collected) {
-				addToInventory();
-				this.collected = true;
-			}
-		}
+		mouseDown();
+	}
+
+	public void mouseDown() {
+				if (roomActive) {
+						Debug.Log ("CollectableItem/OnMouseDown, description = " + this.description);
+						var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
+						if (difference < interactDistance) {
+								if (!this.collected) {
+										addToInventory ();
+										this.collected = true;
+								}
+						}
+				}
 	}
 	
 	public void addToInventory() {

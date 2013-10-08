@@ -13,12 +13,15 @@ public class ArmatureTrigger : InteractiveElement {
 	}
 
 	public void OnMouseDown() {
-		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if(difference <= interactDistance) {
-			handleAnimation();
+				if (roomActive) {
+
+						var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
+						if (difference <= interactDistance) {
+								handleAnimation ();
+						}
+
+				}
 		}
-	}
-	
 	public virtual void handleAnimation() {
 //		Debug.Log("ArmatureTrigger[ " + this.name + " ]/handleAnimation");
 		sendAnimationToPops(mainClip.name, parentBone);

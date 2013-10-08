@@ -39,7 +39,7 @@ public class Player : MonoBehaviour {
 			//if(!inventory.showInventory) { 
 			//	inventoryDrawn = false;
 			//}
-		} else if(Input.GetKeyDown(KeyCode.Return)) {
+		} else if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
 			if(notification.showNote) {
 				notification.destroy();
 			}
@@ -74,14 +74,14 @@ public class Player : MonoBehaviour {
 		var character = GetComponent<CharacterMotor>();
 		character.SetControllable(disable);
 	}
-
+/*
 	void OnTriggerEnter(Collider tgt) {
 		Debug.Log("Player/OnTriggerEnter, tgt = " + tgt);
-		/*
 		var room = tgt.GetComponent<Room>();
 		if(room != null && this.roomEntered != null) {
 			this.roomEntered(room.roomName);
 		}
-		*/
 	}
+*/
 }
+

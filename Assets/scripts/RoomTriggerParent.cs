@@ -12,16 +12,26 @@ public class RoomTriggerParent : MonoBehaviour {
 		if (startingRoom) {
 				_currentRoom = roomName;
 		}
+		var eventCenter = EventCenter.Instance;
+		eventCenter.roomEntered += this.roomEntered;
+				eventCenter.roomLeft += this.roomLeft;
 	}
 	
 	public void roomTriggered(string room) {
 		var eventCenter = EventCenter.Instance;
 		Debug.Log ("RoomTriggerParent/roomTriggered, room = " + room + ", eventCenter = " + eventCenter);
 		if (room == _currentRoom) {
-
+			EventCenter.Instance.onRoomWasLeft (room);
 		} else {
+			EventCenter.Instance.onRoomWasEntered (room);
 			_currentRoom = room;
 		}
+	}
+
+	public void roomEntered(string room) {
+	}
+
+	public void roomLeft(string room) {
 	}
 	/*
 	void OnTriggerEnter(Collider tgt) {
