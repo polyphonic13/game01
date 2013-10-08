@@ -1,17 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/CollectableItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/InteriorDoor.cs">
     <Files>
       <File FileName="Assets/scripts/Player.cs" Line="42" Column="86" />
       <File FileName="Assets/scripts/InteractiveElement.cs" Line="10" Column="1" />
       <File FileName="Assets/scripts/armatures/ArmatureTrigger.cs" Line="24" Column="4" />
       <File FileName="Assets/scripts/CollectableItem.cs" Line="32" Column="6" />
-      <File FileName="Assets/scripts/MovableChild.cs" Line="15" Column="5" />
       <File FileName="Assets/scripts/EventCenter.cs" Line="43" Column="40" />
       <File FileName="Assets/scripts/RoomTriggerParent.cs" Line="25" Column="1" />
       <File FileName="Assets/scripts/RoomTrigger.cs" Line="8" Column="1" />
       <File FileName="Assets/scripts/armatures/LockableArmatureTrigger.cs" Line="14" Column="7" />
       <File FileName="Assets/scripts/armatures/OpenCloseArmatureTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/InteriorDoor.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
