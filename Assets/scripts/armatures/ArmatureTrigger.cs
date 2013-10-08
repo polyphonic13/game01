@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public class ArmatureTrigger : InteractiveElement {
 	public ArmatureParent pops;
+	public Transform parentBone;
 	public AnimationClip mainClip;
 
-	public Transform parentBone;
 
 	void Awake() {
 		init ();

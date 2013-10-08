@@ -178,6 +178,41 @@ ModelImporter:
     4300064: BezierCurve
     4300066: BezierCurve_001
     4300068: leg_new
+    6400000: //RootNode
+    6400002: BezierCurve
+    6400004: BezierCurve_001
+    6400006: Cone
+    6400008: Cone_001
+    6400010: Cone_002
+    6400012: Cone_003
+    6400014: Cone_004
+    6400016: Cone_005
+    6400018: Cylinder
+    6400020: Cylinder_003
+    6400022: Cylinder_005
+    6400024: faucet
+    6400026: faucet_001
+    6400028: faucet_handle
+    6400030: faucet_handle_001
+    6400032: faucet_shape
+    6400034: faucet_shape_001
+    6400036: floor_washer_001
+    6400038: Icosphere
+    6400040: Icosphere_001
+    6400042: leg_circle
+    6400044: leg_new
+    6400046: leg_new_001
+    6400048: leg_new_002
+    6400050: leg_new_003
+    6400052: liquid
+    6400054: outer_base
+    6400056: pipe_cap
+    6400058: pipe_cap_001
+    6400060: pipe_cap_002
+    6400062: pipe_cap_004
+    6400064: pipe_right
+    6400066: pipe_right_001
+    6400068: rim
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -198,7 +233,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
