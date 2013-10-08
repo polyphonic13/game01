@@ -15,9 +15,14 @@ public class ArmatureParent : MonoBehaviour {
 		_animation [clip].wrapMode = WrapMode.Once;
 		_animation.Play (clip);
 	}
-	
+
+	void Awake() {
+		}
+
 	void Start() {
 		_animation = GetComponent<Animation>();
+//		gameObject.SetActive (false);
+
 		if(defaultAnimation != null) {
 			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
 			_animation [defaultAnimation.name].layer = 0;
