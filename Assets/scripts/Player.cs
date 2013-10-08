@@ -77,9 +77,11 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter(Collider tgt) {
 		Debug.Log("Player/OnTriggerEnter, tgt = " + tgt);
+		/*
 		var room = tgt.GetComponent<Room>();
 		if(room != null && this.roomEntered != null) {
 			this.roomEntered(room.roomName);
 		}
+		*/
 	}
 }

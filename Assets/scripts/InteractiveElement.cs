@@ -5,6 +5,7 @@ public class InteractiveElement : MonoBehaviour {
 
 	public float interactDistance = 3;
 	public MouseManager mouseManager;
+	public string containingRoom; 
 
 	private int _activeCursor;
 

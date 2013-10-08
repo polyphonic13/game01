@@ -4,7 +4,9 @@ using System.Collections;
 public class EventCenter : MonoBehaviour {
 
 	public delegate void onEnterRoom(string room);
+	public delegate void onLeaveRoom(string room);
 	public event onEnterRoom roomEntered;
+	public event onLeaveRoom roomLeft;
 
 	private static EventCenter instance;
 	private EventCenter() {}
@@ -17,6 +19,7 @@ public class EventCenter : MonoBehaviour {
 			return instance;
 		}
 	}
+
 /*
 	void OnTriggerEnter(Collider tgt) {
 		Debug.Log("EventCenter/OnTriggerEnter, tgt = " + tgt);

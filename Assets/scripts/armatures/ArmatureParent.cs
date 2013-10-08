@@ -8,7 +8,7 @@ public class ArmatureParent : MonoBehaviour {
 	private Animation _animation;
 	
 	public void playAnimation(string clip, Transform bone = null) {
-		Debug.Log ("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
+//		Debug.Log ("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
 		if (bone != null) {
 			_animation [clip].AddMixingTransform (bone);
 		}
@@ -24,7 +24,7 @@ public class ArmatureParent : MonoBehaviour {
 //		gameObject.SetActive (false);
 
 		if(defaultAnimation != null) {
-			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
+//			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
 			_animation [defaultAnimation.name].layer = 0;
 			_animation[defaultAnimation.name].wrapMode = WrapMode.Loop;
 			_animation.Play(defaultAnimation.name);
