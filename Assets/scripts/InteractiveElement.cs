@@ -24,7 +24,7 @@ public class InteractiveElement : MonoBehaviour {
 	public void mouseOver() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if (difference < interactDistance) {
-			Debug.Log ("InteractiveElement[ " + this.name + " ]/OnMouseOver");
+//			Debug.Log ("InteractiveElement[ " + this.name + " ]/OnMouseOver");
 			mouseManager.setCursorType(_activeCursor);
 		}
 	}

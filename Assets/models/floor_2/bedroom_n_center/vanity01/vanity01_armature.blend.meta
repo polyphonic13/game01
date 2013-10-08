@@ -234,6 +234,7 @@ ModelImporter:
     7400004: vanity01_drawer_close
     7400006: vanity01_drawer_open
     9500000: //RootNode
+    11100000: //RootNode
     13700000: drawer
     13700002: pull
   materials:
@@ -286,5 +287,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 

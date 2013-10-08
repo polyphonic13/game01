@@ -18,8 +18,8 @@ public class ArmatureParent : MonoBehaviour {
 	
 	void Start() {
 		_animation = GetComponent<Animation>();
-		Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
 		if(defaultAnimation != null) {
+			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
 			_animation [defaultAnimation.name].layer = 0;
 			_animation[defaultAnimation.name].wrapMode = WrapMode.Loop;
 			_animation.Play(defaultAnimation.name);
