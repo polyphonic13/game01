@@ -5,11 +5,15 @@ public class InteriorDoor : ArmatureParent {
 	public Texture doorTexture;
 	public Texture frameTexture;
 
-	void Awake() {
-		var door = transform.Find("door");
-		var frame = transform.Find("frame");
-//		Debug.Log ("door = " + door + ", frame = " + frame);
-		door.renderer.material.mainTexture = doorTexture;
-		frame.renderer.material.mainTexture = frameTexture;
+	void Awake () {
+		if (doorTexture != null) {
+			var door = transform.Find ("door");
+			door.renderer.material.mainTexture = doorTexture;
+		}
+		
+		if (frameTexture != null) {
+			var frame = transform.Find ("frame");
+			frame.renderer.material.mainTexture = frameTexture;
+		}
 	}
 }
