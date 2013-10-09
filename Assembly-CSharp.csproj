@@ -88,6 +88,7 @@
      <Compile Include="Assets\scripts\armatures\InteriorDoor.cs" />
      <Compile Include="Assets\scripts\armatures\LockableArmatureTrigger.cs" />
      <Compile Include="Assets\scripts\armatures\OpenCloseArmatureTrigger.cs" />
+     <Compile Include="Assets\scripts\armatures\RoomDoor.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
