@@ -3,46 +3,34 @@ using System.Collections;
 
 public class EventCenter : MonoBehaviour {
 
-	public delegate void onEnterRoom(string room);
-	public delegate void onLeaveRoom (string room);
+	public delegate void RoomHandler (string room);
 
-				public delegate void EventHandler (string room);
+	public event RoomHandler onRoomEntered;
+	public event RoomHandler onRoomExited;
 
-				public event EventHandler roomWasEntered;
-				public event EventHandler roomWasExited;
-
-	public event onEnterRoom roomEntered;
-	public event onLeaveRoom roomExited;
-
-	private static EventCenter instance;
+	private static EventCenter _instance;
 	private EventCenter() {}
 	
 	public static EventCenter Instance {
 		get {
-			if(instance == null) {
-	                instance = GameObject.FindObjectOfType(typeof(EventCenter)) as EventCenter;      
+			if(_instance == null) {
+	                _instance = GameObject.FindObjectOfType(typeof(EventCenter)) as EventCenter;      
 			}
-			return instance;
+			return _instance;
 		}
 	}
 
-/*
-	void OnTriggerEnter(Collider tgt) {
-		Debug.Log("EventCenter/OnTriggerEnter, tgt = " + tgt);
-	}
-*/
-
-	public void onRoomWasEntered(string room) {
-				Debug.Log ("EventCenter/onRoomWasEntered, room = " + room);
-		if (roomWasEntered != null) {
-			roomWasEntered (room);
+	public void roomEntered(string room) {
+		Debug.Log ("EventCenter/roomEntered, room = " + room);
+		if (onRoomEntered != null) {
+			onRoomEntered (room);
 		}
 	}
 
-	public void onRoomWasLeft(string room) {
-		Debug.Log ("EventCenter/onRoomWasLeft, room = " + room);
-		if (roomWasExited != null) {
-				roomWasExited (room);
+	public void roomExited(string room) {
+		Debug.Log ("EventCenter/roomExited, room = " + room);
+		if (onRoomExited != null) {
+				onRoomExited (room);
 		}
 	}
 

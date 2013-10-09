@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	public delegate void onEnterRoom(string room);
-	public event onEnterRoom roomEntered;
 	public string startingRoom = "";
 	
 	public InventoryManager inventory;
@@ -13,32 +11,23 @@ public class Player : MonoBehaviour {
 
 	public GUIStyle basicStyle;
 	
-	bool inventoryDrawn = false;
 	Camera camera;
 	
-	// Use this for initialization
-	void Start () 
+	void Start() 
 	{
-		// Debug.Log("Player/start, basicStyle = " + basicStyle);
 		camera = Camera.main;
 		inventory = new InventoryManager();
 		inventory.init(basicStyle);
 		notification = new Notification();
 		notification.init(basicStyle);
-				mouseManager = GetComponent<MouseManager> ();
-		//this.roomEntered(this.startingRoom);
-		//Debug.Log("inventory = " + inventory);
+		mouseManager = GetComponent<MouseManager>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if(Input.GetKeyDown(KeyCode.Q)) {
 			inventory.showInventory = !inventory.showInventory;
 			inventory.showDetail = false;
 			this.enablePlayer(!inventory.showInventory);
-			//if(!inventory.showInventory) { 
-			//	inventoryDrawn = false;
-			//}
 		} else if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
 			if(notification.showNote) {
 				notification.destroy();
@@ -47,17 +36,10 @@ public class Player : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-				mouseManager.drawCursor ();
+		mouseManager.drawCursor();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if(inventory.showInventory) {
-			//ArrayList items = inventory.getItems();
-			//Debug.Log("items = " + items.Count);
-			//if(!inventoryDrawn) {
-				// Debug.Log("about to draw gui box");
-//				GUI.Box(new Rect(50, 50, Screen.width - 100, Screen.height - 100), "INVENTORY");
-				inventory.drawInventory();
-				// inventoryDrawn = true;
-			//}
+			inventory.drawInventory();
 		} else if(inventory.showDetail) {
 			inventory.drawDetail();
 		} else if(notification.showNote) {
@@ -74,14 +56,5 @@ public class Player : MonoBehaviour {
 		var character = GetComponent<CharacterMotor>();
 		character.SetControllable(disable);
 	}
-/*
-	void OnTriggerEnter(Collider tgt) {
-		Debug.Log("Player/OnTriggerEnter, tgt = " + tgt);
-		var room = tgt.GetComponent<Room>();
-		if(room != null && this.roomEntered != null) {
-			this.roomEntered(room.roomName);
-		}
-	}
-*/
 }
 

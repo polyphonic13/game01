@@ -25,7 +25,7 @@ public class CollectableItem : InteractiveElement {
 						var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 						if (difference < interactDistance) {
 								if (!this.collected) {
-										addToInventory ();
+										addToInventory();
 										this.collected = true;
 								}
 						}
@@ -37,7 +37,7 @@ public class CollectableItem : InteractiveElement {
 		player.inventory.addItem(this);	
 		// Destroy(this.gameObject);
 		disableAll();
-		mouseExit ();
+		mouseExit();
 	}
 	
 	public void removeFromInventory() {

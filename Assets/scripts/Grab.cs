@@ -10,11 +10,11 @@ public class GrabCS : MonoBehaviour {
 	private Vector3 newPos;
 	
 	// Use this for initialization
-	void Start () {
+	void Start() {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 	    if (Input.GetMouseButton(0)){ // if left button creates a ray from the mouse
 			//Debug.Log("mouse btn clicked, pickObj = " + pickObj);
 	        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);

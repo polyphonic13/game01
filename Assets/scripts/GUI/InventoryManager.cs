@@ -114,7 +114,7 @@ public class InventoryManager {
 		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), title /*, _style */);
 	}
 	
-	public void closeInventoryWindow () {
+	public void closeInventoryWindow() {
     	//openInventoryWindow = false;
 	}
  

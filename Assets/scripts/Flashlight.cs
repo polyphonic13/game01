@@ -14,7 +14,7 @@ public class Flashlight : CollectableItem {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if(collected) {
 			if(Input.GetKeyDown(KeyCode.F)) {
 				bulb.enabled = !bulb.enabled;

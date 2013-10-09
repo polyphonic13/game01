@@ -7,7 +7,7 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 	public bool isOpen = false;
 
 	void Awake() {
-		init ();
+		init();
 	}
 
 	public override void handleAnimation() {

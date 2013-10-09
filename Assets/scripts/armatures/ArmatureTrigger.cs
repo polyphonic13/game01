@@ -9,7 +9,7 @@ public class ArmatureTrigger : InteractiveElement {
 
 
 	void Awake() {
-		init ();
+		init();
 	}
 
 	public void OnMouseDown() {
@@ -17,7 +17,7 @@ public class ArmatureTrigger : InteractiveElement {
 
 						var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 						if (difference <= interactDistance) {
-								handleAnimation ();
+								handleAnimation();
 						}
 
 				} 
