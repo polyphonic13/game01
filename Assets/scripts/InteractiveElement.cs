@@ -4,10 +4,10 @@ using System.Collections;
 public class InteractiveElement : MonoBehaviour {
 
 	public float interactDistance = 3;
-	public MouseManager mouseManager;
 	public string containingRoom; 
-	public bool roomActive = false; 
+	public bool roomActive; 
 
+	private MouseManager _mouseManager;
 	private int _activeCursor;
 
 	void Awake() {
@@ -15,12 +15,19 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void init(int activeCursor = 1) {
-		mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
+		_mouseManager = GameObject.Find ("player").GetComponent<MouseManager> ();
 		_activeCursor = activeCursor;
 
-				var eventCenter = EventCenter.Instance;
-				eventCenter.roomWasEntered += this.roomEntered;
-				eventCenter.roomWasLeft += this.roomLeft;
+		if (this.transform.tag == "persistentDoor") {
+						roomActive = true;
+				} else {
+
+						roomActive = false;
+
+						var eventCenter = EventCenter.Instance;
+						eventCenter.roomWasEntered += this.roomEntered;
+						eventCenter.roomWasExited += this.roomExited;
+				}
 	}
 
 	public void roomEntered(string room) {
@@ -30,9 +37,9 @@ public class InteractiveElement : MonoBehaviour {
 		}
 	}
 
-	public void roomLeft(string room) {
+	public void roomExited(string room) {
 		if (room == this.containingRoom) {
-			Debug.Log ("InteractiveElement[ " + this.name + " ]/roomLeft");
+			Debug.Log ("InteractiveElement[ " + this.name + " ]/roomExited");
 						roomActive = false;
 		}
 	}
@@ -46,7 +53,7 @@ public class InteractiveElement : MonoBehaviour {
 						var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 						if (difference < interactDistance) {
 								//			Debug.Log ("InteractiveElement[ " + this.name + " ]/OnMouseOver");
-								mouseManager.setCursorType (_activeCursor);
+								_mouseManager.setCursorType (_activeCursor);
 						}
 				}
 		}
@@ -57,7 +64,7 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void mouseExit() {
 				if (roomActive) {
-						mouseManager.setCursorType (0);
+						_mouseManager.setCursorType (0);
 				}
 	}
 }

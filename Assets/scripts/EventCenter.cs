@@ -9,10 +9,10 @@ public class EventCenter : MonoBehaviour {
 				public delegate void EventHandler (string room);
 
 				public event EventHandler roomWasEntered;
-				public event EventHandler roomWasLeft;
+				public event EventHandler roomWasExited;
 
 	public event onEnterRoom roomEntered;
-	public event onLeaveRoom roomLeft;
+	public event onLeaveRoom roomExited;
 
 	private static EventCenter instance;
 	private EventCenter() {}
@@ -41,8 +41,8 @@ public class EventCenter : MonoBehaviour {
 
 	public void onRoomWasLeft(string room) {
 		Debug.Log ("EventCenter/onRoomWasLeft, room = " + room);
-		if (roomWasLeft != null) {
-				roomWasLeft (room);
+		if (roomWasExited != null) {
+				roomWasExited (room);
 		}
 	}
 

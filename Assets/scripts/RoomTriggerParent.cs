@@ -14,7 +14,7 @@ public class RoomTriggerParent : MonoBehaviour {
 		}
 		var eventCenter = EventCenter.Instance;
 		eventCenter.roomEntered += this.roomEntered;
-				eventCenter.roomLeft += this.roomLeft;
+				eventCenter.roomExited += this.roomExited;
 	}
 	
 	public void roomTriggered(string room) {
@@ -31,7 +31,7 @@ public class RoomTriggerParent : MonoBehaviour {
 	public void roomEntered(string room) {
 	}
 
-	public void roomLeft(string room) {
+	public void roomExited(string room) {
 	}
 	/*
 	void OnTriggerEnter(Collider tgt) {

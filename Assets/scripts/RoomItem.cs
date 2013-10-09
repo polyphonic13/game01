@@ -16,7 +16,7 @@ public class RoomItem : MonoBehaviour {
 
 		var eventCenter = EventCenter.Instance;
 		eventCenter.roomWasEntered += this.roomEntered;
-		eventCenter.roomWasLeft += this.roomLeft;
+		eventCenter.roomWasExited += this.roomExited;
 		}
 
 	public void roomEntered(string room) {
@@ -29,9 +29,9 @@ public class RoomItem : MonoBehaviour {
 		}
 	}
 
-	public void roomLeft(string room) {
+	public void roomExited(string room) {
 		if (room == this.containingRoom) {
-			Debug.Log ("RoomItem[ " + this.name + " ]/roomLeft");
+			Debug.Log ("RoomItem[ " + this.name + " ]/roomExited");
 						if (ieScript != null) {
 								ieScript.enabled = false;
 						}
