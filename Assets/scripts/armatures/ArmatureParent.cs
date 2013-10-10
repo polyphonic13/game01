@@ -4,6 +4,7 @@ using System.Collections;
 public class ArmatureParent : MonoBehaviour {
 
 	public AnimationClip defaultAnimation; 
+	public bool isActive = true; 
 	
 	private Animation _animation;
 	
@@ -26,7 +27,7 @@ public class ArmatureParent : MonoBehaviour {
 		if(defaultAnimation != null) {
 //			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
 			_animation [defaultAnimation.name].layer = 0;
-			_animation[defaultAnimation.name].wrapMode = WrapMode.Loop;
+			_animation[defaultAnimation.name].wrapMode = WrapMode.Once;
 			_animation.Play(defaultAnimation.name);
 		}
 	}
