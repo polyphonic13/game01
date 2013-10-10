@@ -31,14 +31,14 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void onRoomEntered(string room) {
 		if (room == this.containingRoom) {
-			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomEntered");
+//			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomEntered");
 			roomActive = true;
 		}
 	}
 
 	public void onRoomExited(string room) {
 		if (room == this.containingRoom) {
-			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomExited");
+//			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomExited");
 			roomActive = false;
 		}
 	}
@@ -48,7 +48,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseOver() {
-		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, roomActive = " + roomActive);
+//		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, roomActive = " + roomActive);
 		if (roomActive) {
 			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 			if (difference < interactDistance) {

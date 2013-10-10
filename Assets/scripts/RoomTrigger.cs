@@ -5,8 +5,13 @@ public class RoomTrigger : MonoBehaviour {
 
 	public string roomName;
 
+	private RoomTriggerParent _roomTriggerParent;
+	
+	void Awake () {
+		_roomTriggerParent = transform.parent.gameObject.GetComponent<RoomTriggerParent>();
+	}
+		
 	void OnTriggerEnter(Collider tgt) {
-		var parentRoom = transform.parent.gameObject.GetComponent<RoomTriggerParent>();
-		parentRoom.roomTriggered (this.roomName);
+		_roomTriggerParent.roomTriggered (this.roomName);
 	}
 }
