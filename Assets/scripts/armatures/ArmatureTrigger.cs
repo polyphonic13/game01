@@ -27,7 +27,7 @@ public class ArmatureTrigger : InteractiveElement {
 	}
 	
 	public void sendAnimationToPops(string clipName, Transform bone) {
-//		Debug.Log("ArmatureTrigger[ " + this.name + " ]/sendAnimationToPops, clipName = " + clipName);
+		Debug.Log("ArmatureTrigger[ " + this.name + " ]/sendAnimationToPops, clipName = " + clipName);
 		pops.playAnimation(clipName, bone);
 	}
 }

@@ -32,7 +32,7 @@ public class InventoryManager {
 	public void addItem(CollectableItem item) {
 		// Debug.Log("inventory manager/addItem, item = " + item + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.addNote(item.name + " added to inventory");
+		player.notification.addNote(item.itemName + " added to inventory");
 		inventory.Add (item);
 		//this.itemCollected(item.name);
 //		itemCollected("temp");
@@ -77,9 +77,9 @@ public class InventoryManager {
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.iconTexture);
-				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.name /*, _style */);
+				GUI.Box(new Rect(currentRect.x, currentRect.y, iconWidthHeight, iconWidthHeight), currentInventoryItem.itemName /*, _style */);
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + iconWidthHeight + 5), iconWidthHeight, 20), "examine")) {
-					Debug.Log("going to inspect item: " + i);
+//					Debug.Log("going to inspect item: " + i);
 					detailInventoryItem = inventory[i] as CollectableItem;
 					this.showInventory = false;
 					this.showDetail = true;
@@ -94,7 +94,7 @@ public class InventoryManager {
 			var detailImgLeft = Screen.width/2 - detailImgWidthHeight/2;
 			var detailImgTop = Screen.height/2 - detailImgWidthHeight/2;
 			Rect detailRect = new Rect(detailImgLeft, detailImgTop, detailImgWidthHeight + 10, detailImgWidthHeight + 50);
-			this.drawBackground("examine: " + detailInventoryItem.name);
+			this.drawBackground("examine: " + detailInventoryItem.itemName);
 			// Debug.Log("building detail of: " + detailInventoryItem.name);
 			GUI.Box(detailRect, detailInventoryItem.description);
 			GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, detailImgWidthHeight, detailImgWidthHeight), detailInventoryItem.iconTexture);
