@@ -5,7 +5,7 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 
 	public AnimationClip closeClip;
 
-	public bool isOpen { get; set; };
+	public bool isOpen { get; set; }
 
 	void Awake() {
 		init();

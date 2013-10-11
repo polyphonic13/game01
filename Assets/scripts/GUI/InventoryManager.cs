@@ -20,8 +20,8 @@ public class InventoryManager {
 	private GUIStyle _style; 
 	private CollectableItem detailInventoryItem = null;
 	
-	public bool showInventory { get; set; };
-	public bool showDetail { get; set; };
+	public bool showInventory { get; set; }
+	public bool showDetail { get; set; }
 	
 	public void init(GUIStyle style) {
 		this.showInventory = false;

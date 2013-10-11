@@ -6,7 +6,7 @@ public class Notification {
 	private GUIStyle _style;
 	private string _content;
 
-	public bool showNote { get; set; };
+	public bool showNote { get; set; }
 
 	public void init(GUIStyle style) {
 		_style = style;
