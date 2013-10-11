@@ -4,12 +4,11 @@ using System.Collections;
 public class ArmatureParent : MonoBehaviour {
 
 	public AnimationClip defaultAnimation; 
-	public bool isActive = true; 
 	
 	private Animation _animation;
 	
 	public void playAnimation(string clip, Transform bone = null) {
-//		Debug.Log ("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
+		// Debug.Log ("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
 		if (bone != null) {
 			_animation [clip].AddMixingTransform (bone);
 		}

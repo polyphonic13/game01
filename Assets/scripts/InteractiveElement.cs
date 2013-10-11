@@ -5,23 +5,24 @@ public class InteractiveElement : MonoBehaviour {
 
 	public float interactDistance = 3;
 	public string containingRoom; 
-	public bool roomActive; 
 
 	private MouseManager _mouseManager;
 	private int _activeCursor;
-
+	
 	void Awake() {
 		init();
 	}
 
+	public bool isRoomActive { get; set; }
+	
 	public void init(int activeCursor = 1) {
 		_mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
 		_activeCursor = activeCursor;
 
 		if (this.transform.tag == "persistentItem") {
-			roomActive = true;
+			this.isRoomActive = true;
 		} else {
-			roomActive = false;
+			this.isRoomActive = false;
 	
 			var eventCenter = EventCenter.Instance;
 			eventCenter.onRoomEntered += this.onRoomEntered;
@@ -32,14 +33,14 @@ public class InteractiveElement : MonoBehaviour {
 	public void onRoomEntered (string room) {
 		if (room == this.containingRoom) {
 //			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomEntered");
-			roomActive = true;
+			this.isRoomActive = true;
 		}
 	}
 
 	public void onRoomExited(string room) {
 		if (room == this.containingRoom) {
 //			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomExited");
-			roomActive = false;
+			this.isRoomActive = false;
 		}
 	}
 
@@ -48,8 +49,8 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseOver() {
-//		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, roomActive = " + roomActive);
-		if (roomActive) {
+//		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.isRoomActive = " + this.isRoomActive);
+		if (this.isRoomActive) {
 			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 			if (difference < interactDistance) {
 				_mouseManager.setCursorType (_activeCursor);
@@ -62,7 +63,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseExit() {
-		if (roomActive) {
+		if (this.isRoomActive) {
 			_mouseManager.setCursorType (0);
 		}
 	}

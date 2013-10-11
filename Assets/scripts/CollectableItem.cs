@@ -3,16 +3,24 @@ using System.Collections;
 
 public class CollectableItem : InteractiveElement {
 	
-	public bool collected = false;
 	public string itemName = "";
 	public string description = "";
 	public Texture iconTexture;
 	public Texture detailTexture;
 
 	private Renderer[] _renderers;
+	private Player _player;
 
+	public bool isCollected { get; set; }
+	
 	void Awake() {
-		init (2	);
+		initCollectableItem();
+	}
+
+	public void initCollectableItem () {
+		init(2);
+		_player = GameObject.Find("player").GetComponent<Player>();
+		Debug.Log("CollectableItem[ " + this.name + " ]/awake, _player = " + _player);
 	}
 
 	public virtual void OnMouseDown() {
@@ -20,28 +28,27 @@ public class CollectableItem : InteractiveElement {
 	}
 
 	public void mouseDown() {
-				if (roomActive) {
-						Debug.Log ("CollectableItem/OnMouseDown, description = " + this.description);
-						var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
-						if (difference < interactDistance) {
-								if (!this.collected) {
-										addToInventory();
-										this.collected = true;
-								}
-						}
+		if (this.isRoomActive) {
+			Debug.Log ("CollectableItem/OnMouseDown, description = " + this.description);
+			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
+			if (difference < interactDistance) {
+				if (!this.isRoomActive) {
+					addToInventory();
+					this.isCollected = true;
 				}
+			}
+		}
 	}
 	
 	public void addToInventory() {
-		var player = GameObject.Find("player").GetComponent<Player>();
-		player.inventory.addItem(this);	
+		_player.inventory.addItem(this);	
 		// Destroy(this.gameObject);
 		disableAll();
 		mouseExit();
 	}
 	
 	public void removeFromInventory() {
-		this.collected = false;
+		this.isCollected = false;
 		enableAll();
 	}
 	

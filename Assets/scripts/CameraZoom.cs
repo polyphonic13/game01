@@ -3,24 +3,24 @@ using System.Collections;
 
 public class CameraZoom : MonoBehaviour {
 	
-	Camera camera;
-	int zoom = 20;
-	int normal = 60;
-	float smooth = 5;
-	bool isZoomed = false;
+	private Camera _camera;
+	private int _zoom = 20;
+	private int _normal = 60;
+	private float _smooth = 5;
+	private bool _isZoomed = false;	
 
 	void Start() {
-		camera = Camera.main;
+		_camera = Camera.main;
 	}
 	// Update is called once per frame
 	void Update() {
 		if(Input.GetKeyDown(KeyCode.Z)) {
-			isZoomed = !isZoomed;
+			_isZoomed = !_isZoomed;
 		}
-		if(isZoomed) {
-			camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,zoom,Time.deltaTime*smooth);
+		if(_isZoomed) {
+			_camera.fieldOfView = Mathf.Lerp(_camera.fieldOfView,_zoom,Time.deltaTime*_smooth);
 		} else {
-			camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,normal,Time.deltaTime*smooth);
+			_camera.fieldOfView = Mathf.Lerp(_camera.fieldOfView,_normal,Time.deltaTime*_smooth);
 		}
 	}
 }
