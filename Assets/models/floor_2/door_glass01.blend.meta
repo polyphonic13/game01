@@ -1,48 +1,55 @@
 fileFormatVersion: 2
-guid: 22bcb3dc8b69e4ab4bd519bdb81796e3
+guid: 7475e3e67181b40bc900898fdb3ec432
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
     100000: Armature
     100002: Bone
     100004: door
-    100006: door_knob
-    100008: door_knob_cynlinder
-    100010: //RootNode
+    100006: //RootNode
+    100008: door_knob
+    100010: door_knob_cynlinder
     100012: door_plate
     100014: frame
+    100016: glass
     400000: Armature
     400002: Bone
     400004: door
-    400006: door_knob
-    400008: door_knob_cynlinder
-    400010: //RootNode
+    400006: //RootNode
+    400008: door_knob
+    400010: door_knob_cynlinder
     400012: door_plate
     400014: frame
-    2300000: frame
-    3300000: frame
+    400016: glass
+    2300000: door
+    2300002: frame
+    3300000: door
+    3300002: frame
     4300000: frame
     4300002: door
     4300004: door_knob
     4300006: door_plate
     4300008: door_knob_cynlinder
+    4300010: glass
+    6400000: frame
     7400000: Default Take
-    7400002: door_default
-    7400004: door_inwards_close
-    7400006: door_inwards_open
-    7400008: door_outwards_close
-    7400010: door_outwards_open
-    7400012: door02d_default
-    7400014: door02d_inwards_close
-    7400016: door02d_inwards_open
-    7400018: door02d_outwards_close
-    7400020: door02d_outwards_open
+    7400002: door02d_default
+    7400004: door02d_inwards_close
+    7400006: door02d_inwards_open
+    7400008: door02d_outwards_close
+    7400010: door02d_outwards_open
+    7400012: door_glass01_default
+    7400014: door_glass01_inwards_close
+    7400016: door_glass01_inwards_open
+    7400018: door_glass01_outwards_close
+    7400020: door_glass01_outwards_open
     9500000: //RootNode
     11100000: //RootNode
-    13700000: door
-    13700002: door_knob
-    13700004: door_knob_cynlinder
-    13700006: door_plate
+    13700000: door_knob
+    13700002: door_knob_cynlinder
+    13700004: door_plate
+    13700006: door
+    13700008: glass
   materials:
     importMaterials: 1
     materialName: 0
