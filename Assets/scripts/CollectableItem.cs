@@ -24,8 +24,10 @@ public class CollectableItem : InteractiveElement {
 		Debug.Log("CollectableItem[ " + this.name + " ]/awake, _player = " + _player);
 	}
 
-	public virtual void OnMouseDown() {
-		mouseDown();
+	public void OnMouseDown () {
+		if (this.roomActive) {
+			mouseDown ();
+		}
 	}
 
 	public void mouseDown() {
@@ -46,8 +48,27 @@ public class CollectableItem : InteractiveElement {
 		// Destroy(this.gameObject);
 		disableAll();
 		mouseExit();
+		attach();
+	}
+
+	public virtual void attach () {
+		Debug.Log("CollectableItem/attach");
+		attachToPlayer();
 	}
 	
+	public void attachToPlayer() {
+		transform.position = _player.transform.position;
+		transform.rotation = _player.transform.rotation;
+		transform.parent = _player.transform;
+	}
+
+	public void attachToHands() {
+		var hand = Camera.main.transform.Search("right_hand");
+		transform.position = hand.transform.position;
+		transform.rotation = hand.transform.rotation;
+		transform.parent = hand.transform;	
+	}
+
 	public void removeFromInventory() {
 		this.collected = false;
 		enableAll();
@@ -75,8 +96,8 @@ public class CollectableItem : InteractiveElement {
 
 	}		
 	
-	public void attachTransforms() {
-		attachToHands(this.transform);
+//	public void attachTransforms() {
+//		attachToHands(this.transform);
 
 /*
 		Transform[] ct = GetComponentInChildren<Transform>();
@@ -84,14 +105,8 @@ public class CollectableItem : InteractiveElement {
 			attachToHands(t.transform);
 		}
 */		
-	}
+//	}
 	
-	void attachToHands(Transform transform) {
-		var hand = Camera.main.transform.Search("right_hand");
-		transform.position = hand.transform.position;
-		transform.rotation = hand.transform.rotation;
-		transform.parent = hand.transform;	
-	}
 }
 
 /*

@@ -23,16 +23,20 @@ public class Flashlight : CollectableItem {
 		}
 	}
 	
-	public override void OnMouseDown() {
-		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if(difference < interactDistance) {
-			if(!this.collected) {
-				this.collected = true;
-				attachTransforms();				
-				//flashlight_base.renderer.enabled = bulb.enabled = true;
-				addToInventory();
-			}
-		}
+	public override void attach () {
+		Debug.Log("Flashlight/attach");
+		attachToHands();
 	}
+//	public override void OnMouseDown() {
+//		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+//		if(difference < interactDistance) {
+//			if(!this.collected) {
+//				this.collected = true;
+//				attachTransforms();				
+//				//flashlight_base.renderer.enabled = bulb.enabled = true;
+//				addToInventory();
+//			}
+//		}
+//	}
 }
 	
