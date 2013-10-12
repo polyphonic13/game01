@@ -15,7 +15,7 @@ public class Flashlight : CollectableItem {
 
 	// Update is called once per frame
 	void Update() {
-		if(collected) {
+		if(this.collected) {
 			if(Input.GetKeyDown(KeyCode.F)) {
 				bulb.enabled = !bulb.enabled;
 				flashlight_base.renderer.enabled = bulb.enabled;
@@ -26,8 +26,8 @@ public class Flashlight : CollectableItem {
 	public override void OnMouseDown() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
-			if(!collected) {
-				collected = true;
+			if(!this.collected) {
+				this.collected = true;
 				attachTransforms();				
 				//flashlight_base.renderer.enabled = bulb.enabled = true;
 				addToInventory();

@@ -4,10 +4,12 @@ using System.Collections;
 public class OpenCloseArmatureTrigger : ArmatureTrigger {
 
 	public AnimationClip closeClip;
-	public bool isOpen = false;
+
+	public bool isOpen { get; set; }
 
 	void Awake() {
 		init();
+		this.isOpen = false;
 	}
 
 	public override void handleAnimation() {
@@ -15,12 +17,12 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 	}
 	
 	public void handleOpenClose() {
-//		Debug.Log("OpenCloseArmatureChild[ " + this.name + " ]/handleOpenClose, isOpen = " + isOpen);
-		if(isOpen) {
+//		Debug.Log("OpenCloseArmatureChild[ " + this.name + " ]/handleOpenClose, this.isOpen = " + this.isOpen);
+		if(this.isOpen) {
 			sendAnimationToPops(closeClip.name, parentBone);
 		} else {
 			sendAnimationToPops(mainClip.name, parentBone);
 		}
-		isOpen = !isOpen;
+		this.isOpen = !this.isOpen;
 	}
 }

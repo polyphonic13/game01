@@ -4,7 +4,6 @@ using System.Collections;
 public class ArmatureParent : MonoBehaviour {
 
 	public AnimationClip defaultAnimation; 
-	public bool isActive = true; 
 	
 	private Animation _animation;
 	

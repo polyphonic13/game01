@@ -3,13 +3,15 @@ using System.Collections;
 
 public class CollectableItem : InteractiveElement {
 	
-	public bool collected = false;
 	public string itemName = "";
 	public string description = "";
 	public Texture iconTexture;
 	public Texture detailTexture;
 
 	private Renderer[] _renderers;
+
+	public bool collected { get; set; }
+
 	public Player _player;
 
 	void Awake() {
@@ -27,7 +29,7 @@ public class CollectableItem : InteractiveElement {
 	}
 
 	public void mouseDown() {
-		if (roomActive) {
+		if (this.roomActive) {
 			Debug.Log ("CollectableItem/OnMouseDown, description = " + this.description);
 			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 			if (difference < interactDistance) {
