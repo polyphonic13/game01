@@ -53,9 +53,19 @@ public class CollectableItem : InteractiveElement {
 
 	public virtual void attach () {
 		Debug.Log("CollectableItem/attach");
-		attachToPlayer();
+//		attachToPlayer();
+//		attachToHands();
+		attachToBackpack();
 	}
 	
+	public void attachToBackpack ()
+	{
+		var backpack = _player.transform.Search("backpack");
+		transform.position = backpack.transform.position;
+		transform.rotation = backpack.transform.rotation;
+		transform.parent = backpack.transform;
+	}
+
 	public void attachToPlayer() {
 		transform.position = _player.transform.position;
 		transform.rotation = _player.transform.rotation;
