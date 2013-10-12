@@ -12,6 +12,7 @@ ModelImporter:
     100012: door_plate
     100014: frame
     100016: glass
+    100018: door_lattice
     400000: Armature
     400002: Bone
     400004: door
@@ -21,6 +22,7 @@ ModelImporter:
     400012: door_plate
     400014: frame
     400016: glass
+    400018: door_lattice
     2300000: door
     2300002: frame
     3300000: door
@@ -31,6 +33,7 @@ ModelImporter:
     4300006: door_plate
     4300008: door_knob_cynlinder
     4300010: glass
+    4300012: door_lattice
     6400000: frame
     7400000: Default Take
     7400002: door02d_default
@@ -50,6 +53,7 @@ ModelImporter:
     13700004: door_plate
     13700006: door
     13700008: glass
+    13700010: door_lattice
   materials:
     importMaterials: 1
     materialName: 0
