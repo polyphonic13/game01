@@ -12,7 +12,7 @@ public class CollectableItem : InteractiveElement {
 
 	public bool collected { get; set; }
 
-	public Player _player;
+	private Player _player;
 
 	void Awake() {
 		initCollectableItem();
