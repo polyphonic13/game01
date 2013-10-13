@@ -34,7 +34,7 @@ public class InventoryManager {
 	public void addItem(CollectableItem item) {
 		// Debug.Log("_inventory manager/addItem, item = " + item + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.addNote(item.itemName + " added to _inventory");
+		player.notification.addNote(item.itemName + " added to inventory");
 		_inventory.Add (item);
 		//this.itemCollected(item.name);
 //		itemCollected("temp");

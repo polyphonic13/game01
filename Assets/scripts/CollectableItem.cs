@@ -55,7 +55,7 @@ public class CollectableItem : InteractiveElement {
 		Debug.Log("CollectableItem/attach");
 //		attachToPlayer();
 //		attachToHands();
-		attachToBackpack();
+//		attachToBackpack();
 	}
 	
 	public void attachToBackpack ()
