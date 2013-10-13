@@ -5,6 +5,7 @@ public class CollectableItem : InteractiveElement {
 	
 	public string itemName = "";
 	public string description = "";
+	
 	public Texture iconTexture;
 	public Texture detailTexture;
 
@@ -31,24 +32,30 @@ public class CollectableItem : InteractiveElement {
 	}
 
 	public void mouseDown() {
-		if (this.roomActive) {
-			Debug.Log ("CollectableItem/OnMouseDown, description = " + this.description);
-			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
-			if (difference < interactDistance) {
-				if (!this.collected) {
-					addToInventory();
-					this.collected = true;
-				}
+		Debug.Log ("CollectableItem/OnMouseDown, name = " + this.name);
+		var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if (difference < interactDistance) {
+			if (!this.collected) {
+				addToInventory();
+				this.collected = true;
 			}
 		}
 	}
 	
 	public void addToInventory() {
-		_player.inventory.addItem(this);	
-		// Destroy(this.gameObject);
-		disableAll();
 		mouseExit();
-		attach();
+
+		InventoryItem item = new InventoryItem();
+		item.description = this.description;
+		item.name = this.itemName;
+		item.iconTexture = this.iconTexture;
+		item.detailTexture = this.detailTexture;
+		item.prefabName = this.name;
+		
+		_player.inventory.addItem(item);	
+		Destroy(this.gameObject);
+//		disableAll();
+//		attach();
 	}
 
 	public virtual void attach () {

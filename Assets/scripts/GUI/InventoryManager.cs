@@ -9,69 +9,79 @@ public class InventoryManager {
 	
 	private const float _detailImgWidthHeight = 500;
 
-	private ArrayList _inventory;
-
-	private int _inventoryLength;
-	private int _inventoryWidth = 5;
+	private ArrayList _items;
+	private Hashtable _itemsHash;
+	
+	private int _itemsLength;
+	private int _itemsWidth = 5;
 	private float _iconWidthHeight = 100;
 	
 	private int _spacing = 20;
 	private Vector2 _offset; 
 	private Texture _emptySlot; 
 	private GUIStyle _style; 
-	private CollectableItem _detailInventoryItem = null;
+	private InventoryItem _detailInventoryItem = null;
 	
 	public bool showInventory { get; set; }
 	public bool showDetail { get; set; }
 	
 	public void init(GUIStyle style) {
 		_style = style;
-		_inventory = new ArrayList();	
+		_items = new ArrayList();	
+		_itemsHash = new Hashtable();
 		_offset = new Vector2(10, 10);
-		//Debug.Log("_inventory/start, _inventory = " + _inventory);
+		//Debug.Log("_items/start, _items = " + _items);
 	}
 	
-	public void addItem(CollectableItem item) {
-		// Debug.Log("_inventory manager/addItem, item = " + item + ", description = " + item.description);
+	public void addItem(InventoryItem item) {
+		Debug.Log("_items manager/addItem, item = " + item + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.addNote(item.itemName + " added to inventory");
-		_inventory.Add (item);
+		player.notification.addNote(item.name + " added to inventory");
+		//_items.Add (item);
+		_itemsHash.Add(item.name, item);
 		//this.itemCollected(item.name);
 //		itemCollected("temp");
 	}
 	
 	public bool hasItem(string name) {
 		bool found = false;
-		CollectableItem currentItem;
-		for(int i = 0; i < _inventory.Count; i++) {
-			currentItem = _inventory[i] as CollectableItem;
+		if(_itemsHash.Contains(name)) {
+			return true;
+		} else {
+			return false;
+		}
+		
+/*		
+  		InventoryItem currentItem;
+		for(int i = 0; i < _items.Count; i++) {
+			currentItem = _items[i] as InventoryItem;
 			// Debug.Log("currentItem.description = " + currentItem.description);
-			if(currentItem.itemName == name) {
+			if(currentItem.name == name) {
 				found = true;
 				break;
 			}
 		}
 		return found;
+*/		
 	}
 	
 	public ArrayList getItems() {
-		return _inventory;	
+		return _items;	
 	}
 
 	public void drawInventory() {
 		this.drawBackground("inventory");
-		// Debug.Log("InventoryManager/drawInventory, _inventory.Count = " + _inventory.Count);
+		// Debug.Log("InventoryManager/drawInventory, _items.Count = " + _items.Count);
 	   	int j;
 	    int k;
-	    CollectableItem currentInventoryItem = null;
-	    string itemName;
+	    InventoryItem currentInventoryItem = null;
 		Rect currentRect;
 
-		for (int i = 0; i < _inventory.Count; i ++) {
-	       j = i / _inventoryWidth;
-	       k = i % _inventoryWidth;
-	       currentInventoryItem = _inventory[i] as CollectableItem;
-			// Debug.Log("i = " + i + ", j = " + j + ", k = " + k + ", currentInventoryItem = " + currentInventoryItem.name);
+		for (int i = 0; i < _items.Count; i ++) {
+	       j = i / _itemsWidth;
+	       k = i % _itemsWidth;
+	       currentInventoryItem = _items[i] as InventoryItem;
+			Debug.Log("i = " + i + ", j = " + j + ", k = " + k + ", currentInventoryItem = " + currentInventoryItem.name);
 	       currentRect = (new Rect (_offset.x + k * (_iconWidthHeight + _spacing), _offset.y + j * (_iconWidthHeight + _spacing), _iconWidthHeight, _iconWidthHeight));
 	       //   ... if there is no item in the j-th row and the k-th column, draw a blank texture
 			if (currentInventoryItem == null) {          
@@ -79,10 +89,10 @@ public class InventoryManager {
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
 				GUI.DrawTexture(currentRect, currentInventoryItem.iconTexture);
-				GUI.Box(new Rect(currentRect.x, currentRect.y, _iconWidthHeight, _iconWidthHeight), currentInventoryItem.itemName /*, _style */);
+				GUI.Box(new Rect(currentRect.x, currentRect.y, _iconWidthHeight, _iconWidthHeight), currentInventoryItem.name /*, _style */);
 				if(GUI.Button(new Rect(currentRect.x, (currentRect.y + _iconWidthHeight + 5), _iconWidthHeight, 20), "examine")) {
 //					Debug.Log("going to inspect item: " + i);
-					_detailInventoryItem = _inventory[i] as CollectableItem;
+					_detailInventoryItem = _items[i] as InventoryItem;
 					this.showInventory = false;
 					this.showDetail = true;
 				}
@@ -96,7 +106,7 @@ public class InventoryManager {
 			var detailImgLeft = Screen.width/2 - _detailImgWidthHeight/2;
 			var detailImgTop = Screen.height/2 - _detailImgWidthHeight/2;
 			Rect detailRect = new Rect(detailImgLeft, detailImgTop, _detailImgWidthHeight + 10, _detailImgWidthHeight + 50);
-			this.drawBackground("examine: " + _detailInventoryItem.itemName);
+			this.drawBackground("examine: " + _detailInventoryItem.name);
 			// Debug.Log("building detail of: " + _detailInventoryItem.name);
 			GUI.Box(detailRect, _detailInventoryItem.description);
 			GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, _detailImgWidthHeight, _detailImgWidthHeight), _detailInventoryItem.iconTexture);
@@ -116,8 +126,4 @@ public class InventoryManager {
 		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), title /*, _style */);
 	}
 	
-	public void closeInventoryWindow() {
-    	//openInventoryWindow = false;
-	}
- 
 }
