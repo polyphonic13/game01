@@ -63,6 +63,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseExit() {
+		Debug.Log("InteractiveEleement/mouseExit, roomActive = " + this.roomActive);
 		if (this.roomActive) {
 			_mouseManager.setCursorType (0);
 		}

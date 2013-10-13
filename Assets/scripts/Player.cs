@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
 	
 	void Update() {
 		if(Input.GetKeyDown(KeyCode.Q)) {
-			inventory.showInventory = !inventory.showInventory;
+			 inventory.showInventory = !inventory.showInventory;
 			inventory.showDetail = false;
 			this.enablePlayer(!inventory.showInventory);
 		} else if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
@@ -35,13 +35,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 	
-	void OnGUI() {
-		mouseManager.drawCursor();
+	void OnGUI ()
+		{
+				mouseManager.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
-		if(inventory.showInventory) {
-			inventory.drawInventory();
-		} else if(inventory.showDetail) {
-			inventory.drawDetail();
+				if (inventory.showInventory) {
+								inventory.drawInventory ();
+				} else if (inventory.showDetail) {
+								inventory.drawDetail ();
 		} else if(notification.showNote) {
 			notification.drawNote();
 		}
@@ -53,8 +54,8 @@ public class Player : MonoBehaviour {
 		mouseLook.isEnabled = disable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();
 		cameraMouseLook.isEnabled = disable;
-		var character = GetComponent<CharacterMotor>();
-		character.SetControllable(disable);
+//		CharacterMotor character = GetComponent<CharacterMotor>();
+//		character.SetControllable(disable);
 	}
 }
 

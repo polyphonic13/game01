@@ -64,9 +64,8 @@ public class CollectableItem : InteractiveElement {
 //		attachToHands();
 //		attachToBackpack();
 	}
-	
-	public void attachToBackpack ()
-	{
+	 
+	public void attachToBackpack () {
 		var backpack = _player.transform.Search("backpack");
 		transform.position = backpack.transform.position;
 		transform.rotation = backpack.transform.rotation;

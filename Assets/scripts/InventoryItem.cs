@@ -25,7 +25,7 @@ public class InventoryItem
 	
 	public virtual void use(bool handAttach = false) {
 		if(!isInUse) {
-			_gameObj = (GameObject)Instantiate(Resources.Load(prefabName));
+//			_gameObj = (GameObject)Instantiate(Resources.Load(prefabName));
 			if(handAttach) {
 				attachToHands(_gameObj.transform);
 			} else {
@@ -45,7 +45,7 @@ public class InventoryItem
 	
 	public virtual void store() {
 		if(isInUse) {
-			Destroy(_gameObj);
+//			Destroy(_gameObj);
 			this.isInUse = false;
 		}
 	}
