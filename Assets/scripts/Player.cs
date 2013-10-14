@@ -21,6 +21,7 @@ public class Player : MonoBehaviour {
 		notification = new Notification();
 		notification.init(basicStyle);
 		mouseManager = GetComponent<MouseManager>();
+		EventCenter.Instance.onEnablePlayer += this.onEnablePlayer;
 	}
 	
 	void Update() {
@@ -48,14 +49,18 @@ public class Player : MonoBehaviour {
 		}
 	}
 	
-	public void enablePlayer(bool disable) {
+	public void onEnablePlayer (bool enable) {
+		enablePlayer(enable);
+	}
+
+	public void enablePlayer(bool enable) {
 		// Debug.Log ("Player/enablePlayer, disable = " + disable);
 		var mouseLook = GetComponent<MouseLook>();
-		mouseLook.isEnabled = disable;
+		mouseLook.isEnabled = enable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();
-		cameraMouseLook.isEnabled = disable;
-//		CharacterMotor character = GetComponent<CharacterMotor>();
-//		character.SetControllable(disable);
+		cameraMouseLook.isEnabled = enable;
+		CharacterMotor character = GetComponent<CharacterMotor>();
+		character.SetControllable(enable);
 	}
 }
 

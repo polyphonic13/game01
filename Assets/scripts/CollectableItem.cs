@@ -9,9 +9,13 @@ public class CollectableItem : InteractiveElement {
 	public Texture iconTexture;
 	public Texture detailTexture;
 
-	private Renderer[] _renderers;
+	public bool isEquipable = false;
 
-	public bool collected { get; set; }
+	private Renderer[] _renderers;
+	private Vector3 _originalSize;
+
+	public bool isCollected { get; set; }
+	public bool isInUse { get; set; }
 
 	private Player _player;
 
@@ -21,8 +25,11 @@ public class CollectableItem : InteractiveElement {
 
 	public void initCollectableItem () {
 		init(2);
+		this.isCollected = false;
+		this.isInUse = false;
 		_player = GameObject.Find("player").GetComponent<Player>();
-		Debug.Log("CollectableItem[ " + this.name + " ]/awake, _player = " + _player);
+		_originalSize = this.transform.localScale;
+		Debug.Log("CollectableItem[ " + this.name + "/initCollectableItem, size = " + _originalSize);
 	}
 
 	public void OnMouseDown () {
@@ -35,34 +42,39 @@ public class CollectableItem : InteractiveElement {
 		Debug.Log ("CollectableItem/OnMouseDown, name = " + this.name);
 		var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if (difference < interactDistance) {
-			if (!this.collected) {
+			if (!this.isCollected) {
 				addToInventory();
-				this.collected = true;
+				this.isCollected = true;
 			}
 		}
 	}
 	
 	public void addToInventory() {
 		mouseExit();
-
+/*
 		InventoryItem item = new InventoryItem();
 		item.description = this.description;
 		item.name = this.itemName;
 		item.iconTexture = this.iconTexture;
 		item.detailTexture = this.detailTexture;
 		item.prefabName = this.name;
-		
+		item.isEquipable = this.isEquipable;
+
 		_player.inventory.addItem(item);	
 		Destroy(this.gameObject);
+
+*/
+		_player.inventory.addItem(this);
 //		disableAll();
-//		attach();
+		store();
+		attach();
 	}
 
 	public virtual void attach () {
 		Debug.Log("CollectableItem/attach");
 //		attachToPlayer();
 //		attachToHands();
-//		attachToBackpack();
+		attachToBackpack();
 	}
 	 
 	public void attachToBackpack () {
@@ -86,7 +98,7 @@ public class CollectableItem : InteractiveElement {
 	}
 
 	public void removeFromInventory() {
-		this.collected = false;
+		this.isCollected = false;
 		enableAll();
 	}
 	
@@ -104,43 +116,25 @@ public class CollectableItem : InteractiveElement {
 			this.renderer.enabled = enable;
 		}
 
-//		Renderer[] cr = GetComponentInChildren<Renderer>();
 		_renderers = gameObject.GetComponentsInChildren<Renderer>();
 		foreach(Renderer r in _renderers) {
 			r.enabled = enable;
 		}
 
 	}		
-	
-//	public void attachTransforms() {
-//		attachToHands(this.transform);
 
-/*
-		Transform[] ct = GetComponentInChildren<Transform>();
-		foreach(Transform t in ct) {
-			attachToHands(t.transform);
-		}
-*/		
-//	}
+	public virtual void equip() {
+		Debug.Log("CollectableItem[ " + this.name + "]/equip, _originalSize = " + _originalSize);
+		this.isInUse = true;
+		this.transform.localScale = _originalSize;
+//		this.transform.localScale = new Vector3(1, 1, 1);
+	}
+	
+	public virtual void store () {
+		this.isInUse = false;
+		this.transform.localScale = new Vector3(0, 0, 0);
+	}
+
 	
 }
 
-/*
-  recursive disabling
-		Stack<Transform> children = new Stack<Transform>();
-		children.Push(this.transform);
-		
-		while(children.Count > 0) {
-		    Transform current = children.Pop();
-		    Renderer renderer = current.GetComponent<Renderer>();
-		
-		    if (renderer != null) {
-		        renderer.enabled = false;
-		    }
-		
-		    foreach(Transform child in current.transform) {
-		        children.Push(child);
-		    }
-		}
-
-*/

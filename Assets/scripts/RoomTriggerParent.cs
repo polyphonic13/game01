@@ -11,7 +11,7 @@ public class RoomTriggerParent : MonoBehaviour {
 	void Start() {
 		if (startingRoom) {
 			_currentRoom = roomName;
-			EventCenter.Instance.roomEntered(roomName);
+			EventCenter.Instance.enterRoom(roomName);
 		}
 	}
 	
@@ -19,9 +19,9 @@ public class RoomTriggerParent : MonoBehaviour {
 	Debug.Log("RoomTriggerParent[ " + roomName + " ]/roomTrigged, _currentRoom = " + _currentRoom + ", room = " + room);
 		var eventCenter = EventCenter.Instance;
 		if (room == _currentRoom) {
-			EventCenter.Instance.roomExited(room);
+			EventCenter.Instance.exitRoom(room);
 		} else {
-			EventCenter.Instance.roomEntered(room);
+			EventCenter.Instance.enterRoom(room);
 			_currentRoom = room;
 		}
 	}

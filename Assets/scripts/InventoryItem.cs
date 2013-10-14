@@ -1,13 +1,15 @@
 using UnityEngine;
 using System.Collections;
 
-public class InventoryItem
-{
+public class InventoryItem {
+
 	public string name = "";
 	public string description = "";
 	
 	public Texture iconTexture;
 	public Texture detailTexture;
+
+	public bool isEquipable = false;
 
 	public CollectableItem collectableItem;
 	public string prefabName; 
@@ -27,11 +29,9 @@ public class InventoryItem
 		if(!isInUse) {
 //			_gameObj = (GameObject)Instantiate(Resources.Load(prefabName));
 			if(handAttach) {
-				attachToHands(_gameObj.transform);
+				attachToHands();
 			} else {
-				_gameObj.transform.position = _player.transform.position;
-				_gameObj.transform.rotation = _player.transform.rotation;
-				_gameObj.transform.parent = _player.transform;
+				attachToPlayer();
 			}	
 			this.isInUse = true;
 		}
@@ -50,11 +50,17 @@ public class InventoryItem
 		}
 	}
 
-	public void attachToHands(Transform transform) {
+	public void attachToPlayer () {
+		_gameObj.transform.position = _player.transform.position;
+		_gameObj.transform.rotation = _player.transform.rotation;
+		_gameObj.transform.parent = _player.transform;
+	}
+
+	public void attachToHands() {
 		var hand = Camera.main.transform.Search("right_hand");
-		transform.position = hand.transform.position;
-		transform.rotation = hand.transform.rotation;
-		transform.parent = hand.transform;	
+		_gameObj.transform.position = hand.transform.position;
+		_gameObj.transform.rotation = hand.transform.rotation;
+		_gameObj.transform.parent = hand.transform;	
 	}
 
 }

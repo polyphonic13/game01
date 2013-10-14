@@ -4,9 +4,12 @@ using System.Collections;
 public class EventCenter : MonoBehaviour {
 
 	public delegate void RoomHandler (string room);
+	public delegate void PlayerEnabler(bool enable);
 
 	public event RoomHandler onRoomEntered;
 	public event RoomHandler onRoomExited;
+
+	public event PlayerEnabler onEnablePlayer; 
 
 	private static EventCenter _instance;
 	private EventCenter() {}
@@ -20,18 +23,23 @@ public class EventCenter : MonoBehaviour {
 		}
 	}
 
-	public void roomEntered(string room) {
-		Debug.Log ("EventCenter/roomEntered, room = " + room);
+	public void enterRoom(string room) {
+		Debug.Log ("EventCenter/enterRoom, room = " + room);
 		if (onRoomEntered != null) {
 			onRoomEntered (room);
 		}
 	}
 
-	public void roomExited(string room) {
-		Debug.Log ("EventCenter/roomExited, room = " + room);
+	public void exitRoom(string room) {
+		Debug.Log ("EventCenter/exitRoom, room = " + room);
 		if (onRoomExited != null) {
 				onRoomExited (room);
 		}
 	}
 
+	public void enablePlayer (bool enable) {
+		if (onEnablePlayer != null) {
+				onEnablePlayer (enable);
+		}
+	}
 }
