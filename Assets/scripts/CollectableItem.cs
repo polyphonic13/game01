@@ -29,8 +29,8 @@ public class CollectableItem : InteractiveElement {
 		this.isInUse = false;
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_originalSize = this.transform.localScale;
+
 		EventCenter.Instance.onEquipItem += this.onEquipItem;
-//		Debug.Log("CollectableItem[ " + this.name + "/initCollectableItem, size = " + _originalSize);
 	}
 
 	public void onEquipItem(string itemName) {
@@ -67,30 +67,14 @@ public class CollectableItem : InteractiveElement {
 	
 	public void addToInventory() {
 		mouseExit();
-/*
-		InventoryItem item = new InventoryItem();
-		item.description = this.description;
-		item.name = this.itemName;
-		item.iconTexture = this.iconTexture;
-		item.detailTexture = this.detailTexture;
-		item.prefabName = this.name;
-		item.isEquipable = this.isEquipable;
-
-		_player.inventory.addItem(item);	
-		Destroy(this.gameObject);
-
-*/
 		_player.inventory.addItem(this);
-//		disableAll();
 		store();
 		attach();
 	}
 
 	public virtual void attach () {
-		Debug.Log("CollectableItem/attach");
-//		attachToPlayer();
+//		Debug.Log("CollectableItem/attach");
 		attachToRightHand();
-//		attachToBackpack();
 	}
 	 
 	public void attachToBackpack () {
@@ -122,10 +106,9 @@ public class CollectableItem : InteractiveElement {
 	}
 
 	public void use() {
-		Debug.Log("CollectableItem[ " + this.name + " ]/use");
+//		Debug.Log("CollectableItem[ " + this.name + " ]/use");
 		this.isInUse = true;
 		this.transform.localScale = _originalSize;
-//		this.transform.localScale = new Vector3(1, 1, 1);
 	}
 	
 	public virtual void store() {
@@ -133,7 +116,7 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void putAway() {
-		Debug.Log("CollableItem[ " + this.name + " ]/putAway");
+//		Debug.Log("CollableItem[ " + this.name + " ]/putAway");
 		this.isInUse = false;
 		this.transform.localScale = new Vector3(0, 0, 0);
 	}

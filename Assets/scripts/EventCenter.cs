@@ -36,13 +36,13 @@ public class EventCenter : MonoBehaviour {
 	public void exitRoom(string room) {
 		Debug.Log ("EventCenter/exitRoom, room = " + room);
 		if (onRoomExited != null) {
-				onRoomExited (room);
+			onRoomExited (room);
 		}
 	}
 
 	public void enablePlayer (bool enable) {
 		if (onEnablePlayer != null) {
-				onEnablePlayer (enable);
+			onEnablePlayer (enable);
 		}
 	}
 

@@ -14,7 +14,6 @@ public class InventoryManager {
 	private Vector2 _offset; 
 	private Texture _emptySlot; 
 	private GUIStyle _style; 
-//	private InventoryItem _detailInventoryItem = null;
 	private CollectableItem _detailInventoryItem = null;
 	private CollectableItem _equipedItem = null;
 
@@ -27,11 +26,10 @@ public class InventoryManager {
 		_offset = new Vector2(10, 10);
 	}
 	
-//	public void addItem(InventoryItem item) {
 	public void addItem(CollectableItem item) {
-		Debug.Log("_items manager/addItem, item = " + item + ", description = " + item.description);
+		Debug.Log("_items manager/addItem, item = " + item.name + ", description = " + item.description);
 		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.addNote(item.name + " added to inventory");
+		player.notification.addNote(item.itemName + " added to inventory");
 		_itemsHash.Add(item.name, item);
 	}
 	
@@ -41,6 +39,15 @@ public class InventoryManager {
 			return true;
 		} else {
 			return false;
+		}
+	}
+	
+	public string getItemName(string key) {
+		if(_itemsHash.Contains(key)) {
+			var item = _itemsHash[key] as CollectableItem;
+			return item.itemName;
+		} else { 
+			return "";
 		}
 	}
 
@@ -77,19 +84,10 @@ public class InventoryManager {
 				if (!currentInventoryItem.isInUse) {
 					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
 						_equipAndClose(currentInventoryItem.name);
-//						_detailInventoryItem = currentInventoryItem as CollectableItem;
-//						_detailInventoryItem.equip ();
-//						if (_equipedItem != null && _equipedItem != _detailInventoryItem) {
-//							_equipedItem.store ();
-//						}
-//						_equipedItem = _detailInventoryItem;
-
 					}
 				} else {
 					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
 						_equipAndClose(currentInventoryItem.name);
-//						_detailInventoryItem = currentInventoryItem as CollectableItem;
-//						_detailInventoryItem.store();
 					}
 				}
 				GUI.enabled = true;

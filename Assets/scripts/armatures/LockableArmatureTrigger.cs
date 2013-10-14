@@ -25,7 +25,8 @@ public class LockableArmatureTrigger : OpenCloseArmatureTrigger {
 			handleOpenClose();
 		} else {
 			if(_player.inventory.hasItem(keyName)) {
-				_player.notification.addNote("Unlocked " + lockedItemName + " with " + keyName);
+				string itemName = _player.inventory.getItemName(keyName);
+				_player.notification.addNote(lockedItemName + "unlocked with " + itemName);
 				isLocked = false;
 				handleOpenClose();
 			} else {
