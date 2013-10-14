@@ -40,21 +40,21 @@ public class Player : MonoBehaviour {
 		{
 				mouseManager.drawCursor();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
-				if (inventory.showInventory) {
+				if(inventory.showInventory) {
 								inventory.drawInventory();
-				} else if (inventory.showDetail) {
+				} else if(inventory.showDetail) {
 								inventory.drawDetail();
 		} else if(notification.showNote) {
 			notification.drawNote();
 		}
 	}
 	
-	public void onEnablePlayer (bool enable) {
+	public void onEnablePlayer(bool enable) {
 		enablePlayer(enable);
 	}
 
 	public void enablePlayer(bool enable) {
-		// Debug.Log ("Player/enablePlayer, disable = " + disable);
+		// Debug.Log("Player/enablePlayer, disable = " + disable);
 		var mouseLook = GetComponent<MouseLook>();
 		mouseLook.isEnabled = enable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();

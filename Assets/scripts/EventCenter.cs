@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EventCenter : MonoBehaviour {
 
-	public delegate void RoomHandler (string room);
+	public delegate void RoomHandler(string room);
     public delegate void NoteHandler(string msg);
 	public delegate void PlayerEnabler(bool enable);
 	public delegate void EquipItemHandler(string itemName);
@@ -30,14 +30,14 @@ public class EventCenter : MonoBehaviour {
 	}
 
 	public void enterRoom(string room) {
-		if (onRoomEntered != null) {
-			onRoomEntered (room);
+		if(onRoomEntered != null) {
+			onRoomEntered(room);
 		}
 	}
 
 	public void exitRoom(string room) {
-		if (onRoomExited != null) {
-			onRoomExited (room);
+		if(onRoomExited != null) {
+			onRoomExited(room);
 		}
 	}
 
@@ -47,9 +47,9 @@ public class EventCenter : MonoBehaviour {
 		}
 	}
 
-	public void enablePlayer (bool enable) {
-		if (onEnablePlayer != null) {
-			onEnablePlayer (enable);
+	public void enablePlayer(bool enable) {
+		if(onEnablePlayer != null) {
+			onEnablePlayer(enable);
 		}
 	}
 

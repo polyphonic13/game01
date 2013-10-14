@@ -13,8 +13,8 @@ public class Flashlight : CollectableItem {
 
 	// Update is called once per frame
 	void Update() {
-		if (this.isCollected) {
-			if (Input.GetKeyDown (KeyCode.F)) {
+		if(this.isCollected) {
+			if(Input.GetKeyDown(KeyCode.F)) {
 				EventCenter.Instance.equipItem(this.name);
 			}
 		}

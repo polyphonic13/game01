@@ -14,7 +14,7 @@ public class MouseManager : MonoBehaviour {
 	public int cursorType = 0;
 
 	public void Start() {
-//		Debug.Log ("MouseManager/Start");
+//		Debug.Log("MouseManager/Start");
 		Screen.showCursor = false;
 	}
 
@@ -24,8 +24,8 @@ public class MouseManager : MonoBehaviour {
 
 	public void drawCursor() {
 		Texture2D cursorToDraw = defaultCursor;
-		if (cursorType > 0) {
-			switch (cursorType) {
+		if(cursorType > 0) {
+			switch(cursorType) {
 				case 1:
 					cursorToDraw = handCursor;
 					break;
@@ -40,7 +40,7 @@ public class MouseManager : MonoBehaviour {
 					break;
 			}
 		}
-		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2, (Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursorToDraw);
+		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2,(Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursorToDraw);
 	}
 
 	public void setCursorType(int type) {

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InteractiveElement : MonoBehaviour {
 
-	public const float INTERACT_DISTANCE = 2.5f;
+	public float interactDistance = 2.5f;
 	public string containingRoom; 
 
 	private MouseManager _mouseManager;
@@ -17,10 +17,10 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void init(int activeCursor = 1) {
 		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
-		_mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
+		_mouseManager = GameObject.Find("player").GetComponent<MouseManager>();
 		_activeCursor = activeCursor;
 
-		if (this.transform.tag == "persistentItem") {
+		if(this.transform.tag == "persistentItem") {
 			this.isRoomActive = true;
 		} else {
 			this.isRoomActive = false;
@@ -31,31 +31,31 @@ public class InteractiveElement : MonoBehaviour {
 		}
 	}
 
-	public void onRoomEntered (string room) {
-		if (room == this.containingRoom) {
-//			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomEntered");
+	public void onRoomEntered(string room) {
+		if(room == this.containingRoom) {
+//			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomEntered");
 			this.isRoomActive = true;
 		}
 	}
 
 	public void onRoomExited(string room) {
-		if (room == this.containingRoom) {
-//			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomExited");
+		if(room == this.containingRoom) {
+//			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomExited");
 			this.isRoomActive = false;
 		}
 	}
 
 	public virtual void OnMouseOver() {
-		if (this.isRoomActive) {
+		if(this.isRoomActive) {
 			mouseOver();
 		}
 	}
 
 	public void mouseOver() {
 //		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.isRoomActive = " + this.isRoomActive);
-		var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if (difference < INTERACT_DISTANCE) {
-			_mouseManager.setCursorType (_activeCursor);
+		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if(difference < interactDistance) {
+			_mouseManager.setCursorType(_activeCursor);
 		}
 	}
 
@@ -64,6 +64,6 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseExit() {
-		_mouseManager.setCursorType (0);
+		_mouseManager.setCursorType(0);
 	}
 }

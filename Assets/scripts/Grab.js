@@ -6,13 +6,13 @@ private var newPos: Vector3;
 
 function Update(){
 
-    if (Input.GetMouseButton(0)){ // if left button creates a ray from the mouse
+    if(Input.GetMouseButton(0)){ // if left button creates a ray from the mouse
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (!pickObj){ // if nothing picked yet...
-//            if (Physics.Raycast(ray, hit) && hit.transform.tag == "Pick"){
-            if (Physics.Raycast(ray, hit, 5) && hit.transform.tag == "pickable"){
+        if(!pickObj){ // if nothing picked yet...
+//            if(Physics.Raycast(ray, hit) && hit.transform.tag == "Pick"){
+            if(Physics.Raycast(ray, hit, 5) && hit.transform.tag == "pickable"){
                 // if it's a rigidbody, zero its physics velocity
-                if (hit.rigidbody) hit.rigidbody.velocity = Vector3.zero;
+                if(hit.rigidbody) hit.rigidbody.velocity = Vector3.zero;
                 pickObj = hit.transform; // now there's an object picked
                 // remember its distance from the camera
                 dist = Vector3.Distance(pickObj.position, Camera.main.transform.position);

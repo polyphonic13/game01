@@ -57,35 +57,35 @@ public class InventoryManager {
 //		InventoryItem currentInventoryItem = null;
 		CollectableItem currentInventoryItem = null;
 		Rect currentRect;
-		this.drawBackground ("Inventory");
+		this.drawBackground("Inventory");
 
 		int i = 0;
 
-		foreach (DictionaryEntry key in _itemsHash) {
+		foreach(DictionaryEntry key in _itemsHash) {
 			currentInventoryItem = key.Value as CollectableItem;
 			j = i / ITEMS_WIDTH;
 			k = i % ITEMS_WIDTH;
-			currentRect = (new Rect (_offset.x + k * (ICON_WIDTH_HEIGHT + ITEM_SPACING), _offset.y + j * (ICON_WIDTH_HEIGHT + ITEM_SPACING), ICON_WIDTH_HEIGHT, ICON_WIDTH_HEIGHT));
-			if (currentInventoryItem == null) {          
-				GUI.DrawTexture (currentRect, _emptySlot);
+			currentRect =(new Rect(_offset.x + k *(ICON_WIDTH_HEIGHT + ITEM_SPACING), _offset.y + j *(ICON_WIDTH_HEIGHT + ITEM_SPACING), ICON_WIDTH_HEIGHT, ICON_WIDTH_HEIGHT));
+			if(currentInventoryItem == null) {          
+				GUI.DrawTexture(currentRect, _emptySlot);
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
-				GUI.Box (new Rect (currentRect.x, currentRect.y, ICON_WIDTH_HEIGHT, ITEM_NAME_HEIGHT), currentInventoryItem.name);
-				GUI.DrawTexture (new Rect (currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
-				Rect controlBtnRect = new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
-				if (GUI.Button (controlBtnRect, "Detail")) {
+				GUI.Box(new Rect(currentRect.x, currentRect.y, ICON_WIDTH_HEIGHT, ITEM_NAME_HEIGHT), currentInventoryItem.name);
+				GUI.DrawTexture(new Rect(currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
+				Rect controlBtnRect = new Rect(currentRect.x,(currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
+				if(GUI.Button(controlBtnRect, "Detail")) {
 						_detailInventoryItem = currentInventoryItem as CollectableItem;
 						this.showInventory = false;
 						this.showDetail = true;
 				}
 
 				GUI.enabled = currentInventoryItem.isEquipable;
-				if (!currentInventoryItem.isEquipped) {
-					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
+				if(!currentInventoryItem.isEquipped) {
+					if(GUI.Button(new Rect(controlBtnRect.x +(ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
 						_equipAndClose(currentInventoryItem.name);
 					}
 				} else {
-					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
+					if(GUI.Button(new Rect(controlBtnRect.x +(ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
 						_equipAndClose(currentInventoryItem.name);
 					}
 				}
@@ -102,21 +102,21 @@ public class InventoryManager {
 
 	public void drawDetail() {
 			Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
-			if (_detailInventoryItem != null) {
+			if(_detailInventoryItem != null) {
 				var detailImgLeft = Screen.width / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
 				var detailImgTop = Screen.height / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
-				Rect detailRect = new Rect (detailImgLeft, detailImgTop, DETAIL_IMG_WIDTH_HEIGHT + 10, DETAIL_IMG_WIDTH_HEIGHT + 50);
-				this.drawBackground ("Item detail: " + _detailInventoryItem.name);
+				Rect detailRect = new Rect(detailImgLeft, detailImgTop, DETAIL_IMG_WIDTH_HEIGHT + 10, DETAIL_IMG_WIDTH_HEIGHT + 50);
+				this.drawBackground("Item detail: " + _detailInventoryItem.name);
 				// Debug.Log("building detail of: " + _detailInventoryItem.name);
-				GUI.Box (detailRect, _detailInventoryItem.description);
-				GUI.DrawTexture (new Rect (detailImgLeft + 5, detailImgTop + 45, DETAIL_IMG_WIDTH_HEIGHT, DETAIL_IMG_WIDTH_HEIGHT), _detailInventoryItem.iconTexture);
-				if (GUI.Button (new Rect (detailImgLeft - 100, 75, 100, 20), "back")) {
+				GUI.Box(detailRect, _detailInventoryItem.description);
+				GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, DETAIL_IMG_WIDTH_HEIGHT, DETAIL_IMG_WIDTH_HEIGHT), _detailInventoryItem.iconTexture);
+				if(GUI.Button(new Rect(detailImgLeft - 100, 75, 100, 20), "back")) {
 					_detailInventoryItem = null;
 					this.showDetail = false;
 					this.showInventory = true;
 				}
 			} else {
-				Debug.Log ("ERROR: _detailInventoryItem is null");
+				Debug.Log("ERROR: _detailInventoryItem is null");
 				this.showDetail = false;
 				this.showInventory = false;
 			}

@@ -12,7 +12,7 @@ public class Notification {
 
 	public void init(GUIStyle style) {
 		_style = style;
-		// Debug.Log ("Notification/init, _style = " + _style);
+		// Debug.Log("Notification/init, _style = " + _style);
 		this.showNote = false;
 		_eventCenter = EventCenter.Instance;
 		_eventCenter.onAddNote += this.onAddNote;
@@ -37,8 +37,8 @@ public class Notification {
 	}
 
 	public void drawNote() {
-		GUI.Box(new Rect((Screen.width/2 - 250), (Screen.height/2 - 50), 500, 100), _content /*, _style */);
-		if(GUI.Button(new Rect((Screen.width/2 + 150), (Screen.height/2 - 70), 100, 20), "Close" /*, _style */)) {
+		GUI.Box(new Rect((Screen.width/2 - 250),(Screen.height/2 - 50), 500, 100), _content /*, _style */);
+		if(GUI.Button(new Rect((Screen.width/2 + 150),(Screen.height/2 - 70), 100, 20), "Close" /*, _style */)) {
 			this.destroy();
 		}
 	}

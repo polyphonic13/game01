@@ -9,7 +9,7 @@ public class RoomTriggerParent : MonoBehaviour {
 	private string _currentRoom;
 
 	void Start() {
-		if (startingRoom) {
+		if(startingRoom) {
 			_currentRoom = roomName;
 			EventCenter.Instance.enterRoom(roomName);
 		}
@@ -18,7 +18,7 @@ public class RoomTriggerParent : MonoBehaviour {
 	public void roomTriggered(string room) {
 	Debug.Log("RoomTriggerParent[ " + roomName + " ]/roomTrigged, _currentRoom = " + _currentRoom + ", room = " + room);
 		var eventCenter = EventCenter.Instance;
-		if (room == _currentRoom) {
+		if(room == _currentRoom) {
 			EventCenter.Instance.exitRoom(room);
 		} else {
 			EventCenter.Instance.enterRoom(room);
