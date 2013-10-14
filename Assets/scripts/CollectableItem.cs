@@ -10,6 +10,7 @@ public class CollectableItem : InteractiveElement {
 	public Texture detailTexture;
 
 	public bool isEquipable = false;
+	public bool isDroppable = false;
 
 	private Vector3 _originalSize;
 
@@ -124,6 +125,6 @@ public class CollectableItem : InteractiveElement {
 		this.isEquipped = false;
 		this.isCollected = false;
 		this.transform.localScale = _originalSize;
-//		this.transform.parent = 
+		this.transform.parent = null;
 	}
 }

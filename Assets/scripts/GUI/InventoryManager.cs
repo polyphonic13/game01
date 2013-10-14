@@ -17,10 +17,16 @@ public class InventoryManager {
 	private CollectableItem _detailInventoryItem = null;
 	private CollectableItem _equipedItem = null;
 
+	private string _itemToDelete = ""; 
+	
 	public bool showInventory { get; set; }
 	public bool showDetail { get; set; }
+	public bool houseKeepingNeeded { get; set; }
 
 	public void init(GUIStyle style) {
+		this.showInventory = false;
+		this.showDetail = false;
+		this.houseKeepingNeeded = false;
 		_style = style;
 		_itemsHash = new Hashtable();
 		_offset = new Vector2(10, 10);
@@ -50,76 +56,85 @@ public class InventoryManager {
 		}
 	}
 
-	public void drawInventory()
-		{
+	public void drawInventory () {
 		int j;
 		int k;
 //		InventoryItem currentInventoryItem = null;
 		CollectableItem currentInventoryItem = null;
 		Rect currentRect;
-		this.drawBackground("Inventory");
+		this.drawBackground ("Inventory");
 
 		int i = 0;
-
-		foreach(DictionaryEntry key in _itemsHash) {
+		Hashtable _tempItems = _itemsHash;
+		foreach (DictionaryEntry key in _tempItems) {
 			currentInventoryItem = key.Value as CollectableItem;
 			j = i / ITEMS_WIDTH;
 			k = i % ITEMS_WIDTH;
-			currentRect =(new Rect(_offset.x + k *(ICON_WIDTH_HEIGHT + ITEM_SPACING), _offset.y + j *(ICON_WIDTH_HEIGHT + ITEM_SPACING), ICON_WIDTH_HEIGHT, ICON_WIDTH_HEIGHT));
-			if(currentInventoryItem == null) {          
-				GUI.DrawTexture(currentRect, _emptySlot);
+			currentRect = (new Rect (_offset.x + k * (ICON_WIDTH_HEIGHT + ITEM_SPACING), _offset.y + j * (ICON_WIDTH_HEIGHT + ITEM_SPACING), ICON_WIDTH_HEIGHT, ICON_WIDTH_HEIGHT));
+			if (currentInventoryItem == null) {          
+					GUI.DrawTexture (currentRect, _emptySlot);
 			} else {
 				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
-				GUI.Box(new Rect(currentRect.x, currentRect.y, ICON_WIDTH_HEIGHT, ITEM_NAME_HEIGHT), currentInventoryItem.name);
-				GUI.DrawTexture(new Rect(currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
-				Rect controlBtnRect = new Rect(currentRect.x,(currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
-				if(GUI.Button(controlBtnRect, "Detail")) {
-						_detailInventoryItem = currentInventoryItem as CollectableItem;
-						this.showInventory = false;
-						this.showDetail = true;
+				GUI.Box (new Rect (currentRect.x, currentRect.y, ICON_WIDTH_HEIGHT, ITEM_NAME_HEIGHT), currentInventoryItem.itemName);
+				GUI.DrawTexture (new Rect (currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
+				Rect controlBtnRect = new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
+				if (GUI.Button (controlBtnRect, "Detail")) {
+					_detailInventoryItem = currentInventoryItem as CollectableItem;
+					this.showInventory = false;
+					this.showDetail = true;
 				}
 
 				GUI.enabled = currentInventoryItem.isEquipable;
-				if(!currentInventoryItem.isEquipped) {
-					if(GUI.Button(new Rect(controlBtnRect.x +(ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
-						_equipAndClose(currentInventoryItem.name);
-					}
+				if (!currentInventoryItem.isEquipped) {
+						if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
+							_equipAndClose (currentInventoryItem.name);
+						}
 				} else {
-					if(GUI.Button(new Rect(controlBtnRect.x +(ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
-						_equipAndClose(currentInventoryItem.name);
-					}
+						if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
+							_equipAndClose (currentInventoryItem.name);
+						}
 				}
 				GUI.enabled = true;
+				if (currentInventoryItem.isDroppable) {
+					if (GUI.Button (new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 25 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT, 20), "Drop")) {
+						_dropAndClose(currentInventoryItem.name);
+					}
+
+				}
 			}
 			i++;
 		}
 	}
 	
-	private void _equipAndClose(string itemName) {
-		EventCenter.Instance.equipItem(itemName);
-		close();
-	}
-
 	public void drawDetail() {
-			Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
-			if(_detailInventoryItem != null) {
-				var detailImgLeft = Screen.width / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
-				var detailImgTop = Screen.height / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
-				Rect detailRect = new Rect(detailImgLeft, detailImgTop, DETAIL_IMG_WIDTH_HEIGHT + 10, DETAIL_IMG_WIDTH_HEIGHT + 50);
-				this.drawBackground("Item detail: " + _detailInventoryItem.name);
-				// Debug.Log("building detail of: " + _detailInventoryItem.name);
-				GUI.Box(detailRect, _detailInventoryItem.description);
-				GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, DETAIL_IMG_WIDTH_HEIGHT, DETAIL_IMG_WIDTH_HEIGHT), _detailInventoryItem.iconTexture);
-				if(GUI.Button(new Rect(detailImgLeft - 100, 75, 100, 20), "back")) {
-					_detailInventoryItem = null;
-					this.showDetail = false;
-					this.showInventory = true;
-				}
-			} else {
-				Debug.Log("ERROR: _detailInventoryItem is null");
+		Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
+		if(_detailInventoryItem != null) {
+			var detailImgLeft = Screen.width / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
+			var detailImgTop = Screen.height / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
+			Rect detailRect = new Rect(detailImgLeft, detailImgTop, DETAIL_IMG_WIDTH_HEIGHT + 10, DETAIL_IMG_WIDTH_HEIGHT + 50);
+			this.drawBackground("Item detail: " + _detailInventoryItem.itemName);
+			// Debug.Log("building detail of: " + _detailInventoryItem.name);
+			GUI.Box(detailRect, _detailInventoryItem.description);
+			GUI.DrawTexture(new Rect(detailImgLeft + 5, detailImgTop + 45, DETAIL_IMG_WIDTH_HEIGHT, DETAIL_IMG_WIDTH_HEIGHT), _detailInventoryItem.iconTexture);
+			if(GUI.Button(new Rect(detailImgLeft - 100, 75, 100, 20), "back")) {
+				_detailInventoryItem = null;
 				this.showDetail = false;
-				this.showInventory = false;
+				this.showInventory = true;
 			}
+		} else {
+			Debug.Log("ERROR: _detailInventoryItem is null");
+			this.showDetail = false;
+			this.showInventory = false;
+		}
+	}
+	
+	public void houseKeeping() {
+		Debug.Log("InventoryManager/houseKeeping, _itemToDelete = " + _itemToDelete);
+		if(_itemToDelete != "") {
+			_itemsHash.Remove(_itemToDelete);
+			_itemToDelete = "";
+		}
+		this.houseKeepingNeeded = false;
 	}
 	
 	public void drawBackground(string title) {
@@ -131,4 +146,19 @@ public class InventoryManager {
 		this.showDetail = false;
 		EventCenter.Instance.enablePlayer(true);
 	}
+
+	private void _equipAndClose(string itemName) {
+		EventCenter.Instance.equipItem(itemName);
+		close();
+	}
+
+	private void _dropAndClose(string itemName) {
+		CollectableItem item = _itemsHash[itemName] as CollectableItem;
+		item.drop();
+		_itemToDelete = itemName;
+		this.houseKeepingNeeded = true;
+		close();
+	}
+
+
 }
