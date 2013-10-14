@@ -15,7 +15,7 @@ public class ArmatureTrigger : InteractiveElement {
 	public void OnMouseDown() {
 		if (this.isRoomActive) {
 			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
-			if (difference <= interactDistance) {
+			if (difference <= INTERACT_DISTANCE) {
 					handleAnimation();
 			}
 		} 

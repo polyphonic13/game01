@@ -15,10 +15,13 @@ public class InspectableItem : InteractiveElement {
 		init(3);
 	}
 
-	public void OnMouseDown() {
-		Debug.Log("InspectableItem/OnMouseDown, this.isRoomActive = " + this.isRoomActive);
-		if(this.isRoomActive) {
-			EventCenter.Instance.addNote(description);
+	public void OnMouseDown () {
+		var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if (difference < INTERACT_DISTANCE) {
+				Debug.Log ("InspectableItem/OnMouseDown, this.isRoomActive = " + this.isRoomActive);
+				if (this.isRoomActive) {
+						EventCenter.Instance.addNote (description);
+				}
 		}
 	}
 }

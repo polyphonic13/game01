@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InteractiveElement : MonoBehaviour {
 
-	public float interactDistance = 3;
+	public const float INTERACT_DISTANCE = 2.5f;
 	public string containingRoom; 
 
 	private MouseManager _mouseManager;
@@ -46,7 +46,6 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public virtual void OnMouseOver() {
-		Debug.Log("InteractiveElement[ " + this.name + " ]/OnMouseOver");
 		if (this.isRoomActive) {
 			mouseOver();
 		}
@@ -55,7 +54,7 @@ public class InteractiveElement : MonoBehaviour {
 	public void mouseOver() {
 //		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.isRoomActive = " + this.isRoomActive);
 		var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if (difference < interactDistance) {
+		if (difference < INTERACT_DISTANCE) {
 			_mouseManager.setCursorType (_activeCursor);
 		}
 	}
