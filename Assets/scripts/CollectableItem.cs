@@ -29,7 +29,23 @@ public class CollectableItem : InteractiveElement {
 		this.isInUse = false;
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_originalSize = this.transform.localScale;
-		Debug.Log("CollectableItem[ " + this.name + "/initCollectableItem, size = " + _originalSize);
+		EventCenter.Instance.onEquipItem += this.onEquipItem;
+//		Debug.Log("CollectableItem[ " + this.name + "/initCollectableItem, size = " + _originalSize);
+	}
+
+	public void onEquipItem(string itemName) {
+		if(this.isCollected) {
+			Debug.Log("CollectableItem[ " + this.name + " ]/onEquipItem, itemName = " + itemName + ", isInUse = " + this.isInUse);
+			if(this.name == itemName) {
+				if(this.isInUse) { // item is already in use, store it
+					store();
+				} else { // item is not being used, equip it
+					equip();
+				}
+			} else { // a different item is being equipped; store this one
+				store();
+			}
+		}
 	}
 
 	public void OnMouseDown () {
@@ -99,30 +115,8 @@ public class CollectableItem : InteractiveElement {
 
 	public void removeFromInventory() {
 		this.isCollected = false;
-		enableAll();
 	}
 	
-	public void disableAll() {
-		enableUtil(false);
-	}
-	
-	public void enableAll() {
-		enableUtil(true);
-	}
-	
-	// loop through renderers in children and enable/disable
-	void enableUtil(bool enable) {
-		if(this.renderer) {
-			this.renderer.enabled = enable;
-		}
-
-		_renderers = gameObject.GetComponentsInChildren<Renderer>();
-		foreach(Renderer r in _renderers) {
-			r.enabled = enable;
-		}
-
-	}		
-
 	public virtual void equip() {
 		use();
 	}
@@ -152,3 +146,26 @@ public class CollectableItem : InteractiveElement {
 	}
 }
 
+/*
+	public void disableAll() {
+		enableUtil(false);
+	}
+	
+	public void enableAll() {
+		enableUtil(true);
+	}
+	
+	// loop through renderers in children and enable/disable
+	void enableUtil(bool enable) {
+		if(this.renderer) {
+			this.renderer.enabled = enable;
+		}
+
+		_renderers = gameObject.GetComponentsInChildren<Renderer>();
+		foreach(Renderer r in _renderers) {
+			r.enabled = enable;
+		}
+
+	}		
+
+*/

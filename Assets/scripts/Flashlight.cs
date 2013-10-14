@@ -15,11 +15,12 @@ public class Flashlight : CollectableItem {
 	void Update () {
 		if (this.isCollected) {
 			if (Input.GetKeyDown (KeyCode.F)) {
-				if (this.isInUse) {
-					store();
-				} else {
-					equip ();
-				}
+				EventCenter.Instance.equipItem(this.name);
+//				if (this.isInUse) {
+//					store();
+//				} else {
+//					equip ();
+//				}
 			}
 		}
 	}
@@ -30,11 +31,13 @@ public class Flashlight : CollectableItem {
 	}
 
 	public override void equip () {
+		Debug.Log("Flashlight/equip");
 		_bulb.enabled = true;
 		use();
 	}
 
 	public override void store() {
+		Debug.Log("Flashlight/store");
 		_bulb.enabled = false;
 		putAway();
 	}

@@ -16,8 +16,7 @@ public class Notification {
 	
 	public void addNote(string msg) {
 		// Debug.Log("Notification/draw, msg = " + msg);
-		var player = GameObject.Find("player").GetComponent<Player>();
-		player.enablePlayer(false);
+		EventCenter.Instance.enablePlayer(false);
 		_content = msg;
 		this.showNote = true;
 	}
@@ -26,8 +25,7 @@ public class Notification {
 		// Debug.Log("Notification/destroy");	
 		this.showNote = false;
 		_content = "";
-		var player = GameObject.Find("player").GetComponent<Player>();
-		player.enablePlayer(true);
+		EventCenter.Instance.enablePlayer(true);
 	}
 
 	public void drawNote() {

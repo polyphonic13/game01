@@ -56,7 +56,6 @@ public class InventoryManager {
 		int i = 0;
 
 		foreach (DictionaryEntry key in _itemsHash) {
-//			currentInventoryItem = key.Value as InventoryItem;
 			currentInventoryItem = key.Value as CollectableItem;
 			j = i / ITEMS_WIDTH;
 			k = i % ITEMS_WIDTH;
@@ -69,7 +68,6 @@ public class InventoryManager {
 				GUI.DrawTexture (new Rect (currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
 				Rect controlBtnRect = new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
 				if (GUI.Button (controlBtnRect, "Detail")) {
-//					_detailInventoryItem = currentInventoryItem as InventoryItem;
 						_detailInventoryItem = currentInventoryItem as CollectableItem;
 						this.showInventory = false;
 						this.showDetail = true;
@@ -78,19 +76,20 @@ public class InventoryManager {
 				GUI.enabled = currentInventoryItem.isEquipable;
 				if (!currentInventoryItem.isInUse) {
 					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
-						_detailInventoryItem = currentInventoryItem as CollectableItem;
-						_detailInventoryItem.equip ();
-						close ();
-						if (_equipedItem != null && _equipedItem != _detailInventoryItem) {
-							_equipedItem.store ();
-						}
-						_equipedItem = _detailInventoryItem;
+						_equipAndClose(currentInventoryItem.name);
+//						_detailInventoryItem = currentInventoryItem as CollectableItem;
+//						_detailInventoryItem.equip ();
+//						if (_equipedItem != null && _equipedItem != _detailInventoryItem) {
+//							_equipedItem.store ();
+//						}
+//						_equipedItem = _detailInventoryItem;
+
 					}
 				} else {
 					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
-						_detailInventoryItem = currentInventoryItem as CollectableItem;
-						_detailInventoryItem.store();
-						close();
+						_equipAndClose(currentInventoryItem.name);
+//						_detailInventoryItem = currentInventoryItem as CollectableItem;
+//						_detailInventoryItem.store();
 					}
 				}
 				GUI.enabled = true;
@@ -99,6 +98,11 @@ public class InventoryManager {
 		}
 	}
 	
+	private void _equipAndClose(string itemName) {
+		EventCenter.Instance.equipItem(itemName);
+		close();
+	}
+
 	public void drawDetail () {
 			Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
 			if (_detailInventoryItem != null) {

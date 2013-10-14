@@ -5,12 +5,15 @@ public class EventCenter : MonoBehaviour {
 
 	public delegate void RoomHandler (string room);
 	public delegate void PlayerEnabler(bool enable);
+	public delegate void EquipItemHandler(string itemName);
 
 	public event RoomHandler onRoomEntered;
 	public event RoomHandler onRoomExited;
 
 	public event PlayerEnabler onEnablePlayer; 
 
+	public event EquipItemHandler onEquipItem;
+	
 	private static EventCenter _instance;
 	private EventCenter() {}
 	
@@ -40,6 +43,12 @@ public class EventCenter : MonoBehaviour {
 	public void enablePlayer (bool enable) {
 		if (onEnablePlayer != null) {
 				onEnablePlayer (enable);
+		}
+	}
+
+	public void equipItem(string itemName) {
+		if(onEquipItem != null){
+			onEquipItem(itemName);
 		}
 	}
 }
