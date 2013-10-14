@@ -73,8 +73,8 @@ public class CollectableItem : InteractiveElement {
 	public virtual void attach () {
 		Debug.Log("CollectableItem/attach");
 //		attachToPlayer();
-//		attachToHands();
-		attachToBackpack();
+		attachToRightHand();
+//		attachToBackpack();
 	}
 	 
 	public void attachToBackpack () {
@@ -90,7 +90,7 @@ public class CollectableItem : InteractiveElement {
 		transform.parent = _player.transform;
 	}
 
-	public void attachToHands() {
+	public void attachToRightHand() {
 		var hand = Camera.main.transform.Search("right_hand");
 		transform.position = hand.transform.position;
 		transform.rotation = hand.transform.rotation;
@@ -124,17 +124,31 @@ public class CollectableItem : InteractiveElement {
 	}		
 
 	public virtual void equip() {
-		Debug.Log("CollectableItem[ " + this.name + "]/equip, _originalSize = " + _originalSize);
+		use();
+	}
+
+	public void use() {
+		Debug.Log("CollectableItem[ " + this.name + " ]/use");
 		this.isInUse = true;
 		this.transform.localScale = _originalSize;
 //		this.transform.localScale = new Vector3(1, 1, 1);
 	}
 	
-	public virtual void store () {
+	public virtual void store() {
+		putAway ();
+	}
+	
+	public void putAway() {
+		Debug.Log("CollableItem[ " + this.name + " ]/putAway");
 		this.isInUse = false;
 		this.transform.localScale = new Vector3(0, 0, 0);
 	}
 
-	
+	public virtual void drop () {
+		this.isInUse = false;
+		this.isCollected = false;
+		this.transform.localScale = _originalSize;
+//		this.transform.parent = 
+	}
 }
 

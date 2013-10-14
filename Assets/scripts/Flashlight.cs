@@ -3,42 +3,40 @@ using System.Collections;
 
 public class Flashlight : CollectableItem {
 
-	Light bulb; 
-	Transform flashlight_base;
+	private Light _bulb; 
 	
 	void Awake() {
 		initCollectableItem();
-		bulb = this.transform.Search("flashlight_bulb").light;
-		bulb.enabled = false;
-		flashlight_base = this.transform.Search("flashlight01e");
+		_bulb = this.transform.Search("flashlight_bulb").light;
+		_bulb.enabled = false;
 	}
 
 	// Update is called once per frame
-	void Update() {
-		if(this.isCollected) {
-			if(Input.GetKeyDown(KeyCode.F)) {
-
-				
-				bulb.enabled = !bulb.enabled;
-				flashlight_base.renderer.enabled = bulb.enabled;
+	void Update () {
+		if (this.isCollected) {
+			if (Input.GetKeyDown (KeyCode.F)) {
+				if (this.isInUse) {
+					store();
+				} else {
+					equip ();
+				}
 			}
 		}
 	}
 	
 	public override void attach () {
-		Debug.Log("Flashlight/attach");
-		attachToHands();
+		_bulb.enabled = false;
+		attachToRightHand();
 	}
-//	public override void OnMouseDown() {
-//		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-//		if(difference < interactDistance) {
-//			if(!this.isCollected) {
-//				this.isCollected = true;
-//				attachTransforms();				
-//				//flashlight_base.renderer.enabled = bulb.enabled = true;
-//				addToInventory();
-//			}
-//		}
-//	}
+
+	public override void equip () {
+		_bulb.enabled = true;
+		use();
+	}
+
+	public override void store() {
+		_bulb.enabled = false;
+		putAway();
+	}
 }
 	

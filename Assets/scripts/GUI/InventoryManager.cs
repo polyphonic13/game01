@@ -46,55 +46,55 @@ public class InventoryManager {
 
 	public void drawInventory ()
 		{
-				int j;
-				int k;
+		int j;
+		int k;
 //		InventoryItem currentInventoryItem = null;
-				CollectableItem currentInventoryItem = null;
-				Rect currentRect;
-				this.drawBackground ("Inventory");
+		CollectableItem currentInventoryItem = null;
+		Rect currentRect;
+		this.drawBackground ("Inventory");
 
-				int i = 0;
-	
-				foreach (DictionaryEntry key in _itemsHash) {
+		int i = 0;
+
+		foreach (DictionaryEntry key in _itemsHash) {
 //			currentInventoryItem = key.Value as InventoryItem;
-						currentInventoryItem = key.Value as CollectableItem;
-						j = i / ITEMS_WIDTH;
-						k = i % ITEMS_WIDTH;
-						currentRect = (new Rect (_offset.x + k * (ICON_WIDTH_HEIGHT + ITEM_SPACING), _offset.y + j * (ICON_WIDTH_HEIGHT + ITEM_SPACING), ICON_WIDTH_HEIGHT, ICON_WIDTH_HEIGHT));
-						if (currentInventoryItem == null) {          
-								GUI.DrawTexture (currentRect, _emptySlot);
-						} else {
-								// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
-								GUI.Box (new Rect (currentRect.x, currentRect.y, ICON_WIDTH_HEIGHT, ITEM_NAME_HEIGHT), currentInventoryItem.name);
-								GUI.DrawTexture (new Rect (currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
-								Rect controlBtnRect = new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
-								if (GUI.Button (controlBtnRect, "Detail")) {
+			currentInventoryItem = key.Value as CollectableItem;
+			j = i / ITEMS_WIDTH;
+			k = i % ITEMS_WIDTH;
+			currentRect = (new Rect (_offset.x + k * (ICON_WIDTH_HEIGHT + ITEM_SPACING), _offset.y + j * (ICON_WIDTH_HEIGHT + ITEM_SPACING), ICON_WIDTH_HEIGHT, ICON_WIDTH_HEIGHT));
+			if (currentInventoryItem == null) {          
+				GUI.DrawTexture (currentRect, _emptySlot);
+			} else {
+				// Debug.Log("about to draw texture for " + currentInventoryItem.iconTexture + ", currentRect = " + currentRect);
+				GUI.Box (new Rect (currentRect.x, currentRect.y, ICON_WIDTH_HEIGHT, ITEM_NAME_HEIGHT), currentInventoryItem.name);
+				GUI.DrawTexture (new Rect (currentRect.x, currentRect.y + ITEM_NAME_HEIGHT, currentRect.width, currentRect.height), currentInventoryItem.iconTexture);
+				Rect controlBtnRect = new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 5 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT / 2, 20);
+				if (GUI.Button (controlBtnRect, "Detail")) {
 //					_detailInventoryItem = currentInventoryItem as InventoryItem;
-										_detailInventoryItem = currentInventoryItem as CollectableItem;
-										this.showInventory = false;
-										this.showDetail = true;
-								}
-								GUI.enabled = currentInventoryItem.isEquipable;
-								if (!currentInventoryItem.isInUse) {
-										if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
-												_detailInventoryItem = currentInventoryItem as CollectableItem;
-												_detailInventoryItem.equip ();
-												close ();
-												if (_equipedItem != null) {
-														_equipedItem.store ();
-												}
-												_equipedItem = _detailInventoryItem;
-							}
-						} else {
-							if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
-								_detailInventoryItem = currentInventoryItem as CollectableItem;
-								_detailInventoryItem.store();
-								close();
-							}
+						_detailInventoryItem = currentInventoryItem as CollectableItem;
+						this.showInventory = false;
+						this.showDetail = true;
+				}
+
+				GUI.enabled = currentInventoryItem.isEquipable;
+				if (!currentInventoryItem.isInUse) {
+					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
+						_detailInventoryItem = currentInventoryItem as CollectableItem;
+						_detailInventoryItem.equip ();
+						close ();
+						if (_equipedItem != null && _equipedItem != _detailInventoryItem) {
+							_equipedItem.store ();
 						}
-						GUI.enabled = true;
+						_equipedItem = _detailInventoryItem;
+					}
+				} else {
+					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Store")) {
+						_detailInventoryItem = currentInventoryItem as CollectableItem;
+						_detailInventoryItem.store();
+						close();
+					}
+				}
+				GUI.enabled = true;
 			}
-	
 			i++;
 		}
 	}
