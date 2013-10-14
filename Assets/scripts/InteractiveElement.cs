@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InteractiveElement : MonoBehaviour {
 
-	public float interactDistance = 2.5f;
+	public float interactDistance = 3;
 	public string containingRoom; 
 
 	private MouseManager _mouseManager;
@@ -16,7 +16,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void init(int activeCursor = 1) {
-		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
+//		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
 		_mouseManager = GameObject.Find("player").GetComponent<MouseManager>();
 		_activeCursor = activeCursor;
 

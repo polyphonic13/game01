@@ -56,7 +56,7 @@ public class CollectableItem : InteractiveElement {
 	public void mouseDown() {
 		Debug.Log("CollectableItem/OnMouseDown, name = " + this.name);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-		if(difference < INTERACT_DISTANCE) {
+		if(difference < interactDistance) {
 			if(!this.isCollected) {
 				addToInventory();
 			}
