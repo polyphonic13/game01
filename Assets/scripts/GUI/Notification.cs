@@ -6,17 +6,25 @@ public class Notification {
 	private GUIStyle _style;
 	private string _content;
 	
+	private EventCenter _eventCenter;
+
 	public bool showNote { get; set; }
 
 	public void init(GUIStyle style) {
 		_style = style;
 		// Debug.Log ("Notification/init, _style = " + _style);
 		this.showNote = false;
+		_eventCenter = EventCenter.Instance;
+		_eventCenter.onAddNote += this.onAddNote;
 	}
 	
+    public void onAddNote(string msg) {
+        addNote(msg);
+    }
+
 	public void addNote(string msg) {
 		// Debug.Log("Notification/draw, msg = " + msg);
-		EventCenter.Instance.enablePlayer(false);
+		_eventCenter.enablePlayer(false);
 		_content = msg;
 		this.showNote = true;
 	}
@@ -25,7 +33,7 @@ public class Notification {
 		// Debug.Log("Notification/destroy");	
 		this.showNote = false;
 		_content = "";
-		EventCenter.Instance.enablePlayer(true);
+		_eventCenter.enablePlayer(true);
 	}
 
 	public void drawNote() {

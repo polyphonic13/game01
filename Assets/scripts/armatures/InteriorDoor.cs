@@ -5,7 +5,7 @@ public class InteriorDoor : ArmatureParent {
 	public Texture doorTexture;
 	public Texture frameTexture;
 
-	void Awake () {
+	void Awake() {
 		if (doorTexture != null) {
 			var door = transform.Find ("door");
 			door.renderer.material.mainTexture = doorTexture;

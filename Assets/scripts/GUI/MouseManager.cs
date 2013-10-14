@@ -6,22 +6,20 @@ public class MouseManager : MonoBehaviour {
 	public Texture2D defaultCursor;
 	public Texture2D handCursor;
 	public Texture2D pinchCursor;
+	public Texture2D magnifyCursor;
+
 	public float cursorWidth = 50;
 	public float cursorHeight = 50;
 
 	public int cursorType = 0;
 
 	public void Start() {
-		Debug.Log ("MouseManager/Start");
+//		Debug.Log ("MouseManager/Start");
 		Screen.showCursor = false;
 	}
 
 	public void init() {
 
-	}
-
-	void OnGui() {
-		Debug.Log ("MouseManager/OnGui");
 	}
 
 	public void drawCursor() {
@@ -33,6 +31,12 @@ public class MouseManager : MonoBehaviour {
 					break;
 				case 2:
 					cursorToDraw = pinchCursor;
+					break;
+				case 3:
+					cursorToDraw = magnifyCursor;
+					break;
+				default:
+					cursorToDraw = defaultCursor;
 					break;
 			}
 		}

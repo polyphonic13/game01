@@ -9,20 +9,21 @@ public class InteractiveElement : MonoBehaviour {
 	private MouseManager _mouseManager;
 	private int _activeCursor;
 
-	public bool roomActive { get; set; }
-	 
+	public bool isRoomActive { get; set; } 
+
 	void Awake() {
 		init();
 	}
 
 	public void init(int activeCursor = 1) {
+		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
 		_mouseManager = GameObject.Find ("player").GetComponent<MouseManager>();
 		_activeCursor = activeCursor;
 
 		if (this.transform.tag == "persistentItem") {
-			this.roomActive = true;
+			this.isRoomActive = true;
 		} else {
-			this.roomActive = false;
+			this.isRoomActive = false;
 	
 			var eventCenter = EventCenter.Instance;
 			eventCenter.onRoomEntered += this.onRoomEntered;
@@ -33,39 +34,37 @@ public class InteractiveElement : MonoBehaviour {
 	public void onRoomEntered (string room) {
 		if (room == this.containingRoom) {
 //			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomEntered");
-			this.roomActive = true;
+			this.isRoomActive = true;
 		}
 	}
 
 	public void onRoomExited(string room) {
 		if (room == this.containingRoom) {
 //			Debug.Log ("InteractiveElement[ " + this.name + " ]/onRoomExited");
-			this.roomActive = false;
+			this.isRoomActive = false;
 		}
 	}
 
-	public void OnMouseOver() {
-		mouseOver();
+	public virtual void OnMouseOver() {
+		Debug.Log("InteractiveElement[ " + this.name + " ]/OnMouseOver");
+		if (this.isRoomActive) {
+			mouseOver();
+		}
 	}
 
 	public void mouseOver() {
-//		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.roomActive = " + this.roomActive);
-		if (this.roomActive) {
-			var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
-			if (difference < interactDistance) {
-				_mouseManager.setCursorType (_activeCursor);
-			}
+//		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.isRoomActive = " + this.isRoomActive);
+		var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		if (difference < interactDistance) {
+			_mouseManager.setCursorType (_activeCursor);
 		}
 	}
 
-	public void OnMouseExit() {
+	public virtual void OnMouseExit() {
 		mouseExit();
 	}
 
 	public void mouseExit() {
-//		Debug.Log("InteractiveEleement/mouseExit, roomActive = " + this.roomActive);
-		if (this.roomActive) {
-			_mouseManager.setCursorType (0);
-		}
+		_mouseManager.setCursorType (0);
 	}
 }

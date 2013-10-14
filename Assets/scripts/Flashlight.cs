@@ -12,7 +12,7 @@ public class Flashlight : CollectableItem {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if (this.isCollected) {
 			if (Input.GetKeyDown (KeyCode.F)) {
 				EventCenter.Instance.equipItem(this.name);
@@ -20,21 +20,21 @@ public class Flashlight : CollectableItem {
 		}
 	}
 	
-	public override void attach () {
+	public override void attach() {
 		_bulb.enabled = false;
 		attachToRightHand();
 	}
 
-	public override void equip () {
+	public override void equip() {
 //		Debug.Log("Flashlight/equip");
 		_bulb.enabled = true;
 		use();
 	}
 
-	public override void store() {
+	public override void unequip() {
 //		Debug.Log("Flashlight/store");
 		_bulb.enabled = false;
-		putAway();
+		store();
 	}
 }
 	

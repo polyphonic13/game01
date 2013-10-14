@@ -11,11 +11,10 @@ public class CollectableItem : InteractiveElement {
 
 	public bool isEquipable = false;
 
-	private Renderer[] _renderers;
 	private Vector3 _originalSize;
 
 	public bool isCollected { get; set; }
-	public bool isInUse { get; set; }
+	public bool isEquipped { get; set; }
 
 	private Player _player;
 
@@ -23,10 +22,10 @@ public class CollectableItem : InteractiveElement {
 		initCollectableItem();
 	}
 
-	public void initCollectableItem () {
+	public void initCollectableItem() {
 		init(2);
 		this.isCollected = false;
-		this.isInUse = false;
+		this.isEquipped = false;
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_originalSize = this.transform.localScale;
 
@@ -35,22 +34,22 @@ public class CollectableItem : InteractiveElement {
 
 	public void onEquipItem(string itemName) {
 		if(this.isCollected) {
-			Debug.Log("CollectableItem[ " + this.name + " ]/onEquipItem, itemName = " + itemName + ", isInUse = " + this.isInUse);
+			Debug.Log("CollectableItem[ " + this.name + " ]/onEquipItem, itemName = " + itemName + ", isEquipped = " + this.isEquipped);
 			if(this.name == itemName) {
-				if(this.isInUse) { // item is already in use, store it
-					store();
-				} else { // item is not being used, equip it
+				if(this.isEquipped) { 					// item is already in use, store it
+					unequip();
+				} else { 								// item is not being used, equip it
 					equip();
 				}
-			} else { // a different item is being equipped; store this one
-				store();
+			} else { 									// a different item is being equipped; store this one
+				unequip();
 			}
 		}
 	}
 
-	public void OnMouseDown () {
-		if (this.roomActive) {
-			mouseDown ();
+	public void OnMouseDown() {
+		if (this.isRoomActive) {
+			mouseDown();
 		}
 	}
 
@@ -60,24 +59,24 @@ public class CollectableItem : InteractiveElement {
 		if (difference < interactDistance) {
 			if (!this.isCollected) {
 				addToInventory();
-				this.isCollected = true;
 			}
 		}
 	}
 	
 	public void addToInventory() {
 		mouseExit();
+		this.isCollected = true;
 		_player.inventory.addItem(this);
-		store();
+		unequip();
 		attach();
 	}
 
-	public virtual void attach () {
+	public virtual void attach() {
 //		Debug.Log("CollectableItem/attach");
 		attachToRightHand();
 	}
 	 
-	public void attachToBackpack () {
+	public void attachToBackpack() {
 		var backpack = _player.transform.Search("backpack");
 		transform.position = backpack.transform.position;
 		transform.rotation = backpack.transform.rotation;
@@ -107,48 +106,24 @@ public class CollectableItem : InteractiveElement {
 
 	public void use() {
 //		Debug.Log("CollectableItem[ " + this.name + " ]/use");
-		this.isInUse = true;
+		this.isEquipped = true;
 		this.transform.localScale = _originalSize;
 	}
 	
-	public virtual void store() {
-		putAway ();
+	public virtual void unequip() {
+		store();
 	}
 	
-	public void putAway() {
+	public void store() {
 //		Debug.Log("CollableItem[ " + this.name + " ]/putAway");
-		this.isInUse = false;
+		this.isEquipped = false;
 		this.transform.localScale = new Vector3(0, 0, 0);
 	}
 
-	public virtual void drop () {
-		this.isInUse = false;
+	public virtual void drop() {
+		this.isEquipped = false;
 		this.isCollected = false;
 		this.transform.localScale = _originalSize;
 //		this.transform.parent = 
 	}
 }
-
-/*
-	public void disableAll() {
-		enableUtil(false);
-	}
-	
-	public void enableAll() {
-		enableUtil(true);
-	}
-	
-	// loop through renderers in children and enable/disable
-	void enableUtil(bool enable) {
-		if(this.renderer) {
-			this.renderer.enabled = enable;
-		}
-
-		_renderers = gameObject.GetComponentsInChildren<Renderer>();
-		foreach(Renderer r in _renderers) {
-			r.enabled = enable;
-		}
-
-	}		
-
-*/

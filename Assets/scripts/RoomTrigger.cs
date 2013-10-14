@@ -7,7 +7,7 @@ public class RoomTrigger : MonoBehaviour {
 
 	private RoomTriggerParent _roomTriggerParent;
 	
-	void Awake () {
+	void Awake() {
 		_roomTriggerParent = transform.parent.gameObject.GetComponent<RoomTriggerParent>();
 	}
 		

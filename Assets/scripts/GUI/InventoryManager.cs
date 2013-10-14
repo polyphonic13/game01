@@ -28,8 +28,7 @@ public class InventoryManager {
 	
 	public void addItem(CollectableItem item) {
 		Debug.Log("_items manager/addItem, item = " + item.name + ", description = " + item.description);
-		var player = GameObject.Find("player").GetComponent<Player>();
-		player.notification.addNote(item.itemName + " added to inventory");
+		EventCenter.Instance.addNote(item.itemName + " added to inventory");
 		_itemsHash.Add(item.name, item);
 	}
 	
@@ -51,7 +50,7 @@ public class InventoryManager {
 		}
 	}
 
-	public void drawInventory ()
+	public void drawInventory()
 		{
 		int j;
 		int k;
@@ -81,7 +80,7 @@ public class InventoryManager {
 				}
 
 				GUI.enabled = currentInventoryItem.isEquipable;
-				if (!currentInventoryItem.isInUse) {
+				if (!currentInventoryItem.isEquipped) {
 					if (GUI.Button (new Rect (controlBtnRect.x + (ICON_WIDTH_HEIGHT / 2), controlBtnRect.y, controlBtnRect.width, controlBtnRect.height), "Equip")) {
 						_equipAndClose(currentInventoryItem.name);
 					}
@@ -101,7 +100,7 @@ public class InventoryManager {
 		close();
 	}
 
-	public void drawDetail () {
+	public void drawDetail() {
 			Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
 			if (_detailInventoryItem != null) {
 				var detailImgLeft = Screen.width / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
@@ -127,7 +126,7 @@ public class InventoryManager {
 		GUI.Box(new Rect(5, 5, Screen.width - 10, Screen.height - 10), title /*, _style */);
 	}
 	
-	public void close () {
+	public void close() {
 		this.showInventory = false;
 		this.showDetail = false;
 		EventCenter.Instance.enablePlayer(true);

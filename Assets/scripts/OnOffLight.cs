@@ -12,9 +12,9 @@ public class OnOffLight : InteractiveElement {
 //		Debug.Log("bulb = " + bulb);
 	}
 
-	public void OnMouseDown () {
+	public void OnMouseDown() {
 //		Debug.Log("Lamp/on mouse down");
-		if (this.roomActive) {
+		if (this.isRoomActive) {
 				var difference = Vector3.Distance (Camera.mainCamera.gameObject.transform.position, this.transform.position);
 				if (difference < interactDistance) {
 //					Debug.Log ("Lamp/OnMouseDown, difference = " + difference + ", bulb.enabled = " + bulb.enabled);
