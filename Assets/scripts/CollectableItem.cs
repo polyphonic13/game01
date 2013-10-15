@@ -16,12 +16,40 @@ public class CollectableItem : InteractiveElement {
 
 	public bool isCollected { get; set; }
 	public bool isEquipped { get; set; }
-
+	
+	
 	private Player _player;
+	
 	private Rigidbody _rigidBody; 
+	private Vector3 _previousRigidBodyPos;
 	
 	void Awake() {
 		initCollectableItem();
+		var weight = transform.Search("weight");
+		if(weight != null) {
+			_rigidBody = transform.Search("weight").GetComponent<Rigidbody>();
+			if(_rigidBody != null) {
+				Debug.Log("CollectableItem[ " + this.name + " ]/Awake, _rigidBody = " + _rigidBody);
+				_previousRigidBodyPos = _rigidBody.position;
+			}
+		}
+	}
+	
+	void Update() {
+		if(_rigidBody != null) {
+			if(_rigidBody.transform.position != _previousRigidBodyPos) {
+				_previousRigidBodyPos = _rigidBody.position;
+				Debug.Log("new rigidbody position = " + _rigidBody.position.y + ", position = " + this.transform.position.y);
+				Vector3 curPos = this.transform.position;
+				Vector3 newPos = new Vector3(curPos.x, _rigidBody.position.y, curPos.z);
+//				this.transform.position = newPos;
+			}
+		}
+	}
+	
+	void OnCollisionEnter(Collision target) {
+		Debug.Log("CollectableItem[ " + this.name + " ]/OnCollisionEnter, target = " + target);
+		
 	}
 
 	public void initCollectableItem() {
