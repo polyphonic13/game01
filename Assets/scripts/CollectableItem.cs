@@ -18,7 +18,8 @@ public class CollectableItem : InteractiveElement {
 	public bool isEquipped { get; set; }
 
 	private Player _player;
-
+	private Rigidbody _rigidBody; 
+	
 	void Awake() {
 		initCollectableItem();
 	}
@@ -126,5 +127,13 @@ public class CollectableItem : InteractiveElement {
 		this.isCollected = false;
 		this.transform.localScale = _originalSize;
 		this.transform.parent = null;
+		
+		// gravity
+		/*
+		_rigidBody = this.gameObject.AddComponent<Rigidbody>();
+		_rigidBody.mass = 1;
+		_rigidBody.collisionDetectionMode =  CollisionDetectionMode.ContinuousDynamic;
+		*/
 	}
+	
 }

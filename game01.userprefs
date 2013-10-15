@@ -9,7 +9,7 @@
               <Node name="scripts" expanded="True">
                 <Node name="armatures" expanded="True" />
                 <Node name="GUI" expanded="True" />
-                <Node name="OnOffLight.cs" selected="True" />
+                <Node name="CollectableItem.cs" selected="True" />
               </Node>
             </Node>
           </Node>
