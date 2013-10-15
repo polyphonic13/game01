@@ -40,13 +40,13 @@ public class Player : MonoBehaviour {
 		mouseManager.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
-				inventory.drawInventory ();
+			inventory.drawInventory ();
 		} else if (inventory.showDetail) {
-				inventory.drawDetail ();
+			inventory.drawDetail ();
 		} else if (notification.showNote) {
-				notification.drawNote ();
+			notification.drawNote ();
 		} else if (inventory.houseKeepingNeeded) {
-				inventory.houseKeeping ();
+			inventory.houseKeeping ();
 		}
 	}
 	
