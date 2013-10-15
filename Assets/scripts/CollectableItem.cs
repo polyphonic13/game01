@@ -48,7 +48,7 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	void OnCollisionEnter(Collision target) {
-		Debug.Log("CollectableItem[ " + this.name + " ]/OnCollisionEnter, target = " + target);
+		Debug.Log("CollectableItem[ " + this.name + " ]/OnCollisionEnter, target = " + target.gameObject.name);
 		
 	}
 
