@@ -22,7 +22,8 @@ public class Flashlight : CollectableItem {
 	
 	public override void attach() {
 		_bulb.enabled = false;
-		attachToRightHand();
+//		attachToRightHand();
+		attachToLeftHand();
 	}
 
 	public override void equip() {

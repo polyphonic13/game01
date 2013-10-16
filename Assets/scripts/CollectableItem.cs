@@ -20,38 +20,14 @@ public class CollectableItem : InteractiveElement {
 	
 	private Player _player;
 	
-	private Rigidbody _rigidBody; 
+	public Rigidbody weight; 
 	private Vector3 _previousRigidBodyPos;
 	
 	void Awake() {
 		initCollectableItem();
-		var weight = transform.Search("weight");
-		if(weight != null) {
-			_rigidBody = transform.Search("weight").GetComponent<Rigidbody>();
-			if(_rigidBody != null) {
-				Debug.Log("CollectableItem[ " + this.name + " ]/Awake, _rigidBody = " + _rigidBody);
-				_previousRigidBodyPos = _rigidBody.position;
-			}
-		}
-	}
-	
-	void Update() {
-		if(_rigidBody != null) {
-			if(_rigidBody.transform.position != _previousRigidBodyPos) {
-				_previousRigidBodyPos = _rigidBody.position;
-				Debug.Log("new rigidbody position = " + _rigidBody.position.y + ", position = " + this.transform.position.y);
-				Vector3 curPos = this.transform.position;
-				Vector3 newPos = new Vector3(curPos.x, _rigidBody.position.y, curPos.z);
-//				this.transform.position = newPos;
-			}
-		}
-	}
-	
-	void OnCollisionEnter(Collision target) {
-		Debug.Log("CollectableItem[ " + this.name + " ]/OnCollisionEnter, target = " + target.gameObject.name);
 		
 	}
-
+	
 	public void initCollectableItem() {
 		init(2);
 		this.isCollected = false;
@@ -106,26 +82,21 @@ public class CollectableItem : InteractiveElement {
 		attachToRightHand();
 	}
 	 
-	public void attachToBackpack() {
-		var backpack = _player.transform.Search("backpack");
-		transform.position = backpack.transform.position;
-		transform.rotation = backpack.transform.rotation;
-		transform.parent = backpack.transform;
-	}
-
-	public void attachToPlayer() {
-		transform.position = _player.transform.position;
-		transform.rotation = _player.transform.rotation;
-		transform.parent = _player.transform;
-	}
-
 	public void attachToRightHand() {
-		var hand = Camera.main.transform.Search("right_hand");
+		attachToHand("right_hand");
+	}
+	
+	public void attachToLeftHand() {
+		attachToHand ("left_hand");
+	}
+	
+	public void attachToHand(string handName) {
+		var hand = Camera.main.transform.Search(handName);
 		transform.position = hand.transform.position;
 		transform.rotation = hand.transform.rotation;
 		transform.parent = hand.transform;	
 	}
-
+	
 	public void removeFromInventory() {
 		this.isCollected = false;
 	}
@@ -155,7 +126,12 @@ public class CollectableItem : InteractiveElement {
 		this.isCollected = false;
 		this.transform.localScale = _originalSize;
 		this.transform.parent = null;
-		
+
+		float right = this.transform.position.x;
+		float up = this.transform.position.y + 1.2f;
+		float forward = this.transform.position.z;
+		Rigidbody _weightClone = (Rigidbody) Instantiate(weight, this.transform.position, this.transform.rotation);
+		_weightClone.transform.parent = this.transform;
 		// gravity
 		/*
 		_rigidBody = this.gameObject.AddComponent<Rigidbody>();
