@@ -30,7 +30,7 @@ public class ItemWeight : MonoBehaviour {
 		}
 	}
 
-	void killSelf() {
+	public void killSelf() {
 		Destroy(this.gameObject);	
 	}
 }
