@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ItemWeight : MonoBehaviour {
 	
-	public string containerName = "";
+	public string targetContainerName = "";
 	public GameObject parentObject;
 	
 	private Rigidbody _rigidbody;

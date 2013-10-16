@@ -2,11 +2,11 @@ using UnityEngine;
 using System.Collections;
 
 public class CollectableItem : InteractiveElement {
-	// TBD: extend class with ContainableItem:
-	public string containerName = "";
 
 	public string itemName = "";
 	public string description = "";
+	// TBD: extend class with ContainableItem:
+	public string targetContainerName = "";
 	
 	public Texture iconTexture;
 	public Texture detailTexture;
@@ -133,7 +133,7 @@ public class CollectableItem : InteractiveElement {
 		float up = this.transform.position.y + 1.2f;
 		float forward = this.transform.position.z;
 		ItemWeight _weightClone = (ItemWeight) Instantiate(weight, this.transform.position, this.transform.rotation);
-		_weightClone.containerName = this.containerName;
+		_weightClone.targetContainerName = this.targetContainerName;
 		_weightClone.parentObject = this.gameObject;
 		_weightClone.transform.parent = this.transform;
 	}
