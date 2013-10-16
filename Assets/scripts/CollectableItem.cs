@@ -2,7 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class CollectableItem : InteractiveElement {
-	
+	// TBD: extend class with ContainableItem:
+	public string containerName = "";
+
 	public string itemName = "";
 	public string description = "";
 	
@@ -20,7 +22,7 @@ public class CollectableItem : InteractiveElement {
 	
 	private Player _player;
 	
-	public Rigidbody weight; 
+	public ItemWeight weight; 
 	private Vector3 _previousRigidBodyPos;
 	
 	void Awake() {
@@ -130,14 +132,10 @@ public class CollectableItem : InteractiveElement {
 		float right = this.transform.position.x;
 		float up = this.transform.position.y + 1.2f;
 		float forward = this.transform.position.z;
-		Rigidbody _weightClone = (Rigidbody) Instantiate(weight, this.transform.position, this.transform.rotation);
+		ItemWeight _weightClone = (ItemWeight) Instantiate(weight, this.transform.position, this.transform.rotation);
+		_weightClone.containerName = this.containerName;
+		_weightClone.parentObject = this.gameObject;
 		_weightClone.transform.parent = this.transform;
-		// gravity
-		/*
-		_rigidBody = this.gameObject.AddComponent<Rigidbody>();
-		_rigidBody.mass = 1;
-		_rigidBody.collisionDetectionMode =  CollisionDetectionMode.ContinuousDynamic;
-		*/
 	}
 	
 }

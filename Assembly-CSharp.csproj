@@ -86,6 +86,7 @@
      <Compile Include="Assets\scripts\RoomTrigger.cs" />
      <Compile Include="Assets\scripts\RoomTriggerParent.cs" />
      <Compile Include="Assets\scripts\TouchableChild.cs" />
+     <Compile Include="Assets\scripts\TouchableParent.cs" />
      <Compile Include="Assets\scripts\armatures\ArmatureParent.cs" />
      <Compile Include="Assets\scripts\armatures\ArmatureTrigger.cs" />
      <Compile Include="Assets\scripts\armatures\InteriorDoor.cs" />

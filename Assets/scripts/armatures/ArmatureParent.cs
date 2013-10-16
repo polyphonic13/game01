@@ -8,7 +8,7 @@ public class ArmatureParent : MonoBehaviour {
 	private Animation _animation;
 	
 	public void playAnimation(string clip, Transform bone = null) {
-		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
+//		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
 		if(bone != null) {
 			_animation [clip].AddMixingTransform(bone);
 		}
