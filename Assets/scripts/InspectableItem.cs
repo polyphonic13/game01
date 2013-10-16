@@ -18,7 +18,10 @@ public class InspectableItem : InteractiveElement {
 	}
 	
 	public void initTouchableChildren() {
-		foreach(Transform childTransform in transform) {
+		var childTransforms = gameObject.GetComponentsInChildren<Transform>();
+		
+		foreach(Transform childTransform in childTransforms) {
+			Debug.Log("  adding TouchableChild class to " + childTransform.gameObject.name);
 			TouchableChild touchableChild = childTransform.gameObject.AddComponent<TouchableChild>();
 			touchableChild.onChildTouched += this.onChildTouched;
 		}
