@@ -16,24 +16,30 @@ public class CollidableParent : MonoBehaviour {
 		var childTransforms = gameObject.GetComponentsInChildren<Transform>();
 		
 		foreach(Transform childTransform in childTransforms) {
-			Debug.Log("Adding CollidableChild to " + childTransform.gameObject.name);
+//			Debug.Log("Adding CollidableChild to " + childTransform.gameObject.name);
 			CollidableChild touchableChild = childTransform.gameObject.AddComponent<CollidableChild>();
 			touchableChild.onChildCollision += this.onChildCollision;
 		}
 	}
 	
 	public void onChildCollision(GameObject collisionTarget) {
+//		Debug.Log("CollidableParent/onChildCollision, collisionTarget = " + collisionTarget.name);
 		onCollision(collisionTarget);
 	}
 	
-	public void onCollision(GameObject target) {
-		Debug.Log("CollidableParent[ " + this.name + " ]/_onCollision, collisionTarget = " + target.name);
+	public virtual void onCollision(GameObject target) {
+		
+		handleColliderItemWeight(target);
+	}
+	
+	public void handleColliderItemWeight(GameObject target) {
+//		Debug.Log("CollidableParent[ " + this.name + " ]/_onCollision, collisionTarget = " + target.name);
 		if(target.name == "weight(Clone)") {
-			Debug.Log(" it is a weight");
+//			Debug.Log(" it is a weight");
 			ItemWeight itemWeight = target.GetComponent<ItemWeight>();
-			Debug.Log("  itemWeight = " + itemWeight + ", targetContainerName = " + itemWeight.targetContainerName);
+//			Debug.Log("  itemWeight = " + itemWeight + ", targetContainerName = " + itemWeight.targetContainerName);
 			if(itemWeight.targetContainerName != null && itemWeight.targetContainerName == this.name) {
-				Debug.Log("  itemWeight.parent = " + itemWeight.parentObject);
+//				Debug.Log("  itemWeight.parent = " + itemWeight.parentObject);
 				positionChild(itemWeight.parentObject);
 			}
 		}

@@ -7,8 +7,11 @@ public class EventCenter : MonoBehaviour {
     public delegate void NoteHandler(string msg, bool zoom = false);
 	public delegate void PlayerEnabler(bool enable);
 	public delegate void CameraZoomHandler(bool zoom);
+	
 	public delegate void EquipItemHandler(string itemName);
-
+	
+	public delegate void TriggerEventHandler(string evt);
+	
 	public event RoomHandler onRoomEntered;
 	public event RoomHandler onRoomExited;
 
@@ -18,6 +21,8 @@ public class EventCenter : MonoBehaviour {
 	public event CameraZoomHandler onCameraZoom;
 	
 	public event EquipItemHandler onEquipItem;
+	
+	public event TriggerEventHandler onTriggerEvent;
 	
 	private static EventCenter _instance;
 	private EventCenter() {}
@@ -64,6 +69,12 @@ public class EventCenter : MonoBehaviour {
 	public void equipItem(string itemName) {
 		if(onEquipItem != null){
 			onEquipItem(itemName);
+		}
+	}
+	
+	public void triggerEvent(string evt) {
+		if(onTriggerEvent != null) {
+			onTriggerEvent(evt);	
 		}
 	}
 }
