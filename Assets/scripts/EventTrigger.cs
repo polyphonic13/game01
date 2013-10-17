@@ -6,13 +6,8 @@ public class EventTrigger : MonoBehaviour {
 	public string[] eventNames;
 	
 	// Use this for initialization
-	void Start () {
+	void Awake() {
 		EventCenter.Instance.onTriggerEvent += this.onTriggerEvent;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 	
 	public void onTriggerEvent(string evt) {
