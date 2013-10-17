@@ -11,6 +11,7 @@ public class CameraZoom : MonoBehaviour {
 
 	void Start() {
 		camera = Camera.main;
+		EventCenter.Instance.onCameraZoom += onCameraZoom;
 	}
 	// Update is called once per frame
 	void Update() {
@@ -23,4 +24,9 @@ public class CameraZoom : MonoBehaviour {
 			camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,normal,Time.deltaTime*smooth);
 		}
 	}
+	
+	public void onCameraZoom(bool zoom) {
+		isZoomed = zoom;			
+	}
+	
 }
