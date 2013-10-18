@@ -319,6 +319,10 @@ ModelImporter:
     100626: main_hall_window_s_001
     100628: secret_room_nw_001
     100630: bedroom_n_wall_w_001
+    100632: bedroom_nw_wall_e_001
+    100634: bedroom_nw_secret_door
+    100636: Armature
+    100638: Bone
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -635,6 +639,10 @@ ModelImporter:
     400626: main_hall_window_s_001
     400628: secret_room_nw_001
     400630: bedroom_n_wall_w_001
+    400632: bedroom_nw_wall_e_001
+    400634: bedroom_nw_secret_door
+    400636: Armature
+    400638: Bone
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -948,6 +956,8 @@ ModelImporter:
     2300620: main_hall_window_s_001
     2300622: secret_room_nw_001
     2300624: bedroom_n_wall_w_001
+    2300626: bedroom_nw_wall_e_001
+    2300628: bedroom_nw_secret_door
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1261,6 +1271,8 @@ ModelImporter:
     3300620: main_hall_window_s_001
     3300622: secret_room_nw_001
     3300624: bedroom_n_wall_w_001
+    3300626: bedroom_nw_wall_e_001
+    3300628: bedroom_nw_secret_door
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1573,6 +1585,8 @@ ModelImporter:
     4300618: secret_room_nw_001
     4300620: Cube_012
     4300622: bedroom_n_wall_w_001
+    4300624: bedroom_nw_wall_e_001
+    4300626: bedroom_nw_secret_door
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1886,9 +1900,16 @@ ModelImporter:
     6400620: main_hall_window_s_001
     6400622: secret_room_nw_001
     6400624: bedroom_n_wall_w_001
+    6400626: bedroom_nw_wall_e_001
+    6400628: bedroom_nw_secret_door
     7400000: Default Take
+    7400002: bedroom_nw_secret_door_close
+    7400004: bedroom_nw_secret_door_cracked
+    7400006: bedroom_nw_secret_door_open
+    7400008: floor2_armature_default
     9500000: //RootNode
     11100000: //RootNode
+    13700000: bedroom_nw_secret_door
   materials:
     importMaterials: 1
     materialName: 0

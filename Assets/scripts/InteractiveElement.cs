@@ -5,7 +5,8 @@ public class InteractiveElement : MonoBehaviour {
 
 	public float interactDistance = 3;
 	public string containingRoom; 
-
+	public bool isEnabled = true;
+	
 	private MouseManager _mouseManager;
 	private int _activeCursor;
 
@@ -46,7 +47,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public virtual void OnMouseOver() {
-		if(this.isRoomActive) {
+		if(this.isRoomActive && this.isEnabled) {
 			mouseOver();
 		}
 	}

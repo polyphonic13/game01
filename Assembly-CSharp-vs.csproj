@@ -91,6 +91,7 @@
      <Compile Include="Assets\scripts\RoomTriggerParent.cs" />
      <Compile Include="Assets\scripts\armatures\ArmatureParent.cs" />
      <Compile Include="Assets\scripts\armatures\ArmatureTrigger.cs" />
+     <Compile Include="Assets\scripts\armatures\EventUnlockTrigger.cs" />
      <Compile Include="Assets\scripts\armatures\InteriorDoor.cs" />
      <Compile Include="Assets\scripts\armatures\LockableArmatureTrigger.cs" />
      <Compile Include="Assets\scripts\armatures\OpenCloseArmatureTrigger.cs" />
