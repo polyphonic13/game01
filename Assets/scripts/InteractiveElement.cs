@@ -47,6 +47,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public virtual void OnMouseOver() {
+//		Debug.Log("InteractiveElement[ " + this.name + " ]/OnMouseOver, isRoomActive = " + this.isRoomActive + ", isEnabled = " + this.isEnabled);
 		if(this.isRoomActive && this.isEnabled) {
 			mouseOver();
 		}
@@ -61,7 +62,9 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public virtual void OnMouseExit() {
-		mouseExit();
+		if(this.isRoomActive && this.isEnabled) {
+			mouseExit();
+		}
 	}
 
 	public void mouseExit() {

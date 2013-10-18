@@ -6,9 +6,13 @@ ModelImporter:
     100000: canvas
     100002: frame
     100004: //RootNode
+    100006: Armature
+    100008: Bone
     400000: canvas
     400002: frame
     400004: //RootNode
+    400006: Armature
+    400008: Bone
     2300000: canvas
     2300002: frame
     3300000: canvas
@@ -18,7 +22,11 @@ ModelImporter:
     6400000: canvas
     6400002: frame
     7400000: Default Take
+    7400002: rabbit_hunt_painting_default
+    7400004: rabbit_hunt_painting_fall
     9500000: //RootNode
+    13700000: canvas
+    13700002: frame
   materials:
     importMaterials: 1
     materialName: 0

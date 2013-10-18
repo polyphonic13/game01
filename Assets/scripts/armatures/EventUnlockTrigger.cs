@@ -6,9 +6,11 @@ public class EventUnlockTrigger : LockableArmatureTrigger {
 	public AnimationClip unlockClip;
 	
 	public string unlockEvent;
+	public string unlockMessage;
 	
 	void Awake() {
 		EventCenter.Instance.onTriggerEvent += 	onTriggerEvent;
+		init();
 	}
 	
 	void onTriggerEvent(string evt) {
@@ -20,8 +22,10 @@ public class EventUnlockTrigger : LockableArmatureTrigger {
 				sendAnimationToPops(unlockClip.name, parentBone);
 			}
 			var eventCenter = EventCenter.Instance;
-			eventCenter.addNote(this.name + " unlocked");
+//			eventCenter.addNote(this.name + " unlocked");
+			eventCenter.addNote(unlockMessage);
 			eventCenter.onTriggerEvent -= onTriggerEvent;
+			Debug.Log(" it is now unlocked: isLocked = " + this.isLocked + ", isEnabled = " + this.isEnabled);
 		}
 	}
 }
