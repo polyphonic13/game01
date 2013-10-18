@@ -3,21 +3,25 @@ using System.Collections;
 
 public class EventUnlockTrigger : LockableArmatureTrigger {
 	
+	public AnimationClip unlockClip;
+	
 	public string unlockEvent;
 	
-	void Start () {
+	void Awake() {
 		EventCenter.Instance.onTriggerEvent += 	onTriggerEvent;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	
 	void onTriggerEvent(string evt) {
+		Debug.Log("EventUnlockTrigger[ " + this.name + " ]/onTriggerEvent, evt = " + evt + ", unlockEvent = " + unlockEvent);
 		if(evt == unlockEvent) {
-			
-			EventCenter.Instance.onTriggerEvent -= onTriggerEvent;
+			this.isLocked = false;
+			this.isEnabled = true;
+			if(unlockClip != null) {
+				sendAnimationToPops(unlockClip.name, parentBone);
+			}
+			var eventCenter = EventCenter.Instance;
+			eventCenter.addNote(this.name + " unlocked");
+			eventCenter.onTriggerEvent -= onTriggerEvent;
 		}
 	}
 }
