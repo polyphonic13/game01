@@ -1,23 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EventAnimationParent : MonoBehaviour {
+public class EventAnimationParent : ArmatureParent {
 	
 	public AnimationClip animationClip;
 	public string eventName = "";
 	
-	// Use this for initialization
 	void Awake() {
+		initEventAnimationParent();
+	}
+	
+	public void initEventAnimationParent() {
 		if(eventName != "") {
 			EventCenter.Instance.onTriggerEvent += this.onTriggerEvent;
 		}
+		init();
 	}
-	
-	// Update is called once per frame
+
 	void onTriggerEvent(string evt) {
+		Debug.Log("EventAnimationParent[ " + this.name + " ]/onTriggerEvent, evt = " + evt + ", eventName = " + eventName + ", animationClip = " + animationClip.name);
 		if(evt == eventName && animationClip != null) {
-			_animation[animationClip.name].wrapMode = WrapMode.Once;
-			_animation.Play(animationClip.name);
+			playAnimation(animationClip.name);
 		}
 	}
 }

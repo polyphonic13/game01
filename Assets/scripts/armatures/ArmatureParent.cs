@@ -5,29 +5,34 @@ public class ArmatureParent : MonoBehaviour {
 
 	public AnimationClip defaultAnimation; 
 	
-	private Animation _animation;
+	public Animation animation { get; set; }
 	
 	public void playAnimation(string clip, Transform bone = null) {
 //		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
 		if(bone != null) {
-			_animation [clip].AddMixingTransform(bone);
+			animation [clip].AddMixingTransform(bone);
 		}
-		_animation [clip].wrapMode = WrapMode.Once;
-		_animation.Play(clip);
+		animation [clip].wrapMode = WrapMode.Once;
+		animation.Play(clip);
 	}
 
 	void Awake() {
-		}
-
-	void Start() {
-		_animation = GetComponent<Animation>();
+		init();
+	}
+	
+	public virtual void init() {
+		animation = GetComponent<Animation>();
+		playerDefaultAnimation();
+	}
+	
+	public void playerDefaultAnimation() {
 //		gameObject.SetActive(false);
 
 		if(defaultAnimation != null) {
 //			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
-			_animation [defaultAnimation.name].layer = 0;
-			_animation[defaultAnimation.name].wrapMode = WrapMode.Once;
-			_animation.Play(defaultAnimation.name);
+			animation [defaultAnimation.name].layer = 0;
+			animation[defaultAnimation.name].wrapMode = WrapMode.Once;
+			animation.Play(defaultAnimation.name);
 		}
 	}
 }
