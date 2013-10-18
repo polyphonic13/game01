@@ -8,12 +8,12 @@ public class ArmatureParent : MonoBehaviour {
 	public Animation animation { get; set; }
 	
 	public void playAnimation(string clip, Transform bone = null) {
-//		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone);
+		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone + ", animation = " + this.animation);
 		if(bone != null) {
-			animation [clip].AddMixingTransform(bone);
+			this.animation [clip].AddMixingTransform(bone);
 		}
-		animation [clip].wrapMode = WrapMode.Once;
-		animation.Play(clip);
+		this.animation [clip].wrapMode = WrapMode.Once;
+		this.animation.Play(clip);
 	}
 
 	void Awake() {
@@ -21,18 +21,19 @@ public class ArmatureParent : MonoBehaviour {
 	}
 	
 	public virtual void init() {
-		animation = GetComponent<Animation>();
-		playerDefaultAnimation();
+		this.animation = GetComponent<Animation>();
+		Debug.Log("ArmatureParent[ " + this.name + " ]/init, animation = " + this.animation);
+		playDefaultAnimation();
 	}
 	
-	public void playerDefaultAnimation() {
+	public void playDefaultAnimation() {
 //		gameObject.SetActive(false);
 
 		if(defaultAnimation != null) {
 //			Debug.Log("ArmatureParent/Start, defaultAnimation = " + defaultAnimation.name);
-			animation [defaultAnimation.name].layer = 0;
-			animation[defaultAnimation.name].wrapMode = WrapMode.Once;
-			animation.Play(defaultAnimation.name);
+			this.animation [defaultAnimation.name].layer = 0;
+			this.animation[defaultAnimation.name].wrapMode = WrapMode.Once;
+			this.animation.Play(defaultAnimation.name);
 		}
 	}
 }

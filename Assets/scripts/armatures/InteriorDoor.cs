@@ -15,5 +15,6 @@ public class InteriorDoor : ArmatureParent {
 			var frame = transform.Find("frame");
 			frame.renderer.material.mainTexture = frameTexture;
 		}
+		init ();
 	}
 }

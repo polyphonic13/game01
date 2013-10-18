@@ -2,9 +2,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/armatures/EventAnimationParent.cs">
     <Files>
-      <File FileName="Assets/scripts/armatures/EventAnimationParent.cs" Line="20" Column="2" />
-      <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="17" Column="3" />
+      <File FileName="Assets/scripts/Player.cs" Line="10" Column="1" />
+      <File FileName="Assets/scripts/InspectableItem.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/EventCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/LockableArmatureTrigger.cs" Line="8" Column="29" />
+      <File FileName="Assets/scripts/armatures/EventAnimationParent.cs" Line="7" Column="29" />
+      <File FileName="Assets/scripts/ItemContainer.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="13" Column="7" />
+      <File FileName="Assets/scripts/RoomTriggerParent.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/RoomTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="16" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,29 +23,6 @@
                   <Node name="EventAnimationParent.cs" selected="True" />
                 </Node>
                 <Node name="GUI" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-          <Node name="Assembly-CSharp-firstpass" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Plugins" expanded="True">
-                <Node name="whydoidoit.com" expanded="True">
-                  <Node name="Radical" expanded="True">
-                    <Node name="System" expanded="True" />
-                  </Node>
-                  <Node name="Serialization" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-          <Node name="Assembly-UnityScript-firstpass" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Standard Assets" expanded="True">
-                <Node name="Character Controllers" expanded="True">
-                  <Node name="Sources" expanded="True">
-                    <Node name="Scripts" expanded="True" />
-                  </Node>
-                </Node>
               </Node>
             </Node>
           </Node>
