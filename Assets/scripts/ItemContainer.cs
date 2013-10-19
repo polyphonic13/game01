@@ -28,7 +28,7 @@ public class ItemContainer : CollidableParent {
 			handleColliderItemWeight(collisionTarget);
 			
 			if(_collectedItems >= collectableItems.Length) {
-				EventCenter.Instance.triggerEvent(this.name + "_AllCollected");
+				EventCenter.Instance.collectedEvent(this.name + "_AllCollected");
 			}
 		}
 	}

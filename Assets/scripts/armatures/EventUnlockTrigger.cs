@@ -5,16 +5,20 @@ public class EventUnlockTrigger : LockableArmatureTrigger {
 	
 	public AnimationClip unlockClip;
 	
-	public string unlockEvent;
-	public string unlockMessage;
+	public string unlockEvent = "";
+	public string unlockMessage = "";
 	
 	void Awake() {
-		EventCenter.Instance.onTriggerEvent += 	onTriggerEvent;
-		init();
+		initEventUnlockTrigger();
 	}
 	
-	void onTriggerEvent(string evt) {
-		Debug.Log("EventUnlockTrigger[ " + this.name + " ]/onTriggerEvent, evt = " + evt + ", unlockEvent = " + unlockEvent);
+	public void initEventUnlockTrigger() {
+		EventCenter.Instance.onTriggerEvent += onUnlockEvent;
+		init ();	
+	}
+
+	public void onUnlockEvent(string evt) {
+		Debug.Log("EventUnlockTrigger[ " + this.name + " ]/onUnlockEvent, evt = " + evt + ", unlockEvent = " + unlockEvent);
 		if(evt == unlockEvent) {
 			this.isLocked = false;
 			this.isEnabled = true;
@@ -22,10 +26,19 @@ public class EventUnlockTrigger : LockableArmatureTrigger {
 				sendAnimationToPops(unlockClip.name, parentBone);
 			}
 			var eventCenter = EventCenter.Instance;
-//			eventCenter.addNote(this.name + " unlocked");
-			eventCenter.addNote(unlockMessage);
-			eventCenter.onTriggerEvent -= onTriggerEvent;
+			string msg;
+			if(unlockMessage != "") {
+				msg = unlockMessage;
+			} else {
+				msg = this.name + " unlocked";
+			}
+			eventCenter.addNote(msg);
+			houseKeeping();
 			Debug.Log(" it is now unlocked: isLocked = " + this.isLocked + ", isEnabled = " + this.isEnabled);
 		}
+	}
+	
+	public virtual void houseKeeping() {
+		EventCenter.Instance.onTriggerEvent -= onUnlockEvent;
 	}
 }

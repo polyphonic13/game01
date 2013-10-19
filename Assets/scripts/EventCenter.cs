@@ -11,6 +11,7 @@ public class EventCenter : MonoBehaviour {
 	public delegate void EquipItemHandler(string itemName);
 	
 	public delegate void TriggerEventHandler(string evt);
+	public delegate void CollectedEventHandler(string evt);
 	
 	public event RoomHandler onRoomEntered;
 	public event RoomHandler onRoomExited;
@@ -23,6 +24,7 @@ public class EventCenter : MonoBehaviour {
 	public event EquipItemHandler onEquipItem;
 	
 	public event TriggerEventHandler onTriggerEvent;
+	public event CollectedEventHandler onCollectedEvent; 
 	
 	private static EventCenter _instance;
 	private EventCenter() {}
@@ -75,6 +77,12 @@ public class EventCenter : MonoBehaviour {
 	public void triggerEvent(string evt) {
 		if(onTriggerEvent != null) {
 			onTriggerEvent(evt);	
+		}
+	}
+	
+	public void collectedEvent(string evt) {
+		if(onCollectedEvent != null) {
+			onCollectedEvent(evt);
 		}
 	}
 }
