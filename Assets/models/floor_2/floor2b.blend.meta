@@ -323,6 +323,13 @@ ModelImporter:
     100634: bedroom_nw_secret_door
     100636: Armature
     100638: Bone
+    100640: bedroom_nw_outter_wall
+    100642: secret_room_nw_ceiling
+    100644: secret_room_nw_floor
+    100646: secret_room_nw_wall_e
+    100648: secret_room_nw_wall_n
+    100650: secret_room_nw_wall_s
+    100652: secret_room_nw_wall_w
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -643,6 +650,13 @@ ModelImporter:
     400634: bedroom_nw_secret_door
     400636: Armature
     400638: Bone
+    400640: bedroom_nw_outter_wall
+    400642: secret_room_nw_ceiling
+    400644: secret_room_nw_floor
+    400646: secret_room_nw_wall_e
+    400648: secret_room_nw_wall_n
+    400650: secret_room_nw_wall_s
+    400652: secret_room_nw_wall_w
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -958,6 +972,13 @@ ModelImporter:
     2300624: bedroom_n_wall_w_001
     2300626: bedroom_nw_wall_e_001
     2300628: bedroom_nw_secret_door
+    2300630: bedroom_nw_outter_wall
+    2300632: secret_room_nw_ceiling
+    2300634: secret_room_nw_floor
+    2300636: secret_room_nw_wall_e
+    2300638: secret_room_nw_wall_n
+    2300640: secret_room_nw_wall_s
+    2300642: secret_room_nw_wall_w
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1273,6 +1294,13 @@ ModelImporter:
     3300624: bedroom_n_wall_w_001
     3300626: bedroom_nw_wall_e_001
     3300628: bedroom_nw_secret_door
+    3300630: bedroom_nw_outter_wall
+    3300632: secret_room_nw_ceiling
+    3300634: secret_room_nw_floor
+    3300636: secret_room_nw_wall_e
+    3300638: secret_room_nw_wall_n
+    3300640: secret_room_nw_wall_s
+    3300642: secret_room_nw_wall_w
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1587,6 +1615,13 @@ ModelImporter:
     4300622: bedroom_n_wall_w_001
     4300624: bedroom_nw_wall_e_001
     4300626: bedroom_nw_secret_door
+    4300628: secret_room_nw_wall_w
+    4300630: secret_room_nw_wall_e
+    4300632: secret_room_nw_wall_s
+    4300634: secret_room_nw_floor
+    4300636: secret_room_nw_ceiling
+    4300638: bedroom_nw_outter_wall
+    4300640: secret_room_nw_wall_n
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1902,6 +1937,13 @@ ModelImporter:
     6400624: bedroom_n_wall_w_001
     6400626: bedroom_nw_wall_e_001
     6400628: bedroom_nw_secret_door
+    6400630: bedroom_nw_outter_wall
+    6400632: secret_room_nw_ceiling
+    6400634: secret_room_nw_floor
+    6400636: secret_room_nw_wall_e
+    6400638: secret_room_nw_wall_n
+    6400640: secret_room_nw_wall_s
+    6400642: secret_room_nw_wall_w
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked

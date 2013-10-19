@@ -16,10 +16,14 @@ public class CollidableParent : MonoBehaviour {
 		var childTransforms = gameObject.GetComponentsInChildren<Transform>();
 		
 		foreach(Transform childTransform in childTransforms) {
-//			Debug.Log("Adding CollidableChild to " + childTransform.gameObject.name);
-			CollidableChild touchableChild = childTransform.gameObject.AddComponent<CollidableChild>();
-			touchableChild.onChildCollision += this.onChildCollision;
+			initCollidableChild(childTransform.gameObject);
 		}
+	}
+	
+	public void initCollidableChild(GameObject child) {
+		Debug.Log("Adding CollidableChild to " + child.name);
+		CollidableChild touchableChild = child.AddComponent<CollidableChild>();
+		touchableChild.onChildCollision += this.onChildCollision;
 	}
 	
 	public void onChildCollision(GameObject collisionTarget) {

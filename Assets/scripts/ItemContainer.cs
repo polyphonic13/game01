@@ -24,6 +24,7 @@ public class ItemContainer : CollidableParent {
 				Debug.Log("  triggering: " + evt);
 				EventCenter.Instance.triggerEvent(evt);
 				_collectedItems++;
+				initCollidableChild(collisionTarget.transform.parent.transform.gameObject);
 			}
 			handleColliderItemWeight(collisionTarget);
 			
