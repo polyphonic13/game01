@@ -33,7 +33,7 @@ public class InventoryManager {
 	}
 	
 	public void addItem(CollectableItem item) {
-		Debug.Log("_items manager/addItem, item = " + item.name + ", description = " + item.description);
+//		Debug.Log("_items manager/addItem, item = " + item.name + ", description = " + item.description);
 		EventCenter.Instance.addNote(item.itemName + " added to inventory");
 		_itemsHash.Add(item.name, item);
 	}
@@ -107,7 +107,7 @@ public class InventoryManager {
 	}
 	
 	public void drawDetail() {
-		Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
+//		Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
 		if(_detailInventoryItem != null) {
 			var detailImgLeft = Screen.width / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
 			var detailImgTop = Screen.height / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;
