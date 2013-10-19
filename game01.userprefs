@@ -7,9 +7,10 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
-                <Node name="armatures" expanded="True" />
+                <Node name="armatures" expanded="True">
+                  <Node name="CollectedAnimationParent.cs" selected="True" />
+                </Node>
                 <Node name="GUI" expanded="True" />
-                <Node name="ItemContainer.cs" selected="True" />
               </Node>
             </Node>
           </Node>

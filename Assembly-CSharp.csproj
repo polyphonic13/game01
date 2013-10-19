@@ -91,6 +91,7 @@
      <Compile Include="Assets\scripts\RoomTriggerParent.cs" />
      <Compile Include="Assets\scripts\armatures\ArmatureParent.cs" />
      <Compile Include="Assets\scripts\armatures\ArmatureTrigger.cs" />
+     <Compile Include="Assets\scripts\armatures\CollectedAnimationParent.cs" />
      <Compile Include="Assets\scripts\armatures\ContainerUnlockTrigger.cs" />
      <Compile Include="Assets\scripts\armatures\EventAnimationParent.cs" />
      <Compile Include="Assets\scripts\armatures\EventUnlockTrigger.cs" />

@@ -8,7 +8,7 @@ public class ArmatureParent : MonoBehaviour {
 	public Animation animation { get; set; }
 	
 	public void playAnimation(string clip, Transform bone = null) {
-		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone + ", animation = " + this.animation);
+//		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone + ", animation = " + this.animation);
 		if(bone != null) {
 			this.animation [clip].AddMixingTransform(bone);
 		}
@@ -22,7 +22,7 @@ public class ArmatureParent : MonoBehaviour {
 	
 	public virtual void init() {
 		this.animation = GetComponent<Animation>();
-		Debug.Log("ArmatureParent[ " + this.name + " ]/init, animation = " + this.animation);
+//		Debug.Log("ArmatureParent[ " + this.name + " ]/init, animation = " + this.animation);
 		playDefaultAnimation();
 	}
 	

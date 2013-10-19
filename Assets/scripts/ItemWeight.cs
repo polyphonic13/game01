@@ -8,15 +8,9 @@ public class ItemWeight : MonoBehaviour {
 	
 	private Rigidbody _rigidbody;
 	
-	// Use this for initialization
-	void Start () {
+	void Awake() {
 		_rigidbody = GetComponent<Rigidbody>();
 //		Debug.Log("ItemWeight/Start, _rigidBody = " + _rigidbody);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 	
 	void OnCollisionEnter(Collision target) {

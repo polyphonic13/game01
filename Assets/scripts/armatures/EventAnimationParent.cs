@@ -17,7 +17,7 @@ public class EventAnimationParent : ArmatureParent {
 		init();
 	}
 
-	void onTriggerEvent(string evt) {
+	public void onTriggerEvent(string evt) {
 		Debug.Log("EventAnimationParent[ " + this.name + " ]/onTriggerEvent, evt = " + evt + ", eventName = " + eventName + ", animationClip = " + animationClip.name);
 		if(evt == eventName && animationClip != null) {
 			playAnimation(animationClip.name);
