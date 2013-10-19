@@ -28,7 +28,6 @@ public class CollidableParent : MonoBehaviour {
 	}
 	
 	public virtual void onCollision(GameObject target) {
-		
 		handleColliderItemWeight(target);
 	}
 	

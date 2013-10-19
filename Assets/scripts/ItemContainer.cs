@@ -3,12 +3,11 @@ using System.Collections;
 
 public class ItemContainer : CollidableParent {
 	
-//	public ArrayList collectableItems;
 	public string[] collectableItems; 
 	
 	private GameObject _containerSpot;
+	private int _collectedItems = 0;
 	
-	// Use this for initialization
 	void Awake() {
 		init ();
 		_containerSpot = this.transform.Search("containerSpot").gameObject;
@@ -21,15 +20,19 @@ public class ItemContainer : CollidableParent {
 		foreach(string ci in collectableItems) {
 			Debug.Log(" ci = " + ci);
 			if(parentName == ci) {
-				string evt = ci + "Collected";
+				string evt = ci + "_Collected";
 				Debug.Log("  triggering: " + evt);
 				EventCenter.Instance.triggerEvent(evt);
+				_collectedItems++;
 			}
 			handleColliderItemWeight(collisionTarget);
+			
+			if(_collectedItems >= collectableItems.Length) {
+				EventCenter.Instance.triggerEvent(this.name + "_AllCollected");
+			}
 		}
 	}
 
-	// Update is called once per frame
 	public override void positionChild(GameObject child) {
 		Debug.Log("ItemContainer/positionChild, child = " + child.name + ", _containerSpot = " + _containerSpot.name);
 		child.transform.parent = _containerSpot.transform;
