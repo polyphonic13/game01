@@ -3,6 +3,10 @@ using System.Collections;
 
 public class InventoryManager {
 	
+	public bool showInventory { get; set; }
+	public bool showDetail { get; set; }
+	public bool houseKeepingNeeded { get; set; }
+
 	private const float DETAIL_IMG_WIDTH_HEIGHT = 500;
 	private const float ICON_WIDTH_HEIGHT = 100;
 	private const int ITEMS_WIDTH = 5;
@@ -19,10 +23,6 @@ public class InventoryManager {
 
 	private string _itemToDelete = ""; 
 	
-	public bool showInventory { get; set; }
-	public bool showDetail { get; set; }
-	public bool houseKeepingNeeded { get; set; }
-
 	public void init(GUIStyle style) {
 		this.showInventory = false;
 		this.showDetail = false;
@@ -56,7 +56,7 @@ public class InventoryManager {
 		}
 	}
 
-	public void drawInventory () {
+	public void drawSummary () {
 		int j;
 		int k;
 //		InventoryItem currentInventoryItem = null;

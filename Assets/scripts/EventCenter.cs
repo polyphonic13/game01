@@ -4,7 +4,7 @@ using System.Collections;
 public class EventCenter : MonoBehaviour {
 
 	public delegate void RoomHandler(string room);
-    public delegate void NoteHandler(string msg, bool zoom = false);
+    public delegate void NoteHandler(string msg = "", bool zoom = false);
 	public delegate void PlayerEnabler(bool enable);
 	public delegate void CameraZoomHandler(bool zoom);
 	
@@ -17,7 +17,8 @@ public class EventCenter : MonoBehaviour {
 	public event RoomHandler onRoomExited;
 
     public event NoteHandler onAddNote; 
-
+	public event NoteHandler onRemoveNote; 
+	
 	public event PlayerEnabler onEnablePlayer; 
 	public event CameraZoomHandler onCameraZoom;
 	
@@ -55,7 +56,13 @@ public class EventCenter : MonoBehaviour {
 			onAddNote(msg, zoom);
 		}
 	}
-
+	
+	public void removeNote(string msg = "", bool zoom = false) {
+		if(onRemoveNote != null) {
+			onRemoveNote(msg, zoom);
+		}
+	}
+	
 	public void enablePlayer(bool enable) {
 		if(onEnablePlayer != null) {
 			onEnablePlayer(enable);

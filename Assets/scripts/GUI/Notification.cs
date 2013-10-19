@@ -18,12 +18,17 @@ public class Notification {
 		this.showNote = false;
 		_eventCenter = EventCenter.Instance;
 		_eventCenter.onAddNote += this.onAddNote;
+		_eventCenter.onRemoveNote += this.onRemoveNote;
 	}
 	
     public void onAddNote(string msg, bool zoom = false) {
         addNote(msg, zoom);
     }
-
+	
+	public void onRemoveNote(string msg = "", bool zoom = false) {
+		destroy();
+	}
+	
 	public void addNote(string msg, bool zoom = false) {
 		// Debug.Log("Notification/draw, msg = " + msg);
 		_content = msg;
