@@ -5,8 +5,6 @@ public class InspectableItem : InteractiveElement {
 
 	public string description = "";
 
-	private const int CURSOR_TYPE = 3;
-
 	void Awake() {
 //		Debug.Log("InspectableItem[ " + this.name + " ]/Awake");
 		initInteractiveElement();

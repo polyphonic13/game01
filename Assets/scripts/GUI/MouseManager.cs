@@ -6,16 +6,17 @@ public class MouseManager : MonoBehaviour {
 	public int DEFAULT_CURSOR = 0;
 	public int INTERACT_CURSOR = 1;
 	public int COLLECT_CURSOR = 2;
-	public int MAGNIFY_CURSOR = 3;
-	public int PUSH_CURSOR = 4;
+	public int PUSH_CURSOR = 3;
+	public int MAGNIFY_CURSOR = 4;
 
 	public Texture2D[] cursors;
-	public string[] cursorDescriptions = new string[5] { 
-		"Default",
-		"Object can be interacted with",
-		"Object can collected",
-		"Object can be inspected for more information",
-		"Object can be pushed or pulled"
+	
+	private string[] _cursorDescriptions = new string[5] { 
+		"Default look / move",
+		"Can be interacted with",
+		"Can be collected",
+		"Push or pull object",
+		"Inspect for more information"
 	};
 	
 	public float cursorWidth = 50;
@@ -34,17 +35,21 @@ public class MouseManager : MonoBehaviour {
 			return _instance;
 		}
 	}
-
-	public void Start() {
-//		Debug.Log("MouseManager/Start");
+	
+	public string[] getCursorDescriptions() {
+		return _cursorDescriptions;
+	}
+	
+	public void Awake() {
+		Debug.Log("MouseManager/Awake, _cursorDescriptions.Length = " + _cursorDescriptions.Length);
 		Screen.showCursor = false;
 	}
 
 	public void init() {
- 		cursorDescriptions = new string[4]; 
 	}
 
 	public void drawCursor() {
+		Debug.Log("MouseManager/drawCursor, cursorType = " + cursorType);
 		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2,(Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursors[cursorType]);
 	}
 

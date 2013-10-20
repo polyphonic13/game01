@@ -9,7 +9,8 @@ public class Menu {
 	private const string CONTROLS = "Controls";
 	private const string ICONS = "Icons";
 	
-	private const float ICON_DESCRIPTION_WIDTH = 300;
+	private const float ICON_WIDTH = 50;
+	private const float ICON_DESCRIPTION_WIDTH = 400;
 	private const float ICON_DESCRIPTION_HEIGHT = 50;
 	
 	private GUIStyle _style;
@@ -28,11 +29,16 @@ public class Menu {
 	}
 	
 	public void drawCursors() {
-		string description;
 		MouseManager mouseManager = MouseManager.Instance;
-		for(int i = 0; i < mouseManager.cursorDescriptions.Length; i++) {
-			description = mouseManager.cursorDescriptions[i];
-			GUI.Box(new Rect(Screen.width/2 + 100, 100 + (i* (ICON_DESCRIPTION_HEIGHT + 10)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), description);
+		string[] descriptions = mouseManager.getCursorDescriptions();
+		Texture2D[] icons = mouseManager.cursors;
+		Debug.Log("Menu/drawCursors, descriptions.length = " + descriptions.Length);
+
+		for(int i = 0; i < descriptions.Length; i++) {
+		    GUI.skin.label.alignment = TextAnchor.LowerLeft;
+			GUI.DrawTexture (new Rect (Screen.width/2 + 100, ICON_DESCRIPTION_HEIGHT + (i* (ICON_DESCRIPTION_HEIGHT + 10)), ICON_WIDTH, ICON_DESCRIPTION_HEIGHT), icons[i]);
+			GUI.Label(new Rect(Screen.width/2 + 200, ICON_DESCRIPTION_HEIGHT + (i* (ICON_DESCRIPTION_HEIGHT + 10)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), descriptions[i]);
+			
 		}
 	}
 	
