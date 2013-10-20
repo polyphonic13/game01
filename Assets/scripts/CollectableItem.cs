@@ -112,11 +112,11 @@ public class CollectableItem : InteractiveElement {
 		use();
 	}
 
-	public void use() {
+	public void use(string tgt = "right_hand") {
 //		Debug.Log("CollectableItem[ " + this.name + " ]/use");
 		this.isEquipped = true;
 		this.transform.localScale = _originalSize;
-		attachToRightHand();
+		attachToObject(tgt);
 	}
 	
 	public virtual void unequip() {

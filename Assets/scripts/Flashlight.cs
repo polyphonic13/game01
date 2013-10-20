@@ -29,7 +29,7 @@ public class Flashlight : CollectableItem {
 	public override void equip() {
 //		Debug.Log("Flashlight/equip");
 		_bulb.enabled = true;
-		use();
+		use("left_hand");
 	}
 
 	public override void unequip() {
