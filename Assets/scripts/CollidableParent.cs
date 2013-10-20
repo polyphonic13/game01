@@ -21,7 +21,7 @@ public class CollidableParent : MonoBehaviour {
 	}
 	
 	public void initCollidableChild(GameObject child) {
-		Debug.Log("Adding CollidableChild to " + child.name);
+//		Debug.Log("Adding CollidableChild to " + child.name);
 		CollidableChild touchableChild = child.AddComponent<CollidableChild>();
 		touchableChild.onChildCollision += this.onChildCollision;
 	}
