@@ -57,6 +57,7 @@ public class InventoryManager {
 	}
 
 	public void drawSummary () {
+		EventCenter.Instance.enablePlayer(false);
 		int j;
 		int k;
 //		InventoryItem currentInventoryItem = null;
@@ -107,6 +108,7 @@ public class InventoryManager {
 	}
 	
 	public void drawDetail() {
+		EventCenter.Instance.enablePlayer(false);
 //		Debug.Log("drawDetail = " + this.showDetail + ", _detailInventoryItem = " + _detailInventoryItem);
 		if(_detailInventoryItem != null) {
 			var detailImgLeft = Screen.width / 2 - DETAIL_IMG_WIDTH_HEIGHT / 2;

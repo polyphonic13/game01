@@ -18,7 +18,7 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void init(int activeCursor = 1) {
 //		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
-		_mouseManager = GameObject.Find("player").GetComponent<MouseManager>();
+		_mouseManager = MouseManager.Instance;
 		_activeCursor = activeCursor;
 
 		if(this.transform.tag == "persistentItem") {
@@ -68,6 +68,6 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseExit() {
-		_mouseManager.setCursorType(0);
+		_mouseManager.setCursorType(MouseManager.Instance.DEFAULT_CURSOR);
 	}
 }

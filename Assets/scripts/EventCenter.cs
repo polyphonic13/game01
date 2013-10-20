@@ -5,7 +5,7 @@ public class EventCenter : MonoBehaviour {
 
 	public delegate void RoomHandler(string room);
     public delegate void NoteHandler(string msg = "", bool zoom = false);
-	public delegate void PlayerEnabler(bool enable);
+	public delegate void PlayerHandler(bool enable);
 	public delegate void CameraZoomHandler(bool zoom);
 	
 	public delegate void EquipItemHandler(string itemName);
@@ -19,7 +19,8 @@ public class EventCenter : MonoBehaviour {
     public event NoteHandler onAddNote; 
 	public event NoteHandler onRemoveNote; 
 	
-	public event PlayerEnabler onEnablePlayer; 
+	public event PlayerHandler onEnablePlayer; 
+	
 	public event CameraZoomHandler onCameraZoom;
 	
 	public event EquipItemHandler onEquipItem;

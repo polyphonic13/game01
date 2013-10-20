@@ -3,15 +3,37 @@ using System.Collections;
 
 public class MouseManager : MonoBehaviour {
 
-	public Texture2D defaultCursor;
-	public Texture2D handCursor;
-	public Texture2D pinchCursor;
-	public Texture2D magnifyCursor;
+	public int DEFAULT_CURSOR = 0;
+	public int INTERACT_CURSOR = 1;
+	public int COLLECT_CURSOR = 2;
+	public int MAGNIFY_CURSOR = 3;
+	public int PUSH_CURSOR = 4;
 
+	public Texture2D[] cursors;
+	public string[] cursorDescriptions = new string[5] { 
+		"Default",
+		"Object can be interacted with",
+		"Object can collected",
+		"Object can be inspected for more information",
+		"Object can be pushed or pulled"
+	};
+	
 	public float cursorWidth = 50;
 	public float cursorHeight = 50;
 
 	public int cursorType = 0;
+	
+	private static MouseManager _instance;
+	private MouseManager() {}
+	
+	public static MouseManager Instance {
+		get {
+			if(_instance == null) {
+	                _instance = GameObject.FindObjectOfType(typeof(MouseManager)) as MouseManager;      
+			}
+			return _instance;
+		}
+	}
 
 	public void Start() {
 //		Debug.Log("MouseManager/Start");
@@ -19,28 +41,11 @@ public class MouseManager : MonoBehaviour {
 	}
 
 	public void init() {
-
+ 		cursorDescriptions = new string[4]; 
 	}
 
 	public void drawCursor() {
-		Texture2D cursorToDraw = defaultCursor;
-		if(cursorType > 0) {
-			switch(cursorType) {
-				case 1:
-					cursorToDraw = handCursor;
-					break;
-				case 2:
-					cursorToDraw = pinchCursor;
-					break;
-				case 3:
-					cursorToDraw = magnifyCursor;
-					break;
-				default:
-					cursorToDraw = defaultCursor;
-					break;
-			}
-		}
-		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2,(Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursorToDraw);
+		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2,(Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursors[cursorType]);
 	}
 
 	public void setCursorType(int type) {

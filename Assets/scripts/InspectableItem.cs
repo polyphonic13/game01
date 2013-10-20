@@ -13,7 +13,8 @@ public class InspectableItem : InteractiveElement {
 	}
 
 	public void initInteractiveElement() {
-		init(3);
+		init(MouseManager.Instance.MAGNIFY_CURSOR);
+//		init(3);
 	}
 	
 	public void OnMouseDown() {

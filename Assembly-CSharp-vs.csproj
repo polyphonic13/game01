@@ -99,6 +99,7 @@
      <Compile Include="Assets\scripts\armatures\InteriorDoor.cs" />
      <Compile Include="Assets\scripts\armatures\LockableArmatureTrigger.cs" />
      <Compile Include="Assets\scripts\armatures\OpenCloseArmatureTrigger.cs" />
+     <Compile Include="Assets\scripts\armatures\PushPullTrigger.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\shaders\glass.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />

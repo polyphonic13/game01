@@ -31,7 +31,7 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void initCollectableItem() {
-		init(2);
+		init(MouseManager.Instance.COLLECT_CURSOR);
 		this.isCollected = false;
 		this.isEquipped = false;
 		_player = GameObject.Find("player").GetComponent<Player>();

@@ -15,6 +15,17 @@ ModelImporter:
     100018: Cone
     100020: Cube_004
     100022: Icosphere
+    100024: axles
+    100026: back_legs
+    100028: body
+    100030: ears
+    100032: eyes
+    100034: frame
+    100036: front_legs
+    100038: handle
+    100040: head
+    100042: tail
+    100044: wheels
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -27,6 +38,17 @@ ModelImporter:
     400018: Cone
     400020: Cube_004
     400022: Icosphere
+    400024: axles
+    400026: back_legs
+    400028: body
+    400030: ears
+    400032: eyes
+    400034: frame
+    400036: front_legs
+    400038: handle
+    400040: head
+    400042: tail
+    400044: wheels
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -38,6 +60,17 @@ ModelImporter:
     2300016: Cone
     2300018: Cube_004
     2300020: Icosphere
+    2300022: axles
+    2300024: back_legs
+    2300026: body
+    2300028: ears
+    2300030: eyes
+    2300032: frame
+    2300034: front_legs
+    2300036: handle
+    2300038: head
+    2300040: tail
+    2300042: wheels
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -49,6 +82,17 @@ ModelImporter:
     3300016: Cone
     3300018: Cube_004
     3300020: Icosphere
+    3300022: axles
+    3300024: back_legs
+    3300026: body
+    3300028: ears
+    3300030: eyes
+    3300032: frame
+    3300034: front_legs
+    3300036: handle
+    3300038: head
+    3300040: tail
+    3300042: wheels
     4300000: Cylinder_003
     4300002: Cylinder_002
     4300004: Cube_003
@@ -60,6 +104,17 @@ ModelImporter:
     4300016: Icosphere
     4300018: Cube_004
     4300020: Cone
+    4300022: eyes
+    4300024: ears
+    4300026: tail
+    4300028: head
+    4300030: body
+    4300032: handle
+    4300034: back_legs
+    4300036: front_legs
+    4300038: wheels
+    4300040: axles
+    4300042: frame
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -7,37 +7,45 @@ public class Player : MonoBehaviour {
 	
 	public InventoryManager inventory;
 	public Notification notification;
-	public MouseManager mouseManager;
-
+	public Menu menu;
+	
 	public GUIStyle basicStyle;
 	
 	Camera camera;
 	
-	void Start() 
-	{
+	void Awake() {
 		camera = Camera.main;
 		inventory = new InventoryManager();
 		inventory.init(basicStyle);
 		notification = new Notification();
 		notification.init(basicStyle);
-		mouseManager = GetComponent<MouseManager>();
+		menu = new Menu();
+		menu.init(basicStyle);
+		
 		EventCenter.Instance.onEnablePlayer += this.onEnablePlayer;
 	}
 	
 	void Update() {
 		if(Input.GetKeyDown(KeyCode.Q)) {
-			 inventory.showInventory = !inventory.showInventory;
+			inventory.showInventory = !inventory.showInventory;
 			inventory.showDetail = false;
-			this.enablePlayer(!inventory.showInventory);
-		} else if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Escape)) {
+		} else if(Input.GetKeyDown(KeyCode.M)) {
+			menu.showMenu = !menu.showMenu;
+		} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
+			inventory.showDetail = false;
+			inventory.showInventory = false;
+			menu.showMenu = false;
 			if(notification.showNote) {
 				notification.destroy();
 			}
 		}
+		if(!inventory.showDetail && !inventory.showInventory && !menu.showMenu && !notification.showNote) {
+			enablePlayer(true);
+		}
 	}
 	
 	void OnGUI () {
-		mouseManager.drawCursor ();
+		MouseManager.Instance.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
@@ -46,6 +54,8 @@ public class Player : MonoBehaviour {
 			}
 		} else if (inventory.showDetail) {
 			inventory.drawDetail ();
+		} else if(menu.showMenu) {
+			menu.draw();
 		} else if (notification.showNote) {
 			notification.drawNote ();
 		} else if (inventory.houseKeepingNeeded) {
@@ -65,6 +75,12 @@ public class Player : MonoBehaviour {
 		cameraMouseLook.isEnabled = enable;
 		CharacterMotor character = GetComponent<CharacterMotor>();
 		character.SetControllable(enable);
+		
+		if(enable) {
+			inventory.showDetail = false;
+			inventory.showInventory = false;
+			menu.showMenu = false;
+		}
 	}
 }
 

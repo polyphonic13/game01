@@ -7,9 +7,10 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
-                <Node name="armatures" expanded="True" />
+                <Node name="armatures" expanded="True">
+                  <Node name="InteriorDoor.cs" selected="True" />
+                </Node>
                 <Node name="GUI" expanded="True" />
-                <Node name="CollidableParent.cs" selected="True" />
               </Node>
             </Node>
           </Node>
