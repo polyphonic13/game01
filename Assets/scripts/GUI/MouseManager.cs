@@ -41,7 +41,7 @@ public class MouseManager : MonoBehaviour {
 	}
 	
 	public void Awake() {
-		Debug.Log("MouseManager/Awake, _cursorDescriptions.Length = " + _cursorDescriptions.Length);
+//		Debug.Log("MouseManager/Awake, _cursorDescriptions.Length = " + _cursorDescriptions.Length);
 		Screen.showCursor = false;
 	}
 
@@ -49,7 +49,7 @@ public class MouseManager : MonoBehaviour {
 	}
 
 	public void drawCursor() {
-		Debug.Log("MouseManager/drawCursor, cursorType = " + cursorType);
+//		Debug.Log("MouseManager/drawCursor, cursorType = " + cursorType);
 		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2,(Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursors[cursorType]);
 	}
 
