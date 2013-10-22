@@ -10,6 +10,8 @@ ModelImporter:
     100008: headboard
     100010: mattress
     100012: rear_legs
+    100014: canopy
+    100016: Cylinder
     400000: base
     400002: //RootNode
     400004: footboard
@@ -17,30 +19,40 @@ ModelImporter:
     400008: headboard
     400010: mattress
     400012: rear_legs
+    400014: canopy
+    400016: Cylinder
     2300000: base
     2300002: footboard
     2300004: front_legs
     2300006: headboard
     2300008: mattress
     2300010: rear_legs
+    2300012: canopy
+    2300014: Cylinder
     3300000: base
     3300002: footboard
     3300004: front_legs
     3300006: headboard
     3300008: mattress
     3300010: rear_legs
+    3300012: canopy
+    3300014: Cylinder
     4300000: mattress
     4300002: rear_legs
     4300004: headboard
     4300006: footboard
     4300008: front_legs
     4300010: base
+    4300012: canopy
+    4300014: Cylinder
     6400000: base
     6400002: footboard
     6400004: front_legs
     6400006: headboard
     6400008: mattress
     6400010: rear_legs
+    6400012: canopy
+    6400014: Cylinder
     7400000: Default Take
     9500000: //RootNode
   materials:
