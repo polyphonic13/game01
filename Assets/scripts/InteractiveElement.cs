@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InteractiveElement : MonoBehaviour {
 
-	public float interactDistance = 3;
+	public float interactDistance = 4;
 	public string containingRoom; 
 	public bool isEnabled = true;
 	

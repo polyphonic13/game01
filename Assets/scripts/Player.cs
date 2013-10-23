@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 		notification.init(basicStyle);
 		menu = new Menu();
 		menu.init(basicStyle);
-		
+		menu.showMenu = true;
 		EventCenter.Instance.onEnablePlayer += this.onEnablePlayer;
 	}
 	
@@ -75,6 +75,7 @@ public class Player : MonoBehaviour {
 		cameraMouseLook.isEnabled = enable;
 		CharacterMotor character = GetComponent<CharacterMotor>();
 		character.SetControllable(enable);
+		Screen.lockCursor = enable;
 		
 		if(enable) {
 			inventory.showDetail = false;
