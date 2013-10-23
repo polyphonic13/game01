@@ -22,7 +22,9 @@ public class Player : MonoBehaviour {
 		menu = new Menu();
 		menu.init(basicStyle);
 		menu.showMenu = true;
-		EventCenter.Instance.onEnablePlayer += this.onEnablePlayer;
+		EventCenter eventCenter = EventCenter.Instance;
+		eventCenter.onEnablePlayer += this.onEnablePlayer;
+		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
 	}
 	
 	void Update() {
@@ -61,6 +63,12 @@ public class Player : MonoBehaviour {
 		} else if (inventory.houseKeepingNeeded) {
 			inventory.houseKeeping ();
 		}
+	}
+	
+	public void onMouseSensitivityChange(float sensitivity) {
+		MouseLook mouseLook = GetComponent<MouseLook>();
+		Debug.Log("Player/onMouseSensitivityChange, sensitivity = " + sensitivity);
+		mouseLook.sensitivityX = sensitivity;
 	}
 	
 	public void onEnablePlayer(bool enable) {

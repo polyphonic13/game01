@@ -34,6 +34,11 @@ public class Menu {
 	private const float ICON_WIDTH = 50;
 	private const float ICON_DESCRIPTION_WIDTH = 400;
 	private const float ICON_DESCRIPTION_HEIGHT = 50;
+
+	private const float MIN_MOUSE_SENSITIVITY = 1f;
+	private const float MAX_MOUSE_SENSITIVITY = 10f;
+	
+	private float _mouseSensitivity = 2f;
 	
 	private GUIStyle _style;
 	
@@ -58,13 +63,17 @@ public class Menu {
 			GUI.skin.label.alignment = TextAnchor.LowerLeft;
 			GUI.Label(new Rect(50, ICON_DESCRIPTION_HEIGHT + (i * (ICON_DESCRIPTION_HEIGHT + 20)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), _controlKeys[i] + ": " + _controlDescriptions[i]);
 		}
+		GUI.Label(new Rect(50, ((_controlKeys.Length + 1) * (ICON_DESCRIPTION_HEIGHT + 20)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), "Mouse X sensitivity: " + Mathf.Floor(_mouseSensitivity));
+		
+		_mouseSensitivity =  Mathf.Floor(GUI.HorizontalSlider(new Rect(100, ((_controlKeys.Length + 1) * (ICON_DESCRIPTION_HEIGHT + 20)), 100, 30), _mouseSensitivity, MIN_MOUSE_SENSITIVITY, MAX_MOUSE_SENSITIVITY));
+		EventCenter.Instance.changeMouseSensitivity(_mouseSensitivity);
 	}
 	
 	public void drawCursors() {
 		MouseManager mouseManager = MouseManager.Instance;
 		string[] descriptions = mouseManager.getCursorDescriptions();
 		Texture2D[] icons = mouseManager.cursors;
-		Debug.Log("Menu/drawCursors, descriptions.length = " + descriptions.Length);
+//		Debug.Log("Menu/drawCursors, descriptions.length = " + descriptions.Length);
 
 		for(int i = 0; i < descriptions.Length; i++) {
 		    GUI.skin.label.alignment = TextAnchor.LowerLeft;
@@ -81,7 +90,9 @@ public class Menu {
 	public void destroy() {
 		// Debug.Log("Notification/destroy");	
 		this.showMenu = false;
-		EventCenter.Instance.enablePlayer(true);
+		EventCenter eventCenter = EventCenter.Instance;
+		eventCenter.enablePlayer(true);
+		eventCenter.changeMouseSensitivity(_mouseSensitivity);
 	}
 
 }

@@ -13,6 +13,10 @@ ModelImporter:
     100014: canopy
     100016: Cylinder
     100018: Icosphere
+    100020: Plane
+    100022: post_balls_front
+    100024: post_balls_rear
+    100026: posts
     400000: base
     400002: //RootNode
     400004: footboard
@@ -23,6 +27,10 @@ ModelImporter:
     400014: canopy
     400016: Cylinder
     400018: Icosphere
+    400020: Plane
+    400022: post_balls_front
+    400024: post_balls_rear
+    400026: posts
     2300000: base
     2300002: footboard
     2300004: front_legs
@@ -32,6 +40,10 @@ ModelImporter:
     2300012: canopy
     2300014: Cylinder
     2300016: Icosphere
+    2300018: Plane
+    2300020: post_balls_front
+    2300022: post_balls_rear
+    2300024: posts
     3300000: base
     3300002: footboard
     3300004: front_legs
@@ -41,6 +53,10 @@ ModelImporter:
     3300012: canopy
     3300014: Cylinder
     3300016: Icosphere
+    3300018: Plane
+    3300020: post_balls_front
+    3300022: post_balls_rear
+    3300024: posts
     4300000: mattress
     4300002: rear_legs
     4300004: headboard
@@ -50,6 +66,10 @@ ModelImporter:
     4300012: canopy
     4300014: Cylinder
     4300016: Icosphere
+    4300018: post_balls_rear
+    4300020: post_balls_front
+    4300022: posts
+    4300024: Plane
     6400000: base
     6400002: footboard
     6400004: front_legs
@@ -59,6 +79,10 @@ ModelImporter:
     6400012: canopy
     6400014: Cylinder
     6400016: Icosphere
+    6400018: Plane
+    6400020: post_balls_front
+    6400022: post_balls_rear
+    6400024: posts
     7400000: Default Take
     9500000: //RootNode
   materials:

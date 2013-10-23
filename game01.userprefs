@@ -9,7 +9,7 @@
               <Node name="scripts" expanded="True">
                 <Node name="armatures" expanded="True" />
                 <Node name="GUI" expanded="True" />
-                <Node name="Player.cs" selected="True" />
+                <Node name="InteractiveElement.cs" selected="True" />
               </Node>
             </Node>
           </Node>
