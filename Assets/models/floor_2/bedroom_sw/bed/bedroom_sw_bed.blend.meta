@@ -12,6 +12,7 @@ ModelImporter:
     100012: rear_legs
     100014: canopy
     100016: Cylinder
+    100018: Icosphere
     400000: base
     400002: //RootNode
     400004: footboard
@@ -21,6 +22,7 @@ ModelImporter:
     400012: rear_legs
     400014: canopy
     400016: Cylinder
+    400018: Icosphere
     2300000: base
     2300002: footboard
     2300004: front_legs
@@ -29,6 +31,7 @@ ModelImporter:
     2300010: rear_legs
     2300012: canopy
     2300014: Cylinder
+    2300016: Icosphere
     3300000: base
     3300002: footboard
     3300004: front_legs
@@ -37,6 +40,7 @@ ModelImporter:
     3300010: rear_legs
     3300012: canopy
     3300014: Cylinder
+    3300016: Icosphere
     4300000: mattress
     4300002: rear_legs
     4300004: headboard
@@ -45,6 +49,7 @@ ModelImporter:
     4300010: base
     4300012: canopy
     4300014: Cylinder
+    4300016: Icosphere
     6400000: base
     6400002: footboard
     6400004: front_legs
@@ -53,6 +58,7 @@ ModelImporter:
     6400010: rear_legs
     6400012: canopy
     6400014: Cylinder
+    6400016: Icosphere
     7400000: Default Take
     9500000: //RootNode
   materials:
