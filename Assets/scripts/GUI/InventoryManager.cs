@@ -97,11 +97,15 @@ public class InventoryManager {
 				}
 				GUI.enabled = true;
 				if (currentInventoryItem.isDroppable) {
+					if(!currentInventoryItem.isEquipped) {
+						GUI.enabled = false;
+					}
 					if (GUI.Button (new Rect (currentRect.x, (currentRect.y + ICON_WIDTH_HEIGHT + 25 + ITEM_NAME_HEIGHT), ICON_WIDTH_HEIGHT, 20), "Drop")) {
 						_dropAndClose(currentInventoryItem.name);
 					}
 
 				}
+				GUI.enabled = true;
 			}
 			i++;
 		}
