@@ -10,6 +10,21 @@ ModelImporter:
     100008: Cube_003
     100010: Cube_004
     100012: Cube_005
+    100014: Cube_006
+    100016: Cube_007
+    100018: Cube_008
+    100020: Cylinder
+    100022: base
+    100024: feet
+    100026: footboard
+    100028: footboard_legs
+    100030: footboard_top_trim
+    100032: headboard
+    100034: headboard_legs
+    100036: headboard_top_trim
+    100038: rails
+    100040: rails_top_trim
+    100042: mattress
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -17,24 +32,84 @@ ModelImporter:
     400008: Cube_003
     400010: Cube_004
     400012: Cube_005
+    400014: Cube_006
+    400016: Cube_007
+    400018: Cube_008
+    400020: Cylinder
+    400022: base
+    400024: feet
+    400026: footboard
+    400028: footboard_legs
+    400030: footboard_top_trim
+    400032: headboard
+    400034: headboard_legs
+    400036: headboard_top_trim
+    400038: rails
+    400040: rails_top_trim
+    400042: mattress
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
     2300006: Cube_003
     2300008: Cube_004
     2300010: Cube_005
+    2300012: Cube_006
+    2300014: Cube_007
+    2300016: Cube_008
+    2300018: Cylinder
+    2300020: base
+    2300022: feet
+    2300024: footboard
+    2300026: footboard_legs
+    2300028: footboard_top_trim
+    2300030: headboard
+    2300032: headboard_legs
+    2300034: headboard_top_trim
+    2300036: rails
+    2300038: rails_top_trim
+    2300040: mattress
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
     3300006: Cube_003
     3300008: Cube_004
     3300010: Cube_005
+    3300012: Cube_006
+    3300014: Cube_007
+    3300016: Cube_008
+    3300018: Cylinder
+    3300020: base
+    3300022: feet
+    3300024: footboard
+    3300026: footboard_legs
+    3300028: footboard_top_trim
+    3300030: headboard
+    3300032: headboard_legs
+    3300034: headboard_top_trim
+    3300036: rails
+    3300038: rails_top_trim
+    3300040: mattress
     4300000: Cube_005
     4300002: Cube_004
     4300004: Cube_003
     4300006: Cube_002
     4300008: Cube_001
     4300010: Cube
+    4300012: Cylinder
+    4300014: Cube_008
+    4300016: Cube_007
+    4300018: Cube_006
+    4300020: feet
+    4300022: footboard
+    4300024: footboard_legs
+    4300026: footboard_top_trim
+    4300028: headboard_top_trim
+    4300030: rails_top_trim
+    4300032: rails
+    4300034: headboard_legs
+    4300036: headboard
+    4300038: base
+    4300040: mattress
     7400000: Default Take
     9500000: //RootNode
   materials:
