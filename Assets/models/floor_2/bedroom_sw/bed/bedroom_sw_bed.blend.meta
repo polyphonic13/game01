@@ -17,6 +17,9 @@ ModelImporter:
     100022: post_balls_front
     100024: post_balls_rear
     100026: posts
+    100028: blanket
+    100030: pillow1
+    100032: pillow2
     400000: base
     400002: //RootNode
     400004: footboard
@@ -31,6 +34,9 @@ ModelImporter:
     400022: post_balls_front
     400024: post_balls_rear
     400026: posts
+    400028: blanket
+    400030: pillow1
+    400032: pillow2
     2300000: base
     2300002: footboard
     2300004: front_legs
@@ -44,6 +50,9 @@ ModelImporter:
     2300020: post_balls_front
     2300022: post_balls_rear
     2300024: posts
+    2300026: blanket
+    2300028: pillow1
+    2300030: pillow2
     3300000: base
     3300002: footboard
     3300004: front_legs
@@ -57,6 +66,9 @@ ModelImporter:
     3300020: post_balls_front
     3300022: post_balls_rear
     3300024: posts
+    3300026: blanket
+    3300028: pillow1
+    3300030: pillow2
     4300000: mattress
     4300002: rear_legs
     4300004: headboard
@@ -70,6 +82,9 @@ ModelImporter:
     4300020: post_balls_front
     4300022: posts
     4300024: Plane
+    4300026: pillow2
+    4300028: pillow1
+    4300030: blanket
     6400000: base
     6400002: footboard
     6400004: front_legs
@@ -83,6 +98,9 @@ ModelImporter:
     6400020: post_balls_front
     6400022: post_balls_rear
     6400024: posts
+    6400026: blanket
+    6400028: pillow1
+    6400030: pillow2
     7400000: Default Take
     9500000: //RootNode
   materials:
