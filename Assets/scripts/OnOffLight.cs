@@ -6,6 +6,7 @@ public class OnOffLight : InteractiveElement {
 	Light bulb; 
 
 	void Awake() {
+		init(MouseManager.Instance.INTERACT_CURSOR);
 		bulb = this.transform.Search("light_bulb").light;
 		bulb.enabled = false;
 //		Debug.Log("bulb = " + bulb);
