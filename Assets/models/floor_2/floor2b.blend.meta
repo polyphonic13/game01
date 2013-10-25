@@ -333,6 +333,8 @@ ModelImporter:
     100654: stair_main_upper_001
     100656: stair_main_upper_002
     100658: stair_main_upper_003
+    100660: main_stair_first_floor_blackness
+    100662: servant_stair_first_floor_blackness
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -663,6 +665,8 @@ ModelImporter:
     400654: stair_main_upper_001
     400656: stair_main_upper_002
     400658: stair_main_upper_003
+    400660: main_stair_first_floor_blackness
+    400662: servant_stair_first_floor_blackness
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -988,6 +992,8 @@ ModelImporter:
     2300644: stair_main_upper_001
     2300646: stair_main_upper_002
     2300648: stair_main_upper_003
+    2300650: main_stair_first_floor_blackness
+    2300652: servant_stair_first_floor_blackness
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1313,6 +1319,8 @@ ModelImporter:
     3300644: stair_main_upper_001
     3300646: stair_main_upper_002
     3300648: stair_main_upper_003
+    3300650: main_stair_first_floor_blackness
+    3300652: servant_stair_first_floor_blackness
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1637,6 +1645,8 @@ ModelImporter:
     4300642: stair_main_upper_003
     4300644: stair_main_upper_002
     4300646: stair_main_upper_001
+    4300648: servant_stair_first_floor_blackness
+    4300650: main_stair_first_floor_blackness
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1962,6 +1972,8 @@ ModelImporter:
     6400644: stair_main_upper_001
     6400646: stair_main_upper_002
     6400648: stair_main_upper_003
+    6400650: main_stair_first_floor_blackness
+    6400652: servant_stair_first_floor_blackness
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
