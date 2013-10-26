@@ -72,7 +72,7 @@ public class EventCenter : MonoBehaviour {
 	}
 	
 	public void changeMouseSensitivity(float sensitivity) {
-		Debug.Log("EventCenter/changeMouseSensitivity, sensitivity = " + sensitivity + ", onMouseSensitivityChange = " + onMouseSensitivityChange);
+//		Debug.Log("EventCenter/changeMouseSensitivity, sensitivity = " + sensitivity + ", onMouseSensitivityChange = " + onMouseSensitivityChange);
 		if(onMouseSensitivityChange != null) {
 			onMouseSensitivityChange(sensitivity);
 		}

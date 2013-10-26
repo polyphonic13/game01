@@ -12,6 +12,10 @@ ModelImporter:
     100012: shade_MeshPart1
     100014: shade_MeshPart2
     100016: shade_001
+    100018: BezierCurve
+    100020: frame_bottom
+    100022: frame_top
+    100024: lamp
     400000: cord
     400002: cord_shape
     400004: //RootNode
@@ -21,6 +25,10 @@ ModelImporter:
     400012: shade_MeshPart1
     400014: shade_MeshPart2
     400016: shade_001
+    400018: BezierCurve
+    400020: frame_bottom
+    400022: frame_top
+    400024: lamp
     2300000: cord
     2300002: cord_shape
     2300004: lamp_base
@@ -29,6 +37,9 @@ ModelImporter:
     2300010: shade_MeshPart2
     2300012: shade
     2300014: shade_001
+    2300016: BezierCurve
+    2300018: frame_bottom
+    2300020: frame_top
     3300000: cord
     3300002: cord_shape
     3300004: lamp_base
@@ -37,6 +48,9 @@ ModelImporter:
     3300010: shade_MeshPart2
     3300012: shade
     3300014: shade_001
+    3300016: BezierCurve
+    3300018: frame_bottom
+    3300020: frame_top
     4300000: cord_shape
     4300002: cord
     4300004: lamp_base
@@ -45,6 +59,9 @@ ModelImporter:
     4300010: shade_MeshPart2
     4300012: shade
     4300014: shade_001
+    4300016: BezierCurve
+    4300018: frame_bottom
+    4300020: frame_top
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -67,7 +67,7 @@ public class Player : MonoBehaviour {
 	
 	public void onMouseSensitivityChange(float sensitivity) {
 		MouseLook mouseLook = GetComponent<MouseLook>();
-		Debug.Log("Player/onMouseSensitivityChange, sensitivity = " + sensitivity);
+//		Debug.Log("Player/onMouseSensitivityChange, sensitivity = " + sensitivity);
 		mouseLook.sensitivityX = sensitivity;
 	}
 	

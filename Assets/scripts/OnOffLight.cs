@@ -6,10 +6,13 @@ public class OnOffLight : InteractiveElement {
 	private Light _bulb; 
 
 	void Awake() {
+		initOnOffLight();
+	}
+	
+	public void initOnOffLight() {
 		init(MouseManager.Instance.INTERACT_CURSOR);
 		_bulb = this.transform.Search("light_bulb").light;
 		_bulb.enabled = false;
-		Debug.Log("OnOffLight[ " + this.name + " ]/Awake, _bulb = " + _bulb);
 	}
 
 	public override void OnMouseOver() {
@@ -25,12 +28,20 @@ public class OnOffLight : InteractiveElement {
 			var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 			Debug.Log("  difference = " + difference + ", _bulb.enabled = " + _bulb.enabled);
 			if(difference < interactDistance) {
-				_bulb.enabled = !_bulb.enabled;	
+				this.toggle();
 			}
 		}
 	}
 	
-	public void toggle() {
+	public virtual void toggle() {
+		this.toggleBulb();
+	}
+	
+	public void toggleBulb() {
 		_bulb.enabled = !_bulb.enabled;
+	}
+	
+	public bool getIsOn() {
+		return _bulb.enabled;
 	}
 }

@@ -1,10 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/OnOffLight.cs">
-    <Files>
-      <File FileName="Assets/scripts/OnOffLight.cs" Line="16" Column="1" />
-      <File FileName="Assets/scripts/InteractiveElement.cs" Line="56" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
@@ -13,7 +9,7 @@
               <Node name="scripts" expanded="True">
                 <Node name="armatures" expanded="True" />
                 <Node name="GUI" expanded="True" />
-                <Node name="OnOffLight.cs" selected="True" />
+                <Node name="Lampshade.cs" selected="True" />
               </Node>
             </Node>
           </Node>
