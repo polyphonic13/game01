@@ -335,6 +335,45 @@ ModelImporter:
     100658: stair_main_upper_003
     100660: main_stair_first_floor_blackness
     100662: servant_stair_first_floor_blackness
+    100664: Cube_011
+    100666: Cube_013
+    100668: Cube_014
+    100670: Cube_018
+    100672: Cube_019
+    100674: Cube_020
+    100676: Cube_021
+    100678: Cube_022
+    100680: Cube_023
+    100682: Cube_024
+    100684: Cube_025
+    100686: Cube_026
+    100688: Cube_027
+    100690: Cube_028
+    100692: Cube_029
+    100694: Cube_030
+    100696: Cube_031
+    100698: Cube_032
+    100700: Cube_033
+    100702: Cube_034
+    100704: Cube_035
+    100706: Cube_036
+    100708: Cube_037
+    100710: Cube_038
+    100712: Cube_039
+    100714: Cube_040
+    100716: Cube_041
+    100718: Cube_042
+    100720: Cube_043
+    100722: Cube_044
+    100724: Cube_045
+    100726: Cube_046
+    100728: Cube_047
+    100730: Cube_048
+    100732: Cube_049
+    100734: Cube_050
+    100736: Cube_051
+    100738: Cube_052
+    100740: Cube_053
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -667,6 +706,45 @@ ModelImporter:
     400658: stair_main_upper_003
     400660: main_stair_first_floor_blackness
     400662: servant_stair_first_floor_blackness
+    400664: Cube_011
+    400666: Cube_013
+    400668: Cube_014
+    400670: Cube_018
+    400672: Cube_019
+    400674: Cube_020
+    400676: Cube_021
+    400678: Cube_022
+    400680: Cube_023
+    400682: Cube_024
+    400684: Cube_025
+    400686: Cube_026
+    400688: Cube_027
+    400690: Cube_028
+    400692: Cube_029
+    400694: Cube_030
+    400696: Cube_031
+    400698: Cube_032
+    400700: Cube_033
+    400702: Cube_034
+    400704: Cube_035
+    400706: Cube_036
+    400708: Cube_037
+    400710: Cube_038
+    400712: Cube_039
+    400714: Cube_040
+    400716: Cube_041
+    400718: Cube_042
+    400720: Cube_043
+    400722: Cube_044
+    400724: Cube_045
+    400726: Cube_046
+    400728: Cube_047
+    400730: Cube_048
+    400732: Cube_049
+    400734: Cube_050
+    400736: Cube_051
+    400738: Cube_052
+    400740: Cube_053
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -994,6 +1072,45 @@ ModelImporter:
     2300648: stair_main_upper_003
     2300650: main_stair_first_floor_blackness
     2300652: servant_stair_first_floor_blackness
+    2300654: Cube_011
+    2300656: Cube_013
+    2300658: Cube_014
+    2300660: Cube_018
+    2300662: Cube_019
+    2300664: Cube_020
+    2300666: Cube_021
+    2300668: Cube_022
+    2300670: Cube_023
+    2300672: Cube_024
+    2300674: Cube_025
+    2300676: Cube_026
+    2300678: Cube_027
+    2300680: Cube_028
+    2300682: Cube_029
+    2300684: Cube_030
+    2300686: Cube_031
+    2300688: Cube_032
+    2300690: Cube_033
+    2300692: Cube_034
+    2300694: Cube_035
+    2300696: Cube_036
+    2300698: Cube_037
+    2300700: Cube_038
+    2300702: Cube_039
+    2300704: Cube_040
+    2300706: Cube_041
+    2300708: Cube_042
+    2300710: Cube_043
+    2300712: Cube_044
+    2300714: Cube_045
+    2300716: Cube_046
+    2300718: Cube_047
+    2300720: Cube_048
+    2300722: Cube_049
+    2300724: Cube_050
+    2300726: Cube_051
+    2300728: Cube_052
+    2300730: Cube_053
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1321,6 +1438,45 @@ ModelImporter:
     3300648: stair_main_upper_003
     3300650: main_stair_first_floor_blackness
     3300652: servant_stair_first_floor_blackness
+    3300654: Cube_011
+    3300656: Cube_013
+    3300658: Cube_014
+    3300660: Cube_018
+    3300662: Cube_019
+    3300664: Cube_020
+    3300666: Cube_021
+    3300668: Cube_022
+    3300670: Cube_023
+    3300672: Cube_024
+    3300674: Cube_025
+    3300676: Cube_026
+    3300678: Cube_027
+    3300680: Cube_028
+    3300682: Cube_029
+    3300684: Cube_030
+    3300686: Cube_031
+    3300688: Cube_032
+    3300690: Cube_033
+    3300692: Cube_034
+    3300694: Cube_035
+    3300696: Cube_036
+    3300698: Cube_037
+    3300700: Cube_038
+    3300702: Cube_039
+    3300704: Cube_040
+    3300706: Cube_041
+    3300708: Cube_042
+    3300710: Cube_043
+    3300712: Cube_044
+    3300714: Cube_045
+    3300716: Cube_046
+    3300718: Cube_047
+    3300720: Cube_048
+    3300722: Cube_049
+    3300724: Cube_050
+    3300726: Cube_051
+    3300728: Cube_052
+    3300730: Cube_053
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1647,6 +1803,45 @@ ModelImporter:
     4300646: stair_main_upper_001
     4300648: servant_stair_first_floor_blackness
     4300650: main_stair_first_floor_blackness
+    4300652: Cube_053
+    4300654: Cube_052
+    4300656: Cube_051
+    4300658: Cube_050
+    4300660: Cube_049
+    4300662: Cube_048
+    4300664: Cube_047
+    4300666: Cube_046
+    4300668: Cube_045
+    4300670: Cube_044
+    4300672: Cube_043
+    4300674: Cube_042
+    4300676: Cube_041
+    4300678: Cube_040
+    4300680: Cube_039
+    4300682: Cube_038
+    4300684: Cube_037
+    4300686: Cube_036
+    4300688: Cube_035
+    4300690: Cube_034
+    4300692: Cube_033
+    4300694: Cube_032
+    4300696: Cube_031
+    4300698: Cube_030
+    4300700: Cube_029
+    4300702: Cube_028
+    4300704: Cube_027
+    4300706: Cube_026
+    4300708: Cube_025
+    4300710: Cube_024
+    4300712: Cube_023
+    4300714: Cube_022
+    4300716: Cube_021
+    4300718: Cube_020
+    4300720: Cube_019
+    4300722: Cube_018
+    4300724: Cube_014
+    4300726: Cube_013
+    4300728: Cube_011
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -1974,6 +2169,45 @@ ModelImporter:
     6400648: stair_main_upper_003
     6400650: main_stair_first_floor_blackness
     6400652: servant_stair_first_floor_blackness
+    6400654: Cube_011
+    6400656: Cube_013
+    6400658: Cube_014
+    6400660: Cube_018
+    6400662: Cube_019
+    6400664: Cube_020
+    6400666: Cube_021
+    6400668: Cube_022
+    6400670: Cube_023
+    6400672: Cube_024
+    6400674: Cube_025
+    6400676: Cube_026
+    6400678: Cube_027
+    6400680: Cube_028
+    6400682: Cube_029
+    6400684: Cube_030
+    6400686: Cube_031
+    6400688: Cube_032
+    6400690: Cube_033
+    6400692: Cube_034
+    6400694: Cube_035
+    6400696: Cube_036
+    6400698: Cube_037
+    6400700: Cube_038
+    6400702: Cube_039
+    6400704: Cube_040
+    6400706: Cube_041
+    6400708: Cube_042
+    6400710: Cube_043
+    6400712: Cube_044
+    6400714: Cube_045
+    6400716: Cube_046
+    6400718: Cube_047
+    6400720: Cube_048
+    6400722: Cube_049
+    6400724: Cube_050
+    6400726: Cube_051
+    6400728: Cube_052
+    6400730: Cube_053
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
