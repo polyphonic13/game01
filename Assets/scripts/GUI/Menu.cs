@@ -5,7 +5,7 @@ public class Menu {
 
 	public bool showMenu { get; set; }
 	
-	private string[] _controlKeys =  new string [8] {
+	private string[] _controlKeys =  new string [9] {
 		"mouse",
 		"w",
 		"s",
@@ -13,10 +13,11 @@ public class Menu {
 		"d",
 		"q",
 		"m",
-		"f"
+		"f",
+		"x"
 	};
 	
-	private string[] _controlDescriptions = new string[8] {
+	private string[] _controlDescriptions = new string[9] {
 		"Look / move direction",
 		"Move forward",
 		"Move backwards",
@@ -24,15 +25,19 @@ public class Menu {
 		"Move right",
 		"Open / close inventory",
 		"Open / close menu",
-		"Activate / Deactivate flashlight"
+		"Activate / Deactivate flashlight",
+		"Drop equipped item"
 	};
 	
 	private const string MENU_TITLE = "Menu";
 	private const string CONTROLS = "Controls";
 	private const string ICONS = "Icons";
 	
+	private const float DESCRIPTION_WIDTH = 400;
+
+	private const float CONTROL_DESCRIPTION_HEIGHT = 20;
+	
 	private const float ICON_WIDTH = 50;
-	private const float ICON_DESCRIPTION_WIDTH = 400;
 	private const float ICON_DESCRIPTION_HEIGHT = 50;
 
 	private const float MIN_MOUSE_SENSITIVITY = 1f;
@@ -61,11 +66,11 @@ public class Menu {
 		for(int i = 0; i < _controlKeys.Length; i++) {
 //			Debug.Log("  c = " + c.Key + ", value = " + c.Value);
 			GUI.skin.label.alignment = TextAnchor.LowerLeft;
-			GUI.Label(new Rect(50, ICON_DESCRIPTION_HEIGHT + (i * (ICON_DESCRIPTION_HEIGHT + 20)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), _controlKeys[i] + ": " + _controlDescriptions[i]);
+			GUI.Label(new Rect(50, CONTROL_DESCRIPTION_HEIGHT + (i * (CONTROL_DESCRIPTION_HEIGHT + 20)), DESCRIPTION_WIDTH, CONTROL_DESCRIPTION_HEIGHT), _controlKeys[i] + ": " + _controlDescriptions[i]);
 		}
-		GUI.Label(new Rect(50, ((_controlKeys.Length + 1) * (ICON_DESCRIPTION_HEIGHT + 20)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), "Mouse X sensitivity: " + Mathf.Floor(_mouseSensitivity));
+		GUI.Label(new Rect(50, ((_controlKeys.Length + 1) * (CONTROL_DESCRIPTION_HEIGHT + 20)), DESCRIPTION_WIDTH, CONTROL_DESCRIPTION_HEIGHT), "Mouse X sensitivity: " + Mathf.Floor(_mouseSensitivity));
 		
-		_mouseSensitivity =  Mathf.Floor(GUI.HorizontalSlider(new Rect(100, ((_controlKeys.Length + 1) * (ICON_DESCRIPTION_HEIGHT + 20)), 100, 30), _mouseSensitivity, MIN_MOUSE_SENSITIVITY, MAX_MOUSE_SENSITIVITY));
+		_mouseSensitivity =  Mathf.Floor(GUI.HorizontalSlider(new Rect(100, ((_controlKeys.Length + 1) * (CONTROL_DESCRIPTION_HEIGHT + 20)), 100, 30), _mouseSensitivity, MIN_MOUSE_SENSITIVITY, MAX_MOUSE_SENSITIVITY));
 		EventCenter.Instance.changeMouseSensitivity(_mouseSensitivity);
 	}
 	
@@ -78,7 +83,7 @@ public class Menu {
 		for(int i = 0; i < descriptions.Length; i++) {
 		    GUI.skin.label.alignment = TextAnchor.LowerLeft;
 			GUI.DrawTexture (new Rect (Screen.width/2 + 100, ICON_DESCRIPTION_HEIGHT + (i * (ICON_DESCRIPTION_HEIGHT + 20)), ICON_WIDTH, ICON_DESCRIPTION_HEIGHT), icons[i]);
-			GUI.Label(new Rect(Screen.width/2 + 200, ICON_DESCRIPTION_HEIGHT + (i * (ICON_DESCRIPTION_HEIGHT + 20)), ICON_DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), descriptions[i]);
+			GUI.Label(new Rect(Screen.width/2 + 200, ICON_DESCRIPTION_HEIGHT + (i * (ICON_DESCRIPTION_HEIGHT + 20)), DESCRIPTION_WIDTH, ICON_DESCRIPTION_HEIGHT), descriptions[i]);
 			
 		}
 	}
