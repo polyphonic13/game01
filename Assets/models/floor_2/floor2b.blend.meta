@@ -378,6 +378,7 @@ ModelImporter:
     100744: Cube_055
     100746: Cube_056
     100748: frame
+    100750: Cube_057
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -753,6 +754,7 @@ ModelImporter:
     400744: Cube_055
     400746: Cube_056
     400748: frame
+    400750: Cube_057
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1123,6 +1125,7 @@ ModelImporter:
     2300734: Cube_055
     2300736: Cube_056
     2300738: frame
+    2300740: Cube_057
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1493,6 +1496,7 @@ ModelImporter:
     3300734: Cube_055
     3300736: Cube_056
     3300738: frame
+    3300740: Cube_057
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1862,6 +1866,7 @@ ModelImporter:
     4300732: Cube_055
     4300734: Cube_054
     4300736: frame
+    4300738: Cube_057
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2232,6 +2237,7 @@ ModelImporter:
     6400734: Cube_055
     6400736: Cube_056
     6400738: frame
+    6400740: Cube_057
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
