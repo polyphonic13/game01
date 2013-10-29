@@ -5,6 +5,10 @@ public class InventoryManager {
 	
 	public bool showInventory { get; set; }
 	public bool showDetail { get; set; }
+
+	public string equippedItem { get; set; }
+	public bool isItemEquipped { get; set; }
+	
 	public bool houseKeepingNeeded { get; set; }
 
 	private const float DETAIL_IMG_WIDTH_HEIGHT = 500;
@@ -20,7 +24,7 @@ public class InventoryManager {
 	private GUIStyle _style; 
 	private CollectableItem _detailInventoryItem = null;
 	private CollectableItem _equipedItem = null;
-
+	
 	private string _itemToDelete = ""; 
 	
 	public void init(GUIStyle style) {
@@ -30,6 +34,7 @@ public class InventoryManager {
 		_style = style;
 		_itemsHash = new Hashtable();
 		_offset = new Vector2(10, 10);
+		_resetEquippedItem();
 	}
 	
 	public void addItem(CollectableItem item) {
@@ -134,6 +139,14 @@ public class InventoryManager {
 		}
 	}
 	
+	public void dropItem() {
+		CollectableItem item = _itemsHash[equippedItem] as CollectableItem;
+		item.drop();
+		_itemToDelete = equippedItem;
+		this.houseKeepingNeeded = true;
+		_resetEquippedItem();
+	}
+	
 	public void houseKeeping() {
 		Debug.Log("InventoryManager/houseKeeping, _itemToDelete = " + _itemToDelete);
 		if(_itemToDelete != "") {
@@ -155,14 +168,18 @@ public class InventoryManager {
 
 	private void _equipAndClose(string itemName) {
 		EventCenter.Instance.equipItem(itemName);
+		this.equippedItem = itemName;
+		this.isItemEquipped = true;
 		close();
 	}
-
+	
+	private void _resetEquippedItem() {
+		this.equippedItem = "";
+		this.isItemEquipped = false;
+	}
+	
 	private void _dropAndClose(string itemName) {
-		CollectableItem item = _itemsHash[itemName] as CollectableItem;
-		item.drop();
-		_itemToDelete = itemName;
-		this.houseKeepingNeeded = true;
+		dropItem();
 		close();
 	}
 
