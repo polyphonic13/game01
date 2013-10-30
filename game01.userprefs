@@ -8,8 +8,9 @@
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
                 <Node name="armatures" expanded="True" />
-                <Node name="GUI" expanded="True" />
-                <Node name="Lampshade.cs" selected="True" />
+                <Node name="GUI" expanded="True">
+                  <Node name="Menu.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
