@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 		notification.init(basicStyle);
 		menu = new Menu();
 		menu.init(basicStyle);
-		// menu.showMenu = true;
+		menu.showMenu = true;
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
