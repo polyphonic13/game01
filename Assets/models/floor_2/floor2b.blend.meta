@@ -388,6 +388,11 @@ ModelImporter:
     100764: tower_window_frame_5
     100766: tower_wall_brick2
     100768: tower_wall_brick2_001
+    100770: Cube_058
+    100772: bedroom_sw_chimney
+    100774: floor_boards
+    100776: tower_wall_brick2_inner
+    100778: tower_wall_brick2_outer
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -773,6 +778,11 @@ ModelImporter:
     400764: tower_window_frame_5
     400766: tower_wall_brick2
     400768: tower_wall_brick2_001
+    400770: Cube_058
+    400772: bedroom_sw_chimney
+    400774: floor_boards
+    400776: tower_wall_brick2_inner
+    400778: tower_wall_brick2_outer
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1153,6 +1163,10 @@ ModelImporter:
     2300754: tower_window_frame_5
     2300756: tower_wall_brick2
     2300758: tower_wall_brick2_001
+    2300760: Cube_058
+    2300762: bedroom_sw_chimney
+    2300764: tower_wall_brick2_inner
+    2300766: tower_wall_brick2_outer
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1533,6 +1547,10 @@ ModelImporter:
     3300754: tower_window_frame_5
     3300756: tower_wall_brick2
     3300758: tower_wall_brick2_001
+    3300760: Cube_058
+    3300762: bedroom_sw_chimney
+    3300764: tower_wall_brick2_inner
+    3300766: tower_wall_brick2_outer
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1912,6 +1930,10 @@ ModelImporter:
     4300752: tower_window_frame_3
     4300754: tower_wall_brick2_001
     4300756: tower_wall_brick2
+    4300758: Cube_058
+    4300760: bedroom_sw_chimney
+    4300762: tower_wall_brick2_outer
+    4300764: tower_wall_brick2_inner
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2292,6 +2314,10 @@ ModelImporter:
     6400754: tower_window_frame_5
     6400756: tower_wall_brick2
     6400758: tower_wall_brick2_001
+    6400760: Cube_058
+    6400762: bedroom_sw_chimney
+    6400764: tower_wall_brick2_inner
+    6400766: tower_wall_brick2_outer
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
