@@ -1,2 +1,0 @@
-Assets/models/floor_2/bathroom_w/bathroom02_furniture.blend
-Assets/models/floor_2/floor2b.blend
