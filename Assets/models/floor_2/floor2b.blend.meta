@@ -386,6 +386,8 @@ ModelImporter:
     100760: tower_window_frame_3
     100762: tower_window_frame_4
     100764: tower_window_frame_5
+    100766: tower_wall_brick2
+    100768: tower_wall_brick2_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -769,6 +771,8 @@ ModelImporter:
     400760: tower_window_frame_3
     400762: tower_window_frame_4
     400764: tower_window_frame_5
+    400766: tower_wall_brick2
+    400768: tower_wall_brick2_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1147,6 +1151,8 @@ ModelImporter:
     2300750: tower_window_frame_3
     2300752: tower_window_frame_4
     2300754: tower_window_frame_5
+    2300756: tower_wall_brick2
+    2300758: tower_wall_brick2_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1525,6 +1531,8 @@ ModelImporter:
     3300750: tower_window_frame_3
     3300752: tower_window_frame_4
     3300754: tower_window_frame_5
+    3300756: tower_wall_brick2
+    3300758: tower_wall_brick2_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1902,6 +1910,8 @@ ModelImporter:
     4300748: tower_window_frame_5
     4300750: tower_window_frame_4
     4300752: tower_window_frame_3
+    4300754: tower_wall_brick2_001
+    4300756: tower_wall_brick2
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2280,6 +2290,8 @@ ModelImporter:
     6400750: tower_window_frame_3
     6400752: tower_window_frame_4
     6400754: tower_window_frame_5
+    6400756: tower_wall_brick2
+    6400758: tower_wall_brick2_001
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
