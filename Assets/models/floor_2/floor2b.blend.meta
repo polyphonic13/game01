@@ -393,6 +393,17 @@ ModelImporter:
     100774: floor_boards
     100776: tower_wall_brick2_inner
     100778: tower_wall_brick2_outer
+    100780: base
+    100782: bedroom_sw_bed
+    100784: canopy
+    100786: footboard
+    100788: headboard
+    100790: mattress
+    100792: pillow1
+    100794: pillow2
+    100796: post_balls_front
+    100798: post_balls_rear
+    100800: posts
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -783,6 +794,17 @@ ModelImporter:
     400774: floor_boards
     400776: tower_wall_brick2_inner
     400778: tower_wall_brick2_outer
+    400780: base
+    400782: bedroom_sw_bed
+    400784: canopy
+    400786: footboard
+    400788: headboard
+    400790: mattress
+    400792: pillow1
+    400794: pillow2
+    400796: post_balls_front
+    400798: post_balls_rear
+    400800: posts
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1167,6 +1189,16 @@ ModelImporter:
     2300762: bedroom_sw_chimney
     2300764: tower_wall_brick2_inner
     2300766: tower_wall_brick2_outer
+    2300768: base
+    2300770: canopy
+    2300772: footboard
+    2300774: headboard
+    2300776: mattress
+    2300778: pillow1
+    2300780: pillow2
+    2300782: post_balls_front
+    2300784: post_balls_rear
+    2300786: posts
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1551,6 +1583,16 @@ ModelImporter:
     3300762: bedroom_sw_chimney
     3300764: tower_wall_brick2_inner
     3300766: tower_wall_brick2_outer
+    3300768: base
+    3300770: canopy
+    3300772: footboard
+    3300774: headboard
+    3300776: mattress
+    3300778: pillow1
+    3300780: pillow2
+    3300782: post_balls_front
+    3300784: post_balls_rear
+    3300786: posts
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1934,6 +1976,16 @@ ModelImporter:
     4300760: bedroom_sw_chimney
     4300762: tower_wall_brick2_outer
     4300764: tower_wall_brick2_inner
+    4300766: base
+    4300768: canopy
+    4300770: footboard
+    4300772: headboard
+    4300774: mattress
+    4300776: pillow1
+    4300778: pillow2
+    4300780: post_balls_front
+    4300782: post_balls_rear
+    4300784: posts
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2318,6 +2370,16 @@ ModelImporter:
     6400762: bedroom_sw_chimney
     6400764: tower_wall_brick2_inner
     6400766: tower_wall_brick2_outer
+    6400768: base
+    6400770: canopy
+    6400772: footboard
+    6400774: headboard
+    6400776: mattress
+    6400778: pillow1
+    6400780: pillow2
+    6400782: post_balls_front
+    6400784: post_balls_rear
+    6400786: posts
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
