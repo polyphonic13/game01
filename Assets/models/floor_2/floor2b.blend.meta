@@ -404,6 +404,12 @@ ModelImporter:
     100796: post_balls_front
     100798: post_balls_rear
     100800: posts
+    100802: bedroom_sw_fireplace
+    100804: bedroom_sw_fireplace_001
+    100806: Cube_059
+    100808: Cube_060
+    100810: Cube_061
+    100812: Cube_062
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -805,6 +811,12 @@ ModelImporter:
     400796: post_balls_front
     400798: post_balls_rear
     400800: posts
+    400802: bedroom_sw_fireplace
+    400804: bedroom_sw_fireplace_001
+    400806: Cube_059
+    400808: Cube_060
+    400810: Cube_061
+    400812: Cube_062
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1199,6 +1211,12 @@ ModelImporter:
     2300782: post_balls_front
     2300784: post_balls_rear
     2300786: posts
+    2300788: bedroom_sw_fireplace
+    2300790: bedroom_sw_fireplace_001
+    2300792: Cube_059
+    2300794: Cube_060
+    2300796: Cube_061
+    2300798: Cube_062
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1593,6 +1611,12 @@ ModelImporter:
     3300782: post_balls_front
     3300784: post_balls_rear
     3300786: posts
+    3300788: bedroom_sw_fireplace
+    3300790: bedroom_sw_fireplace_001
+    3300792: Cube_059
+    3300794: Cube_060
+    3300796: Cube_061
+    3300798: Cube_062
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -1986,6 +2010,12 @@ ModelImporter:
     4300780: post_balls_front
     4300782: post_balls_rear
     4300784: posts
+    4300786: bedroom_sw_fireplace_001
+    4300788: bedroom_sw_fireplace
+    4300792: Cube_062
+    4300794: Cube_061
+    4300796: Cube_060
+    4300798: Cube_059
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2380,6 +2410,12 @@ ModelImporter:
     6400782: post_balls_front
     6400784: post_balls_rear
     6400786: posts
+    6400788: bedroom_sw_fireplace
+    6400790: bedroom_sw_fireplace_001
+    6400792: Cube_059
+    6400794: Cube_060
+    6400796: Cube_061
+    6400798: Cube_062
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
