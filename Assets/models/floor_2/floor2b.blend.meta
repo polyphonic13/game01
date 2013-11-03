@@ -413,6 +413,56 @@ ModelImporter:
     100814: bedroom_sw_fireplace_base
     100816: bedroom_sw_fireplace_front_grate
     100818: bedroom_sw_fireplace_grate
+    100820: bedroom_e_wall_se
+    100822: bedroom_e_wall_sw
+    100824: bedroom_e_wall_w1
+    100826: bedroom_e_wall_w2
+    100828: bedroom_e_window_frame_ne
+    100830: bedroom_e_window_frame_se
+    100832: bedroom_e_window_ne
+    100834: bedroom_e_window_se
+    100836: bedroom_n_window_frame_n
+    100838: bedroom_n_window_n
+    100840: bedroom_nw_window_frame_nw
+    100842: bedroom_nw_window_frame_sw
+    100844: bedroom_nw_window_nw
+    100846: bedroom_nw_window_sw
+    100848: bedroom_se_turret_ceiling
+    100850: bedroom_se_turret_floor
+    100852: bedroom_se_turret_window
+    100854: bedroom_se_turret_window_frame
+    100856: bedroom_se_window_frame_ne
+    100858: bedroom_se_window_frame_s
+    100860: bedroom_se_window_frame_se
+    100862: bedroom_se_window_ne
+    100864: bedroom_se_window_se
+    100866: bedroom_sw_ceiling2
+    100868: bedroom_sw_turret_ceiling
+    100870: bedroom_sw_turret_floor
+    100872: bedroom_sw_turret_window
+    100874: bedroom_sw_turret_window_frarme
+    100876: bedroom_sw_wall_e
+    100878: bedroom_sw_wall_s
+    100880: bedroom_sw_wall_w
+    100882: bedroom_sw_window_frame_nw
+    100884: bedroom_sw_window_frame_s
+    100886: bedroom_sw_window_frame_sw
+    100888: center_hall_wall_n
+    100890: main_hall_wall_e
+    100892: main_hall_wall_s
+    100894: main_hall_wall_w
+    100896: main_hall_window_e
+    100898: main_hall_window_frame_e
+    100900: main_hall_window_frame_s
+    100902: main_hall_window_frame_se
+    100904: main_hall_window_frame_sw
+    100906: main_hall_window_frame_w
+    100908: main_hall_window_w
+    100910: stair_servants_lower
+    100912: stair_servants_upper
+    100914: sunroom_floor
+    100916: sunroom_wall_n
+    100918: tower_windows
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -823,6 +873,56 @@ ModelImporter:
     400814: bedroom_sw_fireplace_base
     400816: bedroom_sw_fireplace_front_grate
     400818: bedroom_sw_fireplace_grate
+    400820: bedroom_e_wall_se
+    400822: bedroom_e_wall_sw
+    400824: bedroom_e_wall_w1
+    400826: bedroom_e_wall_w2
+    400828: bedroom_e_window_frame_ne
+    400830: bedroom_e_window_frame_se
+    400832: bedroom_e_window_ne
+    400834: bedroom_e_window_se
+    400836: bedroom_n_window_frame_n
+    400838: bedroom_n_window_n
+    400840: bedroom_nw_window_frame_nw
+    400842: bedroom_nw_window_frame_sw
+    400844: bedroom_nw_window_nw
+    400846: bedroom_nw_window_sw
+    400848: bedroom_se_turret_ceiling
+    400850: bedroom_se_turret_floor
+    400852: bedroom_se_turret_window
+    400854: bedroom_se_turret_window_frame
+    400856: bedroom_se_window_frame_ne
+    400858: bedroom_se_window_frame_s
+    400860: bedroom_se_window_frame_se
+    400862: bedroom_se_window_ne
+    400864: bedroom_se_window_se
+    400866: bedroom_sw_ceiling2
+    400868: bedroom_sw_turret_ceiling
+    400870: bedroom_sw_turret_floor
+    400872: bedroom_sw_turret_window
+    400874: bedroom_sw_turret_window_frarme
+    400876: bedroom_sw_wall_e
+    400878: bedroom_sw_wall_s
+    400880: bedroom_sw_wall_w
+    400882: bedroom_sw_window_frame_nw
+    400884: bedroom_sw_window_frame_s
+    400886: bedroom_sw_window_frame_sw
+    400888: center_hall_wall_n
+    400890: main_hall_wall_e
+    400892: main_hall_wall_s
+    400894: main_hall_wall_w
+    400896: main_hall_window_e
+    400898: main_hall_window_frame_e
+    400900: main_hall_window_frame_s
+    400902: main_hall_window_frame_se
+    400904: main_hall_window_frame_sw
+    400906: main_hall_window_frame_w
+    400908: main_hall_window_w
+    400910: stair_servants_lower
+    400912: stair_servants_upper
+    400914: sunroom_floor
+    400916: sunroom_wall_n
+    400918: tower_windows
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1226,6 +1326,56 @@ ModelImporter:
     2300800: bedroom_sw_fireplace_base
     2300802: bedroom_sw_fireplace_front_grate
     2300804: bedroom_sw_fireplace_grate
+    2300806: bedroom_e_wall_se
+    2300808: bedroom_e_wall_sw
+    2300810: bedroom_e_wall_w1
+    2300812: bedroom_e_wall_w2
+    2300814: bedroom_e_window_frame_ne
+    2300816: bedroom_e_window_frame_se
+    2300818: bedroom_e_window_ne
+    2300820: bedroom_e_window_se
+    2300822: bedroom_n_window_frame_n
+    2300824: bedroom_n_window_n
+    2300826: bedroom_nw_window_frame_nw
+    2300828: bedroom_nw_window_frame_sw
+    2300830: bedroom_nw_window_nw
+    2300832: bedroom_nw_window_sw
+    2300834: bedroom_se_turret_ceiling
+    2300836: bedroom_se_turret_floor
+    2300838: bedroom_se_turret_window
+    2300840: bedroom_se_turret_window_frame
+    2300842: bedroom_se_window_frame_ne
+    2300844: bedroom_se_window_frame_s
+    2300846: bedroom_se_window_frame_se
+    2300848: bedroom_se_window_ne
+    2300850: bedroom_se_window_se
+    2300852: bedroom_sw_ceiling2
+    2300854: bedroom_sw_turret_ceiling
+    2300856: bedroom_sw_turret_floor
+    2300858: bedroom_sw_turret_window
+    2300860: bedroom_sw_turret_window_frarme
+    2300862: bedroom_sw_wall_e
+    2300864: bedroom_sw_wall_s
+    2300866: bedroom_sw_wall_w
+    2300868: bedroom_sw_window_frame_nw
+    2300870: bedroom_sw_window_frame_s
+    2300872: bedroom_sw_window_frame_sw
+    2300874: center_hall_wall_n
+    2300876: main_hall_wall_e
+    2300878: main_hall_wall_s
+    2300880: main_hall_wall_w
+    2300882: main_hall_window_e
+    2300884: main_hall_window_frame_e
+    2300886: main_hall_window_frame_s
+    2300888: main_hall_window_frame_se
+    2300890: main_hall_window_frame_sw
+    2300892: main_hall_window_frame_w
+    2300894: main_hall_window_w
+    2300896: stair_servants_lower
+    2300898: stair_servants_upper
+    2300900: sunroom_floor
+    2300902: sunroom_wall_n
+    2300904: tower_windows
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1629,6 +1779,56 @@ ModelImporter:
     3300800: bedroom_sw_fireplace_base
     3300802: bedroom_sw_fireplace_front_grate
     3300804: bedroom_sw_fireplace_grate
+    3300806: bedroom_e_wall_se
+    3300808: bedroom_e_wall_sw
+    3300810: bedroom_e_wall_w1
+    3300812: bedroom_e_wall_w2
+    3300814: bedroom_e_window_frame_ne
+    3300816: bedroom_e_window_frame_se
+    3300818: bedroom_e_window_ne
+    3300820: bedroom_e_window_se
+    3300822: bedroom_n_window_frame_n
+    3300824: bedroom_n_window_n
+    3300826: bedroom_nw_window_frame_nw
+    3300828: bedroom_nw_window_frame_sw
+    3300830: bedroom_nw_window_nw
+    3300832: bedroom_nw_window_sw
+    3300834: bedroom_se_turret_ceiling
+    3300836: bedroom_se_turret_floor
+    3300838: bedroom_se_turret_window
+    3300840: bedroom_se_turret_window_frame
+    3300842: bedroom_se_window_frame_ne
+    3300844: bedroom_se_window_frame_s
+    3300846: bedroom_se_window_frame_se
+    3300848: bedroom_se_window_ne
+    3300850: bedroom_se_window_se
+    3300852: bedroom_sw_ceiling2
+    3300854: bedroom_sw_turret_ceiling
+    3300856: bedroom_sw_turret_floor
+    3300858: bedroom_sw_turret_window
+    3300860: bedroom_sw_turret_window_frarme
+    3300862: bedroom_sw_wall_e
+    3300864: bedroom_sw_wall_s
+    3300866: bedroom_sw_wall_w
+    3300868: bedroom_sw_window_frame_nw
+    3300870: bedroom_sw_window_frame_s
+    3300872: bedroom_sw_window_frame_sw
+    3300874: center_hall_wall_n
+    3300876: main_hall_wall_e
+    3300878: main_hall_wall_s
+    3300880: main_hall_wall_w
+    3300882: main_hall_window_e
+    3300884: main_hall_window_frame_e
+    3300886: main_hall_window_frame_s
+    3300888: main_hall_window_frame_se
+    3300890: main_hall_window_frame_sw
+    3300892: main_hall_window_frame_w
+    3300894: main_hall_window_w
+    3300896: stair_servants_lower
+    3300898: stair_servants_upper
+    3300900: sunroom_floor
+    3300902: sunroom_wall_n
+    3300904: tower_windows
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2031,6 +2231,56 @@ ModelImporter:
     4300798: Cube_059
     4300800: bedroom_sw_fireplace_base
     4300802: bedroom_sw_fireplace_grate
+    4300804: stair_servants_upper
+    4300806: stair_servants_lower
+    4300808: main_hall_window_w
+    4300810: main_hall_window_frame_w
+    4300812: main_hall_window_frame_e
+    4300814: main_hall_window_e
+    4300816: bedroom_n_window_n
+    4300818: bedroom_nw_window_frame_nw
+    4300820: bedroom_nw_window_nw
+    4300822: bedroom_nw_window_sw
+    4300824: bedroom_e_window_ne
+    4300826: bedroom_e_window_se
+    4300828: bedroom_se_turret_window
+    4300830: tower_windows
+    4300832: bedroom_sw_turret_window
+    4300834: bedroom_se_window_se
+    4300836: bedroom_se_window_ne
+    4300838: bedroom_se_turret_window_frame
+    4300840: bedroom_sw_turret_window_frarme
+    4300842: sunroom_floor
+    4300844: bedroom_sw_turret_floor
+    4300846: bedroom_se_turret_floor
+    4300848: bedroom_se_turret_ceiling
+    4300850: bedroom_sw_turret_ceiling
+    4300852: bedroom_sw_ceiling2
+    4300854: bedroom_e_wall_sw
+    4300856: bedroom_e_wall_w1
+    4300858: bedroom_e_wall_se
+    4300860: bedroom_e_wall_w2
+    4300864: main_hall_wall_e
+    4300866: bedroom_sw_wall_e
+    4300868: bedroom_sw_wall_w
+    4300870: bedroom_sw_window_frame_nw
+    4300872: bedroom_sw_window_frame_sw
+    4300874: bedroom_sw_wall_s
+    4300876: bedroom_sw_window_frame_s
+    4300878: main_hall_wall_w
+    4300880: main_hall_wall_s
+    4300882: bedroom_n_window_frame_n
+    4300884: main_hall_window_frame_sw
+    4300886: main_hall_window_frame_se
+    4300888: main_hall_window_frame_s
+    4300890: center_hall_wall_n
+    4300892: bedroom_e_window_frame_ne
+    4300894: bedroom_e_window_frame_se
+    4300896: bedroom_se_window_frame_ne
+    4300898: bedroom_se_window_frame_se
+    4300900: bedroom_nw_window_frame_sw
+    4300902: bedroom_se_window_frame_s
+    4300904: sunroom_wall_n
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2434,6 +2684,56 @@ ModelImporter:
     6400800: bedroom_sw_fireplace_base
     6400802: bedroom_sw_fireplace_front_grate
     6400804: bedroom_sw_fireplace_grate
+    6400806: bedroom_e_wall_se
+    6400808: bedroom_e_wall_sw
+    6400810: bedroom_e_wall_w1
+    6400812: bedroom_e_wall_w2
+    6400814: bedroom_e_window_frame_ne
+    6400816: bedroom_e_window_frame_se
+    6400818: bedroom_e_window_ne
+    6400820: bedroom_e_window_se
+    6400822: bedroom_n_window_frame_n
+    6400824: bedroom_n_window_n
+    6400826: bedroom_nw_window_frame_nw
+    6400828: bedroom_nw_window_frame_sw
+    6400830: bedroom_nw_window_nw
+    6400832: bedroom_nw_window_sw
+    6400834: bedroom_se_turret_ceiling
+    6400836: bedroom_se_turret_floor
+    6400838: bedroom_se_turret_window
+    6400840: bedroom_se_turret_window_frame
+    6400842: bedroom_se_window_frame_ne
+    6400844: bedroom_se_window_frame_s
+    6400846: bedroom_se_window_frame_se
+    6400848: bedroom_se_window_ne
+    6400850: bedroom_se_window_se
+    6400852: bedroom_sw_ceiling2
+    6400854: bedroom_sw_turret_ceiling
+    6400856: bedroom_sw_turret_floor
+    6400858: bedroom_sw_turret_window
+    6400860: bedroom_sw_turret_window_frarme
+    6400862: bedroom_sw_wall_e
+    6400864: bedroom_sw_wall_s
+    6400866: bedroom_sw_wall_w
+    6400868: bedroom_sw_window_frame_nw
+    6400870: bedroom_sw_window_frame_s
+    6400872: bedroom_sw_window_frame_sw
+    6400874: center_hall_wall_n
+    6400876: main_hall_wall_e
+    6400878: main_hall_wall_s
+    6400880: main_hall_wall_w
+    6400882: main_hall_window_e
+    6400884: main_hall_window_frame_e
+    6400886: main_hall_window_frame_s
+    6400888: main_hall_window_frame_se
+    6400890: main_hall_window_frame_sw
+    6400892: main_hall_window_frame_w
+    6400894: main_hall_window_w
+    6400896: stair_servants_lower
+    6400898: stair_servants_upper
+    6400900: sunroom_floor
+    6400902: sunroom_wall_n
+    6400904: tower_windows
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
