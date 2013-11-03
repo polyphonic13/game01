@@ -410,6 +410,9 @@ ModelImporter:
     100808: Cube_060
     100810: Cube_061
     100812: Cube_062
+    100814: bedroom_sw_fireplace_base
+    100816: bedroom_sw_fireplace_front_grate
+    100818: bedroom_sw_fireplace_grate
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -817,6 +820,9 @@ ModelImporter:
     400808: Cube_060
     400810: Cube_061
     400812: Cube_062
+    400814: bedroom_sw_fireplace_base
+    400816: bedroom_sw_fireplace_front_grate
+    400818: bedroom_sw_fireplace_grate
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1217,6 +1223,9 @@ ModelImporter:
     2300794: Cube_060
     2300796: Cube_061
     2300798: Cube_062
+    2300800: bedroom_sw_fireplace_base
+    2300802: bedroom_sw_fireplace_front_grate
+    2300804: bedroom_sw_fireplace_grate
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1617,6 +1626,9 @@ ModelImporter:
     3300794: Cube_060
     3300796: Cube_061
     3300798: Cube_062
+    3300800: bedroom_sw_fireplace_base
+    3300802: bedroom_sw_fireplace_front_grate
+    3300804: bedroom_sw_fireplace_grate
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2012,10 +2024,13 @@ ModelImporter:
     4300784: posts
     4300786: bedroom_sw_fireplace_001
     4300788: bedroom_sw_fireplace
+    4300790: bedroom_sw_fireplace_front_grate
     4300792: Cube_062
     4300794: Cube_061
     4300796: Cube_060
     4300798: Cube_059
+    4300800: bedroom_sw_fireplace_base
+    4300802: bedroom_sw_fireplace_grate
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2416,6 +2431,9 @@ ModelImporter:
     6400794: Cube_060
     6400796: Cube_061
     6400798: Cube_062
+    6400800: bedroom_sw_fireplace_base
+    6400802: bedroom_sw_fireplace_front_grate
+    6400804: bedroom_sw_fireplace_grate
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
