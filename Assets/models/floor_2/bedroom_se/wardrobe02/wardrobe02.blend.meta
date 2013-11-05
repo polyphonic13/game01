@@ -17,6 +17,14 @@ ModelImporter:
     100022: top_trim_front_001
     100024: top_trim_sides_001
     100026: Cube
+    100028: bottom_trim_left
+    100030: bottom_trim_right
+    100032: bttom_trim_front
+    100034: middle_trim_front
+    100036: middle_trim_front_001
+    100038: middle_trim_front_002
+    100040: middle_trim_sides
+    100042: sides
     400000: base
     400002: BezierCurve
     400004: inner_curve
@@ -31,6 +39,14 @@ ModelImporter:
     400022: top_trim_front_001
     400024: top_trim_sides_001
     400026: Cube
+    400028: bottom_trim_left
+    400030: bottom_trim_right
+    400032: bttom_trim_front
+    400034: middle_trim_front
+    400036: middle_trim_front_001
+    400038: middle_trim_front_002
+    400040: middle_trim_sides
+    400042: sides
     2300000: base
     2300002: BezierCurve
     2300004: inner_curve
@@ -44,6 +60,14 @@ ModelImporter:
     2300020: top_trim_front_001
     2300022: top_trim_sides_001
     2300024: Cube
+    2300026: bottom_trim_left
+    2300028: bottom_trim_right
+    2300030: bttom_trim_front
+    2300032: middle_trim_front
+    2300034: middle_trim_front_001
+    2300036: middle_trim_front_002
+    2300038: middle_trim_sides
+    2300040: sides
     3300000: base
     3300002: BezierCurve
     3300004: inner_curve
@@ -57,6 +81,14 @@ ModelImporter:
     3300020: top_trim_front_001
     3300022: top_trim_sides_001
     3300024: Cube
+    3300026: bottom_trim_left
+    3300028: bottom_trim_right
+    3300030: bttom_trim_front
+    3300032: middle_trim_front
+    3300034: middle_trim_front_001
+    3300036: middle_trim_front_002
+    3300038: middle_trim_sides
+    3300040: sides
     4300000: top_trim_sides
     4300002: BezierCurve
     4300004: top_trim_front
@@ -70,6 +102,14 @@ ModelImporter:
     4300020: legs
     4300022: doors
     4300024: Cube
+    4300026: middle_trim_front_002
+    4300028: middle_trim_front_001
+    4300030: sides
+    4300032: middle_trim_front
+    4300034: middle_trim_sides
+    4300036: bottom_trim_right
+    4300038: bottom_trim_left
+    4300040: bttom_trim_front
     7400000: Default Take
     9500000: //RootNode
   materials:
