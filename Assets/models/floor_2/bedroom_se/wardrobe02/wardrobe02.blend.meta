@@ -25,6 +25,11 @@ ModelImporter:
     100038: middle_trim_front_002
     100040: middle_trim_sides
     100042: sides
+    100044: Armature
+    100046: door_left
+    100048: door_left_0
+    100050: door_right
+    100052: door_right_0
     400000: base
     400002: BezierCurve
     400004: inner_curve
@@ -47,6 +52,11 @@ ModelImporter:
     400038: middle_trim_front_002
     400040: middle_trim_sides
     400042: sides
+    400044: Armature
+    400046: door_left
+    400048: door_left_0
+    400050: door_right
+    400052: door_right_0
     2300000: base
     2300002: BezierCurve
     2300004: inner_curve
@@ -110,8 +120,30 @@ ModelImporter:
     4300036: bottom_trim_right
     4300038: bottom_trim_left
     4300040: bttom_trim_front
+    4300042: door_right
+    4300044: door_left
+    6400000: base
+    6400002: bottom_trim_left
+    6400004: bottom_trim_right
+    6400006: bttom_trim_front
+    6400008: legs
+    6400010: middle_trim_front
+    6400012: middle_trim_sides
+    6400014: sides
+    6400016: top_trim_front
+    6400018: top_trim_sides
     7400000: Default Take
+    7400002: wardrobe02_default
+    7400004: wardrobe02_door_left_close
+    7400006: wardrobe02_door_left_open
+    7400008: wardrobe02_door_right_close
+    7400010: wardrobe02_door_right_open
     9500000: //RootNode
+    11100000: //RootNode
+    13700000: door_left
+    13700002: door_right
+    13700004: middle_trim_front_001
+    13700006: middle_trim_front_002
   materials:
     importMaterials: 1
     materialName: 0
@@ -130,10 +162,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
@@ -144,7 +176,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
@@ -162,5 +194,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 
