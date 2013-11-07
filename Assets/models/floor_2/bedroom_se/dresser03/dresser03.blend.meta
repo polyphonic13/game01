@@ -21,6 +21,12 @@ ModelImporter:
     100030: candlestick2_000
     100032: Cylinder
     100034: Cylinder_001
+    100036: Cube
+    100038: Cube_001
+    100040: Plane
+    100042: frame
+    100044: frame_stand
+    100046: photo
     400000: //RootNode
     400002: Armature
     400004: base
@@ -39,6 +45,12 @@ ModelImporter:
     400030: candlestick2_000
     400032: Cylinder
     400034: Cylinder_001
+    400036: Cube
+    400038: Cube_001
+    400040: Plane
+    400042: frame
+    400044: frame_stand
+    400046: photo
     2300000: //RootNode
     2300002: base
     2300004: top
@@ -49,6 +61,12 @@ ModelImporter:
     2300014: candlestick2_000
     2300016: Cylinder
     2300018: Cylinder_001
+    2300020: Cube
+    2300022: Cube_001
+    2300024: Plane
+    2300026: frame
+    2300028: frame_stand
+    2300030: photo
     3300000: //RootNode
     3300002: base
     3300004: top
@@ -59,6 +77,12 @@ ModelImporter:
     3300014: candlestick2_000
     3300016: Cylinder
     3300018: Cylinder_001
+    3300020: Cube
+    3300022: Cube_001
+    3300024: Plane
+    3300026: frame
+    3300028: frame_stand
+    3300030: photo
     4300000: base
     4300002: top
     4300004: drawers
@@ -69,6 +93,12 @@ ModelImporter:
     4300014: candlestick2_000
     4300016: Cylinder_001
     4300018: Cylinder
+    4300020: Cube_001
+    4300022: Cube
+    4300024: Plane
+    4300026: frame
+    4300028: photo
+    4300030: frame_stand
     6400000: base
     6400002: top
     6400004: legs
@@ -78,6 +108,12 @@ ModelImporter:
     6400012: candlestick2_000
     6400014: Cylinder
     6400016: Cylinder_001
+    6400018: Cube
+    6400020: Cube_001
+    6400022: Plane
+    6400024: frame
+    6400026: frame_stand
+    6400028: photo
     7400000: Default Take
     7400002: dresser03_default
     7400004: dresser03_drawer_01_close
