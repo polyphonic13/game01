@@ -15,6 +15,12 @@ ModelImporter:
     100018: drawers
     100020: top
     100022: legs
+    100024: candlestick2
+    100026: candlestick2_001
+    100028: cloth
+    100030: candlestick2_000
+    100032: Cylinder
+    100034: Cylinder_001
     400000: //RootNode
     400002: Armature
     400004: base
@@ -27,21 +33,51 @@ ModelImporter:
     400018: drawers
     400020: top
     400022: legs
+    400024: candlestick2
+    400026: candlestick2_001
+    400028: cloth
+    400030: candlestick2_000
+    400032: Cylinder
+    400034: Cylinder_001
     2300000: //RootNode
     2300002: base
     2300004: top
     2300006: legs
+    2300008: candlestick2
+    2300010: candlestick2_001
+    2300012: cloth
+    2300014: candlestick2_000
+    2300016: Cylinder
+    2300018: Cylinder_001
     3300000: //RootNode
     3300002: base
     3300004: top
     3300006: legs
+    3300008: candlestick2
+    3300010: candlestick2_001
+    3300012: cloth
+    3300014: candlestick2_000
+    3300016: Cylinder
+    3300018: Cylinder_001
     4300000: base
     4300002: top
     4300004: drawers
     4300006: legs
+    4300008: candlestick2_001
+    4300010: candlestick2
+    4300012: cloth
+    4300014: candlestick2_000
+    4300016: Cylinder_001
+    4300018: Cylinder
     6400000: base
     6400002: top
     6400004: legs
+    6400006: candlestick2
+    6400008: candlestick2_001
+    6400010: cloth
+    6400012: candlestick2_000
+    6400014: Cylinder
+    6400016: Cylinder_001
     7400000: Default Take
     7400002: dresser03_default
     7400004: dresser03_drawer_01_close
