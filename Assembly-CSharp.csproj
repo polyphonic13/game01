@@ -88,7 +88,9 @@
      <Compile Include="Assets\scripts\ItemWeight.cs" />
      <Compile Include="Assets\scripts\Lamp.cs" />
      <Compile Include="Assets\scripts\Lampshade.cs" />
+     <Compile Include="Assets\scripts\LightFixture.cs" />
      <Compile Include="Assets\scripts\OnOffLight.cs" />
+     <Compile Include="Assets\scripts\OnOffSelfIllum.cs" />
      <Compile Include="Assets\scripts\Player.cs" />
      <Compile Include="Assets\scripts\RoomTrigger.cs" />
      <Compile Include="Assets\scripts\RoomTriggerParent.cs" />
