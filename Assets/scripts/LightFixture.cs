@@ -29,7 +29,6 @@ public class LightFixture : OnOffLight {
 	}
 	
 	private void _toggleSelfIllums(bool turnOff) {
-		//for(int i = 0; i < _onOffSelfIllums.Count; i++) {
 		foreach(OnOffSelfIllum onOffSelfIllum in _onOffSelfIllums) {
 			if(turnOff) {
 				_turnOffSelfIllum(onOffSelfIllum);

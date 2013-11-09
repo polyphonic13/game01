@@ -12,7 +12,7 @@ public class Lamp : OnOffLight {
 	void initLamp() {
 		_lampshade = GetComponentInChildren<Lampshade>();
 		if(_lampshade != null) {
-			Debug.Log ("_lampshade = " + _lampshade.gameObject.transform.renderer.material.mainTexture);
+//			Debug.Log ("_lampshade = " + _lampshade.gameObject.transform.renderer.material.mainTexture);
 			_lampshade.gameObject.transform.renderer.material = _lampshade.offMaterial;
 		}
 		initOnOffLight();

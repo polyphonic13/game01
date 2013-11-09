@@ -12,7 +12,7 @@ public class RoomTrigger : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter(Collider tgt) {
-		Debug.Log("RoomTrigger[ " + roomName + " ]/OnTriggerEnter");
+//		Debug.Log("RoomTrigger[ " + roomName + " ]/OnTriggerEnter");
 		_roomTriggerParent.roomTriggered(this.roomName);
 	}
 }
