@@ -7,11 +7,10 @@ public class ArmatureTrigger : InteractiveElement {
 	public Transform parentBone;
 	public AnimationClip mainClip;
 
-
 	void Awake() {
 		init();
 	}
-
+	
 	public void OnMouseDown() {
 		if(this.isRoomActive && this.isEnabled) {
 			var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
@@ -26,7 +25,7 @@ public class ArmatureTrigger : InteractiveElement {
 		sendAnimationToPops(mainClip.name, parentBone);
 	}
 	
-	public void sendAnimationToPops(string clipName, Transform bone) {
+	public void sendAnimationToPops(string clipName, Transform bone = null) {
 //		Debug.Log("ArmatureTrigger[ " + this.name + " ]/sendAnimationToPops, clipName = " + clipName);
 		pops.playAnimation(clipName, bone);
 	}

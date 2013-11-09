@@ -8,10 +8,15 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 	public bool isOpen { get; set; }
 
 	void Awake() {
+		initOpenCloseArmatureTrigger();
 		init();
+	}
+	
+	public void initOpenCloseArmatureTrigger() {
+		this.pops.onAnimationPlayed += this.onAnimatinoPlayed;
 		this.isOpen = false;
 	}
-
+	
 	public override void handleAnimation() {
 		handleOpenClose();
 	}
@@ -25,4 +30,15 @@ public class OpenCloseArmatureTrigger : ArmatureTrigger {
 		}
 		this.isOpen = !this.isOpen;
 	}
+	
+	public void onAnimatinoPlayed(Transform bone) {
+		if(this.isOpen) {
+			Debug.Log("OpenCloseArmatureTrigger[ " + this.name + " ]/onAnimationPlayed, isOpen = " + this.isOpen + ", bone = " + bone.name + ", parentBone = " + this.parentBone.name);
+			if(bone.name != this.parentBone.name) {
+				sendAnimationToPops(closeClip.name, parentBone);
+				this.isOpen = false;
+			}
+		}
+	}
+	
 }

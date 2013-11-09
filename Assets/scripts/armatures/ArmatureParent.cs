@@ -2,13 +2,25 @@
 using System.Collections;
 
 public class ArmatureParent : MonoBehaviour {
-
+	
+	public delegate void AnimationHandler(Transform bone);
+	
+	public event AnimationHandler onAnimationPlayed;
+	
 	public AnimationClip defaultAnimation; 
 	
 	public Animation animation { get; set; }
 	
-	public void playAnimation(string clip, Transform bone = null) {
-//		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone + ", animation = " + this.animation);
+	public virtual void playAnimation(string clip, Transform bone = null) {
+		Debug.Log("ArmatureParent[ " + this.name + " ]/playAnimation, clip = " + clip + ", bone = " + bone.name);
+		animateArmatureBone(clip, bone);
+//		if(bone != null) {
+//			this.animationPlayed(bone);
+//		}
+	}
+	
+	public void animateArmatureBone(string clip, Transform bone = null) {
+		Debug.Log("  animateArmatureBone, clip = " + clip);
 		if(bone != null) {
 			this.animation [clip].AddMixingTransform(bone);
 		}
@@ -16,10 +28,6 @@ public class ArmatureParent : MonoBehaviour {
 		this.animation.Play(clip);
 	}
 
-	void Awake() {
-		init();
-	}
-	
 	public virtual void init() {
 		this.animation = GetComponent<Animation>();
 //		Debug.Log("ArmatureParent[ " + this.name + " ]/init, animation = " + this.animation);
@@ -36,4 +44,16 @@ public class ArmatureParent : MonoBehaviour {
 			this.animation.Play(defaultAnimation.name);
 		}
 	}
+	
+	public void animationPlayed(Transform bone = null) {
+		Debug.Log("ArmatureParent[ " + this.name + " ]/animationPlayed, bone = " + bone);
+		if(onAnimationPlayed != null) {
+			onAnimationPlayed(bone);
+		}
+	}
+	
+	void Awake() {
+		init();
+	}
+	
 }

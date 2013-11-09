@@ -34,7 +34,7 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void onRoomEntered(string room) {
 		if(room == this.containingRoom) {
-			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomEntered");
+//			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomEntered");
 			this.isRoomActive = true;
 		}
 	}
@@ -54,7 +54,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void mouseOver() {
-		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.isRoomActive = " + this.isRoomActive);
+//		Debug.Log("InteractiveItem[ " + this.name + " ]/OnMouseOver, this.isRoomActive = " + this.isRoomActive);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
 			_mouseManager.setCursorType(_activeCursor);
