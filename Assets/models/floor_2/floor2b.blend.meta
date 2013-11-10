@@ -463,6 +463,8 @@ ModelImporter:
     100914: sunroom_floor
     100916: sunroom_wall_n
     100918: tower_windows
+    100920: bedroom_se_ceiling
+    100922: bedroom_sw_ceiling
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -923,6 +925,8 @@ ModelImporter:
     400914: sunroom_floor
     400916: sunroom_wall_n
     400918: tower_windows
+    400920: bedroom_se_ceiling
+    400922: bedroom_sw_ceiling
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1376,6 +1380,8 @@ ModelImporter:
     2300900: sunroom_floor
     2300902: sunroom_wall_n
     2300904: tower_windows
+    2300906: bedroom_se_ceiling
+    2300908: bedroom_sw_ceiling
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1829,6 +1835,8 @@ ModelImporter:
     3300900: sunroom_floor
     3300902: sunroom_wall_n
     3300904: tower_windows
+    3300906: bedroom_se_ceiling
+    3300908: bedroom_sw_ceiling
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2260,6 +2268,7 @@ ModelImporter:
     4300856: bedroom_e_wall_w1
     4300858: bedroom_e_wall_se
     4300860: bedroom_e_wall_w2
+    4300862: bedroom_sw_ceiling
     4300864: main_hall_wall_e
     4300866: bedroom_sw_wall_e
     4300868: bedroom_sw_wall_w
@@ -2281,6 +2290,7 @@ ModelImporter:
     4300900: bedroom_nw_window_frame_sw
     4300902: bedroom_se_window_frame_s
     4300904: sunroom_wall_n
+    4300906: bedroom_se_ceiling
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2734,6 +2744,8 @@ ModelImporter:
     6400900: sunroom_floor
     6400902: sunroom_wall_n
     6400904: tower_windows
+    6400906: bedroom_se_ceiling
+    6400908: bedroom_sw_ceiling
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
