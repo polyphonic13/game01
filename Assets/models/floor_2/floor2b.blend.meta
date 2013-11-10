@@ -465,6 +465,13 @@ ModelImporter:
     100918: tower_windows
     100920: bedroom_se_ceiling
     100922: bedroom_sw_ceiling
+    100924: bathroom_n_ceiling
+    100926: bedroom_n_ceiling
+    100928: bedroom_nw_ceiling
+    100930: main_and_back_hall_ceiling
+    100932: servants_hall_ceiling
+    100934: bathroom_e_ceiling
+    100936: bathroom_w_ceiling
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -927,6 +934,13 @@ ModelImporter:
     400918: tower_windows
     400920: bedroom_se_ceiling
     400922: bedroom_sw_ceiling
+    400924: bathroom_n_ceiling
+    400926: bedroom_n_ceiling
+    400928: bedroom_nw_ceiling
+    400930: main_and_back_hall_ceiling
+    400932: servants_hall_ceiling
+    400934: bathroom_e_ceiling
+    400936: bathroom_w_ceiling
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1382,6 +1396,13 @@ ModelImporter:
     2300904: tower_windows
     2300906: bedroom_se_ceiling
     2300908: bedroom_sw_ceiling
+    2300910: bathroom_n_ceiling
+    2300912: bedroom_n_ceiling
+    2300914: bedroom_nw_ceiling
+    2300916: main_and_back_hall_ceiling
+    2300918: servants_hall_ceiling
+    2300920: bathroom_e_ceiling
+    2300922: bathroom_w_ceiling
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1837,6 +1858,13 @@ ModelImporter:
     3300904: tower_windows
     3300906: bedroom_se_ceiling
     3300908: bedroom_sw_ceiling
+    3300910: bathroom_n_ceiling
+    3300912: bedroom_n_ceiling
+    3300914: bedroom_nw_ceiling
+    3300916: main_and_back_hall_ceiling
+    3300918: servants_hall_ceiling
+    3300920: bathroom_e_ceiling
+    3300922: bathroom_w_ceiling
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2291,6 +2319,13 @@ ModelImporter:
     4300902: bedroom_se_window_frame_s
     4300904: sunroom_wall_n
     4300906: bedroom_se_ceiling
+    4300908: bathroom_n_ceiling
+    4300910: bedroom_n_ceiling
+    4300912: servants_hall_ceiling
+    4300914: main_and_back_hall_ceiling
+    4300916: bathroom_w_ceiling
+    4300918: bedroom_nw_ceiling
+    4300920: bathroom_e_ceiling
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2746,6 +2781,13 @@ ModelImporter:
     6400904: tower_windows
     6400906: bedroom_se_ceiling
     6400908: bedroom_sw_ceiling
+    6400910: bathroom_n_ceiling
+    6400912: bedroom_n_ceiling
+    6400914: bedroom_nw_ceiling
+    6400916: main_and_back_hall_ceiling
+    6400918: servants_hall_ceiling
+    6400920: bathroom_e_ceiling
+    6400922: bathroom_w_ceiling
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
