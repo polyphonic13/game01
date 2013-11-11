@@ -472,6 +472,10 @@ ModelImporter:
     100932: servants_hall_ceiling
     100934: bathroom_e_ceiling
     100936: bathroom_w_ceiling
+    100938: balcony_ceiling
+    100940: bedroom_nw_ceiling_001
+    100942: back_hall_ceiling
+    100944: main_hall_ceiling
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -941,6 +945,10 @@ ModelImporter:
     400932: servants_hall_ceiling
     400934: bathroom_e_ceiling
     400936: bathroom_w_ceiling
+    400938: balcony_ceiling
+    400940: bedroom_nw_ceiling_001
+    400942: back_hall_ceiling
+    400944: main_hall_ceiling
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1403,6 +1411,10 @@ ModelImporter:
     2300918: servants_hall_ceiling
     2300920: bathroom_e_ceiling
     2300922: bathroom_w_ceiling
+    2300924: balcony_ceiling
+    2300926: bedroom_nw_ceiling_001
+    2300928: back_hall_ceiling
+    2300930: main_hall_ceiling
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1865,6 +1877,10 @@ ModelImporter:
     3300918: servants_hall_ceiling
     3300920: bathroom_e_ceiling
     3300922: bathroom_w_ceiling
+    3300924: balcony_ceiling
+    3300926: bedroom_nw_ceiling_001
+    3300928: back_hall_ceiling
+    3300930: main_hall_ceiling
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2326,6 +2342,10 @@ ModelImporter:
     4300916: bathroom_w_ceiling
     4300918: bedroom_nw_ceiling
     4300920: bathroom_e_ceiling
+    4300922: balcony_ceiling
+    4300924: bedroom_nw_ceiling_001
+    4300926: back_hall_ceiling
+    4300928: main_hall_ceiling
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2788,6 +2808,10 @@ ModelImporter:
     6400918: servants_hall_ceiling
     6400920: bathroom_e_ceiling
     6400922: bathroom_w_ceiling
+    6400924: balcony_ceiling
+    6400926: bedroom_nw_ceiling_001
+    6400928: back_hall_ceiling
+    6400930: main_hall_ceiling
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
