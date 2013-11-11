@@ -40,6 +40,9 @@ ModelImporter:
     100068: BezierCircle
     100070: BezierCurve
     100072: ceiling_molding
+    100074: chain
+    100076: chord
+    100078: Circle
     400000: arm1
     400002: arm2
     400004: arm3
@@ -77,6 +80,9 @@ ModelImporter:
     400068: BezierCircle
     400070: BezierCurve
     400072: ceiling_molding
+    400074: chain
+    400076: chord
+    400078: Circle
     2300000: arm1
     2300002: arm2
     2300004: arm3
@@ -113,6 +119,9 @@ ModelImporter:
     2300066: BezierCircle
     2300068: BezierCurve
     2300070: ceiling_molding
+    2300072: chain
+    2300074: chord
+    2300076: Circle
     3300000: arm1
     3300002: arm2
     3300004: arm3
@@ -149,6 +158,9 @@ ModelImporter:
     3300066: BezierCircle
     3300068: BezierCurve
     3300070: ceiling_molding
+    3300072: chain
+    3300074: chord
+    3300076: Circle
     4300000: Cylinder_001
     4300002: cup2
     4300004: cup6
@@ -185,6 +197,9 @@ ModelImporter:
     4300066: BezierCurve
     4300068: BezierCircle
     4300070: ceiling_molding
+    4300072: chain
+    4300074: Circle
+    4300076: chord
     7400000: Default Take
     9500000: //RootNode
   materials:
