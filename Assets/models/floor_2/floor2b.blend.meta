@@ -476,6 +476,9 @@ ModelImporter:
     100940: bedroom_nw_ceiling_001
     100942: back_hall_ceiling
     100944: main_hall_ceiling
+    100946: bedroom_se_turret_roof
+    100948: bedroom_sw_turret_roof
+    100950: tower_ceiling_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -949,6 +952,9 @@ ModelImporter:
     400940: bedroom_nw_ceiling_001
     400942: back_hall_ceiling
     400944: main_hall_ceiling
+    400946: bedroom_se_turret_roof
+    400948: bedroom_sw_turret_roof
+    400950: tower_ceiling_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1415,6 +1421,9 @@ ModelImporter:
     2300926: bedroom_nw_ceiling_001
     2300928: back_hall_ceiling
     2300930: main_hall_ceiling
+    2300932: bedroom_se_turret_roof
+    2300934: bedroom_sw_turret_roof
+    2300936: tower_ceiling_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1881,6 +1890,9 @@ ModelImporter:
     3300926: bedroom_nw_ceiling_001
     3300928: back_hall_ceiling
     3300930: main_hall_ceiling
+    3300932: bedroom_se_turret_roof
+    3300934: bedroom_sw_turret_roof
+    3300936: tower_ceiling_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2346,6 +2358,9 @@ ModelImporter:
     4300924: bedroom_nw_ceiling_001
     4300926: back_hall_ceiling
     4300928: main_hall_ceiling
+    4300930: bedroom_se_turret_roof
+    4300932: bedroom_sw_turret_roof
+    4300934: tower_ceiling_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2812,6 +2827,9 @@ ModelImporter:
     6400926: bedroom_nw_ceiling_001
     6400928: back_hall_ceiling
     6400930: main_hall_ceiling
+    6400932: bedroom_se_turret_roof
+    6400934: bedroom_sw_turret_roof
+    6400936: tower_ceiling_001
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
