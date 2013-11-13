@@ -479,6 +479,23 @@ ModelImporter:
     100946: bedroom_se_turret_roof
     100948: bedroom_sw_turret_roof
     100950: tower_ceiling_001
+    100952: BezierCurve
+    100954: BezierCurve_001
+    100956: BezierCurve_002
+    100958: BezierCurve_003
+    100960: BezierCurve_004
+    100962: BezierCurve_005
+    100964: BezierCurve_006
+    100966: BezierCurve_007
+    100968: BezierCurve_008
+    100970: BezierCurve_009
+    100972: BezierCurve_010
+    100974: BezierCurve_011
+    100976: BezierCurve_012
+    100978: BezierCurve_013
+    100980: BezierCurve_014
+    100982: BezierCurve_015
+    100984: BezierCurve_016
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -955,6 +972,23 @@ ModelImporter:
     400946: bedroom_se_turret_roof
     400948: bedroom_sw_turret_roof
     400950: tower_ceiling_001
+    400952: BezierCurve
+    400954: BezierCurve_001
+    400956: BezierCurve_002
+    400958: BezierCurve_003
+    400960: BezierCurve_004
+    400962: BezierCurve_005
+    400964: BezierCurve_006
+    400966: BezierCurve_007
+    400968: BezierCurve_008
+    400970: BezierCurve_009
+    400972: BezierCurve_010
+    400974: BezierCurve_011
+    400976: BezierCurve_012
+    400978: BezierCurve_013
+    400980: BezierCurve_014
+    400982: BezierCurve_015
+    400984: BezierCurve_016
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1424,6 +1458,23 @@ ModelImporter:
     2300932: bedroom_se_turret_roof
     2300934: bedroom_sw_turret_roof
     2300936: tower_ceiling_001
+    2300938: BezierCurve
+    2300940: BezierCurve_001
+    2300942: BezierCurve_002
+    2300944: BezierCurve_003
+    2300946: BezierCurve_004
+    2300948: BezierCurve_005
+    2300950: BezierCurve_006
+    2300952: BezierCurve_007
+    2300954: BezierCurve_008
+    2300956: BezierCurve_009
+    2300958: BezierCurve_010
+    2300960: BezierCurve_011
+    2300962: BezierCurve_012
+    2300964: BezierCurve_013
+    2300966: BezierCurve_014
+    2300968: BezierCurve_015
+    2300970: BezierCurve_016
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1893,6 +1944,23 @@ ModelImporter:
     3300932: bedroom_se_turret_roof
     3300934: bedroom_sw_turret_roof
     3300936: tower_ceiling_001
+    3300938: BezierCurve
+    3300940: BezierCurve_001
+    3300942: BezierCurve_002
+    3300944: BezierCurve_003
+    3300946: BezierCurve_004
+    3300948: BezierCurve_005
+    3300950: BezierCurve_006
+    3300952: BezierCurve_007
+    3300954: BezierCurve_008
+    3300956: BezierCurve_009
+    3300958: BezierCurve_010
+    3300960: BezierCurve_011
+    3300962: BezierCurve_012
+    3300964: BezierCurve_013
+    3300966: BezierCurve_014
+    3300968: BezierCurve_015
+    3300970: BezierCurve_016
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2361,6 +2429,23 @@ ModelImporter:
     4300930: bedroom_se_turret_roof
     4300932: bedroom_sw_turret_roof
     4300934: tower_ceiling_001
+    4300936: BezierCurve_016
+    4300938: BezierCurve_015
+    4300940: BezierCurve_014
+    4300942: BezierCurve_013
+    4300944: BezierCurve_012
+    4300946: BezierCurve_011
+    4300948: BezierCurve_010
+    4300950: BezierCurve_009
+    4300952: BezierCurve_008
+    4300954: BezierCurve_007
+    4300956: BezierCurve_006
+    4300958: BezierCurve_005
+    4300960: BezierCurve_004
+    4300962: BezierCurve_003
+    4300964: BezierCurve_002
+    4300966: BezierCurve_001
+    4300968: BezierCurve
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2830,6 +2915,23 @@ ModelImporter:
     6400932: bedroom_se_turret_roof
     6400934: bedroom_sw_turret_roof
     6400936: tower_ceiling_001
+    6400938: BezierCurve
+    6400940: BezierCurve_001
+    6400942: BezierCurve_002
+    6400944: BezierCurve_003
+    6400946: BezierCurve_004
+    6400948: BezierCurve_005
+    6400950: BezierCurve_006
+    6400952: BezierCurve_007
+    6400954: BezierCurve_008
+    6400956: BezierCurve_009
+    6400958: BezierCurve_010
+    6400960: BezierCurve_011
+    6400962: BezierCurve_012
+    6400964: BezierCurve_013
+    6400966: BezierCurve_014
+    6400968: BezierCurve_015
+    6400970: BezierCurve_016
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
