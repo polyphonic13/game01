@@ -496,6 +496,7 @@ ModelImporter:
     100980: BezierCurve_014
     100982: BezierCurve_015
     100984: BezierCurve_016
+    100986: wall_top_molding
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -989,6 +990,7 @@ ModelImporter:
     400980: BezierCurve_014
     400982: BezierCurve_015
     400984: BezierCurve_016
+    400986: wall_top_molding
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -1475,6 +1477,7 @@ ModelImporter:
     2300966: BezierCurve_014
     2300968: BezierCurve_015
     2300970: BezierCurve_016
+    2300972: wall_top_molding
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -1961,6 +1964,7 @@ ModelImporter:
     3300966: BezierCurve_014
     3300968: BezierCurve_015
     3300970: BezierCurve_016
+    3300972: wall_top_molding
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -2446,6 +2450,7 @@ ModelImporter:
     4300964: BezierCurve_002
     4300966: BezierCurve_001
     4300968: BezierCurve
+    4300970: wall_top_molding
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -2932,6 +2937,7 @@ ModelImporter:
     6400966: BezierCurve_014
     6400968: BezierCurve_015
     6400970: BezierCurve_016
+    6400972: wall_top_molding
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
