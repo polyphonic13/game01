@@ -851,6 +851,7 @@ ModelImporter:
     101690: bedroom_sw_top_molding_corner01
     101692: bedroom_sw_top_molding_corner02
     101694: bedroom_sw_top_molding_corner03
+    101696: back_hall_half_wall_w_000
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -1699,6 +1700,7 @@ ModelImporter:
     401690: bedroom_sw_top_molding_corner01
     401692: bedroom_sw_top_molding_corner02
     401694: bedroom_sw_top_molding_corner03
+    401696: back_hall_half_wall_w_000
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -2540,6 +2542,7 @@ ModelImporter:
     2301676: bedroom_sw_top_molding_corner01
     2301678: bedroom_sw_top_molding_corner02
     2301680: bedroom_sw_top_molding_corner03
+    2301682: back_hall_half_wall_w_000
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -3381,6 +3384,7 @@ ModelImporter:
     3301676: bedroom_sw_top_molding_corner01
     3301678: bedroom_sw_top_molding_corner02
     3301680: bedroom_sw_top_molding_corner03
+    3301682: back_hall_half_wall_w_000
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -4221,6 +4225,7 @@ ModelImporter:
     4301674: bedroom_e_top_molding_corner01
     4301676: back_hall_top_molding_corner02
     4301678: back_hall_top_molding_corner01
+    4301680: back_hall_half_wall_w_000
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -5062,6 +5067,7 @@ ModelImporter:
     6401676: bedroom_sw_top_molding_corner01
     6401678: bedroom_sw_top_molding_corner02
     6401680: bedroom_sw_top_molding_corner03
+    6401682: back_hall_half_wall_w_000
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
