@@ -7,6 +7,7 @@ public class Lamp : OnOffLight {
 	
 	void Awake() {
 		initLamp();
+		init(MouseManager.Instance.INTERACT_CURSOR);
 	}
 
 	void initLamp() {
@@ -19,7 +20,7 @@ public class Lamp : OnOffLight {
 	}
 	
 	public override void toggle() {
-		this.toggleBulb();
+		this.toggleBulb(this.bulb);
 		if(_lampshade != null) {
 			if(this.getIsOn()) {
 				_lampshade.gameObject.transform.renderer.material = _lampshade.onMaterial;
