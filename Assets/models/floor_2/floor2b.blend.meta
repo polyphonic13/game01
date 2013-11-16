@@ -852,6 +852,20 @@ ModelImporter:
     101692: bedroom_sw_top_molding_corner02
     101694: bedroom_sw_top_molding_corner03
     101696: back_hall_half_wall_w_000
+    101698: wall_top_molding_2
+    101700: wall_top_molding_2_001
+    101702: wall_top_molding_2_002
+    101704: wall_top_molding_2_003
+    101706: wall_top_molding_2_004
+    101708: wall_top_molding_2_005
+    101710: wall_top_molding_2_006
+    101712: wall_top_molding_2_007
+    101714: wall_top_molding_2_008
+    101716: wall_top_molding_2_009
+    101718: wall_top_molding_2_010
+    101720: wall_top_molding_2_011
+    101722: wall_top_molding_2_012
+    101724: wall_top_molding_2_013
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -1701,6 +1715,20 @@ ModelImporter:
     401692: bedroom_sw_top_molding_corner02
     401694: bedroom_sw_top_molding_corner03
     401696: back_hall_half_wall_w_000
+    401698: wall_top_molding_2
+    401700: wall_top_molding_2_001
+    401702: wall_top_molding_2_002
+    401704: wall_top_molding_2_003
+    401706: wall_top_molding_2_004
+    401708: wall_top_molding_2_005
+    401710: wall_top_molding_2_006
+    401712: wall_top_molding_2_007
+    401714: wall_top_molding_2_008
+    401716: wall_top_molding_2_009
+    401718: wall_top_molding_2_010
+    401720: wall_top_molding_2_011
+    401722: wall_top_molding_2_012
+    401724: wall_top_molding_2_013
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -2543,6 +2571,20 @@ ModelImporter:
     2301678: bedroom_sw_top_molding_corner02
     2301680: bedroom_sw_top_molding_corner03
     2301682: back_hall_half_wall_w_000
+    2301684: wall_top_molding_2
+    2301686: wall_top_molding_2_001
+    2301688: wall_top_molding_2_002
+    2301690: wall_top_molding_2_003
+    2301692: wall_top_molding_2_004
+    2301694: wall_top_molding_2_005
+    2301696: wall_top_molding_2_006
+    2301698: wall_top_molding_2_007
+    2301700: wall_top_molding_2_008
+    2301702: wall_top_molding_2_009
+    2301704: wall_top_molding_2_010
+    2301706: wall_top_molding_2_011
+    2301708: wall_top_molding_2_012
+    2301710: wall_top_molding_2_013
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -3385,6 +3427,20 @@ ModelImporter:
     3301678: bedroom_sw_top_molding_corner02
     3301680: bedroom_sw_top_molding_corner03
     3301682: back_hall_half_wall_w_000
+    3301684: wall_top_molding_2
+    3301686: wall_top_molding_2_001
+    3301688: wall_top_molding_2_002
+    3301690: wall_top_molding_2_003
+    3301692: wall_top_molding_2_004
+    3301694: wall_top_molding_2_005
+    3301696: wall_top_molding_2_006
+    3301698: wall_top_molding_2_007
+    3301700: wall_top_molding_2_008
+    3301702: wall_top_molding_2_009
+    3301704: wall_top_molding_2_010
+    3301706: wall_top_molding_2_011
+    3301708: wall_top_molding_2_012
+    3301710: wall_top_molding_2_013
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -4226,6 +4282,20 @@ ModelImporter:
     4301676: back_hall_top_molding_corner02
     4301678: back_hall_top_molding_corner01
     4301680: back_hall_half_wall_w_000
+    4301682: wall_top_molding_2_013
+    4301684: wall_top_molding_2_012
+    4301686: wall_top_molding_2_011
+    4301688: wall_top_molding_2_010
+    4301690: wall_top_molding_2_009
+    4301692: wall_top_molding_2_008
+    4301694: wall_top_molding_2_007
+    4301696: wall_top_molding_2_006
+    4301698: wall_top_molding_2_005
+    4301700: wall_top_molding_2_004
+    4301702: wall_top_molding_2_003
+    4301704: wall_top_molding_2_002
+    4301706: wall_top_molding_2_001
+    4301708: wall_top_molding_2
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -5068,6 +5138,20 @@ ModelImporter:
     6401678: bedroom_sw_top_molding_corner02
     6401680: bedroom_sw_top_molding_corner03
     6401682: back_hall_half_wall_w_000
+    6401684: wall_top_molding_2
+    6401686: wall_top_molding_2_001
+    6401688: wall_top_molding_2_002
+    6401690: wall_top_molding_2_003
+    6401692: wall_top_molding_2_004
+    6401694: wall_top_molding_2_005
+    6401696: wall_top_molding_2_006
+    6401698: wall_top_molding_2_007
+    6401700: wall_top_molding_2_008
+    6401702: wall_top_molding_2_009
+    6401704: wall_top_molding_2_010
+    6401706: wall_top_molding_2_011
+    6401708: wall_top_molding_2_012
+    6401710: wall_top_molding_2_013
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
