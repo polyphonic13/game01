@@ -914,6 +914,7 @@ ModelImporter:
     101816: bathroom_w_top_molding_w02
     101818: bathroom_w_top_molding_w03
     101820: bathroom_w_top_molding_w04
+    101822: bathroom_e_top_molding_c_se
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -1825,6 +1826,7 @@ ModelImporter:
     401816: bathroom_w_top_molding_w02
     401818: bathroom_w_top_molding_w03
     401820: bathroom_w_top_molding_w04
+    401822: bathroom_e_top_molding_c_se
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -2729,6 +2731,7 @@ ModelImporter:
     2301802: bathroom_w_top_molding_w02
     2301804: bathroom_w_top_molding_w03
     2301806: bathroom_w_top_molding_w04
+    2301808: bathroom_e_top_molding_c_se
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -3633,6 +3636,7 @@ ModelImporter:
     3301802: bathroom_w_top_molding_w02
     3301804: bathroom_w_top_molding_w03
     3301806: bathroom_w_top_molding_w04
+    3301808: bathroom_e_top_molding_c_se
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -4536,6 +4540,7 @@ ModelImporter:
     4301800: bathroom_n_top_molding_n03
     4301802: bathroom_n_top_molding_n02
     4301804: bathroom_n_top_molding_n01
+    4301806: bathroom_e_top_molding_c_se
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -5440,6 +5445,7 @@ ModelImporter:
     6401802: bathroom_w_top_molding_w02
     6401804: bathroom_w_top_molding_w03
     6401806: bathroom_w_top_molding_w04
+    6401808: bathroom_e_top_molding_c_se
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
