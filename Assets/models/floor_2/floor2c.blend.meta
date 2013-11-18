@@ -426,6 +426,7 @@ ModelImporter:
     100840: tower_window_frame_4
     100842: tower_window_frame_5
     100844: tower_windows
+    100846: Cube_002
     400000: Armature
     400002: back_hall_ceiling
     400004: back_hall_half_wall_w_000
@@ -849,6 +850,7 @@ ModelImporter:
     400840: tower_window_frame_4
     400842: tower_window_frame_5
     400844: tower_windows
+    400846: Cube_002
     2300000: back_hall_ceiling
     2300002: back_hall_half_wall_w_000
     2300004: back_hall_half_wall_w_001
@@ -1265,6 +1267,7 @@ ModelImporter:
     2300826: tower_window_frame_4
     2300828: tower_window_frame_5
     2300830: tower_windows
+    2300832: Cube_002
     3300000: back_hall_ceiling
     3300002: back_hall_half_wall_w_000
     3300004: back_hall_half_wall_w_001
@@ -1681,6 +1684,7 @@ ModelImporter:
     3300826: tower_window_frame_4
     3300828: tower_window_frame_5
     3300830: tower_windows
+    3300832: Cube_002
     4300000: Cube_001
     4300002: bedroom_sw_fireplace_grate
     4300004: bedroom_sw_fireplace_front_grate
@@ -2006,6 +2010,7 @@ ModelImporter:
     4300644: bedroom_e_wall_w2
     4300646: bedroom_e_wall_n
     4300648: tower_floor
+    4300650: Cube_002
     4300652: bedroom_sw_wall_n
     4300654: main_hall_wall_e
     4300656: bedroom_nw_ceiling
