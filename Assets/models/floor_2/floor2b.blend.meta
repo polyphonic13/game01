@@ -939,6 +939,10 @@ ModelImporter:
     101866: Cylinder_023
     101868: Cylinder_024
     101870: Cylinder_025
+    101872: bathroom_n_top_molding_e
+    101874: bathroom_n_top_molding_n
+    101876: bathroom_n_top_molding_s
+    101878: bathroom_n_top_molding_w
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -1875,6 +1879,10 @@ ModelImporter:
     401866: Cylinder_023
     401868: Cylinder_024
     401870: Cylinder_025
+    401872: bathroom_n_top_molding_e
+    401874: bathroom_n_top_molding_n
+    401876: bathroom_n_top_molding_s
+    401878: bathroom_n_top_molding_w
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -2804,6 +2812,10 @@ ModelImporter:
     2301852: Cylinder_023
     2301854: Cylinder_024
     2301856: Cylinder_025
+    2301858: bathroom_n_top_molding_e
+    2301860: bathroom_n_top_molding_n
+    2301862: bathroom_n_top_molding_s
+    2301864: bathroom_n_top_molding_w
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -3733,6 +3745,10 @@ ModelImporter:
     3301852: Cylinder_023
     3301854: Cylinder_024
     3301856: Cylinder_025
+    3301858: bathroom_n_top_molding_e
+    3301860: bathroom_n_top_molding_n
+    3301862: bathroom_n_top_molding_s
+    3301864: bathroom_n_top_molding_w
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -4661,6 +4677,10 @@ ModelImporter:
     4301850: Cylinder_004
     4301852: Cylinder_003
     4301854: Cylinder_002
+    4301856: bathroom_n_top_molding_e
+    4301858: bathroom_n_top_molding_w
+    4301860: bathroom_n_top_molding_s
+    4301862: bathroom_n_top_molding_n
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -5590,6 +5610,10 @@ ModelImporter:
     6401852: Cylinder_023
     6401854: Cylinder_024
     6401856: Cylinder_025
+    6401858: bathroom_n_top_molding_e
+    6401860: bathroom_n_top_molding_n
+    6401862: bathroom_n_top_molding_s
+    6401864: bathroom_n_top_molding_w
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
