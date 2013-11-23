@@ -7,25 +7,43 @@ ModelImporter:
     100002: base_and_optics
     100004: innards
     100006: Sphere
+    100008: base
+    100010: optics
+    100012: lens
     400000: //RootNode
     400002: base_and_optics
     400004: innards
     400006: Sphere
+    400008: base
+    400010: optics
+    400012: lens
     2300000: //RootNode
     2300002: base_and_optics
     2300004: innards
     2300006: Sphere
+    2300008: base
+    2300010: optics
+    2300012: lens
     3300000: //RootNode
     3300002: base_and_optics
     3300004: innards
     3300006: Sphere
+    3300008: base
+    3300010: optics
+    3300012: lens
     4300000: Sphere
     4300002: innards
     4300004: base_and_optics
+    4300006: base
+    4300008: optics
+    4300010: lens
     6400000: //RootNode
     6400002: base_and_optics
     6400004: innards
     6400006: Sphere
+    6400008: base
+    6400010: optics
+    6400012: lens
     7400000: Default Take
     9500000: //RootNode
   materials:
