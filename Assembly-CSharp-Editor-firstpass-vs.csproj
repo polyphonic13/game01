@@ -55,6 +55,7 @@
      <None Include="Assets\shaders\glass.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\glass.shader" />
+     <None Include="Assets\shaders\GlassBump.shader" />
      <None Include="Assets\Plugins\whydoidoit.com\license.txt" />
      <None Include="Assets\UnitySerializer\readme.txt" />
  <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
