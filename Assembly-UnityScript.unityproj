@@ -51,6 +51,7 @@
      <Compile Include="Assets\UnitySerializer\Scripts\PauseMenu.js" />
      <Compile Include="Assets\UnitySerializer\Scripts\Spawner.js" />
      <Compile Include="Assets\scripts\Grab.js" />
+     <None Include="Assets\shaders\AlphaSelfIllum.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\shaders\glass.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />

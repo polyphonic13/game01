@@ -10,6 +10,10 @@ ModelImporter:
     100008: base
     100010: optics
     100012: lens
+    100014: Cylinder
+    100016: Cylinder_001
+    100018: Cylinder_002
+    100020: Cylinder_003
     400000: //RootNode
     400002: base_and_optics
     400004: innards
@@ -17,6 +21,10 @@ ModelImporter:
     400008: base
     400010: optics
     400012: lens
+    400014: Cylinder
+    400016: Cylinder_001
+    400018: Cylinder_002
+    400020: Cylinder_003
     2300000: //RootNode
     2300002: base_and_optics
     2300004: innards
@@ -24,6 +32,10 @@ ModelImporter:
     2300008: base
     2300010: optics
     2300012: lens
+    2300014: Cylinder
+    2300016: Cylinder_001
+    2300018: Cylinder_002
+    2300020: Cylinder_003
     3300000: //RootNode
     3300002: base_and_optics
     3300004: innards
@@ -31,12 +43,20 @@ ModelImporter:
     3300008: base
     3300010: optics
     3300012: lens
+    3300014: Cylinder
+    3300016: Cylinder_001
+    3300018: Cylinder_002
+    3300020: Cylinder_003
     4300000: Sphere
     4300002: innards
     4300004: base_and_optics
     4300006: base
     4300008: optics
     4300010: lens
+    4300012: Cylinder_003
+    4300014: Cylinder_002
+    4300016: Cylinder_001
+    4300018: Cylinder
     6400000: //RootNode
     6400002: base_and_optics
     6400004: innards
@@ -44,6 +64,10 @@ ModelImporter:
     6400008: base
     6400010: optics
     6400012: lens
+    6400014: Cylinder
+    6400016: Cylinder_001
+    6400018: Cylinder_002
+    6400020: Cylinder_003
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -53,11 +77,13 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    optimizeGameObjects: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -85,7 +111,6 @@ ModelImporter:
   humanDescription:
     human: []
     skeleton: []
-    handles: []
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -95,6 +120,5 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  additionalBone: 1
   animationType: 2
   userData: 
