@@ -8,21 +8,21 @@
 		_BumpMap ("Bumpmap", 2D) = "bump" {}
 	}
 	SubShader {
-		LOD 200
+//		LOD 200
 		
-		CGPROGRAM
-		#pragma surface surf Lambert
-
-		sampler2D _BumpMap;
-		
-		struct Input {
-			float2 uv_BumpMap;
-		};
-
-		void surf (Input IN, inout SurfaceOutput o) {
-			o.Normal = UnpackNormal(tex2D (_BumpMap, IN.uv_BumpMap));
-		}
-		ENDCG
+//		CGPROGRAM
+//		#pragma surface surf Lambert
+//
+//		sampler2D _BumpMap;
+//		
+//		struct Input {
+//			float2 uv_BumpMap;
+//		};
+//
+//		void surf (Input IN, inout SurfaceOutput o) {
+//			o.Normal = UnpackNormal(tex2D (_BumpMap, IN.uv_BumpMap));
+//		}
+//		ENDCG
 
        // We use the material in many passes by defining them in the subshader.
         // Anything defined here becomes default values for all contained passes.
@@ -47,6 +47,9 @@
             SetTexture [_MainTex] {
                 Combine Primary * Texture
             }
+            SetTexture [_BumpMap] {
+            	Combine previous * texture, previous
+            }
         }
         // Render the parts of the object facing us.
         // If the object is convex, these will be closer than the
@@ -56,8 +59,11 @@
             SetTexture [_MainTex] {
                 Combine Primary * Texture
             }
+            SetTexture [_BumpMap] {
+            	combine previous * texture, previous
+            }
         }
-
+		
 	} 
 	FallBack "Diffuse"
 }
