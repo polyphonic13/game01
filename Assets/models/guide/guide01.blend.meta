@@ -16,6 +16,9 @@ ModelImporter:
     100020: Cylinder_003
     100022: Cylinder_004
     100024: lense
+    100026: body
+    100028: left_arm
+    100030: right_arm
     400000: //RootNode
     400002: base_and_optics
     400004: innards
@@ -29,6 +32,9 @@ ModelImporter:
     400020: Cylinder_003
     400022: Cylinder_004
     400024: lense
+    400026: body
+    400028: left_arm
+    400030: right_arm
     2300000: //RootNode
     2300002: base_and_optics
     2300004: innards
@@ -42,6 +48,9 @@ ModelImporter:
     2300020: Cylinder_003
     2300022: Cylinder_004
     2300024: lense
+    2300026: body
+    2300028: left_arm
+    2300030: right_arm
     3300000: //RootNode
     3300002: base_and_optics
     3300004: innards
@@ -55,6 +64,9 @@ ModelImporter:
     3300020: Cylinder_003
     3300022: Cylinder_004
     3300024: lense
+    3300026: body
+    3300028: left_arm
+    3300030: right_arm
     4300000: Sphere
     4300002: innards
     4300004: base_and_optics
@@ -67,6 +79,9 @@ ModelImporter:
     4300018: Cylinder
     4300020: Cylinder_004
     4300022: lense
+    4300024: right_arm
+    4300026: left_arm
+    4300028: body
     6400000: //RootNode
     6400002: base_and_optics
     6400004: innards
@@ -80,6 +95,9 @@ ModelImporter:
     6400020: Cylinder_003
     6400022: Cylinder_004
     6400024: lense
+    6400026: body
+    6400028: left_arm
+    6400030: right_arm
     7400000: Default Take
     9500000: //RootNode
   materials:
