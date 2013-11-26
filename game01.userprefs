@@ -1,29 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/shaders/glass.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GUI/MouseManager.cs">
     <Files>
-      <File FileName="Temp/Compiled-glass.shader" Line="1" Column="1" />
       <File FileName="Assets/scripts/EventCenter.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/InteractiveElement.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/InspectableItem.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/GUI/InventoryManager.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
-      <File FileName="Temp/Compiled-AlphaSelfIllum.shader" Line="1" Column="1" />
       <File FileName="Assets/shaders/glass.shader" Line="21" Column="28" />
-      <File FileName="Assets/shaders/GlassBump.shader" Line="7" Column="1" />
+      <File FileName="Assets/shaders/GlassBump.shader" Line="51" Column="32" />
+      <File FileName="Assets/scripts/GUI/MouseManager.cs" Line="45" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="shaders" expanded="True" />
-          </Node>
-          <Node name="Assembly-CSharp-firstpass" expanded="True">
-            <Node name="shaders" expanded="True">
-              <Node name="glass.shader" selected="True" />
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
