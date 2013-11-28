@@ -20,6 +20,8 @@ ModelImporter:
     100028: left_arm
     100030: right_arm
     100032: arms
+    100034: Armature
+    100036: Bone
     400000: //RootNode
     400002: base_and_optics
     400004: innards
@@ -37,6 +39,8 @@ ModelImporter:
     400028: left_arm
     400030: right_arm
     400032: arms
+    400034: Armature
+    400036: Bone
     2300000: //RootNode
     2300002: base_and_optics
     2300004: innards
