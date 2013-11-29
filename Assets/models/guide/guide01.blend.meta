@@ -22,6 +22,10 @@ ModelImporter:
     100032: arms
     100034: Armature
     100036: Bone
+    100038: arm_L
+    100040: arm_R
+    100042: body_001
+    100044: master
     400000: //RootNode
     400002: base_and_optics
     400004: innards
@@ -41,6 +45,10 @@ ModelImporter:
     400032: arms
     400034: Armature
     400036: Bone
+    400038: arm_L
+    400040: arm_R
+    400042: body_001
+    400044: master
     2300000: //RootNode
     2300002: base_and_optics
     2300004: innards
@@ -58,6 +66,7 @@ ModelImporter:
     2300028: left_arm
     2300030: right_arm
     2300032: arms
+    2300034: body_001
     3300000: //RootNode
     3300002: base_and_optics
     3300004: innards
@@ -75,6 +84,7 @@ ModelImporter:
     3300028: left_arm
     3300030: right_arm
     3300032: arms
+    3300034: body_001
     4300000: Sphere
     4300002: innards
     4300004: base_and_optics
@@ -91,6 +101,7 @@ ModelImporter:
     4300026: left_arm
     4300028: body
     4300030: arms
+    4300032: body_001
     6400000: //RootNode
     6400002: base_and_optics
     6400004: innards
@@ -108,8 +119,10 @@ ModelImporter:
     6400028: left_arm
     6400030: right_arm
     6400032: arms
+    6400034: body_001
     7400000: Default Take
     9500000: //RootNode
+    13700000: arms
   materials:
     importMaterials: 1
     materialName: 0
