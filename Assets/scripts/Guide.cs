@@ -115,8 +115,8 @@ public class Guide : InteractiveElement {
 	}
 	
 	private void _updateDirection() {
-		var targetPos = _player.transform.position - transform.position;
-		targetPos.y = 0;
+		var targetPos = _mainCamera.transform.position - transform.position;
+//		targetPos.y = 0;
 		Quaternion newRotation = Quaternion.LookRotation(targetPos);
 		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * animationSpeed);
 	}
@@ -131,10 +131,10 @@ public class Guide : InteractiveElement {
 
 	void Update() {
 		if(this.isActive) {
-			_updateDirection();
 			if(!this._isLevitated) {
 				_updateLevitation();
 			} else {
+				_updateDirection();
 				_updatePosition();
 			} 
 		}
