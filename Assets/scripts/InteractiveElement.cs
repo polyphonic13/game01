@@ -17,7 +17,7 @@ public class InteractiveElement : MonoBehaviour {
 	}
 
 	public void init(int activeCursor = 1) {
-		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
+//		Debug.Log("InteractiveElement[ " + this.name + " ]/init, activeCursor = " + activeCursor);
 		_mouseManager = MouseManager.Instance;
 		_activeCursor = activeCursor;
 
@@ -34,14 +34,14 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void onRoomEntered(string room) {
 		if(room == this.containingRoom) {
-			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomEntered");
+//			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomEntered");
 			this.isRoomActive = true;
 		}
 	}
 
 	public void onRoomExited(string room) {
 		if(room == this.containingRoom) {
-			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomExited");
+//			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomExited");
 			this.isRoomActive = false;
 		}
 	}
