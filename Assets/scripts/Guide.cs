@@ -11,6 +11,7 @@ public class Guide : InteractiveElement {
 	public ItemWeight weight; 
 
 	public float animationSpeed = 1.0f;
+	public float followDistance = 3.0f;
 
 	public bool isIntact { get; set; }
 	public bool isActive { get; set; }
@@ -43,10 +44,16 @@ public class Guide : InteractiveElement {
 		_applyOffMaterials();
 //		Debug.Log("Guide/initGuide, lens = " + _lens + ", _innards = " + _innards);
 		init();
+		EventCenter.Instance.onRoomEntered += this.onRoomEntered;
 	}
 	 
 	public void OnMouseDown() {
 		toggleActivated();
+	}
+
+	public override void onRoomEntered(string room) {
+		this.containingRoom = room;
+		this.isRoomActive = true;
 	}
 
 	public void toggleActivated() {
@@ -118,13 +125,17 @@ public class Guide : InteractiveElement {
 		var targetPos = _mainCamera.transform.position - transform.position;
 //		targetPos.y = 0;
 		Quaternion newRotation = Quaternion.LookRotation(targetPos);
-		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * animationSpeed);
+		this.transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * animationSpeed);
 	}
 
 	private void _updatePosition() {
+		var distance = Vector3.Distance(this.transform.position, _mainCamera.transform.position);
+		if(distance > followDistance) {
+			this.transform.Translate(animationSpeed * Vector3.forward * Time.deltaTime); 
+		}
 
 	}
-
+	
 	void Awake() {
 		initGuide();
 	}

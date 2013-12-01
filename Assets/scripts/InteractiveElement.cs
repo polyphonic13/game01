@@ -32,7 +32,7 @@ public class InteractiveElement : MonoBehaviour {
 		}
 	}
 
-	public void onRoomEntered(string room) {
+	public virtual void onRoomEntered(string room) {
 		if(room == this.containingRoom) {
 //			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomEntered");
 			this.isRoomActive = true;
