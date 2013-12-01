@@ -121,7 +121,11 @@ ModelImporter:
     6400032: arms
     6400034: body_001
     7400000: Default Take
+    7400002: guide01_arms_close
+    7400004: guide01_arms_open
+    7400006: guide01_default
     9500000: //RootNode
+    11100000: //RootNode
     13700000: arms
   materials:
     importMaterials: 1
@@ -173,5 +177,5 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   userData: 

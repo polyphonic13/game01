@@ -84,6 +84,7 @@
      <Compile Include="Assets\scripts\GUI\MouseManager.cs" />
      <Compile Include="Assets\scripts\GUI\Notification.cs" />
      <Compile Include="Assets\scripts\Grab.cs" />
+     <Compile Include="Assets\scripts\Guide.cs" />
      <Compile Include="Assets\scripts\InspectableItem.cs" />
      <Compile Include="Assets\scripts\InteractiveElement.cs" />
      <Compile Include="Assets\scripts\ItemContainer.cs" />
