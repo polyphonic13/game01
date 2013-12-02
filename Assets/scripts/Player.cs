@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 	
 	public GUIStyle basicStyle;
 
-	private const float SIGNIFICANT_DISTANCE_CHANGE = 2.0f;
+	private const float SIGNIFICANT_DISTANCE_CHANGE = 1.5f;
 	private Vector3 _lastPosition;
 
 	private Camera camera;
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour {
 
 	private void _dropBreadCrumb() {
 		EventCenter.Instance.dropBreadcrumb(_lastPosition);
-//		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
+		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
 	}
 
 	void OnGUI () {

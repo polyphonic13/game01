@@ -12,7 +12,7 @@ public class Guide : InteractiveElement {
 	public ItemWeight weight; 
 
 	public float animationSpeed = 1.0f;
-	public float followDistance = 3.0f;
+	public float followDistance = 2.0f;
 
 	public bool isIntact { get; set; }
 	public bool isActive { get; set; }
@@ -210,6 +210,7 @@ public class Guide : InteractiveElement {
 //			this.transform.Translate(animationSpeed * Vector3.forward * Time.deltaTime); 
 		} else {
 			_facePlayer();
+			_activeBreadcrumbs.Clear();
 		}
 
 	}
