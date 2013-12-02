@@ -67,7 +67,7 @@ public class Player : MonoBehaviour {
 
 	private void _dropBreadCrumb() {
 		EventCenter.Instance.dropBreadcrumb(_lastPosition);
-		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
+//		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
 	}
 
 	void OnGUI () {

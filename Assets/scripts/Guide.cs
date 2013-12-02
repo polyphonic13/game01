@@ -198,8 +198,8 @@ public class Guide : InteractiveElement {
 //			}
 //			Debug.Log("direction: " + direction);
 			var rot = Quaternion.LookRotation(direction);
-//			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
-			this.transform.rotation = rot;
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
+//			this.transform.rotation = rot;
 			if(!isCollided) {
 				this.transform.position += this.transform.forward * 3 * Time.deltaTime;
 //			} else {
