@@ -34,6 +34,7 @@ public class Guide : InteractiveElement {
 	private Player _player; 
 
 	public void initGuide() {
+		Debug.Log("Guide/initGuide, layer = " + this.gameObject.layer);
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_mainCamera = Camera.main;
 		isActive = false;
@@ -54,6 +55,7 @@ public class Guide : InteractiveElement {
 	public override void onRoomEntered(string room) {
 		this.containingRoom = room;
 		this.isRoomActive = true;
+		//this.gameObject.layer = room;
 	}
 
 	public void toggleActivated() {
