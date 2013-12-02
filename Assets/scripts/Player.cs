@@ -4,17 +4,23 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	public string startingRoom = "";
-	
+
+	public Breadcrumb breadcrumb;
+
 	public InventoryManager inventory;
 	public Notification notification;
 	public Menu menu;
 	
 	public GUIStyle basicStyle;
-	
-	Camera camera;
+
+	private const float SIGNIFICANT_DISTANCE_CHANGE = 2.0f;
+	private Vector3 _lastPosition;
+
+	private Camera camera;
 	
 	void Awake() {
 		camera = Camera.main;
+		_lastPosition = camera.transform.position;
 		inventory = new InventoryManager();
 		inventory.init(basicStyle);
 		notification = new Notification();
@@ -28,6 +34,7 @@ public class Player : MonoBehaviour {
 	}
 	
 	void Update() {
+		_checkPositionForChange();
 		if(Input.GetKeyDown(KeyCode.Q)) {
 			inventory.showInventory = !inventory.showInventory;
 			inventory.showDetail = false;
@@ -47,7 +54,22 @@ public class Player : MonoBehaviour {
 			enablePlayer(true);
 		}
 	}
-	
+
+	private void _checkPositionForChange() {
+		var difference = Vector3.Distance(_lastPosition, camera.transform.position);
+
+		if(difference > SIGNIFICANT_DISTANCE_CHANGE) {
+//			Debug.Log("Player/Update, position = " + camera.transform.position + ", _lastPosition = " + _lastPosition + ", difference = " + difference);
+			_lastPosition = camera.transform.position;
+			_dropBreadCrumb();
+		}
+	}
+
+	private void _dropBreadCrumb() {
+		EventCenter.Instance.dropBreadcrumb(_lastPosition);
+//		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
+	}
+
 	void OnGUI () {
 		MouseManager.Instance.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);

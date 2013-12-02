@@ -6,6 +6,7 @@ public class EventCenter : MonoBehaviour {
 	public delegate void RoomHandler(string room);
     public delegate void NoteHandler(string msg = "", bool zoom = false);
 	public delegate void PlayerHandler(bool enable);
+	public delegate void PlayerBreadcrumbHandler(Vector3 position);
 	public delegate void MouseSensitivityHandler(float sensitivity);
 	public delegate void CameraZoomHandler(bool zoom);
 	
@@ -21,6 +22,7 @@ public class EventCenter : MonoBehaviour {
 	public event NoteHandler onRemoveNote; 
 	
 	public event PlayerHandler onEnablePlayer; 
+	public event PlayerBreadcrumbHandler onPlayerBreadcrumb;
 	public event MouseSensitivityHandler onMouseSensitivityChange;
 	public event CameraZoomHandler onCameraZoom;
 	
@@ -70,7 +72,13 @@ public class EventCenter : MonoBehaviour {
 			onEnablePlayer(enable);
 		}
 	}
-	
+
+	public void dropBreadcrumb(Vector3 position) {
+		if(onPlayerBreadcrumb != null) {
+			onPlayerBreadcrumb(position);
+		}
+	}
+
 	public void changeMouseSensitivity(float sensitivity) {
 //		Debug.Log("EventCenter/changeMouseSensitivity, sensitivity = " + sensitivity + ", onMouseSensitivityChange = " + onMouseSensitivityChange);
 		if(onMouseSensitivityChange != null) {

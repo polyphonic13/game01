@@ -71,6 +71,7 @@
      <Compile Include="Assets\UnitySerializer\Scripts\TestLoading.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\TestSerialization.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\VariablesToSave.cs" />
+     <Compile Include="Assets\scripts\Breadcrumb.cs" />
      <Compile Include="Assets\scripts\CameraZoom.cs" />
      <Compile Include="Assets\scripts\CollectableItem.cs" />
      <Compile Include="Assets\scripts\CollidableChild.cs" />

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Guide : InteractiveElement {
 
@@ -20,6 +21,8 @@ public class Guide : InteractiveElement {
 	private const string ARMS_OPEN_CLIP = "guide01_arms_open";
 	private const string ARMS_CLOSE_CLIP = "guide01_arms_close";
 
+	private List<Vector3> _activeBreadcrumbs;
+	private Vector3 _lastPlayerPosition;
 	private Vector3 _startY;
 	private Vector3 _endY;
 	private float _startTime = 0;
@@ -44,8 +47,10 @@ public class Guide : InteractiveElement {
 		_playClip(DEFAULT_CLIP);
 		_applyOffMaterials();
 //		Debug.Log("Guide/initGuide, lens = " + _lens + ", _innards = " + _innards);
-		init();
 		EventCenter.Instance.onRoomEntered += this.onRoomEntered;
+		EventCenter.Instance.onPlayerBreadcrumb += this.onPlayerBreadcrumb;
+		_activeBreadcrumbs = new List<Vector3>();
+		init();
 	}
 	 
 	public void OnMouseDown() {
@@ -56,6 +61,11 @@ public class Guide : InteractiveElement {
 		this.containingRoom = room;
 		this.isRoomActive = true;
 		//this.gameObject.layer = room;
+	}
+
+	public void onPlayerBreadcrumb(Vector3 position) {
+		_lastPlayerPosition = position;
+		_activeBreadcrumbs.Add(position);
 	}
 
 	public void toggleActivated() {
@@ -123,7 +133,7 @@ public class Guide : InteractiveElement {
 		}
 	}
 	
-	private void _updateDirection() {
+	private void _facePlayer() {
 		var targetPos = _mainCamera.transform.position - transform.position;
 //		targetPos.y = 0;
 		Quaternion newRotation = Quaternion.LookRotation(targetPos);
@@ -132,8 +142,74 @@ public class Guide : InteractiveElement {
 
 	private void _updatePosition() {
 		var distance = Vector3.Distance(this.transform.position, _mainCamera.transform.position);
+
+//		Debug.Log("distance = " + distance + ", followDistance = " + followDistance);
 		if(distance > followDistance) {
-			this.transform.Translate(animationSpeed * Vector3.forward * Time.deltaTime); 
+			Vector3 newDestination;
+			if(_activeBreadcrumbs.Count > 0) {
+				newDestination = _activeBreadcrumbs[0]; // get the first (oldest) position in the list
+				var breadcrumbDistance = Vector3.Distance(this.transform.position, _activeBreadcrumbs[0]);
+				Debug.Log("newDestination = " +newDestination + ", breadcrumbDistance = " + breadcrumbDistance);
+				if(breadcrumbDistance <= 2f) {
+					_activeBreadcrumbs.RemoveAt(0); // remove that position
+				}
+			} else {
+				newDestination = _mainCamera.transform.position;
+			}
+			/*
+			if(_lastPlayerPosition != null) {
+				Debug.Log("getting direction from breadcrumb: " + _lastPlayerPosition + ", whereas the player is at: " + _mainCamera.transform.position);
+				newDestination = _lastPlayerPosition; 
+			} else {
+				newDestination = _mainCamera.transform.position;
+			}
+			*/
+			var direction = (newDestination - this.transform.position).normalized;
+
+//			RaycastHit hit;
+			bool isCollided = false;
+//			if(Physics.Raycast(this.transform.position, this.transform.forward, out hit, 0.1f)) {
+//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
+//					Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
+//					direction += hit.normal * 5;
+//					isCollided = true;
+//				}
+//			}
+
+//			var leftR = transform.position;
+//			var rightR = transform.position;
+//			leftR.x -= 1;
+//			rightR.x += 1;
+//
+//			if(Physics.Raycast(leftR, this.transform.forward, out hit, 0.1f)) {
+//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
+//					Debug.DrawRay(leftR, this.transform.forward, Color.green);
+//					direction += hit.normal * 5;
+//					isCollided = true;
+//				}
+//			}
+//
+//			if(Physics.Raycast(rightR, this.transform.forward, out hit, 0.1f)) {
+//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
+//					Debug.DrawRay(rightR, this.transform.forward, Color.yellow);
+//					direction += hit.normal * 5;
+//					isCollided = true;
+//				}
+//			}
+//			Debug.Log("direction: " + direction);
+			var rot = Quaternion.LookRotation(direction);
+//			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
+			this.transform.rotation = rot;
+			if(!isCollided) {
+				this.transform.position += this.transform.forward * 3 * Time.deltaTime;
+//			} else {
+//				// back up a little
+//				this.transform.position -= this.transform.forward * 2 * Time.deltaTime;
+			}
+
+//			this.transform.Translate(animationSpeed * Vector3.forward * Time.deltaTime); 
+		} else {
+			_facePlayer();
 		}
 
 	}
@@ -147,7 +223,7 @@ public class Guide : InteractiveElement {
 			if(!this._isLevitated) {
 				_updateLevitation();
 			} else {
-				_updateDirection();
+//				_facePlayer();
 				_updatePosition();
 			} 
 		}
