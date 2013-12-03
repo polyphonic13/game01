@@ -43,49 +43,52 @@ public class RaycastTest : MonoBehaviour {
 		bool hitSomething = false;
 		RaycastHit hit;
 
-		if(Physics.Raycast(this.transform.position, this.transform.forward, out hit, 5f)) {
-			Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
+		Debug.DrawRay(this.transform.position, this.transform.forward * 2, Color.red);
+		if(Physics.Raycast(this.transform.position, this.transform.forward * 2, out hit, 2f)) {
 			if(hit.transform != this.transform) {
 				if(hit.transform.tag != "Player") {
 					Debug.Log("transform.forward hit: " + hit.transform.name);
 				} else if(hit.transform.tag == "Player") {
 					Debug.Log("Found player");
 				}
-				transform.Rotate(Vector3.up, 90 * 5* Time.smoothDeltaTime);
+				transform.Rotate(Vector3.up, 90 * 5 * Time.smoothDeltaTime);
+				hitSomething = true;
 				direction += hit.normal * 5;
 			}
 		}
 
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*-.5f)*5, out hit, 5f)) {
-			Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
+		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.5f) * 2, Color.blue);
+		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*-.5f) * 2, out hit, 2f)) {
 			if(hit.transform != this.transform) {
 				if(hit.transform.tag != "Player") {
-					Debug.Log("transform.forward hit: " + hit.transform.name);
+					Debug.Log("transform.left hit: " + hit.transform.name);
 				} else if(hit.transform.tag == "Player") {
 					Debug.Log("Found player");
 				}
-				transform.Rotate(Vector3.up, 90 * 2* Time.smoothDeltaTime);
+				transform.Rotate(Vector3.up, 30 * 2 * Time.smoothDeltaTime);
+//				hitSomething = true;
 				direction += hit.normal * 5;
 			}
 		}
 		
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*.5f)*5, out hit, 5f)) {
-			Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
+		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.5f) * 2, Color.yellow);
+		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*.5f) * 2, out hit, 2f)) {
 			if(hit.transform != this.transform) {
 				if(hit.transform.tag != "Player") {
-					Debug.Log("transform.forward hit: " + hit.transform.name);
+					Debug.Log("transform.right hit: " + hit.transform.name);
 				} else if(hit.transform.tag == "Player") {
 					Debug.Log("Found player");
 				}
-				transform.Rotate(Vector3.up, -90 * 2* Time.smoothDeltaTime);
+				transform.Rotate(Vector3.up, -30 * 2 * Time.smoothDeltaTime);
+//				hitSomething = true;
 				direction += hit.normal * 5;
 			}
 		}
 		
-		var rot = Quaternion.LookRotation(direction);
-		this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
+//		var rot = Quaternion.LookRotation(direction);
+//		this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
 		if(!hitSomething) {
-			this.transform.position += this.transform.forward * 4 * Time.deltaTime;
+			this.transform.position += this.transform.forward * 2 * Time.deltaTime;
 		}
 	}
 
