@@ -61,7 +61,7 @@ public class Guide : InteractiveElement {
 		this.containingRoom = room;
 		this.isRoomActive = true;
 		this.gameObject.layer = LayerMask.NameToLayer(room);
-		Debug.Log("Guide/onRoomEntered, room = " + room + ", layer = " + this.gameObject.layer + ", room layer = " + LayerMask.NameToLayer(room));
+//		Debug.Log("Guide/onRoomEntered, room = " + room + ", layer = " + this.gameObject.layer + ", room layer = " + LayerMask.NameToLayer(room));
 	}
 
 	public void onPlayerBreadcrumb(Vector3 position) {
@@ -147,6 +147,9 @@ public class Guide : InteractiveElement {
 //		Debug.Log("distance = " + distance + ", followDistance = " + followDistance);
 		if(distance > followDistance) {
 			Vector3 newDestination;
+			RaycastHit hit;
+			bool isCollided = false;
+
 			if(_activeBreadcrumbs.Count > 0) {
 				newDestination = _activeBreadcrumbs[0]; // get the first (oldest) position in the list
 				var breadcrumbDistance = Vector3.Distance(this.transform.position, _activeBreadcrumbs[0]);
@@ -157,18 +160,9 @@ public class Guide : InteractiveElement {
 			} else {
 				newDestination = _mainCamera.transform.position;
 			}
-			/*
-			if(_lastPlayerPosition != null) {
-				Debug.Log("getting direction from breadcrumb: " + _lastPlayerPosition + ", whereas the player is at: " + _mainCamera.transform.position);
-				newDestination = _lastPlayerPosition; 
-			} else {
-				newDestination = _mainCamera.transform.position;
-			}
-			*/
+
 			var direction = (newDestination - this.transform.position).normalized;
 
-//			RaycastHit hit;
-			bool isCollided = false;
 //			if(Physics.Raycast(this.transform.position, this.transform.forward, out hit, 0.1f)) {
 //				if(hit.transform != this.transform && hit.transform.tag != "Player") {
 //					Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
