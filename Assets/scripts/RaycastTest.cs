@@ -17,7 +17,7 @@ public class RaycastTest : MonoBehaviour {
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_mainCamera = Camera.main;
 		_activeBreadcrumbs = new List<Vector3>();
-		EventCenter.Instance.onPlayerBreadcrumb += this.onPlayerBreadcrumb;
+//		EventCenter.Instance.onPlayerBreadcrumb += this.onPlayerBreadcrumb;
 	}
 
 	public void onPlayerBreadcrumb(Vector3 position) {
@@ -38,11 +38,43 @@ public class RaycastTest : MonoBehaviour {
 	private void _updatePosition() {
 
 		Vector3 newDestination = _mainCamera.transform.position;
-//		var direction = (newDestination - this.transform.position).normalized;
-		var direction = this.transform.forward;
-		bool hitSomething = false;
+		var direction = (newDestination - this.transform.position).normalized;
+		transform.rotation = Quaternion.LookRotation(direction);
+//		var direction = this.transform.forward;
+		bool leftHit = false;
+		bool rightHit = false;
+		bool directHit = false;
 		RaycastHit hit;
 
+		// LEFT 45°
+		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.5f) * 3, Color.blue);
+		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*-.5f) * 3, out hit, 3f)) {
+			if(hit.transform != this.transform) {
+				if(hit.transform.tag != "Player") {
+					Debug.Log("transform.left hit: " + hit.transform.name);
+				} else if(hit.transform.tag == "Player") {
+					Debug.Log("Found player");
+				}
+				transform.Rotate(Vector3.up, 30 * 2 * Time.smoothDeltaTime);
+				leftHit = true;
+			}
+		}
+		
+		// RIGHT 45°
+		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.5f) * 3, Color.yellow);
+		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*.5f) * 3, out hit, 3f)) {
+			if(hit.transform != this.transform) {
+				if(hit.transform.tag != "Player") {
+					Debug.Log("transform.right hit: " + hit.transform.name);
+				} else if(hit.transform.tag == "Player") {
+					Debug.Log("Found player");
+				}
+				transform.Rotate(Vector3.up, -30 * 2 * Time.smoothDeltaTime);
+				rightHit = true;
+			}
+		}
+
+		// FRONT
 		Debug.DrawRay(this.transform.position, this.transform.forward * 2, Color.red);
 		if(Physics.Raycast(this.transform.position, this.transform.forward * 2, out hit, 2f)) {
 			if(hit.transform != this.transform) {
@@ -51,43 +83,18 @@ public class RaycastTest : MonoBehaviour {
 				} else if(hit.transform.tag == "Player") {
 					Debug.Log("Found player");
 				}
-				transform.Rotate(Vector3.up, 90 * 5 * Time.smoothDeltaTime);
-				hitSomething = true;
-				direction += hit.normal * 5;
+				if(leftHit) {
+					transform.Rotate(Vector3.up, 90 * 5 * Time.smoothDeltaTime);
+				} else {
+					transform.Rotate(Vector3.up, -90 * 5 * Time.smoothDeltaTime);
+				}
+				directHit = true;
 			}
 		}
 
-		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.5f) * 2, Color.blue);
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*-.5f) * 2, out hit, 2f)) {
-			if(hit.transform != this.transform) {
-				if(hit.transform.tag != "Player") {
-					Debug.Log("transform.left hit: " + hit.transform.name);
-				} else if(hit.transform.tag == "Player") {
-					Debug.Log("Found player");
-				}
-				transform.Rotate(Vector3.up, 30 * 2 * Time.smoothDeltaTime);
-//				hitSomething = true;
-				direction += hit.normal * 5;
-			}
-		}
-		
-		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.5f) * 2, Color.yellow);
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*.5f) * 2, out hit, 2f)) {
-			if(hit.transform != this.transform) {
-				if(hit.transform.tag != "Player") {
-					Debug.Log("transform.right hit: " + hit.transform.name);
-				} else if(hit.transform.tag == "Player") {
-					Debug.Log("Found player");
-				}
-				transform.Rotate(Vector3.up, -30 * 2 * Time.smoothDeltaTime);
-//				hitSomething = true;
-				direction += hit.normal * 5;
-			}
-		}
-		
-//		var rot = Quaternion.LookRotation(direction);
-//		this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
-		if(!hitSomething) {
+
+
+		if(!directHit) {
 			this.transform.position += this.transform.forward * 2 * Time.deltaTime;
 		}
 	}
