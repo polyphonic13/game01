@@ -60,7 +60,8 @@ public class Guide : InteractiveElement {
 	public override void onRoomEntered(string room) {
 		this.containingRoom = room;
 		this.isRoomActive = true;
-		//this.gameObject.layer = room;
+		this.gameObject.layer = LayerMask.NameToLayer(room);
+		Debug.Log("Guide/onRoomEntered, room = " + room + ", layer = " + this.gameObject.layer + ", room layer = " + LayerMask.NameToLayer(room));
 	}
 
 	public void onPlayerBreadcrumb(Vector3 position) {
@@ -149,7 +150,7 @@ public class Guide : InteractiveElement {
 			if(_activeBreadcrumbs.Count > 0) {
 				newDestination = _activeBreadcrumbs[0]; // get the first (oldest) position in the list
 				var breadcrumbDistance = Vector3.Distance(this.transform.position, _activeBreadcrumbs[0]);
-				Debug.Log("newDestination = " +newDestination + ", breadcrumbDistance = " + breadcrumbDistance);
+//				Debug.Log("newDestination = " +newDestination + ", breadcrumbDistance = " + breadcrumbDistance);
 				if(breadcrumbDistance <= 2f) {
 					_activeBreadcrumbs.RemoveAt(0); // remove that position
 				}
@@ -198,7 +199,8 @@ public class Guide : InteractiveElement {
 //			}
 //			Debug.Log("direction: " + direction);
 			var rot = Quaternion.LookRotation(direction);
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
+//			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, 0.5f);
 //			this.transform.rotation = rot;
 			if(!isCollided) {
 				this.transform.position += this.transform.forward * 3 * Time.deltaTime;
