@@ -203,7 +203,7 @@ public class Guide : InteractiveElement {
 			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, 0.5f);
 //			this.transform.rotation = rot;
 			if(!isCollided) {
-				this.transform.position += this.transform.forward * 3 * Time.deltaTime;
+				this.transform.position += this.transform.forward * 4 * Time.deltaTime;
 //			} else {
 //				// back up a little
 //				this.transform.position -= this.transform.forward * 2 * Time.deltaTime;
