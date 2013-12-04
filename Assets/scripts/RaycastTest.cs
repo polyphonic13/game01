@@ -38,15 +38,16 @@ public class RaycastTest : MonoBehaviour {
 	private void _updatePosition() {
 
 		Vector3 newDestination = _mainCamera.transform.position;
-		var direction = (newDestination - this.transform.position).normalized;
-		transform.rotation = Quaternion.LookRotation(direction);
-//		var direction = this.transform.forward;
+//		var direction = (newDestination - this.transform.position).normalized;
+//		transform.rotation = Quaternion.LookRotation(direction);
+		var direction = this.transform.forward;
 		bool leftHit = false;
 		bool rightHit = false;
 		bool directHit = false;
 		RaycastHit hit;
 
-		// LEFT 45°
+		// OBSTACLE AVOIDANCE:
+		// left 45°
 		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.5f) * 3, Color.blue);
 		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*-.5f) * 3, out hit, 3f)) {
 			if(hit.transform != this.transform) {
@@ -60,7 +61,7 @@ public class RaycastTest : MonoBehaviour {
 			}
 		}
 		
-		// RIGHT 45°
+		// right 45°
 		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.5f) * 3, Color.yellow);
 		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*.5f) * 3, out hit, 3f)) {
 			if(hit.transform != this.transform) {
@@ -74,7 +75,7 @@ public class RaycastTest : MonoBehaviour {
 			}
 		}
 
-		// FRONT
+		// front
 		Debug.DrawRay(this.transform.position, this.transform.forward * 2, Color.red);
 		if(Physics.Raycast(this.transform.position, this.transform.forward * 2, out hit, 2f)) {
 			if(hit.transform != this.transform) {
@@ -92,11 +93,12 @@ public class RaycastTest : MonoBehaviour {
 			}
 		}
 
-
-
 		if(!directHit) {
 			this.transform.position += this.transform.forward * 2 * Time.deltaTime;
 		}
+		// END OBSTACLE AVOIDANCE
+
+
 	}
 
 	private void _facePlayer() {

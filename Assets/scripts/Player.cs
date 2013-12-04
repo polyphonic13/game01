@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 	
 	public GUIStyle basicStyle;
 
-	private const float SIGNIFICANT_DISTANCE_CHANGE = 1.5f;
+	private const float SIGNIFICANT_DISTANCE_CHANGE = 2f;
 	private Vector3 _lastPosition;
 
 	private Camera camera;
@@ -60,12 +60,12 @@ public class Player : MonoBehaviour {
 
 		if(difference > SIGNIFICANT_DISTANCE_CHANGE) {
 //			Debug.Log("Player/Update, position = " + camera.transform.position + ", _lastPosition = " + _lastPosition + ", difference = " + difference);
+			_dropBreadcrumb();
 			_lastPosition = camera.transform.position;
-			_dropBreadCrumb();
 		}
 	}
 
-	private void _dropBreadCrumb() {
+	private void _dropBreadcrumb() {
 		EventCenter.Instance.dropBreadcrumb(_lastPosition);
 //		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
 	}
