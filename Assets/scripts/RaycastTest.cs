@@ -73,8 +73,7 @@ public class RaycastTest : MonoBehaviour {
 			newRotation = _direction;
 		} else {
 			Debug.Log("CHANGING DIRECTION TO AVOID OBSTACLE");
-			Quaternion newRotation = Quaternion.Euler(0, _rotationAdjustment, 0);
-			newRotation.eulerAngles += transform.rotation.eulerAngles;
+			newRotation = Quaternion.Euler(0, _rotationAdjustment, 0);
 
 //			newRotation = _direction;
 //			newRotation.y += _rotationAdjustment;
