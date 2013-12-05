@@ -23,8 +23,7 @@ public class RaycastTest : MonoBehaviour {
 	private float _rotationAdjustment = 0;
 	private bool _updating = false;
 	private bool _tooCloseToObject = false;
-	bool _leftHit = false;
-	bool _rightHit = false;
+	private Vector3 _direction;
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +35,8 @@ public class RaycastTest : MonoBehaviour {
 		} else {
 			_goalTransform = _mainCamera.transform;
 		}
+		Vector3 newDestination = _goalTransform.position;
+		_direction = (newDestination - this.transform.position).normalized;
 
 		_activeBreadcrumbs = new List<Vector3>();
 //		EventCenter.Instance.onPlayerBreadcrumb += this.onPlayerBreadcrumb;
@@ -66,21 +67,25 @@ public class RaycastTest : MonoBehaviour {
 		_rotationAdjustment = _checkDirectionalHit(-0.5f, 60f, 5f, "left");
 		_rotationAdjustment = _checkDirectionalHit(0.5f, -60f, -5f, "right");
 		Debug.Log("_rotationAdjustment = " + _rotationAdjustment);
-		Vector3 direction;
+		Vector3 newRotation;
 		if(_rotationAdjustment == 0) {
 			Debug.Log("FINDING TARGET");
-			Vector3 newDestination = _goalTransform.position;
-			direction = (newDestination - this.transform.position).normalized;
-			transform.rotation = Quaternion.LookRotation(direction);
+			newRotation = _direction;
 		} else {
 			Debug.Log("CHANGING DIRECTION TO AVOID OBSTACLE");
-			Quaternion rotation = this.transform.rotation;
-			rotation.y += _rotationAdjustment;
-			transform.rotation = rotation;
+			Quaternion newRotation = Quaternion.Euler(0, _rotationAdjustment, 0);
+			newRotation.eulerAngles += transform.rotation.eulerAngles;
+
+//			newRotation = _direction;
+//			newRotation.y += _rotationAdjustment;
+
+//			Quaternion rotation = transform.rotation;
+//			rotation.y += _rotationAdjustment;
 //			transform.Rotate(Vector3.up, _rotationAdjustment * 2 * Time.smoothDeltaTime);
 //			direction = this.transform.forward;
 //			direction.y += _rotationAdjustment;
 		}
+		transform.rotation = Quaternion.LookRotation(newRotation);
 		Debug.Log("  transform.rotation = " + transform.rotation);
 
 		// OBSTACLE AVOIDANCE:
