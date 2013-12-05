@@ -10,6 +10,7 @@ public class RaycastTest : MonoBehaviour {
 	public float followDistance = 1.0f;
 	public float minSafeDistance = 0.5f;
 	public float sideRays = 1.5f;
+	public float sideRays2 = 2.5f;
 	public float frontRay = 1.0f;
 
 	private List<Vector3> _activeBreadcrumbs;
@@ -71,9 +72,10 @@ public class RaycastTest : MonoBehaviour {
 		if(_rotationAdjustment == 0) {
 			Debug.Log("FINDING TARGET");
 			newRotation = _direction;
+			transform.rotation = Quaternion.LookRotation(newRotation);
 		} else {
 			Debug.Log("CHANGING DIRECTION TO AVOID OBSTACLE");
-			newRotation = Quaternion.Euler(0, _rotationAdjustment, 0);
+			transform.Rotate(Vector3.up, _rotationAdjustment * 2 * Time.smoothDeltaTime);
 
 //			newRotation = _direction;
 //			newRotation.y += _rotationAdjustment;
@@ -84,7 +86,6 @@ public class RaycastTest : MonoBehaviour {
 //			direction = this.transform.forward;
 //			direction.y += _rotationAdjustment;
 		}
-		transform.rotation = Quaternion.LookRotation(newRotation);
 		Debug.Log("  transform.rotation = " + transform.rotation);
 
 		// OBSTACLE AVOIDANCE:
@@ -93,8 +94,10 @@ public class RaycastTest : MonoBehaviour {
 		// right 45°
 		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.5f) * sideRays, Color.yellow);
 		// front
-		Debug.DrawRay(this.transform.position, this.transform.forward * frontRay, Color.red);
+//		Debug.DrawRay(this.transform.position, this.transform.forward * frontRay, Color.red);
+		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.25f) * sideRays2, Color.green);
 
+		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.25f) * sideRays2, Color.red);
 
 		if(!_tooCloseToObject) {
 			this.transform.position += this.transform.forward * animationSpeed * Time.deltaTime;
