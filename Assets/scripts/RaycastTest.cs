@@ -63,23 +63,25 @@ public class RaycastTest : MonoBehaviour {
 		_updating = true;
 
 		_rotationAdjustment = 0;
-		_leftHit = false;
-		_rightHit = false;
-		_leftHit = _checkDirectionalHit(-0.5f, -60f, -5f, "left");
-		_rightHit = _checkDirectionalHit(0.5f, 60f, 5f, "right");
-
+		_rotationAdjustment = _checkDirectionalHit(-0.5f, 60f, 5f, "left");
+		_rotationAdjustment = _checkDirectionalHit(0.5f, -60f, -5f, "right");
+		Debug.Log("_rotationAdjustment = " + _rotationAdjustment);
 		Vector3 direction;
-		if(!_leftHit && !_rightHit) { 
+		if(_rotationAdjustment == 0) {
+			Debug.Log("FINDING TARGET");
 			Vector3 newDestination = _goalTransform.position;
 			direction = (newDestination - this.transform.position).normalized;
+			transform.rotation = Quaternion.LookRotation(direction);
 		} else {
-			direction = this.transform.forward;
-			direction.y += _rotationAdjustment;
+			Debug.Log("CHANGING DIRECTION TO AVOID OBSTACLE");
+			Quaternion rotation = this.transform.rotation;
+			rotation.y += _rotationAdjustment;
+			transform.rotation = rotation;
+//			transform.Rotate(Vector3.up, _rotationAdjustment * 2 * Time.smoothDeltaTime);
+//			direction = this.transform.forward;
+//			direction.y += _rotationAdjustment;
 		}
-		Debug.Log("direction = " + direction + ", _rotationAdjustment = " + _rotationAdjustment);
-		transform.rotation = Quaternion.LookRotation(direction);
-//		var direction = this.transform.forward;
-		bool directHit = false;
+		Debug.Log("  transform.rotation = " + transform.rotation);
 
 		// OBSTACLE AVOIDANCE:
 		// left 45°
@@ -90,7 +92,7 @@ public class RaycastTest : MonoBehaviour {
 		Debug.DrawRay(this.transform.position, this.transform.forward * frontRay, Color.red);
 
 
-		if(!directHit & !_tooCloseToObject) {
+		if(!_tooCloseToObject) {
 			this.transform.position += this.transform.forward * animationSpeed * Time.deltaTime;
 		}
 		// END OBSTACLE AVOIDANCE
@@ -99,19 +101,21 @@ public class RaycastTest : MonoBehaviour {
 		yield return true;
 	}
 
-	private bool _checkDirectionalHit(float rot, float rotChange, float rotAdj, string dir) { 
-		bool ret = false;
+	private float _checkDirectionalHit(float rot, float rotChange, float rotAdj, string dir) { 
+		float ret = 0;
 
 		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*rot) * sideRays, out _hit, sideRays)) {
 			if(_hit.transform != this.transform) {
-				if(_hit.transform.tag != "Player") {
-					Debug.Log("transform."+dir+" hit: " + _hit.transform.name + ", rotation = " + transform.rotation);
-				}
+//				if(_hit.transform.tag != "Player") {
+					Debug.Log("  transform."+dir+" hit: " + _hit.transform.name);
+//				}
 //				transform.Rotate(Vector3.up, rotChange * 2 * Time.smoothDeltaTime);
-				Debug.Log("  rotation now: " + transform.rotation);
+//				Debug.Log("  rotation now: " + transform.rotation);
 
-				_rotationAdjustment = rotAdj;
-				ret = true;
+//				_rotationAdjustment = rotAdj;
+//				ret = true;
+//				ret = rotChange;
+				ret = rotAdj;
 
 				var obstacleDistance = Vector3.Distance(this.transform.position, _hit.transform.position);
 				if(obstacleDistance < minSafeDistance) {

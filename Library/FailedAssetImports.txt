@@ -1,1 +1,0 @@
-Assets/models/floor_2/bedroom_se/bed.blend
