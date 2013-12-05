@@ -6,11 +6,11 @@ public class RaycastTest : MonoBehaviour {
 
 	public GameObject goal;
 
-	public float animationSpeed = 3.0f;
+	public float animationSpeed = 1.0f;
 	public float followDistance = 1.0f;
 	public float minSafeDistance = 0.5f;
-	public float sideRays = 2.0f;
-	public float frontRay = 1.5f;
+	public float sideRays = 1.5f;
+	public float frontRay = 1.0f;
 
 	private List<Vector3> _activeBreadcrumbs;
 
@@ -23,6 +23,8 @@ public class RaycastTest : MonoBehaviour {
 	private float _rotationAdjustment = 0;
 	private bool _updating = false;
 	private bool _tooCloseToObject = false;
+	bool _leftHit = false;
+	bool _rightHit = false;
 
 	// Use this for initialization
 	void Start () {
@@ -47,7 +49,9 @@ public class RaycastTest : MonoBehaviour {
 	void Update () {
 		var distance = Vector3.Distance(this.transform.position, _goalTransform.position);
 		if(distance > followDistance) {
-			StartCoroutine("_updatePosition");
+			if(!_updating) {
+				StartCoroutine("_updatePosition");
+			}
 //			_updatePosition();
 		} else {
 			_faceGoal();
@@ -57,14 +61,24 @@ public class RaycastTest : MonoBehaviour {
 
 	private IEnumerator _updatePosition() {
 		_updating = true;
-		Vector3 newDestination = _goalTransform.position;
-		Vector3 direction = (newDestination - this.transform.position).normalized;
-		direction.y += _rotationAdjustment;
+
+		_rotationAdjustment = 0;
+		_leftHit = false;
+		_rightHit = false;
+		_leftHit = _checkDirectionalHit(-0.5f, -60f, -5f, "left");
+		_rightHit = _checkDirectionalHit(0.5f, 60f, 5f, "right");
+
+		Vector3 direction;
+		if(!_leftHit && !_rightHit) { 
+			Vector3 newDestination = _goalTransform.position;
+			direction = (newDestination - this.transform.position).normalized;
+		} else {
+			direction = this.transform.forward;
+			direction.y += _rotationAdjustment;
+		}
 		Debug.Log("direction = " + direction + ", _rotationAdjustment = " + _rotationAdjustment);
 		transform.rotation = Quaternion.LookRotation(direction);
 //		var direction = this.transform.forward;
-		bool leftHit = false;
-		bool rightHit = false;
 		bool directHit = false;
 
 		// OBSTACLE AVOIDANCE:
@@ -75,34 +89,6 @@ public class RaycastTest : MonoBehaviour {
 		// front
 		Debug.DrawRay(this.transform.position, this.transform.forward * frontRay, Color.red);
 
-//		while(_checkDirectionalHit(-0.5f, -60f, -5f) || _checkDirectionalHit(0.5f, 60f, 5f)) {
-//
-//		}
-		leftHit = _checkDirectionalHit(-0.5f, -60f, -5f);
-		rightHit = _checkDirectionalHit(0.5f, 60f, 5f);
-/*
-		if(!leftHit && !rightHit) {
-			_rotationAdjustment = 0;
-			// front
-			if(Physics.Raycast(this.transform.position, this.transform.forward * frontRay, out _hit, frontRay)) {
-				if(hit.transform != this.transform) {
-					if(hit.transform.tag != "Player") {
-						Debug.Log("transform.forward hit: " + hit.transform.name);
-					} else if(hit.transform.tag == "Player") {
-						Debug.Log("Found player");
-					}
-					if(leftHit) {
-						Debug.Log(" there was a left hit, turn right");
-						transform.Rotate(Vector3.up, 90 * 5 * Time.smoothDeltaTime);
-					} else {
-						Debug.Log(" there was a right hit, turn left");
-						transform.Rotate(Vector3.up, -90 * 5 * Time.smoothDeltaTime);
-					}
-					directHit = true;
-				}
-			}
-		}
-*/
 
 		if(!directHit & !_tooCloseToObject) {
 			this.transform.position += this.transform.forward * animationSpeed * Time.deltaTime;
@@ -113,15 +99,15 @@ public class RaycastTest : MonoBehaviour {
 		yield return true;
 	}
 
-	private bool _checkDirectionalHit(float rot, float rotChange, float rotAdj) { 
+	private bool _checkDirectionalHit(float rot, float rotChange, float rotAdj, string dir) { 
 		bool ret = false;
 
 		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*rot) * sideRays, out _hit, sideRays)) {
 			if(_hit.transform != this.transform) {
 				if(_hit.transform.tag != "Player") {
-					Debug.Log("transform.left hit: " + _hit.transform.name + ", rotation = " + transform.rotation);
+					Debug.Log("transform."+dir+" hit: " + _hit.transform.name + ", rotation = " + transform.rotation);
 				}
-				transform.Rotate(Vector3.up, rotChange * 2 * Time.smoothDeltaTime);
+//				transform.Rotate(Vector3.up, rotChange * 2 * Time.smoothDeltaTime);
 				Debug.Log("  rotation now: " + transform.rotation);
 
 				_rotationAdjustment = rotAdj;
