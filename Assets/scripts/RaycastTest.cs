@@ -8,15 +8,15 @@ public class RaycastTest : MonoBehaviour {
 
 	public float animationSpeed = 1.0f;
 	public float followDistance = 1.0f;
-	public float minSafeDistance = 0.5f;
-	public float sideRays = 1.5f;
-	public float sideRays2 = 2.5f;
+	public float minSafeDistance = 0.2f;
+	public float sideRays = 2.5f;
+	public float sideRays2 = 3.0f;
 	public float frontRay = 1.0f;
 
-	private List<Vector3> _activeBreadcrumbs;
+//	private List<Vector3> _activeBreadcrumbs;
 
-	private Camera _mainCamera; 
-	private Player _player; 
+//	private Camera _mainCamera; 
+//	private Player _player; 
 	private Transform _goalTransform; 
 
 	RaycastHit _hit;
@@ -26,35 +26,24 @@ public class RaycastTest : MonoBehaviour {
 	private bool _tooCloseToObject = false;
 	private Vector3 _direction;
 
+	private int _avoidanceSteps = 0;
+	
 	// Use this for initialization
 	void Start () {
-		_player = GameObject.Find("player").GetComponent<Player>();
-		_mainCamera = Camera.main;
-
-		if(goal != null) {
-			_goalTransform = goal.transform;
-		} else {
-			_goalTransform = _mainCamera.transform;
-		}
+		_goalTransform = goal.transform;
 		Vector3 newDestination = _goalTransform.position;
-		_direction = (newDestination - this.transform.position).normalized;
-
-		_activeBreadcrumbs = new List<Vector3>();
-//		EventCenter.Instance.onPlayerBreadcrumb += this.onPlayerBreadcrumb;
-	}
-
-	public void onPlayerBreadcrumb(Vector3 position) {
-		_activeBreadcrumbs.Add(position);
+//		_direction = (newDestination - transform.position).normalized;
+		_direction = transform.forward;
 	}
 
 	// Update is called once per frame
-	void Update () {
-		var distance = Vector3.Distance(this.transform.position, _goalTransform.position);
+	void FixedUpdate () {
+		Debug.Log("-------------- FixedUpdate --------------");
+		var distance = Vector3.Distance(transform.position, _goalTransform.position);
 		if(distance > followDistance) {
 			if(!_updating) {
 				StartCoroutine("_updatePosition");
 			}
-//			_updatePosition();
 		} else {
 			_faceGoal();
 		}
@@ -68,13 +57,20 @@ public class RaycastTest : MonoBehaviour {
 		_rotationAdjustment = _checkDirectionalHit(-0.5f, 60f, 5f, "left");
 		_rotationAdjustment = _checkDirectionalHit(0.5f, -60f, -5f, "right");
 		Debug.Log("_rotationAdjustment = " + _rotationAdjustment);
-		Vector3 newRotation;
 		if(_rotationAdjustment == 0) {
 			Debug.Log("FINDING TARGET");
-			newRotation = _direction;
-			transform.rotation = Quaternion.LookRotation(newRotation);
+			if(_avoidanceSteps == 0) {
+				Vector3 newRotation;
+//				newRotation = _direction;
+				newRotation = transform.forward;
+				transform.rotation = Quaternion.LookRotation(newRotation);
+			} else {
+				Debug.Log("taking avoidance step: " + _avoidanceSteps);
+				_avoidanceSteps--;
+			}
 		} else {
 			Debug.Log("CHANGING DIRECTION TO AVOID OBSTACLE");
+			_avoidanceSteps = 5;
 			transform.Rotate(Vector3.up, _rotationAdjustment * 2 * Time.smoothDeltaTime);
 
 //			newRotation = _direction;
@@ -83,25 +79,27 @@ public class RaycastTest : MonoBehaviour {
 //			Quaternion rotation = transform.rotation;
 //			rotation.y += _rotationAdjustment;
 //			transform.Rotate(Vector3.up, _rotationAdjustment * 2 * Time.smoothDeltaTime);
-//			direction = this.transform.forward;
+//			direction = transform.forward;
 //			direction.y += _rotationAdjustment;
 		}
 		Debug.Log("  transform.rotation = " + transform.rotation);
 
 		// OBSTACLE AVOIDANCE:
 		// left 45°
-		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.5f) * sideRays, Color.blue);
+		Debug.DrawRay(transform.position, (transform.forward+transform.right*-.5f) * sideRays, Color.blue);
 		// right 45°
-		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.5f) * sideRays, Color.yellow);
+		Debug.DrawRay(transform.position, (transform.forward+transform.right*.5f) * sideRays, Color.yellow);
 		// front
-//		Debug.DrawRay(this.transform.position, this.transform.forward * frontRay, Color.red);
-		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*-.25f) * sideRays2, Color.green);
+//		Debug.DrawRay(transform.position, transform.forward * frontRay, Color.red);
+		Debug.DrawRay(transform.position, (transform.forward+transform.right*-.25f) * sideRays2, Color.green);
 
-		Debug.DrawRay(this.transform.position, (transform.forward+transform.right*.25f) * sideRays2, Color.red);
+		Debug.DrawRay(transform.position, (transform.forward+transform.right*.25f) * sideRays2, Color.red);
 
-		if(!_tooCloseToObject) {
-			this.transform.position += this.transform.forward * animationSpeed * Time.deltaTime;
-		}
+//		if(!_tooCloseToObject) {
+			transform.position += transform.forward * animationSpeed * Time.deltaTime;
+//		} else {
+//
+//		}
 		// END OBSTACLE AVOIDANCE
 
 		_updating = false;
@@ -111,8 +109,8 @@ public class RaycastTest : MonoBehaviour {
 	private float _checkDirectionalHit(float rot, float rotChange, float rotAdj, string dir) { 
 		float ret = 0;
 
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*rot) * sideRays, out _hit, sideRays)) {
-			if(_hit.transform != this.transform) {
+		if(Physics.Raycast(transform.position, (transform.forward+transform.right*rot) * sideRays, out _hit, sideRays)) {
+			if(_hit.transform != transform) {
 //				if(_hit.transform.tag != "Player") {
 					Debug.Log("  transform."+dir+" hit: " + _hit.transform.name);
 //				}
@@ -124,8 +122,9 @@ public class RaycastTest : MonoBehaviour {
 //				ret = rotChange;
 				ret = rotAdj;
 
-				var obstacleDistance = Vector3.Distance(this.transform.position, _hit.transform.position);
-				if(obstacleDistance < minSafeDistance) {
+				var obstacleDistance = Vector3.Distance(transform.position, _hit.transform.position);
+				Debug.Log("   obstacleDistance = " + obstacleDistance + ", min = " + (minSafeDistance * 5));
+				if(obstacleDistance < (minSafeDistance)*5) {
 					_tooCloseToObject = true;
 				} else {
 					_tooCloseToObject = false;
@@ -135,10 +134,15 @@ public class RaycastTest : MonoBehaviour {
 		return ret;
 	} 
 
+	private IEnumerator _findNewDirection() {
+
+		yield return true;
+	}
+
 	private bool _checkLeftHit() {
 		// left
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*-.5f) * sideRays, out _hit, sideRays)) {
-			if(_hit.transform != this.transform) {
+		if(Physics.Raycast(transform.position, (transform.forward+transform.right*-.5f) * sideRays, out _hit, sideRays)) {
+			if(_hit.transform != transform) {
 				if(_hit.transform.tag != "Player") {
 					Debug.Log("transform.left hit: " + _hit.transform.name + ", rotation = " + transform.rotation);
 				} else {
@@ -158,8 +162,8 @@ public class RaycastTest : MonoBehaviour {
 
 	private bool _checkRightHit() {
 		// right
-		if(Physics.Raycast(this.transform.position, (transform.forward+transform.right*.5f) * sideRays, out _hit, sideRays)) {
-			if(_hit.transform != this.transform) {
+		if(Physics.Raycast(transform.position, (transform.forward+transform.right*.5f) * sideRays, out _hit, sideRays)) {
+			if(_hit.transform != transform) {
 				if(_hit.transform.tag != "Player") {
 					Debug.Log("transform.right hit: " + _hit.transform.name + ", rotation = " + transform.rotation);
 				} else {
@@ -185,6 +189,6 @@ public class RaycastTest : MonoBehaviour {
 		var targetPos = _goalTransform.position - transform.position;
 		//		targetPos.y = 0;
 		Quaternion newRotation = Quaternion.LookRotation(targetPos);
-		this.transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * animationSpeed);
+		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * animationSpeed);
 	}
 }
