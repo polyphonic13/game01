@@ -42,12 +42,73 @@ public class RaycastTest : MonoBehaviour {
 		var distance = Vector3.Distance(transform.position, _goalTransform.position);
 		if(distance > followDistance) {
 			if(!_updating) {
-				StartCoroutine("_updatePosition");
+//				StartCoroutine("_updatePosition");
+				StartCoroutine("_carPositionUpdate");
 			}
 		} else {
 			_faceGoal();
 		}
 
+	}
+
+	private IEnumerator _carPositionUpdate() {
+		var strt = transform.position;
+		var rside = transform.position;
+		var fside = transform.position;
+		bool rHit = false;
+		bool lHit = false;
+		RaycastHit hit;
+
+		Debug.DrawRay(transform.position, transform.forward * 5, Color.red);
+		Debug.DrawRay(transform.position, (transform.forward+transform.right*-.5f)*5, Color.green);
+		Debug.DrawRay(transform.position , (transform.forward+transform.right*.5f)*5, Color.blue);
+/*
+		if(Physics.Raycast(strt,transform.forward, out hit, 5)) {
+//			if(hit.collider.gameObject.tag == "Player"){
+			Debug.Log("forward hit");
+				transform.Rotate(Vector3.up, 90 * 5* Time.smoothDeltaTime);
+//			}
+		}
+*/
+		if(Physics.Raycast(rside,(transform.forward+transform.right*-.5f)*5, out hit, 5)) {
+//			if(hit.collider.gameObject.tag == "Player"){
+			lHit = true;
+//			}
+		}
+		if(Physics.Raycast(fside,(transform.forward+transform.right*.5f)*5, out hit, 5)) {
+//			if(hit.collider.gameObject.tag == "Player"){
+//			}
+			rHit = true;
+		}
+
+		if(lHit && rHit) {
+			Debug.Log("left and right hit");
+			bool l90Hit = false;
+			bool r90Hit = false;
+			Debug.DrawRay(transform.position, (transform.forward+transform.right*-1.0f)*10, Color.cyan);
+			Debug.DrawRay(transform.position, (transform.forward+transform.right*1.0f)*10, Color.magenta);
+			if(Physics.Raycast(rside,(transform.forward+transform.right*-1.0f)*10, out hit, 10)) {
+				l90Hit = true;
+				transform.Rotate(Vector3.up, 85 * 2* Time.smoothDeltaTime);
+			} else {
+				transform.Rotate(Vector3.up, -85 * 2* Time.smoothDeltaTime);
+
+			}
+//			if(Physics.Raycast(rside,(transform.forward+transform.right*-1.0f)*10, out hit, 10)) {
+//				l90Hit = true;
+//			}
+		} else if(lHit) {
+			Debug.Log("left hit");
+			transform.Rotate(Vector3.up, 45 * 2* Time.smoothDeltaTime);
+
+		} else if(rHit) {
+			Debug.Log("right hit");
+			transform.Rotate(Vector3.up, -45 * 2* Time.smoothDeltaTime);
+		}
+
+		transform.position += transform.forward * 3 * Time.deltaTime;
+
+		yield return true;
 	}
 
 	private IEnumerator _updatePosition() {
