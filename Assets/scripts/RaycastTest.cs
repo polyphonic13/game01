@@ -89,11 +89,12 @@ public class RaycastTest : MonoBehaviour {
 			Debug.DrawRay(transform.position, (transform.forward+transform.right*1.0f)*10, Color.magenta);
 			if(Physics.Raycast(rside,(transform.forward+transform.right*-1.0f)*10, out hit, 10)) {
 				l90Hit = true;
-				transform.Rotate(Vector3.up, 85 * 2* Time.smoothDeltaTime);
-			} else {
-				transform.Rotate(Vector3.up, -85 * 2* Time.smoothDeltaTime);
-
+			} 
+			if(Physics.Raycast(rside,(transform.forward+transform.right*1.0f)*10, out hit, 10)) {
+				r90Hit = true;
 			}
+//			transform.Rotate(Vector3.up, 85 * 2* Time.smoothDeltaTime);
+		
 //			if(Physics.Raycast(rside,(transform.forward+transform.right*-1.0f)*10, out hit, 10)) {
 //				l90Hit = true;
 //			}

@@ -12,7 +12,9 @@ public class Guide : InteractiveElement {
 	public ItemWeight weight; 
 
 	public float animationSpeed = 1.0f;
+	public float movementSpeed = 4.0f;
 	public float followDistance = 2.0f;
+	public float minDistance = 1.0f;
 
 	public bool isIntact { get; set; }
 	public bool isActive { get; set; }
@@ -141,69 +143,81 @@ public class Guide : InteractiveElement {
 		this.transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * animationSpeed);
 	}
 
+	private void _follow() {
+		Vector3 newDestination;
+		RaycastHit hit;
+		bool isCollided = false;
+		
+		if(_activeBreadcrumbs.Count > 0) {
+			newDestination = _activeBreadcrumbs[0]; // get the first (oldest) position in the list
+			var breadcrumbDistance = Vector3.Distance(this.transform.position, _activeBreadcrumbs[0]);
+			//				Debug.Log("newDestination = " +newDestination + ", breadcrumbDistance = " + breadcrumbDistance);
+			if(breadcrumbDistance <= 2f) {
+				_activeBreadcrumbs.RemoveAt(0); // remove that position
+			}
+		} else {
+			newDestination = _mainCamera.transform.position;
+		}
+		
+		var direction = (newDestination - this.transform.position).normalized;
+		
+		//			if(Physics.Raycast(this.transform.position, this.transform.forward, out hit, 0.1f)) {
+		//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
+		//					Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
+		//					direction += hit.normal * 5;
+		//					isCollided = true;
+		//				}
+		//			}
+		
+		//			var leftR = transform.position;
+		//			var rightR = transform.position;
+		//			leftR.x -= 1;
+		//			rightR.x += 1;
+		//
+		//			if(Physics.Raycast(leftR, this.transform.forward, out hit, 0.1f)) {
+		//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
+		//					Debug.DrawRay(leftR, this.transform.forward, Color.green);
+		//					direction += hit.normal * 5;
+		//					isCollided = true;
+		//				}
+		//			}
+		//
+		//			if(Physics.Raycast(rightR, this.transform.forward, out hit, 0.1f)) {
+		//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
+		//					Debug.DrawRay(rightR, this.transform.forward, Color.yellow);
+		//					direction += hit.normal * 5;
+		//					isCollided = true;
+		//				}
+		//			}
+		//			Debug.Log("direction: " + direction);
+		var rot = Quaternion.LookRotation(direction);
+		//			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
+		this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, 0.5f);
+		//			this.transform.rotation = rot;
+		if(!isCollided) {
+			this.transform.position += this.transform.forward * movementSpeed * Time.deltaTime;
+			//			} else {
+			//				// back up a little
+			//				this.transform.position -= this.transform.forward * 2 * Time.deltaTime;
+		}
+		
+		//			this.transform.Translate(animationSpeed * Vector3.forward * Time.deltaTime); 
+
+	}
+
+	private void _backAway() {
+		this.transform.position -= this.transform.forward * movementSpeed * Time.deltaTime;
+
+	}
+
 	private void _updatePosition() {
 		var distance = Vector3.Distance(this.transform.position, _mainCamera.transform.position);
 
 //		Debug.Log("distance = " + distance + ", followDistance = " + followDistance);
 		if(distance > followDistance) {
-			Vector3 newDestination;
-			RaycastHit hit;
-			bool isCollided = false;
-
-			if(_activeBreadcrumbs.Count > 0) {
-				newDestination = _activeBreadcrumbs[0]; // get the first (oldest) position in the list
-				var breadcrumbDistance = Vector3.Distance(this.transform.position, _activeBreadcrumbs[0]);
-//				Debug.Log("newDestination = " +newDestination + ", breadcrumbDistance = " + breadcrumbDistance);
-				if(breadcrumbDistance <= 2f) {
-					_activeBreadcrumbs.RemoveAt(0); // remove that position
-				}
-			} else {
-				newDestination = _mainCamera.transform.position;
-			}
-
-			var direction = (newDestination - this.transform.position).normalized;
-
-//			if(Physics.Raycast(this.transform.position, this.transform.forward, out hit, 0.1f)) {
-//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
-//					Debug.DrawRay(this.transform.position, this.transform.forward, Color.red);
-//					direction += hit.normal * 5;
-//					isCollided = true;
-//				}
-//			}
-
-//			var leftR = transform.position;
-//			var rightR = transform.position;
-//			leftR.x -= 1;
-//			rightR.x += 1;
-//
-//			if(Physics.Raycast(leftR, this.transform.forward, out hit, 0.1f)) {
-//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
-//					Debug.DrawRay(leftR, this.transform.forward, Color.green);
-//					direction += hit.normal * 5;
-//					isCollided = true;
-//				}
-//			}
-//
-//			if(Physics.Raycast(rightR, this.transform.forward, out hit, 0.1f)) {
-//				if(hit.transform != this.transform && hit.transform.tag != "Player") {
-//					Debug.DrawRay(rightR, this.transform.forward, Color.yellow);
-//					direction += hit.normal * 5;
-//					isCollided = true;
-//				}
-//			}
-//			Debug.Log("direction: " + direction);
-			var rot = Quaternion.LookRotation(direction);
-//			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, Time.deltaTime);
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rot, 0.5f);
-//			this.transform.rotation = rot;
-			if(!isCollided) {
-				this.transform.position += this.transform.forward * 4 * Time.deltaTime;
-//			} else {
-//				// back up a little
-//				this.transform.position -= this.transform.forward * 2 * Time.deltaTime;
-			}
-
-//			this.transform.Translate(animationSpeed * Vector3.forward * Time.deltaTime); 
+			_follow();
+		} else if(distance < minDistance) {
+			_backAway();
 		} else {
 			_facePlayer();
 			_activeBreadcrumbs.Clear();
