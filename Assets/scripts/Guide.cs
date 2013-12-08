@@ -62,7 +62,7 @@ public class Guide : InteractiveElement {
 	public override void onRoomEntered(string room) {
 		this.containingRoom = room;
 		this.isRoomActive = true;
-		this.gameObject.layer = LayerMask.NameToLayer(room);
+//		this.gameObject.layer = LayerMask.NameToLayer(room);
 //		Debug.Log("Guide/onRoomEntered, room = " + room + ", layer = " + this.gameObject.layer + ", room layer = " + LayerMask.NameToLayer(room));
 	}
 
@@ -206,8 +206,16 @@ public class Guide : InteractiveElement {
 	}
 
 	private void _backAway() {
-		this.transform.position -= this.transform.forward * movementSpeed * Time.deltaTime;
+		RaycastHit hit;
+		bool backAreaHit = Physics.Raycast(this.transform.position, -(this.transform.forward), out hit, 0.5f);
+		bool backRightHit = Physics.Raycast(transform.position, (transform.forward+transform.right*.25f), out hit, 0.5f);
+		bool backLeftHit = Physics.Raycast(transform.position, (transform.forward+transform.right*-.25f), out hit, 0.5f);
 
+		if(backAreaHit || backRightHit || backLeftHit) {
+			Debug.Log("Something behind Guide, can't back up");
+		} else {
+			this.transform.position -= this.transform.forward * movementSpeed * Time.deltaTime;
+		}
 	}
 
 	private void _updatePosition() {
