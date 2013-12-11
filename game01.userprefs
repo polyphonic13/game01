@@ -1,9 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../waypoint_test/Assets/WaypointMaster.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/RaycastTest.cs">
     <Files>
-      <File FileName="../waypoint_test/Assets/WaypointMaster.js" Line="17" Column="1" />
+      <File FileName="Assets/scripts/Guide.cs" Line="196" Column="59" />
+      <File FileName="Assets/scripts/Player.cs" Line="70" Column="7" />
+      <File FileName="Assets/scripts/EventCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/RaycastTest.cs" Line="94" Column="35" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

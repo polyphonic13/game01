@@ -943,6 +943,7 @@ ModelImporter:
     101874: bathroom_n_top_molding_n
     101876: bathroom_n_top_molding_s
     101878: bathroom_n_top_molding_w
+    101880: bathroom_e_top_molding_e02_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -1883,6 +1884,7 @@ ModelImporter:
     401874: bathroom_n_top_molding_n
     401876: bathroom_n_top_molding_s
     401878: bathroom_n_top_molding_w
+    401880: bathroom_e_top_molding_e02_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -2816,6 +2818,7 @@ ModelImporter:
     2301860: bathroom_n_top_molding_n
     2301862: bathroom_n_top_molding_s
     2301864: bathroom_n_top_molding_w
+    2301866: bathroom_e_top_molding_e02_001
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -3749,6 +3752,7 @@ ModelImporter:
     3301860: bathroom_n_top_molding_n
     3301862: bathroom_n_top_molding_s
     3301864: bathroom_n_top_molding_w
+    3301866: bathroom_e_top_molding_e02_001
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -4681,6 +4685,7 @@ ModelImporter:
     4301858: bathroom_n_top_molding_w
     4301860: bathroom_n_top_molding_s
     4301862: bathroom_n_top_molding_n
+    4301864: bathroom_e_top_molding_e02_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -5614,6 +5619,7 @@ ModelImporter:
     6401860: bathroom_n_top_molding_n
     6401862: bathroom_n_top_molding_s
     6401864: bathroom_n_top_molding_w
+    6401866: bathroom_e_top_molding_e02_001
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
@@ -5629,11 +5635,13 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    optimizeGameObjects: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -5661,7 +5669,6 @@ ModelImporter:
   humanDescription:
     human: []
     skeleton: []
-    handles: []
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -5671,6 +5678,5 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  additionalBone: 1
   animationType: 1
   userData: 
