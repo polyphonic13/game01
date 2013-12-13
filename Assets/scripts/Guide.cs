@@ -224,11 +224,13 @@ public class Guide : InteractiveElement {
 //		Debug.Log("distance = " + distance + ", followDistance = " + followDistance);
 		if(distance > followDistance) {
 			_follow();
-		} else if(distance < minDistance) {
-			_backAway();
 		} else {
-			_facePlayer();
 			_activeBreadcrumbs.Clear();
+			if(distance < minDistance) {
+				_backAway();
+			} else {
+				_facePlayer();
+			}
 		}
 
 	}
