@@ -9,6 +9,7 @@ public class Flashlight : CollectableItem {
 		initCollectableItem();
 		_bulb = this.transform.Search("flashlight_bulb").light;
 		_bulb.enabled = false;
+//		this.addToInventory ();
 	}
 
 	// Update is called once per frame

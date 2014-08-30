@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
 		notification.init(basicStyle);
 		menu = new Menu();
 		menu.init(basicStyle);
-		menu.showMenu = true;
+//		menu.showMenu = true;
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		MouseManager.Instance.drawCursor ();
+//		MouseManager.Instance.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
@@ -90,9 +90,9 @@ public class Player : MonoBehaviour {
 	}
 	
 	public void onMouseSensitivityChange(float sensitivity) {
-		MouseLook mouseLook = GetComponent<MouseLook>();
+//		MouseLook mouseLook = GetComponent<MouseLook>();
 //		Debug.Log("Player/onMouseSensitivityChange, sensitivity = " + sensitivity);
-		mouseLook.sensitivityX = sensitivity;
+//		mouseLook.sensitivityX = sensitivity;
 	}
 	
 	public void onEnablePlayer(bool enable) {
@@ -101,12 +101,12 @@ public class Player : MonoBehaviour {
 
 	public void enablePlayer(bool enable) {
 		// Debug.Log("Player/enablePlayer, disable = " + disable);
-		var mouseLook = GetComponent<MouseLook>();
-		mouseLook.isEnabled = enable;
-		var cameraMouseLook = camera.GetComponent<MouseLook>();
-		cameraMouseLook.isEnabled = enable;
-		CharacterMotor character = GetComponent<CharacterMotor>();
-		character.SetControllable(enable);
+//		var mouseLook = GetComponent<MouseLook>();
+//		mouseLook.isEnabled = enable;
+//		var cameraMouseLook = camera.GetComponent<MouseLook>();
+//		cameraMouseLook.isEnabled = enable;
+//		CharacterMotor character = GetComponent<CharacterMotor>();
+//		character.SetControllable(enable);
 		Screen.lockCursor = enable;
 		
 		if(enable) {

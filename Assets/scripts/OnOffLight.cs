@@ -4,7 +4,8 @@ using System.Collections;
 public class OnOffLight : InteractiveElement {
 
 	public Light bulb; 
-	
+	public bool enabled = false;
+
 	void Awake() {
 		initOnOffLight();
 		init(MouseManager.Instance.INTERACT_CURSOR);
@@ -12,7 +13,7 @@ public class OnOffLight : InteractiveElement {
 	
 	public void initOnOffLight() {
 		bulb = this.transform.Search("light_bulb").light;
-		bulb.enabled = false;
+		bulb.enabled = enabled;
 	}
 
 	public override void OnMouseOver() {
