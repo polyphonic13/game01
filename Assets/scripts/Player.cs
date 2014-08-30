@@ -73,20 +73,20 @@ public class Player : MonoBehaviour {
 	void OnGUI () {
 //		MouseManager.Instance.drawCursor ();
 //		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
-		if (inventory.showInventory) {
-			inventory.drawSummary ();
-			if(notification.showNote) {
-				EventCenter.Instance.removeNote();
-			}
-		} else if (inventory.showDetail) {
-			inventory.drawDetail ();
-		} else if(menu.showMenu) {
-			menu.draw();
-		} else if (notification.showNote) {
-			notification.drawNote ();
-		} else if (inventory.houseKeepingNeeded) {
-			inventory.houseKeeping ();
-		}
+//		if (inventory.showInventory) {
+//			inventory.drawSummary ();
+//			if(notification.showNote) {
+//				EventCenter.Instance.removeNote();
+//			}
+//		} else if (inventory.showDetail) {
+//			inventory.drawDetail ();
+//		} else if(menu.showMenu) {
+//			menu.draw();
+//		} else if (notification.showNote) {
+//			notification.drawNote ();
+//		} else if (inventory.houseKeepingNeeded) {
+//			inventory.houseKeeping ();
+//		}
 	}
 	
 	public void onMouseSensitivityChange(float sensitivity) {

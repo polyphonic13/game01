@@ -16,8 +16,8 @@ public class LockableArmatureTrigger : OpenCloseArmatureTrigger {
 	public void initLockableArmatureTrigger(int activeCursor = 1) {
 		initOpenCloseArmatureTrigger();
 		init(activeCursor);
-//		Debug.Log("LockableArmatureTrigger/awake, name = " + pops.transform.parent.name);
 		_player = GameObject.Find("player").GetComponent<Player>();
+//		Debug.Log("LockableArmatureTrigger/awake, name = " + pops.transform.parent.name + ", _player = " + _player);
 	}
 
 	public override void handleAnimation() {

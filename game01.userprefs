@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/OnOffLight.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GUI/HeadPointer.cs">
     <Files>
-      <File FileName="Assets/scripts/GUI/MouseManager.cs" Line="49" Column="3" />
-      <File FileName="Assets/scripts/Player.cs" Line="74" Column="17" />
-      <File FileName="Assets/scripts/GUI/MouseLook3D.cs" Line="18" Column="25" />
-      <File FileName="Assets/scripts/GUI/HeadPointer.cs" Line="18" Column="1" />
-      <File FileName="Assets/scripts/armatures/LockableArmatureTrigger.cs" Line="20" Column="1" />
-      <File FileName="Assets/scripts/Lamp.cs" Line="19" Column="17" />
-      <File FileName="Assets/scripts/OnOffLight.cs" Line="15" Column="1" />
+      <File FileName="Assets/scripts/RaycastTest.cs" Line="1" Column="1" />
+      <File FileName="Assets/OVR/Scripts/OVRCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/VRGUI/Scripts/VRGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/VRGUITest.cs" Line="10" Column="30" />
+      <File FileName="Assets/scripts/Grab.js" Line="4" Column="1" />
+      <File FileName="Assets/scripts/InteractiveElement.cs" Line="57" Column="1" />
+      <File FileName="Assets/scripts/GUI/ORMouse.cs" Line="18" Column="21" />
+      <File FileName="Assets/scripts/GUI/HeadPointer.cs" Line="24" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

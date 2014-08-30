@@ -33,7 +33,7 @@ using UnityEngine;
 /// <summary>
 /// OVRCrosshair is a component that adds a stereoscoppic cross-hair into a scene.
 /// </summary>
-public class OVRCrosshair
+public class OVRCrosshair : MonoBehaviour
 {
 	#region Variables
 	public Texture ImageCrosshair 	  = null;
