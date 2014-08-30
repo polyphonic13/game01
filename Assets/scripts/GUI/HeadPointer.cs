@@ -26,6 +26,7 @@ public class HeadPointer : MonoBehaviour {
 		var mousePos = Camera.main.ScreenPointToRay (Input.mousePosition);
 //		Debug.Log ("mousePos = " + mousePos);
 		var position = this.transform.position;
+
 		rabbit.transform.position = (new Vector3(position.x + mousePos.direction.x + frontRay, position.y + mousePos.direction.y, position.z - frontRay));
 		Debug.Log (rabbit.transform.position);
 		//		this.transform.position = screenCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));

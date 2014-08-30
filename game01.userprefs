@@ -3,13 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GUI/HeadPointer.cs">
     <Files>
       <File FileName="Assets/scripts/RaycastTest.cs" Line="1" Column="1" />
-      <File FileName="Assets/OVR/Scripts/OVRCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/VRGUI/Scripts/VRGUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/VRGUITest.cs" Line="10" Column="30" />
       <File FileName="Assets/scripts/Grab.js" Line="4" Column="1" />
-      <File FileName="Assets/scripts/InteractiveElement.cs" Line="57" Column="1" />
-      <File FileName="Assets/scripts/GUI/ORMouse.cs" Line="18" Column="21" />
-      <File FileName="Assets/scripts/GUI/HeadPointer.cs" Line="24" Column="5" />
+      <File FileName="Assets/scripts/GUI/HeadPointer.cs" Line="29" Column="3" />
+      <File FileName="Assets/scripts/Guide.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Player.cs" Line="90" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
