@@ -16,6 +16,10 @@ public class InspectableItem : InteractiveElement {
 	}
 	
 	public void OnMouseDown() {
+		this.mouseClick ();
+	}
+
+	public override void mouseClick() {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
 //			Debug.Log("InspectableItem/OnMouseDown, this.isRoomActive = " + this.isRoomActive);

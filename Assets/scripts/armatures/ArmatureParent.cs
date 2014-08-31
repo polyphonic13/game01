@@ -32,6 +32,7 @@ public class ArmatureParent : MonoBehaviour {
 		this.animation = GetComponent<Animation>();
 //		Debug.Log("ArmatureParent[ " + this.name + " ]/init, animation = " + this.animation);
 		playDefaultAnimation();
+
 	}
 	
 	public void playDefaultAnimation() {

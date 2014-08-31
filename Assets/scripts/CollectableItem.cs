@@ -57,11 +57,11 @@ public class CollectableItem : InteractiveElement {
 
 	public void OnMouseDown() {
 		if(this.isRoomActive) {
-			mouseDown();
+			mouseClick();
 		}
 	}
 
-	public void mouseDown() {
+	public override void mouseClick() {
 		Debug.Log("CollectableItem/OnMouseDown, name = " + this.name);
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
@@ -98,7 +98,10 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void attachToObject(string target) {
-		var tgt = Camera.main.transform.Search(target);
+		Debug.Log ("CollectableItem[" + this.name + "]/attachToObject, target = " + target);
+//		var tgt = Camera.main.transform.Search(target);
+		var tgt = _player.transform.Search (target);
+		Debug.Log ("tgt = " + tgt);
 		transform.position = tgt.transform.position;
 		transform.rotation = tgt.transform.rotation;
 		transform.parent = tgt.transform;	

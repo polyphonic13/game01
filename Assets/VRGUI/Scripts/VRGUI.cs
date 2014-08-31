@@ -76,6 +76,7 @@ public abstract class VRGUI : MonoBehaviour
 	
 	protected void OnGUI()
 	{
+		Debug.Log ("OnGUI, acceptMouse = " + acceptMouse);
 		if (!isInitialized)
 		{
 			Initialize();
@@ -94,6 +95,7 @@ public abstract class VRGUI : MonoBehaviour
 		{
 			// save the mouse position
 			cursorPosition = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+			Debug.Log("cursorPosition = " + cursorPosition);
 		}
 		
 		// handle key events

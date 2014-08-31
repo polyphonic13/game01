@@ -56,7 +56,12 @@ public class Guide : InteractiveElement {
 	}
 	 
 	public void OnMouseDown() {
+		this.mouseClick ();
+	}
+
+	public override void mouseClick() {
 		toggleActivated();
+
 	}
 
 	public override void onRoomEntered(string room) {

@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MouseTest.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
+     <Compile Include="Assets\OVRCrossHair.cs" />
      <Compile Include="Assets\Tuscany\Models\Birds\BirdsBehaviour.cs" />
      <Compile Include="Assets\Tuscany\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\AddSomeForce.cs" />
@@ -93,6 +95,7 @@
      <Compile Include="Assets\scripts\CollectableItem.cs" />
      <Compile Include="Assets\scripts\CollidableChild.cs" />
      <Compile Include="Assets\scripts\CollidableParent.cs" />
+     <Compile Include="Assets\scripts\CursorIcon.cs" />
      <Compile Include="Assets\scripts\EventCenter.cs" />
      <Compile Include="Assets\scripts\EventTrigger.cs" />
      <Compile Include="Assets\scripts\Extensions.cs" />
@@ -114,6 +117,7 @@
      <Compile Include="Assets\scripts\Lamp.cs" />
      <Compile Include="Assets\scripts\Lampshade.cs" />
      <Compile Include="Assets\scripts\LightFixture.cs" />
+     <Compile Include="Assets\scripts\OVRBasicHeadRay.cs" />
      <Compile Include="Assets\scripts\OnOffLight.cs" />
      <Compile Include="Assets\scripts\OnOffSelfIllum.cs" />
      <Compile Include="Assets\scripts\Player.cs" />

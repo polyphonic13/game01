@@ -255,6 +255,7 @@ public class OVRCrosshair : MonoBehaviour
 			if (!hit.collider.isTrigger)
 			{
 				CollisionWithGeometry = true;
+				Debug.Log("OVRCrosshair collided with " + hit.transform.name);
 			}
 		}
 		

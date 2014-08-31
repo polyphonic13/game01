@@ -29,7 +29,9 @@ public class InteractiveElement : MonoBehaviour {
 			var eventCenter = EventCenter.Instance;
 			eventCenter.onRoomEntered += this.onRoomEntered;
 			eventCenter.onRoomExited += this.onRoomExited;
+
 		}
+		EventCenter.Instance.onMouseClick += this.OnMouseClick;
 	}
 
 	public virtual void onRoomEntered(string room) {
@@ -44,6 +46,20 @@ public class InteractiveElement : MonoBehaviour {
 //			Debug.Log("InteractiveElement[ " + this.name + " ]/onRoomExited");
 			this.isRoomActive = false;
 		}
+	}
+
+	public void OnMouseClick(string name) {
+		if(this.isRoomActive && this.isEnabled) {
+//			Debug.Log ("InteractiveElement[" + this.name + "]/onmouseclick, name = " + name);
+			if(this.name == name) {
+				Debug.Log (this.name + " was clicked");
+				this.mouseClick ();
+			}
+		}
+
+	}
+	public virtual void mouseClick() {
+
 	}
 
 	public virtual void OnMouseOver() {

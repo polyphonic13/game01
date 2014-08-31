@@ -24,16 +24,20 @@ public class OnOffLight : InteractiveElement {
 	}
 
 	public void OnMouseDown() {
-		Debug.Log("OnOffLight[ " + this.name + " ]/OnMouseDown, isRoomActive = " + this.isRoomActive);
+		this.mouseClick ();
+	}
+
+	public override void mouseClick() {
+		Debug.Log("OnOffLight[ " + this.name + " ]/mouseClick, isRoomActive = " + this.isRoomActive);
 		if(this.isRoomActive) {
 			var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
-//			Debug.Log("  difference = " + difference + ", bulb.enabled = " + bulb.enabled);
+			//			Debug.Log("  difference = " + difference + ", bulb.enabled = " + bulb.enabled);
 			if(difference < interactDistance) {
 				this.toggle();
 			}
 		}
 	}
-	
+
 	public virtual void toggle() {
 		this.toggleBulb(bulb);
 	}

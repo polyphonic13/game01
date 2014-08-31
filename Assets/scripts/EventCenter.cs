@@ -8,8 +8,11 @@ public class EventCenter : MonoBehaviour {
 	public delegate void PlayerHandler(bool enable);
 	public delegate void PlayerBreadcrumbHandler(Vector3 position);
 	public delegate void MouseSensitivityHandler(float sensitivity);
+
 	public delegate void CameraZoomHandler(bool zoom);
-	
+
+	public delegate void MouseClickHandler(string name); 
+
 	public delegate void EquipItemHandler(string itemName);
 	
 	public delegate void TriggerEventHandler(string evt);
@@ -25,7 +28,9 @@ public class EventCenter : MonoBehaviour {
 	public event PlayerBreadcrumbHandler onPlayerBreadcrumb;
 	public event MouseSensitivityHandler onMouseSensitivityChange;
 	public event CameraZoomHandler onCameraZoom;
-	
+
+	public event MouseClickHandler onMouseClick;
+
 	public event EquipItemHandler onEquipItem;
 	
 	public event TriggerEventHandler onTriggerEvent;
@@ -107,6 +112,13 @@ public class EventCenter : MonoBehaviour {
 	public void collectedEvent(string evt) {
 		if(onCollectedEvent != null) {
 			onCollectedEvent(evt);
+		}
+	}
+
+	public void mouseClick(string name) {
+//		Debug.Log ("EventCenter.mouseClick, name = " + name);
+		if(onMouseClick != null) {
+			onMouseClick(name);
 		}
 	}
 }
