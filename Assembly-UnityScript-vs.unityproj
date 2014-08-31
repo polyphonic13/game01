@@ -46,49 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Tuscany\Particles\Scripts\Light_Flicker.js" />
-     <Compile Include="Assets\Tuscany\Scripts\BoatBehavior.js" />
-     <Compile Include="Assets\Tuscany\Scripts\Butterfly.js" />
-     <Compile Include="Assets\Tuscany\Scripts\Character.js" />
-     <Compile Include="Assets\Tuscany\Scripts\CustomGrass.js" />
-     <Compile Include="Assets\Tuscany\Scripts\GrassController.js" />
-     <Compile Include="Assets\Tuscany\Scripts\KeyboardInput.js" />
-     <Compile Include="Assets\Tuscany\Scripts\RandomAnimationStart.js" />
-     <Compile Include="Assets\Tuscany\Scripts\Rotate.js" />
-     <Compile Include="Assets\Tuscany\Scripts\ScrollUVs.js" />
      <Compile Include="Assets\UnitySerializer\Scripts\JSONPauseMenu.js" />
      <Compile Include="Assets\UnitySerializer\Scripts\Movement.js" />
      <Compile Include="Assets\UnitySerializer\Scripts\PauseMenu.js" />
      <Compile Include="Assets\UnitySerializer\Scripts\Spawner.js" />
      <Compile Include="Assets\scripts\Grab.js" />
      <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\Tuscany\Models\Materials\TransparentTerrain.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 3.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 1.shader" />
-     <None Include="Assets\Tuscany\Particles\Shaders\Particle Alpha Blend_IgnoreFog.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 5.shader" />
      <None Include="Assets\shaders\AlphaSelfIllum.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\VRGUI\Shaders\VRGUITransparentOverlayShader.shader" />
      <None Include="Assets\shaders\glass.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 6.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\DoubleSided.shader" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\glass.shader" />
      <None Include="Assets\shaders\GlassBump.shader" />
-     <None Include="Assets\Tuscany\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Plugins\whydoidoit.com\license.txt" />
-     <None Include="Assets\Tuscany\Models\Materials\DoubleSided ButterFly.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseDoublesided.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 4.shader" />
-     <None Include="Assets\Tuscany\Particles\Shaders\AddSmooth_Layer.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 8.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 2.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 7.shader" />
-     <None Include="Assets\Tuscany\Particles\Shaders\Add_Layer.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseBack.shader" />
      <None Include="Assets\UnitySerializer\readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/paulhoover/Documents/code/games/unity/game01/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
