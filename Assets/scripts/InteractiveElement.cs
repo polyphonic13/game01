@@ -6,6 +6,7 @@ public class InteractiveElement : MonoBehaviour {
 	public float interactDistance = 4;
 	public string containingRoom; 
 	public bool isEnabled = true;
+	public bool willHighlight = true; 
 	
 	private MouseManager _mouseManager;
 	private int _activeCursor;
@@ -74,9 +75,16 @@ public class InteractiveElement : MonoBehaviour {
 		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
 		if(difference < interactDistance) {
 			_mouseManager.setCursorType(_activeCursor);
+			if(this.willHighlight) {
+				this.addHightlight();
+			}
 		}
 	}
 
+	public void addHighlight() {
+		
+	}
+	
 	public virtual void OnMouseExit() {
 		if(this.isRoomActive && this.isEnabled) {
 			mouseExit();
@@ -85,5 +93,12 @@ public class InteractiveElement : MonoBehaviour {
 
 	public void mouseExit() {
 		_mouseManager.setCursorType(MouseManager.Instance.DEFAULT_CURSOR);
+		if(this.willHighlight) {
+			this.removeHighlight();
+		}
+	}
+	
+	public void removeHighlight() {
+		
 	}
 }
