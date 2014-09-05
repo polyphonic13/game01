@@ -68,6 +68,25 @@ ModelImporter:
     100124: wall_w
     100126: water_pipe_cold
     100128: water_pipe_hot
+    100130: handle_002
+    100132: handle_003
+    100134: hot_cold_pipe_connector_001
+    100136: mirror
+    100138: pipe_cap_cold_002
+    100140: pipe_cap_cold_003
+    100142: pipe_cap_hot_001
+    100144: pipe_washer_01_001
+    100146: pipe_washer_03_001
+    100148: Plane_001
+    100150: sink_wall_molding
+    100152: toilet_basing
+    100154: toilet_tank
+    100156: toilet_top
+    100158: tub_faucet_spout
+    100160: tub_faucet_spout_001
+    100162: tub_marble_top
+    100164: water_pipe_cold_001
+    100166: water_pipe_hot_001
     400000: base
     400002: //RootNode
     400004: bathtub
@@ -133,6 +152,25 @@ ModelImporter:
     400124: wall_w
     400126: water_pipe_cold
     400128: water_pipe_hot
+    400130: handle_002
+    400132: handle_003
+    400134: hot_cold_pipe_connector_001
+    400136: mirror
+    400138: pipe_cap_cold_002
+    400140: pipe_cap_cold_003
+    400142: pipe_cap_hot_001
+    400144: pipe_washer_01_001
+    400146: pipe_washer_03_001
+    400148: Plane_001
+    400150: sink_wall_molding
+    400152: toilet_basing
+    400154: toilet_tank
+    400156: toilet_top
+    400158: tub_faucet_spout
+    400160: tub_faucet_spout_001
+    400162: tub_marble_top
+    400164: water_pipe_cold_001
+    400166: water_pipe_hot_001
     2300000: base
     2300002: bottom_trim_n
     2300004: bottom_trim_n_001
@@ -193,6 +231,25 @@ ModelImporter:
     2300114: wall_w
     2300116: water_pipe_cold
     2300118: water_pipe_hot
+    2300120: handle_002
+    2300122: handle_003
+    2300124: hot_cold_pipe_connector_001
+    2300126: mirror
+    2300128: pipe_cap_cold_002
+    2300130: pipe_cap_cold_003
+    2300132: pipe_cap_hot_001
+    2300134: pipe_washer_01_001
+    2300136: pipe_washer_03_001
+    2300138: Plane_001
+    2300140: sink_wall_molding
+    2300142: toilet_basing
+    2300144: toilet_tank
+    2300146: toilet_top
+    2300148: tub_faucet_spout
+    2300150: tub_faucet_spout_001
+    2300152: tub_marble_top
+    2300154: water_pipe_cold_001
+    2300156: water_pipe_hot_001
     3300000: base
     3300002: bottom_trim_n
     3300004: bottom_trim_n_001
@@ -253,6 +310,25 @@ ModelImporter:
     3300114: wall_w
     3300116: water_pipe_cold
     3300118: water_pipe_hot
+    3300120: handle_002
+    3300122: handle_003
+    3300124: hot_cold_pipe_connector_001
+    3300126: mirror
+    3300128: pipe_cap_cold_002
+    3300130: pipe_cap_cold_003
+    3300132: pipe_cap_hot_001
+    3300134: pipe_washer_01_001
+    3300136: pipe_washer_03_001
+    3300138: Plane_001
+    3300140: sink_wall_molding
+    3300142: toilet_basing
+    3300144: toilet_tank
+    3300146: toilet_top
+    3300148: tub_faucet_spout
+    3300150: tub_faucet_spout_001
+    3300152: tub_marble_top
+    3300154: water_pipe_cold_001
+    3300156: water_pipe_hot_001
     4300000: Cube
     4300002: Plane
     4300004: ceiling
@@ -313,6 +389,25 @@ ModelImporter:
     4300114: water_pipe_hot
     4300116: shower_pipe
     4300118: tub_basin
+    4300120: mirror
+    4300122: sink_wall_molding
+    4300124: Plane_001
+    4300126: tub_marble_top
+    4300128: toilet_top
+    4300130: toilet_tank
+    4300132: toilet_basing
+    4300134: water_pipe_hot_001
+    4300136: water_pipe_cold_001
+    4300138: hot_cold_pipe_connector_001
+    4300140: tub_faucet_spout_001
+    4300142: pipe_cap_cold_003
+    4300144: handle_003
+    4300146: pipe_cap_hot_001
+    4300148: handle_002
+    4300150: pipe_washer_01_001
+    4300152: pipe_washer_03_001
+    4300154: pipe_cap_cold_002
+    4300156: tub_faucet_spout
     7400000: Default Take
     9500000: //RootNode
   materials:
