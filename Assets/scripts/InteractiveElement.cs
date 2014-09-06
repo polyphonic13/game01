@@ -76,7 +76,7 @@ public class InteractiveElement : MonoBehaviour {
 		if(difference < interactDistance) {
 			_mouseManager.setCursorType(_activeCursor);
 			if(this.willHighlight) {
-				this.addHightlight();
+				this.addHighlight();
 			}
 		}
 	}

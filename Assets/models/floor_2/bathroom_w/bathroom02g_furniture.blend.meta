@@ -55,6 +55,13 @@ ModelImporter:
     100098: water_pipe_cold_001
     100100: water_pipe_hot
     100102: water_pipe_hot_001
+    100104: base_001
+    100106: sink_bottom_trim_002
+    100108: foot_bath_base
+    100110: foot_bath_bottom
+    100112: foot_bath_top_trim
+    100114: foot_bath_top_trim_001
+    100116: foot_bath_top_trim_curve
     400000: base
     400002: //RootNode
     400004: bathtub
@@ -107,6 +114,13 @@ ModelImporter:
     400098: water_pipe_cold_001
     400100: water_pipe_hot
     400102: water_pipe_hot_001
+    400104: base_001
+    400106: sink_bottom_trim_002
+    400108: foot_bath_base
+    400110: foot_bath_bottom
+    400112: foot_bath_top_trim
+    400114: foot_bath_top_trim_001
+    400116: foot_bath_top_trim_curve
     2300000: base
     2300002: Cube
     2300004: handle
@@ -154,6 +168,13 @@ ModelImporter:
     2300088: water_pipe_cold_001
     2300090: water_pipe_hot
     2300092: water_pipe_hot_001
+    2300094: base_001
+    2300096: sink_bottom_trim_002
+    2300098: foot_bath_base
+    2300100: foot_bath_bottom
+    2300102: foot_bath_top_trim
+    2300104: foot_bath_top_trim_001
+    2300106: foot_bath_top_trim_curve
     3300000: base
     3300002: Cube
     3300004: handle
@@ -201,6 +222,13 @@ ModelImporter:
     3300088: water_pipe_cold_001
     3300090: water_pipe_hot
     3300092: water_pipe_hot_001
+    3300094: base_001
+    3300096: sink_bottom_trim_002
+    3300098: foot_bath_base
+    3300100: foot_bath_bottom
+    3300102: foot_bath_top_trim
+    3300104: foot_bath_top_trim_001
+    3300106: foot_bath_top_trim_curve
     4300000: mirror
     4300002: sink_wall_molding
     4300004: Plane_001
@@ -248,6 +276,13 @@ ModelImporter:
     4300088: water_pipe_hot
     4300090: shower_pipe
     4300092: tub_basin
+    4300094: sink_bottom_trim_002
+    4300096: base_001
+    4300098: foot_bath_top_trim_001
+    4300100: foot_bath_top_trim_curve
+    4300102: foot_bath_top_trim
+    4300104: foot_bath_bottom
+    4300106: foot_bath_base
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -258,6 +293,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -268,7 +304,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

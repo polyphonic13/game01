@@ -71,28 +71,28 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnGUI () {
-//		MouseManager.Instance.drawCursor ();
-//		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
-//		if (inventory.showInventory) {
-//			inventory.drawSummary ();
-//			if(notification.showNote) {
-//				EventCenter.Instance.removeNote();
-//			}
-//		} else if (inventory.showDetail) {
-//			inventory.drawDetail ();
-//		} else if(menu.showMenu) {
-//			menu.draw();
-//		} else if (notification.showNote) {
-//			notification.drawNote ();
-//		} else if (inventory.houseKeepingNeeded) {
-//			inventory.houseKeeping ();
-//		}
+		MouseManager.Instance.drawCursor ();
+		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
+		if (inventory.showInventory) {
+			inventory.drawSummary ();
+			if(notification.showNote) {
+				EventCenter.Instance.removeNote();
+			}
+		} else if (inventory.showDetail) {
+			inventory.drawDetail ();
+		} else if(menu.showMenu) {
+			menu.draw();
+		} else if (notification.showNote) {
+			notification.drawNote ();
+		} else if (inventory.houseKeepingNeeded) {
+			inventory.houseKeeping ();
+		}
 	}
 	
 	public void onMouseSensitivityChange(float sensitivity) {
-//		MouseLook mouseLook = GetComponent<MouseLook>();
-//		Debug.Log("Player/onMouseSensitivityChange, sensitivity = " + sensitivity);
-//		mouseLook.sensitivityX = sensitivity;
+		MouseLook mouseLook = GetComponent<MouseLook>();
+		Debug.Log("Player/onMouseSensitivityChange, sensitivity = " + sensitivity);
+		mouseLook.sensitivityX = sensitivity;
 	}
 	
 	public void onEnablePlayer(bool enable) {
@@ -101,12 +101,12 @@ public class Player : MonoBehaviour {
 
 	public void enablePlayer(bool enable) {
 		// Debug.Log("Player/enablePlayer, disable = " + disable);
-//		var mouseLook = GetComponent<MouseLook>();
-//		mouseLook.isEnabled = enable;
-//		var cameraMouseLook = camera.GetComponent<MouseLook>();
-//		cameraMouseLook.isEnabled = enable;
-//		CharacterMotor character = GetComponent<CharacterMotor>();
-//		character.SetControllable(enable);
+		var mouseLook = GetComponent<MouseLook>();
+		mouseLook.isEnabled = enable;
+		var cameraMouseLook = camera.GetComponent<MouseLook>();
+		cameraMouseLook.isEnabled = enable;
+		CharacterMotor character = GetComponent<CharacterMotor>();
+		character.SetControllable(enable);
 		Screen.lockCursor = enable;
 		
 		if(enable) {

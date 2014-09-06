@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 29983b104697b469d9ed17186a6039a1
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: bedroom_s_e
     100002: bedroom_s_e_001
@@ -959,6 +959,10 @@ ModelImporter:
     101906: bathroom_e_top_molding_w_001
     101908: bathroom_e
     101910: bathroom_n_floor
+    101912: bathroom_w_wood_trim_half_wall_e
+    101914: bathroom_w_wood_trim_half_wall_e_001
+    101916: bathroom_w_wood_trim_half_wall_e_002
+    101918: bathroom_w_wood_trim_half_wall_e_003
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -1915,6 +1919,10 @@ ModelImporter:
     401906: bathroom_e_top_molding_w_001
     401908: bathroom_e
     401910: bathroom_n_floor
+    401912: bathroom_w_wood_trim_half_wall_e
+    401914: bathroom_w_wood_trim_half_wall_e_001
+    401916: bathroom_w_wood_trim_half_wall_e_002
+    401918: bathroom_w_wood_trim_half_wall_e_003
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -2863,6 +2871,10 @@ ModelImporter:
     2301890: bathroom_e_top_molding_s_001
     2301892: bathroom_e_top_molding_w_001
     2301894: bathroom_n_floor
+    2301896: bathroom_w_wood_trim_half_wall_e
+    2301898: bathroom_w_wood_trim_half_wall_e_001
+    2301900: bathroom_w_wood_trim_half_wall_e_002
+    2301902: bathroom_w_wood_trim_half_wall_e_003
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -3811,6 +3823,10 @@ ModelImporter:
     3301890: bathroom_e_top_molding_s_001
     3301892: bathroom_e_top_molding_w_001
     3301894: bathroom_n_floor
+    3301896: bathroom_w_wood_trim_half_wall_e
+    3301898: bathroom_w_wood_trim_half_wall_e_001
+    3301900: bathroom_w_wood_trim_half_wall_e_002
+    3301902: bathroom_w_wood_trim_half_wall_e_003
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -4758,6 +4774,10 @@ ModelImporter:
     4301888: bathroom_e_top_molding_w_001
     4301890: bathroom_e_top_molding_e_001
     4301892: bathroom_n_floor
+    4301894: bathroom_w_wood_trim_half_wall_e_003
+    4301896: bathroom_w_wood_trim_half_wall_e_001
+    4301898: bathroom_w_wood_trim_half_wall_e_002
+    4301900: bathroom_w_wood_trim_half_wall_e
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -5706,6 +5726,10 @@ ModelImporter:
     6401890: bathroom_e_top_molding_s_001
     6401892: bathroom_e_top_molding_w_001
     6401894: bathroom_n_floor
+    6401896: bathroom_w_wood_trim_half_wall_e
+    6401898: bathroom_w_wood_trim_half_wall_e_001
+    6401900: bathroom_w_wood_trim_half_wall_e_002
+    6401902: bathroom_w_wood_trim_half_wall_e_003
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
@@ -5722,6 +5746,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -5765,4 +5790,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
+  additionalBone: 0
   userData: 
