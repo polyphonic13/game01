@@ -62,6 +62,18 @@ ModelImporter:
     100112: foot_bath_top_trim
     100114: foot_bath_top_trim_001
     100116: foot_bath_top_trim_curve
+    100118: Circle
+    100120: Cylinder
+    100122: floor
+    100124: sink_countertop
+    100126: wall_lamp
+    100128: wall_lamp_arm
+    100130: wall_lamp_base
+    100132: wall_lamp_base_connector
+    100134: wall_lamp_glass_bowl
+    100136: wall_lamp_saucer
+    100138: wall_n
+    100140: wall_w
     400000: base
     400002: //RootNode
     400004: bathtub
@@ -121,6 +133,18 @@ ModelImporter:
     400112: foot_bath_top_trim
     400114: foot_bath_top_trim_001
     400116: foot_bath_top_trim_curve
+    400118: Circle
+    400120: Cylinder
+    400122: floor
+    400124: sink_countertop
+    400126: wall_lamp
+    400128: wall_lamp_arm
+    400130: wall_lamp_base
+    400132: wall_lamp_base_connector
+    400134: wall_lamp_glass_bowl
+    400136: wall_lamp_saucer
+    400138: wall_n
+    400140: wall_w
     2300000: base
     2300002: Cube
     2300004: handle
@@ -175,6 +199,17 @@ ModelImporter:
     2300102: foot_bath_top_trim
     2300104: foot_bath_top_trim_001
     2300106: foot_bath_top_trim_curve
+    2300108: Circle
+    2300110: Cylinder
+    2300112: floor
+    2300114: sink_countertop
+    2300116: wall_lamp_arm
+    2300118: wall_lamp_base
+    2300120: wall_lamp_base_connector
+    2300122: wall_lamp_glass_bowl
+    2300124: wall_lamp_saucer
+    2300126: wall_n
+    2300128: wall_w
     3300000: base
     3300002: Cube
     3300004: handle
@@ -229,6 +264,17 @@ ModelImporter:
     3300102: foot_bath_top_trim
     3300104: foot_bath_top_trim_001
     3300106: foot_bath_top_trim_curve
+    3300108: Circle
+    3300110: Cylinder
+    3300112: floor
+    3300114: sink_countertop
+    3300116: wall_lamp_arm
+    3300118: wall_lamp_base
+    3300120: wall_lamp_base_connector
+    3300122: wall_lamp_glass_bowl
+    3300124: wall_lamp_saucer
+    3300126: wall_n
+    3300128: wall_w
     4300000: mirror
     4300002: sink_wall_molding
     4300004: Plane_001
@@ -283,6 +329,17 @@ ModelImporter:
     4300102: foot_bath_top_trim
     4300104: foot_bath_bottom
     4300106: foot_bath_base
+    4300108: Cylinder
+    4300110: Circle
+    4300112: wall_lamp_glass_bowl
+    4300114: wall_lamp_saucer
+    4300116: floor
+    4300118: wall_n
+    4300120: wall_w
+    4300122: wall_lamp_base_connector
+    4300124: wall_lamp_base
+    4300126: wall_lamp_arm
+    4300128: sink_countertop
     7400000: Default Take
     9500000: //RootNode
   materials:
