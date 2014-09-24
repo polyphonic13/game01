@@ -72,7 +72,7 @@ public class Player : MonoBehaviour {
 
 	void OnGUI () {
 		MouseManager.Instance.drawCursor ();
-		Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
+		//Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
 			if(notification.showNote) {

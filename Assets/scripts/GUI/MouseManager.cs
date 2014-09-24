@@ -52,7 +52,7 @@ public class MouseManager : MonoBehaviour {
 	}
 
 	public void drawCursor() {
-		Debug.Log("MouseManager/drawCursor, cursorType = " + cursorType);
+//		Debug.Log("MouseManager/drawCursor, cursorType = " + cursorType);
 		GUI.DrawTexture(new Rect(Input.mousePosition.x - cursorWidth / 2,(Screen.height - Input.mousePosition.y) - cursorHeight / 2, cursorWidth, cursorHeight), cursors[cursorType]);
 	}
 
