@@ -52,6 +52,16 @@ ModelImporter:
     100092: Cube_000
     100094: Plane
     100096: Plane_001
+    100098: arms
+    100100: BezierCurve_001
+    100102: BezierCurve_002
+    100104: cushion_back
+    100106: cushion_bottom
+    100108: feet_001
+    100110: frame_back
+    100112: frame_bottom
+    100114: legs
+    100116: rocking_chair
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -101,6 +111,16 @@ ModelImporter:
     400092: Cube_000
     400094: Plane
     400096: Plane_001
+    400098: arms
+    400100: BezierCurve_001
+    400102: BezierCurve_002
+    400104: cushion_back
+    400106: cushion_bottom
+    400108: feet_001
+    400110: frame_back
+    400112: frame_bottom
+    400114: legs
+    400116: rocking_chair
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -146,6 +166,15 @@ ModelImporter:
     2300084: Cube_000
     2300086: Plane
     2300088: Plane_001
+    2300090: arms
+    2300092: BezierCurve_001
+    2300094: BezierCurve_002
+    2300096: cushion_back
+    2300098: cushion_bottom
+    2300100: feet_001
+    2300102: frame_back
+    2300104: frame_bottom
+    2300106: legs
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -191,6 +220,15 @@ ModelImporter:
     3300084: Cube_000
     3300086: Plane
     3300088: Plane_001
+    3300090: arms
+    3300092: BezierCurve_001
+    3300094: BezierCurve_002
+    3300096: cushion_back
+    3300098: cushion_bottom
+    3300100: feet_001
+    3300102: frame_back
+    3300104: frame_bottom
+    3300106: legs
     4300000: Cube_005
     4300002: Cube_004
     4300004: Cube_003
@@ -236,6 +274,15 @@ ModelImporter:
     4300084: Cube_000
     4300086: BezierCurve
     4300088: Plane
+    4300090: legs
+    4300092: BezierCurve_002
+    4300094: cushion_back
+    4300096: cushion_bottom
+    4300098: BezierCurve_001
+    4300100: arms
+    4300102: frame_back
+    4300104: frame_bottom
+    4300106: feet_001
     7400000: Default Take
     9500000: //RootNode
   materials:
