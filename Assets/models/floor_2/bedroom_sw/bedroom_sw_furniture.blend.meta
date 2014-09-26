@@ -57,6 +57,7 @@ ModelImporter:
     100102: vanity_base
     100104: wardrobe
     100106: wardrobe_frame
+    100108: Circle
     400000: _furnishings
     400002: _furnishings_001
     400004: bed
@@ -111,6 +112,7 @@ ModelImporter:
     400102: vanity_base
     400104: wardrobe
     400106: wardrobe_frame
+    400108: Circle
     2300000: bed_base
     2300002: bed_pillow1
     2300004: bed_pillow2
@@ -156,6 +158,7 @@ ModelImporter:
     2300084: tower_wall_brick2_outer
     2300086: vanity_base
     2300088: wardrobe_frame
+    2300090: Circle
     3300000: bed_base
     3300002: bed_pillow1
     3300004: bed_pillow2
@@ -201,6 +204,7 @@ ModelImporter:
     3300084: tower_wall_brick2_outer
     3300086: vanity_base
     3300088: wardrobe_frame
+    3300090: Circle
     4300000: BezierCurve
     4300002: bedroom_sw_fireplace_front_grate
     4300004: bedroom_sw_fireplace
@@ -246,6 +250,7 @@ ModelImporter:
     4300084: footboard
     4300086: bed_base
     4300088: blanket
+    4300090: Circle
     7400000: Default Take
     9500000: //RootNode
   materials:
