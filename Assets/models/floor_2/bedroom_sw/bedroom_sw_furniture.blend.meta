@@ -58,6 +58,15 @@ ModelImporter:
     100104: wardrobe
     100106: wardrobe_frame
     100108: Circle
+    100110: BezierCurve_001
+    100112: BezierCurve_002
+    100114: canvas
+    100116: Cube
+    100118: Cube_001
+    100120: painting04
+    100122: paintings
+    100124: Plane
+    100126: Plane_001
     400000: _furnishings
     400002: _furnishings_001
     400004: bed
@@ -113,6 +122,15 @@ ModelImporter:
     400104: wardrobe
     400106: wardrobe_frame
     400108: Circle
+    400110: BezierCurve_001
+    400112: BezierCurve_002
+    400114: canvas
+    400116: Cube
+    400118: Cube_001
+    400120: painting04
+    400122: paintings
+    400124: Plane
+    400126: Plane_001
     2300000: bed_base
     2300002: bed_pillow1
     2300004: bed_pillow2
@@ -159,6 +177,14 @@ ModelImporter:
     2300086: vanity_base
     2300088: wardrobe_frame
     2300090: Circle
+    2300092: BezierCurve_001
+    2300094: BezierCurve_002
+    2300096: canvas
+    2300098: Cube
+    2300100: Cube_001
+    2300102: painting04
+    2300104: Plane
+    2300106: Plane_001
     3300000: bed_base
     3300002: bed_pillow1
     3300004: bed_pillow2
@@ -205,6 +231,14 @@ ModelImporter:
     3300086: vanity_base
     3300088: wardrobe_frame
     3300090: Circle
+    3300092: BezierCurve_001
+    3300094: BezierCurve_002
+    3300096: canvas
+    3300098: Cube
+    3300100: Cube_001
+    3300102: painting04
+    3300104: Plane
+    3300106: Plane_001
     4300000: BezierCurve
     4300002: bedroom_sw_fireplace_front_grate
     4300004: bedroom_sw_fireplace
@@ -251,6 +285,14 @@ ModelImporter:
     4300086: bed_base
     4300088: blanket
     4300090: Circle
+    4300092: BezierCurve_002
+    4300094: BezierCurve_001
+    4300096: Plane_001
+    4300098: Cube_001
+    4300100: Cube
+    4300102: Plane
+    4300104: painting04
+    4300106: canvas
     7400000: Default Take
     9500000: //RootNode
   materials:
