@@ -21,7 +21,7 @@ public class PlayerMeshController : MonoBehaviour {
 //			rigidbody.freezeRotation = true;
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (isEnabled) {
