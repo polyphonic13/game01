@@ -67,6 +67,19 @@ ModelImporter:
     100122: paintings
     100124: Plane
     100126: Plane_001
+    100128: back
+    100130: chair
+    100132: cushio_back
+    100134: cushion_seat
+    100136: legs
+    100138: back_001
+    100140: BezierCurve_003
+    100142: BezierCurve_004
+    100144: Cube_002
+    100146: Cube_003
+    100148: cushio_back_001
+    100150: cushion_seat_001
+    100152: legs_001
     400000: _furnishings
     400002: _furnishings_001
     400004: bed
@@ -131,6 +144,19 @@ ModelImporter:
     400122: paintings
     400124: Plane
     400126: Plane_001
+    400128: back
+    400130: chair
+    400132: cushio_back
+    400134: cushion_seat
+    400136: legs
+    400138: back_001
+    400140: BezierCurve_003
+    400142: BezierCurve_004
+    400144: Cube_002
+    400146: Cube_003
+    400148: cushio_back_001
+    400150: cushion_seat_001
+    400152: legs_001
     2300000: bed_base
     2300002: bed_pillow1
     2300004: bed_pillow2
@@ -185,6 +211,18 @@ ModelImporter:
     2300102: painting04
     2300104: Plane
     2300106: Plane_001
+    2300108: back
+    2300110: cushio_back
+    2300112: cushion_seat
+    2300114: legs
+    2300116: back_001
+    2300118: BezierCurve_003
+    2300120: BezierCurve_004
+    2300122: Cube_002
+    2300124: Cube_003
+    2300126: cushio_back_001
+    2300128: cushion_seat_001
+    2300130: legs_001
     3300000: bed_base
     3300002: bed_pillow1
     3300004: bed_pillow2
@@ -239,6 +277,18 @@ ModelImporter:
     3300102: painting04
     3300104: Plane
     3300106: Plane_001
+    3300108: back
+    3300110: cushio_back
+    3300112: cushion_seat
+    3300114: legs
+    3300116: back_001
+    3300118: BezierCurve_003
+    3300120: BezierCurve_004
+    3300122: Cube_002
+    3300124: Cube_003
+    3300126: cushio_back_001
+    3300128: cushion_seat_001
+    3300130: legs_001
     4300000: BezierCurve
     4300002: bedroom_sw_fireplace_front_grate
     4300004: bedroom_sw_fireplace
@@ -293,6 +343,18 @@ ModelImporter:
     4300102: Plane
     4300104: painting04
     4300106: canvas
+    4300108: back
+    4300110: cushio_back
+    4300112: cushion_seat
+    4300114: legs
+    4300116: Cube_003
+    4300118: Cube_002
+    4300120: BezierCurve_004
+    4300122: BezierCurve_003
+    4300124: legs_001
+    4300126: cushion_seat_001
+    4300128: cushio_back_001
+    4300130: back_001
     7400000: Default Take
     9500000: //RootNode
   materials:

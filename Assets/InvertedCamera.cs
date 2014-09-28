@@ -6,8 +6,19 @@ public class InvertedCamera : MonoBehaviour {
 	public int up = 1;
 	public int right = 1;
 
+	public string containingRoom = "";
+
+	void Start() {
+		this.gameObject.SetActive (false);
+
+		var eventCenter = EventCenter.Instance;
+		eventCenter.onRoomEntered += this.onRoomEntered;
+		eventCenter.onRoomExited += this.onRoomExited;
+	}
+
 	// EXAMPLE WITH CAMERA UPSIDEDOWN
 	void OnPreCull () {
+//		Debug.Log ("InvertedCamera/OnPreCull");
 		camera.ResetWorldToCameraMatrix();
 		camera.ResetProjectionMatrix();
 		camera.projectionMatrix = camera.projectionMatrix * Matrix4x4.Scale(new Vector3(forward, up, right));
@@ -21,4 +32,20 @@ public class InvertedCamera : MonoBehaviour {
 		GL.SetRevertBackfacing(false);
 	}
 	
+
+	public virtual void onRoomEntered(string room) {
+		if(room == this.containingRoom) {
+//			this.isRoomActive = true;
+			this.gameObject.SetActive(true);
+		}
+	}
+	
+	public void onRoomExited(string room) {
+		if(room == this.containingRoom) {
+//			this.isRoomActive = false;
+			this.gameObject.SetActive(false);
+		}
+	}
+	
+
 }
