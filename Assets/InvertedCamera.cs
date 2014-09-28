@@ -34,6 +34,7 @@ public class InvertedCamera : MonoBehaviour {
 	
 
 	public virtual void onRoomEntered(string room) {
+		Debug.Log("InvertedCamera["+this.name+"]/onRoomEntered: " + room + ", containingRoom: " + this.containingRoom);
 		if(room == this.containingRoom) {
 //			this.isRoomActive = true;
 			this.gameObject.SetActive(true);
@@ -41,6 +42,7 @@ public class InvertedCamera : MonoBehaviour {
 	}
 	
 	public void onRoomExited(string room) {
+		Debug.Log("InvertedCamera["+this.name+"]/onRoomExited: " + room + ", containingRoom: " + this.containingRoom);
 		if(room == this.containingRoom) {
 //			this.isRoomActive = false;
 			this.gameObject.SetActive(false);

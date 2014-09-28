@@ -16,7 +16,7 @@ public class RoomTriggerParent : MonoBehaviour {
 	}
 	
 	public void roomTriggered(string room) {
-	Debug.Log("RoomTriggerParent[ " + roomName + " ]/roomTrigged, _currentRoom = " + _currentRoom + ", room = " + room);
+//	Debug.Log("RoomTriggerParent[ " + roomName + " ]/roomTrigged, _currentRoom = " + _currentRoom + ", room = " + room);
 		var eventCenter = EventCenter.Instance;
 		if(room == _currentRoom) {
 			EventCenter.Instance.exitRoom(room);

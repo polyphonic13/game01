@@ -76,6 +76,7 @@ ModelImporter:
     100140: wall_w
     100142: mirror_frame
     100144: tub_base
+    100146: mirror_mask
     400000: base
     400002: //RootNode
     400004: bathtub
@@ -149,6 +150,7 @@ ModelImporter:
     400140: wall_w
     400142: mirror_frame
     400144: tub_base
+    400146: mirror_mask
     2300000: base
     2300002: Cube
     2300004: handle
@@ -216,6 +218,7 @@ ModelImporter:
     2300128: wall_w
     2300130: mirror_frame
     2300132: tub_base
+    2300134: mirror_mask
     3300000: base
     3300002: Cube
     3300004: handle
@@ -283,6 +286,7 @@ ModelImporter:
     3300128: wall_w
     3300130: mirror_frame
     3300132: tub_base
+    3300134: mirror_mask
     4300000: mirror
     4300002: sink_wall_molding
     4300004: Plane_001
@@ -350,6 +354,7 @@ ModelImporter:
     4300128: sink_countertop
     4300130: mirror_frame
     4300132: tub_base
+    4300134: mirror_mask
     7400000: Default Take
     9500000: //RootNode
   materials:
