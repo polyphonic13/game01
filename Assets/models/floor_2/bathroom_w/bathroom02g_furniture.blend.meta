@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 97c543d1878404ad6a824431cc8f76d6
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: base
     100002: //RootNode
@@ -77,6 +77,9 @@ ModelImporter:
     100142: mirror_frame
     100144: tub_base
     100146: mirror_mask
+    100148: bathroom_w_floor
+    100150: bathroom_w_wall_e
+    100152: bathroom_w_wall_n
     400000: base
     400002: //RootNode
     400004: bathtub
@@ -151,6 +154,9 @@ ModelImporter:
     400142: mirror_frame
     400144: tub_base
     400146: mirror_mask
+    400148: bathroom_w_floor
+    400150: bathroom_w_wall_e
+    400152: bathroom_w_wall_n
     2300000: base
     2300002: Cube
     2300004: handle
@@ -219,6 +225,9 @@ ModelImporter:
     2300130: mirror_frame
     2300132: tub_base
     2300134: mirror_mask
+    2300136: bathroom_w_floor
+    2300138: bathroom_w_wall_e
+    2300140: bathroom_w_wall_n
     3300000: base
     3300002: Cube
     3300004: handle
@@ -287,6 +296,9 @@ ModelImporter:
     3300130: mirror_frame
     3300132: tub_base
     3300134: mirror_mask
+    3300136: bathroom_w_floor
+    3300138: bathroom_w_wall_e
+    3300140: bathroom_w_wall_n
     4300000: mirror
     4300002: sink_wall_molding
     4300004: Plane_001
@@ -355,6 +367,9 @@ ModelImporter:
     4300130: mirror_frame
     4300132: tub_base
     4300134: mirror_mask
+    4300136: bathroom_w_floor
+    4300138: bathroom_w_wall_e
+    4300140: bathroom_w_wall_n
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -365,7 +380,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -409,5 +423,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 
