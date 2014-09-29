@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2ddb6b17b6a344a47a9857fa85d40fd2
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: _furnishings
     100002: _furnishings_001
@@ -80,6 +80,9 @@ ModelImporter:
     100148: cushio_back_001
     100150: cushion_seat_001
     100152: legs_001
+    100154: chairs
+    100156: naval_painting
+    100158: schooner_painting
     400000: _furnishings
     400002: _furnishings_001
     400004: bed
@@ -157,6 +160,9 @@ ModelImporter:
     400148: cushio_back_001
     400150: cushion_seat_001
     400152: legs_001
+    400154: chairs
+    400156: naval_painting
+    400158: schooner_painting
     2300000: bed_base
     2300002: bed_pillow1
     2300004: bed_pillow2
@@ -223,6 +229,8 @@ ModelImporter:
     2300126: cushio_back_001
     2300128: cushion_seat_001
     2300130: legs_001
+    2300132: naval_painting
+    2300134: schooner_painting
     3300000: bed_base
     3300002: bed_pillow1
     3300004: bed_pillow2
@@ -289,6 +297,8 @@ ModelImporter:
     3300126: cushio_back_001
     3300128: cushion_seat_001
     3300130: legs_001
+    3300132: naval_painting
+    3300134: schooner_painting
     4300000: BezierCurve
     4300002: bedroom_sw_fireplace_front_grate
     4300004: bedroom_sw_fireplace
@@ -355,6 +365,8 @@ ModelImporter:
     4300126: cushion_seat_001
     4300128: cushio_back_001
     4300130: back_001
+    4300132: naval_painting
+    4300134: schooner_painting
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -365,7 +377,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -409,5 +420,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 

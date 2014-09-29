@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 29983b104697b469d9ed17186a6039a1
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: bedroom_s_e
     100002: bedroom_s_e_001
@@ -1100,6 +1100,7 @@ ModelImporter:
     102188: stairs_main
     102190: sun_room
     102192: tower
+    102194: bathroom_e_mirror_mask
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -2197,6 +2198,7 @@ ModelImporter:
     402188: stairs_main
     402190: sun_room
     402192: tower
+    402194: bathroom_e_mirror_mask
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -3268,6 +3270,7 @@ ModelImporter:
     2302136: servants_hall_top_molding_s
     2302138: servants_hall_top_molding_w1
     2302140: servants_hall_top_molding_w2
+    2302142: bathroom_e_mirror_mask
     3300000: bedroom_s_e
     3300002: bedroom_s_e_001
     3300004: bedroom_s_w
@@ -4339,6 +4342,7 @@ ModelImporter:
     3302136: servants_hall_top_molding_s
     3302138: servants_hall_top_molding_w1
     3302140: servants_hall_top_molding_w2
+    3302142: bathroom_e_mirror_mask
     4300000: turret_floor_west
     4300002: turret_floor_east
     4300004: Cube_017
@@ -5409,6 +5413,7 @@ ModelImporter:
     4302134: hall_rear_window_w
     4302136: back_hall_wall_n
     4302138: back_hall_se_top_molding_e
+    4302140: bathroom_e_mirror_mask
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -6480,6 +6485,7 @@ ModelImporter:
     6402136: servants_hall_top_molding_s
     6402138: servants_hall_top_molding_w1
     6402140: servants_hall_top_molding_w2
+    6402142: bathroom_e_mirror_mask
     7400000: Default Take
     7400002: bedroom_nw_secret_door_close
     7400004: bedroom_nw_secret_door_cracked
@@ -6496,7 +6502,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -6540,5 +6545,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

@@ -1,1 +1,0 @@
-Assets/models/player/keke02_actions.blend
