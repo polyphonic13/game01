@@ -51,6 +51,7 @@ ModelImporter:
     100090: trim_bottom_002
     100092: trim_front_left
     100094: trim_front_right
+    100096: mirror_frame
     400000: Armature
     400002: base
     400004: //RootNode
@@ -99,6 +100,7 @@ ModelImporter:
     400090: trim_bottom_002
     400092: trim_front_left
     400094: trim_front_right
+    400096: mirror_frame
     2300000: base
     2300002: Cone_000
     2300004: Cone_001
@@ -127,6 +129,7 @@ ModelImporter:
     2300050: trim_bottom_002
     2300052: trim_front_left
     2300054: trim_front_right
+    2300056: mirror_frame
     3300000: base
     3300002: Cone_000
     3300004: Cone_001
@@ -155,6 +158,7 @@ ModelImporter:
     3300050: trim_bottom_002
     3300052: trim_front_left
     3300054: trim_front_right
+    3300056: mirror_frame
     4300000: door_right
     4300002: door_left
     4300004: drawer_4
@@ -193,6 +197,7 @@ ModelImporter:
     4300070: sink_faucet_shape
     4300072: sink_faucet_spout_washer
     4300074: pipe_curve01
+    4300076: mirror_frame
     6400000: base
     6400002: Cone_000
     6400004: Cone_001

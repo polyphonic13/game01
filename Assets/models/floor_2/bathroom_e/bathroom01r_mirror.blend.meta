@@ -11,8 +11,10 @@ ModelImporter:
     400004: mirror_glass
     2300000: mirror_frame
     2300002: mirror_glass
+    2300004: //RootNode
     3300000: mirror_frame
     3300002: mirror_glass
+    3300004: //RootNode
     4300000: mirror_glass
     4300002: mirror_frame
     7400000: Default Take
