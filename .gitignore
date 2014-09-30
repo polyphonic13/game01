@@ -15,3 +15,5 @@ Library/guidmapper
 Temp
 *.pidb
 build
+*.blend1
+*.blend2
