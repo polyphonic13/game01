@@ -1,1 +1,0 @@
-Assets/models/player/hooded_player2.blend
