@@ -49,6 +49,9 @@ ModelImporter:
     100086: rails_top_trim
     100088: rocking_chair
     100090: Plane
+    100092: pulls_bottom
+    100094: pulls_middle
+    100096: pulls_top
     400000: arms
     400002: base
     400004: base_001
@@ -95,6 +98,9 @@ ModelImporter:
     400086: rails_top_trim
     400088: rocking_chair
     400090: Plane
+    400092: pulls_bottom
+    400094: pulls_middle
+    400096: pulls_top
     2300000: arms
     2300002: base
     2300004: base_001
@@ -135,6 +141,9 @@ ModelImporter:
     2300074: rails
     2300076: rails_top_trim
     2300078: Plane
+    2300080: pulls_bottom
+    2300082: pulls_middle
+    2300084: pulls_top
     3300000: arms
     3300002: base
     3300004: base_001
@@ -175,6 +184,9 @@ ModelImporter:
     3300074: rails
     3300076: rails_top_trim
     3300078: Plane
+    3300080: pulls_bottom
+    3300082: pulls_middle
+    3300084: pulls_top
     4300000: drawer_top
     4300002: drawer_innards_002
     4300004: drawer_bottom
@@ -215,6 +227,9 @@ ModelImporter:
     4300074: bedroom_e_floor_boards_n2
     4300076: bedroom_e_floor_boards_w1
     4300078: Plane
+    4300080: pulls_top
+    4300082: pulls_bottom
+    4300084: pulls_middle
     7400000: Default Take
     9500000: //RootNode
   materials:
