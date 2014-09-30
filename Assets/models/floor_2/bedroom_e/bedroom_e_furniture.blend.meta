@@ -52,6 +52,14 @@ ModelImporter:
     100092: pulls_bottom
     100094: pulls_middle
     100096: pulls_top
+    100098: bone_bottom
+    100100: bone_main
+    100102: bone_middle
+    100104: bone_top
+    100106: drawer_bottom_innards
+    100108: drawer_middle_innards
+    100110: drawer_top_innards
+    100112: dresser_armature
     400000: arms
     400002: base
     400004: base_001
@@ -101,6 +109,14 @@ ModelImporter:
     400092: pulls_bottom
     400094: pulls_middle
     400096: pulls_top
+    400098: bone_bottom
+    400100: bone_main
+    400102: bone_middle
+    400104: bone_top
+    400106: drawer_bottom_innards
+    400108: drawer_middle_innards
+    400110: drawer_top_innards
+    400112: dresser_armature
     2300000: arms
     2300002: base
     2300004: base_001
@@ -230,8 +246,27 @@ ModelImporter:
     4300080: pulls_top
     4300082: pulls_bottom
     4300084: pulls_middle
+    4300086: drawer_bottom_innards
+    4300088: drawer_middle_innards
+    4300090: drawer_top_innards
     7400000: Default Take
+    7400002: bedroom_e_dresser_bottom_drawer_close
+    7400004: bedroom_e_dresser_bottom_drawer_open
+    7400006: bedroom_e_dresser_default
+    7400008: bedroom_e_dresser_middle_drawer_close
+    7400010: bedroom_e_dresser_middle_drawer_open
+    7400012: bedroom_e_dresser_top_drawer_close
+    7400014: bedroom_e_dresser_top_drawer_open
     9500000: //RootNode
+    13700000: drawer_bottom
+    13700002: drawer_bottom_innards
+    13700004: drawer_middle
+    13700006: drawer_middle_innards
+    13700008: drawer_top
+    13700010: drawer_top_innards
+    13700012: pulls_bottom
+    13700014: pulls_middle
+    13700016: pulls_top
   materials:
     importMaterials: 1
     materialName: 0
