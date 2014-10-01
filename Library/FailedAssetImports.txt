@@ -1,1 +1,1 @@
-Assets/models/floor_2/bedroom_n/endtable02/endtable02.blend
+Assets/models/floor_2/bedroom_e/bedroom_e_furniture.blend
