@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f233420c2e8474b27a04b0b96a00a2a4
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: base
     100002: doors
@@ -12,6 +12,25 @@ ModelImporter:
     100012: trim_bottom
     100014: trim_top
     100016: //RootNode
+    100018: Armature
+    100020: door_hardware_left
+    100022: door_hardware_right
+    100024: door_left
+    100026: door_right
+    100028: door_right_bone
+    100030: left_door_bone
+    100032: molding_bottom_front
+    100034: molding_bottom_left
+    100036: molding_bottom_right
+    100038: wardrobe
+    100040: Cube
+    100042: Cube_001
+    100044: Cylinder
+    100046: Cylinder_001
+    100048: handle_left
+    100050: handle_right
+    100052: shaft_keft
+    100054: shaft_right
     400000: base
     400002: doors
     400004: interior
@@ -21,6 +40,25 @@ ModelImporter:
     400012: trim_bottom
     400014: trim_top
     400016: //RootNode
+    400018: Armature
+    400020: door_hardware_left
+    400022: door_hardware_right
+    400024: door_left
+    400026: door_right
+    400028: door_right_bone
+    400030: left_door_bone
+    400032: molding_bottom_front
+    400034: molding_bottom_left
+    400036: molding_bottom_right
+    400038: wardrobe
+    400040: Cube
+    400042: Cube_001
+    400044: Cylinder
+    400046: Cylinder_001
+    400048: handle_left
+    400050: handle_right
+    400052: shaft_keft
+    400054: shaft_right
     2300000: base
     2300002: doors
     2300004: interior
@@ -29,6 +67,9 @@ ModelImporter:
     2300010: molding_top
     2300012: trim_bottom
     2300014: trim_top
+    2300016: molding_bottom_front
+    2300018: molding_bottom_left
+    2300020: molding_bottom_right
     3300000: base
     3300002: doors
     3300004: interior
@@ -37,6 +78,9 @@ ModelImporter:
     3300010: molding_top
     3300012: trim_bottom
     3300014: trim_top
+    3300016: molding_bottom_front
+    3300018: molding_bottom_left
+    3300020: molding_bottom_right
     4300000: trim_bottom
     4300002: legs
     4300004: interior
@@ -45,8 +89,41 @@ ModelImporter:
     4300010: molding_bottom
     4300012: doors
     4300014: base
+    4300016: door_hardware_left
+    4300018: door_hardware_right
+    4300020: door_left
+    4300022: door_right
+    4300024: molding_bottom_left
+    4300026: molding_bottom_right
+    4300028: molding_bottom_front
+    4300030: Cube_001
+    4300032: Cylinder_001
+    4300034: Cylinder
+    4300036: Cube
+    4300038: handle_left
+    4300040: shaft_keft
+    4300042: shaft_right
+    4300044: handle_right
     7400000: Default Take
+    7400002: wardrobe04_default
+    7400004: wardrobe04_left_door_close
+    7400006: wardrobe04_left_door_open
+    7400008: wardrobe04_right_door_close
+    7400010: wardrobe04_right_door_open
     9500000: //RootNode
+    11100000: //RootNode
+    13700000: door_hardware_left
+    13700002: door_hardware_right
+    13700004: door_left
+    13700006: door_right
+    13700008: Cube
+    13700010: Cube_001
+    13700012: Cylinder
+    13700014: Cylinder_001
+    13700016: handle_left
+    13700018: handle_right
+    13700020: shaft_keft
+    13700022: shaft_right
   materials:
     importMaterials: 1
     materialName: 0
@@ -55,6 +132,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -70,7 +148,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
@@ -97,5 +175,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
+  additionalBone: 0
   userData: 
