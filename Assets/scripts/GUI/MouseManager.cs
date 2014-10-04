@@ -41,7 +41,7 @@ public class MouseManager : MonoBehaviour {
 	}
 	
 	public void Awake() {
-		Debug.Log("MouseManager/Awake, _cursorDescriptions.Length = " + _cursorDescriptions.Length);
+//		Debug.Log("MouseManager/Awake, _cursorDescriptions.Length = " + _cursorDescriptions.Length);
 //		Screen.showCursor = false;
 //		Screen.lockCursor = true;
 //		Screen.lockCursor = false;

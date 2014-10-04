@@ -25,7 +25,7 @@ public class LightFixture : OnOffLight {
 				_bulbs.Add(transform);
 			}
 		}
-		Debug.Log("LightFixture, _bulbs.length = " + _bulbs);
+//		Debug.Log("LightFixture, _bulbs.length = " + _bulbs);
 		this.toggleBulbs();
 //		initOnOffLight();
 	}

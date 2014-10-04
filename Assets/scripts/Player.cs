@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
 		notification.init(basicStyle);
 		menu = new Menu();
 		menu.init(basicStyle);
-//		menu.showMenu = true;
+		menu.showMenu = true;
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
@@ -53,8 +53,19 @@ public class Player : MonoBehaviour {
 				notification.destroy();
 			}
 		}
-		if(!inventory.showDetail && !inventory.showInventory && !menu.showMenu && !notification.showNote) {
-			enablePlayer(true);
+		if (!inventory.showDetail && !inventory.showInventory && !menu.showMenu && !notification.showNote) {
+						enablePlayer (true);
+				} else {
+						enablePlayer (false);
+				}
+		if (menu.showMenu) {
+			if(!menu.isShowing) {
+				menu.show (true);
+			}
+		} else {
+			if(menu.isShowing) {
+			menu.show (false);
+			}
 		}
 	}
 
@@ -83,8 +94,6 @@ public class Player : MonoBehaviour {
 			}
 		} else if (inventory.showDetail) {
 			inventory.drawDetail ();
-		} else if(menu.showMenu) {
-			menu.draw();
 		} else if (notification.showNote) {
 			notification.drawNote ();
 		} else if (inventory.houseKeepingNeeded) {
