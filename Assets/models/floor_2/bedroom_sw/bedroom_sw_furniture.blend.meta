@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2ddb6b17b6a344a47a9857fa85d40fd2
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: _furnishings
     100002: _furnishings_001
@@ -83,6 +83,16 @@ ModelImporter:
     100154: chairs
     100156: naval_painting
     100158: schooner_painting
+    100160: chair_arms_wood
+    100162: chair_back
+    100164: chair_back_cushion
+    100166: chair_back_wood
+    100168: chair_legs_front
+    100170: chair_legs_front_curve
+    100172: chair_legs_rear
+    100174: chair_seat_cushion
+    100176: chair_seat_wood
+    100178: Cylinder
     400000: _furnishings
     400002: _furnishings_001
     400004: bed
@@ -163,6 +173,16 @@ ModelImporter:
     400154: chairs
     400156: naval_painting
     400158: schooner_painting
+    400160: chair_arms_wood
+    400162: chair_back
+    400164: chair_back_cushion
+    400166: chair_back_wood
+    400168: chair_legs_front
+    400170: chair_legs_front_curve
+    400172: chair_legs_rear
+    400174: chair_seat_cushion
+    400176: chair_seat_wood
+    400178: Cylinder
     2300000: bed_base
     2300002: bed_pillow1
     2300004: bed_pillow2
@@ -231,6 +251,16 @@ ModelImporter:
     2300130: legs_001
     2300132: naval_painting
     2300134: schooner_painting
+    2300136: chair_arms_wood
+    2300138: chair_back
+    2300140: chair_back_cushion
+    2300142: chair_back_wood
+    2300144: chair_legs_front
+    2300146: chair_legs_front_curve
+    2300148: chair_legs_rear
+    2300150: chair_seat_cushion
+    2300152: chair_seat_wood
+    2300154: Cylinder
     3300000: bed_base
     3300002: bed_pillow1
     3300004: bed_pillow2
@@ -299,6 +329,16 @@ ModelImporter:
     3300130: legs_001
     3300132: naval_painting
     3300134: schooner_painting
+    3300136: chair_arms_wood
+    3300138: chair_back
+    3300140: chair_back_cushion
+    3300142: chair_back_wood
+    3300144: chair_legs_front
+    3300146: chair_legs_front_curve
+    3300148: chair_legs_rear
+    3300150: chair_seat_cushion
+    3300152: chair_seat_wood
+    3300154: Cylinder
     4300000: BezierCurve
     4300002: bedroom_sw_fireplace_front_grate
     4300004: bedroom_sw_fireplace
@@ -367,6 +407,16 @@ ModelImporter:
     4300130: back_001
     4300132: naval_painting
     4300134: schooner_painting
+    4300136: Cylinder
+    4300138: chair_seat_cushion
+    4300140: chair_legs_front_curve
+    4300142: chair_legs_front
+    4300144: chair_arms_wood
+    4300146: chair_seat_wood
+    4300148: chair_back
+    4300150: chair_back_cushion
+    4300152: chair_legs_rear
+    4300154: chair_back_wood
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -377,6 +427,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -420,4 +471,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  additionalBone: 0
   userData: 
