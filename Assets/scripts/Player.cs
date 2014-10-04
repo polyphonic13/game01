@@ -17,7 +17,9 @@ public class Player : MonoBehaviour {
 	private Vector3 _lastPosition;
 
 	private Camera camera;
-	
+
+	private PlayerMeshController headController;
+
 	void Awake() {
 		camera = Camera.main;
 		_lastPosition = camera.transform.position;
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour {
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
+		headController = GetComponent<PlayerMeshController> ();
 	}
 	
 	void Update() {
@@ -101,6 +104,7 @@ public class Player : MonoBehaviour {
 
 	public void enablePlayer(bool enable) {
 		// Debug.Log("Player/enablePlayer, disable = " + disable);
+		headController.isEnabled = enable;
 		var mouseLook = GetComponent<MouseLook>();
 		mouseLook.isEnabled = enable;
 		var cameraMouseLook = camera.GetComponent<MouseLook>();
