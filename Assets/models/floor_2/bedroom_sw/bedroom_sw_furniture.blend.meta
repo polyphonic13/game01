@@ -93,6 +93,7 @@ ModelImporter:
     100174: chair_seat_cushion
     100176: chair_seat_wood
     100178: Cylinder
+    100180: chair_arm_cylinders
     400000: _furnishings
     400002: _furnishings_001
     400004: bed
@@ -183,6 +184,7 @@ ModelImporter:
     400174: chair_seat_cushion
     400176: chair_seat_wood
     400178: Cylinder
+    400180: chair_arm_cylinders
     2300000: bed_base
     2300002: bed_pillow1
     2300004: bed_pillow2
@@ -261,6 +263,7 @@ ModelImporter:
     2300150: chair_seat_cushion
     2300152: chair_seat_wood
     2300154: Cylinder
+    2300156: chair_arm_cylinders
     3300000: bed_base
     3300002: bed_pillow1
     3300004: bed_pillow2
@@ -339,6 +342,7 @@ ModelImporter:
     3300150: chair_seat_cushion
     3300152: chair_seat_wood
     3300154: Cylinder
+    3300156: chair_arm_cylinders
     4300000: BezierCurve
     4300002: bedroom_sw_fireplace_front_grate
     4300004: bedroom_sw_fireplace
@@ -417,6 +421,7 @@ ModelImporter:
     4300150: chair_back_cushion
     4300152: chair_legs_rear
     4300154: chair_back_wood
+    4300156: chair_arm_cylinders
     7400000: Default Take
     9500000: //RootNode
   materials:
