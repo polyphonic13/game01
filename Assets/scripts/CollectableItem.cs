@@ -11,6 +11,9 @@ public class CollectableItem : InteractiveElement {
 	public Texture iconTexture;
 	public Texture detailTexture;
 
+	public Sprite thumbnailSprite;
+	public Sprite detailSprite; 
+
 	public bool isEquipable = false;
 	public bool isDroppable = false;
 

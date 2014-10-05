@@ -6,7 +6,7 @@ public class CanvasItem {
 	public bool show { get; set; }
 	public bool isShowing = false;
 
-	private GameObject canvas;
+	public GameObject canvas;
 
 	public void init(string canvasName) {
 		canvas = GameObject.Find (canvasName);

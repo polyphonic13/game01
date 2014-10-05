@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Inventory : CanvasItem {
@@ -22,6 +23,7 @@ public class Inventory : CanvasItem {
 		isItemEquipped = false;
 		houseKeepingNeeded = false;
 		base.init (CANVAS_NAME);
+//		_initGrid ();
 	}
 
 	public void addItem(CollectableItem item) {
@@ -61,7 +63,16 @@ public class Inventory : CanvasItem {
 		this.showDetail = false;
 		EventCenter.Instance.enablePlayer(true);
 	}
-	
+
+	private void _initGrid() {
+		var childTransforms = canvas.GetComponentsInChildren<Transform> ();
+		Debug.Log ("Inventory/_initGrid, childTransforms = " + childTransforms);
+		foreach(Transform childTransform in childTransforms) {
+			Debug.Log("child name = " + childTransform.gameObject.name);
+//			initCollidableChild(childTransform.gameObject);
+		}
+	}
+
 	private void _equipAndClose(string itemName) {
 		EventCenter.Instance.equipItem(itemName);
 		this.equippedItem = itemName;
