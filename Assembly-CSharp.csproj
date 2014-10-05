@@ -111,6 +111,7 @@
      <Compile Include="Assets\scripts\Guide.cs" />
      <Compile Include="Assets\scripts\InspectableItem.cs" />
      <Compile Include="Assets\scripts\InteractiveElement.cs" />
+     <Compile Include="Assets\scripts\Inventory.cs" />
      <Compile Include="Assets\scripts\InvertedCamera.cs" />
      <Compile Include="Assets\scripts\ItemContainer.cs" />
      <Compile Include="Assets\scripts\ItemWeight.cs" />

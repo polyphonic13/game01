@@ -7,7 +7,8 @@ public class Player : MonoBehaviour {
 
 	public Breadcrumb breadcrumb;
 
-	public InventoryManager inventory;
+//	public InventoryManager inventory;
+	public Inventory inventory;
 	public Notification notification;
 	public Menu menu;
 	
@@ -23,13 +24,15 @@ public class Player : MonoBehaviour {
 	void Awake() {
 		camera = Camera.main;
 		_lastPosition = camera.transform.position;
-		inventory = new InventoryManager();
-		inventory.init(basicStyle);
-		notification = new Notification();
-		notification.init ();
 		menu = new Menu();
 		menu.init ();
 		menu.show = true;
+//		inventory = new InventoryManager();
+//		inventory.init(basicStyle);
+		inventory = new Inventory ();
+		inventory.init ();
+		notification = new Notification();
+		notification.init ();
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
@@ -39,22 +42,21 @@ public class Player : MonoBehaviour {
 	void Update() {
 		_checkPositionForChange();
 		if(Input.GetKeyDown(KeyCode.Q)) {
-			inventory.showInventory = !inventory.showInventory;
+			inventory.show = !inventory.show;
 			inventory.showDetail = false;
 		} else if(Input.GetKeyDown(KeyCode.X) && inventory.isItemEquipped) {
 			inventory.dropItem();
 		} else if(Input.GetKeyDown(KeyCode.M)) {
 			menu.show = !menu.show;
-			Debug.Log("M pressed, menu.show now = " + menu.show);
 		} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
 			inventory.showDetail = false;
-			inventory.showInventory = false;
+			inventory.show = false;
 			menu.show = false;
 			if(notification.show) {
 				notification.destroy();
 			}
 		}
-		if (!inventory.showDetail && !inventory.showInventory && !menu.show && !notification.show) {
+		if (!inventory.showDetail && !inventory.show && !menu.show && !notification.show) {
 			enablePlayer (true);
 		} else {
 			enablePlayer (false);
@@ -63,6 +65,12 @@ public class Player : MonoBehaviour {
 		if (menu.show) {
 			if(!menu.isShowing) {
 				openMenu();
+				if(inventory.isShowing) {
+					closeInventory();
+				}
+				if(notification.isShowing) {
+					closeNotification();
+				}
 			}
 		} else {
 			if(menu.isShowing) {
@@ -79,22 +87,22 @@ public class Player : MonoBehaviour {
 				notification.enableItem(false);
 			}
 		}
-
-	}
-
-	private void _checkPositionForChange() {
-		var difference = Vector3.Distance(_lastPosition, camera.transform.position);
-
-		if(difference > SIGNIFICANT_DISTANCE_CHANGE) {
-//			Debug.Log("Player/Update, position = " + camera.transform.position + ", _lastPosition = " + _lastPosition + ", difference = " + difference);
-			_dropBreadcrumb();
-			_lastPosition = camera.transform.position;
+		if (inventory.show) {
+			if (!inventory.isShowing) {
+				openInventory ();
+				if (notification.isShowing) {
+					closeNotification ();
+				}
+				if (menu.isShowing) {
+					closeMenu ();
+				}
+			}
+		} else {
+			if (inventory.isShowing) {
+				closeInventory ();
+			}
 		}
-	}
 
-	private void _dropBreadcrumb() {
-		EventCenter.Instance.dropBreadcrumb(_lastPosition);
-//		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
 	}
 
 	public void openMenu() {
@@ -103,29 +111,54 @@ public class Player : MonoBehaviour {
 
 	public void closeMenu() {
 		menu.show = false;
-		Debug.Log ("Player/closeMenu, is showing = " + menu.isShowing);
 		menu.enableItem(false);
 	}
 
+	public void openInventory() {
+		inventory.enableItem (true);
+	}
+
+	public void closeInventory() {
+		inventory.show = false;
+		inventory.enableItem (false);
+	}
+
 	public void closeNotification() {
+		notification.show = false;
 		notification.destroy ();
 	}
 
+	private void _checkPositionForChange() {
+		var difference = Vector3.Distance(_lastPosition, camera.transform.position);
+		
+		if(difference > SIGNIFICANT_DISTANCE_CHANGE) {
+			//			Debug.Log("Player/Update, position = " + camera.transform.position + ", _lastPosition = " + _lastPosition + ", difference = " + difference);
+			_dropBreadcrumb();
+			_lastPosition = camera.transform.position;
+		}
+	}
+	
+	private void _dropBreadcrumb() {
+		EventCenter.Instance.dropBreadcrumb(_lastPosition);
+		//		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
+	}
+	
 	void OnGUI () {
 		MouseManager.Instance.drawCursor ();
-		//Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
-		if (inventory.showInventory) {
-			inventory.drawSummary ();
-			if(notification.show) {
-				closeNotification();
-			}
-		} else if (inventory.showDetail) {
-			inventory.drawDetail ();
-		} else if (notification.show) {
-			notification.enableItem(true);
-		} else if (inventory.houseKeepingNeeded) {
-			inventory.houseKeeping ();
-		}
+		//Debug.Log("Player/OnGUI, showInventory = " + inventory.show + ", showDetail = " + inventory.showDetail);
+//		if (inventory.show) {
+//			inventory.drawSummary ();
+//			openInventory();
+//			if(notification.show) {
+//				closeNotification();
+//			}
+//		} else if (inventory.showDetail) {
+//			inventory.drawDetail ();
+//		} else if (notification.show) {
+//			notification.enableItem(true);
+//		} else if (inventory.houseKeepingNeeded) {
+//			inventory.houseKeeping ();
+//		}
 	}
 	
 	public void onMouseSensitivityChange(float sensitivity) {
@@ -151,7 +184,7 @@ public class Player : MonoBehaviour {
 		
 		if(enable) {
 			inventory.showDetail = false;
-			inventory.showInventory = false;
+			inventory.show = false;
 			menu.show = false;
 		}
 	}
