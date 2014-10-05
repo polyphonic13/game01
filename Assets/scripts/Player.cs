@@ -96,13 +96,19 @@ public class Player : MonoBehaviour {
 //		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
 	}
 
+	public void removeNote() {
+		Debug.Log ("Player/removeNote");
+//		EventCenter.Instance.removeNote();
+		notification.destroy ();
+	}
+
 	void OnGUI () {
 		MouseManager.Instance.drawCursor ();
 		//Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
 			if(notification.show) {
-				EventCenter.Instance.removeNote();
+				removeNote();
 			}
 		} else if (inventory.showDetail) {
 			inventory.drawDetail ();
