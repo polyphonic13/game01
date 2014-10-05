@@ -26,10 +26,10 @@ public class Player : MonoBehaviour {
 		inventory = new InventoryManager();
 		inventory.init(basicStyle);
 		notification = new Notification();
-		notification.init(basicStyle);
+		notification.init ();
 		menu = new Menu();
-		menu.init(basicStyle);
-		menu.showMenu = true;
+		menu.init ();
+		menu.show = true;
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
@@ -44,29 +44,41 @@ public class Player : MonoBehaviour {
 		} else if(Input.GetKeyDown(KeyCode.X) && inventory.isItemEquipped) {
 			inventory.dropItem();
 		} else if(Input.GetKeyDown(KeyCode.M)) {
-			menu.showMenu = !menu.showMenu;
+			menu.show = !menu.show;
+			Debug.Log("M pressed, menu.show now = " + menu.show);
 		} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
 			inventory.showDetail = false;
 			inventory.showInventory = false;
-			menu.showMenu = false;
-			if(notification.showNote) {
+			menu.show = false;
+			if(notification.show) {
 				notification.destroy();
 			}
 		}
-		if (!inventory.showDetail && !inventory.showInventory && !menu.showMenu && !notification.showNote) {
-						enablePlayer (true);
-				} else {
-						enablePlayer (false);
-				}
-		if (menu.showMenu) {
+		if (!inventory.showDetail && !inventory.showInventory && !menu.show && !notification.show) {
+			enablePlayer (true);
+		} else {
+			enablePlayer (false);
+		}
+
+		if (menu.show) {
 			if(!menu.isShowing) {
-				menu.show (true);
+				menu.enableItem(true);
 			}
 		} else {
 			if(menu.isShowing) {
-			menu.show (false);
+			menu.enableItem(false);
 			}
 		}
+		if (notification.show) {
+			if(!notification.isShowing) {
+				notification.enableItem(true);
+			}
+		} else {
+			if(notification.isShowing) {
+				notification.enableItem(false);
+			}
+		}
+
 	}
 
 	private void _checkPositionForChange() {
@@ -89,13 +101,13 @@ public class Player : MonoBehaviour {
 		//Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
-			if(notification.showNote) {
+			if(notification.show) {
 				EventCenter.Instance.removeNote();
 			}
 		} else if (inventory.showDetail) {
 			inventory.drawDetail ();
-		} else if (notification.showNote) {
-			notification.drawNote ();
+		} else if (notification.show) {
+			notification.enableItem(true);
 		} else if (inventory.houseKeepingNeeded) {
 			inventory.houseKeeping ();
 		}
@@ -125,7 +137,7 @@ public class Player : MonoBehaviour {
 		if(enable) {
 			inventory.showDetail = false;
 			inventory.showInventory = false;
-			menu.showMenu = false;
+			menu.show = false;
 		}
 	}
 }

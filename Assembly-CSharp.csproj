@@ -98,6 +98,7 @@
      <Compile Include="Assets\scripts\EventTrigger.cs" />
      <Compile Include="Assets\scripts\Extensions.cs" />
      <Compile Include="Assets\scripts\Flashlight.cs" />
+     <Compile Include="Assets\scripts\GUI\CanvasItem.cs" />
      <Compile Include="Assets\scripts\GUI\HeadPointer.cs" />
      <Compile Include="Assets\scripts\GUI\InventoryManager.cs" />
      <Compile Include="Assets\scripts\GUI\Menu.cs" />

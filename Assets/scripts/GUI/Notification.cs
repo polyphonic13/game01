@@ -1,24 +1,31 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
-public class Notification {
+public class Notification : CanvasItem {
 
-	private GUIStyle _style;
+	public const string CANVAS_NAME = "notificationUI";
+	public const string TEXT_NAME = "notificationText";
+
 	private string _content;
 	
 	private EventCenter _eventCenter;
 
-	public bool showNote { get; set; }
-	
+	private Text notificationText;
+
 	private bool _zoomNote = false;
 	
-	public void init(GUIStyle style) {
-		_style = style;
+	public void init() {
 		// Debug.Log("Notification/init, _style = " + _style);
-		this.showNote = false;
+		GameObject textComponent = GameObject.Find (TEXT_NAME);
+		if(textComponent != null) {
+			notificationText = textComponent.GetComponent<Text>();
+			Debug.Log("notificationText = " + notificationText);
+		}
 		_eventCenter = EventCenter.Instance;
 		_eventCenter.onAddNote += this.onAddNote;
 		_eventCenter.onRemoveNote += this.onRemoveNote;
+		base.init(CANVAS_NAME);
 	}
 	
     public void onAddNote(string msg, bool zoom = false) {
@@ -31,32 +38,21 @@ public class Notification {
 	
 	public void addNote(string msg, bool zoom = false) {
 		// Debug.Log("Notification/draw, msg = " + msg);
-		_content = msg;
+		notificationText.text = msg;
 		_zoomNote = zoom;
 
 		if(_zoomNote) {
 			_eventCenter.zoomCamera(true);
 		}
 		_eventCenter.enablePlayer(false);
-		this.showNote = true;
+		this.show = true;
 	}
 	
 	public void destroy() {
 		// Debug.Log("Notification/destroy");	
-		this.showNote = false;
-		_content = "";
+		this.show = false;
+		notificationText.text = "";
 		_eventCenter.enablePlayer(true);
 	}
 
-	public void drawNote() {
-		GUI.Box(new Rect((Screen.width/2 - 250),(Screen.height/2 - 50), 500, 100), _content /*, _style */);
-		if(GUI.Button(new Rect((Screen.width/2 + 150),(Screen.height/2 - 70), 100, 20), "Close" /*, _style */)) {
-			this.destroy();
-			if(_zoomNote) {
-				_eventCenter.zoomCamera(false);
-				_zoomNote = false;
-			}
-		}
-	}
-	
 }

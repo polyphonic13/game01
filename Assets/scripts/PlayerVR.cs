@@ -25,11 +25,11 @@ public class PlayerVR : MonoBehaviour {
 		_lastPosition = camera.transform.position;
 		inventory = new InventoryManager();
 		inventory.init(basicStyle);
-		notification = new Notification();
-		notification.init(basicStyle);
-		menu = new Menu();
-		menu.init(basicStyle);
-		menu.showMenu = true;
+//		notification = new Notification();
+//		notification.init(basicStyle);
+//		menu = new Menu();
+//		menu.init(basicStyle);
+//		menu.showMenu = true;
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
@@ -44,29 +44,29 @@ public class PlayerVR : MonoBehaviour {
 		} else if(Input.GetKeyDown(KeyCode.X) && inventory.isItemEquipped) {
 			inventory.dropItem();
 		} else if(Input.GetKeyDown(KeyCode.M)) {
-			menu.showMenu = !menu.showMenu;
+//			menu.showMenu = !menu.showMenu;
 		} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
 			inventory.showDetail = false;
 			inventory.showInventory = false;
-			menu.showMenu = false;
-			if(notification.showNote) {
-				notification.destroy();
-			}
+//			menu.showMenu = false;
+//			if(notification.showNote) {
+//				notification.destroy();
+//			}
 		}
-		if (!inventory.showDetail && !inventory.showInventory && !menu.showMenu && !notification.showNote) {
-						enablePlayer (true);
-				} else {
-						enablePlayer (false);
-				}
-		if (menu.showMenu) {
-			if(!menu.isShowing) {
-				menu.show (true);
-			}
-		} else {
-			if(menu.isShowing) {
-			menu.show (false);
-			}
-		}
+//		if (!inventory.showDetail && !inventory.showInventory && !menu.showMenu && !notification.showNote) {
+//						enablePlayer (true);
+//				} else {
+//						enablePlayer (false);
+//				}
+//		if (menu.showMenu) {
+//			if(!menu.isShowing) {
+//				menu.show (true);
+//			}
+//		} else {
+//			if(menu.isShowing) {
+//			menu.show (false);
+//			}
+//		}
 	}
 
 	private void _checkPositionForChange() {
@@ -89,13 +89,13 @@ public class PlayerVR : MonoBehaviour {
 		//Debug.Log("Player/OnGUI, showInventory = " + inventory.showInventory + ", showDetail = " + inventory.showDetail);
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
-			if(notification.showNote) {
-				EventCenter.Instance.removeNote();
-			}
+//			if(notification.showNote) {
+//				EventCenter.Instance.removeNote();
+//			}
 		} else if (inventory.showDetail) {
 			inventory.drawDetail ();
-		} else if (notification.showNote) {
-			notification.drawNote ();
+//		} else if (notification.showNote) {
+//			notification.drawNote ();
 		} else if (inventory.houseKeepingNeeded) {
 			inventory.houseKeeping ();
 		}
@@ -125,7 +125,7 @@ public class PlayerVR : MonoBehaviour {
 		if(enable) {
 			inventory.showDetail = false;
 			inventory.showInventory = false;
-			menu.showMenu = false;
+//			menu.showMenu = false;
 		}
 	}
 }
