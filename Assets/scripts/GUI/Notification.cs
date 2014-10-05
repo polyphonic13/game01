@@ -24,7 +24,7 @@ public class Notification : CanvasItem {
 		}
 		_eventCenter = EventCenter.Instance;
 		_eventCenter.onAddNote += this.onAddNote;
-		_eventCenter.onRemoveNote += this.onRemoveNote;
+//		_eventCenter.onRemoveNote += this.onRemoveNote;
 		base.init(CANVAS_NAME);
 	}
 	
@@ -32,9 +32,9 @@ public class Notification : CanvasItem {
         addNote(msg, zoom);
     }
 	
-	public void onRemoveNote(string msg = "", bool zoom = false) {
-		destroy();
-	}
+//	public void onRemoveNote(string msg = "", bool zoom = false) {
+//		destroy();
+//	}
 	
 	public void addNote(string msg, bool zoom = false) {
 		// Debug.Log("Notification/draw, msg = " + msg);

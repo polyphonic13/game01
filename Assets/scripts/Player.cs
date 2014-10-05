@@ -62,11 +62,12 @@ public class Player : MonoBehaviour {
 
 		if (menu.show) {
 			if(!menu.isShowing) {
-				menu.enableItem(true);
+				openMenu();
 			}
 		} else {
 			if(menu.isShowing) {
-			menu.enableItem(false);
+				Debug.Log("Player/Update, menu.show = " + menu.show + ", isShowing = " + menu.isShowing);
+				closeMenu();
 			}
 		}
 		if (notification.show) {
@@ -96,9 +97,17 @@ public class Player : MonoBehaviour {
 //		Breadcrumb _breadcrumbClone = (Breadcrumb) Instantiate(breadcrumb, _lastPosition, camera.transform.rotation);
 	}
 
-	public void removeNote() {
-		Debug.Log ("Player/removeNote");
-//		EventCenter.Instance.removeNote();
+	public void openMenu() {
+		menu.enableItem(true);
+	}
+
+	public void closeMenu() {
+		menu.show = false;
+		Debug.Log ("Player/closeMenu, is showing = " + menu.isShowing);
+		menu.enableItem(false);
+	}
+
+	public void closeNotification() {
 		notification.destroy ();
 	}
 
@@ -108,7 +117,7 @@ public class Player : MonoBehaviour {
 		if (inventory.showInventory) {
 			inventory.drawSummary ();
 			if(notification.show) {
-				removeNote();
+				closeNotification();
 			}
 		} else if (inventory.showDetail) {
 			inventory.drawDetail ();

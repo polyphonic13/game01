@@ -15,6 +15,7 @@ public class CanvasItem {
 	}
 	
 	public void enableItem(bool enable) {
+		Debug.Log ("CanvasItem/enableItem, enable = " + enable + ", show = " + show + ", isShowing = " + isShowing);
 		isShowing = enable;
 		canvas.SetActive (enable);
 	}
