@@ -2,13 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GUI/CanvasItem.cs">
     <Files>
-      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="16" Column="31" />
-      <File FileName="Assets/scripts/CollectableItem.cs" Line="106" Column="1" />
-      <File FileName="Assets/scripts/GUI/GridItem.cs" Line="24" Column="42" />
+      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="95" Column="21" />
+      <File FileName="Assets/scripts/CollectableItem.cs" Line="43" Column="21" />
+      <File FileName="Assets/scripts/GUI/GridItem.cs" Line="38" Column="27" />
       <File FileName="Assets/scripts/Player.cs" Line="127" Column="21" />
-      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="16" Column="12" />
-      <File FileName="Assets/scripts/utils/Utils.cs" Line="24" Column="51" />
-      <File FileName="Assets/scripts/EventCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="21" Column="1" />
+      <File FileName="Assets/scripts/GUI/InventoryManager.cs" Line="76" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
