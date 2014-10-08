@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Inventory : CanvasItem {
 
-	public GameObject[] gridElements;
+	public GridItem[] gridItems;
 
 	public bool showDetail { get; set; }
 
@@ -16,16 +16,26 @@ public class Inventory : CanvasItem {
 	private Hashtable _itemsHash;
 	
 	private string _itemToDelete = ""; 
-	
+
+	private int availableGridElement = 0;
+
 	void Awake() {
-				_itemsHash = new Hashtable ();
-				initCanvasItem ();
-		}
+		_itemsHash = new Hashtable ();
+		initCanvasItem ();
+	}
 
 	public void addItem(CollectableItem item) {
-		//		Debug.Log("_items manager/addItem, item = " + item.name + ", description = " + item.description);
-		EventCenter.Instance.addNote(item.itemName + " added to inventory");
-		_itemsHash.Add(item.name, item);
+		Debug.Log("Inventory/addItem, item = " + item.name + ", available idx = " + availableGridElement + ", gridItems length = " + gridItems.Length);
+		if(availableGridElement < gridItems.Length) {
+			EventCenter.Instance.addNote(item.itemName + " added to inventory");
+			_itemsHash.Add(item.name, item);
+
+			var gridItem = gridItems[availableGridElement];
+			gridItem.addItem(item);
+			availableGridElement++;
+		} else {
+			EventCenter.Instance.addNote ("No more room in inventory for " + item.itemName);
+		}
 	}
 	
 	public bool hasItem(string name) {

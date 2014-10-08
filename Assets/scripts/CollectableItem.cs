@@ -11,7 +11,7 @@ public class CollectableItem : InteractiveElement {
 	public Texture iconTexture;
 	public Texture detailTexture;
 
-	public Sprite thumbnailSprite;
+	public Sprite iconSprite;
 	public Sprite detailSprite; 
 
 	public bool isEquipable = false;
@@ -21,7 +21,7 @@ public class CollectableItem : InteractiveElement {
 
 	public bool isCollected { get; set; }
 	public bool isEquipped { get; set; }
-	
+	public bool isAttached { get; set; }
 	
 	private Player _player;
 	
@@ -37,6 +37,7 @@ public class CollectableItem : InteractiveElement {
 		init(MouseManager.Instance.COLLECT_CURSOR);
 		this.isCollected = false;
 		this.isEquipped = false;
+		this.isAttached = false;
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_originalSize = this.transform.localScale;
 
@@ -101,13 +102,15 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void attachToObject(string target) {
-		Debug.Log ("CollectableItem[" + this.name + "]/attachToObject, target = " + target);
-//		var tgt = Camera.main.transform.Search(target);
-		var tgt = _player.transform.Search (target);
-		Debug.Log ("tgt = " + tgt);
-		transform.position = tgt.transform.position;
-		transform.rotation = tgt.transform.rotation;
-		transform.parent = tgt.transform;	
+		if(!this.isAttached) {
+			Debug.Log ("CollectableItem[" + this.name + "]/attachToObject, target = " + target);
+			var tgt = _player.transform.Search (target);
+			Debug.Log ("tgt = " + tgt);
+			transform.position = tgt.transform.position;
+			transform.rotation = tgt.transform.rotation;
+			transform.parent = tgt.transform;	
+			this.isAttached = true;
+		}
 	}
 	
 	public void removeFromInventory() {

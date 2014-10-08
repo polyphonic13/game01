@@ -39,14 +39,13 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity460b20/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity46b20/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity460b20/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity46b20/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GridItem.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
@@ -61,8 +60,6 @@
      <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
-     <Compile Include="Assets\OVRCrossHair.cs" />
-     <Compile Include="Assets\PlayerMeshController.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\AddSomeForce.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\AdditionalData.cs" />
      <Compile Include="Assets\UnitySerializer\Scripts\AdditionalDataStorage.cs" />
@@ -100,6 +97,7 @@
      <Compile Include="Assets\scripts\Extensions.cs" />
      <Compile Include="Assets\scripts\Flashlight.cs" />
      <Compile Include="Assets\scripts\GUI\CanvasItem.cs" />
+     <Compile Include="Assets\scripts\GUI\GridItem.cs" />
      <Compile Include="Assets\scripts\GUI\HeadPointer.cs" />
      <Compile Include="Assets\scripts\GUI\Inventory.cs" />
      <Compile Include="Assets\scripts\GUI\InventoryManager.cs" />
@@ -124,9 +122,11 @@
      <Compile Include="Assets\scripts\MouseTest.cs" />
      <Compile Include="Assets\scripts\OVRBasicHeadRay.cs" />
      <Compile Include="Assets\scripts\OVRCameraZoom.cs" />
+     <Compile Include="Assets\scripts\OVRCrossHair.cs" />
      <Compile Include="Assets\scripts\OnOffLight.cs" />
      <Compile Include="Assets\scripts\OnOffSelfIllum.cs" />
      <Compile Include="Assets\scripts\Player.cs" />
+     <Compile Include="Assets\scripts\PlayerMeshController.cs" />
      <Compile Include="Assets\scripts\PlayerVR.cs" />
      <Compile Include="Assets\scripts\RaycastTest.cs" />
      <Compile Include="Assets\scripts\RoomTrigger.cs" />
@@ -157,7 +157,7 @@
  <HintPath>/Users/paulhoover/Documents/code/games/unity/game01/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity460b20/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity46b20/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
