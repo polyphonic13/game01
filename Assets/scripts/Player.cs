@@ -82,11 +82,11 @@ public class Player : MonoBehaviour {
 		}
 		if (notification.show) {
 			if(!notification.isShowing) {
-				notification.enableItem(true);
+				notification.showHide(true);
 			}
 		} else {
 			if(notification.isShowing) {
-				notification.enableItem(false);
+				notification.showHide(false);
 			}
 		}
 		if (inventory.show) {
@@ -109,22 +109,22 @@ public class Player : MonoBehaviour {
 
 	public void openMenu() {
 		Debug.Log ("Player/openMenu");
-		menu.enableItem(true);
+		menu.showHide(true);
 	}
 
 	public void closeMenu() {
 		menu.show = false;
-		menu.enableItem(false);
+		menu.showHide(false);
 	}
 
 	public void openInventory() {
 		Debug.Log ("Player/openInventory");
-		inventory.enableItem (true);
+		inventory.showHide (true);
 	}
 
 	public void closeInventory() {
 		inventory.show = false;
-		inventory.enableItem (false);
+		inventory.showHide (false);
 	}
 
 	public void closeNotification() {
@@ -159,7 +159,7 @@ public class Player : MonoBehaviour {
 //		} else if (inventory.showDetail) {
 //			inventory.drawDetail ();
 //		} else if (notification.show) {
-//			notification.enableItem(true);
+//			notification.showHide(true);
 //		} else if (inventory.houseKeepingNeeded) {
 //			inventory.houseKeeping ();
 //		}

@@ -16,13 +16,15 @@ public class CanvasItem : MonoBehaviour {
 
 	public void initCanvasItem() {
 //		Debug.Log ("CanvasItem[" + gameObject.name + "]/init, setting active to false");
-		this.gameObject.SetActive (false);
+//		this.gameObject.SetActive (false);
+		this.gameObject.renderer.enabled = false;
 	}
 	
-	public void enableItem(bool enable) {
+	public void showHide(bool enable) {
 //		Debug.Log ("CanvasItem/enableItem, enable = " + enable + ", show = " + show + ", isShowing = " + isShowing);
 		isShowing = enable;
 //		canvas.SetActive (enable);
-		this.gameObject.SetActive (enable);
+//		this.gameObject.SetActive (enable);
+		this.gameObject.renderer.enabled = enable;
 	}
 }

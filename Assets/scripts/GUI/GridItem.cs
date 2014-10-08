@@ -11,17 +11,18 @@ public class GridItem : MonoBehaviour {
 	private Text nameTxt;
 	private Image iconImg;
 	
-	void Start() {
+	void Awake() {
+		nameTxt = name.GetComponent<Text>();
+		iconImg = icon.GetComponent<Image>();
 		Debug.Log(this.gameObject.name + "/Start, nameTxt = " + nameTxt + ", iconImg = " + iconImg);
-//		name.SetActive(false);
-//		icon.SetActive(false);
+		name.gameObject.renderer.enabled = false;
+		icon.gameObject.renderer.enabled = false;
+
 	}
 	
 	public void addItem(CollectableItem item) {
-//		name.SetActive(true);
-//		icon.SetActive(true);
-		nameTxt = name.GetComponent<Text>();
-		iconImg = icon.GetComponent<Image>();
+		name.gameObject.renderer.enabled = true;
+		icon.gameObject.renderer.enabled = true;
 
 		Debug.Log(this.gameObject.name + "/addItem, item = " + item.itemName + ", nameTxt = " + nameTxt + ".text = " + nameTxt.text);
 		nameTxt.text = item.itemName;
