@@ -30,5 +30,15 @@ public class Utils : MonoBehaviour
 		}
 	}
 
+	public void reorder() {
+		/*
+		int[] numbers = { 1, 3, 4, 9, 2, 4 };
+		int numToRemove = 4;
+		int numIdx = Array.IndexOf(numbers, numToRemove);
+		List<int> tmp = new List<int>(numbers);
+		tmp.RemoveAt(numIdx);
+		numbers = tmp.ToArray();
+		*/
+	}
 }
 

@@ -24,7 +24,7 @@ public class GridItem : MonoBehaviour {
 	
 	public void addItem(CollectableItem item) {
 		Debug.Log(this.gameObject.name + "/addItem, item = " + item.itemName);
-
+		this.isOccupied = true;
 		_group.alpha = 1;
 		_nameTxt.text = item.itemName;
 		
@@ -32,5 +32,13 @@ public class GridItem : MonoBehaviour {
 			Debug.Log("  adding sprite: " + item.iconSprite);
 			_iconImg.sprite = item.iconSprite;
 		}
+	}
+
+	public void removeItem() {
+		this.isOccupied = false;
+		Debug.Log(this.gameObject.name + "/removeItem");
+		_group.alpha = 0;
+		_nameTxt.text = "";
+		_iconImg.sprite = null;
 	}
 }

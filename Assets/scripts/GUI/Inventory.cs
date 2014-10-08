@@ -89,7 +89,10 @@ public class Inventory : CanvasItem {
 	public void houseKeeping() {
 		Debug.Log("Inventory/houseKeeping, _itemToDelete = " + _itemToDelete);
 		if(_itemToDelete != "") {
+			CollectableItem item = _itemsHash[_itemToDelete] as CollectableItem;
 			_itemsHash.Remove(_itemToDelete);
+			_reorderGridItems(item.gridIdx);
+			item.gridIdx = -1;
 			_itemToDelete = "";
 		}
 		this.houseKeepingNeeded = false;
@@ -105,5 +108,25 @@ public class Inventory : CanvasItem {
 		close();
 	}
 	
+	private void _reorderGridItems(int gridIdx) {
+		if(gridIdx > -1) {
+			GridItem gridItem = gridItems[gridIdx];
+			gridItem.removeItem();
 
+			availableGridElement = 0;
+			CollectableItem currentItem; 
+
+			foreach(DictionaryEntry key in _itemsHash) {
+				if(availableGridElement < gridItems.Length) {
+					currentItem = key.Value as CollectableItem;
+					GridItem g = gridItems[availableGridElement];
+					if(g.isOccupied) {
+						g.removeItem();
+					}
+					g.addItem(currentItem);
+					availableGridElement++;
+				}
+			}
+		}
+	}
 }

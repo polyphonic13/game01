@@ -22,7 +22,9 @@ public class CollectableItem : InteractiveElement {
 	public bool isCollected { get; set; }
 	public bool isEquipped { get; set; }
 	public bool isAttached { get; set; }
-	
+
+	public int gridIdx { get; set; }
+
 	private Player _player;
 	
 	public ItemWeight weight; 
@@ -38,6 +40,7 @@ public class CollectableItem : InteractiveElement {
 		this.isCollected = false;
 		this.isEquipped = false;
 		this.isAttached = false;
+		this.gridIdx = -1;
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_originalSize = this.transform.localScale;
 
