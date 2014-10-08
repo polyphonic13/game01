@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: a626e8af3b24c47caa50a926cdc7e31b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: base
+    100004: drawer_hardware_top
+    100006: drawer_pull_hinges_top
+    100008: drawer_pulls_top
+    100010: drawer_top
+    100012: drawer_top_bone
+    100014: endtable
+    100016: //RootNode
+    100018: legs
+    100020: trim_bottom
+    100022: trim_top
+    400000: Armature
+    400002: base
+    400004: drawer_hardware_top
+    400006: drawer_pull_hinges_top
+    400008: drawer_pulls_top
+    400010: drawer_top
+    400012: drawer_top_bone
+    400014: endtable
+    400016: //RootNode
+    400018: legs
+    400020: trim_bottom
+    400022: trim_top
+    2300000: base
+    2300002: legs
+    2300004: trim_bottom
+    2300006: trim_top
+    3300000: base
+    3300002: legs
+    3300004: trim_bottom
+    3300006: trim_top
+    4300000: drawer_pull_hinges_top
+    4300002: drawer_hardware_top
+    4300004: drawer_pulls_top
+    4300006: drawer_top
+    4300008: legs
+    4300010: trim_bottom
+    4300012: base
+    4300014: trim_top
+    7400000: Default Take
+    7400002: endtable04_default
+    7400004: endtable04_default_001
+    7400006: endtable04_top_drawer_close
+    7400008: endtable04_top_drawer_open
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: drawer_hardware_top
+    13700002: drawer_pull_hinges_top
+    13700004: drawer_pulls_top
+    13700006: drawer_top
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
