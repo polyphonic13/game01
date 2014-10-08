@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Inventory : CanvasItem {
 
-	public const string CANVAS_NAME = "inventoryUI";
+	public GameObject[] gridElements;
 
 	public bool showDetail { get; set; }
 
