@@ -7,28 +7,30 @@ public class GridItem : MonoBehaviour {
 	public bool isOccupied = false;
 	public GameObject icon;
 	public GameObject name;
-	
-	private Text nameTxt;
-	private Image iconImg;
+
+	private CanvasGroup _group;
+	private Text _nameTxt;
+	private Image _iconImg;
 	
 	void Awake() {
-		nameTxt = name.GetComponent<Text>();
-		iconImg = icon.GetComponent<Image>();
-		Debug.Log(this.gameObject.name + "/Start, nameTxt = " + nameTxt + ", iconImg = " + iconImg);
-		name.gameObject.renderer.enabled = false;
-		icon.gameObject.renderer.enabled = false;
+		_nameTxt = name.GetComponent<Text>();
+		_iconImg = icon.GetComponent<Image>();
+		_group = this.gameObject.GetComponent<CanvasGroup>();
+		_group.alpha = 0;
+
+		Debug.Log(this.gameObject.name + "/Start, _nameTxt = " + _nameTxt + ", _iconImg = " + _iconImg);
 
 	}
 	
 	public void addItem(CollectableItem item) {
-		name.gameObject.renderer.enabled = true;
-		icon.gameObject.renderer.enabled = true;
+		Debug.Log(this.gameObject.name + "/addItem, item = " + item.itemName);
 
-		Debug.Log(this.gameObject.name + "/addItem, item = " + item.itemName + ", nameTxt = " + nameTxt + ".text = " + nameTxt.text);
-		nameTxt.text = item.itemName;
+		_group.alpha = 1;
+		_nameTxt.text = item.itemName;
 		
 		if(item.iconSprite != null) {
-			iconImg.sprite = item.iconSprite;
+			Debug.Log("  adding sprite: " + item.iconSprite);
+			_iconImg.sprite = item.iconSprite;
 		}
 	}
 }
