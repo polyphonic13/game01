@@ -15,7 +15,7 @@ public class Notification : CanvasItem {
 
 	private bool _zoomNote = false;
 	
-	public void init() {
+	void Awake() {
 		// Debug.Log("Notification/init, _style = " + _style);
 		GameObject textComponent = GameObject.Find (TEXT_NAME);
 		if(textComponent != null) {
@@ -25,7 +25,7 @@ public class Notification : CanvasItem {
 		_eventCenter = EventCenter.Instance;
 		_eventCenter.onAddNote += this.onAddNote;
 //		_eventCenter.onRemoveNote += this.onRemoveNote;
-		base.init(CANVAS_NAME);
+		initCanvasItem ();
 	}
 	
     public void onAddNote(string msg, bool zoom = false) {

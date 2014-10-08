@@ -17,14 +17,10 @@ public class Inventory : CanvasItem {
 	
 	private string _itemToDelete = ""; 
 	
-	// Use this for initialization
-	public void init() {
-		showDetail = false;
-		isItemEquipped = false;
-		houseKeepingNeeded = false;
-		base.init (CANVAS_NAME);
-//		_initGrid ();
-	}
+	void Awake() {
+				_itemsHash = new Hashtable ();
+				initCanvasItem ();
+		}
 
 	public void addItem(CollectableItem item) {
 		//		Debug.Log("_items manager/addItem, item = " + item.name + ", description = " + item.description);
@@ -65,12 +61,12 @@ public class Inventory : CanvasItem {
 	}
 
 	private void _initGrid() {
-		var childTransforms = canvas.GetComponentsInChildren<Transform> ();
-		Debug.Log ("Inventory/_initGrid, childTransforms = " + childTransforms);
-		foreach(Transform childTransform in childTransforms) {
-			Debug.Log("child name = " + childTransform.gameObject.name);
+//		var childTransforms = canvas.GetComponentsInChildren<Transform> ();
+//		Debug.Log ("Inventory/_initGrid, childTransforms = " + childTransforms);
+//		foreach(Transform childTransform in childTransforms) {
+//			Debug.Log("child name = " + childTransform.gameObject.name);
 //			initCollidableChild(childTransform.gameObject);
-		}
+//		}
 	}
 
 	private void _equipAndClose(string itemName) {

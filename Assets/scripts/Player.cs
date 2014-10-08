@@ -24,15 +24,17 @@ public class Player : MonoBehaviour {
 	void Awake() {
 		camera = Camera.main;
 		_lastPosition = camera.transform.position;
-		menu = new Menu();
-		menu.init ();
+//		menu = new Menu();
+//		menu.init ();
 		menu.show = true;
+//		inventory.show = false;
+//		notification.show = false;
 //		inventory = new InventoryManager();
 //		inventory.init(basicStyle);
-		inventory = new Inventory ();
-		inventory.init ();
-		notification = new Notification();
-		notification.init ();
+//		inventory = new Inventory ();
+//		inventory.init ();
+//		notification = new Notification();
+//		notification.init ();
 		EventCenter eventCenter = EventCenter.Instance;
 		eventCenter.onEnablePlayer += this.onEnablePlayer;
 		eventCenter.onMouseSensitivityChange += this.onMouseSensitivityChange;
@@ -106,6 +108,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void openMenu() {
+		Debug.Log ("Player/openMenu");
 		menu.enableItem(true);
 	}
 
@@ -115,6 +118,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void openInventory() {
+		Debug.Log ("Player/openInventory");
 		inventory.enableItem (true);
 	}
 

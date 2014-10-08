@@ -7,7 +7,4 @@ public class Menu : CanvasItem {
 
 	private float _mouseSensitivity = 2f;
 
-	public void init() {
-		base.init (CANVAS_NAME);
-	}
 }
