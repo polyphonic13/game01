@@ -18,10 +18,8 @@ public class ItemViewer : MonoBehaviour {
 	private bool _down = false; 
 
 	void Start () {
-//		transform.position = (transform.position - center.position).normalized * radius + center.position;
 		_startPos = transform.position;
-		radius = 2.0f;
-		Debug.Log("vector 3 up = " + (-Vector3.up));
+//		transform.position = (transform.position - center.position).normalized * radius + center.position;
 	}
 	
 	void Update () {
@@ -49,7 +47,6 @@ public class ItemViewer : MonoBehaviour {
 			}
 			
 			_orbit(new Vector3(x, y, 0));
-			//_orbit(Vector3.up);
 		}
 
 	}
