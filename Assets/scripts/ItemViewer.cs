@@ -13,20 +13,30 @@ public class ItemViewer : MonoBehaviour {
 	public float zoomMax = 2f;
 	public float zoomMin = 0.5f;
 
+	public bool hasItem { get; set; }
+
 	private Quaternion _startRot;
 	private Vector3 _startPos;
 
 	private GameObject _target;
 
 	public void addItem(GameObject target) {
+		if(hasItem) {
+			removeItem();
+		}
 		_target = target;
 		center = target.transform;
+		Debug.Log("ItemViewer, new center.position = " + center.position);
+		hasItem = true;
 	}
 
 	public void removeItem() {
-		if(_target != null) {
+		if(hasItem) {
 			Destroy(_target);
 			center = null;
+			transform.rotation = _startRot;
+			transform.position = _startPos;
+			hasItem = false;
 		}
 	}
 
