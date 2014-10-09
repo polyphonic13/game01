@@ -116,6 +116,7 @@ public class Guide : InteractiveElement {
 	
 	private void _levitationOff() {
 		float right = this.transform.position.x;
+//		float up = this.transform.position.y - 1f;
 		float up = this.transform.position.y - 1f;
 		float forward = this.transform.position.z;
 //		ItemWeight _weightClone = (ItemWeight) Instantiate(weight, this.transform.position, this.transform.rotation);

@@ -1,13 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GUI/CanvasItem.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ItemWeight.cs">
     <Files>
-      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="95" Column="21" />
-      <File FileName="Assets/scripts/CollectableItem.cs" Line="43" Column="21" />
-      <File FileName="Assets/scripts/GUI/GridItem.cs" Line="38" Column="27" />
-      <File FileName="Assets/scripts/Player.cs" Line="127" Column="21" />
-      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="21" Column="1" />
-      <File FileName="Assets/scripts/GUI/InventoryManager.cs" Line="76" Column="56" />
+      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="7" Column="1" />
+      <File FileName="Assets/scripts/GUI/Notification.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/InventoryManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/CollectableItem.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/CollidableParent.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Guide.cs" Line="120" Column="43" />
+      <File FileName="Assets/scripts/ItemWeight.cs" Line="29" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
