@@ -6,12 +6,14 @@ public class ItemViewer : MonoBehaviour {
 	public Camera viewer;
 	public Transform center;
 //	public Vector3 axis = Vector3.up;
-	public Vector3 desiredPosition;
 	public float radius = 2.0f;
 	public float radiusSpeed = 0.5f;
 	public float rotationSpeed = 80.0f;
-	public float zoomSpeed = 0.2f; 
+	public float zoomSpeed = 0.5f; 
+	public float zoomMax = 2f;
+	public float zoomMin = 0.5f;
 
+	private Quaternion _startRot;
 	private Vector3 _startPos;
 
 	private GameObject _target;
@@ -29,8 +31,8 @@ public class ItemViewer : MonoBehaviour {
 	}
 
 	void Start () {
+		_startRot = transform.rotation;
 		_startPos = transform.position;
-//		transform.position = (transform.position - center.position).normalized * radius + center.position;
 	}
 	
 	void Update () {
@@ -38,12 +40,13 @@ public class ItemViewer : MonoBehaviour {
 
 			if(Input.GetKeyDown(KeyCode.R)) {
 				// reset rotation and position
-				transform.rotation = new Quaternion(0,0,0,0);
+				transform.rotation = _startRot;
 				transform.position = _startPos;
 			} else {
 				int orbitX = 0;
 				int orbitY = 0;
 				int move = 0;
+				float dist = (transform.position.z - center.position.z);
 
 				// ROTATION
 				// up/down orbit (y axis)
@@ -62,10 +65,14 @@ public class ItemViewer : MonoBehaviour {
 				_orbit(new Vector3(orbitX, orbitY, 0));
 
 				// POSITION
-				if(Input.GetKey (KeyCode.Z)) {
-					move = 1;
-				} else if(Input.GetKey (KeyCode.X)) {
-					move = -1;
+				if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
+					if(dist > zoomMin) {
+						move = 1;
+					}
+				} else if(Input.GetKey (KeyCode.X) || Input.GetKey (KeyCode.Minus)) {
+					if(dist < zoomMax) {
+						move = -1;
+					}
 				}
 
 				if(move != 0) {
@@ -77,13 +84,10 @@ public class ItemViewer : MonoBehaviour {
 
 	private void _orbit(Vector3 axis) {
 		transform.RotateAround (center.position, axis, rotationSpeed * Time.deltaTime);
-//		desiredPosition = (transform.position - center.position).normalized * radius + center.position;
-//		transform.position = Vector3.MoveTowards(transform.position, desiredPosition, Time.deltaTime * radiusSpeed);
 	}
 
 	private void _move(int forwardFactor) {
-//		transform.position = Vector3.MoveTowards();
 		float speed = zoomSpeed * forwardFactor;
-		this.transform.position += this.transform.forward * speed * Time.deltaTime;
+		transform.position += this.transform.forward * speed * Time.deltaTime;
 	}
 }
