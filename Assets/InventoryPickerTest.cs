@@ -14,20 +14,16 @@ public class InventoryPickerTest : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	public void showRabbit() {
-		Debug.Log("show rabbit");
 		GameObject bunny = (GameObject) Instantiate(rabbit, new Vector3(0,0,0), new Quaternion(0,0,0,0));
+//		Debug.Log("show rabbit, center  = " + bunny.renderer.bounds.center);
 		_itemViewer.addItem(bunny);
 	}
 
 	public void showDog() {
 		Debug.Log("show dog");
 		GameObject puppy = (GameObject) Instantiate(dog, new Vector3(0,0,0), new Quaternion(0,0,0,0));
+//		Debug.Log("show rabbit, center  = " + puppy.renderer.bounds.center);
 		_itemViewer.addItem(puppy);
 	}
 
