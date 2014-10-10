@@ -1,10 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ItemViewer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ItemWeight.cs">
     <Files>
-      <File FileName="Assets/scripts/ItemViewer.cs" Line="66" Column="5" />
-      <File FileName="Assets/scripts/Player.cs" Line="49" Column="13" />
-      <File FileName="Assets/scripts/Guide.cs" Line="204" Column="87" />
+      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/Notification.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/InventoryManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/CollectableItem.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/CollidableParent.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Guide.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ItemWeight.cs" Line="29" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

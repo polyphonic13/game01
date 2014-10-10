@@ -4,7 +4,7 @@ using System.Collections;
 public class ItemViewer : MonoBehaviour {
 
 	public Camera viewer;
-	public Transform center;
+	public Transform tgt;
 //	public Vector3 axis = Vector3.up;
 	public float radius = 2.0f;
 	public float radiusSpeed = 0.5f;
@@ -25,15 +25,15 @@ public class ItemViewer : MonoBehaviour {
 			removeItem();
 		}
 		_target = target;
-		center = target.transform;
-		Debug.Log("ItemViewer, new center.position = " + center.position);
+		tgt = target.transform;
+		Debug.Log("ItemViewer, new tgt.position = " + tgt.position);
 		hasItem = true;
 	}
 
 	public void removeItem() {
 		if(hasItem) {
 			Destroy(_target);
-			center = null;
+			tgt = null;
 			transform.rotation = _startRot;
 			transform.position = _startPos;
 			hasItem = false;
@@ -43,10 +43,13 @@ public class ItemViewer : MonoBehaviour {
 	void Start () {
 		_startRot = transform.rotation;
 		_startPos = transform.position;
+		Debug.Log("tgt bounds = " + tgt.renderer.bounds.size.z + " tgt = " + tgt.renderer.bounds.center.z);
+		float maxFront = tgt.renderer.bounds.center.z + (tgt.renderer.bounds.size.z/2);
+		Debug.Log("maxFront = " + maxFront);
 	}
 	
 	void Update () {
-		if(center != null) {
+		if(tgt != null) {
 
 			if(Input.GetKeyDown(KeyCode.R)) {
 				// reset rotation and position
@@ -56,7 +59,7 @@ public class ItemViewer : MonoBehaviour {
 				int orbitX = 0;
 				int orbitY = 0;
 				int move = 0;
-				float dist = (transform.position.z - center.position.z);
+				float dist = (transform.position.z - tgt.position.z);
 
 				// ROTATION
 				// up/down orbit (y axis)
@@ -73,15 +76,15 @@ public class ItemViewer : MonoBehaviour {
 				}
 				
 				_orbit(new Vector3(orbitX, orbitY, 0));
-
+//				Debug.Log("dist = " + dist + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
 				// POSITION
 				if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
 					if(dist > zoomMin) {
-						move = 1;
+						move = -1;
 					}
 				} else if(Input.GetKey (KeyCode.X) || Input.GetKey (KeyCode.Minus)) {
 					if(dist < zoomMax) {
-						move = -1;
+						move = 1;
 					}
 				}
 
@@ -93,7 +96,7 @@ public class ItemViewer : MonoBehaviour {
 	}
 
 	private void _orbit(Vector3 axis) {
-		transform.RotateAround (center.position, axis, rotationSpeed * Time.deltaTime);
+		transform.RotateAround (tgt.position, axis, rotationSpeed * Time.deltaTime);
 	}
 
 	private void _move(int forwardFactor) {
