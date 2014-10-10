@@ -1,4 +1,4 @@
-Shader "Simple Glass" {
+Shader "Custom/SimpleGlass" {
     Properties {
         _Color ("Main Color", Color) = (1,1,1,0)
         _SpecColor ("Spec Color", Color) = (1,1,1,1)

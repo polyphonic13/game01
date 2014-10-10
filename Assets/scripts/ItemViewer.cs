@@ -6,9 +6,9 @@ public class ItemViewer : MonoBehaviour {
 	public Camera viewer;
 	public Transform tgt;
 	public float rotationSpeed = 150.0f;
-	public float zoomSpeed = 3f; 
-	public float zoomMax = 4.0f;
-	public float zoomMin = 0.05f;
+	public float zoomSpeed = 3.0f; 
+	public float zoomMax = 6.0f;
+	public float zoomMin = 1.0f;
 
 	public bool hasItem { get; set; }
 
