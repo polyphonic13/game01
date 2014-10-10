@@ -60,6 +60,7 @@ public class ItemViewer : MonoBehaviour {
 				int orbitY = 0;
 				int move = 0;
 				float dist = (transform.position.z - tgt.position.z);
+				if(dist < 0) { dist = -dist; }
 
 				// ROTATION
 				// up/down orbit (y axis)
@@ -76,7 +77,7 @@ public class ItemViewer : MonoBehaviour {
 				}
 				
 				_orbit(new Vector3(orbitX, orbitY, 0));
-//				Debug.Log("dist = " + dist + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
+				Debug.Log("dist = " + dist + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
 				// POSITION
 				if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
 					if(dist > zoomMin) {
