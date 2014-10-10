@@ -1,17 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ItemWeight.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/InventoryPickerTest.cs">
     <Files>
-      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/Notification.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/InventoryManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ItemViewer.cs" Line="42" Column="2" />
       <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/CollectableItem.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/CollidableParent.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Guide.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/ItemWeight.cs" Line="29" Column="29" />
+      <File FileName="Assets/InventoryPickerTest.cs" Line="26" Column="3" />
+      <File FileName="Assets/scripts/CollectableItem.cs" Line="28" Column="17" />
+      <File FileName="../keke_vs_the_caterpillars/01/Assets/scripts/Slingshot.cs" Line="86" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
