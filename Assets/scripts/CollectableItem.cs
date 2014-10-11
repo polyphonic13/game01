@@ -136,7 +136,7 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void store() {
-//		Debug.Log("CollableItem[ " + this.name + " ]/putAway");
+		Debug.Log("CollableItem[ " + this.name + " ]/store");
 		this.isEquipped = false;
 		this.transform.localScale = new Vector3(0, 0, 0);
 		attachToBackpack();
