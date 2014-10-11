@@ -13,13 +13,18 @@ public class Inventory : CanvasItem {
 
 	public bool houseKeepingNeeded { get; set; }
 
+	private const int ITEM_VIEWER_LAYER = 8;
+
 	private Hashtable _itemsHash;
 	
 	private string _itemToDelete = ""; 
 
 	private int availableGridElement = 0;
 
+	private ItemViewer _itemViewer;
+
 	void Awake() {
+//		_itemViewer = GameObject.Find("itemViewer").GetComponent<ItemViewer>();
 		_itemsHash = new Hashtable ();
 		initCanvasItem ();
 	}
@@ -56,6 +61,11 @@ public class Inventory : CanvasItem {
 		if(hasItem(name)) {
 			var item = _itemsHash[name] as CollectableItem;
 			Debug.Log("selected: " + item.itemName);
+			if(item.itemViewerPrefab != null) {
+				GameObject viewerItem = (GameObject) Instantiate(item.itemViewerPrefab, new Vector3(0,0,0), new Quaternion(0,0,0,0));
+				viewerItem.layer = ITEM_VIEWER_LAYER;
+				_itemViewer.addItem(viewerItem);
+			}
 		}
 	}
 	

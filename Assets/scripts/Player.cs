@@ -22,7 +22,8 @@ public class Player : MonoBehaviour {
 	private PlayerMeshController headController;
 
 	void Awake() {
-		camera = Camera.main;
+//		camera = Camera.main;
+		camera = GameObject.Find("playerCamera").GetComponent<Camera>();
 		_lastPosition = camera.transform.position;
 //		menu = new Menu();
 //		menu.init ();

@@ -28,6 +28,8 @@ public class CollectableItem : InteractiveElement {
 	private Player _player;
 	
 	public ItemWeight weight; 
+	public GameObject itemViewerPrefab;
+
 	private Vector3 _previousRigidBodyPos;
 	
 	void Awake() {
