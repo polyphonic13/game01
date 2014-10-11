@@ -25,7 +25,7 @@ public class Inventory : CanvasItem {
 	}
 
 	public void addItem(CollectableItem item) {
-		Debug.Log("Inventory/addItem, item = " + item.name + ", available idx = " + availableGridElement + ", gridItems length = " + gridItems.Length);
+//		Debug.Log("Inventory/addItem, item = " + item.name + ", available idx = " + availableGridElement + ", gridItems length = " + gridItems.Length);
 		if(availableGridElement < gridItems.Length) {
 			EventCenter.Instance.addNote(item.itemName + " added to inventory");
 			_itemsHash.Add(item.name, item);
@@ -87,7 +87,7 @@ public class Inventory : CanvasItem {
 	}
 	
 	public void houseKeeping() {
-		Debug.Log("Inventory/houseKeeping, _itemToDelete = " + _itemToDelete);
+//		Debug.Log("Inventory/houseKeeping, _itemToDelete = " + _itemToDelete);
 		if(_itemToDelete != "") {
 			CollectableItem item = _itemsHash[_itemToDelete] as CollectableItem;
 			_itemsHash.Remove(_itemToDelete);

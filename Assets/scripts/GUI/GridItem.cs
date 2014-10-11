@@ -18,7 +18,7 @@ public class GridItem : MonoBehaviour {
 		_group = this.gameObject.GetComponent<CanvasGroup>();
 		_group.alpha = 0;
 
-		Debug.Log(this.gameObject.name + "/Start, _nameTxt = " + _nameTxt + ", _iconImg = " + _iconImg);
+//		Debug.Log(this.gameObject.name + "/Start, _nameTxt = " + _nameTxt + ", _iconImg = " + _iconImg);
 
 	}
 	
@@ -29,14 +29,14 @@ public class GridItem : MonoBehaviour {
 		_nameTxt.text = item.itemName;
 		
 		if(item.iconSprite != null) {
-			Debug.Log("  adding sprite: " + item.iconSprite);
+//			Debug.Log("  adding sprite: " + item.iconSprite);
 			_iconImg.sprite = item.iconSprite;
 		}
 	}
 
 	public void removeItem() {
 		this.isOccupied = false;
-		Debug.Log(this.gameObject.name + "/removeItem");
+//		Debug.Log(this.gameObject.name + "/removeItem");
 		_group.alpha = 0;
 		_nameTxt.text = "";
 		_iconImg.sprite = null;

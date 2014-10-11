@@ -113,6 +113,7 @@ public class CollectableItem : InteractiveElement {
 			transform.rotation = tgt.transform.rotation;
 			transform.parent = tgt.transform;	
 			this.isAttached = true;
+			Debug.Log("transform.position = " + transform.position);
 		}
 	}
 	
@@ -136,9 +137,9 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void store() {
-		Debug.Log("CollableItem[ " + this.name + " ]/store");
+		Debug.Log("CollectableItem[ " + this.name + " ]/store");
 		this.isEquipped = false;
-		this.transform.localScale = new Vector3(0, 0, 0);
+//		this.transform.localScale = new Vector3(0, 0, 0);
 		attachToBackpack();
 	}
 
