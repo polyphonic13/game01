@@ -39,12 +39,7 @@ public class Inventory : CanvasItem {
 	}
 	
 	public bool hasItem(string name) {
-		bool found = false;
-		if(_itemsHash.Contains(name)) {
-			return true;
-		} else {
-			return false;
-		}
+		return _itemsHash.Contains(name);
 	}
 	
 	public string getItemName(string key) {
@@ -53,6 +48,14 @@ public class Inventory : CanvasItem {
 			return item.itemName;
 		} else { 
 			return "";
+		}
+	}
+	
+	public void selectItem(string name) {
+		Debug.Log("Inventory/selectItem, name = " + name);
+		if(hasItem(name)) {
+			var item = _itemsHash[name] as CollectableItem;
+			Debug.Log("selected: " + item.itemName);
 		}
 	}
 	

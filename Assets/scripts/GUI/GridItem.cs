@@ -11,13 +11,16 @@ public class GridItem : MonoBehaviour {
 	private CanvasGroup _group;
 	private Text _nameTxt;
 	private Image _iconImg;
-	
+
+	private Inventory _inventory;
+	private string _itemName;
+
 	void Awake() {
 		_nameTxt = name.GetComponent<Text>();
 		_iconImg = icon.GetComponent<Image>();
 		_group = this.gameObject.GetComponent<CanvasGroup>();
 		_group.alpha = 0;
-
+		_inventory = GameObject.Find("inventoryUI").GetComponent<Inventory>();
 //		Debug.Log(this.gameObject.name + "/Start, _nameTxt = " + _nameTxt + ", _iconImg = " + _iconImg);
 
 	}
@@ -25,6 +28,7 @@ public class GridItem : MonoBehaviour {
 	public void addItem(CollectableItem item) {
 		Debug.Log(this.gameObject.name + "/addItem, item = " + item.itemName);
 		this.isOccupied = true;
+		_itemName = item.name;
 		_group.alpha = 1;
 		_nameTxt.text = item.itemName;
 		
@@ -34,8 +38,14 @@ public class GridItem : MonoBehaviour {
 		}
 	}
 
+	public void selectItem() {
+//		Debug.Log(this.gameObject.name + "/selectItem, item = " + _itemName);
+		_inventory.selectItem(_itemName);
+	} 
+
 	public void removeItem() {
 		this.isOccupied = false;
+		_itemName = "";
 //		Debug.Log(this.gameObject.name + "/removeItem");
 		_group.alpha = 0;
 		_nameTxt.text = "";
