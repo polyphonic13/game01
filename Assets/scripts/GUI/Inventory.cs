@@ -66,8 +66,6 @@ public class Inventory : CanvasItem {
 			var item = _itemsHash[name] as CollectableItem;
 			Debug.Log("selected: " + item.itemName);
 			if(item.itemViewerPrefab != null) {
-//				_mainCamera.enabled = false;
-//				this.show = false;
 				GameObject viewerItem = (GameObject) Instantiate(item.itemViewerPrefab, new Vector3(0,0,0), new Quaternion(0,0,0,0));
 				viewerItem.layer = ITEM_VIEWER_LAYER;
 				_itemViewer.addItem(viewerItem);

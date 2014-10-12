@@ -139,9 +139,9 @@ public class Player : MonoBehaviour {
 	public void viewingInventoryItem(bool isViewing) {
 		Debug.Log("Player/viewingInventoryItem, isViewing = " + isViewing);
 		isViewingInventoryItem = isViewing;
-		camera.enabled = isViewing;
-		inventory.show = false;
-		inventory.showHide(false);
+		camera.enabled = !isViewing;
+		inventory.show = !isViewing;
+		inventory.showHide(!isViewing);
 	}
 
 	public void closeInventory() {
