@@ -5,7 +5,8 @@ public class EventAnimationParent : ArmatureParent {
 	
 	public AnimationClip animationClip;
 	public string eventName = "";
-	
+	public Transform bone; 
+
 	void Awake() {
 		initEventAnimationParent();
 	}
@@ -20,7 +21,7 @@ public class EventAnimationParent : ArmatureParent {
 	public void onTriggerEvent(string evt) {
 		Debug.Log("EventAnimationParent[ " + this.name + " ]/onTriggerEvent, evt = " + evt + ", eventName = " + eventName + ", animationClip = " + animationClip.name);
 		if(evt == eventName && animationClip != null) {
-			playAnimation(animationClip.name);
+			playAnimation(animationClip.name, bone);
 		}
 	}
 }

@@ -107,7 +107,7 @@ public class CollectableItem : InteractiveElement {
 	}
 	
 	public void attachToObject(string target) {
-		if(!this.isAttached) {
+//		if(!this.isAttached) {
 			Debug.Log ("CollectableItem[" + this.name + "]/attachToObject, target = " + target);
 			var tgt = _player.transform.Search (target);
 			Debug.Log ("tgt = " + tgt);
@@ -116,7 +116,7 @@ public class CollectableItem : InteractiveElement {
 			transform.parent = tgt.transform;	
 			this.isAttached = true;
 			Debug.Log("transform.position = " + transform.position);
-		}
+//		}
 	}
 	
 	public void removeFromInventory() {
