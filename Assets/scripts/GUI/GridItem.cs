@@ -39,9 +39,13 @@ public class GridItem : MonoBehaviour {
 	}
 
 	public void selectItem() {
-//		Debug.Log(this.gameObject.name + "/selectItem, item = " + _itemName);
+		Debug.Log(this.gameObject.name + "/selectItem, item = " + _itemName);
 		_inventory.selectItem(_itemName);
 	} 
+
+	public void test() {
+		Debug.Log(this.gameObject.name + "/test");
+	}
 
 	public void removeItem() {
 		this.isOccupied = false;

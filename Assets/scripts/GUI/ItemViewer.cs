@@ -20,6 +20,63 @@ public class ItemViewer : MonoBehaviour {
 	private Camera _viewerCamera; 
 	private CanvasGroup _viewerUI;
 
+	void Awake () {
+		_player = GameObject.Find("player").GetComponent<Player>();
+		_viewerCamera = GameObject.Find("viewerCamera").GetComponent<Camera>();
+		_viewerCamera.enabled = false;
+		_viewerUI = GameObject.Find ("viewerUI").GetComponent<CanvasGroup>();
+		_viewerUI.alpha = 0;
+		_startRot = viewer.transform.rotation;
+		_startPos = viewer.transform.position;
+	}
+	
+	void Update () {
+		if(tgt != null) {
+			if(Input.GetKeyDown(KeyCode.Q)) {
+				close();
+			} else if(Input.GetKeyDown(KeyCode.R)) {
+				// reset rotation and position
+				reset ();
+			} else {
+				int orbitX = 0;
+				int orbitY = 0;
+				int move = 0;
+				var distance = Vector3.Distance(viewer.transform.position, tgt.transform.position);
+				
+				// ROTATION
+				// up/down orbit (y axis)
+				if(Input.GetKey(KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
+					orbitY = 1;
+				} else if(Input.GetKey(KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) {
+					orbitY = -1;
+				}
+				// left/right orbit (x axis)
+				if(Input.GetKey(KeyCode.W) || Input.GetKey (KeyCode.UpArrow)) {
+					orbitX = 1;
+				} else if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
+					orbitX = -1;
+				}
+				
+				_orbit(new Vector3(orbitX, orbitY, 0));
+				//				Debug.Log("distance = " + distance + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
+                // POSITION
+                if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
+                    if(distance > zoomMin) {
+                        move = 1;
+                    }
+                } else if(Input.GetKey (KeyCode.X) || Input.GetKey (KeyCode.Minus)) {
+                    if(distance < zoomMax) {
+                        move = -1;
+                    }
+                }
+                
+                if(move != 0) {
+                    _move (move);
+                }
+            }
+        }
+	}
+	
 	public void addItem(GameObject target) {
 		_player.viewingInventoryItem(true);
         _viewerCamera.enabled = true;
@@ -52,63 +109,6 @@ public class ItemViewer : MonoBehaviour {
 		_viewerUI.alpha = 0;
 		_player.viewingInventoryItem(false);
     }
-
-	void Awake () {
-		_player = GameObject.Find("player").GetComponent<Player>();
-        _viewerCamera = GameObject.Find("viewerCamera").GetComponent<Camera>();
-		_viewerCamera.enabled = false;
-		_viewerUI = GameObject.Find ("viewerUI").GetComponent<CanvasGroup>();
-		_viewerUI.alpha = 0;
-		_startRot = viewer.transform.rotation;
-		_startPos = viewer.transform.position;
-	}
-	
-	void Update () {
-		if(tgt != null) {
-			if(Input.GetKeyDown(KeyCode.Q)) {
-				close();
-			} else if(Input.GetKeyDown(KeyCode.R)) {
-				// reset rotation and position
-				reset ();
-			} else {
-				int orbitX = 0;
-				int orbitY = 0;
-				int move = 0;
-				var distance = Vector3.Distance(viewer.transform.position, tgt.transform.position);
-
-				// ROTATION
-				// up/down orbit (y axis)
-				if(Input.GetKey(KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
-					orbitY = 1;
-				} else if(Input.GetKey(KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) {
-					orbitY = -1;
-				}
-				// left/right orbit (x axis)
-				if(Input.GetKey(KeyCode.W) || Input.GetKey (KeyCode.UpArrow)) {
-					orbitX = 1;
-				} else if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
-					orbitX = -1;
-				}
-				
-				_orbit(new Vector3(orbitX, orbitY, 0));
-//				Debug.Log("distance = " + distance + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
-				// POSITION
-				if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
-					if(distance > zoomMin) {
-						move = 1;
-					}
-				} else if(Input.GetKey (KeyCode.X) || Input.GetKey (KeyCode.Minus)) {
-					if(distance < zoomMax) {
-						move = -1;
-					}
-				}
-
-				if(move != 0) {
-					_move (move);
-				}
-			}
-		}
-	}
 
 	private void _orbit(Vector3 axis) {
 		viewer.transform.RotateAround (tgt.position, axis, rotationSpeed * Time.deltaTime);
