@@ -38,7 +38,7 @@ public class Inventory : CanvasItem {
 		if(availableGridElement < gridItems.Length) {
 			EventCenter.Instance.addNote(item.itemName + " added to inventory");
 			_itemsHash.Add(item.name, item);
-
+			item.gridIdx = availableGridElement;
 			var gridItem = gridItems[availableGridElement];
 			gridItem.addItem(item);
 			availableGridElement++;
@@ -63,22 +63,38 @@ public class Inventory : CanvasItem {
 	public void selectItem(string name) {
 		Debug.Log("Inventory/selectItem, name = " + name);
 		if(hasItem(name)) {
-			var item = _itemsHash[name] as CollectableItem;
+			CollectableItem item = _itemsHash[name] as CollectableItem;
 			Debug.Log("selected: " + item.itemName);
 			if(item.itemViewerPrefab != null) {
 				GameObject viewerItem = (GameObject) Instantiate(item.itemViewerPrefab, new Vector3(0,0,0), new Quaternion(0,0,0,0));
 				viewerItem.layer = ITEM_VIEWER_LAYER;
-				_itemViewer.addItem(viewerItem, item.itemName, item.description);
+				_itemViewer.addItem(viewerItem, name, item.itemName, item.description);
 			}
 		}
 	}
 	
-	public void dropItem() {
-		CollectableItem item = _itemsHash[equippedItem] as CollectableItem;
-		item.drop();
-		_itemToDelete = equippedItem;
-		this.houseKeepingNeeded = true;
-		_resetEquippedItem();
+	public void equipItem(string name) {
+		if(hasItem(name)) {
+			EventCenter.Instance.equipItem(name);
+			this.equippedItem = name;
+			this.isItemEquipped = true;
+	        close();
+		}
+    }
+    
+	public void dropItem(string name) {
+		if(hasItem(name)) {
+			CollectableItem item = _itemsHash[name] as CollectableItem;
+			item.drop();
+//			_itemToDelete = equippedItem;
+//			this.houseKeepingNeeded = true;
+            _resetEquippedItem();
+//			this.houseKeeping();	
+			_itemsHash.Remove(name);
+			_reorderGridItems(item.gridIdx);
+			item.gridIdx = -1;
+//            _itemToDelete = "";
+        }
 	}
 
 	public void close() {
@@ -96,19 +112,12 @@ public class Inventory : CanvasItem {
 //		}
 	}
 
-	private void _equipAndClose(string itemName) {
-		EventCenter.Instance.equipItem(itemName);
-		this.equippedItem = itemName;
-		this.isItemEquipped = true;
-		close();
-	}
-	
 	public void houseKeeping() {
-//		Debug.Log("Inventory/houseKeeping, _itemToDelete = " + _itemToDelete);
+		Debug.Log("Inventory/houseKeeping, _itemToDelete = " + _itemToDelete);
 		if(_itemToDelete != "") {
 			CollectableItem item = _itemsHash[_itemToDelete] as CollectableItem;
-			_itemsHash.Remove(_itemToDelete);
 			_reorderGridItems(item.gridIdx);
+            _itemsHash.Remove(_itemToDelete);
 			item.gridIdx = -1;
 			_itemToDelete = "";
 		}
@@ -121,11 +130,12 @@ public class Inventory : CanvasItem {
 	}
 	
 	private void _dropAndClose(string itemName) {
-		dropItem();
+		dropItem(itemName);
 		close();
 	}
 	
 	private void _reorderGridItems(int gridIdx) {
+		Debug.Log("Inventory/_reorderGridItems, gridIdx = " + gridIdx);
 		if(gridIdx > -1) {
 			GridItem gridItem = gridItems[gridIdx];
 			gridItem.removeItem();
@@ -133,13 +143,19 @@ public class Inventory : CanvasItem {
 			availableGridElement = 0;
 			CollectableItem currentItem; 
 
+			for(int i = 0; i < gridItems.Length; i++) {
+				GridItem g = gridItems[i];
+				Debug.Log("g["+i+"].isOccupied = " + g.isOccupied);
+				if(g.isOccupied) {
+                    g.removeItem();
+                }
+            }
+
 			foreach(DictionaryEntry key in _itemsHash) {
 				if(availableGridElement < gridItems.Length) {
 					currentItem = key.Value as CollectableItem;
 					GridItem g = gridItems[availableGridElement];
-					if(g.isOccupied) {
-						g.removeItem();
-					}
+					currentItem.gridIdx = availableGridElement;
 					g.addItem(currentItem);
 					availableGridElement++;
 				}

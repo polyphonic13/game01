@@ -17,16 +17,19 @@ public class ItemViewer : MonoBehaviour {
 	private Vector3 _startPos;
 
 	private Player _player;
+	private Inventory _inventory;
     private GameObject _target;
 	private Camera _viewerCamera; 
 	private CanvasGroup _canvasGroup;
 	private GraphicRaycaster _raycaster;
 
+	private string _itemKey;
 	private Text _itemName;
 	private Text _itemDescription; 
 
 	void Awake () {
 		_player = GameObject.Find("player").GetComponent<Player>();
+		_inventory = GameObject.Find ("inventoryUI").GetComponent<Inventory>();
 		_viewerCamera = GameObject.Find("viewerCamera").GetComponent<Camera>();
 		var _viewerUI = GameObject.Find ("viewerUI"); 
 		_canvasGroup = _viewerUI.GetComponent<CanvasGroup>();
@@ -87,8 +90,9 @@ public class ItemViewer : MonoBehaviour {
         }
 	}
 	
-	public void addItem(GameObject target, string name = "", string description = "") {
-		_itemName.text = name;
+	public void addItem(GameObject target, string key = "", string itemName = "", string description = "") {
+		_itemKey = key;
+		_itemName.text = itemName;
 		_itemDescription.text = description;
 
 		_player.viewingInventoryItem(true);
@@ -109,12 +113,25 @@ public class ItemViewer : MonoBehaviour {
 			tgt = null;
 			reset ();
 			hasItem = false;
+			_itemKey = "";
+			_itemName.text = "";
+			_itemDescription.text = "";
 		}
 	}
 
 	public void reset() {
 		viewer.transform.rotation = _startRot;
 		viewer.transform.position = _startPos;
+	}
+
+	public void equipInventoryItem() {
+		_inventory.equipItem(_itemKey);
+		close ();
+    }
+	
+	public void dropInventoryItem() {
+		_inventory.dropItem(_itemKey);
+		close ();
 	}
 
 	public void close() {

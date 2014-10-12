@@ -61,7 +61,7 @@ public class Player : MonoBehaviour {
 				inventory.show = !inventory.show;
 				inventory.showDetail = false;
 			} else if(Input.GetKeyDown(KeyCode.X) && inventory.isItemEquipped) {
-				inventory.dropItem();
+				inventory.dropItem(inventory.equippedItem);
 			} else if(Input.GetKeyDown(KeyCode.M)) {
 				menu.show = !menu.show;
 			} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {

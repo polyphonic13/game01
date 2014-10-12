@@ -48,9 +48,9 @@ public class GridItem : MonoBehaviour {
 	}
 
 	public void removeItem() {
-		this.isOccupied = false;
+		Debug.Log(this.gameObject.name + "/removeItem");
+        this.isOccupied = false;
 		_itemName = "";
-//		Debug.Log(this.gameObject.name + "/removeItem");
 		_group.alpha = 0;
 		_nameTxt.text = "";
 		_iconImg.sprite = null;

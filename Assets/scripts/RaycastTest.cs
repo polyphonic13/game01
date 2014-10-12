@@ -23,8 +23,8 @@ public class RaycastTest : MonoBehaviour {
 
 	private float _rotationAdjustment = 0;
 	private bool _updating = false;
-	private bool _tooCloseToObject = false;
-	private Vector3 _direction;
+//	private bool _tooCloseToObject = false;
+//	private Vector3 _direction;
 
 	private int _avoidanceSteps = 0;
 	
@@ -33,7 +33,7 @@ public class RaycastTest : MonoBehaviour {
 		_goalTransform = goal.transform;
 		Vector3 newDestination = _goalTransform.position;
 //		_direction = (newDestination - transform.position).normalized;
-		_direction = transform.forward;
+//		_direction = transform.forward;
 	}
 
 	// Update is called once per frame
@@ -187,9 +187,9 @@ public class RaycastTest : MonoBehaviour {
 				var obstacleDistance = Vector3.Distance(transform.position, _hit.transform.position);
 				Debug.Log("   obstacleDistance = " + obstacleDistance + ", min = " + (minSafeDistance * 5));
 				if(obstacleDistance < (minSafeDistance)*5) {
-					_tooCloseToObject = true;
+//					_tooCloseToObject = true;
 				} else {
-					_tooCloseToObject = false;
+//					_tooCloseToObject = false;
 				}
 			}
 		}
