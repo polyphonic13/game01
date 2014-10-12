@@ -12,7 +12,8 @@ public class ItemContainer : CollidableParent {
 		init ();
 		_containerSpot = this.transform.Search("containerSpot").gameObject;
 		Debug.Log("ItemContainer/Awake, _containerSpot = " + _containerSpot);
-	}
+//		EventCenter.Instance.collectedEvent(this.name + "_AllCollected");
+    }
 	
 	public override void onCollision(GameObject collisionTarget) {
 		Debug.Log("ItemContainer/onChildCollision, collisionTarget.transform.parent.name = " + collisionTarget.transform.parent.name);

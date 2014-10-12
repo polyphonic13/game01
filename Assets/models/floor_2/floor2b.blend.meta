@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 29983b104697b469d9ed17186a6039a1
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: bedroom_s_e
     100002: bedroom_s_e_001
@@ -1101,6 +1101,7 @@ ModelImporter:
     102190: sun_room
     102192: tower
     102194: bathroom_e_mirror_mask
+    102196: bedroom_nw_floor_boards_e2_001
     400000: bedroom_s_e
     400002: bedroom_s_e_001
     400004: bedroom_s_w
@@ -2199,6 +2200,7 @@ ModelImporter:
     402190: sun_room
     402192: tower
     402194: bathroom_e_mirror_mask
+    402196: bedroom_nw_floor_boards_e2_001
     2300000: bedroom_s_e
     2300002: bedroom_s_e_001
     2300004: bedroom_s_w
@@ -5414,6 +5416,7 @@ ModelImporter:
     4302136: back_hall_wall_n
     4302138: back_hall_se_top_molding_e
     4302140: bathroom_e_mirror_mask
+    4302142: bedroom_nw_floor_boards_e2_001
     6400000: bedroom_s_e
     6400002: bedroom_s_e_001
     6400004: bedroom_s_w
@@ -6494,6 +6497,7 @@ ModelImporter:
     9500000: //RootNode
     11100000: //RootNode
     13700000: bedroom_nw_secret_door
+    13700002: bedroom_nw_floor_boards_e2_001
   materials:
     importMaterials: 1
     materialName: 0
@@ -6502,6 +6506,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -6545,4 +6550,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
+  additionalBone: 0
   userData: 

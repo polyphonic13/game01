@@ -1,12 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GUI/ItemViewer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/armatures/LockableArmatureTrigger.cs">
     <Files>
-      <File FileName="Assets/scripts/GUI/GridItem.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="71" Column="68" />
-      <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/GUI/CanvasItem.cs" Line="19" Column="60" />
-      <File FileName="Assets/scripts/GUI/ItemViewer.cs" Line="50" Column="35" />
+      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="79" Column="29" />
+      <File FileName="Assets/scripts/Player.cs" Line="186" Column="21" />
+      <File FileName="Assets/scripts/GUI/ItemViewer.cs" Line="118" Column="25" />
+      <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/CollectedAnimationParent.cs" Line="4" Column="41" />
+      <File FileName="Assets/scripts/armatures/EventAnimationParent.cs" Line="24" Column="42" />
+      <File FileName="Assets/scripts/EventCenter.cs" Line="106" Column="14" />
+      <File FileName="Assets/scripts/ItemContainer.cs" Line="25" Column="5" />
+      <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="4" Column="43" />
+      <File FileName="Assets/scripts/armatures/ContainerUnlockTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/LockableArmatureTrigger.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
