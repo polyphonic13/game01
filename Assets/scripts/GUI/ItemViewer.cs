@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ItemViewer : MonoBehaviour {
@@ -18,14 +19,19 @@ public class ItemViewer : MonoBehaviour {
 	private Player _player;
     private GameObject _target;
 	private Camera _viewerCamera; 
-	private CanvasGroup _viewerUI;
+	private CanvasGroup _canvasGroup;
+	private GraphicRaycaster _raycaster;
 
 	void Awake () {
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_viewerCamera = GameObject.Find("viewerCamera").GetComponent<Camera>();
+		var _viewerUI = GameObject.Find ("viewerUI"); 
+		_canvasGroup = _viewerUI.GetComponent<CanvasGroup>();
+		_raycaster = _viewerUI.GetComponent<GraphicRaycaster>();
+
 		_viewerCamera.enabled = false;
-		_viewerUI = GameObject.Find ("viewerUI").GetComponent<CanvasGroup>();
-		_viewerUI.alpha = 0;
+		_canvasGroup.alpha = 0;
+		_raycaster.enabled = false;
 		_startRot = viewer.transform.rotation;
 		_startPos = viewer.transform.position;
 	}
@@ -80,7 +86,8 @@ public class ItemViewer : MonoBehaviour {
 	public void addItem(GameObject target) {
 		_player.viewingInventoryItem(true);
         _viewerCamera.enabled = true;
-		_viewerUI.alpha = 1;
+		_raycaster.enabled = true;
+		_canvasGroup.alpha = 1;
 		if(hasItem) {
 			removeItem();
 		}
@@ -106,7 +113,8 @@ public class ItemViewer : MonoBehaviour {
 	public void close() {
 		removeItem();
 		_viewerCamera.enabled = false;
-		_viewerUI.alpha = 0;
+		_raycaster.enabled = false;
+		_canvasGroup.alpha = 0;
 		_player.viewingInventoryItem(false);
     }
 
