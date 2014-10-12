@@ -22,12 +22,18 @@ public class ItemViewer : MonoBehaviour {
 	private CanvasGroup _canvasGroup;
 	private GraphicRaycaster _raycaster;
 
+	private Text _itemName;
+	private Text _itemDescription; 
+
 	void Awake () {
 		_player = GameObject.Find("player").GetComponent<Player>();
 		_viewerCamera = GameObject.Find("viewerCamera").GetComponent<Camera>();
 		var _viewerUI = GameObject.Find ("viewerUI"); 
 		_canvasGroup = _viewerUI.GetComponent<CanvasGroup>();
 		_raycaster = _viewerUI.GetComponent<GraphicRaycaster>();
+
+		_itemName = GameObject.Find ("inventoryItemName").GetComponent<Text>();
+		_itemDescription = GameObject.Find ("inventoryItemDescription").GetComponent<Text>();
 
 		_viewerCamera.enabled = false;
 		_canvasGroup.alpha = 0;
@@ -64,8 +70,6 @@ public class ItemViewer : MonoBehaviour {
 				}
 				
 				_orbit(new Vector3(orbitX, orbitY, 0));
-				//				Debug.Log("distance = " + distance + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
-                // POSITION
                 if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
                     if(distance > zoomMin) {
                         move = 1;
@@ -83,7 +87,10 @@ public class ItemViewer : MonoBehaviour {
         }
 	}
 	
-	public void addItem(GameObject target) {
+	public void addItem(GameObject target, string name = "", string description = "") {
+		_itemName.text = name;
+		_itemDescription.text = description;
+
 		_player.viewingInventoryItem(true);
         _viewerCamera.enabled = true;
 		_raycaster.enabled = true;

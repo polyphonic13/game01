@@ -68,7 +68,7 @@ public class Inventory : CanvasItem {
 			if(item.itemViewerPrefab != null) {
 				GameObject viewerItem = (GameObject) Instantiate(item.itemViewerPrefab, new Vector3(0,0,0), new Quaternion(0,0,0,0));
 				viewerItem.layer = ITEM_VIEWER_LAYER;
-				_itemViewer.addItem(viewerItem);
+				_itemViewer.addItem(viewerItem, item.itemName, item.description);
 			}
 		}
 	}
