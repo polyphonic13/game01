@@ -26,7 +26,7 @@ public class CollectableItem : InteractiveElement {
 	public int gridIdx { get; set; }
 
 	private Player _player;
-	
+
 	public ItemWeight weight; 
 	public GameObject itemViewerPrefab;
 
@@ -72,7 +72,7 @@ public class CollectableItem : InteractiveElement {
 
 	public override void mouseClick() {
 		Debug.Log("CollectableItem/OnMouseDown, name = " + this.name);
-		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		var difference = Vector3.Distance(playerHead.position, this.transform.position);
 		if(difference < interactDistance) {
 			if(!this.isCollected) {
 				addToInventory();

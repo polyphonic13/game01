@@ -14,19 +14,23 @@ public class Player : MonoBehaviour {
 	
 	public GUIStyle basicStyle;
 
+	public bool isViewingInventoryItem { get; set; }
+
 	private const float SIGNIFICANT_DISTANCE_CHANGE = 2f;
 	private Vector3 _lastPosition;
 
 	private Camera camera;
+	private bool _isZoomed = false;
 
 	private PlayerMeshController headController;
 
 	void Awake() {
 //		camera = Camera.main;
-		camera = GameObject.Find("playerCamera").GetComponent<Camera>();
+		camera = GameObject.Find("mainCamera").GetComponent<Camera>();
 		_lastPosition = camera.transform.position;
 //		menu = new Menu();
 //		menu.init ();
+		isViewingInventoryItem = false;
 		menu.show = true;
 //		inventory.show = false;
 //		notification.show = false;
@@ -43,69 +47,78 @@ public class Player : MonoBehaviour {
 	}
 	
 	void Update() {
-		_checkPositionForChange();
-		if(Input.GetKeyDown(KeyCode.Q)) {
-			inventory.show = !inventory.show;
-			inventory.showDetail = false;
-		} else if(Input.GetKeyDown(KeyCode.X) && inventory.isItemEquipped) {
-			inventory.dropItem();
-		} else if(Input.GetKeyDown(KeyCode.M)) {
-			menu.show = !menu.show;
-		} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
-			inventory.showDetail = false;
-			inventory.show = false;
-			menu.show = false;
-			if(notification.show) {
-				notification.destroy();
+		if(!isViewingInventoryItem) {
+			_checkPositionForChange();
+			if(Input.GetKeyDown(KeyCode.Z)) {
+				_isZoomed = !_isZoomed;
+				EventCenter.Instance.zoomCamera(_isZoomed);
 			}
-		}
-		if (!inventory.showDetail && !inventory.show && !menu.show && !notification.show) {
-			enablePlayer (true);
-		} else {
-			enablePlayer (false);
-		}
-
-		if (menu.show) {
-			if(!menu.isShowing) {
-				openMenu();
-				if(inventory.isShowing) {
-					closeInventory();
+			
+			if(Input.GetKeyDown(KeyCode.Q)) {
+				if(!camera.enabled) {
+					camera.enabled = true;
 				}
+				inventory.show = !inventory.show;
+				inventory.showDetail = false;
+			} else if(Input.GetKeyDown(KeyCode.X) && inventory.isItemEquipped) {
+				inventory.dropItem();
+			} else if(Input.GetKeyDown(KeyCode.M)) {
+				menu.show = !menu.show;
+			} else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
+				inventory.showDetail = false;
+				inventory.show = false;
+				menu.show = false;
+				if(notification.show) {
+					notification.destroy();
+				}
+			}
+			if (!inventory.showDetail && !inventory.show && !menu.show && !notification.show) {
+				enablePlayer (true);
+			} else {
+				enablePlayer (false);
+			}
+			
+			if (menu.show) {
+				if(!menu.isShowing) {
+					openMenu();
+					if(inventory.isShowing) {
+						closeInventory();
+					}
+					if(notification.isShowing) {
+						closeNotification();
+					}
+				}
+			} else {
+				if(menu.isShowing) {
+					Debug.Log("Player/Update, menu.show = " + menu.show + ", isShowing = " + menu.isShowing);
+					closeMenu();
+				}
+			}
+			if (notification.show) {
+				if(!notification.isShowing) {
+					notification.showHide(true);
+				}
+			} else {
 				if(notification.isShowing) {
-					closeNotification();
+					notification.showHide(false);
 				}
 			}
-		} else {
-			if(menu.isShowing) {
-				Debug.Log("Player/Update, menu.show = " + menu.show + ", isShowing = " + menu.isShowing);
-				closeMenu();
-			}
-		}
-		if (notification.show) {
-			if(!notification.isShowing) {
-				notification.showHide(true);
-			}
-		} else {
-			if(notification.isShowing) {
-				notification.showHide(false);
-			}
-		}
-		if (inventory.show) {
-			if (!inventory.isShowing) {
-				openInventory ();
-				if (notification.isShowing) {
-					closeNotification ();
+			if (inventory.show) {
+				if (!inventory.isShowing) {
+					openInventory ();
+					if (notification.isShowing) {
+						closeNotification ();
+					}
+					if (menu.isShowing) {
+						closeMenu ();
+					}
 				}
-				if (menu.isShowing) {
-					closeMenu ();
+			} else {
+				if (inventory.isShowing) {
+					closeInventory ();
 				}
 			}
-		} else {
-			if (inventory.isShowing) {
-				closeInventory ();
-			}
 		}
-
 	}
 
 	public void openMenu() {
@@ -121,6 +134,14 @@ public class Player : MonoBehaviour {
 	public void openInventory() {
 		Debug.Log ("Player/openInventory");
 		inventory.showHide (true);
+	}
+
+	public void viewingInventoryItem(bool isViewing) {
+		Debug.Log("Player/viewingInventoryItem, isViewing = " + isViewing);
+		isViewingInventoryItem = isViewing;
+		camera.enabled = isViewing;
+		inventory.show = false;
+		inventory.showHide(false);
 	}
 
 	public void closeInventory() {

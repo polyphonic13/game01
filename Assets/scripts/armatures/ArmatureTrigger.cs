@@ -18,7 +18,7 @@ public class ArmatureTrigger : InteractiveElement {
 	public override void mouseClick() {
 		Debug.Log ("ArmatureTrigger[" + this.name + "]/mouseClick, isRoomActive = " + this.isRoomActive + ", enabled = " + this.enabled);
 		if(this.isRoomActive && this.isEnabled) {
-			var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+			var difference = Vector3.Distance(playerHead.position, this.transform.position);
 			if(difference <= interactDistance) {
 					handleAnimation();
 			}

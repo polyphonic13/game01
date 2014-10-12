@@ -15,9 +15,13 @@ public class ItemViewer : MonoBehaviour {
 	private Quaternion _startRot;
 	private Vector3 _startPos;
 
-	private GameObject _target;
+	private Player _player;
+    private GameObject _target;
+	private Camera _viewerCamera; 
 
 	public void addItem(GameObject target) {
+		_player.viewingInventoryItem(true);
+        _viewerCamera.enabled = true;
 		if(hasItem) {
 			removeItem();
 		}
@@ -39,16 +43,26 @@ public class ItemViewer : MonoBehaviour {
 		viewer.transform.rotation = _startRot;
 		viewer.transform.position = _startPos;
 	}
-	
-	void Start () {
+
+	public void close() {
+		removeItem();
+		_viewerCamera.enabled = false;
+		_player.viewingInventoryItem(false);
+    }
+
+	void Awake () {
+		_player = GameObject.Find("player").GetComponent<Player>();
+        _viewerCamera = GameObject.Find("viewerCamera").GetComponent<Camera>();
+		_viewerCamera.enabled = false;
 		_startRot = viewer.transform.rotation;
 		_startPos = viewer.transform.position;
 	}
 	
 	void Update () {
 		if(tgt != null) {
-
-			if(Input.GetKeyDown(KeyCode.R)) {
+			if(Input.GetKeyDown(KeyCode.Q)) {
+				close();
+			} else if(Input.GetKeyDown(KeyCode.R)) {
 				// reset rotation and position
 				reset ();
 			} else {
@@ -72,7 +86,7 @@ public class ItemViewer : MonoBehaviour {
 				}
 				
 				_orbit(new Vector3(orbitX, orbitY, 0));
-				Debug.Log("distance = " + distance + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
+//				Debug.Log("distance = " + distance + ", zoonMin = " + zoomMin + ", zoomMax = " + zoomMax);
 				// POSITION
 				if(Input.GetKey (KeyCode.Z) || Input.GetKey(KeyCode.Plus)) {
 					if(distance > zoomMin) {

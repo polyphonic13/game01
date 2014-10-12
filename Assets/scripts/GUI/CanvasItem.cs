@@ -19,7 +19,7 @@ public class CanvasItem : MonoBehaviour {
 	}
 	
 	public void showHide(bool enable) {
-//		Debug.Log ("CanvasItem/enableItem, enable = " + enable + ", show = " + show + ", isShowing = " + isShowing);
+		Debug.Log ("CanvasItem[ " + this.name + " ]/enableItem, enable = " + enable + ", show = " + show + ", isShowing = " + isShowing);
 		isShowing = enable;
 		_group.alpha = (enable) ? 1 : 0;
 	}

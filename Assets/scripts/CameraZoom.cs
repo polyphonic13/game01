@@ -3,35 +3,36 @@ using System.Collections;
 
 public class CameraZoom : MonoBehaviour {
 	
-	Camera camera;
+	Camera _camera;
 	int zoom = 20;
 	int normal = 60;
 	float smooth = 5;
 	bool isZoomed = false;
 
 	void Start() {
-		camera = Camera.main;
+		_camera = GameObject.Find("mainCamera").GetComponent<Camera>();
 		EventCenter.Instance.onCameraZoom += onCameraZoom;
 	}
-	// Update is called once per frame
+
 	void Update() {
-		if(Input.GetKeyDown(KeyCode.Z)) {
-			isZoomed = !isZoomed;
-		}
+//		if(Input.GetKeyDown(KeyCode.Z)) {
+//			isZoomed = !isZoomed;
+//		}
 		zoomCamera();
 	}
 
 	void zoomCamera() {
 		if(isZoomed) {
-			camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,zoom,Time.deltaTime*smooth);
+			_camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,zoom,Time.deltaTime*smooth);
 		} else {
-			camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,normal,Time.deltaTime*smooth);
+			_camera.fieldOfView = Mathf.Lerp(camera.fieldOfView,normal,Time.deltaTime*smooth);
 		}
 
 	}
 
 	public void onCameraZoom(bool zoom) {
-		isZoomed = zoom;			
+		isZoomed = zoom;
+//		zoomCamera();
 	}
 	
 }

@@ -30,7 +30,7 @@ public class OnOffLight : InteractiveElement {
 	public override void mouseClick() {
 		Debug.Log("OnOffLight[ " + this.name + " ]/mouseClick, isRoomActive = " + this.isRoomActive);
 		if(this.isRoomActive) {
-			var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+			var difference = Vector3.Distance(playerHead.position, this.transform.position);
 			//			Debug.Log("  difference = " + difference + ", bulb.enabled = " + bulb.enabled);
 			if(difference < interactDistance) {
 				this.toggle();

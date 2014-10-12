@@ -11,6 +11,7 @@ public class InspectableItem : InteractiveElement {
 	}
 
 	public void initInteractiveElement() {
+
 		init(MouseManager.Instance.MAGNIFY_CURSOR);
 //		init(3);
 	}
@@ -20,7 +21,7 @@ public class InspectableItem : InteractiveElement {
 	}
 
 	public override void mouseClick() {
-		var difference = Vector3.Distance(Camera.mainCamera.gameObject.transform.position, this.transform.position);
+		var difference = Vector3.Distance(playerHead.position, this.transform.position);
 		if(difference < interactDistance) {
 //			Debug.Log("InspectableItem/OnMouseDown, this.isRoomActive = " + this.isRoomActive);
 			if(this.isRoomActive) {
