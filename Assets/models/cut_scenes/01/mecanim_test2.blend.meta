@@ -380,6 +380,8 @@ ModelImporter:
     100748: body_001
     100750: body_002
     100752: scalp
+    100754: sweater
+    100756: pants
     400000: body
     400002: chest
     400004: chest_0
@@ -757,6 +759,8 @@ ModelImporter:
     400748: body_001
     400750: body_002
     400752: scalp
+    400754: sweater
+    400756: pants
     2300000: WGT-chest
     2300002: WGT-elbow_hose_L
     2300004: WGT-elbow_hose_R
@@ -852,6 +856,11 @@ ModelImporter:
     2300184: WGT-VIS-thigh_pole_ik_R
     2300186: WGT-VIS-upper_arm_pole_ik_L
     2300188: WGT-VIS-upper_arm_pole_ik_R
+    2300190: body
+    2300192: body_002
+    2300194: scalp
+    2300196: pants
+    2300198: sweater
     3300000: WGT-chest
     3300002: WGT-elbow_hose_L
     3300004: WGT-elbow_hose_R
@@ -947,9 +956,16 @@ ModelImporter:
     3300184: WGT-VIS-thigh_pole_ik_R
     3300186: WGT-VIS-upper_arm_pole_ik_L
     3300188: WGT-VIS-upper_arm_pole_ik_R
+    3300190: body
+    3300192: body_002
+    3300194: scalp
+    3300196: pants
+    3300198: sweater
     4300000: body_001
     4300002: body_002
     4300004: scalp
+    4300006: sweater
+    4300008: pants
     4300082: WGT-palm_R
     4300084: WGT-palm_L
     4300086: WGT-hand_ik_R
@@ -969,6 +985,8 @@ ModelImporter:
     13700002: body_001
     13700004: body_002
     13700006: scalp
+    13700008: sweater
+    13700010: pants
   materials:
     importMaterials: 1
     materialName: 0

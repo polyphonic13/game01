@@ -8,7 +8,7 @@
       <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="43" Column="2" />
       <File FileName="Assets/scripts/armatures/CollectedAnimationParent.cs" Line="4" Column="41" />
       <File FileName="Assets/scripts/EventCenter.cs" Line="106" Column="14" />
-      <File FileName="Assets/scripts/ItemContainer.cs" Line="15" Column="5" />
+      <File FileName="Assets/scripts/ItemContainer.cs" Line="15" Column="6" />
       <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="4" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
