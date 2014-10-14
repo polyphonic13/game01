@@ -17,6 +17,7 @@ ModelImporter:
     100022: upper_arm_R
     100024: upper_leg_L
     100026: upper_leg_R
+    100028: body
     400000: foot_L
     400002: foot_R
     400004: forearm_L
@@ -31,6 +32,7 @@ ModelImporter:
     400022: upper_arm_R
     400024: upper_leg_L
     400026: upper_leg_R
+    400028: body
     2300000: foot_L
     2300002: foot_R
     2300004: forearm_L
@@ -45,6 +47,7 @@ ModelImporter:
     2300022: upper_arm_R
     2300024: upper_leg_L
     2300026: upper_leg_R
+    2300028: body
     3300000: foot_L
     3300002: foot_R
     3300004: forearm_L
@@ -59,6 +62,7 @@ ModelImporter:
     3300022: upper_arm_R
     3300024: upper_leg_L
     3300026: upper_leg_R
+    3300028: body
     4300000: body
     4300002: llower_leg_R
     4300004: upper_leg_R
@@ -87,6 +91,7 @@ ModelImporter:
     6400022: upper_arm_R
     6400024: upper_leg_L
     6400026: upper_leg_R
+    6400028: body
     7400000: Default Take
     9500000: //RootNode
   materials:
