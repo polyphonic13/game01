@@ -1,15 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ItemContainer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MirrorReflection.cs">
     <Files>
       <File FileName="Assets/scripts/GUI/Inventory.cs" Line="148" Column="21" />
-      <File FileName="Assets/scripts/Player.cs" Line="34" Column="20" />
-      <File FileName="Assets/scripts/GUI/ItemViewer.cs" Line="118" Column="25" />
-      <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="43" Column="2" />
-      <File FileName="Assets/scripts/armatures/CollectedAnimationParent.cs" Line="4" Column="41" />
-      <File FileName="Assets/scripts/EventCenter.cs" Line="106" Column="14" />
-      <File FileName="Assets/scripts/ItemContainer.cs" Line="15" Column="6" />
-      <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="4" Column="43" />
+      <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/ItemViewer.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/CollectedAnimationParent.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/EventCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ItemContainer.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/SepiaToneEffect.shader" Line="27" Column="37" />
+      <File FileName="Assets/scripts/MirrorReflection.cs" Line="244" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
