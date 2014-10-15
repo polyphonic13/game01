@@ -24,7 +24,7 @@ fixed4 frag (v2f_img i) : SV_Target
 	fixed Y = dot (fixed3(0.299, 0.587, 0.114), original.rgb);
 
 	// Convert to Sepia Tone by adding constant
-	fixed4 sepiaConvert = float4 (0.191, -0.054, -0.221, 0.0);
+	fixed4 sepiaConvert = float4 (0.100, -0.054, -0.221, 0.0);
 	fixed4 output = sepiaConvert + Y;
 	output.a = original.a;
 	
