@@ -457,6 +457,9 @@ ModelImporter:
     100902: hair_070
     100904: hair_071
     100906: hair_000
+    100908: eyes
+    100910: head_topo
+    100912: shirt_top
     400000: body
     400002: chest
     400004: chest_0
@@ -911,6 +914,9 @@ ModelImporter:
     400902: hair_070
     400904: hair_071
     400906: hair_000
+    400908: eyes
+    400910: head_topo
+    400912: shirt_top
     2300000: WGT-chest
     2300002: WGT-elbow_hose_L
     2300004: WGT-elbow_hose_R
@@ -1025,6 +1031,7 @@ ModelImporter:
     2300222: hair_011
     2300224: hair_012
     2300226: hair_013
+    2300228: eyes
     3300000: WGT-chest
     3300002: WGT-elbow_hose_L
     3300004: WGT-elbow_hose_R
@@ -1139,6 +1146,7 @@ ModelImporter:
     3300222: hair_011
     3300224: hair_012
     3300226: hair_013
+    3300228: eyes
     4300000: body_001
     4300002: body_002
     4300004: scalp
@@ -1231,6 +1239,9 @@ ModelImporter:
     4300178: hair_038
     4300180: hair_037
     4300182: hair_000
+    4300184: eyes
+    4300186: head_topo
+    4300188: shirt_top
     4300190: body
     7400000: Default Take
     9500000: //RootNode
@@ -1315,6 +1326,9 @@ ModelImporter:
     13700156: hair_070
     13700158: hair_071
     13700160: hair_000
+    13700162: head_topo
+    13700164: shirt_top
+    13700166: eyes
   materials:
     importMaterials: 1
     materialName: 0
