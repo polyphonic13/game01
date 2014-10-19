@@ -460,6 +460,9 @@ ModelImporter:
     100908: eyes
     100910: head_topo
     100912: shirt_top
+    100914: eye_iris_left_001
+    100916: eye_iris_r_001
+    100918: head_001
     400000: body
     400002: chest
     400004: chest_0
@@ -917,6 +920,9 @@ ModelImporter:
     400908: eyes
     400910: head_topo
     400912: shirt_top
+    400914: eye_iris_left_001
+    400916: eye_iris_r_001
+    400918: head_001
     2300000: WGT-chest
     2300002: WGT-elbow_hose_L
     2300004: WGT-elbow_hose_R
@@ -1032,6 +1038,9 @@ ModelImporter:
     2300224: hair_012
     2300226: hair_013
     2300228: eyes
+    2300230: eye_iris_left_001
+    2300232: eye_iris_r_001
+    2300234: head_001
     3300000: WGT-chest
     3300002: WGT-elbow_hose_L
     3300004: WGT-elbow_hose_R
@@ -1147,6 +1156,9 @@ ModelImporter:
     3300224: hair_012
     3300226: hair_013
     3300228: eyes
+    3300230: eye_iris_left_001
+    3300232: eye_iris_r_001
+    3300234: head_001
     4300000: body_001
     4300002: body_002
     4300004: scalp
@@ -1243,6 +1255,9 @@ ModelImporter:
     4300186: head_topo
     4300188: shirt_top
     4300190: body
+    4300192: head_001
+    4300194: eye_iris_r_001
+    4300196: eye_iris_left_001
     7400000: Default Take
     9500000: //RootNode
     13700000: body
@@ -1329,6 +1344,9 @@ ModelImporter:
     13700162: head_topo
     13700164: shirt_top
     13700166: eyes
+    13700168: eye_iris_left_001
+    13700170: eye_iris_r_001
+    13700172: head_001
   materials:
     importMaterials: 1
     materialName: 0

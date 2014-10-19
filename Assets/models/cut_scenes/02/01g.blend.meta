@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 2453d3b9cdf85487ebca6562b71c0d91
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube
+    100004: Empty_for_BProjection
+    100006: eye_l
+    100008: eye_r
+    100010: hair_piece
+    100012: hair_piece_001
+    100014: hair_piece_002
+    100016: hair_piece_003
+    100018: hair_piece_004
+    100020: head
+    100022: hair
+    100024: eye_l_001
+    100026: eye_r_001
+    100028: eye_cornea_left
+    100030: eye_cornea_right
+    100032: eye_iris_left
+    100034: eye_iris_r
+    400000: //RootNode
+    400002: Cube
+    400004: Empty_for_BProjection
+    400006: eye_l
+    400008: eye_r
+    400010: hair_piece
+    400012: hair_piece_001
+    400014: hair_piece_002
+    400016: hair_piece_003
+    400018: hair_piece_004
+    400020: head
+    400022: hair
+    400024: eye_l_001
+    400026: eye_r_001
+    400028: eye_cornea_left
+    400030: eye_cornea_right
+    400032: eye_iris_left
+    400034: eye_iris_r
+    2300000: Cube
+    2300002: hair_piece
+    2300004: hair_piece_001
+    2300006: hair_piece_002
+    2300008: hair_piece_003
+    2300010: hair_piece_004
+    2300012: eye_l
+    2300014: eye_r
+    2300016: hair
+    2300018: eye_l_001
+    2300020: eye_r_001
+    2300022: eye_cornea_left
+    2300024: eye_cornea_right
+    2300026: eye_iris_left
+    2300028: eye_iris_r
+    2300030: head
+    3300000: Cube
+    3300002: hair_piece
+    3300004: hair_piece_001
+    3300006: hair_piece_002
+    3300008: hair_piece_003
+    3300010: hair_piece_004
+    3300012: eye_l
+    3300014: eye_r
+    3300016: hair
+    3300018: eye_l_001
+    3300020: eye_r_001
+    3300022: eye_cornea_left
+    3300024: eye_cornea_right
+    3300026: eye_iris_left
+    3300028: eye_iris_r
+    3300030: head
+    4300000: Cube
+    4300002: hair_piece_004
+    4300004: hair_piece_003
+    4300006: hair_piece_002
+    4300008: hair_piece_001
+    4300010: hair_piece
+    4300012: head
+    4300014: hair
+    4300016: eye_l
+    4300018: eye_r
+    4300020: eye_r_001
+    4300022: eye_l_001
+    4300024: eye_cornea_right
+    4300026: eye_iris_left
+    4300028: eye_iris_r
+    4300030: eye_cornea_left
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: head
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
