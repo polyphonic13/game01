@@ -1,0 +1,1 @@
+Assets/models/cut_scenes/01/mecanim_test2.blend
