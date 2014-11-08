@@ -1,18 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/models/cut_scenes/01/Materials/Mirror.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/armatures/LockableArmatureTrigger.cs">
     <Files>
-      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="148" Column="21" />
-      <File FileName="Assets/scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/PushPullTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GUI/Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Player.cs" Line="173" Column="15" />
       <File FileName="Assets/scripts/GUI/ItemViewer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/armatures/ArmatureParent.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/armatures/CollectedAnimationParent.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/EventCenter.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/ItemContainer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/armatures/EventUnlockTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/SepiaToneEffect.shader" Line="1" Column="1" />
-      <File FileName="Assets/scripts/MirrorReflection.cs" Line="244" Column="2" />
-      <File FileName="Assets/models/cut_scenes/01/Materials/Mirror.shader" Line="31" Column="2" />
+      <File FileName="Assets/scripts/InteractiveElement.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/armatures/LockableArmatureTrigger.cs" Line="19" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
